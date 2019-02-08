@@ -26,23 +26,24 @@ The [IANA timezone database](https://www.iana.org/time-zones) is the official no
 
 Humans though, *are goofballs*, and use a whole different informal scheme.
 
-```md
-In (North) America, we use **PST, MST, EST**
-in Europe (lately) they use **WEST, CEST, EEST**..
-in Africa they use **EAT, CAT, WAST**
-in Australia they use **AWST, AEDT, ACST**
-```
+---
+In (North) America, we use:  **PST, MST, EST**...
+in Europe (lately) they use: **WEST, CEST, EEST**...
+in Africa they use:          **EAT, CAT, WAST**...
+in Australia they use:       **AWST, AEDT, ACST**...
+---
 
 these line-up with the IANA timezones sometimes. Other times they don't.
 
-These names collide all the time, (like IST - irish/indian stardard time).
+These names collide all the time, (like IST - *irish/indian* stardard time).
 
-These names produce all-sorts of ambiguities, in regards to DST-changes -
-Both Winnipeg and Mexico City are in 'CST', but have a dramatically different DST date:
+These names produce all-sorts of ambiguities, regarding DST-changes -
+Both Winnipeg and Mexico City are **CST**, but have a much different DST schedule:
 ![image](https://user-images.githubusercontent.com/399657/52489224-b34d0e00-2b8f-11e9-9de8-0688bec52464.png)
+
 *(thanks [timeanddate.com](https://www.timeanddate.com)!)*
 
-Of course, there's a bunch of political/historical/disputed stuff going on, too. Apologies if I step into some of this unknowingly.
+Of course, there's a bunch of political/historical/disputed stuff going on, too. Apologies if I step into this unknowingly.
 
 This library is an attempt to 'soften' this exchange, between human-IANA, using some *opinionated-but-common-sense* rules and decision-making.
 
