@@ -55,13 +55,14 @@ const informal=require('spacetime-informal')
 
 informal.guess('EST')
 //'America/New_York'
-informal.find('central')
-//['America/Chicago', 'America/Winnipeg', ...]
+informal.guess('central')
+//America/Chicago'
 
 informal.display('Canada/Toronto')
 /*{
   abbreviation:'EST',
-  title:'Eastern'
+  title:'Eastern',
+  iana:'Canada/Toronto'
 }*/
 ```
 

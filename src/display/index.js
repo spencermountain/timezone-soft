@@ -1,42 +1,9 @@
 const informal = require('../data').informal
-//these timezone abbreviations are used aggressively in other places
-//if tz doesn't have an abbreviation, and is in the same offset...
-//these are pretty subjective. i just made them up.
-const greedy_north = {
-  '-8': 'america/anchorage',
-  '-7': 'america/los_angeles',
-  '-6': 'america/denver',
-  '-5': 'america/chicago',
-  '-4': 'america/new_york',
-  '-3': 'america/halifax',
+const data = require('./data')
 
-  '0': 'etc/gmt',
-  '1': 'europe/lisbon',
-  '2': 'europe/berlin',
-  // '3': 'europe/riga',
-  // '3': 'europe/moscow',
-  '8': 'asia/shanghai'
-}
-const greedy_south = {
-  '-3': 'america/sao_paulo',
-  '0': 'etc/gmt',
-  '1': 'africa/lagos',
-  // '2': 'africa/khartoum',//central africa
-  '2': 'africa/johannesburg', //south africa
-  '3': 'africa/nairobi',
-  '10': 'australia/brisbane',
-  '12': 'pacific/auckland'
-}
-
-const british = {
-  'europe/belfast': true,
-  'europe/dublin': true,
-  'europe/guernsey': true,
-  'europe/jersey': true,
-}
-
+//England is BST/GMT, for some reason
 const handleSpecial = function(tz, offset) {
-  if (british.hasOwnProperty(tz)) {
+  if (data.british.hasOwnProperty(tz)) {
     if (offset === '1') {
       return 'BST'
     }
@@ -45,8 +12,9 @@ const handleSpecial = function(tz, offset) {
   return null
 }
 
+//is it EST or EDT ?
 const chooseAbbrev = function(arr, obj) {
-  if (arr[1] && obj.current.isDST === true) {
+  if (arr[1] && obj.dst === true) {
     return arr[1].toUpperCase()
   }
   if (arr[0]) {
@@ -54,8 +22,9 @@ const chooseAbbrev = function(arr, obj) {
   }
   return null
 }
-//
-const display = function(tz, obj) {
+
+
+const display = function(tz, obj = {}) {
   //try a straight-up match
   if (informal.hasOwnProperty(tz)) {
     let abbr = chooseAbbrev(informal[tz], obj)
@@ -69,12 +38,12 @@ const display = function(tz, obj) {
     return special
   }
 
-  if (obj.hemisphere === 'North' && greedy_north.hasOwnProperty(offset)) {
-    let useTz = greedy_north[offset]
+  if (obj.hemisphere === 'North' && data.greedy_north.hasOwnProperty(offset)) {
+    let useTz = data.greedy_north[offset]
     return chooseAbbrev(informal[useTz], obj) || ''
   }
-  if (obj.hemisphere === 'South' && greedy_south.hasOwnProperty(offset)) {
-    let useTz = greedy_south[offset]
+  if (obj.hemisphere === 'South' && data.greedy_south.hasOwnProperty(offset)) {
+    let useTz = data.greedy_south[offset]
     return chooseAbbrev(informal[useTz], obj) || ''
   }
   return ''
