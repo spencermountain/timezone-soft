@@ -1,9 +1,9 @@
 {
-  "name": "spacetime-abbreviation",
+  "name": "spacetime-informal",
   "version": "0.0.1",
-  "description": "support informal timezone names in spacetime",
-  "main": "builds/spacetime-abbreviation.js",
-  "unpkg": "builds/spacetime-abbreviation.min.js",
+  "description": "interpret abbreviated and informal timezone names",
+  "main": "builds/spacetime-informal.js",
+  "unpkg": "builds/spacetime-informal.min.js",
   "scripts": {
     "watch": "amble ./scratch.js",
     "test": "TESTENV=dev tape ./test/**/*.test.js | tap-dancer"
