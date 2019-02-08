@@ -1,0 +1,37 @@
+{
+  "name": "spacetime-abbreviation",
+  "version": "0.0.1",
+  "description": "support informal timezone names in spacetime",
+  "main": "builds/spacetime-abbreviation.js",
+  "unpkg": "builds/spacetime-abbreviation.min.js",
+  "scripts": {
+    "watch": "amble ./scratch.js",
+    "test": "TESTENV=dev tape ./test/**/*.test.js | tap-dancer"
+  },
+  "files": [
+    "builds"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencermountain/spacetime-abbreviation.git"
+  },
+  "author": "spencermountain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spencermountain/spacetime-abbreviation/issues"
+  },
+  "homepage": "https://github.com/spencermountain/spacetime-abbreviation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.2.3",
+    "amble": "0.0.7",
+    "babelify": "10.0.0",
+    "browserify": "16.2.3",
+    "derequire": "2.0.6",
+    "shelljs": "0.8.3",
+    "tap-dancer": "0.1.2",
+    "tape": "4.9.1",
+    "terser": "3.14.1"
+  }
+}
