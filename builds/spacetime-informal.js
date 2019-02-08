@@ -1,19 +1,33 @@
+/* spacetime v0.0.1
+   github.com/spencermountain/spacetime-informal
+   MIT
+*/
+
+(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.spacetimeInformal = f()}})(function(){var define,module,exports;return (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(_dereq_,module,exports){
+"use strict";
+
+module.exports = '0.0.1';
+
+},{}],2:[function(_dereq_,module,exports){
+"use strict";
+
 // this is a very rough list of informal and abbreviated timezones
 // i am not an expert, or even half-knowledgeable in this subject.
 // please help.
 // partially from: https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations
-
 //format:  'best/iana': [standard, daylight, alias...]
-const informal = {
+var informal = {
   //North america
-  'America/Halifax': ['ast', 'adt', 'atlantic'], //or 'arabia standard time'
-  'America/New_York': ['est', 'edt', 'eastern'], //or 'Ecuador Time'
+  'America/Halifax': ['ast', 'adt', 'atlantic'],
+  //or 'arabia standard time'
+  'America/New_York': ['est', 'edt', 'eastern'],
+  //or 'Ecuador Time'
   'America/Chicago': ['cst', 'cdt', 'central'],
   'America/Denver': ['mst', 'mdt', 'mountain'],
-  'America/Los_Angeles': ['pst', 'pdt', 'pacific'],
-  'America/Anchorage': ['ahst', 'ahdt', 'akst', 'akdt', 'alaska'], //Alaska Standard Time
+  'America/Los_Angeles': ['pst', 'pdt', 'Pacific'],
+  'America/Anchorage': ['ahst', 'ahdt', 'akst', 'akdt', 'alaska'],
+  //Alaska Standard Time
   'America/St_Johns': ['nst', 'ndt', 'nt', 'newfoundland', 'nddt'],
-
   //South america
   'America/Caracas': ['vet', null, 'venezuela'],
   'America/Bogota': ['cot', null, 'colombia'],
@@ -36,7 +50,6 @@ const informal = {
   // pmdt: -2, //Saint pierre and miquelon daylight time
   // pmst: -3, //Saint pierre and miquelon standard time
   // rott: -3, //rothera research station time
-
   // awt: 'America/Blanc-sablon',
   // addt: 'America/pangnirtung',
   // apt: 'America/Blanc-sablon',
@@ -67,13 +80,16 @@ const informal = {
   // yddt: 'America/Dawson',
   // ywt: 'America/Dawson',
   // yst: 'America/whitehorse',
-
   //europe
-  'Europe/London': ['gmt', 'bst', 'british'], //Britain is different
+  'Europe/London': ['gmt', 'bst', 'british'],
+  //Britain is different
   'ETC/GMT': ['gmt', null, 'greenwich'],
-  'Europe/Lisbon': ['wet', 'west', 'west europe'], //western europe
-  'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'], //Central europe
-  'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'], //eastern europe
+  'Europe/Lisbon': ['wet', 'west', 'west europe'],
+  //western europe
+  'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'],
+  //Central europe
+  'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'],
+  //eastern europe
   // -- these are old european ones, before the EU, i think:
   // 'europe/Minsk': ['feet', 'feest', 'eastern europe'], //further eastern europe (discontinued)
   // ace: 'europe/Dublin',
@@ -95,9 +111,9 @@ const informal = {
   // tse: 'europe/Dublin',
   // utc: 'etc/utc', //Coordinated universal time
   // 'coordinated universal': 'etc/utc',
-
   //russia
-  'Europe/Moscow': ['msk', null, 'fet', 'mdst', 'msd'], //'further eastern europe'
+  'Europe/Moscow': ['msk', null, 'fet', 'mdst', 'msd'],
+  //'further eastern europe'
   'Europe/Samara': ['samt'],
   'Asia/Yekaterinburg': ['yekt'],
   'Asia/Omsk': ['omst'],
@@ -111,43 +127,42 @@ const informal = {
   'Asia/Srednekolymsk': ['sret'],
   'Asia/Anadyr': ['anat'],
   'Asia/Kamchatka': ['pett'],
-
   //Near-russia
-  'Asia/Tashkent': ['uzt', 'uzbekistan'], //uzbekistan time
-  'Asia/Bishkek': ['kgt', 'kyrgyzstan'], //kyrgyzstan time
+  'Asia/Tashkent': ['uzt', 'uzbekistan'],
+  //uzbekistan time
+  'Asia/Bishkek': ['kgt', 'kyrgyzstan'],
+  //kyrgyzstan time
   'Antarctica/Vostok': ['vost'],
   'Asia/Hovd': ['hovt'],
   'Asia/Ashgabat': ['tmt', null, 'turkmenistan'],
   // wmt: 'europe/warsaw',
   // 'europe/volgograd':['volt']
-
   //Africa
-  'Africa/Lagos': ['wat', 'wast', 'west africa'], //west african
+  'Africa/Lagos': ['wat', 'wast', 'west africa'],
+  //west african
   'Africa/Khartoum': ['cat', null, 'central africa'],
   'vfrica/Nairobi': ['eat', null, 'east africa'],
   'Atlantic/Cape_Verde': ['cvt'],
   'Indian/Mauritius': ['mut'],
   'Indian/Reunion': ['ret'],
   'Africa/Johannesburg': ['sast', null, 'south africa'],
-
   //Atlantic
   'Atlantic/Azores': ['azot', 'azost', 'hmt'],
   'America/Godthab': ['wgt', 'wgst', 'west greenland'],
   'America/Scoresbysund': ['egt', 'egst', 'east greenland'],
-
   //Middle-east
   'Europe/Istanbul': ['trt', null, 'turkey'],
   'Asia/Tbilisi': ['get', null, 'georgia'],
   // 'Asia/yerevan': ['amt', null, 'armenia'], //(sorry!)
   'Asia/Baku': ['azt', null, 'azerbaijan'],
-  'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'], //using ist for india
+  'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'],
+  //using ist for india
   'Asia/Tehran': ['irst', 'irdt', 'iran'],
   'Asia/Karachi': ['pkt', null, 'pakistan'],
   'Asia/Kabul': ['aft', null, 'afghanistan'],
   'Asia/Dushanbe': ['tjt', null, 'tajikistan'],
   'Asia/Almaty': ['almt', null, 'alma ata'],
   'Asia/Dubai': ['gst', null, 'gulf'],
-
   //india
   'Asia/Kolkata': ['ist', null, 'india', 'slst'],
   // 'Asia/Dhaka': ['bst', null, 'bangladesh'], //(sorry)
@@ -159,7 +174,6 @@ const informal = {
   'Indian/Kerguelen': ['tft', null, 'french southern and antarctic'],
   // biot: 6, //British indian ocean time
   // iot: 3, //indian ocean time
-
   //Asia
   'Asia/Shanghai': ['ct', null, 'china', 'hkt'],
   'Asia/Ulaanbaatar': ['ulat'],
@@ -169,15 +183,17 @@ const informal = {
   'Asia/Manila': ['pht', null, 'philippines'],
   'Asia/Singapore': ['sgt'],
   // mmt: 'Asia/Colombo',
-
   //Australia
-  'Australia/Brisbane': ['aest', 'aedt', 'australian east'], //Australian eastern standard time
-  'Australia/Adelaide': ['acst', 'acdt', 'australian central'], //Australian central daylight savings time
-  'Australia/Eucla': ['acwst', null, 'cwst', 'australian central western'], //Australian central western standard time (unofficial)
-  'Australia/Perth': ['awst', 'awdt', 'australian west'], //Australian western standard time
+  'Australia/Brisbane': ['aest', 'aedt', 'Australian east'],
+  //Australian eastern standard time
+  'Australia/Adelaide': ['acst', 'acdt', 'Australian central'],
+  //Australian central daylight savings time
+  'Australia/Eucla': ['acwst', null, 'cwst', 'Australian central western'],
+  //Australian central western standard time (unofficial)
+  'Australia/Perth': ['awst', 'awdt', 'Australian west'],
+  //Australian western standard time
   'Pacific/Auckland': ['nzst', 'nzdt', 'nzmt'],
   'Australia/Lord_Howe': ['lhst', 'lhdt'],
-
   //pacific
   'Pacific/Guam': ['chst'],
   'Pacific/Chatham': ['chast', 'chadt'],
@@ -194,8 +210,7 @@ const informal = {
   'Pacific/Galapagos': ['galt'],
   'Pacific/Fiji': ['fjt', 'fjst'],
   'Asia/Dili': ['tlt', null, 'east timor'],
-  'Indian/Christmas': ['cxt'],
-  // sbt: 11, //Solomon islands time
+  'Indian/Christmas': ['cxt'] // sbt: 11, //Solomon islands time
   // mht: 12, //Marshall islands time
   // bit: -12, //Baker island time
   // cist: -8, //Clipperton island standard time
@@ -233,34 +248,178 @@ const informal = {
   // tot: 13, //tonga time
   // vut: 11, //vanuatu time
   // wakt: 12, //wake island time
+  //i forget (sorry!)
+  // haec: 2, //Heure avancée deurope centrale french-language name for cest
+  // syot: 3, //Showa station time
+  // yekt: 5, //yekaterinburg time
+  // sct: 4, //Seychelles time
+  // orat: 5, //oral time
+  // mawt: 5, //Mawson station time
+  // hovt: 7, //khovd standard time
+  // hovst: 8, //khovd summer time
+  // davt: 7, //Davis time
+  // chost: 9, //Choibalsan summer time
+  // chot: 8, //Choibalsan standard time
+  // wst: 8, //western standard time
+  //use each abbreviation as a key
 
-//i forget (sorry!)
-// haec: 2, //Heure avancée deurope centrale french-language name for cest
-// syot: 3, //Showa station time
-// yekt: 5, //yekaterinburg time
-// sct: 4, //Seychelles time
-// orat: 5, //oral time
-// mawt: 5, //Mawson station time
-// hovt: 7, //khovd standard time
-// hovst: 8, //khovd summer time
-// davt: 7, //Davis time
-// chost: 9, //Choibalsan summer time
-// chot: 8, //Choibalsan standard time
-// wst: 8, //western standard time
-}
+};
+var lookup = Object.keys(informal).reduce(function (h, k) {
+  var arr = informal[k];
 
-//use each abbreviation as a key
-const lookup = Object.keys(informal).reduce((h, k) => {
-  let arr = informal[k]
-  for (let i = 0; i < 5; i += 1) {
+  for (var i = 0; i < 5; i += 1) {
     if (arr[i]) {
-      h[arr[i]] = k
+      h[arr[i]] = k;
     }
   }
+
   return h;
 }, {});
-
 module.exports = {
   informal: informal,
   lookup: lookup
-}
+};
+
+},{}],3:[function(_dereq_,module,exports){
+"use strict";
+
+//these timezone abbreviations are used aggressively in other places
+//if tz doesn't have an abbreviation, and is in the same offset...
+//these are pretty subjective. i just made them up.
+var greedy_north = {
+  '-8': 'America/Anchorage',
+  '-7': 'America/Los_Angeles',
+  '-6': 'America/Denver',
+  '-5': 'America/Chicago',
+  '-4': 'America/New_York',
+  '-3': 'America/Halifax',
+  '0': 'ETC/GMT',
+  '1': 'Europe/Lisbon',
+  '2': 'Europe/Berlin',
+  // '3': 'europe/riga',
+  // '3': 'europe/moscow',
+  '8': 'Asia/Shanghai'
+};
+var greedy_south = {
+  '-3': 'america/Sao_Paulo',
+  '0': 'ETC/GMT',
+  '1': 'Africa/Lagos',
+  // '2': 'africa/khartoum',//central africa
+  '2': 'Africa/Johannesburg',
+  //south africa
+  '3': 'Africa/Nairobi',
+  '10': 'Australia/Brisbane',
+  '12': 'Pacific/Auckland'
+};
+var british = {
+  'Europe/Belfast': true,
+  'Europe/Dublin': true,
+  'Europe/Guernsey': true,
+  'Europe/Jersey': true
+};
+module.exports = {
+  greedy_north: greedy_north,
+  greedy_south: greedy_south,
+  british: british
+};
+
+},{}],4:[function(_dereq_,module,exports){
+"use strict";
+
+var informal = _dereq_('../data').informal;
+
+var data = _dereq_('./data'); //England is BST/GMT, for some reason
+
+
+var handleSpecial = function handleSpecial(tz, offset) {
+  if (data.british.hasOwnProperty(tz)) {
+    if (offset === '1') {
+      return 'BST';
+    }
+
+    return 'GMT';
+  }
+
+  return null;
+}; //is it EST or EDT ?
+
+
+var chooseAbbrev = function chooseAbbrev(arr, obj) {
+  if (arr[1] && obj.dst === true) {
+    return arr[1].toUpperCase();
+  }
+
+  if (arr[0]) {
+    return arr[0].toUpperCase();
+  }
+
+  return null;
+};
+
+var display = function display(tz) {
+  var obj = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  //try a straight-up match
+  if (informal.hasOwnProperty(tz)) {
+    var abbr = chooseAbbrev(informal[tz], obj);
+
+    if (abbr !== null) {
+      return abbr;
+    }
+  }
+
+  var offset = String(obj.default_offset);
+  var special = handleSpecial(tz, offset);
+
+  if (special) {
+    return special;
+  }
+
+  if (obj.hemisphere === 'North' && data.greedy_north.hasOwnProperty(offset)) {
+    var useTz = data.greedy_north[offset];
+    return chooseAbbrev(informal[useTz], obj) || '';
+  }
+
+  if (obj.hemisphere === 'South' && data.greedy_south.hasOwnProperty(offset)) {
+    var _useTz = data.greedy_south[offset];
+    return chooseAbbrev(informal[_useTz], obj) || '';
+  }
+
+  return '';
+};
+
+module.exports = display;
+
+},{"../data":2,"./data":3}],5:[function(_dereq_,module,exports){
+"use strict";
+
+var lookup = _dereq_('./lookup');
+
+var display = _dereq_('./display');
+
+var version = _dereq_('../_version');
+
+module.exports = {
+  find: lookup,
+  display: display,
+  version: version
+};
+
+},{"../_version":1,"./display":4,"./lookup":6}],6:[function(_dereq_,module,exports){
+"use strict";
+
+var data = _dereq_('../data').lookup; //
+
+
+var lookup = function lookup(str) {
+  if (data.hasOwnProperty(str) === true) {
+    return data[str];
+  }
+
+  return null;
+};
+
+module.exports = lookup;
+
+},{"../data":2}]},{},[5])(5)
+});

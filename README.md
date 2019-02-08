@@ -57,6 +57,8 @@ informal.guess('EST')
 //'America/New_York'
 informal.guess('central')
 //America/Chicago'
+informal.guess('british')
+//Europe/London'
 
 informal.display('Canada/Toronto')
 /*{
