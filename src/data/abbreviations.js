@@ -72,7 +72,14 @@ const informal = {
   'Europe/London': ['gmt', 'bst', 'british'], //Britain is different
   'ETC/GMT': ['gmt', null, 'greenwich'],
   'Europe/Lisbon': ['wet', 'west', 'west europe'], //western europe
-  'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'], //Central europe
+  'Europe/Berlin': [
+    'cet',
+    'cest',
+    'central europe',
+    'middle european',
+    'met',
+    'mest'
+  ], //Central europe
   'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'], //eastern europe
   // -- these are old european ones, before the EU, i think:
   // 'europe/Minsk': ['feet', 'feest', 'eastern europe'], //further eastern europe (discontinued)
@@ -194,7 +201,7 @@ const informal = {
   'Pacific/Galapagos': ['galt'],
   'Pacific/Fiji': ['fjt', 'fjst'],
   'Asia/Dili': ['tlt', null, 'east timor'],
-  'Indian/Christmas': ['cxt'],
+  'Indian/Christmas': ['cxt']
   // sbt: 11, //Solomon islands time
   // mht: 12, //Marshall islands time
   // bit: -12, //Baker island time
@@ -234,19 +241,19 @@ const informal = {
   // vut: 11, //vanuatu time
   // wakt: 12, //wake island time
 
-//i forget (sorry!)
-// haec: 2, //Heure avancée deurope centrale french-language name for cest
-// syot: 3, //Showa station time
-// yekt: 5, //yekaterinburg time
-// sct: 4, //Seychelles time
-// orat: 5, //oral time
-// mawt: 5, //Mawson station time
-// hovt: 7, //khovd standard time
-// hovst: 8, //khovd summer time
-// davt: 7, //Davis time
-// chost: 9, //Choibalsan summer time
-// chot: 8, //Choibalsan standard time
-// wst: 8, //western standard time
+  //i forget (sorry!)
+  // haec: 2, //Heure avancée deurope centrale french-language name for cest
+  // syot: 3, //Showa station time
+  // yekt: 5, //yekaterinburg time
+  // sct: 4, //Seychelles time
+  // orat: 5, //oral time
+  // mawt: 5, //Mawson station time
+  // hovt: 7, //khovd standard time
+  // hovst: 8, //khovd summer time
+  // davt: 7, //Davis time
+  // chost: 9, //Choibalsan summer time
+  // chot: 8, //Choibalsan standard time
+  // wst: 8, //western standard time
 }
 
 //use each abbreviation as a key
@@ -257,10 +264,7 @@ const lookup = Object.keys(informal).reduce((h, k) => {
       h[arr[i]] = k
     }
   }
-  return h;
-}, {});
+  return h
+}, {})
 
-module.exports = {
-  informal: informal,
-  lookup: lookup
-}
+module.exports = lookup

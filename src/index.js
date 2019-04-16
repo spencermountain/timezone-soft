@@ -1,9 +1,9 @@
-const lookup = require('./lookup')
-const display = require('./display')
+const find = require('./find')
+// const display = require('./display')
 const version = require('../_version')
 
 module.exports = {
-  find: lookup,
-  display: display,
+  find: find,
+  // display: display
   version: version
 }
