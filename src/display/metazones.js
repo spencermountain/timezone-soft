@@ -1,7 +1,9 @@
 //from https://github.com/mj1856/TimeZoneNames
+// and from  https://github.com/nodatime/nodatime/blob/master/data/cldr/windowsZones-35.xml
+
 module.exports = {
   GMT: {
-    standard: {},
+    standard: { name: 'Greenwich Standard Time' },
     daylight: {},
     zones: [
       'Africa/Abidjan',
@@ -32,7 +34,7 @@ module.exports = {
 
   //north america
   America_Central: {
-    standard: {},
+    standard: { name: 'Central America Standard Time' },
     daylight: {},
     zones: [
       'America/Bahia_Banderas',
@@ -63,7 +65,7 @@ module.exports = {
     ]
   },
   America_Mountain: {
-    standard: {},
+    standard: { name: 'Mountain Standard Time' },
     daylight: {},
     zones: [
       'America/Boise',
@@ -81,7 +83,7 @@ module.exports = {
     ]
   },
   Atlantic: {
-    standard: {},
+    standard: { name: 'Atlantic Standard Time' },
     daylight: {},
     zones: [
       'America/Anguilla',
@@ -116,7 +118,7 @@ module.exports = {
     ]
   },
   America_Eastern: {
-    standard: {},
+    standard: { name: 'Eastern Standard Time' },
     daylight: {},
     zones: [
       'America/Cancun',
@@ -147,7 +149,7 @@ module.exports = {
     ]
   },
   America_Pacific: {
-    standard: {},
+    standard: { name: 'Pacific Standard Time' },
     daylight: {},
     zones: [
       'America/Dawson',
@@ -159,7 +161,7 @@ module.exports = {
     ]
   },
   Alaska: {
-    standard: {},
+    standard: { name: 'Alaskan Standard Time' },
     daylight: {},
     zones: [
       'America/Anchorage',
@@ -171,16 +173,21 @@ module.exports = {
     ]
   },
   Hawaii_Aleutian: {
-    standard: {},
+    standard: { name: 'Hawaiian Standard Time' },
     daylight: {},
+    alias: ['Aleutian Standard Time'],
     zones: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston']
   },
-  // Newfoundland: ['America/St_Johns'],
+  Newfoundland: {
+    standard: { name: 'Newfoundland Standard Time' },
+    zones: ['America/St_Johns']
+  },
 
   ///europe
   Europe_Central: {
-    standard: {},
+    standard: { name: 'Central Europe Standard Time' },
     daylight: {},
+    alias: ['Romance Standard Time'],
     zones: [
       'Africa/Algiers',
       'Africa/Ceuta',
@@ -220,7 +227,7 @@ module.exports = {
     ]
   },
   Europe_Eastern: {
-    standard: {},
+    standard: { name: 'Eastern Europe Standard Time' },
     daylight: {},
     zones: [
       'Africa/Cairo',
@@ -248,7 +255,7 @@ module.exports = {
     ]
   },
   Europe_Western: {
-    standard: {},
+    standard: { name: 'Western Europe Standard Time' },
     daylight: {},
     zones: [
       'Africa/Casablanca',
@@ -259,13 +266,17 @@ module.exports = {
       'Europe/Lisbon'
     ]
   },
-  // Turkey: ['Europe/Istanbul'],
+  Turkey: {
+    standard: { name: 'Turkey Standard Time' },
+    daylight: {},
+    zones: ['Europe/Istanbul']
+  },
   // Samara: ['Europe/Samara', 'Europe/Saratov'],
   // Volgograd: ['Europe/Volgograd'],
 
   //africa
   Africa_Eastern: {
-    standard: {},
+    standard: { name: 'East Africa Standard Time' },
     daylight: {},
     zones: [
       'Africa/Addis_Ababa',
@@ -282,7 +293,7 @@ module.exports = {
     ]
   },
   Africa_Western: {
-    standard: {},
+    standard: { name: 'West Central Africa Standard Time' },
     daylight: {},
     zones: [
       'Africa/Bangui',
@@ -299,7 +310,7 @@ module.exports = {
     ]
   },
   Africa_Central: {
-    standard: {},
+    standard: { name: 'Central Africa Time' },
     daylight: {},
     zones: [
       'Africa/Blantyre',
@@ -315,19 +326,19 @@ module.exports = {
     ]
   },
   Africa_Southern: {
-    standard: {},
+    standard: { name: 'South Africa Standard Time' },
     daylight: {},
     zones: ['Africa/Johannesburg', 'Africa/Maseru', 'Africa/Mbabane']
   },
 
   //australia
   Australia_Central: {
-    standard: {},
+    standard: { name: 'Central Australia Standard Time' },
     daylight: {},
     zones: ['Australia/Adelaide', 'Australia/Broken_Hill', 'Australia/Darwin']
   },
   Australia_Eastern: {
-    standard: {},
+    standard: { name: 'Eastern Australia Standard Time' },
     daylight: {},
     zones: [
       'Australia/Brisbane',
@@ -339,12 +350,12 @@ module.exports = {
     ]
   },
   Australia_Western: {
-    standard: {},
+    standard: { name: 'Western Australia Standard Time' },
     daylight: {},
     zones: ['Antarctica/Casey', 'Australia/Perth']
   },
   Australia_CentralWestern: {
-    standard: {},
+    standard: { name: 'Australia Central Western Standard Time' },
     daylight: {},
     zones: ['Australia/Eucla']
   },
@@ -352,7 +363,7 @@ module.exports = {
 
   //russia
   Moscow: {
-    standard: {},
+    standard: { name: 'Russian Standard Time' },
     daylight: {},
     zones: [
       'Europe/Astrakhan',
@@ -366,7 +377,7 @@ module.exports = {
 
   //south america
   Brasilia: {
-    standard: {},
+    standard: { name: '' },
     daylight: {},
     zones: [
       'America/Araguaina',
@@ -380,7 +391,7 @@ module.exports = {
     ]
   },
   Argentina: {
-    standard: {},
+    standard: { name: '' },
     daylight: {},
     zones: [
       'America/Argentina/La_Rioja',
@@ -397,7 +408,7 @@ module.exports = {
     ]
   },
   Amazon: {
-    standard: {},
+    standard: { name: '' },
     daylight: {},
     zones: [
       'America/Boa_Vista',
@@ -408,7 +419,7 @@ module.exports = {
     ]
   },
   Mexico_Pacific: {
-    standard: {},
+    standard: { name: '' },
     daylight: {},
     zones: ['America/Chihuahua', 'America/Hermosillo', 'America/Mazatlan']
   },
@@ -442,19 +453,44 @@ module.exports = {
 
   //middle-east
   Arabian: {
-    standard: {},
+    standard: { name: 'Arabic Standard Time' },
     daylight: {},
     zones: ['Asia/Aden', 'Asia/Baghdad', 'Asia/Bahrain', 'Asia/Kuwait', 'Asia/Qatar', 'Asia/Riyadh']
+  },
+  Iran: {
+    standard: { name: 'Iran Standard Time' },
+    daylight: {},
+    zones: ['Asia/Tehran']
+  },
+  Pakistan: {
+    standard: { name: 'Pakistan Standard Time' },
+    daylight: {},
+    zones: ['Asia/Karachi']
+  },
+  India: {
+    standard: { name: 'India Standard Time' },
+    daylight: {},
+    zones: ['Asia/Calcutta', 'Asia/Colombo']
+  },
+  Indochina: {
+    standard: { name: 'South East Asia Standard Time' },
+    daylight: {},
+    alias: ['indochina'],
+    zones: ['Asia/Bangkok', 'Asia/Phnom_Penh', 'Asia/Saigon', 'Asia/Vientiane']
+  },
+  China: {
+    standard: { name: 'China Standard Time' },
+    daylight: {},
+    zones: ['Asia/Macau', 'Asia/Shanghai']
   }
+
   // Kazakhstan_Eastern: ['Asia/Almaty', 'Asia/Qostanay'],
   // Anadyr: ['Asia/Anadyr'],
   // Kazakhstan_Western: ['Asia/Aqtau', 'Asia/Aqtobe', 'Asia/Atyrau', 'Asia/Oral', 'Asia/Qyzylorda'],
   // Turkmenistan: ['Asia/Ashgabat'],
   // Azerbaijan: ['Asia/Baku'],
-  // Indochina: ['Asia/Bangkok', 'Asia/Phnom_Penh', 'Asia/Saigon', 'Asia/Vientiane'],
   // Kyrgystan: ['Asia/Bishkek'],
   // Brunei: ['Asia/Brunei'],
-  // India: ['Asia/Calcutta', 'Asia/Colombo'],
   // Yakutsk: ['Asia/Chita', 'Asia/Khandyga', 'Asia/Yakutsk'],
   // Choibalsan: ['Asia/Choibalsan'],
   // Bangladesh: ['Asia/Dhaka'],
@@ -469,11 +505,9 @@ module.exports = {
   // Israel: ['Asia/Jerusalem'],
   // Afghanistan: ['Asia/Kabul'],
   // Kamchatka: ['Asia/Kamchatka'],
-  // Pakistan: ['Asia/Karachi'],
   // Nepal: ['Asia/Katmandu'],
   // Krasnoyarsk: ['Asia/Krasnoyarsk', 'Asia/Novokuznetsk', 'Asia/Barnaul'],
   // Malaysia: ['Asia/Kuala_Lumpur', 'Asia/Kuching'],
-  // China: ['Asia/Macau', 'Asia/Shanghai'],
   // Magadan: ['Asia/Magadan'],
   // Indonesia_Central: ['Asia/Makassar'],
   // Philippines: ['Asia/Manila'],
@@ -487,7 +521,7 @@ module.exports = {
   // Srednekolymsk: ['Asia/Srednekolymsk'],
   // Taipei: ['Asia/Taipei'],
   // Georgia: ['Asia/Tbilisi'],
-  // Iran: ['Asia/Tehran'],
+
   // Bhutan: ['Asia/Thimphu'],
   // Japan: ['Asia/Tokyo'],
   // Mongolia: ['Asia/Ulaanbaatar'],
