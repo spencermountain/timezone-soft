@@ -1,22 +1,26 @@
-const abbreviations = require('../data/abbreviations')
-const iana = require('../data/iana')
+const lookup = require('../../data/')
 //
-const lookup = function(str) {
+const find = function(str) {
   if (!str) {
     return null
   }
   str = str.toLowerCase().trim()
   //lookup known abbreviations
-  if (abbreviations.hasOwnProperty(str)) {
-    return abbreviations[str]
+  if (lookup.hasOwnProperty(str)) {
+    return lookup[str]
   }
 
   //start fuzzy-match against iana timezones
-  str = str.replace(/( standard| daylight)? time$/, '')
-  if (iana.hasOwnProperty(str)) {
-    return iana[str]
+  let tmp = str.replace(/( standard| daylight)? time$/, '')
+  if (lookup.hasOwnProperty(tmp)) {
+    return lookup[tmp]
+  }
+  // 'eastern daylight'
+  tmp = str + ' time'
+  if (lookup.hasOwnProperty(tmp)) {
+    return lookup[tmp]
   }
 
   return null
 }
-module.exports = lookup
+module.exports = find

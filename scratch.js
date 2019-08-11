@@ -1,13 +1,6 @@
-// const informal = require('./src/index')
+const informal = require('./src/index')
 
 // http://cldr.unicode.org/
-
-const oldZones = require('./data/04-oldZones.js/index.js')
-let obj = {}
-oldZones.forEach(arr => {
-  obj[arr[1]] = arr[0]
-})
-console.log(JSON.stringify(obj, null, 2))
 
 // let str = `Europe/London`
 // let str = `cest`
@@ -25,6 +18,6 @@ console.log(JSON.stringify(obj, null, 2))
 // let str = `japan`
 // let str = `the South Sandwich Islands`
 
-// console.log(informal.find('cest'))
+console.log(informal.find('cest'))
 // console.log(informal.find('Europe/London'))
 // console.log(informal.find('south africa'))
