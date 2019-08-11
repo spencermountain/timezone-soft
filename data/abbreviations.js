@@ -124,7 +124,7 @@ const informal = {
   //Africa
   'Africa/Lagos': ['wat', 'wast', 'west africa'], //west african
   'Africa/Khartoum': ['cat', null, 'central africa'],
-  'vfrica/Nairobi': ['eat', null, 'east africa'],
+  'Africa/Nairobi': ['eat', null, 'east africa'],
   'Atlantic/Cape_Verde': ['cvt'],
   'Indian/Mauritius': ['mut'],
   'Indian/Reunion': ['ret'],
