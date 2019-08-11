@@ -490,16 +490,7 @@ const iana = {
     'wallis',
     'yap'
   ],
-  etc: [
-    'gmt',
-    'gmt+0',
-    'gmt-0',
-    'gmt0',
-    'greenwich',
-    'utc',
-    'universal',
-    'zulu'
-  ]
+  etc: ['gmt', 'gmt+0', 'gmt-0', 'gmt0', 'greenwich', 'utc', 'universal', 'zulu']
 }
 
 const titlecase = str => str.charAt(0).toUpperCase() + str.slice(1)
@@ -513,4 +504,5 @@ Object.keys(iana).forEach(k => {
     zones[lowerCase] = final
   })
 })
+console.log(zones)
 module.exports = zones

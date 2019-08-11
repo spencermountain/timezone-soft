@@ -55,6 +55,7 @@ fs.writeFileSync('./judgement.js', JSON.stringify(countries, null, 2))
 // let str = `Central - NU (Resolute)`
 // let str = `West Africa Time`
 // let str = `japan`
+// let str = `the South Sandwich Islands`
 
 // console.log(informal.find('cest'))
 // console.log(informal.find('Europe/London'))

@@ -1,1610 +1,968 @@
-
-// https://github.com/tzinfo/tzinfo/blob/50839800a09aa51b29895c3e6b1869c5fced8be7/test/tzinfo-data1/tzinfo/data/indexes/countries.rb
-// if a country has one timezone, it is an alias
 module.exports = {
-  "Europe/Andorra": {
-    "countryCode": "AD",
-    "country": "Andorra"
-  },
-  "Asia/Dubai": {
-    "countryCode": "OM",
-    "country": "Oman"
-  },
-  "Asia/Kabul": {
-    "countryCode": "AF",
-    "country": "Afghanistan"
-  },
-  "America/Port_of_Spain": {
-    "countryCode": "VI",
-    "country": "Virgin Islands (US)"
-  },
-  "Europe/Tirane": {
-    "countryCode": "AL",
-    "country": "Albania"
-  },
-  "Asia/Yerevan": {
-    "countryCode": "AM",
-    "country": "Armenia"
-  },
-  "Africa/Lagos": {
-    "countryCode": "NG",
-    "country": "Nigeria",
-    "desc": [
-      "West Africa Time"
-    ]
-  },
-  "Antarctica/Casey": {
-    "desc": [
-      "Casey"
-    ]
-  },
-  "Antarctica/Davis": {
-    "desc": [
-      "Davis"
-    ]
-  },
-  "Antarctica/DumontDUrville": {
-    "desc": [
-      "Dumont-d'Urville"
-    ]
-  },
-  "Antarctica/Mawson": {
-    "desc": [
-      "Mawson"
-    ]
-  },
-  "Antarctica/Palmer": {
-    "desc": [
-      "Palmer"
-    ]
-  },
-  "Antarctica/Rothera": {
-    "desc": [
-      "Rothera"
-    ]
-  },
-  "Antarctica/Syowa": {
-    "desc": [
-      "Syowa"
-    ]
-  },
-  "Antarctica/Troll": {
-    "desc": [
-      "Troll"
-    ]
-  },
-  "Antarctica/Vostok": {
-    "desc": [
-      "Vostok"
-    ]
-  },
-  "Pacific/Auckland": {
-    "desc": [
-      "New Zealand time"
-    ]
-  },
-  "America/Argentina/Buenos_Aires": {
-    "desc": [
-      "Buenos Aires (BA, CF)"
-    ]
-  },
-  "America/Argentina/Cordoba": {
-    "desc": [
-      "Argentina (most areas: CB, CC, CN, ER, FM, MN, SE, SF)"
-    ]
-  },
-  "America/Argentina/Salta": {
-    "desc": [
-      "Salta (SA, LP, NQ, RN)"
-    ]
-  },
-  "America/Argentina/Jujuy": {
-    "desc": [
-      "Jujuy (JY)"
-    ]
-  },
-  "America/Argentina/Tucuman": {
-    "desc": [
-      "Tucumán (TM)"
-    ]
-  },
-  "America/Argentina/Catamarca": {
-    "desc": [
-      "Catamarca (CT); Chubut (CH)"
-    ]
-  },
-  "America/Argentina/La_Rioja": {
-    "desc": [
-      "La Rioja (LR)"
-    ]
-  },
-  "America/Argentina/San_Juan": {
-    "desc": [
-      "San Juan (SJ)"
-    ]
-  },
-  "America/Argentina/Mendoza": {
-    "desc": [
-      "Mendoza (MZ)"
-    ]
-  },
-  "America/Argentina/San_Luis": {
-    "desc": [
-      "San Luis (SL)"
-    ]
-  },
-  "America/Argentina/Rio_Gallegos": {
-    "desc": [
-      "Santa Cruz (SC)"
-    ]
-  },
-  "America/Argentina/Ushuaia": {
-    "desc": [
-      "Tierra del Fuego (TF)"
-    ]
-  },
-  "Pacific/Pago_Pago": {
-    "desc": [
-      "Samoa, Midway"
-    ]
-  },
-  "Europe/Vienna": {
-    "countryCode": "AT",
-    "country": "Austria"
-  },
-  "Australia/Lord_Howe": {
-    "desc": [
-      "Lord Howe Island"
-    ]
-  },
-  "Antarctica/Macquarie": {
-    "desc": [
-      "Macquarie Island"
-    ]
-  },
-  "Australia/Hobart": {
-    "desc": [
-      "Tasmania (most areas)"
-    ]
-  },
-  "Australia/Currie": {
-    "desc": [
-      "Tasmania (King Island)"
-    ]
-  },
-  "Australia/Melbourne": {
-    "desc": [
-      "Victoria"
-    ]
-  },
-  "Australia/Sydney": {
-    "desc": [
-      "New South Wales (most areas)"
-    ]
-  },
-  "Australia/Broken_Hill": {
-    "desc": [
-      "New South Wales (Yancowinna)"
-    ]
-  },
-  "Australia/Brisbane": {
-    "desc": [
-      "Queensland (most areas)"
-    ]
-  },
-  "Australia/Lindeman": {
-    "desc": [
-      "Queensland (Whitsunday Islands)"
-    ]
-  },
-  "Australia/Adelaide": {
-    "desc": [
-      "South Australia"
-    ]
-  },
-  "Australia/Darwin": {
-    "desc": [
-      "Northern Territory"
-    ]
-  },
-  "Australia/Perth": {
-    "desc": [
-      "Western Australia (most areas)"
-    ]
-  },
-  "Australia/Eucla": {
-    "desc": [
-      "Western Australia (Eucla)"
-    ]
-  },
-  "America/Curacao": {
-    "countryCode": "SX",
-    "country": "St Maarten (Dutch)"
-  },
-  "Europe/Helsinki": {
-    "countryCode": "FI",
-    "country": "Finland"
-  },
-  "Asia/Baku": {
-    "countryCode": "AZ",
-    "country": "Azerbaijan"
-  },
-  "Europe/Belgrade": {
-    "countryCode": "SI",
-    "country": "Slovenia"
-  },
-  "America/Barbados": {
-    "countryCode": "BB",
-    "country": "Barbados"
-  },
-  "Asia/Dhaka": {
-    "countryCode": "BD",
-    "country": "Bangladesh"
-  },
-  "Europe/Brussels": {
-    "countryCode": "BE",
-    "country": "Belgium"
-  },
-  "Africa/Abidjan": {
-    "countryCode": "TG",
-    "country": "Togo"
-  },
-  "Europe/Sofia": {
-    "countryCode": "BG",
-    "country": "Bulgaria"
-  },
-  "Asia/Qatar": {
-    "countryCode": "QA",
-    "country": "Qatar"
-  },
-  "Africa/Maputo": {
-    "countryCode": "ZW",
-    "country": "Zimbabwe",
-    "desc": [
-      "Central Africa Time"
-    ]
-  },
-  "Atlantic/Bermuda": {
-    "countryCode": "BM",
-    "country": "Bermuda"
-  },
-  "Asia/Brunei": {
-    "countryCode": "BN",
-    "country": "Brunei"
-  },
-  "America/La_Paz": {
-    "countryCode": "BO",
-    "country": "Bolivia"
-  },
-  "America/Noronha": {
-    "desc": [
-      "Atlantic islands"
-    ]
-  },
-  "America/Belem": {
-    "desc": [
-      "Pará (east); Amapá"
-    ]
-  },
-  "America/Fortaleza": {
-    "desc": [
-      "Brazil (northeast: MA, PI, CE, RN, PB)"
-    ]
-  },
-  "America/Recife": {
-    "desc": [
-      "Pernambuco"
-    ]
-  },
-  "America/Araguaina": {
-    "desc": [
-      "Tocantins"
-    ]
-  },
-  "America/Maceio": {
-    "desc": [
-      "Alagoas, Sergipe"
-    ]
-  },
-  "America/Bahia": {
-    "desc": [
-      "Bahia"
-    ]
-  },
-  "America/Sao_Paulo": {
-    "desc": [
-      "Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)"
-    ]
-  },
-  "America/Campo_Grande": {
-    "desc": [
-      "Mato Grosso do Sul"
-    ]
-  },
-  "America/Cuiaba": {
-    "desc": [
-      "Mato Grosso"
-    ]
-  },
-  "America/Santarem": {
-    "desc": [
-      "Pará (west)"
-    ]
-  },
-  "America/Porto_Velho": {
-    "desc": [
-      "Rondônia"
-    ]
-  },
-  "America/Boa_Vista": {
-    "desc": [
-      "Roraima"
-    ]
-  },
-  "America/Manaus": {
-    "desc": [
-      "Amazonas (east)"
-    ]
-  },
-  "America/Eirunepe": {
-    "desc": [
-      "Amazonas (west)"
-    ]
-  },
-  "America/Rio_Branco": {
-    "desc": [
-      "Acre"
-    ]
-  },
-  "America/Nassau": {
-    "countryCode": "BS",
-    "country": "Bahamas"
-  },
-  "Asia/Thimphu": {
-    "countryCode": "BT",
-    "country": "Bhutan"
-  },
-  "Europe/Minsk": {
-    "countryCode": "BY",
-    "country": "Belarus"
-  },
-  "America/Belize": {
-    "countryCode": "BZ",
-    "country": "Belize"
-  },
-  "America/St_Johns": {
-    "desc": [
-      "Newfoundland; Labrador (southeast)"
-    ]
-  },
-  "America/Halifax": {
-    "desc": [
-      "Atlantic - NS (most areas); PE"
-    ]
-  },
-  "America/Glace_Bay": {
-    "desc": [
-      "Atlantic - NS (Cape Breton)"
-    ]
-  },
-  "America/Moncton": {
-    "desc": [
-      "Atlantic - New Brunswick"
-    ]
-  },
-  "America/Goose_Bay": {
-    "desc": [
-      "Atlantic - Labrador (most areas)"
-    ]
-  },
-  "America/Blanc-Sablon": {
-    "desc": [
-      "AST - QC (Lower North Shore)"
-    ]
-  },
-  "America/Toronto": {
-    "desc": [
-      "Eastern - ON, QC (most areas)"
-    ]
-  },
-  "America/Nipigon": {
-    "desc": [
-      "Eastern - ON, QC (no DST 1967-73)"
-    ]
-  },
-  "America/Thunder_Bay": {
-    "desc": [
-      "Eastern - ON (Thunder Bay)"
-    ]
-  },
-  "America/Iqaluit": {
-    "desc": [
-      "Eastern - NU (most east areas)"
-    ]
-  },
-  "America/Pangnirtung": {
-    "desc": [
-      "Eastern - NU (Pangnirtung)"
-    ]
-  },
-  "America/Atikokan": {
-    "desc": [
-      "EST - ON (Atikokan); NU (Coral H)"
-    ]
-  },
-  "America/Winnipeg": {
-    "desc": [
-      "Central - ON (west); Manitoba"
-    ]
-  },
-  "America/Rainy_River": {
-    "desc": [
-      "Central - ON (Rainy R, Ft Frances)"
-    ]
-  },
-  "America/Resolute": {
-    "desc": [
-      "Central - NU (Resolute)"
-    ]
-  },
-  "America/Rankin_Inlet": {
-    "desc": [
-      "Central - NU (central)"
-    ]
-  },
-  "America/Regina": {
-    "desc": [
-      "CST - SK (most areas)"
-    ]
-  },
-  "America/Swift_Current": {
-    "desc": [
-      "CST - SK (midwest)"
-    ]
-  },
-  "America/Edmonton": {
-    "desc": [
-      "Mountain - AB; BC (E); SK (W)"
-    ]
-  },
-  "America/Cambridge_Bay": {
-    "desc": [
-      "Mountain - NU (west)"
-    ]
-  },
-  "America/Yellowknife": {
-    "desc": [
-      "Mountain - NT (central)"
-    ]
-  },
-  "America/Inuvik": {
-    "desc": [
-      "Mountain - NT (west)"
-    ]
-  },
-  "America/Creston": {
-    "desc": [
-      "MST - BC (Creston)"
-    ]
-  },
-  "America/Dawson_Creek": {
-    "desc": [
-      "MST - BC (Dawson Cr, Ft St John)"
-    ]
-  },
-  "America/Fort_Nelson": {
-    "desc": [
-      "MST - BC (Ft Nelson)"
-    ]
-  },
-  "America/Vancouver": {
-    "desc": [
-      "Pacific - BC (most areas)"
-    ]
-  },
-  "America/Whitehorse": {
-    "desc": [
-      "Pacific - Yukon (south)"
-    ]
-  },
-  "America/Dawson": {
-    "desc": [
-      "Pacific - Yukon (north)"
-    ]
-  },
-  "Indian/Cocos": {
-    "countryCode": "CC",
-    "country": "Cocos (Keeling) Islands"
-  },
-  "Europe/Zurich": {
-    "countryCode": "LI",
-    "country": "Liechtenstein",
-    "desc": [
-      "Swiss time"
-    ]
-  },
-  "Pacific/Rarotonga": {
-    "countryCode": "CK",
-    "country": "Cook Islands"
-  },
-  "America/Santiago": {
-    "desc": [
-      "Chile (most areas)"
-    ]
-  },
-  "America/Punta_Arenas": {
-    "desc": [
-      "Region of Magallanes"
-    ]
-  },
-  "Pacific/Easter": {
-    "desc": [
-      "Easter Island"
-    ]
-  },
-  "Asia/Shanghai": {
-    "desc": [
-      "Beijing Time"
-    ]
-  },
-  "Asia/Urumqi": {
-    "desc": [
-      "Xinjiang Time"
-    ]
-  },
-  "America/Bogota": {
-    "countryCode": "CO",
-    "country": "Colombia"
-  },
-  "America/Costa_Rica": {
-    "countryCode": "CR",
-    "country": "Costa Rica"
-  },
-  "America/Havana": {
-    "countryCode": "CU",
-    "country": "Cuba"
-  },
-  "Atlantic/Cape_Verde": {
-    "countryCode": "CV",
-    "country": "Cape Verde"
-  },
-  "Indian/Christmas": {
-    "countryCode": "CX",
-    "country": "Christmas Island"
-  },
-  "Asia/Nicosia": {
-    "desc": [
-      "Cyprus (most areas)"
-    ]
-  },
-  "Asia/Famagusta": {
-    "desc": [
-      "Northern Cyprus"
-    ]
-  },
-  "Europe/Prague": {
-    "countryCode": "SK",
-    "country": "Slovakia"
-  },
-  "Europe/Berlin": {
-    "desc": [
-      "Germany (most areas)"
-    ]
-  },
-  "Africa/Nairobi": {
-    "countryCode": "YT",
-    "country": "Mayotte"
-  },
-  "Europe/Copenhagen": {
-    "countryCode": "DK",
-    "country": "Denmark"
-  },
-  "America/Santo_Domingo": {
-    "countryCode": "DO",
-    "country": "Dominican Republic"
-  },
-  "Africa/Algiers": {
-    "countryCode": "DZ",
-    "country": "Algeria"
-  },
-  "America/Guayaquil": {
-    "desc": [
-      "Ecuador (mainland)"
-    ]
-  },
-  "Pacific/Galapagos": {
-    "desc": [
-      "Galápagos Islands"
-    ]
-  },
-  "Europe/Tallinn": {
-    "countryCode": "EE",
-    "country": "Estonia"
-  },
-  "Africa/Cairo": {
-    "countryCode": "EG",
-    "country": "Egypt"
-  },
-  "Africa/El_Aaiun": {
-    "countryCode": "EH",
-    "country": "Western Sahara"
-  },
-  "Europe/Madrid": {
-    "desc": [
-      "Spain (mainland)"
-    ]
-  },
-  "Africa/Ceuta": {
-    "desc": [
-      "Ceuta, Melilla"
-    ]
-  },
-  "Atlantic/Canary": {
-    "desc": [
-      "Canary Islands"
-    ]
-  },
-  "Pacific/Fiji": {
-    "countryCode": "FJ",
-    "country": "Fiji"
-  },
-  "Atlantic/Stanley": {
-    "countryCode": "FK",
-    "country": "Falkland Islands"
-  },
-  "Pacific/Chuuk": {
-    "desc": [
-      "Chuuk/Truk, Yap"
-    ]
-  },
-  "Pacific/Pohnpei": {
-    "desc": [
-      "Pohnpei/Ponape"
-    ]
-  },
-  "Pacific/Kosrae": {
-    "desc": [
-      "Kosrae"
-    ]
-  },
-  "Atlantic/Faroe": {
-    "countryCode": "FO",
-    "country": "Faroe Islands"
-  },
-  "Europe/Paris": {
-    "countryCode": "FR",
-    "country": "France"
-  },
-  "Europe/London": {
-    "countryCode": "JE",
-    "country": "Jersey"
-  },
-  "Asia/Tbilisi": {
-    "countryCode": "GE",
-    "country": "Georgia"
-  },
-  "America/Cayenne": {
-    "countryCode": "GF",
-    "country": "French Guiana"
-  },
-  "Africa/Accra": {
-    "countryCode": "GH",
-    "country": "Ghana"
-  },
-  "Europe/Gibraltar": {
-    "countryCode": "GI",
-    "country": "Gibraltar"
-  },
-  "America/Godthab": {
-    "desc": [
-      "Greenland (most areas)"
-    ]
-  },
-  "America/Danmarkshavn": {
-    "desc": [
-      "National Park (east coast)"
-    ]
-  },
-  "America/Scoresbysund": {
-    "desc": [
-      "Scoresbysund/Ittoqqortoormiit"
-    ]
-  },
-  "America/Thule": {
-    "desc": [
-      "Thule/Pituffik"
-    ]
-  },
-  "Europe/Athens": {
-    "countryCode": "GR",
-    "country": "Greece"
-  },
-  "Atlantic/South_Georgia": {
-    "countryCode": "GS",
-    "country": "South Georgia & the South Sandwich Islands"
-  },
-  "America/Guatemala": {
-    "countryCode": "GT",
-    "country": "Guatemala"
-  },
-  "Pacific/Guam": {
-    "countryCode": "MP",
-    "country": "Northern Mariana Islands"
-  },
-  "Africa/Bissau": {
-    "countryCode": "GW",
-    "country": "Guinea-Bissau"
-  },
-  "America/Guyana": {
-    "countryCode": "GY",
-    "country": "Guyana"
-  },
-  "Asia/Hong_Kong": {
-    "countryCode": "HK",
-    "country": "Hong Kong"
-  },
-  "America/Tegucigalpa": {
-    "countryCode": "HN",
-    "country": "Honduras"
-  },
-  "America/Port-au-Prince": {
-    "countryCode": "HT",
-    "country": "Haiti"
-  },
-  "Europe/Budapest": {
-    "countryCode": "HU",
-    "country": "Hungary"
-  },
-  "Asia/Jakarta": {
-    "desc": [
-      "Java, Sumatra"
-    ]
-  },
-  "Asia/Pontianak": {
-    "desc": [
-      "Borneo (west, central)"
-    ]
-  },
-  "Asia/Makassar": {
-    "desc": [
-      "Borneo (east, south); Sulawesi/Celebes, Bali, Nusa Tengarra; Timor (west)"
-    ]
-  },
-  "Asia/Jayapura": {
-    "desc": [
-      "New Guinea (West Papua / Irian Jaya); Malukus/Moluccas"
-    ]
-  },
-  "Europe/Dublin": {
-    "countryCode": "IE",
-    "country": "Ireland"
-  },
-  "Asia/Jerusalem": {
-    "countryCode": "IL",
-    "country": "Israel"
-  },
-  "Asia/Kolkata": {
-    "countryCode": "IN",
-    "country": "India"
-  },
-  "Indian/Chagos": {
-    "countryCode": "IO",
-    "country": "British Indian Ocean Territory"
-  },
-  "Asia/Baghdad": {
-    "countryCode": "IQ",
-    "country": "Iraq"
-  },
-  "Asia/Tehran": {
-    "countryCode": "IR",
-    "country": "Iran"
-  },
-  "Atlantic/Reykjavik": {
-    "countryCode": "IS",
-    "country": "Iceland"
-  },
-  "Europe/Rome": {
-    "countryCode": "VA",
-    "country": "Vatican City"
-  },
-  "America/Jamaica": {
-    "countryCode": "JM",
-    "country": "Jamaica"
-  },
-  "Asia/Amman": {
-    "countryCode": "JO",
-    "country": "Jordan"
-  },
-  "Asia/Tokyo": {
-    "countryCode": "JP",
-    "country": "Japan"
-  },
-  "Asia/Bishkek": {
-    "countryCode": "KG",
-    "country": "Kyrgyzstan"
-  },
-  "Asia/Bangkok": {
-    "desc": [
-      "Indochina (most areas)"
-    ]
-  },
-  "Pacific/Tarawa": {
-    "desc": [
-      "Gilbert Islands"
-    ]
-  },
-  "Pacific/Enderbury": {
-    "desc": [
-      "Phoenix Islands"
-    ]
-  },
-  "Pacific/Kiritimati": {
-    "desc": [
-      "Line Islands"
-    ]
-  },
-  "Asia/Pyongyang": {
-    "countryCode": "KP",
-    "country": "Korea (North)"
-  },
-  "Asia/Seoul": {
-    "countryCode": "KR",
-    "country": "Korea (South)"
-  },
-  "Asia/Riyadh": {
-    "countryCode": "YE",
-    "country": "Yemen"
-  },
-  "America/Panama": {
-    "countryCode": "PA",
-    "country": "Panama"
-  },
-  "Asia/Almaty": {
-    "desc": [
-      "Kazakhstan (most areas)"
-    ]
-  },
-  "Asia/Qyzylorda": {
-    "desc": [
-      "Qyzylorda/Kyzylorda/Kzyl-Orda"
-    ]
-  },
-  "Asia/Aqtobe": {
-    "desc": [
-      "Aqtöbe/Aktobe"
-    ]
-  },
-  "Asia/Aqtau": {
-    "desc": [
-      "Mangghystaū/Mankistau"
-    ]
-  },
-  "Asia/Atyrau": {
-    "desc": [
-      "Atyraū/Atirau/Gur'yev"
-    ]
-  },
-  "Asia/Oral": {
-    "desc": [
-      "West Kazakhstan"
-    ]
-  },
-  "Asia/Beirut": {
-    "countryCode": "LB",
-    "country": "Lebanon"
-  },
-  "Asia/Colombo": {
-    "countryCode": "LK",
-    "country": "Sri Lanka"
-  },
-  "Africa/Monrovia": {
-    "countryCode": "LR",
-    "country": "Liberia"
-  },
-  "Africa/Johannesburg": {
-    "countryCode": "ZA",
-    "country": "South Africa"
-  },
-  "Europe/Vilnius": {
-    "countryCode": "LT",
-    "country": "Lithuania"
-  },
-  "Europe/Luxembourg": {
-    "countryCode": "LU",
-    "country": "Luxembourg"
-  },
-  "Europe/Riga": {
-    "countryCode": "LV",
-    "country": "Latvia"
-  },
-  "Africa/Tripoli": {
-    "countryCode": "LY",
-    "country": "Libya"
-  },
-  "Africa/Casablanca": {
-    "countryCode": "MA",
-    "country": "Morocco"
-  },
-  "Europe/Monaco": {
-    "countryCode": "MC",
-    "country": "Monaco"
-  },
-  "Europe/Chisinau": {
-    "countryCode": "MD",
-    "country": "Moldova"
-  },
-  "Pacific/Majuro": {
-    "desc": [
-      "Marshall Islands (most areas)"
-    ]
-  },
-  "Pacific/Kwajalein": {
-    "desc": [
-      "Kwajalein"
-    ]
-  },
-  "Asia/Yangon": {
-    "countryCode": "MM",
-    "country": "Myanmar (Burma)"
-  },
-  "Asia/Ulaanbaatar": {
-    "desc": [
-      "Mongolia (most areas)"
-    ]
-  },
-  "Asia/Hovd": {
-    "desc": [
-      "Bayan-Ölgii, Govi-Altai, Hovd, Uvs, Zavkhan"
-    ]
-  },
-  "Asia/Choibalsan": {
-    "desc": [
-      "Dornod, Sükhbaatar"
-    ]
-  },
-  "Asia/Macau": {
-    "countryCode": "MO",
-    "country": "Macau"
-  },
-  "America/Martinique": {
-    "countryCode": "MQ",
-    "country": "Martinique"
-  },
-  "Europe/Malta": {
-    "countryCode": "MT",
-    "country": "Malta"
-  },
-  "Indian/Mauritius": {
-    "countryCode": "MU",
-    "country": "Mauritius"
-  },
-  "Indian/Maldives": {
-    "countryCode": "MV",
-    "country": "Maldives"
-  },
-  "America/Mexico_City": {
-    "desc": [
-      "Central Time"
-    ]
-  },
-  "America/Cancun": {
-    "desc": [
-      "Eastern Standard Time - Quintana Roo"
-    ]
-  },
-  "America/Merida": {
-    "desc": [
-      "Central Time - Campeche, Yucatán"
-    ]
-  },
-  "America/Monterrey": {
-    "desc": [
-      "Central Time - Durango; Coahuila, Nuevo León, Tamaulipas (most areas)"
-    ]
-  },
-  "America/Matamoros": {
-    "desc": [
-      "Central Time US - Coahuila, Nuevo León, Tamaulipas (US border)"
-    ]
-  },
-  "America/Mazatlan": {
-    "desc": [
-      "Mountain Time - Baja California Sur, Nayarit, Sinaloa"
-    ]
-  },
-  "America/Chihuahua": {
-    "desc": [
-      "Mountain Time - Chihuahua (most areas)"
-    ]
-  },
-  "America/Ojinaga": {
-    "desc": [
-      "Mountain Time US - Chihuahua (US border)"
-    ]
-  },
-  "America/Hermosillo": {
-    "desc": [
-      "Mountain Standard Time - Sonora"
-    ]
-  },
-  "America/Tijuana": {
-    "desc": [
-      "Pacific Time US - Baja California"
-    ]
-  },
-  "America/Bahia_Banderas": {
-    "desc": [
-      "Central Time - Bahía de Banderas"
-    ]
-  },
-  "Asia/Kuala_Lumpur": {
-    "desc": [
-      "Malaysia (peninsula)"
-    ]
-  },
-  "Asia/Kuching": {
-    "desc": [
-      "Sabah, Sarawak"
-    ]
-  },
-  "Africa/Windhoek": {
-    "countryCode": "NA",
-    "country": "Namibia"
-  },
-  "Pacific/Noumea": {
-    "countryCode": "NC",
-    "country": "New Caledonia"
-  },
-  "Pacific/Norfolk": {
-    "countryCode": "NF",
-    "country": "Norfolk Island"
-  },
-  "America/Managua": {
-    "countryCode": "NI",
-    "country": "Nicaragua"
-  },
-  "Europe/Amsterdam": {
-    "countryCode": "NL",
-    "country": "Netherlands"
-  },
-  "Europe/Oslo": {
-    "countryCode": "SJ",
-    "country": "Svalbard & Jan Mayen"
-  },
-  "Asia/Kathmandu": {
-    "countryCode": "NP",
-    "country": "Nepal"
-  },
-  "Pacific/Nauru": {
-    "countryCode": "NR",
-    "country": "Nauru"
-  },
-  "Pacific/Niue": {
-    "countryCode": "NU",
-    "country": "Niue"
-  },
-  "Pacific/Chatham": {
-    "desc": [
-      "Chatham Islands"
-    ]
-  },
-  "America/Lima": {
-    "countryCode": "PE",
-    "country": "Peru"
-  },
-  "Pacific/Tahiti": {
-    "desc": [
-      "Society Islands"
-    ]
-  },
-  "Pacific/Marquesas": {
-    "desc": [
-      "Marquesas Islands"
-    ]
-  },
-  "Pacific/Gambier": {
-    "desc": [
-      "Gambier Islands"
-    ]
-  },
-  "Pacific/Port_Moresby": {
-    "desc": [
-      "Papua New Guinea (most areas)"
-    ]
-  },
-  "Pacific/Bougainville": {
-    "desc": [
-      "Bougainville"
-    ]
-  },
-  "Asia/Manila": {
-    "countryCode": "PH",
-    "country": "Philippines"
-  },
-  "Asia/Karachi": {
-    "countryCode": "PK",
-    "country": "Pakistan"
-  },
-  "Europe/Warsaw": {
-    "countryCode": "PL",
-    "country": "Poland"
-  },
-  "America/Miquelon": {
-    "countryCode": "PM",
-    "country": "St Pierre & Miquelon"
-  },
-  "Pacific/Pitcairn": {
-    "countryCode": "PN",
-    "country": "Pitcairn"
-  },
-  "America/Puerto_Rico": {
-    "countryCode": "PR",
-    "country": "Puerto Rico"
-  },
-  "Asia/Gaza": {
-    "desc": [
-      "Gaza Strip"
-    ]
-  },
-  "Asia/Hebron": {
-    "desc": [
-      "West Bank"
-    ]
-  },
-  "Europe/Lisbon": {
-    "desc": [
-      "Portugal (mainland)"
-    ]
-  },
-  "Atlantic/Madeira": {
-    "desc": [
-      "Madeira Islands"
-    ]
-  },
-  "Atlantic/Azores": {
-    "desc": [
-      "Azores"
-    ]
-  },
-  "Pacific/Palau": {
-    "countryCode": "PW",
-    "country": "Palau"
-  },
-  "America/Asuncion": {
-    "countryCode": "PY",
-    "country": "Paraguay"
-  },
-  "Indian/Reunion": {
-    "desc": [
-      "Réunion, Crozet, Scattered Islands"
-    ]
-  },
-  "Europe/Bucharest": {
-    "countryCode": "RO",
-    "country": "Romania"
-  },
-  "Europe/Kaliningrad": {
-    "desc": [
-      "MSK-01 - Kaliningrad"
-    ]
-  },
-  "Europe/Moscow": {
-    "desc": [
-      "MSK+00 - Moscow area"
-    ]
-  },
-  "Europe/Simferopol": {
-    "desc": [
-      "MSK+00 - Crimea"
-    ]
-  },
-  "Europe/Volgograd": {
-    "desc": [
-      "MSK+00 - Volgograd"
-    ]
-  },
-  "Europe/Kirov": {
-    "desc": [
-      "MSK+00 - Kirov"
-    ]
-  },
-  "Europe/Astrakhan": {
-    "desc": [
-      "MSK+01 - Astrakhan"
-    ]
-  },
-  "Europe/Saratov": {
-    "desc": [
-      "MSK+01 - Saratov"
-    ]
-  },
-  "Europe/Ulyanovsk": {
-    "desc": [
-      "MSK+01 - Ulyanovsk"
-    ]
-  },
-  "Europe/Samara": {
-    "desc": [
-      "MSK+01 - Samara, Udmurtia"
-    ]
-  },
-  "Asia/Yekaterinburg": {
-    "desc": [
-      "MSK+02 - Urals"
-    ]
-  },
-  "Asia/Omsk": {
-    "desc": [
-      "MSK+03 - Omsk"
-    ]
-  },
-  "Asia/Novosibirsk": {
-    "desc": [
-      "MSK+04 - Novosibirsk"
-    ]
-  },
-  "Asia/Barnaul": {
-    "desc": [
-      "MSK+04 - Altai"
-    ]
-  },
-  "Asia/Tomsk": {
-    "desc": [
-      "MSK+04 - Tomsk"
-    ]
-  },
-  "Asia/Novokuznetsk": {
-    "desc": [
-      "MSK+04 - Kemerovo"
-    ]
-  },
-  "Asia/Krasnoyarsk": {
-    "desc": [
-      "MSK+04 - Krasnoyarsk area"
-    ]
-  },
-  "Asia/Irkutsk": {
-    "desc": [
-      "MSK+05 - Irkutsk, Buryatia"
-    ]
-  },
-  "Asia/Chita": {
-    "desc": [
-      "MSK+06 - Zabaykalsky"
-    ]
-  },
-  "Asia/Yakutsk": {
-    "desc": [
-      "MSK+06 - Lena River"
-    ]
-  },
-  "Asia/Khandyga": {
-    "desc": [
-      "MSK+06 - Tomponsky, Ust-Maysky"
-    ]
-  },
-  "Asia/Vladivostok": {
-    "desc": [
-      "MSK+07 - Amur River"
-    ]
-  },
-  "Asia/Ust-Nera": {
-    "desc": [
-      "MSK+07 - Oymyakonsky"
-    ]
-  },
-  "Asia/Magadan": {
-    "desc": [
-      "MSK+08 - Magadan"
-    ]
-  },
-  "Asia/Sakhalin": {
-    "desc": [
-      "MSK+08 - Sakhalin Island"
-    ]
-  },
-  "Asia/Srednekolymsk": {
-    "desc": [
-      "MSK+08 - Sakha (E); North Kuril Is"
-    ]
-  },
-  "Asia/Kamchatka": {
-    "desc": [
-      "MSK+09 - Kamchatka"
-    ]
-  },
-  "Asia/Anadyr": {
-    "desc": [
-      "MSK+09 - Bering Sea"
-    ]
-  },
-  "Pacific/Guadalcanal": {
-    "countryCode": "SB",
-    "country": "Solomon Islands"
-  },
-  "Indian/Mahe": {
-    "countryCode": "SC",
-    "country": "Seychelles"
-  },
-  "Africa/Khartoum": {
-    "countryCode": "SD",
-    "country": "Sudan"
-  },
-  "Europe/Stockholm": {
-    "countryCode": "SE",
-    "country": "Sweden"
-  },
-  "Asia/Singapore": {
-    "countryCode": "SG",
-    "country": "Singapore"
-  },
-  "America/Paramaribo": {
-    "countryCode": "SR",
-    "country": "Suriname"
-  },
-  "Africa/Juba": {
-    "countryCode": "SS",
-    "country": "South Sudan"
-  },
-  "Africa/Sao_Tome": {
-    "countryCode": "ST",
-    "country": "Sao Tome & Principe"
-  },
-  "America/El_Salvador": {
-    "countryCode": "SV",
-    "country": "El Salvador"
-  },
-  "Asia/Damascus": {
-    "countryCode": "SY",
-    "country": "Syria"
-  },
-  "America/Grand_Turk": {
-    "countryCode": "TC",
-    "country": "Turks & Caicos Is"
-  },
-  "Africa/Ndjamena": {
-    "countryCode": "TD",
-    "country": "Chad"
-  },
-  "Indian/Kerguelen": {
-    "desc": [
-      "Kerguelen, St Paul Island, Amsterdam Island"
-    ]
-  },
-  "Asia/Dushanbe": {
-    "countryCode": "TJ",
-    "country": "Tajikistan"
-  },
-  "Pacific/Fakaofo": {
-    "countryCode": "TK",
-    "country": "Tokelau"
-  },
-  "Asia/Dili": {
-    "countryCode": "TL",
-    "country": "East Timor"
-  },
-  "Asia/Ashgabat": {
-    "countryCode": "TM",
-    "country": "Turkmenistan"
-  },
-  "Africa/Tunis": {
-    "countryCode": "TN",
-    "country": "Tunisia"
-  },
-  "Pacific/Tongatapu": {
-    "countryCode": "TO",
-    "country": "Tonga"
-  },
-  "Europe/Istanbul": {
-    "countryCode": "TR",
-    "country": "Turkey"
-  },
-  "Pacific/Funafuti": {
-    "countryCode": "TV",
-    "country": "Tuvalu"
-  },
-  "Asia/Taipei": {
-    "countryCode": "TW",
-    "country": "Taiwan"
-  },
-  "Europe/Kiev": {
-    "desc": [
-      "Ukraine (most areas)"
-    ]
-  },
-  "Europe/Uzhgorod": {
-    "desc": [
-      "Ruthenia"
-    ]
-  },
-  "Europe/Zaporozhye": {
-    "desc": [
-      "Zaporozh'ye/Zaporizhia; Lugansk/Luhansk (east)"
-    ]
-  },
-  "Pacific/Wake": {
-    "desc": [
-      "Wake Island"
-    ]
-  },
-  "Pacific/Honolulu": {
-    "desc": [
-      "Hawaii"
-    ]
-  },
-  "America/New_York": {
-    "desc": [
-      "Eastern (most areas)"
-    ]
-  },
-  "America/Detroit": {
-    "desc": [
-      "Eastern - MI (most areas)"
-    ]
-  },
-  "America/Kentucky/Louisville": {
-    "desc": [
-      "Eastern - KY (Louisville area)"
-    ]
-  },
-  "America/Kentucky/Monticello": {
-    "desc": [
-      "Eastern - KY (Wayne)"
-    ]
-  },
-  "America/Indiana/Indianapolis": {
-    "desc": [
-      "Eastern - IN (most areas)"
-    ]
-  },
-  "America/Indiana/Vincennes": {
-    "desc": [
-      "Eastern - IN (Da, Du, K, Mn)"
-    ]
-  },
-  "America/Indiana/Winamac": {
-    "desc": [
-      "Eastern - IN (Pulaski)"
-    ]
-  },
-  "America/Indiana/Marengo": {
-    "desc": [
-      "Eastern - IN (Crawford)"
-    ]
-  },
-  "America/Indiana/Petersburg": {
-    "desc": [
-      "Eastern - IN (Pike)"
-    ]
-  },
-  "America/Indiana/Vevay": {
-    "desc": [
-      "Eastern - IN (Switzerland)"
-    ]
-  },
-  "America/Chicago": {
-    "desc": [
-      "Central (most areas)"
-    ]
-  },
-  "America/Indiana/Tell_City": {
-    "desc": [
-      "Central - IN (Perry)"
-    ]
-  },
-  "America/Indiana/Knox": {
-    "desc": [
-      "Central - IN (Starke)"
-    ]
-  },
-  "America/Menominee": {
-    "desc": [
-      "Central - MI (Wisconsin border)"
-    ]
-  },
-  "America/North_Dakota/Center": {
-    "desc": [
-      "Central - ND (Oliver)"
-    ]
-  },
-  "America/North_Dakota/New_Salem": {
-    "desc": [
-      "Central - ND (Morton rural)"
-    ]
-  },
-  "America/North_Dakota/Beulah": {
-    "desc": [
-      "Central - ND (Mercer)"
-    ]
-  },
-  "America/Denver": {
-    "desc": [
-      "Mountain (most areas)"
-    ]
-  },
-  "America/Boise": {
-    "desc": [
-      "Mountain - ID (south); OR (east)"
-    ]
-  },
-  "America/Phoenix": {
-    "desc": [
-      "MST - Arizona (except Navajo)"
-    ]
-  },
-  "America/Los_Angeles": {
-    "desc": [
-      "Pacific"
-    ]
-  },
-  "America/Anchorage": {
-    "desc": [
-      "Alaska (most areas)"
-    ]
-  },
-  "America/Juneau": {
-    "desc": [
-      "Alaska - Juneau area"
-    ]
-  },
-  "America/Sitka": {
-    "desc": [
-      "Alaska - Sitka area"
-    ]
-  },
-  "America/Metlakatla": {
-    "desc": [
-      "Alaska - Annette Island"
-    ]
-  },
-  "America/Yakutat": {
-    "desc": [
-      "Alaska - Yakutat"
-    ]
-  },
-  "America/Nome": {
-    "desc": [
-      "Alaska (west)"
-    ]
-  },
-  "America/Adak": {
-    "desc": [
-      "Aleutian Islands"
-    ]
-  },
-  "America/Montevideo": {
-    "countryCode": "UY",
-    "country": "Uruguay"
-  },
-  "Asia/Samarkand": {
-    "desc": [
-      "Uzbekistan (west)"
-    ]
-  },
-  "Asia/Tashkent": {
-    "desc": [
-      "Uzbekistan (east)"
-    ]
-  },
-  "America/Caracas": {
-    "countryCode": "VE",
-    "country": "Venezuela"
-  },
-  "Asia/Ho_Chi_Minh": {
-    "desc": [
-      "Vietnam (south)"
-    ]
-  },
-  "Pacific/Efate": {
-    "countryCode": "VU",
-    "country": "Vanuatu"
-  },
-  "Pacific/Wallis": {
-    "countryCode": "WF",
-    "country": "Wallis & Futuna"
-  },
-  "Pacific/Apia": {
-    "countryCode": "WS",
-    "country": "Samoa (western)"
-  }
+  abidjan: 'Africa/Abidjan',
+  'africa/abidjan': 'Africa/Abidjan',
+  accra: 'Africa/Accra',
+  'africa/accra': 'Africa/Accra',
+  addis_ababa: 'Africa/Addis_ababa',
+  'africa/addis_ababa': 'Africa/Addis_ababa',
+  algiers: 'Africa/Algiers',
+  'africa/algiers': 'Africa/Algiers',
+  asmara: 'Africa/Asmara',
+  'africa/asmara': 'Africa/Asmara',
+  asmera: 'Africa/Asmera',
+  'africa/asmera': 'Africa/Asmera',
+  bamako: 'Africa/Bamako',
+  'africa/bamako': 'Africa/Bamako',
+  bangui: 'Africa/Bangui',
+  'africa/bangui': 'Africa/Bangui',
+  banjul: 'Africa/Banjul',
+  'africa/banjul': 'Africa/Banjul',
+  bissau: 'Africa/Bissau',
+  'africa/bissau': 'Africa/Bissau',
+  blantyre: 'Africa/Blantyre',
+  'africa/blantyre': 'Africa/Blantyre',
+  brazzaville: 'Africa/Brazzaville',
+  'africa/brazzaville': 'Africa/Brazzaville',
+  bujumbura: 'Africa/Bujumbura',
+  'africa/bujumbura': 'Africa/Bujumbura',
+  cairo: 'Africa/Cairo',
+  'africa/cairo': 'Africa/Cairo',
+  casablanca: 'Africa/Casablanca',
+  'africa/casablanca': 'Africa/Casablanca',
+  ceuta: 'Africa/Ceuta',
+  'africa/ceuta': 'Africa/Ceuta',
+  conakry: 'Africa/Conakry',
+  'africa/conakry': 'Africa/Conakry',
+  dakar: 'Africa/Dakar',
+  'africa/dakar': 'Africa/Dakar',
+  dar_es_salaam: 'Africa/Dar_es_salaam',
+  'africa/dar_es_salaam': 'Africa/Dar_es_salaam',
+  djibouti: 'Africa/Djibouti',
+  'africa/djibouti': 'Africa/Djibouti',
+  douala: 'Africa/Douala',
+  'africa/douala': 'Africa/Douala',
+  el_aaiun: 'Africa/El_aaiun',
+  'africa/el_aaiun': 'Africa/El_aaiun',
+  freetown: 'Africa/Freetown',
+  'africa/freetown': 'Africa/Freetown',
+  gaborone: 'Africa/Gaborone',
+  'africa/gaborone': 'Africa/Gaborone',
+  harare: 'Africa/Harare',
+  'africa/harare': 'Africa/Harare',
+  johannesburg: 'Africa/Johannesburg',
+  'africa/johannesburg': 'Africa/Johannesburg',
+  juba: 'Africa/Juba',
+  'africa/juba': 'Africa/Juba',
+  kampala: 'Africa/Kampala',
+  'africa/kampala': 'Africa/Kampala',
+  khartoum: 'Africa/Khartoum',
+  'africa/khartoum': 'Africa/Khartoum',
+  kigali: 'Africa/Kigali',
+  'africa/kigali': 'Africa/Kigali',
+  kinshasa: 'Africa/Kinshasa',
+  'africa/kinshasa': 'Africa/Kinshasa',
+  lagos: 'Africa/Lagos',
+  'africa/lagos': 'Africa/Lagos',
+  libreville: 'Africa/Libreville',
+  'africa/libreville': 'Africa/Libreville',
+  lome: 'Africa/Lome',
+  'africa/lome': 'Africa/Lome',
+  luanda: 'Africa/Luanda',
+  'africa/luanda': 'Africa/Luanda',
+  lubumbashi: 'Africa/Lubumbashi',
+  'africa/lubumbashi': 'Africa/Lubumbashi',
+  lusaka: 'Africa/Lusaka',
+  'africa/lusaka': 'Africa/Lusaka',
+  malabo: 'Africa/Malabo',
+  'africa/malabo': 'Africa/Malabo',
+  maputo: 'Africa/Maputo',
+  'africa/maputo': 'Africa/Maputo',
+  maseru: 'Africa/Maseru',
+  'africa/maseru': 'Africa/Maseru',
+  mbabane: 'Africa/Mbabane',
+  'africa/mbabane': 'Africa/Mbabane',
+  mogadishu: 'Africa/Mogadishu',
+  'africa/mogadishu': 'Africa/Mogadishu',
+  monrovia: 'Africa/Monrovia',
+  'africa/monrovia': 'Africa/Monrovia',
+  nairobi: 'Africa/Nairobi',
+  'africa/nairobi': 'Africa/Nairobi',
+  ndjamena: 'Africa/Ndjamena',
+  'africa/ndjamena': 'Africa/Ndjamena',
+  niamey: 'Africa/Niamey',
+  'africa/niamey': 'Africa/Niamey',
+  nouakchott: 'Africa/Nouakchott',
+  'africa/nouakchott': 'Africa/Nouakchott',
+  ouagadougou: 'Africa/Ouagadougou',
+  'africa/ouagadougou': 'Africa/Ouagadougou',
+  'porto-novo': 'Africa/Porto-novo',
+  'africa/porto-novo': 'Africa/Porto-novo',
+  sao_tome: 'Africa/Sao_tome',
+  'africa/sao_tome': 'Africa/Sao_tome',
+  timbuktu: 'Africa/Timbuktu',
+  'africa/timbuktu': 'Africa/Timbuktu',
+  tripoli: 'Africa/Tripoli',
+  'africa/tripoli': 'Africa/Tripoli',
+  tunis: 'Africa/Tunis',
+  'africa/tunis': 'Africa/Tunis',
+  windhoek: 'Africa/Windhoek',
+  'africa/windhoek': 'Africa/Windhoek',
+  adak: 'America/Adak',
+  'america/adak': 'America/Adak',
+  anchorage: 'America/Anchorage',
+  'america/anchorage': 'America/Anchorage',
+  anguilla: 'America/Anguilla',
+  'america/anguilla': 'America/Anguilla',
+  antigua: 'America/Antigua',
+  'america/antigua': 'America/Antigua',
+  araguaina: 'America/Araguaina',
+  'america/araguaina': 'America/Araguaina',
+  argentina: 'America/Argentina',
+  'america/argentina': 'America/Argentina',
+  aruba: 'America/Aruba',
+  'america/aruba': 'America/Aruba',
+  asuncion: 'America/Asuncion',
+  'america/asuncion': 'America/Asuncion',
+  atikokan: 'America/Atikokan',
+  'america/atikokan': 'America/Atikokan',
+  atka: 'America/Atka',
+  'america/atka': 'America/Atka',
+  bahia: 'America/Bahia',
+  'america/bahia': 'America/Bahia',
+  bahia_banderas: 'America/Bahia_banderas',
+  'america/bahia_banderas': 'America/Bahia_banderas',
+  barbados: 'America/Barbados',
+  'america/barbados': 'America/Barbados',
+  belem: 'America/Belem',
+  'america/belem': 'America/Belem',
+  belize: 'America/Belize',
+  'america/belize': 'America/Belize',
+  'blanc-sablon': 'America/Blanc-sablon',
+  'america/blanc-sablon': 'America/Blanc-sablon',
+  boa_vista: 'America/Boa_vista',
+  'america/boa_vista': 'America/Boa_vista',
+  bogota: 'America/Bogota',
+  'america/bogota': 'America/Bogota',
+  boise: 'America/Boise',
+  'america/boise': 'America/Boise',
+  buenos_aires: 'America/Buenos_aires',
+  'america/buenos_aires': 'America/Buenos_aires',
+  cambridge_bay: 'America/Cambridge_bay',
+  'america/cambridge_bay': 'America/Cambridge_bay',
+  campo_grande: 'America/Campo_grande',
+  'america/campo_grande': 'America/Campo_grande',
+  cancun: 'America/Cancun',
+  'america/cancun': 'America/Cancun',
+  caracas: 'America/Caracas',
+  'america/caracas': 'America/Caracas',
+  catamarca: 'America/Catamarca',
+  'america/catamarca': 'America/Catamarca',
+  cayenne: 'America/Cayenne',
+  'america/cayenne': 'America/Cayenne',
+  cayman: 'America/Cayman',
+  'america/cayman': 'America/Cayman',
+  chicago: 'America/Chicago',
+  'america/chicago': 'America/Chicago',
+  chihuahua: 'America/Chihuahua',
+  'america/chihuahua': 'America/Chihuahua',
+  coral_harbour: 'America/Coral_harbour',
+  'america/coral_harbour': 'America/Coral_harbour',
+  cordoba: 'America/Cordoba',
+  'america/cordoba': 'America/Cordoba',
+  costa_rica: 'America/Costa_rica',
+  'america/costa_rica': 'America/Costa_rica',
+  creston: 'America/Creston',
+  'america/creston': 'America/Creston',
+  cuiaba: 'America/Cuiaba',
+  'america/cuiaba': 'America/Cuiaba',
+  curacao: 'America/Curacao',
+  'america/curacao': 'America/Curacao',
+  danmarkshavn: 'America/Danmarkshavn',
+  'america/danmarkshavn': 'America/Danmarkshavn',
+  dawson: 'America/Dawson',
+  'america/dawson': 'America/Dawson',
+  dawson_creek: 'America/Dawson_creek',
+  'america/dawson_creek': 'America/Dawson_creek',
+  denver: 'America/Denver',
+  'america/denver': 'America/Denver',
+  detroit: 'America/Detroit',
+  'america/detroit': 'America/Detroit',
+  dominica: 'America/Dominica',
+  'america/dominica': 'America/Dominica',
+  edmonton: 'America/Edmonton',
+  'america/edmonton': 'America/Edmonton',
+  eirunepe: 'America/Eirunepe',
+  'america/eirunepe': 'America/Eirunepe',
+  el_salvador: 'America/El_salvador',
+  'america/el_salvador': 'America/El_salvador',
+  ensenada: 'America/Ensenada',
+  'america/ensenada': 'America/Ensenada',
+  fort_wayne: 'America/Fort_wayne',
+  'america/fort_wayne': 'America/Fort_wayne',
+  fortaleza: 'America/Fortaleza',
+  'america/fortaleza': 'America/Fortaleza',
+  glace_bay: 'America/Glace_bay',
+  'america/glace_bay': 'America/Glace_bay',
+  godthab: 'America/Godthab',
+  'america/godthab': 'America/Godthab',
+  goose_bay: 'America/Goose_bay',
+  'america/goose_bay': 'America/Goose_bay',
+  grand_turk: 'America/Grand_turk',
+  'america/grand_turk': 'America/Grand_turk',
+  grenada: 'America/Grenada',
+  'america/grenada': 'America/Grenada',
+  guadeloupe: 'America/Guadeloupe',
+  'america/guadeloupe': 'America/Guadeloupe',
+  guatemala: 'America/Guatemala',
+  'america/guatemala': 'America/Guatemala',
+  guayaquil: 'America/Guayaquil',
+  'america/guayaquil': 'America/Guayaquil',
+  guyana: 'America/Guyana',
+  'america/guyana': 'America/Guyana',
+  halifax: 'America/Halifax',
+  'america/halifax': 'America/Halifax',
+  havana: 'America/Havana',
+  'america/havana': 'America/Havana',
+  hermosillo: 'America/Hermosillo',
+  'america/hermosillo': 'America/Hermosillo',
+  indiana: 'America/Indiana',
+  'america/indiana': 'America/Indiana',
+  indianapolis: 'America/Indianapolis',
+  'america/indianapolis': 'America/Indianapolis',
+  inuvik: 'America/Inuvik',
+  'america/inuvik': 'America/Inuvik',
+  iqaluit: 'America/Iqaluit',
+  'america/iqaluit': 'America/Iqaluit',
+  jamaica: 'America/Jamaica',
+  'america/jamaica': 'America/Jamaica',
+  jujuy: 'America/Jujuy',
+  'america/jujuy': 'America/Jujuy',
+  juneau: 'America/Juneau',
+  'america/juneau': 'America/Juneau',
+  kentucky: 'America/Kentucky',
+  'america/kentucky': 'America/Kentucky',
+  knox_in: 'America/Knox_in',
+  'america/knox_in': 'America/Knox_in',
+  kralendijk: 'America/Kralendijk',
+  'america/kralendijk': 'America/Kralendijk',
+  la_paz: 'America/La_paz',
+  'america/la_paz': 'America/La_paz',
+  lima: 'America/Lima',
+  'america/lima': 'America/Lima',
+  los_angeles: 'America/Los_angeles',
+  'america/los_angeles': 'America/Los_angeles',
+  louisville: 'America/Louisville',
+  'america/louisville': 'America/Louisville',
+  lower_princes: 'America/Lower_princes',
+  'america/lower_princes': 'America/Lower_princes',
+  maceio: 'America/Maceio',
+  'america/maceio': 'America/Maceio',
+  managua: 'America/Managua',
+  'america/managua': 'America/Managua',
+  manaus: 'America/Manaus',
+  'america/manaus': 'America/Manaus',
+  marigot: 'America/Marigot',
+  'america/marigot': 'America/Marigot',
+  martinique: 'America/Martinique',
+  'america/martinique': 'America/Martinique',
+  matamoros: 'America/Matamoros',
+  'america/matamoros': 'America/Matamoros',
+  mazatlan: 'America/Mazatlan',
+  'america/mazatlan': 'America/Mazatlan',
+  mendoza: 'America/Mendoza',
+  'america/mendoza': 'America/Mendoza',
+  menominee: 'America/Menominee',
+  'america/menominee': 'America/Menominee',
+  merida: 'America/Merida',
+  'america/merida': 'America/Merida',
+  metlakatla: 'America/Metlakatla',
+  'america/metlakatla': 'America/Metlakatla',
+  mexico_city: 'America/Mexico_city',
+  'america/mexico_city': 'America/Mexico_city',
+  miquelon: 'America/Miquelon',
+  'america/miquelon': 'America/Miquelon',
+  moncton: 'America/Moncton',
+  'america/moncton': 'America/Moncton',
+  monterrey: 'America/Monterrey',
+  'america/monterrey': 'America/Monterrey',
+  montevideo: 'America/Montevideo',
+  'america/montevideo': 'America/Montevideo',
+  montreal: 'America/Montreal',
+  'america/montreal': 'America/Montreal',
+  montserrat: 'America/Montserrat',
+  'america/montserrat': 'America/Montserrat',
+  nassau: 'America/Nassau',
+  'america/nassau': 'America/Nassau',
+  new_york: 'America/New_york',
+  'america/new_york': 'America/New_york',
+  nipigon: 'America/Nipigon',
+  'america/nipigon': 'America/Nipigon',
+  nome: 'America/Nome',
+  'america/nome': 'America/Nome',
+  noronha: 'America/Noronha',
+  'america/noronha': 'America/Noronha',
+  north_dakota: 'America/North_dakota',
+  'america/north_dakota': 'America/North_dakota',
+  ojinaga: 'America/Ojinaga',
+  'america/ojinaga': 'America/Ojinaga',
+  panama: 'America/Panama',
+  'america/panama': 'America/Panama',
+  pangnirtung: 'America/Pangnirtung',
+  'america/pangnirtung': 'America/Pangnirtung',
+  paramaribo: 'America/Paramaribo',
+  'america/paramaribo': 'America/Paramaribo',
+  phoenix: 'America/Phoenix',
+  'america/phoenix': 'America/Phoenix',
+  'port-au-prince': 'America/Port-au-prince',
+  'america/port-au-prince': 'America/Port-au-prince',
+  port_of_spain: 'America/Port_of_spain',
+  'america/port_of_spain': 'America/Port_of_spain',
+  porto_acre: 'America/Porto_acre',
+  'america/porto_acre': 'America/Porto_acre',
+  porto_velho: 'America/Porto_velho',
+  'america/porto_velho': 'America/Porto_velho',
+  puerto_rico: 'America/Puerto_rico',
+  'america/puerto_rico': 'America/Puerto_rico',
+  punta_arenas: 'America/Punta_arenas',
+  'america/punta_arenas': 'America/Punta_arenas',
+  rainy_river: 'America/Rainy_river',
+  'america/rainy_river': 'America/Rainy_river',
+  rankin_inlet: 'America/Rankin_inlet',
+  'america/rankin_inlet': 'America/Rankin_inlet',
+  recife: 'America/Recife',
+  'america/recife': 'America/Recife',
+  regina: 'America/Regina',
+  'america/regina': 'America/Regina',
+  resolute: 'America/Resolute',
+  'america/resolute': 'America/Resolute',
+  rio_branco: 'America/Rio_branco',
+  'america/rio_branco': 'America/Rio_branco',
+  rosario: 'America/Rosario',
+  'america/rosario': 'America/Rosario',
+  santa_isabel: 'America/Santa_isabel',
+  'america/santa_isabel': 'America/Santa_isabel',
+  santarem: 'America/Santarem',
+  'america/santarem': 'America/Santarem',
+  santiago: 'America/Santiago',
+  'america/santiago': 'America/Santiago',
+  santo_domingo: 'America/Santo_domingo',
+  'america/santo_domingo': 'America/Santo_domingo',
+  sao_paulo: 'America/Sao_paulo',
+  'america/sao_paulo': 'America/Sao_paulo',
+  scoresbysund: 'America/Scoresbysund',
+  'america/scoresbysund': 'America/Scoresbysund',
+  shiprock: 'America/Shiprock',
+  'america/shiprock': 'America/Shiprock',
+  sitka: 'America/Sitka',
+  'america/sitka': 'America/Sitka',
+  st_barthelemy: 'America/St_barthelemy',
+  'america/st_barthelemy': 'America/St_barthelemy',
+  st_johns: 'America/St_johns',
+  'america/st_johns': 'America/St_johns',
+  st_kitts: 'America/St_kitts',
+  'america/st_kitts': 'America/St_kitts',
+  st_lucia: 'America/St_lucia',
+  'america/st_lucia': 'America/St_lucia',
+  st_thomas: 'America/St_thomas',
+  'america/st_thomas': 'America/St_thomas',
+  st_vincent: 'America/St_vincent',
+  'america/st_vincent': 'America/St_vincent',
+  swift_current: 'America/Swift_current',
+  'america/swift_current': 'America/Swift_current',
+  tegucigalpa: 'America/Tegucigalpa',
+  'america/tegucigalpa': 'America/Tegucigalpa',
+  thule: 'America/Thule',
+  'america/thule': 'America/Thule',
+  thunder_bay: 'America/Thunder_bay',
+  'america/thunder_bay': 'America/Thunder_bay',
+  tijuana: 'America/Tijuana',
+  'america/tijuana': 'America/Tijuana',
+  toronto: 'America/Toronto',
+  'america/toronto': 'America/Toronto',
+  tortola: 'America/Tortola',
+  'america/tortola': 'America/Tortola',
+  vancouver: 'America/Vancouver',
+  'america/vancouver': 'America/Vancouver',
+  virgin: 'America/Virgin',
+  'america/virgin': 'America/Virgin',
+  whitehorse: 'America/Whitehorse',
+  'america/whitehorse': 'America/Whitehorse',
+  winnipeg: 'America/Winnipeg',
+  'america/winnipeg': 'America/Winnipeg',
+  yakutat: 'America/Yakutat',
+  'america/yakutat': 'America/Yakutat',
+  yellowknife: 'America/Yellowknife',
+  'america/yellowknife': 'America/Yellowknife',
+  casey: 'Antarctica/Casey',
+  'antarctica/casey': 'Antarctica/Casey',
+  davis: 'Antarctica/Davis',
+  'antarctica/davis': 'Antarctica/Davis',
+  dumontdurville: 'Antarctica/Dumontdurville',
+  'antarctica/dumontdurville': 'Antarctica/Dumontdurville',
+  macquarie: 'Antarctica/Macquarie',
+  'antarctica/macquarie': 'Antarctica/Macquarie',
+  mawson: 'Antarctica/Mawson',
+  'antarctica/mawson': 'Antarctica/Mawson',
+  mcmurdo: 'Antarctica/Mcmurdo',
+  'antarctica/mcmurdo': 'Antarctica/Mcmurdo',
+  palmer: 'Antarctica/Palmer',
+  'antarctica/palmer': 'Antarctica/Palmer',
+  rothera: 'Antarctica/Rothera',
+  'antarctica/rothera': 'Antarctica/Rothera',
+  south_pole: 'Antarctica/South_pole',
+  'antarctica/south_pole': 'Antarctica/South_pole',
+  syowa: 'Antarctica/Syowa',
+  'antarctica/syowa': 'Antarctica/Syowa',
+  troll: 'Antarctica/Troll',
+  'antarctica/troll': 'Antarctica/Troll',
+  vostok: 'Antarctica/Vostok',
+  'antarctica/vostok': 'Antarctica/Vostok',
+  longyearbyen: 'Arctic/Longyearbyen',
+  'arctic/longyearbyen': 'Arctic/Longyearbyen',
+  aden: 'Asia/Aden',
+  'asia/aden': 'Asia/Aden',
+  almaty: 'Asia/Almaty',
+  'asia/almaty': 'Asia/Almaty',
+  amman: 'Asia/Amman',
+  'asia/amman': 'Asia/Amman',
+  anadyr: 'Asia/Anadyr',
+  'asia/anadyr': 'Asia/Anadyr',
+  aqtau: 'Asia/Aqtau',
+  'asia/aqtau': 'Asia/Aqtau',
+  aqtobe: 'Asia/Aqtobe',
+  'asia/aqtobe': 'Asia/Aqtobe',
+  ashgabat: 'Asia/Ashgabat',
+  'asia/ashgabat': 'Asia/Ashgabat',
+  ashkhabad: 'Asia/Ashkhabad',
+  'asia/ashkhabad': 'Asia/Ashkhabad',
+  atyrau: 'Asia/Atyrau',
+  'asia/atyrau': 'Asia/Atyrau',
+  baghdad: 'Asia/Baghdad',
+  'asia/baghdad': 'Asia/Baghdad',
+  bahrain: 'Asia/Bahrain',
+  'asia/bahrain': 'Asia/Bahrain',
+  baku: 'Asia/Baku',
+  'asia/baku': 'Asia/Baku',
+  bangkok: 'Asia/Bangkok',
+  'asia/bangkok': 'Asia/Bangkok',
+  barnaul: 'Asia/Barnaul',
+  'asia/barnaul': 'Asia/Barnaul',
+  beirut: 'Asia/Beirut',
+  'asia/beirut': 'Asia/Beirut',
+  bishkek: 'Asia/Bishkek',
+  'asia/bishkek': 'Asia/Bishkek',
+  brunei: 'Asia/Brunei',
+  'asia/brunei': 'Asia/Brunei',
+  calcutta: 'Asia/Calcutta',
+  'asia/calcutta': 'Asia/Calcutta',
+  chita: 'Asia/Chita',
+  'asia/chita': 'Asia/Chita',
+  choibalsan: 'Asia/Choibalsan',
+  'asia/choibalsan': 'Asia/Choibalsan',
+  chongqing: 'Asia/Chongqing',
+  'asia/chongqing': 'Asia/Chongqing',
+  chungking: 'Asia/Chungking',
+  'asia/chungking': 'Asia/Chungking',
+  colombo: 'Asia/Colombo',
+  'asia/colombo': 'Asia/Colombo',
+  dacca: 'Asia/Dacca',
+  'asia/dacca': 'Asia/Dacca',
+  damascus: 'Asia/Damascus',
+  'asia/damascus': 'Asia/Damascus',
+  dhaka: 'Asia/Dhaka',
+  'asia/dhaka': 'Asia/Dhaka',
+  dili: 'Asia/Dili',
+  'asia/dili': 'Asia/Dili',
+  dubai: 'Asia/Dubai',
+  'asia/dubai': 'Asia/Dubai',
+  dushanbe: 'Asia/Dushanbe',
+  'asia/dushanbe': 'Asia/Dushanbe',
+  gaza: 'Asia/Gaza',
+  'asia/gaza': 'Asia/Gaza',
+  harbin: 'Asia/Harbin',
+  'asia/harbin': 'Asia/Harbin',
+  hebron: 'Asia/Hebron',
+  'asia/hebron': 'Asia/Hebron',
+  ho_chi_minh: 'Asia/Ho_chi_minh',
+  'asia/ho_chi_minh': 'Asia/Ho_chi_minh',
+  hong_kong: 'Asia/Hong_kong',
+  'asia/hong_kong': 'Asia/Hong_kong',
+  hovd: 'Asia/Hovd',
+  'asia/hovd': 'Asia/Hovd',
+  irkutsk: 'Asia/Irkutsk',
+  'asia/irkutsk': 'Asia/Irkutsk',
+  istanbul: 'Europe/Istanbul',
+  'asia/istanbul': 'Asia/Istanbul',
+  jakarta: 'Asia/Jakarta',
+  'asia/jakarta': 'Asia/Jakarta',
+  jayapura: 'Asia/Jayapura',
+  'asia/jayapura': 'Asia/Jayapura',
+  jerusalem: 'Asia/Jerusalem',
+  'asia/jerusalem': 'Asia/Jerusalem',
+  kabul: 'Asia/Kabul',
+  'asia/kabul': 'Asia/Kabul',
+  kamchatka: 'Asia/Kamchatka',
+  'asia/kamchatka': 'Asia/Kamchatka',
+  karachi: 'Asia/Karachi',
+  'asia/karachi': 'Asia/Karachi',
+  kashgar: 'Asia/Kashgar',
+  'asia/kashgar': 'Asia/Kashgar',
+  kathmandu: 'Asia/Kathmandu',
+  'asia/kathmandu': 'Asia/Kathmandu',
+  katmandu: 'Asia/Katmandu',
+  'asia/katmandu': 'Asia/Katmandu',
+  khandyga: 'Asia/Khandyga',
+  'asia/khandyga': 'Asia/Khandyga',
+  kolkata: 'Asia/Kolkata',
+  'asia/kolkata': 'Asia/Kolkata',
+  krasnoyarsk: 'Asia/Krasnoyarsk',
+  'asia/krasnoyarsk': 'Asia/Krasnoyarsk',
+  kuala_lumpur: 'Asia/Kuala_lumpur',
+  'asia/kuala_lumpur': 'Asia/Kuala_lumpur',
+  kuching: 'Asia/Kuching',
+  'asia/kuching': 'Asia/Kuching',
+  kuwait: 'Asia/Kuwait',
+  'asia/kuwait': 'Asia/Kuwait',
+  macao: 'Asia/Macao',
+  'asia/macao': 'Asia/Macao',
+  macau: 'Asia/Macau',
+  'asia/macau': 'Asia/Macau',
+  magadan: 'Asia/Magadan',
+  'asia/magadan': 'Asia/Magadan',
+  makassar: 'Asia/Makassar',
+  'asia/makassar': 'Asia/Makassar',
+  manila: 'Asia/Manila',
+  'asia/manila': 'Asia/Manila',
+  muscat: 'Asia/Muscat',
+  'asia/muscat': 'Asia/Muscat',
+  nicosia: 'Europe/Nicosia',
+  'asia/nicosia': 'Asia/Nicosia',
+  novokuznetsk: 'Asia/Novokuznetsk',
+  'asia/novokuznetsk': 'Asia/Novokuznetsk',
+  novosibirsk: 'Asia/Novosibirsk',
+  'asia/novosibirsk': 'Asia/Novosibirsk',
+  omsk: 'Asia/Omsk',
+  'asia/omsk': 'Asia/Omsk',
+  oral: 'Asia/Oral',
+  'asia/oral': 'Asia/Oral',
+  phnom_penh: 'Asia/Phnom_penh',
+  'asia/phnom_penh': 'Asia/Phnom_penh',
+  pontianak: 'Asia/Pontianak',
+  'asia/pontianak': 'Asia/Pontianak',
+  pyongyang: 'Asia/Pyongyang',
+  'asia/pyongyang': 'Asia/Pyongyang',
+  qatar: 'Asia/Qatar',
+  'asia/qatar': 'Asia/Qatar',
+  qyzylorda: 'Asia/Qyzylorda',
+  'asia/qyzylorda': 'Asia/Qyzylorda',
+  rangoon: 'Asia/Rangoon',
+  'asia/rangoon': 'Asia/Rangoon',
+  riyadh: 'Asia/Riyadh',
+  'asia/riyadh': 'Asia/Riyadh',
+  saigon: 'Asia/Saigon',
+  'asia/saigon': 'Asia/Saigon',
+  sakhalin: 'Asia/Sakhalin',
+  'asia/sakhalin': 'Asia/Sakhalin',
+  samarkand: 'Asia/Samarkand',
+  'asia/samarkand': 'Asia/Samarkand',
+  seoul: 'Asia/Seoul',
+  'asia/seoul': 'Asia/Seoul',
+  shanghai: 'Asia/Shanghai',
+  'asia/shanghai': 'Asia/Shanghai',
+  singapore: 'Asia/Singapore',
+  'asia/singapore': 'Asia/Singapore',
+  srednekolymsk: 'Asia/Srednekolymsk',
+  'asia/srednekolymsk': 'Asia/Srednekolymsk',
+  taipei: 'Asia/Taipei',
+  'asia/taipei': 'Asia/Taipei',
+  tashkent: 'Asia/Tashkent',
+  'asia/tashkent': 'Asia/Tashkent',
+  tbilisi: 'Asia/Tbilisi',
+  'asia/tbilisi': 'Asia/Tbilisi',
+  tehran: 'Asia/Tehran',
+  'asia/tehran': 'Asia/Tehran',
+  tel_aviv: 'Asia/Tel_aviv',
+  'asia/tel_aviv': 'Asia/Tel_aviv',
+  thimbu: 'Asia/Thimbu',
+  'asia/thimbu': 'Asia/Thimbu',
+  thimphu: 'Asia/Thimphu',
+  'asia/thimphu': 'Asia/Thimphu',
+  tokyo: 'Asia/Tokyo',
+  'asia/tokyo': 'Asia/Tokyo',
+  tomsk: 'Asia/Tomsk',
+  'asia/tomsk': 'Asia/Tomsk',
+  ujung_pandang: 'Asia/Ujung_pandang',
+  'asia/ujung_pandang': 'Asia/Ujung_pandang',
+  ulaanbaatar: 'Asia/Ulaanbaatar',
+  'asia/ulaanbaatar': 'Asia/Ulaanbaatar',
+  ulan_bator: 'Asia/Ulan_bator',
+  'asia/ulan_bator': 'Asia/Ulan_bator',
+  urumqi: 'Asia/Urumqi',
+  'asia/urumqi': 'Asia/Urumqi',
+  'ust-nera': 'Asia/Ust-nera',
+  'asia/ust-nera': 'Asia/Ust-nera',
+  vientiane: 'Asia/Vientiane',
+  'asia/vientiane': 'Asia/Vientiane',
+  vladivostok: 'Asia/Vladivostok',
+  'asia/vladivostok': 'Asia/Vladivostok',
+  yakutsk: 'Asia/Yakutsk',
+  'asia/yakutsk': 'Asia/Yakutsk',
+  yekaterinburg: 'Asia/Yekaterinburg',
+  'asia/yekaterinburg': 'Asia/Yekaterinburg',
+  yerevan: 'Asia/Yerevan',
+  'asia/yerevan': 'Asia/Yerevan',
+  volgograd: 'Europe/Volgograd',
+  'asia/volgograd': 'Asia/Volgograd',
+  azores: 'Atlantic/Azores',
+  'atlantic/azores': 'Atlantic/Azores',
+  bermuda: 'Atlantic/Bermuda',
+  'atlantic/bermuda': 'Atlantic/Bermuda',
+  canary: 'Atlantic/Canary',
+  'atlantic/canary': 'Atlantic/Canary',
+  cape_verde: 'Atlantic/Cape_verde',
+  'atlantic/cape_verde': 'Atlantic/Cape_verde',
+  faeroe: 'Atlantic/Faeroe',
+  'atlantic/faeroe': 'Atlantic/Faeroe',
+  faroe: 'Atlantic/Faroe',
+  'atlantic/faroe': 'Atlantic/Faroe',
+  jan_mayen: 'Atlantic/Jan_mayen',
+  'atlantic/jan_mayen': 'Atlantic/Jan_mayen',
+  madeira: 'Atlantic/Madeira',
+  'atlantic/madeira': 'Atlantic/Madeira',
+  reykjavik: 'Atlantic/Reykjavik',
+  'atlantic/reykjavik': 'Atlantic/Reykjavik',
+  south_georgia: 'Atlantic/South_georgia',
+  'atlantic/south_georgia': 'Atlantic/South_georgia',
+  st_helena: 'Atlantic/St_helena',
+  'atlantic/st_helena': 'Atlantic/St_helena',
+  stanley: 'Atlantic/Stanley',
+  'atlantic/stanley': 'Atlantic/Stanley',
+  act: 'Australia/Act',
+  'australia/act': 'Australia/Act',
+  adelaide: 'Australia/Adelaide',
+  'australia/adelaide': 'Australia/Adelaide',
+  brisbane: 'Australia/Brisbane',
+  'australia/brisbane': 'Australia/Brisbane',
+  broken_hill: 'Australia/Broken_hill',
+  'australia/broken_hill': 'Australia/Broken_hill',
+  canberra: 'Australia/Canberra',
+  'australia/canberra': 'Australia/Canberra',
+  currie: 'Australia/Currie',
+  'australia/currie': 'Australia/Currie',
+  darwin: 'Australia/Darwin',
+  'australia/darwin': 'Australia/Darwin',
+  eucla: 'Australia/Eucla',
+  'australia/eucla': 'Australia/Eucla',
+  hobart: 'Australia/Hobart',
+  'australia/hobart': 'Australia/Hobart',
+  lhi: 'Australia/Lhi',
+  'australia/lhi': 'Australia/Lhi',
+  lindeman: 'Australia/Lindeman',
+  'australia/lindeman': 'Australia/Lindeman',
+  lord_howe: 'Australia/Lord_howe',
+  'australia/lord_howe': 'Australia/Lord_howe',
+  melbourne: 'Australia/Melbourne',
+  'australia/melbourne': 'Australia/Melbourne',
+  nsw: 'Australia/Nsw',
+  'australia/nsw': 'Australia/Nsw',
+  north: 'Australia/North',
+  'australia/north': 'Australia/North',
+  perth: 'Australia/Perth',
+  'australia/perth': 'Australia/Perth',
+  queensland: 'Australia/Queensland',
+  'australia/queensland': 'Australia/Queensland',
+  south: 'Australia/South',
+  'australia/south': 'Australia/South',
+  sydney: 'Australia/Sydney',
+  'australia/sydney': 'Australia/Sydney',
+  tasmania: 'Australia/Tasmania',
+  'australia/tasmania': 'Australia/Tasmania',
+  victoria: 'Australia/Victoria',
+  'australia/victoria': 'Australia/Victoria',
+  west: 'Brazil/West',
+  'australia/west': 'Australia/West',
+  yancowinna: 'Australia/Yancowinna',
+  'australia/yancowinna': 'Australia/Yancowinna',
+  acre: 'Brazil/Acre',
+  'brazil/acre': 'Brazil/Acre',
+  denoronha: 'Brazil/Denoronha',
+  'brazil/denoronha': 'Brazil/Denoronha',
+  east: 'Brazil/East',
+  'brazil/east': 'Brazil/East',
+  'brazil/west': 'Brazil/West',
+  atlantic: 'Canada/Atlantic',
+  'canada/atlantic': 'Canada/Atlantic',
+  central: 'Canada/Central',
+  'canada/central': 'Canada/Central',
+  'east-saskatchewan': 'Canada/East-saskatchewan',
+  'canada/east-saskatchewan': 'Canada/East-saskatchewan',
+  eastern: 'Canada/Eastern',
+  'canada/eastern': 'Canada/Eastern',
+  mountain: 'Canada/Mountain',
+  'canada/mountain': 'Canada/Mountain',
+  newfoundland: 'Canada/Newfoundland',
+  'canada/newfoundland': 'Canada/Newfoundland',
+  pacific: 'Canada/Pacific',
+  'canada/pacific': 'Canada/Pacific',
+  saskatchewan: 'Canada/Saskatchewan',
+  'canada/saskatchewan': 'Canada/Saskatchewan',
+  yukon: 'Canada/Yukon',
+  'canada/yukon': 'Canada/Yukon',
+  continental: 'Chile/Continental',
+  'chile/continental': 'Chile/Continental',
+  easterisland: 'Chile/Easterisland',
+  'chile/easterisland': 'Chile/Easterisland',
+  amsterdam: 'Europe/Amsterdam',
+  'europe/amsterdam': 'Europe/Amsterdam',
+  andorra: 'Europe/Andorra',
+  'europe/andorra': 'Europe/Andorra',
+  astrakhan: 'Europe/Astrakhan',
+  'europe/astrakhan': 'Europe/Astrakhan',
+  athens: 'Europe/Athens',
+  'europe/athens': 'Europe/Athens',
+  belfast: 'Europe/Belfast',
+  'europe/belfast': 'Europe/Belfast',
+  belgrade: 'Europe/Belgrade',
+  'europe/belgrade': 'Europe/Belgrade',
+  berlin: 'Europe/Berlin',
+  'europe/berlin': 'Europe/Berlin',
+  bratislava: 'Europe/Bratislava',
+  'europe/bratislava': 'Europe/Bratislava',
+  brussels: 'Europe/Brussels',
+  'europe/brussels': 'Europe/Brussels',
+  bucharest: 'Europe/Bucharest',
+  'europe/bucharest': 'Europe/Bucharest',
+  budapest: 'Europe/Budapest',
+  'europe/budapest': 'Europe/Budapest',
+  busingen: 'Europe/Busingen',
+  'europe/busingen': 'Europe/Busingen',
+  chisinau: 'Europe/Chisinau',
+  'europe/chisinau': 'Europe/Chisinau',
+  copenhagen: 'Europe/Copenhagen',
+  'europe/copenhagen': 'Europe/Copenhagen',
+  dublin: 'Europe/Dublin',
+  'europe/dublin': 'Europe/Dublin',
+  gibraltar: 'Europe/Gibraltar',
+  'europe/gibraltar': 'Europe/Gibraltar',
+  guernsey: 'Europe/Guernsey',
+  'europe/guernsey': 'Europe/Guernsey',
+  helsinki: 'Europe/Helsinki',
+  'europe/helsinki': 'Europe/Helsinki',
+  isle_of_man: 'Europe/Isle_of_man',
+  'europe/isle_of_man': 'Europe/Isle_of_man',
+  'europe/istanbul': 'Europe/Istanbul',
+  jersey: 'Europe/Jersey',
+  'europe/jersey': 'Europe/Jersey',
+  kaliningrad: 'Europe/Kaliningrad',
+  'europe/kaliningrad': 'Europe/Kaliningrad',
+  kirov: 'Europe/Kirov',
+  'europe/kirov': 'Europe/Kirov',
+  kiev: 'Europe/Kiev',
+  'europe/kiev': 'Europe/Kiev',
+  lisbon: 'Europe/Lisbon',
+  'europe/lisbon': 'Europe/Lisbon',
+  ljubljana: 'Europe/Ljubljana',
+  'europe/ljubljana': 'Europe/Ljubljana',
+  london: 'Europe/London',
+  'europe/london': 'Europe/London',
+  luxembourg: 'Europe/Luxembourg',
+  'europe/luxembourg': 'Europe/Luxembourg',
+  madrid: 'Europe/Madrid',
+  'europe/madrid': 'Europe/Madrid',
+  malta: 'Europe/Malta',
+  'europe/malta': 'Europe/Malta',
+  mariehamn: 'Europe/Mariehamn',
+  'europe/mariehamn': 'Europe/Mariehamn',
+  minsk: 'Europe/Minsk',
+  'europe/minsk': 'Europe/Minsk',
+  monaco: 'Europe/Monaco',
+  'europe/monaco': 'Europe/Monaco',
+  moscow: 'Europe/Moscow',
+  'europe/moscow': 'Europe/Moscow',
+  'europe/nicosia': 'Europe/Nicosia',
+  oslo: 'Europe/Oslo',
+  'europe/oslo': 'Europe/Oslo',
+  paris: 'Europe/Paris',
+  'europe/paris': 'Europe/Paris',
+  podgorica: 'Europe/Podgorica',
+  'europe/podgorica': 'Europe/Podgorica',
+  prague: 'Europe/Prague',
+  'europe/prague': 'Europe/Prague',
+  riga: 'Europe/Riga',
+  'europe/riga': 'Europe/Riga',
+  rome: 'Europe/Rome',
+  'europe/rome': 'Europe/Rome',
+  samara: 'Europe/Samara',
+  'europe/samara': 'Europe/Samara',
+  saratov: 'Europe/Saratov',
+  'europe/saratov': 'Europe/Saratov',
+  san_marino: 'Europe/San_marino',
+  'europe/san_marino': 'Europe/San_marino',
+  sarajevo: 'Europe/Sarajevo',
+  'europe/sarajevo': 'Europe/Sarajevo',
+  simferopol: 'Europe/Simferopol',
+  'europe/simferopol': 'Europe/Simferopol',
+  skopje: 'Europe/Skopje',
+  'europe/skopje': 'Europe/Skopje',
+  sofia: 'Europe/Sofia',
+  'europe/sofia': 'Europe/Sofia',
+  stockholm: 'Europe/Stockholm',
+  'europe/stockholm': 'Europe/Stockholm',
+  tallinn: 'Europe/Tallinn',
+  'europe/tallinn': 'Europe/Tallinn',
+  tirane: 'Europe/Tirane',
+  'europe/tirane': 'Europe/Tirane',
+  tiraspol: 'Europe/Tiraspol',
+  'europe/tiraspol': 'Europe/Tiraspol',
+  ulyanovsk: 'Europe/Ulyanovsk',
+  'europe/ulyanovsk': 'Europe/Ulyanovsk',
+  uzhgorod: 'Europe/Uzhgorod',
+  'europe/uzhgorod': 'Europe/Uzhgorod',
+  vaduz: 'Europe/Vaduz',
+  'europe/vaduz': 'Europe/Vaduz',
+  vatican: 'Europe/Vatican',
+  'europe/vatican': 'Europe/Vatican',
+  vienna: 'Europe/Vienna',
+  'europe/vienna': 'Europe/Vienna',
+  vilnius: 'Europe/Vilnius',
+  'europe/vilnius': 'Europe/Vilnius',
+  'europe/volgograd': 'Europe/Volgograd',
+  warsaw: 'Europe/Warsaw',
+  'europe/warsaw': 'Europe/Warsaw',
+  zagreb: 'Europe/Zagreb',
+  'europe/zagreb': 'Europe/Zagreb',
+  zaporozhye: 'Europe/Zaporozhye',
+  'europe/zaporozhye': 'Europe/Zaporozhye',
+  zurich: 'Europe/Zurich',
+  'europe/zurich': 'Europe/Zurich',
+  antananarivo: 'Indian/Antananarivo',
+  'indian/antananarivo': 'Indian/Antananarivo',
+  chagos: 'Indian/Chagos',
+  'indian/chagos': 'Indian/Chagos',
+  christmas: 'Indian/Christmas',
+  'indian/christmas': 'Indian/Christmas',
+  cocos: 'Indian/Cocos',
+  'indian/cocos': 'Indian/Cocos',
+  comoro: 'Indian/Comoro',
+  'indian/comoro': 'Indian/Comoro',
+  kerguelen: 'Indian/Kerguelen',
+  'indian/kerguelen': 'Indian/Kerguelen',
+  mahe: 'Indian/Mahe',
+  'indian/mahe': 'Indian/Mahe',
+  maldives: 'Indian/Maldives',
+  'indian/maldives': 'Indian/Maldives',
+  mauritius: 'Indian/Mauritius',
+  'indian/mauritius': 'Indian/Mauritius',
+  mayotte: 'Indian/Mayotte',
+  'indian/mayotte': 'Indian/Mayotte',
+  reunion: 'Indian/Reunion',
+  'indian/reunion': 'Indian/Reunion',
+  bajanorte: 'Mexico/Bajanorte',
+  'mexico/bajanorte': 'Mexico/Bajanorte',
+  bajasur: 'Mexico/Bajasur',
+  'mexico/bajasur': 'Mexico/Bajasur',
+  general: 'Mexico/General',
+  'mexico/general': 'Mexico/General',
+  apia: 'Pacific/Apia',
+  'pacific/apia': 'Pacific/Apia',
+  auckland: 'Pacific/Auckland',
+  'pacific/auckland': 'Pacific/Auckland',
+  bougainville: 'Pacific/Bougainville',
+  'pacific/bougainville': 'Pacific/Bougainville',
+  chatham: 'Pacific/Chatham',
+  'pacific/chatham': 'Pacific/Chatham',
+  chuuk: 'Pacific/Chuuk',
+  'pacific/chuuk': 'Pacific/Chuuk',
+  easter: 'Pacific/Easter',
+  'pacific/easter': 'Pacific/Easter',
+  efate: 'Pacific/Efate',
+  'pacific/efate': 'Pacific/Efate',
+  enderbury: 'Pacific/Enderbury',
+  'pacific/enderbury': 'Pacific/Enderbury',
+  fakaofo: 'Pacific/Fakaofo',
+  'pacific/fakaofo': 'Pacific/Fakaofo',
+  fiji: 'Pacific/Fiji',
+  'pacific/fiji': 'Pacific/Fiji',
+  funafuti: 'Pacific/Funafuti',
+  'pacific/funafuti': 'Pacific/Funafuti',
+  galapagos: 'Pacific/Galapagos',
+  'pacific/galapagos': 'Pacific/Galapagos',
+  gambier: 'Pacific/Gambier',
+  'pacific/gambier': 'Pacific/Gambier',
+  guadalcanal: 'Pacific/Guadalcanal',
+  'pacific/guadalcanal': 'Pacific/Guadalcanal',
+  guam: 'Pacific/Guam',
+  'pacific/guam': 'Pacific/Guam',
+  honolulu: 'Pacific/Honolulu',
+  'pacific/honolulu': 'Pacific/Honolulu',
+  johnston: 'Pacific/Johnston',
+  'pacific/johnston': 'Pacific/Johnston',
+  kiritimati: 'Pacific/Kiritimati',
+  'pacific/kiritimati': 'Pacific/Kiritimati',
+  kosrae: 'Pacific/Kosrae',
+  'pacific/kosrae': 'Pacific/Kosrae',
+  kwajalein: 'Pacific/Kwajalein',
+  'pacific/kwajalein': 'Pacific/Kwajalein',
+  majuro: 'Pacific/Majuro',
+  'pacific/majuro': 'Pacific/Majuro',
+  marquesas: 'Pacific/Marquesas',
+  'pacific/marquesas': 'Pacific/Marquesas',
+  midway: 'Pacific/Midway',
+  'pacific/midway': 'Pacific/Midway',
+  nauru: 'Pacific/Nauru',
+  'pacific/nauru': 'Pacific/Nauru',
+  niue: 'Pacific/Niue',
+  'pacific/niue': 'Pacific/Niue',
+  norfolk: 'Pacific/Norfolk',
+  'pacific/norfolk': 'Pacific/Norfolk',
+  noumea: 'Pacific/Noumea',
+  'pacific/noumea': 'Pacific/Noumea',
+  pago_pago: 'Pacific/Pago_pago',
+  'pacific/pago_pago': 'Pacific/Pago_pago',
+  palau: 'Pacific/Palau',
+  'pacific/palau': 'Pacific/Palau',
+  pitcairn: 'Pacific/Pitcairn',
+  'pacific/pitcairn': 'Pacific/Pitcairn',
+  pohnpei: 'Pacific/Pohnpei',
+  'pacific/pohnpei': 'Pacific/Pohnpei',
+  ponape: 'Pacific/Ponape',
+  'pacific/ponape': 'Pacific/Ponape',
+  port_moresby: 'Pacific/Port_moresby',
+  'pacific/port_moresby': 'Pacific/Port_moresby',
+  rarotonga: 'Pacific/Rarotonga',
+  'pacific/rarotonga': 'Pacific/Rarotonga',
+  saipan: 'Pacific/Saipan',
+  'pacific/saipan': 'Pacific/Saipan',
+  samoa: 'Pacific/Samoa',
+  'pacific/samoa': 'Pacific/Samoa',
+  tahiti: 'Pacific/Tahiti',
+  'pacific/tahiti': 'Pacific/Tahiti',
+  tarawa: 'Pacific/Tarawa',
+  'pacific/tarawa': 'Pacific/Tarawa',
+  tongatapu: 'Pacific/Tongatapu',
+  'pacific/tongatapu': 'Pacific/Tongatapu',
+  truk: 'Pacific/Truk',
+  'pacific/truk': 'Pacific/Truk',
+  wake: 'Pacific/Wake',
+  'pacific/wake': 'Pacific/Wake',
+  wallis: 'Pacific/Wallis',
+  'pacific/wallis': 'Pacific/Wallis',
+  yap: 'Pacific/Yap',
+  'pacific/yap': 'Pacific/Yap',
+  gmt: 'Etc/Gmt',
+  'etc/gmt': 'Etc/Gmt',
+  'gmt+0': 'Etc/Gmt+0',
+  'etc/gmt+0': 'Etc/Gmt+0',
+  'gmt-0': 'Etc/Gmt-0',
+  'etc/gmt-0': 'Etc/Gmt-0',
+  gmt0: 'Etc/Gmt0',
+  'etc/gmt0': 'Etc/Gmt0',
+  greenwich: 'Etc/Greenwich',
+  'etc/greenwich': 'Etc/Greenwich',
+  utc: 'Etc/Utc',
+  'etc/utc': 'Etc/Utc',
+  universal: 'Etc/Universal',
+  'etc/universal': 'Etc/Universal',
+  zulu: 'Etc/Zulu',
+  'etc/zulu': 'Etc/Zulu'
 }

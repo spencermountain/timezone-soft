@@ -1,3 +1,8 @@
+//  a list of judgement-calls for country → timezone mappings
+//  with 'new zealand' we usually want 'Pacific/Auckland'.
+//  based on population, country-capital, and geographical center
+//  often some guesswork!
+
 module.exports = {
   Antarctica: {
     code: 'AQ',
@@ -19,7 +24,7 @@ module.exports = {
     code: 'CA',
     choice: 'America/Toronto'
   },
-  'Congo (Dem. Rep.)': {
+  Congo: {
     code: 'CD',
     choice: 'Africa/Kinshasa' //'Africa/Lagos'?
   },
