@@ -5,17 +5,17 @@ const fs = require('fs')
 let countries = {}
 const tmp = require('./tmp')
 Object.keys(tmp).forEach(k => {
-  if (tmp[k].zones.length > 1) {
-    let name = tmp[k].name
-    countries[name] = {
-      code: k,
-      choice: null,
-      choices: tmp[k].zones.map(arr => [arr[0], arr[5]])
-    }
+  let obj = tmp[k]
+  // countries[]
+  let c = tmp[k].country
+  if (c) {
+    c = c.toLowerCase()
+    countries[c] = { code: obj.countryCode, choice: k.toLowerCase() }
+    // console.log(obj)
   }
 })
 console.log(JSON.stringify(countries, null, 2))
-fs.writeFileSync('./judgement.js', JSON.stringify(countries, null, 2))
+fs.writeFileSync('./countries.js', JSON.stringify(countries, null, 2))
 
 // const fs = require('fs')
 // let obj = {}
