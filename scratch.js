@@ -2,12 +2,10 @@
 
 // http://cldr.unicode.org/
 
-const keyVal = require('./src/display/metazones.js/index.js')
+const oldZones = require('./data/04-oldZones.js/index.js')
 let obj = {}
-Object.keys(keyVal).forEach(k => {
-  let val = keyVal[k]
-  obj[val] = obj[val] || []
-  obj[val].push(k)
+oldZones.forEach(arr => {
+  obj[arr[1]] = arr[0]
 })
 console.log(JSON.stringify(obj, null, 2))
 

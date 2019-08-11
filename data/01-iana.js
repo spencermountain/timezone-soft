@@ -504,5 +504,4 @@ Object.keys(iana).forEach(k => {
     zones[lowerCase] = final
   })
 })
-console.log(zones)
 module.exports = zones

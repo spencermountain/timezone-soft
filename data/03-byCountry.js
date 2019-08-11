@@ -6,568 +6,568 @@
 module.exports = {
   //first, these countries only have one timezone.
   andorra: {
-    code: 'AD',
+    code: 'ad',
     choice: 'europe/andorra'
   },
   oman: {
-    code: 'OM',
+    code: 'om',
     choice: 'asia/dubai'
   },
   afghanistan: {
-    code: 'AF',
+    code: 'af',
     choice: 'asia/kabul'
   },
   'virgin islands': {
-    code: 'VI',
+    code: 'vi',
     choice: 'america/port_of_spain'
   },
   albania: {
-    code: 'AL',
+    code: 'al',
     choice: 'europe/tirane'
   },
   armenia: {
-    code: 'AM',
+    code: 'am',
     choice: 'asia/yerevan'
   },
   nigeria: {
-    code: 'NG',
+    code: 'ng',
     choice: 'africa/lagos'
   },
   austria: {
-    code: 'AT',
+    code: 'at',
     choice: 'europe/vienna'
   },
   'st maarten': {
-    code: 'SX',
+    code: 'sx',
     choice: 'america/curacao'
   },
   finland: {
-    code: 'FI',
+    code: 'fi',
     choice: 'europe/helsinki'
   },
   azerbaijan: {
-    code: 'AZ',
+    code: 'az',
     choice: 'asia/baku'
   },
   slovenia: {
-    code: 'SI',
+    code: 'si',
     choice: 'europe/belgrade'
   },
   barbados: {
-    code: 'BB',
+    code: 'bb',
     choice: 'america/barbados'
   },
   bangladesh: {
-    code: 'BD',
+    code: 'bd',
     choice: 'asia/dhaka'
   },
   belgium: {
-    code: 'BE',
+    code: 'be',
     choice: 'europe/brussels'
   },
   togo: {
-    code: 'TG',
+    code: 'tg',
     choice: 'africa/abidjan'
   },
   bulgaria: {
-    code: 'BG',
+    code: 'bg',
     choice: 'europe/sofia'
   },
   qatar: {
-    code: 'QA',
+    code: 'qa',
     choice: 'asia/qatar'
   },
   zimbabwe: {
-    code: 'ZW',
+    code: 'zw',
     choice: 'africa/maputo'
   },
   bermuda: {
-    code: 'BM',
+    code: 'bm',
     choice: 'atlantic/bermuda'
   },
   brunei: {
-    code: 'BN',
+    code: 'bn',
     choice: 'asia/brunei'
   },
   bolivia: {
-    code: 'BO',
+    code: 'bo',
     choice: 'america/la_paz'
   },
   bahamas: {
-    code: 'BS',
+    code: 'bs',
     choice: 'america/nassau'
   },
   bhutan: {
-    code: 'BT',
+    code: 'bt',
     choice: 'asia/thimphu'
   },
   belarus: {
-    code: 'BY',
+    code: 'by',
     choice: 'europe/minsk'
   },
   belize: {
-    code: 'BZ',
+    code: 'bz',
     choice: 'america/belize'
   },
   'cocos islands': {
-    code: 'CC',
+    code: 'cc',
     choice: 'indian/cocos'
   },
   liechtenstein: {
-    code: 'LI',
+    code: 'li',
     choice: 'europe/zurich'
   },
   'cook islands': {
-    code: 'CK',
+    code: 'ck',
     choice: 'pacific/rarotonga'
   },
   colombia: {
-    code: 'CO',
+    code: 'co',
     choice: 'america/bogota'
   },
   'costa rica': {
-    code: 'CR',
+    code: 'cr',
     choice: 'america/costa_rica'
   },
   cuba: {
-    code: 'CU',
+    code: 'cu',
     choice: 'america/havana'
   },
   'cape verde': {
-    code: 'CV',
+    code: 'cv',
     choice: 'atlantic/cape_verde'
   },
   'christmas island': {
-    code: 'CX',
+    code: 'cx',
     choice: 'indian/christmas'
   },
   slovakia: {
-    code: 'SK',
+    code: 'sk',
     choice: 'europe/prague'
   },
   mayotte: {
-    code: 'YT',
+    code: 'yt',
     choice: 'africa/nairobi'
   },
   denmark: {
-    code: 'DK',
+    code: 'dk',
     choice: 'europe/copenhagen'
   },
   'dominican republic': {
-    code: 'DO',
+    code: 'do',
     choice: 'america/santo_domingo'
   },
   algeria: {
-    code: 'DZ',
+    code: 'dz',
     choice: 'africa/algiers'
   },
   estonia: {
-    code: 'EE',
+    code: 'ee',
     choice: 'europe/tallinn'
   },
   egypt: {
-    code: 'EG',
+    code: 'eg',
     choice: 'africa/cairo'
   },
   'western sahara': {
-    code: 'EH',
+    code: 'eh',
     choice: 'africa/el_aaiun'
   },
   fiji: {
-    code: 'FJ',
+    code: 'fj',
     choice: 'pacific/fiji'
   },
   'falkland islands': {
-    code: 'FK',
+    code: 'fk',
     choice: 'atlantic/stanley'
   },
   'faroe islands': {
-    code: 'FO',
+    code: 'fo',
     choice: 'atlantic/faroe'
   },
   france: {
-    code: 'FR',
+    code: 'fr',
     choice: 'europe/paris'
   },
   jersey: {
-    code: 'JE',
+    code: 'je',
     choice: 'europe/london'
   },
   georgia: {
-    code: 'GE',
+    code: 'ge',
     choice: 'asia/tbilisi'
   },
   'french guiana': {
-    code: 'GF',
+    code: 'gf',
     choice: 'america/cayenne'
   },
   ghana: {
-    code: 'GH',
+    code: 'gh',
     choice: 'africa/accra'
   },
   gibraltar: {
-    code: 'GI',
+    code: 'gi',
     choice: 'europe/gibraltar'
   },
   greece: {
-    code: 'GR',
+    code: 'gr',
     choice: 'europe/athens'
   },
   'south georgia': {
-    code: 'GS',
+    code: 'gs',
     choice: 'atlantic/south_georgia'
   },
   guatemala: {
-    code: 'GT',
+    code: 'gt',
     choice: 'america/guatemala'
   },
   'northern mariana islands': {
-    code: 'MP',
+    code: 'mp',
     choice: 'pacific/guam'
   },
   'guinea bissau': {
-    code: 'GW',
+    code: 'gw',
     choice: 'africa/bissau'
   },
   guyana: {
-    code: 'GY',
+    code: 'gy',
     choice: 'america/guyana'
   },
   'hong kong': {
-    code: 'HK',
+    code: 'hk',
     choice: 'asia/hong_kong'
   },
   honduras: {
-    code: 'HN',
+    code: 'hn',
     choice: 'america/tegucigalpa'
   },
   haiti: {
-    code: 'HT',
+    code: 'ht',
     choice: 'america/port-au-prince'
   },
   hungary: {
-    code: 'HU',
+    code: 'hu',
     choice: 'europe/budapest'
   },
   ireland: {
-    code: 'IE',
+    code: 'ie',
     choice: 'europe/dublin'
   },
   israel: {
-    code: 'IL',
+    code: 'il',
     choice: 'asia/jerusalem'
   },
   india: {
-    code: 'IN',
+    code: 'in',
     choice: 'asia/kolkata'
   },
   'british indian ocean territory': {
-    code: 'IO',
+    code: 'io',
     choice: 'indian/chagos'
   },
   iraq: {
-    code: 'IQ',
+    code: 'iq',
     choice: 'asia/baghdad'
   },
   iran: {
-    code: 'IR',
+    code: 'ir',
     choice: 'asia/tehran'
   },
   iceland: {
-    code: 'IS',
+    code: 'is',
     choice: 'atlantic/reykjavik'
   },
   'vatican city': {
-    code: 'VA',
+    code: 'va',
     choice: 'europe/rome'
   },
   jamaica: {
-    code: 'JM',
+    code: 'jm',
     choice: 'america/jamaica'
   },
   jordan: {
-    code: 'JO',
+    code: 'jo',
     choice: 'asia/amman'
   },
   japan: {
-    code: 'JP',
+    code: 'jp',
     choice: 'asia/tokyo'
   },
   kyrgyzstan: {
-    code: 'KG',
+    code: 'kg',
     choice: 'asia/bishkek'
   },
   'north korea': {
-    code: 'KP',
+    code: 'kp',
     choice: 'asia/pyongyang'
   },
   'south korea': {
-    code: 'KR',
+    code: 'kr',
     choice: 'asia/seoul'
   },
   yemen: {
-    code: 'YE',
+    code: 'ye',
     choice: 'asia/riyadh'
   },
   panama: {
-    code: 'PA',
+    code: 'pa',
     choice: 'america/panama'
   },
   lebanon: {
-    code: 'LB',
+    code: 'lb',
     choice: 'asia/beirut'
   },
   'sri lanka': {
-    code: 'LK',
+    code: 'lk',
     choice: 'asia/colombo'
   },
   liberia: {
-    code: 'LR',
+    code: 'lr',
     choice: 'africa/monrovia'
   },
   'south africa': {
-    code: 'ZA',
+    code: 'za',
     choice: 'africa/johannesburg'
   },
   lithuania: {
-    code: 'LT',
+    code: 'lt',
     choice: 'europe/vilnius'
   },
   luxembourg: {
-    code: 'LU',
+    code: 'lu',
     choice: 'europe/luxembourg'
   },
   latvia: {
-    code: 'LV',
+    code: 'lv',
     choice: 'europe/riga'
   },
   libya: {
-    code: 'LY',
+    code: 'ly',
     choice: 'africa/tripoli'
   },
   morocco: {
-    code: 'MA',
+    code: 'ma',
     choice: 'africa/casablanca'
   },
   monaco: {
-    code: 'MC',
+    code: 'mc',
     choice: 'europe/monaco'
   },
   moldova: {
-    code: 'MD',
+    code: 'md',
     choice: 'europe/chisinau'
   },
-  'myanmar (burma)': {
-    code: 'MM',
+  myanmar: {
+    code: 'mm',
     choice: 'asia/yangon'
   },
   //(alias for myanmar)
   burma: {
-    code: 'MM',
+    code: 'mm',
     choice: 'asia/yangon'
   },
   macau: {
-    code: 'MO',
+    code: 'mo',
     choice: 'asia/macau'
   },
   martinique: {
-    code: 'MQ',
+    code: 'mq',
     choice: 'america/martinique'
   },
   malta: {
-    code: 'MT',
+    code: 'mt',
     choice: 'europe/malta'
   },
   mauritius: {
-    code: 'MU',
+    code: 'mu',
     choice: 'indian/mauritius'
   },
   maldives: {
-    code: 'MV',
+    code: 'mv',
     choice: 'indian/maldives'
   },
   namibia: {
-    code: 'NA',
+    code: 'na',
     choice: 'africa/windhoek'
   },
   'new caledonia': {
-    code: 'NC',
+    code: 'nc',
     choice: 'pacific/noumea'
   },
   'norfolk island': {
-    code: 'NF',
+    code: 'nf',
     choice: 'pacific/norfolk'
   },
   nicaragua: {
-    code: 'NI',
+    code: 'ni',
     choice: 'america/managua'
   },
   netherlands: {
-    code: 'NL',
+    code: 'nl',
     choice: 'europe/amsterdam'
   },
   'svalbard and jan mayen': {
-    code: 'SJ',
+    code: 'sj',
     choice: 'europe/oslo'
   },
   nepal: {
-    code: 'NP',
+    code: 'np',
     choice: 'asia/kathmandu'
   },
   nauru: {
-    code: 'NR',
+    code: 'nr',
     choice: 'pacific/nauru'
   },
   niue: {
-    code: 'NU',
+    code: 'nu',
     choice: 'pacific/niue'
   },
   peru: {
-    code: 'PE',
+    code: 'pe',
     choice: 'america/lima'
   },
   philippines: {
-    code: 'PH',
+    code: 'ph',
     choice: 'asia/manila'
   },
   pakistan: {
-    code: 'PK',
+    code: 'pk',
     choice: 'asia/karachi'
   },
   poland: {
-    code: 'PL',
+    code: 'pl',
     choice: 'europe/warsaw'
   },
   'st pierre and miquelon': {
-    code: 'PM',
+    code: 'pm',
     choice: 'america/miquelon'
   },
   pitcairn: {
-    code: 'PN',
+    code: 'pn',
     choice: 'pacific/pitcairn'
   },
   'puerto rico': {
-    code: 'PR',
+    code: 'pr',
     choice: 'america/puerto_rico'
   },
   palau: {
-    code: 'PW',
+    code: 'pw',
     choice: 'pacific/palau'
   },
   paraguay: {
-    code: 'PY',
+    code: 'py',
     choice: 'america/asuncion'
   },
   romania: {
-    code: 'RO',
+    code: 'ro',
     choice: 'europe/bucharest'
   },
   'solomon islands': {
-    code: 'SB',
+    code: 'sb',
     choice: 'pacific/guadalcanal'
   },
   seychelles: {
-    code: 'SC',
+    code: 'sc',
     choice: 'indian/mahe'
   },
   sudan: {
-    code: 'SD',
+    code: 'sd',
     choice: 'africa/khartoum'
   },
   sweden: {
-    code: 'SE',
+    code: 'se',
     choice: 'europe/stockholm'
   },
   singapore: {
-    code: 'SG',
+    code: 'sg',
     choice: 'asia/singapore'
   },
   suriname: {
-    code: 'SR',
+    code: 'sr',
     choice: 'america/paramaribo'
   },
   'south sudan': {
-    code: 'SS',
+    code: 'ss',
     choice: 'africa/juba'
   },
   'sao tome': {
-    code: 'ST',
+    code: 'st',
     choice: 'africa/sao_tome'
   },
   'el salvador': {
-    code: 'SV',
+    code: 'sv',
     choice: 'america/el_salvador'
   },
   syria: {
-    code: 'SY',
+    code: 'sy',
     choice: 'asia/damascus'
   },
   'turks and caicos': {
-    code: 'TC',
+    code: 'tc',
     choice: 'america/grand_turk'
   },
   chad: {
-    code: 'TD',
+    code: 'td',
     choice: 'africa/ndjamena'
   },
   tajikistan: {
-    code: 'TJ',
+    code: 'tj',
     choice: 'asia/dushanbe'
   },
   tokelau: {
-    code: 'TK',
+    code: 'tk',
     choice: 'pacific/fakaofo'
   },
   'east timor': {
-    code: 'TL',
+    code: 'tl',
     choice: 'asia/dili'
   },
   turkmenistan: {
-    code: 'TM',
+    code: 'tm',
     choice: 'asia/ashgabat'
   },
   tunisia: {
-    code: 'TN',
+    code: 'tn',
     choice: 'africa/tunis'
   },
   tonga: {
-    code: 'TO',
+    code: 'to',
     choice: 'pacific/tongatapu'
   },
   turkey: {
-    code: 'TR',
+    code: 'tr',
     choice: 'europe/istanbul'
   },
   tuvalu: {
-    code: 'TV',
+    code: 'tv',
     choice: 'pacific/funafuti'
   },
   taiwan: {
-    code: 'TW',
+    code: 'tw',
     choice: 'asia/taipei'
   },
   uruguay: {
-    code: 'UY',
+    code: 'uy',
     choice: 'america/montevideo'
   },
   venezuela: {
-    code: 'VE',
+    code: 've',
     choice: 'america/caracas'
   },
   vanuatu: {
-    code: 'VU',
+    code: 'vu',
     choice: 'pacific/efate'
   },
   'wallis and futuna': {
-    code: 'WF',
+    code: 'wf',
     choice: 'pacific/wallis'
   },
   'western samoa': {
-    code: 'WS',
+    code: 'ws',
     choice: 'pacific/apia'
   },
   samoa: {
-    code: 'WS',
+    code: 'ws',
     choice: 'pacific/apia'
   },
 
