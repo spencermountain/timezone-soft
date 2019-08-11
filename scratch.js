@@ -8,14 +8,12 @@ Object.keys(tmp).forEach(k => {
   let obj = tmp[k]
   // countries[]
   let c = tmp[k].country
-  if (c) {
-    c = c.toLowerCase()
-    countries[c] = { code: obj.countryCode, choice: k.toLowerCase() }
-    // console.log(obj)
+  if (!c) {
+    console.log(tmp[k])
   }
 })
 console.log(JSON.stringify(countries, null, 2))
-fs.writeFileSync('./countries.js', JSON.stringify(countries, null, 2))
+// fs.writeFileSync('./countries.js', JSON.stringify(countries, null, 2))
 
 // const fs = require('fs')
 // let obj = {}

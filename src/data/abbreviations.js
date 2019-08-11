@@ -14,29 +14,6 @@ const informal = {
   'America/Anchorage': ['ahst', 'ahdt', 'akst', 'akdt', 'alaska'], //Alaska Standard Time
   'America/St_Johns': ['nst', 'ndt', 'nt', 'newfoundland', 'nddt'],
 
-  //South america
-  'America/Caracas': ['vet', null, 'venezuela'],
-  'America/Bogota': ['cot', null, 'colombia'],
-  'America/Cayenne': ['gft', null, 'french guiana'],
-  'America/Paramaribo': ['srt', null, 'suriname'],
-  'America/Guyana': ['gyt'],
-  'America/Buenos_Aires': ['art', null, 'argentina'],
-  'America/La_Paz': ['bot', null, 'bolivia'],
-  'America/Asuncion': ['pyt', 'pyst', 'paraguay'],
-  'America/Santiago': ['clt', 'clst', 'chile'],
-  'America/Lima': ['pet', null, 'peru'],
-  'America/Montevideo': ['uyt', null, 'uruguay'],
-  'Atlantic/Stanley': ['fkst', null, 'falkland island'],
-  //Brazil
-  'America/Manaus': ['amt'],
-  'America/Sao_Paulo': ['brt', 'brst'],
-  'Brazil/Acre': ['act'],
-  // amst: -3, //Amazon summer time (brazil)
-  // fnt: -2, //fernando de noronha time
-  // pmdt: -2, //Saint pierre and miquelon daylight time
-  // pmst: -3, //Saint pierre and miquelon standard time
-  // rott: -3, //rothera research station time
-
   // awt: 'America/Blanc-sablon',
   // addt: 'America/pangnirtung',
   // apt: 'America/Blanc-sablon',
@@ -68,18 +45,34 @@ const informal = {
   // ywt: 'America/Dawson',
   // yst: 'America/whitehorse',
 
+  //South america
+  'America/Caracas': ['vet', null, 'venezuela'],
+  'America/Bogota': ['cot', null, 'colombia'],
+  'America/Cayenne': ['gft', null, 'french guiana'],
+  'America/Paramaribo': ['srt', null, 'suriname'],
+  'America/Guyana': ['gyt'],
+  'America/Buenos_Aires': ['art', null, 'argentina'],
+  'America/La_Paz': ['bot', null, 'bolivia'],
+  'America/Asuncion': ['pyt', 'pyst', 'paraguay'],
+  'America/Santiago': ['clt', 'clst', 'chile'],
+  'America/Lima': ['pet', null, 'peru'],
+  'America/Montevideo': ['uyt', null, 'uruguay'],
+  'Atlantic/Stanley': ['fkst', null, 'falkland island'],
+  //Brazil
+  'America/Manaus': ['amt'],
+  'America/Sao_Paulo': ['brt', 'brst'],
+  'Brazil/Acre': ['act'],
+  // amst: -3, //Amazon summer time (brazil)
+  // fnt: -2, //fernando de noronha time
+  // pmdt: -2, //Saint pierre and miquelon daylight time
+  // pmst: -3, //Saint pierre and miquelon standard time
+  // rott: -3, //rothera research station time
+
   //europe
   'Europe/London': ['gmt', 'bst', 'british'], //Britain is different
   'ETC/GMT': ['gmt', null, 'greenwich'],
   'Europe/Lisbon': ['wet', 'west', 'west europe'], //western europe
-  'Europe/Berlin': [
-    'cet',
-    'cest',
-    'central europe',
-    'middle european',
-    'met',
-    'mest'
-  ], //Central europe
+  'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'], //Central europe
   'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'], //eastern europe
   // -- these are old european ones, before the EU, i think:
   // 'europe/Minsk': ['feet', 'feest', 'eastern europe'], //further eastern europe (discontinued)
