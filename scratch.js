@@ -18,6 +18,6 @@ const informal = require('./src/index')
 // let str = `japan`
 // let str = `the South Sandwich Islands`
 
-console.log(informal.find('cest'))
+console.log(informal.find('toronto'))
 // console.log(informal.find('Europe/London'))
 // console.log(informal.find('south africa'))

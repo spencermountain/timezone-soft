@@ -16,13 +16,13 @@ Object.keys(byCountry).forEach(key => {
 
 //Add metazone info
 metazones.forEach(obj => {
-  all[obj.standard.name] = obj.pick
+  all[obj.standard.name.toLowerCase()] = obj.pick
   if (obj.standard.abbrev) {
     all[obj.standard.abbrev] = obj.pick
   }
   if (obj.daylight) {
     if (obj.daylight.name) {
-      all[obj.daylight.name] = obj.pick
+      all[obj.daylight.name.toLowerCase()] = obj.pick
     }
     if (obj.daylight.abbrev) {
       all[obj.daylight.abbrev] = obj.pick

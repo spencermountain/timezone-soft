@@ -195,7 +195,7 @@ module.exports = [
   },
   {
     standard: { name: 'Hawaiian Standard Time', abbrev: 'hst' },
-    alias: ['aleutian Standard Time'],
+    alias: ['aleutian'],
     pick: 'Pacific/Honolulu',
     zones: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston']
   },
@@ -210,7 +210,7 @@ module.exports = [
   {
     standard: { name: 'Central European Time', abbrev: 'cet' },
     daylight: { name: 'Central European Summer Time', abbrev: 'cest' },
-    alias: ['romance Standard Time'],
+    alias: ['romance'],
     pick: 'Europe/Berlin',
     zones: [
       'Africa/Algiers',
@@ -413,7 +413,7 @@ module.exports = [
   //South america
   {
     standard: { name: 'Brazil Time', abbrev: 'brt' },
-    alias: ['brasília'],
+    alias: ['brasília', 'brasilia'],
     pick: 'America/Sao_Paulo',
     zones: [
       'America/Araguaina',

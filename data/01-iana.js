@@ -493,15 +493,12 @@ const iana = {
   ETC: ['GMT', 'GMT+0', 'GMT-0', 'GMT0', 'Greenwich', 'UTC', 'Universal', 'Zulu']
 }
 
-const titlecase = str => str.charAt(0).toUpperCase() + str.slice(1)
-
 const zones = {}
 Object.keys(iana).forEach(k => {
   iana[k].forEach(str => {
-    const lowerCase = k + '/' + str
-    const final = titlecase(k) + '/' + titlecase(str)
-    zones[str] = final
-    zones[lowerCase] = final
+    const id = k + '/' + str
+    zones[str.toLowerCase()] = id
+    zones[id.toLowerCase()] = id
   })
 })
 module.exports = zones
