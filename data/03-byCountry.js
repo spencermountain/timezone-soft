@@ -111,7 +111,7 @@ module.exports = {
   },
   'cocos islands': {
     code: 'cc',
-    choice: 'indian/Cocos'
+    choice: 'Indian/Cocos'
   },
   liechtenstein: {
     code: 'li',
@@ -139,7 +139,7 @@ module.exports = {
   },
   'christmas island': {
     code: 'cx',
-    choice: 'indian/Christmas'
+    choice: 'Indian/Christmas'
   },
   slovakia: {
     code: 'sk',
@@ -263,7 +263,7 @@ module.exports = {
   },
   'british indian ocean territory': {
     code: 'io',
-    choice: 'indian/Chagos'
+    choice: 'Indian/Chagos'
   },
   iraq: {
     code: 'iq',
@@ -380,11 +380,11 @@ module.exports = {
   },
   mauritius: {
     code: 'mu',
-    choice: 'indian/Mauritius'
+    choice: 'Indian/Mauritius'
   },
   maldives: {
     code: 'mv',
-    choice: 'indian/Maldives'
+    choice: 'Indian/Maldives'
   },
   namibia: {
     code: 'na',
@@ -468,7 +468,7 @@ module.exports = {
   },
   seychelles: {
     code: 'sc',
-    choice: 'indian/Mahe'
+    choice: 'Indian/Mahe'
   },
   sudan: {
     code: 'sd',
@@ -586,7 +586,7 @@ module.exports = {
   },
   australia: {
     code: 'au',
-    choice: 'australia/Sydney'
+    choice: 'Australia/Sydney'
   },
   brazil: {
     code: 'br',
@@ -686,7 +686,7 @@ module.exports = {
   },
   'french southern and antarctic lands': {
     code: 'tf',
-    choice: 'indian/Kerguelen'
+    choice: 'Indian/Kerguelen'
   },
   ukraine: {
     code: 'ua',
