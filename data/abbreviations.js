@@ -1,13 +1,13 @@
 // this is a very rough list of informal and abbreviated timezones
 // i am not an expert, or even half-knowledgeable in this subject.
 // please help.
-// partially from: https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations
+// partially from: https://En.wikipedia.org/Wiki/List_Of_Time_Zone_Abbreviations
 
-//format:  'best/iana': [standard, daylight, alias...]
+//Format:  'best/Iana': [standard, daylight, alias...]
 const informal = {
   //North america
-  'America/Halifax': ['ast', 'adt', 'atlantic'], //or 'arabia standard time'
-  'America/New_York': ['est', 'edt', 'eastern'], //or 'Ecuador Time'
+  'America/Halifax': ['ast', 'adt', 'atlantic'], //Or 'arabia standard time'
+  'America/New_York': ['est', 'edt', 'eastern'], //Or 'Ecuador Time'
   'America/Chicago': ['cst', 'cdt', 'central'],
   'America/Denver': ['mst', 'mdt', 'mountain'],
   'America/Los_Angeles': ['pst', 'pdt', 'pacific'],
@@ -15,35 +15,35 @@ const informal = {
   'America/St_Johns': ['nst', 'ndt', 'nt', 'newfoundland', 'nddt'],
 
   // awt: 'America/Blanc-sablon',
-  // addt: 'America/pangnirtung',
+  // addt: 'America/Pangnirtung',
   // apt: 'America/Blanc-sablon',
-  // cddt: 'America/rankin_inlet',
-  // cwt: 'America/Mexico_city',
+  // cddt: 'America/Rankin_Inlet',
+  // cwt: 'America/Mexico_City',
   // cpt: 'America/Atikokan',
-  // eddt: 'America/iqaluit',
+  // eddt: 'America/Iqaluit',
   // ept: 'America/Detroit',
   // ewt: 'America/Detroit',
-  // ect: 'America/Anguilla', //eastern caribbean time (does not recognise dst)
+  // ect: 'America/Anguilla', //Eastern caribbean time (does not recognise dst)
   // 'eastern caribbean': 'America/Anguilla',
   // ffmt: 'America/Martinique',
-  // kmt: 'America/grand_turk',
-  // mddt: 'America/Cambridge_bay',
+  // kmt: 'America/Grand_Turk',
+  // mddt: 'America/Cambridge_Bay',
   // mpt: 'America/Boise',
-  // mwt: 'America/phoenix',
+  // mwt: 'America/Phoenix',
   // nwt: 'America/Adak',
-  // // npt: 'America/goose_bay',
-  // pddt: 'America/inuvik',
-  // ppmt: 'America/port-au-prince',
-  // ppt: 'America/Dawson_creek',
-  // pwt: 'America/Dawson_creek',
-  // qmt: 'America/guayaquil',
-  // sdmt: 'America/Santo_domingo',
-  // sjmt: 'America/Costa_rica',
-  // ydt: 'America/Dawson', //yukon
+  // // npt: 'America/Goose_Bay',
+  // pddt: 'America/Inuvik',
+  // ppmt: 'America/Port-au-prince',
+  // ppt: 'America/Dawson_Creek',
+  // pwt: 'America/Dawson_Creek',
+  // qmt: 'America/Guayaquil',
+  // sdmt: 'America/Santo_Domingo',
+  // sjmt: 'America/Costa_Rica',
+  // ydt: 'America/Dawson', //Yukon
   // ypt: 'America/Dawson',
   // yddt: 'America/Dawson',
   // ywt: 'America/Dawson',
-  // yst: 'America/whitehorse',
+  // yst: 'America/Whitehorse',
 
   //South america
   'America/Caracas': ['vet', null, 'venezuela'],
@@ -63,40 +63,40 @@ const informal = {
   'America/Sao_Paulo': ['brt', 'brst'],
   'Brazil/Acre': ['act'],
   // amst: -3, //Amazon summer time (brazil)
-  // fnt: -2, //fernando de noronha time
+  // fnt: -2, //Fernando de noronha time
   // pmdt: -2, //Saint pierre and miquelon daylight time
   // pmst: -3, //Saint pierre and miquelon standard time
-  // rott: -3, //rothera research station time
+  // rott: -3, //Rothera research station time
 
-  //europe
+  //Europe
   'Europe/London': ['gmt', 'bst', 'british'], //Britain is different
   'ETC/GMT': ['gmt', null, 'greenwich'],
-  'Europe/Lisbon': ['wet', 'west', 'west europe'], //western europe
+  'Europe/Lisbon': ['wet', 'west', 'west europe'], //Western europe
   'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'], //Central europe
-  'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'], //eastern europe
+  'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'], //Eastern europe
   // -- these are old european ones, before the EU, i think:
-  // 'europe/Minsk': ['feet', 'feest', 'eastern europe'], //further eastern europe (discontinued)
-  // ace: 'europe/Dublin',
-  // amt: 'europe/Amsterdam',
-  // bdst: 'europe/gibraltar',
-  // bmt: 'europe/Brussels',
-  // bst: 'europe/gibraltar', //British summer time
+  // 'Europe/Minsk': ['feet', 'feest', 'eastern europe'], //Further eastern europe (discontinued)
+  // ace: 'Europe/Dublin',
+  // amt: 'Europe/Amsterdam',
+  // bdst: 'Europe/Gibraltar',
+  // bmt: 'Europe/Brussels',
+  // bst: 'Europe/Gibraltar', //British summer time
   // 'british summer': 1,
-  // dmt: 'europe/Dublin',
+  // dmt: 'Europe/Dublin',
   // dft: 1, //Aix-specific equivalent of central european time
-  // cmt: 'europe/Copenhagen',
-  // // ist: 'europe/Dublin',
-  // imt: 'europe/Sofia',
-  // lst: 'europe/riga',
-  // pmt: 'europe/prague',
-  // rmt: 'europe/rome',
-  // set: 'europe/Stockholm',
-  // wemt: 'europe/Madrid',
-  // tse: 'europe/Dublin',
-  // utc: 'etc/utc', //Coordinated universal time
-  // 'coordinated universal': 'etc/utc',
+  // cmt: 'Europe/Copenhagen',
+  // // ist: 'Europe/Dublin',
+  // imt: 'Europe/Sofia',
+  // lst: 'Europe/Riga',
+  // pmt: 'Europe/Prague',
+  // rmt: 'Europe/Rome',
+  // set: 'Europe/Stockholm',
+  // wemt: 'Europe/Madrid',
+  // tse: 'Europe/Dublin',
+  // utc: 'etc/Utc', //Coordinated universal time
+  // 'coordinated universal': 'etc/Utc',
 
-  //russia
+  //Russia
   'Europe/Moscow': ['msk', null, 'fet', 'mdst', 'msd'], //'further eastern europe'
   'Europe/Samara': ['samt'],
   'Asia/Yekaterinburg': ['yekt'],
@@ -113,16 +113,16 @@ const informal = {
   'Asia/Kamchatka': ['pett'],
 
   //Near-russia
-  'Asia/Tashkent': ['uzt', 'uzbekistan'], //uzbekistan time
-  'Asia/Bishkek': ['kgt', 'kyrgyzstan'], //kyrgyzstan time
+  'Asia/Tashkent': ['uzt', 'uzbekistan'], //Uzbekistan time
+  'Asia/Bishkek': ['kgt', 'kyrgyzstan'], //Kyrgyzstan time
   'Antarctica/Vostok': ['vost'],
   'Asia/Hovd': ['hovt'],
   'Asia/Ashgabat': ['tmt', null, 'turkmenistan'],
-  // wmt: 'europe/warsaw',
-  // 'europe/volgograd':['volt']
+  // wmt: 'Europe/Warsaw',
+  // 'Europe/Volgograd':['volt']
 
   //Africa
-  'Africa/Lagos': ['wat', 'wast', 'west africa'], //west african
+  'Africa/Lagos': ['wat', 'wast', 'west africa'], //West african
   'Africa/Khartoum': ['cat', null, 'central africa'],
   'Africa/Nairobi': ['eat', null, 'east africa'],
   'Atlantic/Cape_Verde': ['cvt'],
@@ -138,9 +138,9 @@ const informal = {
   //Middle-east
   'Europe/Istanbul': ['trt', null, 'turkey'],
   'Asia/Tbilisi': ['get', null, 'georgia'],
-  // 'Asia/yerevan': ['amt', null, 'armenia'], //(sorry!)
+  // 'Asia/Yerevan': ['amt', null, 'armenia'], //(sorry!)
   'Asia/Baku': ['azt', null, 'azerbaijan'],
-  'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'], //using ist for india
+  'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'], //Using ist for india
   'Asia/Tehran': ['irst', 'irdt', 'iran'],
   'Asia/Karachi': ['pkt', null, 'pakistan'],
   'Asia/Kabul': ['aft', null, 'afghanistan'],
@@ -148,7 +148,7 @@ const informal = {
   'Asia/Almaty': ['almt', null, 'alma ata'],
   'Asia/Dubai': ['gst', null, 'gulf'],
 
-  //india
+  //India
   'Asia/Kolkata': ['ist', null, 'india', 'slst'],
   // 'Asia/Dhaka': ['bst', null, 'bangladesh'], //(sorry)
   'Asia/Thimbu': ['btt', null, 'bhutan'],
@@ -158,7 +158,7 @@ const informal = {
   'Indian/Chagos': ['iot', null, 'indian chagos'],
   'Indian/Kerguelen': ['tft', null, 'french southern and antarctic'],
   // biot: 6, //British indian ocean time
-  // iot: 3, //indian ocean time
+  // iot: 3, //Indian ocean time
 
   //Asia
   'Asia/Shanghai': ['ct', null, 'china', 'hkt'],
@@ -178,7 +178,7 @@ const informal = {
   'Pacific/Auckland': ['nzst', 'nzdt', 'nzmt'],
   'Australia/Lord_Howe': ['lhst', 'lhdt'],
 
-  //pacific
+  //Pacific
   'Pacific/Guam': ['chst'],
   'Pacific/Chatham': ['chast', 'chadt'],
   'Pacific/Honolulu': ['hst'],
@@ -201,55 +201,55 @@ const informal = {
   // cist: -8, //Clipperton island standard time
   // chut: 10, //Chuuk time
   // ddut: 10, //Dumont durville time
-  // gst: 'Pacific/guam',
-  // gamt: -9, //gambier islands time
-  // git: -9, //gambier island time
-  // gilt: 12, //gilbert island time
-  // idlw: -12, //international day line west time zone
+  // gst: 'Pacific/Guam',
+  // gamt: -9, //Gambier islands time
+  // git: -9, //Gambier island time
+  // gilt: 12, //Gilbert island time
+  // idlw: -12, //International day line west time zone
   // 'international day line west': -12,
-  // kost: 11, //kosrae time
+  // kost: 11, //Kosrae time
   // lint: 14, //Line islands time
   // magt: 12, //Magadan time
   // mist: 11, //Macquarie island station time
   // nct: 11, //New caledonia time
   // nft: 11, //Norfolk island time
-  // phot: 13, //phoenix island time
-  // pont: 11, //pohnpei standard time
-  // pett: 12, //kamchatka time
+  // phot: 13, //Phoenix island time
+  // pont: 11, //Pohnpei standard time
+  // pett: 12, //Kamchatka time
   // mart: -9.5, //Marquesas islands time
   // mit: -9.5, //Marquesas islands time
   // myt: 8, //Malaysia time
   // nut: -11, //Niue time
-  // pht: 8, //philippine time
-  // pgt: 10, //papua new guinea time
+  // pht: 8, //Philippine time
+  // pgt: 10, //Papua new guinea time
   // pmmt: 'Pacific/Bougainville',
   // // smt: 'Asia/Singapore',
   // sakt: 11, //Sakhalin island time
   // sret: 11, //Srednekolymsk time
-  // sst: 'Pacific/pago_pago',
-  // taht: -10, //tahiti time
-  // tvt: 12, //tuvalu time
-  // tkt: 13, //tokelau time
-  // tot: 13, //tonga time
-  // vut: 11, //vanuatu time
-  // wakt: 12, //wake island time
+  // sst: 'Pacific/Pago_Pago',
+  // taht: -10, //Tahiti time
+  // tvt: 12, //Tuvalu time
+  // tkt: 13, //Tokelau time
+  // tot: 13, //Tonga time
+  // vut: 11, //Vanuatu time
+  // wakt: 12, //Wake island time
 
-  //i forget (sorry!)
+  //I forget (sorry!)
   // haec: 2, //Heure avancée deurope centrale french-language name for cest
   // syot: 3, //Showa station time
-  // yekt: 5, //yekaterinburg time
+  // yekt: 5, //Yekaterinburg time
   // sct: 4, //Seychelles time
-  // orat: 5, //oral time
+  // orat: 5, //Oral time
   // mawt: 5, //Mawson station time
-  // hovt: 7, //khovd standard time
-  // hovst: 8, //khovd summer time
+  // hovt: 7, //Khovd standard time
+  // hovst: 8, //Khovd summer time
   // davt: 7, //Davis time
   // chost: 9, //Choibalsan summer time
   // chot: 8, //Choibalsan standard time
-  // wst: 8, //western standard time
+  // wst: 8, //Western standard time
 }
 
-//use each abbreviation as a key
+//Use each abbreviation as a key
 const lookup = Object.keys(informal).reduce((h, k) => {
   let arr = informal[k]
   for (let i = 0; i < 5; i += 1) {

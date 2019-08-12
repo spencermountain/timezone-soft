@@ -6,15 +6,15 @@ const metazones = require('./05-metazones')
 
 let all = Object.assign({}, iana, byCity, oldZones)
 
-//add country info
+//Add country info
 Object.keys(byCountry).forEach(key => {
-  //add country name
+  //Add country name
   all[key] = byCountry[key].choice
-  //add 2-letter country code
+  //Add 2-letter country code
   all[byCountry[key].code] = byCountry[key].choice
 })
 
-//add metazone info
+//Add metazone info
 metazones.forEach(obj => {
   all[obj.standard.name] = obj.pick
   if (obj.standard.abbrev) {

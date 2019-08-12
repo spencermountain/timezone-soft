@@ -25,7 +25,15 @@ export default [
         name: 'informal'
       }
     ],
-    plugins: [resolve(), json(), commonjs(), babel()]
+    plugins: [
+      resolve(),
+      json(),
+      commonjs(),
+      babel({
+        babelrc: false,
+        presets: ['@babel/preset-env']
+      })
+    ]
   },
   {
     input: 'src/index.js',
@@ -36,6 +44,16 @@ export default [
         name: 'informal'
       }
     ],
-    plugins: [resolve(), json(), commonjs(), babel(), terser()]
+    plugins: [
+      resolve(),
+      json(),
+      commonjs(),
+      babel({
+        babelrc: false,
+        presets: ['@babel/preset-env']
+      }),
+      ,
+      terser()
+    ]
   }
 ]
