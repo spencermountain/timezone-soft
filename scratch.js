@@ -6,7 +6,7 @@ const informal = require('./src/index')
 // let str = `+5hs`
 // let str = `GMT-5`
 // let str = -5
-let str = 'Canada/Toronto'
+let str = '-3'
 
 // let str = `Eastern Time - US & Canada`
 // let str = `Central - NU (Resolute)`

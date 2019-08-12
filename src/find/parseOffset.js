@@ -1,4 +1,5 @@
 const isOffset = /(\-?[0-9]+)h(rs)?/i
+const isNumber = /(\-?[0-9]+)/
 const utcOffset = /utc([\-+]?[0-9]+)/i
 const gmtOffset = /gmt([\-+]?[0-9]+)/i
 
@@ -28,6 +29,11 @@ const parseOffset = function(tz) {
   if (m !== null) {
     let num = Number(m[1]) * -1
     return toIana(num)
+  }
+  // '+5'
+  m = tz.match(isNumber)
+  if (m !== null) {
+    return toIana(m[1])
   }
   return null
 }
