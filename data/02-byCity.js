@@ -4,6 +4,7 @@ module.exports = {
   'san fransisco': 'America/Los_Angeles',
   //Canada
   ottawa: 'America/Toronto',
+  montreal: 'America/Toronto',
 
   // china
   chongqing: 'Asia/Shanghai',

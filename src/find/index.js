@@ -6,6 +6,7 @@ const normalizeOne = tz => {
   tz = tz.replace(/ time/g, '')
   tz = tz.replace(/ (standard|daylight|summer)/g, '')
   tz = tz.replace(/ - .*/g, '') //`Eastern Time - US & Canada`
+  tz = tz.replace(/, .*/g, '') //`mumbai, india`
   return tz.trim()
 }
 

@@ -51,23 +51,44 @@ This library is an attempt to 'soften' this exchange, between human-IANA, using 
 It was built for use in the [spacetime](https://github.com/spencermountain/spacetime) timezone library, but may be used without it.
 
 ```js
-const informal=require('spacetime-informal')
+const informal = require('spacetime-informal')
 
 informal.find('EST')
-//'America/New_York'
+// 'America/New_York'
+
 informal.find('central')
-//America/Chicago'
-informal.find('british')
-//Europe/London'
+// 'America/Chicago'
+
+informal.find('venezuela')
+// 'America/Caracas'
+
+informal.find('south east asia')
+// 'Asia/Bangkok'
 
 informal.display('Toronto')
 /*{
-  standard:{name: 'Eastern Standard Time', abbrev:'EST'},
-  daylight:{name: 'Eastern Daylight Time', 'EDT'},
-  iana:'Canada/Toronto'
+  standard: { name: 'Eastern Standard Time', abbrev: 'EST' },
+  daylight: { name: 'Eastern Daylight Time', abbrev: 'EDT' },
+  iana: 'Canada/Toronto'
 }*/
 ```
 
-work-in-progress
+it was built to be as forgiving as possible, and return the most common-sense IANA timezone id from user-input.
+
+---
+
+along with [spacetime](https://github.com/spencermountain/spacetime), you can generate human-friendly time formats, like this:
+```js
+const spacetime = require('spacetime')
+const informal = require('spacetime-informal')
+
+let display = informal.display('montreal')
+let s = spacetime.now(display.iana)
+let abbrev = s.isDST() ? display.daylight.abbrev : display.standard.abbrev // (add some null-checks)
+let time = `${s.time()} ${abbrev}`
+// '4:20pm EDT'
+```
+
+work-in-progress.
 
 MIT
