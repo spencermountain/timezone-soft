@@ -50,6 +50,7 @@ test('informal timezones', t => {
     ['Etc/GMT+5', 'Etc/GMT+5'],
     ['Etc/gmt-5', 'Etc/GMT-5'],
     ['-3', 'Etc/GMT+3'],
+    ['3', 'Etc/GMT-3'],
     [`Eastern Time - US & Canada`, 'Canada/Eastern']
   ]
   arr.forEach(a => {

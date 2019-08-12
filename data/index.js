@@ -20,14 +20,14 @@ metazones.forEach(obj => {
   all[obj.standard.name.toLowerCase()] = zone
 
   if (obj.standard.abbrev) {
-    all[obj.standard.abbrev] = zone
+    all[obj.standard.abbrev.toLowerCase()] = zone
   }
   if (obj.daylight) {
     if (obj.daylight.name) {
       all[obj.daylight.name.toLowerCase()] = zone
     }
     if (obj.daylight.abbrev) {
-      all[obj.daylight.abbrev] = zone
+      all[obj.daylight.abbrev.toLowerCase()] = zone
     }
   }
   if (obj.alias) {
