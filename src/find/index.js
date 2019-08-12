@@ -20,6 +20,10 @@ const find = function(str) {
   if (lookup.hasOwnProperty(tmp)) {
     return lookup[tmp]
   }
+  tmp = str + ' standard time'
+  if (lookup.hasOwnProperty(tmp)) {
+    return lookup[tmp]
+  }
 
   return null
 }

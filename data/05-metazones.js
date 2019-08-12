@@ -546,8 +546,8 @@ module.exports = [
   {
     standard: { name: 'India Standard Time', abbrev: 'ist' },
     alias: ['indian'],
-    pick: 'Asia/Calcutta',
-    zones: ['Asia/Calcutta', 'Asia/Colombo']
+    pick: 'Asia/Kolkata',
+    zones: ['Asia/Kolkata', 'Asia/Colombo']
   },
   {
     standard: { name: 'Indochina Time', abbrev: 'ict' },

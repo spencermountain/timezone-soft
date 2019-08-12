@@ -40,9 +40,10 @@ test('informal timezones', t => {
     ['Japan', 'Asia/Tokyo'],
     ['JP', 'Asia/Tokyo'],
     ['CA', 'America/Toronto'],
+    ['venezuela', 'America/Caracas'],
     ['venezuela time', 'America/Caracas'],
-    ['venezuelan', 'America/Caracas']
-    // [],
+    ['venezuelan', 'America/Caracas'],
+    ['calcutta', 'Asia/Kolkata']
     // []
   ]
   arr.forEach(a => {

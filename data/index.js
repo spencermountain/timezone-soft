@@ -16,20 +16,22 @@ Object.keys(byCountry).forEach(key => {
 
 //Add metazone info
 metazones.forEach(obj => {
-  all[obj.standard.name.toLowerCase()] = obj.pick
+  let zone = obj.pick || obj.zones[0]
+  all[obj.standard.name.toLowerCase()] = zone
+
   if (obj.standard.abbrev) {
-    all[obj.standard.abbrev] = obj.pick
+    all[obj.standard.abbrev] = zone
   }
   if (obj.daylight) {
     if (obj.daylight.name) {
-      all[obj.daylight.name.toLowerCase()] = obj.pick
+      all[obj.daylight.name.toLowerCase()] = zone
     }
     if (obj.daylight.abbrev) {
-      all[obj.daylight.abbrev] = obj.pick
+      all[obj.daylight.abbrev] = zone
     }
   }
   if (obj.alias) {
-    obj.alias.forEach(str => (all[str] = obj.pick))
+    obj.alias.forEach(str => (all[str.toLowerCase()] = zone))
   }
 })
 // console.log(all)
