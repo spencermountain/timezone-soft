@@ -493,12 +493,19 @@ const iana = {
   ETC: ['GMT', 'GMT+0', 'GMT-0', 'GMT0', 'Greenwich', 'UTC', 'Universal', 'Zulu']
 }
 
+const ignore = {
+  east: true,
+  west: true
+}
+
 const zones = {}
 Object.keys(iana).forEach(k => {
   iana[k].forEach(str => {
     const id = k + '/' + str
-    zones[str.toLowerCase()] = id
     zones[id.toLowerCase()] = id
+    if (!ignore[str]) {
+      zones[str.toLowerCase()] = id
+    }
   })
 })
 module.exports = zones

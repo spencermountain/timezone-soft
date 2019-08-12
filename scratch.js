@@ -2,9 +2,11 @@ const informal = require('./src/index')
 
 // http://cldr.unicode.org/
 
-let str = `utc+5`
-// let str = `5hs`
+// let str = `utc+5` //Etc/GMT-5
+// let str = `+5hs`
+// let str = `GMT-5`
 // let str = -5
+let str = 'Canada/Toronto'
 
 // let str = `Eastern Time - US & Canada`
 // let str = `Central - NU (Resolute)`

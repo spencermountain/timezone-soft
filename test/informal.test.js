@@ -43,8 +43,14 @@ test('informal timezones', t => {
     ['venezuela', 'America/Caracas'],
     ['venezuela time', 'America/Caracas'],
     ['venezuelan', 'America/Caracas'],
-    ['calcutta', 'Asia/Kolkata']
-    // []
+    ['calcutta', 'Asia/Kolkata'],
+    ['5hs', 'Etc/GMT-5'],
+    ['+5hs', 'Etc/GMT-5'],
+    ['-5hs', 'Etc/GMT+5'],
+    ['Etc/GMT+5', 'Etc/GMT+5'],
+    ['Etc/gmt-5', 'Etc/GMT-5'],
+    ['-3', 'Etc/GMT+3'],
+    [`Eastern Time - US & Canada`, 'Canada/Eastern']
   ]
   arr.forEach(a => {
     let found = informal.find(a[0])

@@ -34,7 +34,7 @@ metazones.forEach(obj => {
     obj.alias.forEach(str => (all[str.toLowerCase()] = zone))
   }
 })
-// console.log(all)
+// console.log(all.toronto)
 // console.log(Object.keys(all).length)
 
 module.exports = all
