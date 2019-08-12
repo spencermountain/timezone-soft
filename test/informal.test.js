@@ -31,7 +31,19 @@ test('informal timezones', t => {
     ['eat', 'Africa/Nairobi'],
     ['shenzhen', 'Asia/Shanghai'],
     ['south east asia', 'Asia/Bangkok'],
-    ['indochina', 'Asia/Bangkok']
+    ['indochina', 'Asia/Bangkok'],
+    [`Europe/London`, `Europe/London`],
+    ['cet', 'Europe/Berlin'],
+    ['cest', 'Europe/Berlin'],
+    ['india', 'Asia/Kolkata'],
+    ['indian', 'Asia/Kolkata'],
+    ['Japan', 'Asia/Tokyo'],
+    ['JP', 'Asia/Tokyo'],
+    ['CA', 'America/Toronto'],
+    ['venezuela time', 'America/Caracas'],
+    ['venezuelan', 'America/Caracas']
+    // [],
+    // []
   ]
   arr.forEach(a => {
     let found = informal.find(a[0])

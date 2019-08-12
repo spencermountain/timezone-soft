@@ -195,7 +195,7 @@ module.exports = [
   },
   {
     standard: { name: 'Hawaiian Standard Time', abbrev: 'hst' },
-    alias: ['aleutian'],
+    alias: ['aleutian', 'hawaii'],
     pick: 'Pacific/Honolulu',
     zones: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston']
   },
@@ -210,7 +210,7 @@ module.exports = [
   {
     standard: { name: 'Central European Time', abbrev: 'cet' },
     daylight: { name: 'Central European Summer Time', abbrev: 'cest' },
-    alias: ['romance'],
+    alias: ['romance', 'central europe'],
     pick: 'Europe/Berlin',
     zones: [
       'Africa/Algiers',
@@ -253,6 +253,7 @@ module.exports = [
   {
     standard: { name: 'Eastern European Time', abbrev: 'eet' },
     daylight: { name: 'Eastern European Summer Time', abbrev: 'eest' },
+    alias: ['eastern europe'],
     pick: 'Europe/Riga',
     zones: [
       'Africa/Cairo',
@@ -282,6 +283,7 @@ module.exports = [
   {
     standard: { name: 'Western European Time', abbrev: 'wet' },
     daylight: { name: 'Western European Summer Time', abbrev: 'west' },
+    alias: ['western europe'],
     pick: 'Europe/Lisbon',
     zones: [
       'Africa/Casablanca',
@@ -294,6 +296,7 @@ module.exports = [
   },
   {
     standard: { name: 'Turkey Standard Time', abbrev: 'trt' },
+    alias: ['turkish'],
     pick: 'Europe/Istanbul',
     zones: ['Europe/Istanbul']
   },
@@ -302,6 +305,7 @@ module.exports = [
   //Africa
   {
     standard: { name: 'East Africa Time', abbrev: 'eat' },
+    alias: ['east african', 'eastern africa'],
     pick: 'Africa/Nairobi',
     zones: [
       'Africa/Addis_Ababa',
@@ -320,6 +324,7 @@ module.exports = [
   {
     standard: { name: 'Central Africa Time', abbrev: 'cat' },
     pick: 'Africa/Khartoum',
+    alias: ['central africa'],
     zones: [
       'Africa/Blantyre',
       'Africa/Bujumbura',
@@ -335,11 +340,13 @@ module.exports = [
   },
   {
     standard: { name: 'South Africa Standard Time', abbrev: 'sast' },
+    alias: ['southern africa', 'south african'],
     pick: 'Africa/Johannesburg',
     zones: ['Africa/Johannesburg', 'Africa/Maseru', 'Africa/Mbabane']
   },
   {
     standard: { name: 'West Africa Standard Time', abbrev: 'wat' },
+    alias: ['western africa', 'west african'],
     pick: 'Africa/Lagos',
     zones: [
       'Africa/Bangui',
@@ -360,12 +367,14 @@ module.exports = [
   {
     standard: { name: 'Australian Central Standard Time', abbrev: 'acst' },
     daylight: { name: 'Australian Central Daylight Time', abbrev: 'acdt' },
+    alias: ['australia central'],
     pick: 'Australia/Adelaide',
     zones: ['Australia/Adelaide', 'Australia/Broken_Hill', 'Australia/Darwin']
   },
   {
     standard: { name: 'Australian Eastern Standard Time', abbrev: 'aest' },
     daylight: { name: 'Australian Eastern Daylight Time', abbrev: 'aedt' },
+    alias: ['australia east'],
     pick: 'Australia/Brisbane',
     zones: [
       'Australia/Brisbane',
@@ -379,11 +388,13 @@ module.exports = [
   {
     standard: { name: 'Australian Western Standard Time', abbrev: 'awst' },
     daylight: { name: 'Australian Western Daylight Time', abbrev: 'awdt' },
+    alias: ['australia west'],
     pick: 'Australia/Perth',
     zones: ['Antarctica/Casey', 'Australia/Perth']
   },
   {
     standard: { name: 'Australian Central Western Standard Time', abbrev: 'acwst' },
+    alias: ['australia central west'],
     pick: 'Australia/Eucla',
     zones: ['Australia/Eucla']
   },
@@ -398,6 +409,7 @@ module.exports = [
   //Russia
   {
     standard: { name: 'Russian Standard Time', abbrev: 'msk' },
+    alias: ['russian'],
     pick: 'Europe/Moscow',
     zones: [
       'Europe/Astrakhan',
@@ -413,7 +425,7 @@ module.exports = [
   //South america
   {
     standard: { name: 'Brazil Time', abbrev: 'brt' },
-    alias: ['brasília', 'brasilia'],
+    alias: ['brasília', 'brasilia', 'brazilian'],
     pick: 'America/Sao_Paulo',
     zones: [
       'America/Araguaina',
@@ -428,6 +440,7 @@ module.exports = [
   },
   {
     standard: { name: 'Argentina Time', abbrev: 'art' },
+    alias: ['argentinian'],
     pick: 'America/Buenos_Aires',
     zones: [
       'America/Argentina/La_Rioja',
@@ -445,6 +458,7 @@ module.exports = [
   },
   {
     standard: { name: 'Amazon Time', abbrev: 'amst' },
+    alias: ['amazonian'],
     pick: 'America/Manaus',
     zones: [
       'America/Boa_Vista',
@@ -457,6 +471,7 @@ module.exports = [
 
   {
     standard: { name: 'Venezuelan Standard Time', abbrev: 'vet' },
+    alias: ['venezuela'],
     zones: ['America/Caracas']
   },
   {
@@ -467,14 +482,17 @@ module.exports = [
   {
     standard: { name: 'Cuba Standard Time', abbrev: 'cst' },
     daylight: { name: 'Cuba Daylight Time', abbrev: 'cdt' },
+    alias: ['cuban'],
     zones: ['America/Havana']
   },
   {
     standard: { name: 'Bolivia Time', abbrev: 'bot' },
+    alias: ['bolivian'],
     zones: ['America/La_Paz']
   },
   {
     standard: { name: 'Colombia Time', abbrev: 'cot' },
+    alias: ['colombian'],
     zones: ['America/Bogota']
   },
   {
@@ -510,11 +528,13 @@ module.exports = [
   {
     standard: { name: 'Arabic Standard Time', abbrev: 'ast' },
     pick: 'Asia/Baghdad',
+    alias: ['arabic', 'arab'],
     zones: ['Asia/Aden', 'Asia/Baghdad', 'Asia/Bahrain', 'Asia/Kuwait', 'Asia/Qatar', 'Asia/Riyadh']
   },
   {
     standard: { name: 'Iran Standard Time', abbrev: 'irst' },
     daylight: { name: 'Iran Daylight Time', abbrev: 'irdt' },
+    alias: ['iranian'],
     pick: 'Asia/Tehran',
     zones: ['Asia/Tehran']
   },
@@ -525,6 +545,7 @@ module.exports = [
   },
   {
     standard: { name: 'India Standard Time', abbrev: 'ist' },
+    alias: ['indian'],
     pick: 'Asia/Calcutta',
     zones: ['Asia/Calcutta', 'Asia/Colombo']
   },
@@ -536,6 +557,7 @@ module.exports = [
   },
   {
     standard: { name: 'China Standard Time', abbrev: 'ct' },
+    alias: ['chinese'],
     pick: 'Asia/Shanghai',
     zones: ['Asia/Macau', 'Asia/Shanghai']
   },
@@ -558,6 +580,7 @@ module.exports = [
   {
     standard: { name: 'Gulf Standard Time', abbrev: 'gst' },
     pick: 'Asia/Dubai',
+    alias: ['uae'],
     zones: ['Asia/Dubai', 'Asia/Muscat']
   },
   {
@@ -565,12 +588,14 @@ module.exports = [
     zones: ['Asia/Hong_Kong']
   },
   {
-    standard: { name: 'Western Indonedian Time', abbrev: 'wib' },
+    standard: { name: 'Western Indonesian Time', abbrev: 'wib' },
+    alias: ['indonesia'],
     zones: ['Asia/Jakarta', 'Asia/Pontianak', 'Asia/Jayapura']
   },
   {
     standard: { name: 'Israel Daylight Time', abbrev: 'idt' },
     daylight: { name: 'Israel Standard Time', abbrev: 'ist' },
+    alias: ['israeli'],
     zones: ['Asia/Jerusalem']
   },
   {
@@ -588,6 +613,7 @@ module.exports = [
   {
     standard: { name: 'Korea Standard Time', abbrev: 'kst' },
     pick: 'Asia/Seoul',
+    alias: ['korean'],
     zones: ['Asia/Pyongyang', 'Asia/Seoul']
   },
   {
@@ -650,6 +676,7 @@ module.exports = [
   },
   {
     standard: { name: 'Samoa Standard Time', abbrev: 'sst' },
+    alias: ['somoan'],
     zones: ['Pacific/Midway', 'Pacific/Pago_Pago']
   },
   {
