@@ -7,14 +7,16 @@
     <a href="https://npmjs.org/package/spacetime-informal">
       <img src="https://img.shields.io/npm/v/spacetime-informal.svg?style=flat-square" />
     </a>
-    <a href="https://codecov.io/gh/spencermountain/spacetime-informal">
+    <!-- <a href="https://codecov.io/gh/spencermountain/spacetime-informal">
       <img src="https://codecov.io/gh/spencermountain/spacetime-informal/branch/master/graph/badge.svg" />
-    </a>
+    </a> -->
     <a href="https://unpkg.com/spacetime-informal/builds/spacetime-informal.min.js">
       <img src="https://badge-size.herokuapp.com/spencermountain/spacetime-informal/master/builds/spacetime-informal.min.js" />
     </a>
   </div>
-
+  <div align="center">
+    <code>spacetime-informal</code>
+  </div>
   <sub>
     by
     <a href="https://spencermountain.github.io/">Spencer Kelly</a>
