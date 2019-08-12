@@ -504,7 +504,8 @@ Object.keys(iana).forEach(k => {
     const id = k + '/' + str
     zones[id.toLowerCase()] = id
     if (!ignore[str]) {
-      str = str.toLowerCase().replace(/_/g, ' ')
+      str = str.toLowerCase()
+      str = str.replace(/[_-]/g, ' ')
       zones[str] = id
     }
   })

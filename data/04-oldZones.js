@@ -148,7 +148,7 @@ module.exports = {
   'etc/Zulu': 'Etc/Utc',
   gmt: 'etc/Gmt',
   singapore: 'Asia/Singapore',
-  turkey: 'Europe/Istanbul',
+  'easter island': 'Chile/Easterisland',
   'America/Indiana/Indianapolis': 'America/Indianapolis',
   'us/Pacific-new': 'America/Los_Angeles',
   'America/Kentucky/Louisville': 'America/Louisville',

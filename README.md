@@ -53,17 +53,17 @@ It was built for use in the [spacetime](https://github.com/spencermountain/space
 ```js
 const informal=require('spacetime-informal')
 
-informal.guess('EST')
+informal.find('EST')
 //'America/New_York'
-informal.guess('central')
+informal.find('central')
 //America/Chicago'
-informal.guess('british')
+informal.find('british')
 //Europe/London'
 
-informal.display('Canada/Toronto')
+informal.display('Toronto')
 /*{
-  abbreviation:'EST',
-  title:'Eastern',
+  standard:{name: 'Eastern Standard Time', abbrev:'EST'},
+  daylight:{name: 'Eastern Daylight Time', 'EDT'},
   iana:'Canada/Toronto'
 }*/
 ```

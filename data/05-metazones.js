@@ -457,7 +457,7 @@ module.exports = [
     ]
   },
   {
-    standard: { name: 'Amazon Time', abbrev: 'AMST' },
+    standard: { name: 'Amazon Time', abbrev: 'AMT' },
     alias: ['amazonian'],
     pick: 'America/Manaus',
     zones: [
@@ -469,6 +469,11 @@ module.exports = [
     ]
   },
 
+  {
+    standard: { name: 'Easter Island Standard Time', abbrev: 'EAST' },
+    daylight: { name: 'Easter Island Summer Time', abbrev: 'EASST' },
+    zones: ['Chile/Easterisland']
+  },
   {
     standard: { name: 'Venezuelan Standard Time', abbrev: 'VET' },
     alias: ['venezuela'],
@@ -589,8 +594,12 @@ module.exports = [
   },
   {
     standard: { name: 'Western Indonesian Time', abbrev: 'WIB' },
-    alias: ['indonesia'],
+    alias: ['indonesia'], //most of it
     zones: ['Asia/Jakarta', 'Asia/Pontianak', 'Asia/Jayapura']
+  },
+  {
+    standard: { name: 'Central Indonesian Time', abbrev: 'WITA' },
+    zones: ['Asia/Makassar']
   },
   {
     standard: { name: 'Israel Daylight Time', abbrev: 'IDT' },
@@ -641,7 +650,6 @@ module.exports = [
   // kamchatka: ['Asia/Kamchatka'],
   // nepal: ['Asia/Katmandu'],
   // magadan: ['Asia/Magadan'],
-  // indonesia_Central: ['Asia/Makassar'],
   // philippines: ['Asia/Manila'],
   // novosibirsk: ['Asia/Novosibirsk'],
   // omsk: ['Asia/Omsk'],

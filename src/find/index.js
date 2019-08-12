@@ -9,6 +9,7 @@ const normalizeOne = tz => {
   return tz.trim()
 }
 
+//some more aggressive transformations
 const normalizeTwo = function(tz) {
   tz = tz.replace(/\b(east|west|north|south)ern/g, '$1')
   tz = tz.replace(/\b(africa|america|australia)n/g, '$1')

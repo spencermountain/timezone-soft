@@ -9,7 +9,7 @@ const display = function(str) {
   let meta = metas.find(obj => obj.zones.find(tz => tz === id))
   meta = meta || {}
   return {
-    id: id,
+    iana: id,
     standard: meta.standard,
     daylight: meta.daylight
   }

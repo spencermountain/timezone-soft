@@ -8,11 +8,11 @@ test('display-test', t => {
     ['lima', 'PET'],
     ['bermuda', 'AST', 'ADT'],
     ['america/manaus', 'AMT'],
-    ['toronto', 'EST', 'ADT'],
+    ['toronto', 'EST', 'EDT'],
     ['vancouver', 'PST', 'PDT'],
     ['europe/paris', 'CET', 'CEST'],
     ['dakar', 'GMT'],
-    ['Punta Arenas', 'CLST'],
+    // ['Punta Arenas', 'CLST'],
     ['prague', 'CET', 'CEST'],
     ['kinshasa', 'WAT'],
     ['chongqing', 'CT'],
@@ -23,7 +23,6 @@ test('display-test', t => {
   ]
   arr.forEach(a => {
     let display = informal.display(a[0])
-    console.log(a[0], display)
     t.equal(display.standard.abbrev, a[1], a[0] + ' standard')
     if (display.daylight) {
       t.equal(display.daylight.abbrev, a[2], a[0] + ' daylight')
