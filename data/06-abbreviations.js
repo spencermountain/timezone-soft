@@ -165,7 +165,7 @@ const informal = {
   'Asia/Ulaanbaatar': ['ulat'],
   'Asia/Seoul': ['kst', null, 'korea'],
   'Asia/Tokyo': ['jst', null, 'japan'],
-  'Asia/Phnom_Penh': ['ict', null, 'indochina'],
+  'Asia/Phnom_Penh': ['ict', null],
   'Asia/Manila': ['pht', null, 'philippines'],
   'Asia/Singapore': ['sgt'],
   // mmt: 'Asia/Colombo',
@@ -250,14 +250,14 @@ const informal = {
 }
 
 //Use each abbreviation as a key
-const lookup = Object.keys(informal).reduce((h, k) => {
-  let arr = informal[k]
-  for (let i = 0; i < 5; i += 1) {
-    if (arr[i]) {
-      h[arr[i]] = k
-    }
-  }
-  return h
-}, {})
+// const lookup = Object.keys(informal).reduce((h, k) => {
+//   let arr = informal[k]
+//   for (let i = 0; i < 5; i += 1) {
+//     if (arr[i]) {
+//       h[arr[i]] = k
+//     }
+//   }
+//   return h
+// }, {})
 
-module.exports = lookup
+module.exports = informal

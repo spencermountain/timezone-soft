@@ -3,11 +3,12 @@ const byCity = require('./02-byCity')
 const byCountry = require('./03-byCountry')
 const oldZones = require('./04-oldZones')
 const metazones = require('./05-metazones')
+const abbreviations = require('./06-abbreviations')
 
 let all = Object.assign({}, iana, byCity, oldZones)
 
 //Add country info
-Object.keys(byCountry).forEach(key => {
+Object.keys(byCountry).forEach((key) => {
   //Add country name
   all[key] = byCountry[key].choice
   //Add 2-letter country code
@@ -15,7 +16,7 @@ Object.keys(byCountry).forEach(key => {
 })
 
 //Add metazone info
-metazones.forEach(obj => {
+metazones.forEach((obj) => {
   let zone = obj.pick || obj.zones[0]
   all[obj.standard.name.toLowerCase()] = zone
 
@@ -31,10 +32,19 @@ metazones.forEach(obj => {
     }
   }
   if (obj.alias) {
-    obj.alias.forEach(str => (all[str.toLowerCase()] = zone))
+    obj.alias.forEach((str) => (all[str.toLowerCase()] = zone))
   }
+})
+
+// add even-more abbreviations
+Object.keys(abbreviations).forEach((k) => {
+  let arr = (abbreviations[k] || []).filter((a) => a)
+  arr.forEach((abbr) => {
+    if (all.hasOwnProperty(abbr) === false) {
+      all[abbr] = k
+    }
+  })
 })
 // console.log(all.toronto)
 // console.log(Object.keys(all).length)
-
 module.exports = all

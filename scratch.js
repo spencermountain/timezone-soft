@@ -9,8 +9,5 @@ const informal = require('./src/index')
 
 const spacetime = require('/Users/spencer/mountain/spacetime')
 
-let display = informal.display('montreal, canada')
-let s = spacetime.now(display.iana)
-let abbrev = s.isDST() ? display.daylight.abbrev : display.standard.abbrev
-let time = `${s.time()} ${abbrev}`
-// '4:13pm EDT'
+let display = informal.find('NZST')
+console.log(display)
