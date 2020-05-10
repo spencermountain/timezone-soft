@@ -404,7 +404,18 @@ module.exports = [
     pick: 'Australia/Lord_Howe',
     zones: ['Australia/Lord_Howe']
   },
-  // new_Zealand: ['Antarctica/Mcmurdo', 'Pacific/Auckland'],
+  {
+    standard: { name: 'New Zealand Standard Time', abbrev: 'NZST' },
+    daylight: { name: 'New Zealand Daylight Time', abbrev: 'NZDT' },
+    pick: 'Pacific/Auckland',
+    zones: ['Antarctica/Mcmurdo', 'Pacific/Auckland']
+  },
+  {
+    standard: { name: 'Chatham Island Standard Time', abbrev: 'CHAST' },
+    daylight: { name: 'Chatham Island Daylight Time', abbrev: 'CHADT' },
+    pick: 'Pacific/Chatham',
+    zones: ['Pacific/Chatham']
+  },
 
   //Russia
   {
@@ -420,7 +431,10 @@ module.exports = [
       'Europe/Kirov'
     ]
   },
-  // volgograd: ['Europe/Volgograd'],
+  {
+    standard: { name: 'Volgograd Time', abbrev: 'VOLT' },
+    zones: ['Europe/Volgograd']
+  },
 
   //South america
   {
@@ -561,10 +575,10 @@ module.exports = [
     zones: ['Asia/Bangkok', 'Asia/Phnom_Penh', 'Asia/Saigon', 'Asia/Vientiane']
   },
   {
-    standard: { name: 'China Standard Time', abbrev: 'CT' },
+    standard: { name: 'China Standard Time', abbrev: 'CT' }, //cst?
     alias: ['chinese'],
     pick: 'Asia/Shanghai',
-    zones: ['Asia/Macau', 'Asia/Shanghai']
+    zones: ['Asia/Macau', 'Asia/Shanghai', 'Asia/Taipei']
   },
 
   {
@@ -635,32 +649,34 @@ module.exports = [
     zones: ['Asia/Ust-nera', 'Asia/Vladivostok']
   },
 
-  // anadyr: ['Asia/Anadyr'],
-  // turkmenistan: ['Asia/Ashgabat'],
-  // azerbaijan: ['Asia/Baku'],
-  // kyrgystan: ['Asia/Bishkek'],
-  // brunei: ['Asia/Brunei'],
+  { standard: { name: 'Anadyr Time', abbrev: 'ANAT' }, zones: ['Asia/Anadyr'] },
+  { standard: { name: 'Turkmenistan Time', abbrev: 'TMT' }, zones: ['Asia/Ashgabat'] },
+  { standard: { name: 'Azerbaijan Time', abbrev: 'AZT' }, zones: ['Asia/Baku'] },
+  { standard: { name: 'Kyrgyzstan Time', abbrev: 'KGT' }, zones: ['Asia/Bishkek'] },
+  { standard: { name: 'Brunei Darussalam Time', abbrev: 'BNT' }, zones: ['Asia/Brunei'] },
   // choibalsan: ['Asia/Choibalsan'],
-  // bangladesh: ['Asia/Dhaka'],
+  { stabdard: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, zones: ['Asia/Dhaka'] },
   // east_Timor: ['Asia/Dili'],
   // tajikistan: ['Asia/Dushanbe'],
   // hovd: ['Asia/Hovd'],
   // irkutsk: ['Asia/Irkutsk'],
-  // afghanistan: ['Asia/Kabul'],
-  // kamchatka: ['Asia/Kamchatka'],
-  // nepal: ['Asia/Katmandu'],
+  { standard: { name: 'Afghanistan Time', abbrev: 'AFT' }, zones: ['Asia/Kabul'] },
+  { standard: { name: 'Kamchatka Time', abbrev: 'PETT' }, zones: ['Asia/Kamchatka'] },
+  { standard: { name: 'Nepal Time', abbrev: 'NPT' }, zones: ['Asia/Katmandu'] },
   // magadan: ['Asia/Magadan'],
-  // philippines: ['Asia/Manila'],
+  { standard: { name: 'Philippine Time', abbrev: 'PHT' }, zones: ['Asia/Manila'] },
   // novosibirsk: ['Asia/Novosibirsk'],
   // omsk: ['Asia/Omsk'],
-  // myanmar: ['Asia/Rangoon'],
+  { standard: { name: 'Myanmar Time', abbrev: 'MMT' }, zones: ['Asia/Rangoon'] },
   // sakhalin: ['Asia/Sakhalin'],
   // srednekolymsk: ['Asia/Srednekolymsk'],
-  // taipei: ['Asia/Taipei'],
-  // georgia: ['Asia/Tbilisi'],
+  { standard: { name: 'Georgia Standard Time', abbrev: 'GET' }, zones: ['Asia/Tbilisi'] },
   // bhutan: ['Asia/Thimphu'],
-  // japan: ['Asia/Tokyo'],
-  // mongolia: ['Asia/Ulaanbaatar'],
+  {
+    standard: { name: 'Japan Standard Time', abbrev: 'JST' },
+    zones: ['Asia/Tokyo']
+  },
+  { standard: { name: 'Ulaanbaatar Time', abbrev: 'ULAT' }, zones: ['Asia/Ulaanbaatar'] },
   // urumqi: ['Asia/Urumqi'],
   // yekaterinburg: ['Asia/Yekaterinburg'],
   // armenia: ['Asia/Yerevan'],
@@ -705,7 +721,6 @@ module.exports = [
 
   //Pacific
   // apia: ['Pacific/Apia'],
-  // chatham: ['Pacific/Chatham'],
   // easter: ['Pacific/Easter'],
   // vanuatu: ['Pacific/Efate'],
   // phoenix_Islands: ['Pacific/Enderbury'],

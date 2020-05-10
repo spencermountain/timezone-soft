@@ -45,6 +45,6 @@ Object.keys(abbreviations).forEach((k) => {
     }
   })
 })
-// console.log(all.toronto)
+// console.log(all['canada/vancouver'])
 // console.log(Object.keys(all).length)
 module.exports = all
