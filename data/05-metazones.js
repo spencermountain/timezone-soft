@@ -655,7 +655,7 @@ module.exports = [
   { standard: { name: 'Kyrgyzstan Time', abbrev: 'KGT' }, zones: ['Asia/Bishkek'] },
   { standard: { name: 'Brunei Darussalam Time', abbrev: 'BNT' }, zones: ['Asia/Brunei'] },
   // choibalsan: ['Asia/Choibalsan'],
-  { stabdard: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, zones: ['Asia/Dhaka'] },
+  // { standard: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, zones: ['Asia/Dhaka'] },
   // east_Timor: ['Asia/Dili'],
   // tajikistan: ['Asia/Dushanbe'],
   // hovd: ['Asia/Hovd'],

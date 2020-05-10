@@ -1201,8 +1201,29 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: 'Australia/Lord_Howe',
   zones: ['Australia/Lord_Howe']
-}, // new_Zealand: ['Antarctica/Mcmurdo', 'Pacific/Auckland'],
-//Russia
+}, {
+  standard: {
+    name: 'New Zealand Standard Time',
+    abbrev: 'NZST'
+  },
+  daylight: {
+    name: 'New Zealand Daylight Time',
+    abbrev: 'NZDT'
+  },
+  pick: 'Pacific/Auckland',
+  zones: ['Antarctica/Mcmurdo', 'Pacific/Auckland']
+}, {
+  standard: {
+    name: 'Chatham Island Standard Time',
+    abbrev: 'CHAST'
+  },
+  daylight: {
+    name: 'Chatham Island Daylight Time',
+    abbrev: 'CHADT'
+  },
+  pick: 'Pacific/Chatham',
+  zones: ['Pacific/Chatham']
+}, //Russia
 {
   standard: {
     name: 'Russian Standard Time',
@@ -1211,8 +1232,13 @@ var _05Metazones = [//gmt-0, with daylight savings
   alias: ['russian'],
   pick: 'Europe/Moscow',
   zones: ['Europe/Astrakhan', 'Europe/Minsk', 'Europe/Moscow', 'Europe/Simferopol', 'Europe/Ulyanovsk', 'Europe/Kirov']
-}, // volgograd: ['Europe/Volgograd'],
-//South america
+}, {
+  standard: {
+    name: 'Volgograd Time',
+    abbrev: 'VOLT'
+  },
+  zones: ['Europe/Volgograd']
+}, //South america
 {
   standard: {
     name: 'Brazil Time',
@@ -1378,9 +1404,10 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'China Standard Time',
     abbrev: 'CT'
   },
+  //cst?
   alias: ['chinese'],
   pick: 'Asia/Shanghai',
-  zones: ['Asia/Macau', 'Asia/Shanghai']
+  zones: ['Asia/Macau', 'Asia/Shanghai', 'Asia/Taipei']
 }, {
   standard: {
     name: 'Alma-Ata Time',
@@ -1480,33 +1507,97 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: 'Asia/Vladivostok',
   zones: ['Asia/Ust-nera', 'Asia/Vladivostok']
-}, // anadyr: ['Asia/Anadyr'],
-// turkmenistan: ['Asia/Ashgabat'],
-// azerbaijan: ['Asia/Baku'],
-// kyrgystan: ['Asia/Bishkek'],
-// brunei: ['Asia/Brunei'],
-// choibalsan: ['Asia/Choibalsan'],
-// bangladesh: ['Asia/Dhaka'],
+}, {
+  standard: {
+    name: 'Anadyr Time',
+    abbrev: 'ANAT'
+  },
+  zones: ['Asia/Anadyr']
+}, {
+  standard: {
+    name: 'Turkmenistan Time',
+    abbrev: 'TMT'
+  },
+  zones: ['Asia/Ashgabat']
+}, {
+  standard: {
+    name: 'Azerbaijan Time',
+    abbrev: 'AZT'
+  },
+  zones: ['Asia/Baku']
+}, {
+  standard: {
+    name: 'Kyrgyzstan Time',
+    abbrev: 'KGT'
+  },
+  zones: ['Asia/Bishkek']
+}, {
+  standard: {
+    name: 'Brunei Darussalam Time',
+    abbrev: 'BNT'
+  },
+  zones: ['Asia/Brunei']
+}, // choibalsan: ['Asia/Choibalsan'],
+// { standard: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, zones: ['Asia/Dhaka'] },
 // east_Timor: ['Asia/Dili'],
 // tajikistan: ['Asia/Dushanbe'],
 // hovd: ['Asia/Hovd'],
 // irkutsk: ['Asia/Irkutsk'],
-// afghanistan: ['Asia/Kabul'],
-// kamchatka: ['Asia/Kamchatka'],
-// nepal: ['Asia/Katmandu'],
-// magadan: ['Asia/Magadan'],
-// philippines: ['Asia/Manila'],
-// novosibirsk: ['Asia/Novosibirsk'],
+{
+  standard: {
+    name: 'Afghanistan Time',
+    abbrev: 'AFT'
+  },
+  zones: ['Asia/Kabul']
+}, {
+  standard: {
+    name: 'Kamchatka Time',
+    abbrev: 'PETT'
+  },
+  zones: ['Asia/Kamchatka']
+}, {
+  standard: {
+    name: 'Nepal Time',
+    abbrev: 'NPT'
+  },
+  zones: ['Asia/Katmandu']
+}, // magadan: ['Asia/Magadan'],
+{
+  standard: {
+    name: 'Philippine Time',
+    abbrev: 'PHT'
+  },
+  zones: ['Asia/Manila']
+}, // novosibirsk: ['Asia/Novosibirsk'],
 // omsk: ['Asia/Omsk'],
-// myanmar: ['Asia/Rangoon'],
-// sakhalin: ['Asia/Sakhalin'],
+{
+  standard: {
+    name: 'Myanmar Time',
+    abbrev: 'MMT'
+  },
+  zones: ['Asia/Rangoon']
+}, // sakhalin: ['Asia/Sakhalin'],
 // srednekolymsk: ['Asia/Srednekolymsk'],
-// taipei: ['Asia/Taipei'],
-// georgia: ['Asia/Tbilisi'],
-// bhutan: ['Asia/Thimphu'],
-// japan: ['Asia/Tokyo'],
-// mongolia: ['Asia/Ulaanbaatar'],
-// urumqi: ['Asia/Urumqi'],
+{
+  standard: {
+    name: 'Georgia Standard Time',
+    abbrev: 'GET'
+  },
+  zones: ['Asia/Tbilisi']
+}, // bhutan: ['Asia/Thimphu'],
+{
+  standard: {
+    name: 'Japan Standard Time',
+    abbrev: 'JST'
+  },
+  zones: ['Asia/Tokyo']
+}, {
+  standard: {
+    name: 'Ulaanbaatar Time',
+    abbrev: 'ULAT'
+  },
+  zones: ['Asia/Ulaanbaatar']
+}, // urumqi: ['Asia/Urumqi'],
 // yekaterinburg: ['Asia/Yekaterinburg'],
 // armenia: ['Asia/Yerevan'],
 // azores: ['atlantic/Azores'],
@@ -1559,7 +1650,6 @@ var _05Metazones = [//gmt-0, with daylight savings
 // reunion: ['Indian/Reunion'],
 //Pacific
 // apia: ['Pacific/Apia'],
-// chatham: ['Pacific/Chatham'],
 // easter: ['Pacific/Easter'],
 // vanuatu: ['Pacific/Efate'],
 // phoenix_Islands: ['Pacific/Enderbury'],
@@ -1905,7 +1995,7 @@ Object.keys(_06Abbreviations).forEach(function (k) {
       all[abbr] = k;
     }
   });
-}); // console.log(all.toronto)
+}); // console.log(all['canada/vancouver'])
 // console.log(Object.keys(all).length)
 
 var data = all;
@@ -2075,7 +2165,7 @@ var display = function display(str) {
 
 var display_1 = display;
 
-var _version = '0.2.0';
+var _version = '0.3.0';
 
 var src = {
   find: find_1,
