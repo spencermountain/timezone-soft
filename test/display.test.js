@@ -1,7 +1,7 @@
 const test = require('tape')
 const informal = require('../src')
 
-test('display-test', t => {
+test('display-test', (t) => {
   let arr = [
     ['new york', 'EST', 'EDT'],
     ['easter island', 'EAST', 'EASST'],
@@ -21,8 +21,9 @@ test('display-test', t => {
     ['Adelaide', 'ACST', 'ACDT'],
     ['darwin', 'ACST', 'ACDT']
   ]
-  arr.forEach(a => {
+  arr.forEach((a) => {
     let display = informal.display(a[0])
+
     t.equal(display.standard.abbrev, a[1], a[0] + ' standard')
     if (display.daylight) {
       t.equal(display.daylight.abbrev, a[2], a[0] + ' daylight')

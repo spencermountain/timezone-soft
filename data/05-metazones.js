@@ -56,17 +56,16 @@ module.exports = [
       'America/Costa_Rica',
       'America/El_Salvador',
       'America/Guatemala',
-      'America/Indiana/Knox',
-      'America/Indiana/Tell_City',
+      'America/Indiana',
       'America/Managua',
       'America/Matamoros',
       'America/Menominee',
       'America/Merida',
       'America/Mexico_City',
       'America/Monterrey',
-      'America/North_Dakota/Beulah',
-      'America/North_Dakota/Center',
-      'America/North_Dakota/New_Salem',
+      'America/North_Dakota',
+      'America/North_Dakota',
+      'America/North_Dakota',
       'America/Rainy_River',
       'America/Rankin_Inlet',
       'America/Regina',
@@ -92,7 +91,6 @@ module.exports = [
       'America/Ojinaga',
       'America/Phoenix',
       'America/Yellowknife',
-      'mst7mdt',
       // add mexico
       'America/Chihuahua',
       'America/Hermosillo',
@@ -132,7 +130,7 @@ module.exports = [
       'America/St_Vincent',
       'America/Thule',
       'America/Tortola',
-      'atlantic/Bermuda'
+      'Atlantic/Bermuda'
     ]
   },
   {
@@ -145,15 +143,11 @@ module.exports = [
       'America/Coral_Harbour',
       'America/Detroit',
       'America/Grand_Turk',
-      'America/Indiana/Marengo',
-      'America/Indiana/Petersburg',
-      'America/Indiana/Vevay',
-      'America/Indiana/Vincennes',
-      'America/Indiana/Winamac',
+      'America/Indiana',
       'America/Indianapolis',
       'America/Iqaluit',
       'America/Jamaica',
-      'America/Kentucky/Monticello',
+      'America/Kentucky',
       'America/Louisville',
       'America/Nassau',
       'America/New_York',
@@ -163,7 +157,6 @@ module.exports = [
       'America/Port-au-prince',
       'America/Thunder_Bay',
       'America/Toronto',
-      'est5edt',
       'America/Montreal'
     ]
   },
@@ -176,8 +169,7 @@ module.exports = [
       'America/Los_Angeles',
       'America/Tijuana',
       'America/Vancouver',
-      'America/Whitehorse',
-      'pst8pdt'
+      'America/Whitehorse'
     ]
   },
   {
@@ -288,9 +280,9 @@ module.exports = [
     zones: [
       'Africa/Casablanca',
       'Africa/El_Aaiun',
-      'atlantic/Canary',
-      'atlantic/Faeroe',
-      'atlantic/Madeira',
+      'Atlantic/Canary',
+      'Atlantic/Faeroe',
+      'Atlantic/Madeira',
       'Europe/Lisbon'
     ]
   },
@@ -457,12 +449,7 @@ module.exports = [
     alias: ['argentinian'],
     pick: 'America/Buenos_Aires',
     zones: [
-      'America/Argentina/La_Rioja',
-      'America/Argentina/Rio_Gallegos',
-      'America/Argentina/Salta',
-      'America/Argentina/San_Juan',
-      'America/Argentina/Tucuman',
-      'America/Argentina/Ushuaia',
+      'America/Argentina',
       'America/Buenos_Aires',
       'America/Catamarca',
       'America/Cordoba',
@@ -680,10 +667,10 @@ module.exports = [
   // urumqi: ['Asia/Urumqi'],
   // yekaterinburg: ['Asia/Yekaterinburg'],
   // armenia: ['Asia/Yerevan'],
-  // azores: ['atlantic/Azores'],
-  // cape_Verde: ['atlantic/Cape_Verde'],
-  // south_Georgia: ['atlantic/South_Georgia'],
-  // falkland: ['atlantic/Stanley'],
+  // azores: ['Atlantic/Azores'],
+  // cape_Verde: ['Atlantic/Cape_Verde'],
+  // south_Georgia: ['Atlantic/South_Georgia'],
+  // falkland: ['Atlantic/Stanley'],
 
   //India
   {
