@@ -499,8 +499,8 @@ const ignore = {
 }
 
 const zones = {}
-Object.keys(iana).forEach(k => {
-  iana[k].forEach(str => {
+Object.keys(iana).forEach((k) => {
+  iana[k].forEach((str) => {
     const id = k + '/' + str
     zones[id.toLowerCase()] = id
     if (!ignore[str]) {

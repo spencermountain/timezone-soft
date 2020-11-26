@@ -2,7 +2,7 @@ const lookup = require('../../data/')
 const parseOffset = require('./parseOffset')
 
 //try to match these against iana form
-const normalizeOne = tz => {
+const normalizeOne = (tz) => {
   tz = tz.replace(/ time/g, '')
   tz = tz.replace(/ (standard|daylight|summer)/g, '')
   tz = tz.replace(/ - .*/g, '') //`Eastern Time - US & Canada`
@@ -11,7 +11,7 @@ const normalizeOne = tz => {
 }
 
 //some more aggressive transformations
-const normalizeTwo = function(tz) {
+const normalizeTwo = function (tz) {
   tz = tz.replace(/\b(east|west|north|south)ern/g, '$1')
   tz = tz.replace(/\b(africa|america|australia)n/g, '$1')
   tz = tz.replace(/\beuropean/g, 'europe')
@@ -19,8 +19,13 @@ const normalizeTwo = function(tz) {
   tz = tz.replace(/.*\//g, '')
   return tz.trim()
 }
+// even-more agressive
+const normalizeThree = function (tz) {
+  tz = tz.replace(/\(.*\)/, '')
+  return tz.trim()
+}
 //
-const find = function(str) {
+const find = function (str) {
   if (!str) {
     return null
   }
@@ -55,8 +60,12 @@ const find = function(str) {
   }
 
   // -- harder normalizations --
-  //
   str = normalizeTwo(str)
+  if (lookup.hasOwnProperty(str)) {
+    return lookup[str]
+  }
+  // -- HARDER normalizations --
+  str = normalizeThree(str)
   if (lookup.hasOwnProperty(str)) {
     return lookup[str]
   }

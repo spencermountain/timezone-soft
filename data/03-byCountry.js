@@ -582,7 +582,7 @@ module.exports = {
   },
   argentina: {
     code: 'ar',
-    choice: 'America/Argentina/Cordoba'
+    choice: 'America/Argentina'
   },
   australia: {
     code: 'au',

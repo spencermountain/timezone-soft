@@ -27,7 +27,7 @@ module.exports = {
   bombay: 'Asia/Kolkata',
   madras: 'Asia/Kolkata',
   calcutta: 'Asia/Kolkata',
-  'port blair': 'v/Kolkata', //Old timezone
+  'port blair': 'Asia/Kolkata', //Old timezone
   delhi: 'Asia/Kolkata',
   chennai: 'Asia/Kolkata',
   bangalore: 'Asia/Kolkata',
