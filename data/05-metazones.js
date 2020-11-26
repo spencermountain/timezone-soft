@@ -473,7 +473,7 @@ module.exports = [
   {
     standard: { name: 'Easter Island Standard Time', abbrev: 'EAST' },
     daylight: { name: 'Easter Island Summer Time', abbrev: 'EASST' },
-    zones: ['Chile/Easterisland']
+    zones: ['Chile/EasterIsland']
   },
   {
     standard: { name: 'Venezuelan Standard Time', abbrev: 'VET' },

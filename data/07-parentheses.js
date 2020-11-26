@@ -84,7 +84,7 @@ module.exports = {
   'swiss time': 'Europe/Zurich',
   'chile (most areas)': 'America/Santiago',
   'region of magallanes': 'America/Punta_Arenas',
-  'easter island': 'Pacific/Easter',
+  'easter island': 'Chile/EasterIsland',
   'beijing time': 'Asia/Shanghai',
   'xinjiang time': 'Asia/Urumqi',
   'cyprus (most areas)': 'Asia/Nicosia',

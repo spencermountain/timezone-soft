@@ -365,7 +365,7 @@ const iana = {
     'Saskatchewan',
     'Yukon'
   ],
-  Chile: ['Continental', 'Easterisland'],
+  Chile: ['Continental', 'EasterIsland'],
   Europe: [
     'Amsterdam',
     'Andorra',

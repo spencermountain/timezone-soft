@@ -83,7 +83,7 @@ module.exports = {
   },
   bermuda: {
     code: 'bm',
-    choice: 'atlantic/Bermuda'
+    choice: 'Atlantic/Bermuda'
   },
   brunei: {
     code: 'bn',
@@ -135,7 +135,7 @@ module.exports = {
   },
   'cape verde': {
     code: 'cv',
-    choice: 'atlantic/Cape_Verde'
+    choice: 'Atlantic/Cape_Verde'
   },
   'christmas island': {
     code: 'cx',
@@ -179,11 +179,11 @@ module.exports = {
   },
   'falkland islands': {
     code: 'fk',
-    choice: 'atlantic/Stanley'
+    choice: 'Atlantic/Stanley'
   },
   'faroe islands': {
     code: 'fo',
-    choice: 'atlantic/Faroe'
+    choice: 'Atlantic/Faroe'
   },
   france: {
     code: 'fr',
@@ -215,7 +215,7 @@ module.exports = {
   },
   'south georgia': {
     code: 'gs',
-    choice: 'atlantic/South_Georgia'
+    choice: 'Atlantic/South_Georgia'
   },
   guatemala: {
     code: 'gt',
@@ -275,7 +275,7 @@ module.exports = {
   },
   iceland: {
     code: 'is',
-    choice: 'atlantic/Reykjavik'
+    choice: 'Atlantic/Reykjavik'
   },
   'vatican city': {
     code: 'va',

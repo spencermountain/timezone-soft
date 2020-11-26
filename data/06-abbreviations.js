@@ -187,7 +187,7 @@ const informal = {
   'Pacific/Niue': ['nut'],
   'Pacific/Fakaofo': ['tkt'],
   'Pacific/Rarotonga': ['ckt', null, 'cook islands'],
-  'Chile/Easterisland': ['east', 'easst', 'easter island', 'emt'],
+  'Chile/EasterIsland': ['east', 'easst', 'easter island', 'emt'],
   'Asia/Jayapura': ['wit', null, 'east indonesia'],
   'Asia/Jakarta': ['wib', null, 'west indonesia'],
   'Asia/Makassar': ['wita', null, 'central indonesia'],

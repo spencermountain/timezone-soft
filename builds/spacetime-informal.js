@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.informal = {}));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.informal = {}));
 }(this, (function (exports) { 'use strict';
 
   var iana = {
@@ -14,7 +14,7 @@
     Australia: ['Act', 'Adelaide', 'Brisbane', 'Broken_Hill', 'Canberra', 'Currie', 'Darwin', 'Eucla', 'Hobart', 'Lhi', 'Lindeman', 'Lord_Howe', 'Melbourne', 'Nsw', 'North', 'Perth', 'Queensland', 'South', 'Sydney', 'Tasmania', 'Victoria', 'West', 'Yancowinna'],
     Brazil: ['Acre', 'Denoronha', 'East', 'West'],
     Canada: ['Atlantic', 'Central', 'East-saskatchewan', 'Eastern', 'Mountain', 'Newfoundland', 'Pacific', 'Saskatchewan', 'Yukon'],
-    Chile: ['Continental', 'Easterisland'],
+    Chile: ['Continental', 'EasterIsland'],
     Europe: ['Amsterdam', 'Andorra', 'Astrakhan', 'Athens', 'Belfast', 'Belgrade', 'Berlin', 'Bratislava', 'Brussels', 'Bucharest', 'Budapest', 'Busingen', 'Chisinau', 'Copenhagen', 'Dublin', 'Gibraltar', 'Guernsey', 'Helsinki', 'Isle_Of_Man', 'Istanbul', 'Jersey', 'Kaliningrad', 'Kirov', 'Kiev', 'Lisbon', 'Ljubljana', 'London', 'Luxembourg', 'Madrid', 'Malta', 'Mariehamn', 'Minsk', 'Monaco', 'Moscow', 'Nicosia', 'Oslo', 'Paris', 'Podgorica', 'Prague', 'Riga', 'Rome', 'Samara', 'Saratov', 'San_Marino', 'Sarajevo', 'Simferopol', 'Skopje', 'Sofia', 'Stockholm', 'Tallinn', 'Tirane', 'Tiraspol', 'Ulyanovsk', 'Uzhgorod', 'Vaduz', 'Vatican', 'Vienna', 'Vilnius', 'Volgograd', 'Warsaw', 'Zagreb', 'Zaporozhye', 'Zurich'],
     Indian: ['Antananarivo', 'Chagos', 'Christmas', 'Cocos', 'Comoro', 'Kerguelen', 'Mahe', 'Maldives', 'Mauritius', 'Mayotte', 'Reunion'],
     Mexico: ['Bajanorte', 'Bajasur', 'General'],
@@ -67,7 +67,7 @@
     bombay: 'Asia/Kolkata',
     madras: 'Asia/Kolkata',
     calcutta: 'Asia/Kolkata',
-    'port blair': 'v/Kolkata',
+    'port blair': 'Asia/Kolkata',
     //Old timezone
     delhi: 'Asia/Kolkata',
     chennai: 'Asia/Kolkata',
@@ -80,794 +80,86 @@
     multan: 'Asia/Karachi'
   };
 
-  //  a list of judgement-calls for country → timezone mappings
-  //  with 'new zealand' we usually want 'Pacific/Auckland'.
-  //  based on population, country-capital, and geographical center
-  //  often some guesswork!
-  var _03ByCountry = {
-    //First, these countries only have one timezone.
-    andorra: {
-      code: 'ad',
-      choice: 'Europe/Andorra'
-    },
-    oman: {
-      code: 'om',
-      choice: 'Asia/Dubai'
-    },
-    afghanistan: {
-      code: 'af',
-      choice: 'Asia/Kabul'
-    },
-    'virgin islands': {
-      code: 'vi',
-      choice: 'America/Port_Of_Spain'
-    },
-    albania: {
-      code: 'al',
-      choice: 'Europe/Tirane'
-    },
-    armenia: {
-      code: 'am',
-      choice: 'Asia/Yerevan'
-    },
-    nigeria: {
-      code: 'ng',
-      choice: 'Africa/Lagos'
-    },
-    austria: {
-      code: 'at',
-      choice: 'Europe/Vienna'
-    },
-    'st maarten': {
-      code: 'sx',
-      choice: 'America/Curacao'
-    },
-    finland: {
-      code: 'fi',
-      choice: 'Europe/Helsinki'
-    },
-    azerbaijan: {
-      code: 'az',
-      choice: 'Asia/Baku'
-    },
-    slovenia: {
-      code: 'si',
-      choice: 'Europe/Belgrade'
-    },
-    barbados: {
-      code: 'bb',
-      choice: 'America/Barbados'
-    },
-    bangladesh: {
-      code: 'bd',
-      choice: 'Asia/Dhaka'
-    },
-    belgium: {
-      code: 'be',
-      choice: 'Europe/Brussels'
-    },
-    togo: {
-      code: 'tg',
-      choice: 'Africa/Abidjan'
-    },
-    bulgaria: {
-      code: 'bg',
-      choice: 'Europe/Sofia'
-    },
-    qatar: {
-      code: 'qa',
-      choice: 'Asia/Qatar'
-    },
-    zimbabwe: {
-      code: 'zw',
-      choice: 'Africa/Maputo'
-    },
-    bermuda: {
-      code: 'bm',
-      choice: 'atlantic/Bermuda'
-    },
-    brunei: {
-      code: 'bn',
-      choice: 'Asia/Brunei'
-    },
-    bolivia: {
-      code: 'bo',
-      choice: 'America/La_Paz'
-    },
-    bahamas: {
-      code: 'bs',
-      choice: 'America/Nassau'
-    },
-    bhutan: {
-      code: 'bt',
-      choice: 'Asia/Thimphu'
-    },
-    belarus: {
-      code: 'by',
-      choice: 'Europe/Minsk'
-    },
-    belize: {
-      code: 'bz',
-      choice: 'America/Belize'
-    },
-    'cocos islands': {
-      code: 'cc',
-      choice: 'Indian/Cocos'
-    },
-    liechtenstein: {
-      code: 'li',
-      choice: 'Europe/Zurich'
-    },
-    'cook islands': {
-      code: 'ck',
-      choice: 'Pacific/Rarotonga'
-    },
-    colombia: {
-      code: 'co',
-      choice: 'America/Bogota'
-    },
-    'costa rica': {
-      code: 'cr',
-      choice: 'America/Costa_Rica'
-    },
-    cuba: {
-      code: 'cu',
-      choice: 'America/Havana'
-    },
-    'cape verde': {
-      code: 'cv',
-      choice: 'atlantic/Cape_Verde'
-    },
-    'christmas island': {
-      code: 'cx',
-      choice: 'Indian/Christmas'
-    },
-    slovakia: {
-      code: 'sk',
-      choice: 'Europe/Prague'
-    },
-    mayotte: {
-      code: 'yt',
-      choice: 'Africa/Nairobi'
-    },
-    denmark: {
-      code: 'dk',
-      choice: 'Europe/Copenhagen'
-    },
-    'dominican republic': {
-      code: 'do',
-      choice: 'America/Santo_Domingo'
-    },
-    algeria: {
-      code: 'dz',
-      choice: 'Africa/Algiers'
-    },
-    estonia: {
-      code: 'ee',
-      choice: 'Europe/Tallinn'
-    },
-    egypt: {
-      code: 'eg',
-      choice: 'Africa/Cairo'
-    },
-    'western sahara': {
-      code: 'eh',
-      choice: 'Africa/El_Aaiun'
-    },
-    fiji: {
-      code: 'fj',
-      choice: 'Pacific/Fiji'
-    },
-    'falkland islands': {
-      code: 'fk',
-      choice: 'atlantic/Stanley'
-    },
-    'faroe islands': {
-      code: 'fo',
-      choice: 'atlantic/Faroe'
-    },
-    france: {
-      code: 'fr',
-      choice: 'Europe/Paris'
-    },
-    jersey: {
-      code: 'je',
-      choice: 'Europe/London'
-    },
-    georgia: {
-      code: 'ge',
-      choice: 'Asia/Tbilisi'
-    },
-    'french guiana': {
-      code: 'gf',
-      choice: 'America/Cayenne'
-    },
-    ghana: {
-      code: 'gh',
-      choice: 'Africa/Accra'
-    },
-    gibraltar: {
-      code: 'gi',
-      choice: 'Europe/Gibraltar'
-    },
-    greece: {
-      code: 'gr',
-      choice: 'Europe/Athens'
-    },
-    'south georgia': {
-      code: 'gs',
-      choice: 'atlantic/South_Georgia'
-    },
-    guatemala: {
-      code: 'gt',
-      choice: 'America/Guatemala'
-    },
-    'northern mariana islands': {
-      code: 'mp',
-      choice: 'Pacific/Guam'
-    },
-    'guinea bissau': {
-      code: 'gw',
-      choice: 'Africa/Bissau'
-    },
-    guyana: {
-      code: 'gy',
-      choice: 'America/Guyana'
-    },
-    'hong kong': {
-      code: 'hk',
-      choice: 'Asia/Hong_Kong'
-    },
-    honduras: {
-      code: 'hn',
-      choice: 'America/Tegucigalpa'
-    },
-    haiti: {
-      code: 'ht',
-      choice: 'America/Port-au-prince'
-    },
-    hungary: {
-      code: 'hu',
-      choice: 'Europe/Budapest'
-    },
-    ireland: {
-      code: 'ie',
-      choice: 'Europe/Dublin'
-    },
-    israel: {
-      code: 'il',
-      choice: 'Asia/Jerusalem'
-    },
-    india: {
-      code: 'in',
-      choice: 'Asia/Kolkata'
-    },
-    'british indian ocean territory': {
-      code: 'io',
-      choice: 'Indian/Chagos'
-    },
-    iraq: {
-      code: 'iq',
-      choice: 'Asia/Baghdad'
-    },
-    iran: {
-      code: 'ir',
-      choice: 'Asia/Tehran'
-    },
-    iceland: {
-      code: 'is',
-      choice: 'atlantic/Reykjavik'
-    },
-    'vatican city': {
-      code: 'va',
-      choice: 'Europe/Rome'
-    },
-    jamaica: {
-      code: 'jm',
-      choice: 'America/Jamaica'
-    },
-    jordan: {
-      code: 'jo',
-      choice: 'Asia/Amman'
-    },
-    japan: {
-      code: 'jp',
-      choice: 'Asia/Tokyo'
-    },
-    kyrgyzstan: {
-      code: 'kg',
-      choice: 'Asia/Bishkek'
-    },
-    'north korea': {
-      code: 'kp',
-      choice: 'Asia/Pyongyang'
-    },
-    'south korea': {
-      code: 'kr',
-      choice: 'Asia/Seoul'
-    },
-    yemen: {
-      code: 'ye',
-      choice: 'Asia/Riyadh'
-    },
-    panama: {
-      code: 'pa',
-      choice: 'America/Panama'
-    },
-    lebanon: {
-      code: 'lb',
-      choice: 'Asia/Beirut'
-    },
-    'sri lanka': {
-      code: 'lk',
-      choice: 'Asia/Colombo'
-    },
-    liberia: {
-      code: 'lr',
-      choice: 'Africa/Monrovia'
-    },
-    'south africa': {
-      code: 'za',
-      choice: 'Africa/Johannesburg'
-    },
-    lithuania: {
-      code: 'lt',
-      choice: 'Europe/Vilnius'
-    },
-    luxembourg: {
-      code: 'lu',
-      choice: 'Europe/Luxembourg'
-    },
-    latvia: {
-      code: 'lv',
-      choice: 'Europe/Riga'
-    },
-    libya: {
-      code: 'ly',
-      choice: 'Africa/Tripoli'
-    },
-    morocco: {
-      code: 'ma',
-      choice: 'Africa/Casablanca'
-    },
-    monaco: {
-      code: 'mc',
-      choice: 'Europe/Monaco'
-    },
-    moldova: {
-      code: 'md',
-      choice: 'Europe/Chisinau'
-    },
-    myanmar: {
-      code: 'mm',
-      choice: 'Asia/Yangon'
-    },
-    //(alias for myanmar)
-    burma: {
-      code: 'mm',
-      choice: 'Asia/Yangon'
-    },
-    macau: {
-      code: 'mo',
-      choice: 'Asia/Macau'
-    },
-    martinique: {
-      code: 'mq',
-      choice: 'America/Martinique'
-    },
-    malta: {
-      code: 'mt',
-      choice: 'Europe/Malta'
-    },
-    mauritius: {
-      code: 'mu',
-      choice: 'Indian/Mauritius'
-    },
-    maldives: {
-      code: 'mv',
-      choice: 'Indian/Maldives'
-    },
-    namibia: {
-      code: 'na',
-      choice: 'Africa/Windhoek'
-    },
-    'new caledonia': {
-      code: 'nc',
-      choice: 'Pacific/Noumea'
-    },
-    'norfolk island': {
-      code: 'nf',
-      choice: 'Pacific/Norfolk'
-    },
-    nicaragua: {
-      code: 'ni',
-      choice: 'America/Managua'
-    },
-    netherlands: {
-      code: 'nl',
-      choice: 'Europe/Amsterdam'
-    },
-    'svalbard and jan mayen': {
-      code: 'sj',
-      choice: 'Europe/Oslo'
-    },
-    nepal: {
-      code: 'np',
-      choice: 'Asia/Kathmandu'
-    },
-    nauru: {
-      code: 'nr',
-      choice: 'Pacific/Nauru'
-    },
-    niue: {
-      code: 'nu',
-      choice: 'Pacific/Niue'
-    },
-    peru: {
-      code: 'pe',
-      choice: 'America/Lima'
-    },
-    philippines: {
-      code: 'ph',
-      choice: 'Asia/Manila'
-    },
-    pakistan: {
-      code: 'pk',
-      choice: 'Asia/Karachi'
-    },
-    poland: {
-      code: 'pl',
-      choice: 'Europe/Warsaw'
-    },
-    'st pierre and miquelon': {
-      code: 'pm',
-      choice: 'America/Miquelon'
-    },
-    pitcairn: {
-      code: 'pn',
-      choice: 'Pacific/Pitcairn'
-    },
-    'puerto rico': {
-      code: 'pr',
-      choice: 'America/Puerto_Rico'
-    },
-    palau: {
-      code: 'pw',
-      choice: 'Pacific/Palau'
-    },
-    paraguay: {
-      code: 'py',
-      choice: 'America/Asuncion'
-    },
-    romania: {
-      code: 'ro',
-      choice: 'Europe/Bucharest'
-    },
-    'solomon islands': {
-      code: 'sb',
-      choice: 'Pacific/Guadalcanal'
-    },
-    seychelles: {
-      code: 'sc',
-      choice: 'Indian/Mahe'
-    },
-    sudan: {
-      code: 'sd',
-      choice: 'Africa/Khartoum'
-    },
-    sweden: {
-      code: 'se',
-      choice: 'Europe/Stockholm'
-    },
-    singapore: {
-      code: 'sg',
-      choice: 'Asia/Singapore'
-    },
-    suriname: {
-      code: 'sr',
-      choice: 'America/Paramaribo'
-    },
-    'south sudan': {
-      code: 'ss',
-      choice: 'Africa/Juba'
-    },
-    'sao tome': {
-      code: 'st',
-      choice: 'Africa/Sao_Tome'
-    },
-    'el salvador': {
-      code: 'sv',
-      choice: 'America/El_Salvador'
-    },
-    syria: {
-      code: 'sy',
-      choice: 'Asia/Damascus'
-    },
-    'turks and caicos': {
-      code: 'tc',
-      choice: 'America/Grand_Turk'
-    },
-    chad: {
-      code: 'td',
-      choice: 'Africa/Ndjamena'
-    },
-    tajikistan: {
-      code: 'tj',
-      choice: 'Asia/Dushanbe'
-    },
-    tokelau: {
-      code: 'tk',
-      choice: 'Pacific/Fakaofo'
-    },
-    'east timor': {
-      code: 'tl',
-      choice: 'Asia/Dili'
-    },
-    turkmenistan: {
-      code: 'tm',
-      choice: 'Asia/Ashgabat'
-    },
-    tunisia: {
-      code: 'tn',
-      choice: 'Africa/Tunis'
-    },
-    tonga: {
-      code: 'to',
-      choice: 'Pacific/Tongatapu'
-    },
-    turkey: {
-      code: 'tr',
-      choice: 'Europe/Istanbul'
-    },
-    tuvalu: {
-      code: 'tv',
-      choice: 'Pacific/Funafuti'
-    },
-    taiwan: {
-      code: 'tw',
-      choice: 'Asia/Taipei'
-    },
-    uruguay: {
-      code: 'uy',
-      choice: 'America/Montevideo'
-    },
-    venezuela: {
-      code: 've',
-      choice: 'America/Caracas'
-    },
-    vanuatu: {
-      code: 'vu',
-      choice: 'Pacific/Efate'
-    },
-    'wallis and futuna': {
-      code: 'wf',
-      choice: 'Pacific/Wallis'
-    },
-    'western samoa': {
-      code: 'ws',
-      choice: 'Pacific/Apia'
-    },
-    samoa: {
-      code: 'ws',
-      choice: 'Pacific/Apia'
-    },
-    ////////////
-    /// these countries have more than one timezone
-    /// and i picked one.
-    // (i tried to do my best.)
-    antarctica: {
-      code: 'aq',
-      choice: 'Antarctica/Davis'
-    },
-    argentina: {
-      code: 'ar',
-      choice: 'America/Argentina/Cordoba'
-    },
-    australia: {
-      code: 'au',
-      choice: 'Australia/Sydney'
-    },
-    brazil: {
-      code: 'br',
-      choice: 'America/Sao_Paulo'
-    },
-    canada: {
-      code: 'ca',
-      choice: 'America/Toronto'
-    },
-    congo: {
-      code: 'cd',
-      choice: 'Africa/Kinshasa' //'Africa/Lagos'?
-
-    },
-    chile: {
-      code: 'cl',
-      choice: 'America/Santiago'
-    },
-    china: {
-      code: 'cn',
-      choice: 'Asia/Shanghai'
-    },
-    cyprus: {
-      code: 'cy',
-      choice: 'Asia/Nicosia'
-    },
-    germany: {
-      code: 'de',
-      choice: 'Europe/Berlin'
-    },
-    ecuador: {
-      code: 'ec',
-      choice: 'America/Guayaquil'
-    },
-    spain: {
-      code: 'es',
-      choice: 'Europe/Madrid'
-    },
-    micronesia: {
-      code: 'fm',
-      choice: 'Pacific/Pohnpei'
-    },
-    greenland: {
-      code: 'gl',
-      choice: 'America/Godthab'
-    },
-    indonesia: {
-      code: 'id',
-      choice: 'Asia/Jakarta'
-    },
-    kiribati: {
-      code: 'ki',
-      choice: 'Pacific/Kiritimati'
-    },
-    kazakhstan: {
-      code: 'kz',
-      choice: 'Asia/Almaty'
-    },
-    'marshall islands': {
-      code: 'mh',
-      choice: 'Pacific/Majuro'
-    },
-    mongolia: {
-      code: 'mn',
-      choice: 'Asia/Ulaanbaatar'
-    },
-    mexico: {
-      code: 'mx',
-      choice: 'America/Mexico_City' // 'America/Monterrey'?
-
-    },
-    malaysia: {
-      code: 'my',
-      choice: 'Asia/Kuala_Lumpur'
-    },
-    'new zealand': {
-      code: 'nz',
-      choice: 'Pacific/Auckland'
-    },
-    'french polynesia': {
-      code: 'pf',
-      choice: 'Pacific/Pohnpei'
-    },
-    'papua new guinea': {
-      code: 'pg',
-      choice: 'Pacific/Port_Moresby'
-    },
-    palestine: {
-      code: 'ps',
-      choice: 'Asia/Gaza'
-    },
-    portugal: {
-      code: 'pt',
-      choice: 'Europe/Lisbon'
-    },
-    russia: {
-      code: 'ru',
-      choice: 'Europe/Moscow' // 'Europe/Kaliningrad'?
-
-    },
-    'french southern and antarctic lands': {
-      code: 'tf',
-      choice: 'Indian/Kerguelen'
-    },
-    ukraine: {
-      code: 'ua',
-      choice: 'Europe/Kiev'
-    },
-    'us minor outlying islands': {
-      code: 'um',
-      choice: 'Pacific/Wake'
-    },
-    'united states': {
-      code: 'us',
-      choice: 'America/New_York'
-    },
-    uzbekistan: {
-      code: 'uz',
-      choice: 'Asia/Tashkent' //'Asia/Samarkand'
-
-    },
-    vietnam: {
-      code: 'vn',
-      choice: 'Asia/Ho_Chi_Minh'
-    }
-  };
-
   // this file provides links between current names for timezones
   // and their old names.  many names changed in late 1993.
   // from https://Github.com/Eggert/Tz/Blob/Master/Backward
   // and from https://Github.com/Mj1856/Timezonenames
   var _04OldZones = {
-    'Africa/Asmera': 'Africa/Nairobi',
-    'Africa/Timbuktu': 'Africa/Abidjan',
-    'America/Argentina/Comodrivadavia': 'America/Argentina/Catamarca',
-    'America/Atka': 'America/Adak',
-    'America/Buenos_Aires': 'America/Argentina/Buenos_Aires',
-    'America/Catamarca': 'America/Argentina/Catamarca',
-    'America/Coral_Harbour': 'America/Atikokan',
-    'America/Cordoba': 'America/Argentina/Cordoba',
-    'America/Ensenada': 'America/Tijuana',
-    'America/Fort_Wayne': 'America/Indiana/Indianapolis',
-    'America/Indianapolis': 'America/Indiana/Indianapolis',
-    'America/Jujuy': 'America/Argentina/Jujuy',
-    'America/Knox_In': 'America/Indiana/Knox',
-    'America/Louisville': 'America/Kentucky/Louisville',
-    'America/Mendoza': 'America/Argentina/Mendoza',
-    'America/Montreal': 'America/Toronto',
-    'America/Porto_Acre': 'America/Rio_Branco',
-    'America/Rosario': 'America/Argentina/Cordoba',
-    'America/Santa_Isabel': 'America/Tijuana',
-    'America/Shiprock': 'America/Denver',
-    'America/Virgin': 'America/Port_Of_Spain',
-    'Antarctica/South_Pole': 'Pacific/Auckland',
-    'Asia/Ashkhabad': 'Asia/Ashgabat',
-    'Asia/Calcutta': 'Asia/Kolkata',
-    'Asia/Chongqing': 'Asia/Shanghai',
-    'Asia/Chungking': 'Asia/Shanghai',
-    'Asia/Dacca': 'Asia/Dhaka',
-    'Asia/Harbin': 'Asia/Shanghai',
-    'Asia/Kashgar': 'Asia/Urumqi',
-    'Asia/Katmandu': 'Asia/Kathmandu',
-    'Asia/Macao': 'Asia/Macau',
-    'Asia/Rangoon': 'Asia/Yangon',
-    'Asia/Saigon': 'Asia/Ho_Chi_Minh',
-    'Asia/Tel_Aviv': 'Asia/Jerusalem',
-    'Asia/Thimbu': 'Asia/Thimphu',
-    'Asia/Ujung_Pandang': 'Asia/Makassar',
-    'Asia/Ulan_Bator': 'Asia/Ulaanbaatar',
-    'atlantic/Faeroe': 'atlantic/Faroe',
-    'atlantic/Jan_Mayen': 'Europe/Oslo',
-    'Australia/Act': 'Australia/Sydney',
-    'Australia/Canberra': 'Australia/Sydney',
-    'Australia/Lhi': 'Australia/Lord_Howe',
-    'Australia/Nsw': 'Australia/Sydney',
-    'Australia/North': 'Australia/Darwin',
-    'Australia/Queensland': 'Australia/Brisbane',
-    'Australia/South': 'Australia/Adelaide',
-    'Australia/Tasmania': 'Australia/Hobart',
-    'Australia/Victoria': 'Australia/Melbourne',
-    'Australia/West': 'Australia/Perth',
-    'Australia/Yancowinna': 'Australia/Broken_Hill',
-    'brazil/Acre': 'America/Rio_Branco',
-    'brazil/Denoronha': 'America/Noronha',
-    'brazil/East': 'America/Sao_Paulo',
-    'brazil/West': 'America/Manaus',
-    'canada/Atlantic': 'America/Halifax',
-    'canada/Central': 'America/Winnipeg',
-    'canada/East-saskatchewan': 'America/Regina',
-    'canada/Eastern': 'America/Toronto',
-    'canada/Mountain': 'America/Edmonton',
-    'canada/Newfoundland': 'America/St_Johns',
-    'canada/Pacific': 'America/Vancouver',
-    'canada/Saskatchewan': 'America/Regina',
-    'canada/Yukon': 'America/Whitehorse',
-    'chile/Continental': 'America/Santiago',
-    'chile/Easterisland': 'Pacific/Easter',
+    'africa/asmera': 'Africa/Nairobi',
+    'africa/timbuktu': 'Africa/Abidjan',
+    'america/argentina/comodrivadavia': 'America/Argentina',
+    'america/atka': 'America/Adak',
+    'america/buenos_aires': 'America/Argentina',
+    'america/argentina/buenos_aires': 'America/Argentina',
+    'america/catamarca': 'America/Argentina',
+    'america/argentina/catamarca': 'America/Argentina',
+    'america/coral_harbour': 'America/Atikokan',
+    'america/cordoba': 'America/Argentina',
+    'america/argentina/cordoba': 'America/Argentina',
+    'america/ensenada': 'America/Tijuana',
+    'america/fort_wayne': 'America/Indiana',
+    'america/indiana/indianapolis': 'America/Indiana',
+    'america/indianapolis': 'America/Indiana',
+    'america/jujuy': 'America/Argentina',
+    'america/knox_in': 'America/Indiana',
+    'america/louisville': 'America/Kentucky',
+    'america/kentucky/louisville': 'America/Kentucky',
+    'america/mendoza': 'America/Argentina',
+    'america/montreal': 'America/Toronto',
+    'america/porto_acre': 'America/Rio_Branco',
+    'america/rosario': 'America/Argentina',
+    'america/santa_isabel': 'America/Tijuana',
+    'america/shiprock': 'America/Denver',
+    'america/virgin': 'America/Port_Of_Spain',
+    'antarctica/south_pole': 'Pacific/Auckland',
+    'asia/ashkhabad': 'Asia/Ashgabat',
+    'asia/calcutta': 'Asia/Kolkata',
+    'asia/chongqing': 'Asia/Shanghai',
+    'asia/chungking': 'Asia/Shanghai',
+    'asia/dacca': 'Asia/Dhaka',
+    'asia/harbin': 'Asia/Shanghai',
+    'asia/kashgar': 'Asia/Urumqi',
+    'asia/katmandu': 'Asia/Kathmandu',
+    'asia/macao': 'Asia/Macau',
+    'asia/rangoon': 'Asia/Yangon',
+    'asia/saigon': 'Asia/Ho_Chi_Minh',
+    'asia/tel_aviv': 'Asia/Jerusalem',
+    'asia/thimbu': 'Asia/Thimphu',
+    'asia/ujung_pandang': 'Asia/Makassar',
+    'asia/ulan_bator': 'Asia/Ulaanbaatar',
+    'atlantic/faeroe': 'atlantic/Faroe',
+    'atlantic/jan_mayen': 'Europe/Oslo',
+    'australia/act': 'Australia/Sydney',
+    'australia/canberra': 'Australia/Sydney',
+    'australia/lhi': 'Australia/Lord_Howe',
+    'australia/nsw': 'Australia/Sydney',
+    'australia/north': 'Australia/Darwin',
+    'australia/queensland': 'Australia/Brisbane',
+    'australia/south': 'Australia/Adelaide',
+    'australia/tasmania': 'Australia/Hobart',
+    'australia/victoria': 'Australia/Melbourne',
+    'australia/west': 'Australia/Perth',
+    'australia/yancowinna': 'Australia/Broken_Hill',
+    'brazil/acre': 'America/Rio_Branco',
+    'brazil/denoronha': 'America/Noronha',
+    'brazil/east': 'America/Sao_Paulo',
+    'brazil/west': 'America/Manaus',
+    'canada/atlantic': 'America/Halifax',
+    'canada/central': 'America/Winnipeg',
+    'canada/east-saskatchewan': 'America/Regina',
+    'canada/eastern': 'America/Toronto',
+    'canada/mountain': 'America/Edmonton',
+    'canada/newfoundland': 'America/St_Johns',
+    'canada/pacific': 'America/Vancouver',
+    'canada/saskatchewan': 'America/Regina',
+    'canada/yukon': 'America/Whitehorse',
+    'chile/continental': 'America/Santiago',
+    'chile/easterisland': 'Pacific/Easter',
     cuba: 'America/Havana',
     egypt: 'Africa/Cairo',
     eire: 'Europe/Dublin',
-    'Europe/Belfast': 'Europe/London',
-    'Europe/Tiraspol': 'Europe/Chisinau',
+    'europe/belfast': 'Europe/London',
+    'europe/tiraspol': 'Europe/Chisinau',
     gb: 'Europe/London',
     'gb-eire': 'Europe/London',
     'gmt+0': 'etc/Gmt',
@@ -882,73 +174,545 @@
     japan: 'Asia/Tokyo',
     kwajalein: 'Pacific/Kwajalein',
     libya: 'Africa/Tripoli',
-    'mexico/Bajanorte': 'America/Tijuana',
-    'mexico/Bajasur': 'America/Mazatlan',
-    'mexico/General': 'America/Mexico_City',
+    'mexico/bajanorte': 'America/Tijuana',
+    'mexico/bajasur': 'America/Mazatlan',
+    'mexico/general': 'America/Mexico_City',
     nz: 'Pacific/Auckland',
     'nz-chat': 'Pacific/Chatham',
     navajo: 'America/Denver',
     prc: 'Asia/Shanghai',
-    'Pacific/Johnston': 'Pacific/Honolulu',
-    'Pacific/Ponape': 'Pacific/Pohnpei',
-    'Pacific/Samoa': 'Pacific/Pago_Pago',
-    'Pacific/Truk': 'Pacific/Chuuk',
-    'Pacific/Yap': 'Pacific/Chuuk',
+    'pacific/johnston': 'Pacific/Honolulu',
+    'pacific/ponape': 'Pacific/Pohnpei',
+    'pacific/samoa': 'Pacific/Pago_Pago',
+    'pacific/truk': 'Pacific/Chuuk',
+    'pacific/yap': 'Pacific/Chuuk',
     poland: 'Europe/Warsaw',
     portugal: 'Europe/Lisbon',
     roc: 'Asia/Taipei',
     rok: 'Asia/Seoul',
-    'us/Alaska': 'America/Anchorage',
-    'us/Aleutian': 'America/Adak',
-    'us/Arizona': 'America/Phoenix',
-    'us/Central': 'America/Chicago',
-    'us/East-indiana': 'America/Indiana/Indianapolis',
-    'us/Eastern': 'America/New_York',
-    'us/Hawaii': 'Pacific/Honolulu',
-    'us/Indiana-starke': 'America/Indiana/Knox',
-    'us/Michigan': 'America/Detroit',
-    'us/Mountain': 'America/Denver',
-    'us/Pacific': 'America/Los_Angeles',
-    'us/Samoa': 'Pacific/Pago_Pago',
+    'us/alaska': 'America/Anchorage',
+    'us/aleutian': 'America/Adak',
+    'us/arizona': 'America/Phoenix',
+    'us/central': 'America/Chicago',
+    'us/east-indiana': 'America/Indiana',
+    'us/eastern': 'America/New_York',
+    'us/hawaii': 'Pacific/Honolulu',
+    'us/indiana-starke': 'America/Indiana',
+    'america/indiana/knox': 'America/Indiana',
+    'us/michigan': 'America/Detroit',
+    'us/mountain': 'America/Denver',
+    'us/pacific': 'America/Los_Angeles',
+    'us/samoa': 'Pacific/Pago_Pago',
     universal: 'etc/Utc',
     'w-su': 'Europe/Moscow',
     zulu: 'Etc/Utc',
     z: 'Etc/Utc',
-    'America/Argentina/Buenos_Aires': 'America/Buenos_Aires',
-    'America/Argentina/Cordoba': 'America/Cordoba',
-    'America/Argentina/Catamarca': 'America/Catamarca',
-    'America/Argentina/Jujuy': 'America/Jujuy',
-    'America/Argentina/Mendoza': 'America/Mendoza',
-    'America/Atikokan': 'America/Coral_Harbour',
-    'Europe/Nicosia': 'Asia/Nicosia',
-    'Africa/Asmara': 'Africa/Asmera',
-    'Pacific/Pohnpei': 'Pacific/Ponape',
-    'Pacific/Chuuk': 'Pacific/Truk',
-    'atlantic/Faroe': 'atlantic/Faeroe',
-    'Asia/Kolkata': 'Asia/Calcutta',
-    'Asia/Yangon': 'Asia/Rangoon',
-    'Asia/Kathmandu': 'Asia/Katmandu',
-    'Asia/Ho_Chi_Minh': 'Asia/Saigon',
-    'Asia/Istanbul': 'Europe/Istanbul',
+    'america/argentina/jujuy': 'America/Jujuy',
+    'america/argentina/mendoza': 'America/Mendoza',
+    'america/atikokan': 'America/Coral_Harbour',
+    'europe/nicosia': 'Asia/Nicosia',
+    'africa/asmara': 'Africa/Asmera',
+    'pacific/pohnpei': 'Pacific/Ponape',
+    'pacific/chuuk': 'Pacific/Truk',
+    'atlantic/faroe': 'atlantic/Faeroe',
+    'asia/kolkata': 'Asia/Calcutta',
+    'asia/yangon': 'Asia/Rangoon',
+    'asia/kathmandu': 'Asia/Katmandu',
+    'asia/ho_chi_minh': 'Asia/Saigon',
+    'asia/istanbul': 'Europe/Istanbul',
     'etc/gmt+0': 'Etc/Gmt',
     'etc/gmt-0': 'Etc/Gmt',
     'etc/gmt0': 'Etc/Gmt',
     'etc/greenwich': 'etc/Gmt',
-    'etc/Uct': 'Etc/Utc',
-    'etc/Universal': 'Etc/Utc',
-    'etc/Zulu': 'Etc/Utc',
+    'etc/uct': 'Etc/Utc',
+    'etc/universal': 'Etc/Utc',
+    'etc/zulu': 'Etc/Utc',
     gmt: 'etc/Gmt',
     singapore: 'Asia/Singapore',
-    'easter island': 'Chile/Easterisland',
-    'America/Indiana/Indianapolis': 'America/Indianapolis',
-    'us/Pacific-new': 'America/Los_Angeles',
-    'America/Kentucky/Louisville': 'America/Louisville',
+    'easter island': 'Chile/EasterIsland',
+    'us/pacific-new': 'America/Los_Angeles',
     uct: 'Etc/Utc',
     utc: 'Etc/Utc',
     est: 'Etc/Gmt+5',
     mst: 'Etc/Gmt+7',
     hst: 'Etc/Gmt+10'
   };
+
+  var _07Parentheses = {
+    'west africa time': 'Africa/Lagos',
+    casey: 'Antarctica/Casey',
+    davis: 'Antarctica/Davis',
+    "dumont-d'urville": 'Antarctica/DumontDUrville',
+    mawson: 'Antarctica/Mawson',
+    palmer: 'Antarctica/Palmer',
+    rothera: 'Antarctica/Rothera',
+    syowa: 'Antarctica/Syowa',
+    troll: 'Antarctica/Troll',
+    vostok: 'Antarctica/Vostok',
+    'new zealand time': 'Pacific/Auckland',
+    'buenos aires (ba, cf)': 'America/Argentina',
+    'argentina (most areas: cb, cc, cn, er, fm, mn, se, sf)': 'America/Argentina',
+    'salta (sa, lp, nq, rn)': 'America/Argentina',
+    'jujuy (jy)': 'America/Argentina',
+    'tucumán (tm)': 'America/Argentina',
+    'catamarca (ct); chubut (ch)': 'America/Argentina',
+    'la rioja (lr)': 'America/Argentina',
+    'san juan (sj)': 'America/Argentina',
+    'mendoza (mz)': 'America/Argentina',
+    'san luis (sl)': 'America/Argentina',
+    'santa cruz (sc)': 'America/Argentina',
+    'tierra del fuego (tf)': 'America/Argentina',
+    'samoa, midway': 'Pacific/Pago_Pago',
+    'lord howe island': 'Australia/Lord_Howe',
+    'macquarie island': 'Antarctica/Macquarie',
+    'tasmania (most areas)': 'Australia/Hobart',
+    'tasmania (king island)': 'Australia/Currie',
+    victoria: 'Australia/Melbourne',
+    'new south wales (most areas)': 'Australia/Sydney',
+    'new south wales (yancowinna)': 'Australia/Broken_Hill',
+    'queensland (most areas)': 'Australia/Brisbane',
+    'queensland (whitsunday islands)': 'Australia/Lindeman',
+    'south australia': 'Australia/Adelaide',
+    'northern territory': 'Australia/Darwin',
+    'western australia (most areas)': 'Australia/Perth',
+    'western australia (eucla)': 'Australia/Eucla',
+    'central africa time': 'Africa/Maputo',
+    'atlantic islands': 'America/Noronha',
+    'pará (east); amapá': 'America/Belem',
+    'brazil (northeast: ma, pi, ce, rn, pb)': 'America/Fortaleza',
+    pernambuco: 'America/Recife',
+    tocantins: 'America/Araguaina',
+    'alagoas, sergipe': 'America/Maceio',
+    bahia: 'America/Bahia',
+    'brazil (southeast: go, df, mg, es, rj, sp, pr, sc, rs)': 'America/Sao_Paulo',
+    'mato grosso do sul': 'America/Campo_Grande',
+    'mato grosso': 'America/Cuiaba',
+    'pará (west)': 'America/Santarem',
+    rondônia: 'America/Porto_Velho',
+    roraima: 'America/Boa_Vista',
+    'amazonas (east)': 'America/Manaus',
+    'amazonas (west)': 'America/Eirunepe',
+    acre: 'America/Rio_Branco',
+    'newfoundland; labrador (southeast)': 'America/St_Johns',
+    'atlantic - ns (most areas); pe': 'America/Halifax',
+    'atlantic - ns (cape breton)': 'America/Glace_Bay',
+    'atlantic - new brunswick': 'America/Moncton',
+    'atlantic - labrador (most areas)': 'America/Goose_Bay',
+    'ast - qc (lower north shore)': 'America/Blanc-Sablon',
+    'eastern - on, qc (most areas)': 'America/Toronto',
+    'eastern - on, qc (no dst 1967-73)': 'America/Nipigon',
+    'eastern - on (thunder bay)': 'America/Thunder_Bay',
+    'eastern - nu (most east areas)': 'America/Iqaluit',
+    'eastern - nu (pangnirtung)': 'America/Pangnirtung',
+    'est - on (atikokan); nu (coral h)': 'America/Atikokan',
+    'central - on (west); manitoba': 'America/Winnipeg',
+    'central - on (rainy r, ft frances)': 'America/Rainy_River',
+    'central - nu (resolute)': 'America/Resolute',
+    'central - nu (central)': 'America/Rankin_Inlet',
+    'cst - sk (most areas)': 'America/Regina',
+    'cst - sk (midwest)': 'America/Swift_Current',
+    'mountain - ab; bc (e); sk (w)': 'America/Edmonton',
+    'mountain - nu (west)': 'America/Cambridge_Bay',
+    'mountain - nt (central)': 'America/Yellowknife',
+    'mountain - nt (west)': 'America/Inuvik',
+    'mst - bc (creston)': 'America/Creston',
+    'mst - bc (dawson cr, ft st john)': 'America/Dawson_Creek',
+    'mst - bc (ft nelson)': 'America/Fort_Nelson',
+    'pacific - bc (most areas)': 'America/Vancouver',
+    'pacific - yukon (south)': 'America/Whitehorse',
+    'pacific - yukon (north)': 'America/Dawson',
+    'swiss time': 'Europe/Zurich',
+    'chile (most areas)': 'America/Santiago',
+    'region of magallanes': 'America/Punta_Arenas',
+    'easter island': 'Chile/EasterIsland',
+    'beijing time': 'Asia/Shanghai',
+    'xinjiang time': 'Asia/Urumqi',
+    'cyprus (most areas)': 'Asia/Nicosia',
+    'northern cyprus': 'Asia/Famagusta',
+    'germany (most areas)': 'Europe/Berlin',
+    'ecuador (mainland)': 'America/Guayaquil',
+    'galápagos islands': 'Pacific/Galapagos',
+    'spain (mainland)': 'Europe/Madrid',
+    'ceuta, melilla': 'Africa/Ceuta',
+    'canary islands': 'Atlantic/Canary',
+    'chuuk/truk, yap': 'Pacific/Chuuk',
+    'pohnpei/ponape': 'Pacific/Pohnpei',
+    kosrae: 'Pacific/Kosrae',
+    'greenland (most areas)': 'America/Godthab',
+    'national park (east coast)': 'America/Danmarkshavn',
+    'scoresbysund/ittoqqortoormiit': 'America/Scoresbysund',
+    'thule/pituffik': 'America/Thule',
+    'java, sumatra': 'Asia/Jakarta',
+    'borneo (west, central)': 'Asia/Pontianak',
+    'borneo (east, south); sulawesi/celebes, bali, nusa tengarra; timor (west)': 'Asia/Makassar',
+    'new guinea (west papua / irian jaya); malukus/moluccas': 'Asia/Jayapura',
+    'indochina (most areas)': 'Asia/Bangkok',
+    'gilbert islands': 'Pacific/Tarawa',
+    'phoenix islands': 'Pacific/Enderbury',
+    'line islands': 'Pacific/Kiritimati',
+    'kazakhstan (most areas)': 'Asia/Almaty',
+    'qyzylorda/kyzylorda/kzyl-orda': 'Asia/Qyzylorda',
+    'aqtöbe/aktobe': 'Asia/Aqtobe',
+    'mangghystaū/mankistau': 'Asia/Aqtau',
+    "atyraū/atirau/gur'yev": 'Asia/Atyrau',
+    'west kazakhstan': 'Asia/Oral',
+    'marshall islands (most areas)': 'Pacific/Majuro',
+    kwajalein: 'Pacific/Kwajalein',
+    'mongolia (most areas)': 'Asia/Ulaanbaatar',
+    'bayan-ölgii, govi-altai, hovd, uvs, zavkhan': 'Asia/Hovd',
+    'dornod, sükhbaatar': 'Asia/Choibalsan',
+    'central time': 'America/Mexico_City',
+    'eastern standard time - quintana roo': 'America/Cancun',
+    'central time - campeche, yucatán': 'America/Merida',
+    'central time - durango; coahuila, nuevo león, tamaulipas (most areas)': 'America/Monterrey',
+    'central time us - coahuila, nuevo león, tamaulipas (us border)': 'America/Matamoros',
+    'mountain time - baja california sur, nayarit, sinaloa': 'America/Mazatlan',
+    'mountain time - chihuahua (most areas)': 'America/Chihuahua',
+    'mountain time us - chihuahua (us border)': 'America/Ojinaga',
+    'mountain standard time - sonora': 'America/Hermosillo',
+    'pacific time us - baja california': 'America/Tijuana',
+    'central time - bahía de banderas': 'America/Bahia_Banderas',
+    'malaysia (peninsula)': 'Asia/Kuala_Lumpur',
+    'sabah, sarawak': 'Asia/Kuching',
+    'chatham islands': 'Pacific/Chatham',
+    'society islands': 'Pacific/Tahiti',
+    'marquesas islands': 'Pacific/Marquesas',
+    'gambier islands': 'Pacific/Gambier',
+    'papua new guinea (most areas)': 'Pacific/Port_Moresby',
+    bougainville: 'Pacific/Bougainville',
+    'gaza strip': 'Asia/Gaza',
+    'west bank': 'Asia/Hebron',
+    'portugal (mainland)': 'Europe/Lisbon',
+    'madeira islands': 'Atlantic/Madeira',
+    azores: 'Atlantic/Azores',
+    'réunion, crozet, scattered islands': 'Indian/Reunion',
+    'msk-01 - kaliningrad': 'Europe/Kaliningrad',
+    'msk+00 - moscow area': 'Europe/Moscow',
+    'msk+00 - crimea': 'Europe/Simferopol',
+    'msk+00 - volgograd': 'Europe/Volgograd',
+    'msk+00 - kirov': 'Europe/Kirov',
+    'msk+01 - astrakhan': 'Europe/Astrakhan',
+    'msk+01 - saratov': 'Europe/Saratov',
+    'msk+01 - ulyanovsk': 'Europe/Ulyanovsk',
+    'msk+01 - samara, udmurtia': 'Europe/Samara',
+    'msk+02 - urals': 'Asia/Yekaterinburg',
+    'msk+03 - omsk': 'Asia/Omsk',
+    'msk+04 - novosibirsk': 'Asia/Novosibirsk',
+    'msk+04 - altai': 'Asia/Barnaul',
+    'msk+04 - tomsk': 'Asia/Tomsk',
+    'msk+04 - kemerovo': 'Asia/Novokuznetsk',
+    'msk+04 - krasnoyarsk area': 'Asia/Krasnoyarsk',
+    'msk+05 - irkutsk, buryatia': 'Asia/Irkutsk',
+    'msk+06 - zabaykalsky': 'Asia/Chita',
+    'msk+06 - lena river': 'Asia/Yakutsk',
+    'msk+06 - tomponsky, ust-maysky': 'Asia/Khandyga',
+    'msk+07 - amur river': 'Asia/Vladivostok',
+    'msk+07 - oymyakonsky': 'Asia/Ust-Nera',
+    'msk+08 - magadan': 'Asia/Magadan',
+    'msk+08 - sakhalin island': 'Asia/Sakhalin',
+    'msk+08 - sakha (e); north kuril is': 'Asia/Srednekolymsk',
+    'msk+09 - kamchatka': 'Asia/Kamchatka',
+    'msk+09 - bering sea': 'Asia/Anadyr',
+    'kerguelen, st paul island, amsterdam island': 'Indian/Kerguelen',
+    'ukraine (most areas)': 'Europe/Kiev',
+    ruthenia: 'Europe/Uzhgorod',
+    "zaporozh'ye/zaporizhia; lugansk/luhansk (east)": 'Europe/Zaporozhye',
+    'wake island': 'Pacific/Wake',
+    'eastern (most areas)': 'America/New_York',
+    'eastern - mi (most areas)': 'America/Detroit',
+    'eastern - ky (louisville area)': 'America/Kentucky',
+    'eastern - ky (wayne)': 'America/Kentucky',
+    'eastern - in (most areas)': 'America/Indiana',
+    'eastern - in (da, du, k, mn)': 'America/Indiana',
+    'eastern - in (pulaski)': 'America/Indiana',
+    'eastern - in (crawford)': 'America/Indiana',
+    'eastern - in (pike)': 'America/Indiana',
+    'eastern - in (switzerland)': 'America/Indiana',
+    'central (most areas)': 'America/Chicago',
+    'central - in (perry)': 'America/Indiana',
+    'central - in (starke)': 'America/Indiana',
+    'central - mi (wisconsin border)': 'America/Menominee',
+    'central - nd (oliver)': 'America/North_Dakota',
+    'central - nd (morton rural)': 'America/North_Dakota',
+    'central - nd (mercer)': 'America/North_Dakota',
+    'mountain (most areas)': 'America/Denver',
+    'mountain - id (south); or (east)': 'America/Boise',
+    'mst - arizona (except navajo)': 'America/Phoenix',
+    'alaska (most areas)': 'America/Anchorage',
+    'alaska - juneau area': 'America/Juneau',
+    'alaska - sitka area': 'America/Sitka',
+    'alaska - annette island': 'America/Metlakatla',
+    'alaska - yakutat': 'America/Yakutat',
+    'alaska (west)': 'America/Nome',
+    'aleutian islands': 'America/Adak',
+    'uzbekistan (west)': 'Asia/Samarkand',
+    'uzbekistan (east)': 'Asia/Tashkent',
+    'vietnam (south)': 'Asia/Ho_Chi_Minh'
+  };
+
+  // this is a very rough list of informal and abbreviated timezones
+  // i am not an expert, or even half-knowledgeable in this subject.
+  // please help.
+  // partially from: https://En.wikipedia.org/Wiki/List_Of_Time_Zone_Abbreviations
+  //Format:  'best/Iana': [standard, daylight, alias...]
+  var informal = {
+    //North america
+    'America/Halifax': ['ast', 'adt', 'atlantic'],
+    //Or 'arabia standard time'
+    'America/New_York': ['est', 'edt', 'eastern'],
+    //Or 'Ecuador Time'
+    'America/Chicago': ['cst', 'cdt', 'central'],
+    'America/Denver': ['mst', 'mdt', 'mountain'],
+    'America/Los_Angeles': ['pst', 'pdt', 'pacific'],
+    'America/Anchorage': ['ahst', 'ahdt', 'akst', 'akdt', 'alaska'],
+    //Alaska Standard Time
+    'America/St_Johns': ['nst', 'ndt', 'nt', 'newfoundland', 'nddt'],
+    // awt: 'America/Blanc-sablon',
+    // addt: 'America/Pangnirtung',
+    // apt: 'America/Blanc-sablon',
+    // cddt: 'America/Rankin_Inlet',
+    // cwt: 'America/Mexico_City',
+    // cpt: 'America/Atikokan',
+    // eddt: 'America/Iqaluit',
+    // ept: 'America/Detroit',
+    // ewt: 'America/Detroit',
+    // ect: 'America/Anguilla', //Eastern caribbean time (does not recognise dst)
+    // 'eastern caribbean': 'America/Anguilla',
+    // ffmt: 'America/Martinique',
+    // kmt: 'America/Grand_Turk',
+    // mddt: 'America/Cambridge_Bay',
+    // mpt: 'America/Boise',
+    // mwt: 'America/Phoenix',
+    // nwt: 'America/Adak',
+    // // npt: 'America/Goose_Bay',
+    // pddt: 'America/Inuvik',
+    // ppmt: 'America/Port-au-prince',
+    // ppt: 'America/Dawson_Creek',
+    // pwt: 'America/Dawson_Creek',
+    // qmt: 'America/Guayaquil',
+    // sdmt: 'America/Santo_Domingo',
+    // sjmt: 'America/Costa_Rica',
+    // ydt: 'America/Dawson', //Yukon
+    // ypt: 'America/Dawson',
+    // yddt: 'America/Dawson',
+    // ywt: 'America/Dawson',
+    // yst: 'America/Whitehorse',
+    //South america
+    'America/Caracas': ['vet', null, 'venezuela'],
+    'America/Bogota': ['cot', null, 'colombia'],
+    'America/Cayenne': ['gft', null, 'french guiana'],
+    'America/Paramaribo': ['srt', null, 'suriname'],
+    'America/Guyana': ['gyt'],
+    'America/Buenos_Aires': ['art', null, 'argentina'],
+    'America/La_Paz': ['bot', null, 'bolivia'],
+    'America/Asuncion': ['pyt', 'pyst', 'paraguay'],
+    'America/Santiago': ['clt', 'clst', 'chile'],
+    'America/Lima': ['pet', null, 'peru'],
+    'America/Montevideo': ['uyt', null, 'uruguay'],
+    'Atlantic/Stanley': ['fkst', null, 'falkland island'],
+    //Brazil
+    'America/Manaus': ['amt'],
+    'America/Sao_Paulo': ['brt', 'brst'],
+    'Brazil/Acre': ['act'],
+    // amst: -3, //Amazon summer time (brazil)
+    // fnt: -2, //Fernando de noronha time
+    // pmdt: -2, //Saint pierre and miquelon daylight time
+    // pmst: -3, //Saint pierre and miquelon standard time
+    // rott: -3, //Rothera research station time
+    //Europe
+    'Europe/London': ['gmt', 'bst', 'british'],
+    //Britain is different
+    'ETC/GMT': ['gmt', null, 'greenwich'],
+    'Europe/Lisbon': ['wet', 'west', 'west europe'],
+    //Western europe
+    'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'],
+    //Central europe
+    'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'],
+    //Eastern europe
+    // -- these are old european ones, before the EU, i think:
+    // 'Europe/Minsk': ['feet', 'feest', 'eastern europe'], //Further eastern europe (discontinued)
+    // ace: 'Europe/Dublin',
+    // amt: 'Europe/Amsterdam',
+    // bdst: 'Europe/Gibraltar',
+    // bmt: 'Europe/Brussels',
+    // bst: 'Europe/Gibraltar', //British summer time
+    // 'british summer': 1,
+    // dmt: 'Europe/Dublin',
+    // dft: 1, //Aix-specific equivalent of central european time
+    // cmt: 'Europe/Copenhagen',
+    // // ist: 'Europe/Dublin',
+    // imt: 'Europe/Sofia',
+    // lst: 'Europe/Riga',
+    // pmt: 'Europe/Prague',
+    // rmt: 'Europe/Rome',
+    // set: 'Europe/Stockholm',
+    // wemt: 'Europe/Madrid',
+    // tse: 'Europe/Dublin',
+    // utc: 'etc/Utc', //Coordinated universal time
+    // 'coordinated universal': 'etc/Utc',
+    //Russia
+    'Europe/Moscow': ['msk', null, 'fet', 'mdst', 'msd'],
+    //'further eastern europe'
+    'Europe/Samara': ['samt'],
+    'Asia/Yekaterinburg': ['yekt'],
+    'Asia/Omsk': ['omst'],
+    'Asia/Krasnoyarsk': ['krat'],
+    'Asia/Novosibirsk': ['novt'],
+    'Asia/Irkutsk': ['irkt'],
+    'Asia/Yakutsk': ['yakt'],
+    'Asia/Cladivostok': ['vlat'],
+    'Asia/Magadan': ['magt'],
+    'Asia/Sakhalin': ['sakt'],
+    'Asia/Srednekolymsk': ['sret'],
+    'Asia/Anadyr': ['anat'],
+    'Asia/Kamchatka': ['pett'],
+    //Near-russia
+    'Asia/Tashkent': ['uzt', 'uzbekistan'],
+    //Uzbekistan time
+    'Asia/Bishkek': ['kgt', 'kyrgyzstan'],
+    //Kyrgyzstan time
+    'Antarctica/Vostok': ['vost'],
+    'Asia/Hovd': ['hovt'],
+    'Asia/Ashgabat': ['tmt', null, 'turkmenistan'],
+    // wmt: 'Europe/Warsaw',
+    // 'Europe/Volgograd':['volt']
+    //Africa
+    'Africa/Lagos': ['wat', 'wast', 'west africa'],
+    //West african
+    'Africa/Khartoum': ['cat', null, 'central africa'],
+    'Africa/Nairobi': ['eat', null, 'east africa'],
+    'Atlantic/Cape_Verde': ['cvt'],
+    'Indian/Mauritius': ['mut'],
+    'Indian/Reunion': ['ret'],
+    'Africa/Johannesburg': ['sast', null, 'south africa'],
+    //Atlantic
+    'Atlantic/Azores': ['azot', 'azost', 'hmt'],
+    'America/Godthab': ['wgt', 'wgst', 'west greenland'],
+    'America/Scoresbysund': ['egt', 'egst', 'east greenland'],
+    //Middle-east
+    'Europe/Istanbul': ['trt', null, 'turkey'],
+    'Asia/Tbilisi': ['get', null, 'georgia'],
+    // 'Asia/Yerevan': ['amt', null, 'armenia'], //(sorry!)
+    'Asia/Baku': ['azt', null, 'azerbaijan'],
+    'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'],
+    //Using ist for india
+    'Asia/Tehran': ['irst', 'irdt', 'iran'],
+    'Asia/Karachi': ['pkt', null, 'pakistan'],
+    'Asia/Kabul': ['aft', null, 'afghanistan'],
+    'Asia/Dushanbe': ['tjt', null, 'tajikistan'],
+    'Asia/Almaty': ['almt', null, 'alma ata'],
+    'Asia/Dubai': ['gst', null, 'gulf'],
+    //India
+    'Asia/Kolkata': ['ist', null, 'india', 'slst'],
+    // 'Asia/Dhaka': ['bst', null, 'bangladesh'], //(sorry)
+    'Asia/Thimbu': ['btt', null, 'bhutan'],
+    'Indian/Maldives': ['mvt'],
+    'Asia/Kathmandu': ['npt', null, 'nepal'],
+    'Indian/Cocos': ['cct', null, 'cocos island'],
+    'Indian/Chagos': ['iot', null, 'indian chagos'],
+    'Indian/Kerguelen': ['tft', null, 'french southern and antarctic'],
+    // biot: 6, //British indian ocean time
+    // iot: 3, //Indian ocean time
+    //Asia
+    'Asia/Shanghai': ['ct', null, 'china', 'hkt'],
+    'Asia/Ulaanbaatar': ['ulat'],
+    'Asia/Seoul': ['kst', null, 'korea'],
+    'Asia/Tokyo': ['jst', null, 'japan'],
+    'Asia/Phnom_Penh': ['ict', null],
+    'Asia/Manila': ['pht', null, 'philippines'],
+    'Asia/Singapore': ['sgt'],
+    // mmt: 'Asia/Colombo',
+    //Australia
+    'Australia/Brisbane': ['aest', 'aedt', 'australian east'],
+    //Australian eastern standard time
+    'Australia/Adelaide': ['acst', 'acdt', 'australian central'],
+    //Australian central daylight savings time
+    'Australia/Eucla': ['acwst', null, 'cwst', 'australian central western'],
+    //Australian central western standard time (unofficial)
+    'Australia/Perth': ['awst', 'awdt', 'australian west'],
+    //Australian western standard time
+    'Pacific/Auckland': ['nzst', 'nzdt', 'nzmt'],
+    'Australia/Lord_Howe': ['lhst', 'lhdt'],
+    //Pacific
+    'Pacific/Guam': ['chst'],
+    'Pacific/Chatham': ['chast', 'chadt'],
+    'Pacific/Honolulu': ['hst'],
+    'Asia/Brunei': ['bnt', null, 'bdt'],
+    'Pacific/Midway': ['sst', null, 'samoa', 'sdt'],
+    'Pacific/Niue': ['nut'],
+    'Pacific/Fakaofo': ['tkt'],
+    'Pacific/Rarotonga': ['ckt', null, 'cook islands'],
+    'Chile/EasterIsland': ['east', 'easst', 'easter island', 'emt'],
+    'Asia/Jayapura': ['wit', null, 'east indonesia'],
+    'Asia/Jakarta': ['wib', null, 'west indonesia'],
+    'Asia/Makassar': ['wita', null, 'central indonesia'],
+    'Pacific/Galapagos': ['galt'],
+    'Pacific/Fiji': ['fjt', 'fjst'],
+    'Asia/Dili': ['tlt', null, 'east timor'],
+    'Indian/Christmas': ['cxt'] // sbt: 11, //Solomon islands time
+    // mht: 12, //Marshall islands time
+    // bit: -12, //Baker island time
+    // cist: -8, //Clipperton island standard time
+    // chut: 10, //Chuuk time
+    // ddut: 10, //Dumont durville time
+    // gst: 'Pacific/Guam',
+    // gamt: -9, //Gambier islands time
+    // git: -9, //Gambier island time
+    // gilt: 12, //Gilbert island time
+    // idlw: -12, //International day line west time zone
+    // 'international day line west': -12,
+    // kost: 11, //Kosrae time
+    // lint: 14, //Line islands time
+    // magt: 12, //Magadan time
+    // mist: 11, //Macquarie island station time
+    // nct: 11, //New caledonia time
+    // nft: 11, //Norfolk island time
+    // phot: 13, //Phoenix island time
+    // pont: 11, //Pohnpei standard time
+    // pett: 12, //Kamchatka time
+    // mart: -9.5, //Marquesas islands time
+    // mit: -9.5, //Marquesas islands time
+    // myt: 8, //Malaysia time
+    // nut: -11, //Niue time
+    // pht: 8, //Philippine time
+    // pgt: 10, //Papua new guinea time
+    // pmmt: 'Pacific/Bougainville',
+    // // smt: 'Asia/Singapore',
+    // sakt: 11, //Sakhalin island time
+    // sret: 11, //Srednekolymsk time
+    // sst: 'Pacific/Pago_Pago',
+    // taht: -10, //Tahiti time
+    // tvt: 12, //Tuvalu time
+    // tkt: 13, //Tokelau time
+    // tot: 13, //Tonga time
+    // vut: 11, //Vanuatu time
+    // wakt: 12, //Wake island time
+    //I forget (sorry!)
+    // haec: 2, //Heure avancée deurope centrale french-language name for cest
+    // syot: 3, //Showa station time
+    // yekt: 5, //Yekaterinburg time
+    // sct: 4, //Seychelles time
+    // orat: 5, //Oral time
+    // mawt: 5, //Mawson station time
+    // hovt: 7, //Khovd standard time
+    // hovst: 8, //Khovd summer time
+    // davt: 7, //Davis time
+    // chost: 9, //Choibalsan summer time
+    // chot: 8, //Choibalsan standard time
+    // wst: 8, //Western standard time
+
+  }; //Use each abbreviation as a key
+  // const lookup = Object.keys(informal).reduce((h, k) => {
+  //   let arr = informal[k]
+  //   for (let i = 0; i < 5; i += 1) {
+  //     if (arr[i]) {
+  //       h[arr[i]] = k
+  //     }
+  //   }
+  //   return h
+  // }, {})
+
+  var _06Abbreviations = informal;
 
   //From https://Github.com/Mj1856/Timezonenames
   // and from  https://Github.com/Nodatime/Nodatime/Blob/Master/Data/Cldr/Windowszones-35.xml
@@ -996,7 +760,7 @@
       abbrev: 'CDT'
     },
     pick: 'America/Chicago',
-    zones: ['America/Bahia_Banderas', 'America/Belize', 'America/Chicago', 'America/Costa_Rica', 'America/El_Salvador', 'America/Guatemala', 'America/Indiana/Knox', 'America/Indiana/Tell_City', 'America/Managua', 'America/Matamoros', 'America/Menominee', 'America/Merida', 'America/Mexico_City', 'America/Monterrey', 'America/North_Dakota/Beulah', 'America/North_Dakota/Center', 'America/North_Dakota/New_Salem', 'America/Rainy_River', 'America/Rankin_Inlet', 'America/Regina', 'America/Resolute', 'America/Swift_Current', 'America/Tegucigalpa', 'America/Winnipeg']
+    zones: ['America/Bahia_Banderas', 'America/Belize', 'America/Chicago', 'America/Costa_Rica', 'America/El_Salvador', 'America/Guatemala', 'America/Indiana', 'America/Managua', 'America/Matamoros', 'America/Menominee', 'America/Merida', 'America/Mexico_City', 'America/Monterrey', 'America/North_Dakota', 'America/North_Dakota', 'America/North_Dakota', 'America/Rainy_River', 'America/Rankin_Inlet', 'America/Regina', 'America/Resolute', 'America/Swift_Current', 'America/Tegucigalpa', 'America/Winnipeg']
   }, {
     standard: {
       name: 'Mountain Standard Time',
@@ -1007,7 +771,7 @@
       abbrev: 'MDT'
     },
     pick: 'America/Denver',
-    zones: ['America/Boise', 'America/Cambridge_Bay', 'America/Creston', 'America/Dawson_Creek', 'America/Denver', 'America/Edmonton', 'America/Fort_Nelson', 'America/Inuvik', 'America/Ojinaga', 'America/Phoenix', 'America/Yellowknife', 'mst7mdt', // add mexico
+    zones: ['America/Boise', 'America/Cambridge_Bay', 'America/Creston', 'America/Dawson_Creek', 'America/Denver', 'America/Edmonton', 'America/Fort_Nelson', 'America/Inuvik', 'America/Ojinaga', 'America/Phoenix', 'America/Yellowknife', // add mexico
     'America/Chihuahua', 'America/Hermosillo', 'America/Mazatlan']
   }, {
     standard: {
@@ -1019,7 +783,7 @@
       abbrev: 'ADT'
     },
     pick: 'America/Halifax',
-    zones: ['America/Anguilla', 'America/Antigua', 'America/Aruba', 'America/Barbados', 'America/Blanc-sablon', 'America/Curacao', 'America/Dominica', 'America/Glace_Bay', 'America/Goose_Bay', 'America/Grenada', 'America/Guadeloupe', 'America/Halifax', 'America/Kralendijk', 'America/Lower_Princes', 'America/Marigot', 'America/Martinique', 'America/Moncton', 'America/Montserrat', 'America/Port_Of_Spain', 'America/Puerto_Rico', 'America/Santo_Domingo', 'America/St_Barthelemy', 'America/St_Kitts', 'America/St_Lucia', 'America/St_Thomas', 'America/St_Vincent', 'America/Thule', 'America/Tortola', 'atlantic/Bermuda']
+    zones: ['America/Anguilla', 'America/Antigua', 'America/Aruba', 'America/Barbados', 'America/Blanc-sablon', 'America/Curacao', 'America/Dominica', 'America/Glace_Bay', 'America/Goose_Bay', 'America/Grenada', 'America/Guadeloupe', 'America/Halifax', 'America/Kralendijk', 'America/Lower_Princes', 'America/Marigot', 'America/Martinique', 'America/Moncton', 'America/Montserrat', 'America/Port_Of_Spain', 'America/Puerto_Rico', 'America/Santo_Domingo', 'America/St_Barthelemy', 'America/St_Kitts', 'America/St_Lucia', 'America/St_Thomas', 'America/St_Vincent', 'America/Thule', 'America/Tortola', 'Atlantic/Bermuda']
   }, {
     standard: {
       name: 'Eastern Standard Time',
@@ -1030,7 +794,7 @@
       abbrev: 'EDT'
     },
     pick: 'America/New_York',
-    zones: ['America/Cancun', 'America/Cayman', 'America/Coral_Harbour', 'America/Detroit', 'America/Grand_Turk', 'America/Indiana/Marengo', 'America/Indiana/Petersburg', 'America/Indiana/Vevay', 'America/Indiana/Vincennes', 'America/Indiana/Winamac', 'America/Indianapolis', 'America/Iqaluit', 'America/Jamaica', 'America/Kentucky/Monticello', 'America/Louisville', 'America/Nassau', 'America/New_York', 'America/Nipigon', 'America/Panama', 'America/Pangnirtung', 'America/Port-au-prince', 'America/Thunder_Bay', 'America/Toronto', 'est5edt', 'America/Montreal']
+    zones: ['America/Cancun', 'America/Cayman', 'America/Coral_Harbour', 'America/Detroit', 'America/Grand_Turk', 'America/Indiana', 'America/Indianapolis', 'America/Iqaluit', 'America/Jamaica', 'America/Kentucky', 'America/Louisville', 'America/Nassau', 'America/New_York', 'America/Nipigon', 'America/Panama', 'America/Pangnirtung', 'America/Port-au-prince', 'America/Thunder_Bay', 'America/Toronto', 'America/Montreal']
   }, {
     standard: {
       name: 'Pacific Standard Time',
@@ -1041,7 +805,7 @@
       abbrev: 'PDT'
     },
     pick: 'America/Los_Angeles',
-    zones: ['America/Dawson', 'America/Los_Angeles', 'America/Tijuana', 'America/Vancouver', 'America/Whitehorse', 'pst8pdt']
+    zones: ['America/Dawson', 'America/Los_Angeles', 'America/Tijuana', 'America/Vancouver', 'America/Whitehorse']
   }, {
     standard: {
       name: 'Alaskan Standard Time',
@@ -1108,7 +872,7 @@
     },
     alias: ['western europe'],
     pick: 'Europe/Lisbon',
-    zones: ['Africa/Casablanca', 'Africa/El_Aaiun', 'atlantic/Canary', 'atlantic/Faeroe', 'atlantic/Madeira', 'Europe/Lisbon']
+    zones: ['Africa/Casablanca', 'Africa/El_Aaiun', 'Atlantic/Canary', 'Atlantic/Faeroe', 'Atlantic/Madeira', 'Europe/Lisbon']
   }, {
     standard: {
       name: 'Turkey Standard Time',
@@ -1260,7 +1024,7 @@
     },
     alias: ['argentinian'],
     pick: 'America/Buenos_Aires',
-    zones: ['America/Argentina/La_Rioja', 'America/Argentina/Rio_Gallegos', 'America/Argentina/Salta', 'America/Argentina/San_Juan', 'America/Argentina/Tucuman', 'America/Argentina/Ushuaia', 'America/Buenos_Aires', 'America/Catamarca', 'America/Cordoba', 'America/Jujuy', 'America/Mendoza']
+    zones: ['America/Argentina', 'America/Buenos_Aires', 'America/Catamarca', 'America/Cordoba', 'America/Jujuy', 'America/Mendoza']
   }, {
     standard: {
       name: 'Amazon Time',
@@ -1279,7 +1043,7 @@
       name: 'Easter Island Summer Time',
       abbrev: 'EASST'
     },
-    zones: ['Chile/Easterisland']
+    zones: ['Chile/EasterIsland']
   }, {
     standard: {
       name: 'Venezuelan Standard Time',
@@ -1606,10 +1370,10 @@
   }, // urumqi: ['Asia/Urumqi'],
   // yekaterinburg: ['Asia/Yekaterinburg'],
   // armenia: ['Asia/Yerevan'],
-  // azores: ['atlantic/Azores'],
-  // cape_Verde: ['atlantic/Cape_Verde'],
-  // south_Georgia: ['atlantic/South_Georgia'],
-  // falkland: ['atlantic/Stanley'],
+  // azores: ['Atlantic/Azores'],
+  // cape_Verde: ['Atlantic/Cape_Verde'],
+  // south_Georgia: ['Atlantic/South_Georgia'],
+  // falkland: ['Atlantic/Stanley'],
   //India
   {
     standard: {
@@ -1694,271 +1458,720 @@
   // vostok: ['Antarctica/Vostok'],
   ];
 
-  // this is a very rough list of informal and abbreviated timezones
-  // i am not an expert, or even half-knowledgeable in this subject.
-  // please help.
-  // partially from: https://En.wikipedia.org/Wiki/List_Of_Time_Zone_Abbreviations
-  //Format:  'best/Iana': [standard, daylight, alias...]
-  var informal = {
-    //North america
-    'America/Halifax': ['ast', 'adt', 'atlantic'],
-    //Or 'arabia standard time'
-    'America/New_York': ['est', 'edt', 'eastern'],
-    //Or 'Ecuador Time'
-    'America/Chicago': ['cst', 'cdt', 'central'],
-    'America/Denver': ['mst', 'mdt', 'mountain'],
-    'America/Los_Angeles': ['pst', 'pdt', 'pacific'],
-    'America/Anchorage': ['ahst', 'ahdt', 'akst', 'akdt', 'alaska'],
-    //Alaska Standard Time
-    'America/St_Johns': ['nst', 'ndt', 'nt', 'newfoundland', 'nddt'],
-    // awt: 'America/Blanc-sablon',
-    // addt: 'America/Pangnirtung',
-    // apt: 'America/Blanc-sablon',
-    // cddt: 'America/Rankin_Inlet',
-    // cwt: 'America/Mexico_City',
-    // cpt: 'America/Atikokan',
-    // eddt: 'America/Iqaluit',
-    // ept: 'America/Detroit',
-    // ewt: 'America/Detroit',
-    // ect: 'America/Anguilla', //Eastern caribbean time (does not recognise dst)
-    // 'eastern caribbean': 'America/Anguilla',
-    // ffmt: 'America/Martinique',
-    // kmt: 'America/Grand_Turk',
-    // mddt: 'America/Cambridge_Bay',
-    // mpt: 'America/Boise',
-    // mwt: 'America/Phoenix',
-    // nwt: 'America/Adak',
-    // // npt: 'America/Goose_Bay',
-    // pddt: 'America/Inuvik',
-    // ppmt: 'America/Port-au-prince',
-    // ppt: 'America/Dawson_Creek',
-    // pwt: 'America/Dawson_Creek',
-    // qmt: 'America/Guayaquil',
-    // sdmt: 'America/Santo_Domingo',
-    // sjmt: 'America/Costa_Rica',
-    // ydt: 'America/Dawson', //Yukon
-    // ypt: 'America/Dawson',
-    // yddt: 'America/Dawson',
-    // ywt: 'America/Dawson',
-    // yst: 'America/Whitehorse',
-    //South america
-    'America/Caracas': ['vet', null, 'venezuela'],
-    'America/Bogota': ['cot', null, 'colombia'],
-    'America/Cayenne': ['gft', null, 'french guiana'],
-    'America/Paramaribo': ['srt', null, 'suriname'],
-    'America/Guyana': ['gyt'],
-    'America/Buenos_Aires': ['art', null, 'argentina'],
-    'America/La_Paz': ['bot', null, 'bolivia'],
-    'America/Asuncion': ['pyt', 'pyst', 'paraguay'],
-    'America/Santiago': ['clt', 'clst', 'chile'],
-    'America/Lima': ['pet', null, 'peru'],
-    'America/Montevideo': ['uyt', null, 'uruguay'],
-    'Atlantic/Stanley': ['fkst', null, 'falkland island'],
-    //Brazil
-    'America/Manaus': ['amt'],
-    'America/Sao_Paulo': ['brt', 'brst'],
-    'Brazil/Acre': ['act'],
-    // amst: -3, //Amazon summer time (brazil)
-    // fnt: -2, //Fernando de noronha time
-    // pmdt: -2, //Saint pierre and miquelon daylight time
-    // pmst: -3, //Saint pierre and miquelon standard time
-    // rott: -3, //Rothera research station time
-    //Europe
-    'Europe/London': ['gmt', 'bst', 'british'],
-    //Britain is different
-    'ETC/GMT': ['gmt', null, 'greenwich'],
-    'Europe/Lisbon': ['wet', 'west', 'west europe'],
-    //Western europe
-    'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'],
-    //Central europe
-    'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'],
-    //Eastern europe
-    // -- these are old european ones, before the EU, i think:
-    // 'Europe/Minsk': ['feet', 'feest', 'eastern europe'], //Further eastern europe (discontinued)
-    // ace: 'Europe/Dublin',
-    // amt: 'Europe/Amsterdam',
-    // bdst: 'Europe/Gibraltar',
-    // bmt: 'Europe/Brussels',
-    // bst: 'Europe/Gibraltar', //British summer time
-    // 'british summer': 1,
-    // dmt: 'Europe/Dublin',
-    // dft: 1, //Aix-specific equivalent of central european time
-    // cmt: 'Europe/Copenhagen',
-    // // ist: 'Europe/Dublin',
-    // imt: 'Europe/Sofia',
-    // lst: 'Europe/Riga',
-    // pmt: 'Europe/Prague',
-    // rmt: 'Europe/Rome',
-    // set: 'Europe/Stockholm',
-    // wemt: 'Europe/Madrid',
-    // tse: 'Europe/Dublin',
-    // utc: 'etc/Utc', //Coordinated universal time
-    // 'coordinated universal': 'etc/Utc',
-    //Russia
-    'Europe/Moscow': ['msk', null, 'fet', 'mdst', 'msd'],
-    //'further eastern europe'
-    'Europe/Samara': ['samt'],
-    'Asia/Yekaterinburg': ['yekt'],
-    'Asia/Omsk': ['omst'],
-    'Asia/Krasnoyarsk': ['krat'],
-    'Asia/Novosibirsk': ['novt'],
-    'Asia/Irkutsk': ['irkt'],
-    'Asia/Yakutsk': ['yakt'],
-    'Asia/Cladivostok': ['vlat'],
-    'Asia/Magadan': ['magt'],
-    'Asia/Sakhalin': ['sakt'],
-    'Asia/Srednekolymsk': ['sret'],
-    'Asia/Anadyr': ['anat'],
-    'Asia/Kamchatka': ['pett'],
-    //Near-russia
-    'Asia/Tashkent': ['uzt', 'uzbekistan'],
-    //Uzbekistan time
-    'Asia/Bishkek': ['kgt', 'kyrgyzstan'],
-    //Kyrgyzstan time
-    'Antarctica/Vostok': ['vost'],
-    'Asia/Hovd': ['hovt'],
-    'Asia/Ashgabat': ['tmt', null, 'turkmenistan'],
-    // wmt: 'Europe/Warsaw',
-    // 'Europe/Volgograd':['volt']
-    //Africa
-    'Africa/Lagos': ['wat', 'wast', 'west africa'],
-    //West african
-    'Africa/Khartoum': ['cat', null, 'central africa'],
-    'Africa/Nairobi': ['eat', null, 'east africa'],
-    'Atlantic/Cape_Verde': ['cvt'],
-    'Indian/Mauritius': ['mut'],
-    'Indian/Reunion': ['ret'],
-    'Africa/Johannesburg': ['sast', null, 'south africa'],
-    //Atlantic
-    'Atlantic/Azores': ['azot', 'azost', 'hmt'],
-    'America/Godthab': ['wgt', 'wgst', 'west greenland'],
-    'America/Scoresbysund': ['egt', 'egst', 'east greenland'],
-    //Middle-east
-    'Europe/Istanbul': ['trt', null, 'turkey'],
-    'Asia/Tbilisi': ['get', null, 'georgia'],
-    // 'Asia/Yerevan': ['amt', null, 'armenia'], //(sorry!)
-    'Asia/Baku': ['azt', null, 'azerbaijan'],
-    'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'],
-    //Using ist for india
-    'Asia/Tehran': ['irst', 'irdt', 'iran'],
-    'Asia/Karachi': ['pkt', null, 'pakistan'],
-    'Asia/Kabul': ['aft', null, 'afghanistan'],
-    'Asia/Dushanbe': ['tjt', null, 'tajikistan'],
-    'Asia/Almaty': ['almt', null, 'alma ata'],
-    'Asia/Dubai': ['gst', null, 'gulf'],
-    //India
-    'Asia/Kolkata': ['ist', null, 'india', 'slst'],
-    // 'Asia/Dhaka': ['bst', null, 'bangladesh'], //(sorry)
-    'Asia/Thimbu': ['btt', null, 'bhutan'],
-    'Indian/Maldives': ['mvt'],
-    'Asia/Kathmandu': ['npt', null, 'nepal'],
-    'Indian/Cocos': ['cct', null, 'cocos island'],
-    'Indian/Chagos': ['iot', null, 'indian chagos'],
-    'Indian/Kerguelen': ['tft', null, 'french southern and antarctic'],
-    // biot: 6, //British indian ocean time
-    // iot: 3, //Indian ocean time
-    //Asia
-    'Asia/Shanghai': ['ct', null, 'china', 'hkt'],
-    'Asia/Ulaanbaatar': ['ulat'],
-    'Asia/Seoul': ['kst', null, 'korea'],
-    'Asia/Tokyo': ['jst', null, 'japan'],
-    'Asia/Phnom_Penh': ['ict', null],
-    'Asia/Manila': ['pht', null, 'philippines'],
-    'Asia/Singapore': ['sgt'],
-    // mmt: 'Asia/Colombo',
-    //Australia
-    'Australia/Brisbane': ['aest', 'aedt', 'australian east'],
-    //Australian eastern standard time
-    'Australia/Adelaide': ['acst', 'acdt', 'australian central'],
-    //Australian central daylight savings time
-    'Australia/Eucla': ['acwst', null, 'cwst', 'australian central western'],
-    //Australian central western standard time (unofficial)
-    'Australia/Perth': ['awst', 'awdt', 'australian west'],
-    //Australian western standard time
-    'Pacific/Auckland': ['nzst', 'nzdt', 'nzmt'],
-    'Australia/Lord_Howe': ['lhst', 'lhdt'],
-    //Pacific
-    'Pacific/Guam': ['chst'],
-    'Pacific/Chatham': ['chast', 'chadt'],
-    'Pacific/Honolulu': ['hst'],
-    'Asia/Brunei': ['bnt', null, 'bdt'],
-    'Pacific/Midway': ['sst', null, 'samoa', 'sdt'],
-    'Pacific/Niue': ['nut'],
-    'Pacific/Fakaofo': ['tkt'],
-    'Pacific/Rarotonga': ['ckt', null, 'cook islands'],
-    'Chile/Easterisland': ['east', 'easst', 'easter island', 'emt'],
-    'Asia/Jayapura': ['wit', null, 'east indonesia'],
-    'Asia/Jakarta': ['wib', null, 'west indonesia'],
-    'Asia/Makassar': ['wita', null, 'central indonesia'],
-    'Pacific/Galapagos': ['galt'],
-    'Pacific/Fiji': ['fjt', 'fjst'],
-    'Asia/Dili': ['tlt', null, 'east timor'],
-    'Indian/Christmas': ['cxt'] // sbt: 11, //Solomon islands time
-    // mht: 12, //Marshall islands time
-    // bit: -12, //Baker island time
-    // cist: -8, //Clipperton island standard time
-    // chut: 10, //Chuuk time
-    // ddut: 10, //Dumont durville time
-    // gst: 'Pacific/Guam',
-    // gamt: -9, //Gambier islands time
-    // git: -9, //Gambier island time
-    // gilt: 12, //Gilbert island time
-    // idlw: -12, //International day line west time zone
-    // 'international day line west': -12,
-    // kost: 11, //Kosrae time
-    // lint: 14, //Line islands time
-    // magt: 12, //Magadan time
-    // mist: 11, //Macquarie island station time
-    // nct: 11, //New caledonia time
-    // nft: 11, //Norfolk island time
-    // phot: 13, //Phoenix island time
-    // pont: 11, //Pohnpei standard time
-    // pett: 12, //Kamchatka time
-    // mart: -9.5, //Marquesas islands time
-    // mit: -9.5, //Marquesas islands time
-    // myt: 8, //Malaysia time
-    // nut: -11, //Niue time
-    // pht: 8, //Philippine time
-    // pgt: 10, //Papua new guinea time
-    // pmmt: 'Pacific/Bougainville',
-    // // smt: 'Asia/Singapore',
-    // sakt: 11, //Sakhalin island time
-    // sret: 11, //Srednekolymsk time
-    // sst: 'Pacific/Pago_Pago',
-    // taht: -10, //Tahiti time
-    // tvt: 12, //Tuvalu time
-    // tkt: 13, //Tokelau time
-    // tot: 13, //Tonga time
-    // vut: 11, //Vanuatu time
-    // wakt: 12, //Wake island time
-    //I forget (sorry!)
-    // haec: 2, //Heure avancée deurope centrale french-language name for cest
-    // syot: 3, //Showa station time
-    // yekt: 5, //Yekaterinburg time
-    // sct: 4, //Seychelles time
-    // orat: 5, //Oral time
-    // mawt: 5, //Mawson station time
-    // hovt: 7, //Khovd standard time
-    // hovst: 8, //Khovd summer time
-    // davt: 7, //Davis time
-    // chost: 9, //Choibalsan summer time
-    // chot: 8, //Choibalsan standard time
-    // wst: 8, //Western standard time
+  //  a list of judgement-calls for country → timezone mappings
+  //  with 'new zealand' we usually want 'Pacific/Auckland'.
+  //  based on population, country-capital, and geographical center
+  //  often some guesswork!
+  var _03ByCountry = {
+    //First, these countries only have one timezone.
+    andorra: {
+      code: 'ad',
+      choice: 'Europe/Andorra'
+    },
+    oman: {
+      code: 'om',
+      choice: 'Asia/Dubai'
+    },
+    afghanistan: {
+      code: 'af',
+      choice: 'Asia/Kabul'
+    },
+    'virgin islands': {
+      code: 'vi',
+      choice: 'America/Port_Of_Spain'
+    },
+    albania: {
+      code: 'al',
+      choice: 'Europe/Tirane'
+    },
+    armenia: {
+      code: 'am',
+      choice: 'Asia/Yerevan'
+    },
+    nigeria: {
+      code: 'ng',
+      choice: 'Africa/Lagos'
+    },
+    austria: {
+      code: 'at',
+      choice: 'Europe/Vienna'
+    },
+    'st maarten': {
+      code: 'sx',
+      choice: 'America/Curacao'
+    },
+    finland: {
+      code: 'fi',
+      choice: 'Europe/Helsinki'
+    },
+    azerbaijan: {
+      code: 'az',
+      choice: 'Asia/Baku'
+    },
+    slovenia: {
+      code: 'si',
+      choice: 'Europe/Belgrade'
+    },
+    barbados: {
+      code: 'bb',
+      choice: 'America/Barbados'
+    },
+    bangladesh: {
+      code: 'bd',
+      choice: 'Asia/Dhaka'
+    },
+    belgium: {
+      code: 'be',
+      choice: 'Europe/Brussels'
+    },
+    togo: {
+      code: 'tg',
+      choice: 'Africa/Abidjan'
+    },
+    bulgaria: {
+      code: 'bg',
+      choice: 'Europe/Sofia'
+    },
+    qatar: {
+      code: 'qa',
+      choice: 'Asia/Qatar'
+    },
+    zimbabwe: {
+      code: 'zw',
+      choice: 'Africa/Maputo'
+    },
+    bermuda: {
+      code: 'bm',
+      choice: 'Atlantic/Bermuda'
+    },
+    brunei: {
+      code: 'bn',
+      choice: 'Asia/Brunei'
+    },
+    bolivia: {
+      code: 'bo',
+      choice: 'America/La_Paz'
+    },
+    bahamas: {
+      code: 'bs',
+      choice: 'America/Nassau'
+    },
+    bhutan: {
+      code: 'bt',
+      choice: 'Asia/Thimphu'
+    },
+    belarus: {
+      code: 'by',
+      choice: 'Europe/Minsk'
+    },
+    belize: {
+      code: 'bz',
+      choice: 'America/Belize'
+    },
+    'cocos islands': {
+      code: 'cc',
+      choice: 'Indian/Cocos'
+    },
+    liechtenstein: {
+      code: 'li',
+      choice: 'Europe/Zurich'
+    },
+    'cook islands': {
+      code: 'ck',
+      choice: 'Pacific/Rarotonga'
+    },
+    colombia: {
+      code: 'co',
+      choice: 'America/Bogota'
+    },
+    'costa rica': {
+      code: 'cr',
+      choice: 'America/Costa_Rica'
+    },
+    cuba: {
+      code: 'cu',
+      choice: 'America/Havana'
+    },
+    'cape verde': {
+      code: 'cv',
+      choice: 'Atlantic/Cape_Verde'
+    },
+    'christmas island': {
+      code: 'cx',
+      choice: 'Indian/Christmas'
+    },
+    slovakia: {
+      code: 'sk',
+      choice: 'Europe/Prague'
+    },
+    mayotte: {
+      code: 'yt',
+      choice: 'Africa/Nairobi'
+    },
+    denmark: {
+      code: 'dk',
+      choice: 'Europe/Copenhagen'
+    },
+    'dominican republic': {
+      code: 'do',
+      choice: 'America/Santo_Domingo'
+    },
+    algeria: {
+      code: 'dz',
+      choice: 'Africa/Algiers'
+    },
+    estonia: {
+      code: 'ee',
+      choice: 'Europe/Tallinn'
+    },
+    egypt: {
+      code: 'eg',
+      choice: 'Africa/Cairo'
+    },
+    'western sahara': {
+      code: 'eh',
+      choice: 'Africa/El_Aaiun'
+    },
+    fiji: {
+      code: 'fj',
+      choice: 'Pacific/Fiji'
+    },
+    'falkland islands': {
+      code: 'fk',
+      choice: 'Atlantic/Stanley'
+    },
+    'faroe islands': {
+      code: 'fo',
+      choice: 'Atlantic/Faroe'
+    },
+    france: {
+      code: 'fr',
+      choice: 'Europe/Paris'
+    },
+    jersey: {
+      code: 'je',
+      choice: 'Europe/London'
+    },
+    georgia: {
+      code: 'ge',
+      choice: 'Asia/Tbilisi'
+    },
+    'french guiana': {
+      code: 'gf',
+      choice: 'America/Cayenne'
+    },
+    ghana: {
+      code: 'gh',
+      choice: 'Africa/Accra'
+    },
+    gibraltar: {
+      code: 'gi',
+      choice: 'Europe/Gibraltar'
+    },
+    greece: {
+      code: 'gr',
+      choice: 'Europe/Athens'
+    },
+    'south georgia': {
+      code: 'gs',
+      choice: 'Atlantic/South_Georgia'
+    },
+    guatemala: {
+      code: 'gt',
+      choice: 'America/Guatemala'
+    },
+    'northern mariana islands': {
+      code: 'mp',
+      choice: 'Pacific/Guam'
+    },
+    'guinea bissau': {
+      code: 'gw',
+      choice: 'Africa/Bissau'
+    },
+    guyana: {
+      code: 'gy',
+      choice: 'America/Guyana'
+    },
+    'hong kong': {
+      code: 'hk',
+      choice: 'Asia/Hong_Kong'
+    },
+    honduras: {
+      code: 'hn',
+      choice: 'America/Tegucigalpa'
+    },
+    haiti: {
+      code: 'ht',
+      choice: 'America/Port-au-prince'
+    },
+    hungary: {
+      code: 'hu',
+      choice: 'Europe/Budapest'
+    },
+    ireland: {
+      code: 'ie',
+      choice: 'Europe/Dublin'
+    },
+    israel: {
+      code: 'il',
+      choice: 'Asia/Jerusalem'
+    },
+    india: {
+      code: 'in',
+      choice: 'Asia/Kolkata'
+    },
+    'british indian ocean territory': {
+      code: 'io',
+      choice: 'Indian/Chagos'
+    },
+    iraq: {
+      code: 'iq',
+      choice: 'Asia/Baghdad'
+    },
+    iran: {
+      code: 'ir',
+      choice: 'Asia/Tehran'
+    },
+    iceland: {
+      code: 'is',
+      choice: 'Atlantic/Reykjavik'
+    },
+    'vatican city': {
+      code: 'va',
+      choice: 'Europe/Rome'
+    },
+    jamaica: {
+      code: 'jm',
+      choice: 'America/Jamaica'
+    },
+    jordan: {
+      code: 'jo',
+      choice: 'Asia/Amman'
+    },
+    japan: {
+      code: 'jp',
+      choice: 'Asia/Tokyo'
+    },
+    kyrgyzstan: {
+      code: 'kg',
+      choice: 'Asia/Bishkek'
+    },
+    'north korea': {
+      code: 'kp',
+      choice: 'Asia/Pyongyang'
+    },
+    'south korea': {
+      code: 'kr',
+      choice: 'Asia/Seoul'
+    },
+    yemen: {
+      code: 'ye',
+      choice: 'Asia/Riyadh'
+    },
+    panama: {
+      code: 'pa',
+      choice: 'America/Panama'
+    },
+    lebanon: {
+      code: 'lb',
+      choice: 'Asia/Beirut'
+    },
+    'sri lanka': {
+      code: 'lk',
+      choice: 'Asia/Colombo'
+    },
+    liberia: {
+      code: 'lr',
+      choice: 'Africa/Monrovia'
+    },
+    'south africa': {
+      code: 'za',
+      choice: 'Africa/Johannesburg'
+    },
+    lithuania: {
+      code: 'lt',
+      choice: 'Europe/Vilnius'
+    },
+    luxembourg: {
+      code: 'lu',
+      choice: 'Europe/Luxembourg'
+    },
+    latvia: {
+      code: 'lv',
+      choice: 'Europe/Riga'
+    },
+    libya: {
+      code: 'ly',
+      choice: 'Africa/Tripoli'
+    },
+    morocco: {
+      code: 'ma',
+      choice: 'Africa/Casablanca'
+    },
+    monaco: {
+      code: 'mc',
+      choice: 'Europe/Monaco'
+    },
+    moldova: {
+      code: 'md',
+      choice: 'Europe/Chisinau'
+    },
+    myanmar: {
+      code: 'mm',
+      choice: 'Asia/Yangon'
+    },
+    //(alias for myanmar)
+    burma: {
+      code: 'mm',
+      choice: 'Asia/Yangon'
+    },
+    macau: {
+      code: 'mo',
+      choice: 'Asia/Macau'
+    },
+    martinique: {
+      code: 'mq',
+      choice: 'America/Martinique'
+    },
+    malta: {
+      code: 'mt',
+      choice: 'Europe/Malta'
+    },
+    mauritius: {
+      code: 'mu',
+      choice: 'Indian/Mauritius'
+    },
+    maldives: {
+      code: 'mv',
+      choice: 'Indian/Maldives'
+    },
+    namibia: {
+      code: 'na',
+      choice: 'Africa/Windhoek'
+    },
+    'new caledonia': {
+      code: 'nc',
+      choice: 'Pacific/Noumea'
+    },
+    'norfolk island': {
+      code: 'nf',
+      choice: 'Pacific/Norfolk'
+    },
+    nicaragua: {
+      code: 'ni',
+      choice: 'America/Managua'
+    },
+    netherlands: {
+      code: 'nl',
+      choice: 'Europe/Amsterdam'
+    },
+    'svalbard and jan mayen': {
+      code: 'sj',
+      choice: 'Europe/Oslo'
+    },
+    nepal: {
+      code: 'np',
+      choice: 'Asia/Kathmandu'
+    },
+    nauru: {
+      code: 'nr',
+      choice: 'Pacific/Nauru'
+    },
+    niue: {
+      code: 'nu',
+      choice: 'Pacific/Niue'
+    },
+    peru: {
+      code: 'pe',
+      choice: 'America/Lima'
+    },
+    philippines: {
+      code: 'ph',
+      choice: 'Asia/Manila'
+    },
+    pakistan: {
+      code: 'pk',
+      choice: 'Asia/Karachi'
+    },
+    poland: {
+      code: 'pl',
+      choice: 'Europe/Warsaw'
+    },
+    'st pierre and miquelon': {
+      code: 'pm',
+      choice: 'America/Miquelon'
+    },
+    pitcairn: {
+      code: 'pn',
+      choice: 'Pacific/Pitcairn'
+    },
+    'puerto rico': {
+      code: 'pr',
+      choice: 'America/Puerto_Rico'
+    },
+    palau: {
+      code: 'pw',
+      choice: 'Pacific/Palau'
+    },
+    paraguay: {
+      code: 'py',
+      choice: 'America/Asuncion'
+    },
+    romania: {
+      code: 'ro',
+      choice: 'Europe/Bucharest'
+    },
+    'solomon islands': {
+      code: 'sb',
+      choice: 'Pacific/Guadalcanal'
+    },
+    seychelles: {
+      code: 'sc',
+      choice: 'Indian/Mahe'
+    },
+    sudan: {
+      code: 'sd',
+      choice: 'Africa/Khartoum'
+    },
+    sweden: {
+      code: 'se',
+      choice: 'Europe/Stockholm'
+    },
+    singapore: {
+      code: 'sg',
+      choice: 'Asia/Singapore'
+    },
+    suriname: {
+      code: 'sr',
+      choice: 'America/Paramaribo'
+    },
+    'south sudan': {
+      code: 'ss',
+      choice: 'Africa/Juba'
+    },
+    'sao tome': {
+      code: 'st',
+      choice: 'Africa/Sao_Tome'
+    },
+    'el salvador': {
+      code: 'sv',
+      choice: 'America/El_Salvador'
+    },
+    syria: {
+      code: 'sy',
+      choice: 'Asia/Damascus'
+    },
+    'turks and caicos': {
+      code: 'tc',
+      choice: 'America/Grand_Turk'
+    },
+    chad: {
+      code: 'td',
+      choice: 'Africa/Ndjamena'
+    },
+    tajikistan: {
+      code: 'tj',
+      choice: 'Asia/Dushanbe'
+    },
+    tokelau: {
+      code: 'tk',
+      choice: 'Pacific/Fakaofo'
+    },
+    'east timor': {
+      code: 'tl',
+      choice: 'Asia/Dili'
+    },
+    turkmenistan: {
+      code: 'tm',
+      choice: 'Asia/Ashgabat'
+    },
+    tunisia: {
+      code: 'tn',
+      choice: 'Africa/Tunis'
+    },
+    tonga: {
+      code: 'to',
+      choice: 'Pacific/Tongatapu'
+    },
+    turkey: {
+      code: 'tr',
+      choice: 'Europe/Istanbul'
+    },
+    tuvalu: {
+      code: 'tv',
+      choice: 'Pacific/Funafuti'
+    },
+    taiwan: {
+      code: 'tw',
+      choice: 'Asia/Taipei'
+    },
+    uruguay: {
+      code: 'uy',
+      choice: 'America/Montevideo'
+    },
+    venezuela: {
+      code: 've',
+      choice: 'America/Caracas'
+    },
+    vanuatu: {
+      code: 'vu',
+      choice: 'Pacific/Efate'
+    },
+    'wallis and futuna': {
+      code: 'wf',
+      choice: 'Pacific/Wallis'
+    },
+    'western samoa': {
+      code: 'ws',
+      choice: 'Pacific/Apia'
+    },
+    samoa: {
+      code: 'ws',
+      choice: 'Pacific/Apia'
+    },
+    ////////////
+    /// these countries have more than one timezone
+    /// and i picked one.
+    // (i tried to do my best.)
+    antarctica: {
+      code: 'aq',
+      choice: 'Antarctica/Davis'
+    },
+    argentina: {
+      code: 'ar',
+      choice: 'America/Argentina'
+    },
+    australia: {
+      code: 'au',
+      choice: 'Australia/Sydney'
+    },
+    brazil: {
+      code: 'br',
+      choice: 'America/Sao_Paulo'
+    },
+    canada: {
+      code: 'ca',
+      choice: 'America/Toronto'
+    },
+    congo: {
+      code: 'cd',
+      choice: 'Africa/Kinshasa' //'Africa/Lagos'?
 
-  }; //Use each abbreviation as a key
-  // const lookup = Object.keys(informal).reduce((h, k) => {
-  //   let arr = informal[k]
-  //   for (let i = 0; i < 5; i += 1) {
-  //     if (arr[i]) {
-  //       h[arr[i]] = k
-  //     }
-  //   }
-  //   return h
-  // }, {})
+    },
+    chile: {
+      code: 'cl',
+      choice: 'America/Santiago'
+    },
+    china: {
+      code: 'cn',
+      choice: 'Asia/Shanghai'
+    },
+    cyprus: {
+      code: 'cy',
+      choice: 'Asia/Nicosia'
+    },
+    germany: {
+      code: 'de',
+      choice: 'Europe/Berlin'
+    },
+    ecuador: {
+      code: 'ec',
+      choice: 'America/Guayaquil'
+    },
+    spain: {
+      code: 'es',
+      choice: 'Europe/Madrid'
+    },
+    micronesia: {
+      code: 'fm',
+      choice: 'Pacific/Pohnpei'
+    },
+    greenland: {
+      code: 'gl',
+      choice: 'America/Godthab'
+    },
+    indonesia: {
+      code: 'id',
+      choice: 'Asia/Jakarta'
+    },
+    kiribati: {
+      code: 'ki',
+      choice: 'Pacific/Kiritimati'
+    },
+    kazakhstan: {
+      code: 'kz',
+      choice: 'Asia/Almaty'
+    },
+    'marshall islands': {
+      code: 'mh',
+      choice: 'Pacific/Majuro'
+    },
+    mongolia: {
+      code: 'mn',
+      choice: 'Asia/Ulaanbaatar'
+    },
+    mexico: {
+      code: 'mx',
+      choice: 'America/Mexico_City' // 'America/Monterrey'?
 
-  var _06Abbreviations = informal;
+    },
+    malaysia: {
+      code: 'my',
+      choice: 'Asia/Kuala_Lumpur'
+    },
+    'new zealand': {
+      code: 'nz',
+      choice: 'Pacific/Auckland'
+    },
+    'french polynesia': {
+      code: 'pf',
+      choice: 'Pacific/Pohnpei'
+    },
+    'papua new guinea': {
+      code: 'pg',
+      choice: 'Pacific/Port_Moresby'
+    },
+    palestine: {
+      code: 'ps',
+      choice: 'Asia/Gaza'
+    },
+    portugal: {
+      code: 'pt',
+      choice: 'Europe/Lisbon'
+    },
+    russia: {
+      code: 'ru',
+      choice: 'Europe/Moscow' // 'Europe/Kaliningrad'?
 
-  var all = Object.assign({}, _01Iana, _02ByCity, _04OldZones); //Add country info
+    },
+    'french southern and antarctic lands': {
+      code: 'tf',
+      choice: 'Indian/Kerguelen'
+    },
+    ukraine: {
+      code: 'ua',
+      choice: 'Europe/Kiev'
+    },
+    'us minor outlying islands': {
+      code: 'um',
+      choice: 'Pacific/Wake'
+    },
+    'united states': {
+      code: 'us',
+      choice: 'America/New_York'
+    },
+    uzbekistan: {
+      code: 'uz',
+      choice: 'Asia/Tashkent' //'Asia/Samarkand'
+
+    },
+    vietnam: {
+      code: 'vn',
+      choice: 'Asia/Ho_Chi_Minh'
+    }
+  };
+
+  var all = Object.assign({}, _01Iana, _02ByCity, _04OldZones, _07Parentheses); //Add country info
 
   Object.keys(_03ByCountry).forEach(function (key) {
     //Add country name
@@ -2078,6 +2291,12 @@
     tz = tz.replace(/\islands/g, 'island');
     tz = tz.replace(/.*\//g, '');
     return tz.trim();
+  }; // even-more agressive
+
+
+  var normalizeThree = function normalizeThree(tz) {
+    tz = tz.replace(/\(.*\)/, '');
+    return tz.trim();
   }; //
 
 
@@ -2121,10 +2340,16 @@
     if (data.hasOwnProperty(tmp)) {
       return data[tmp];
     } // -- harder normalizations --
-    //
 
 
     str = normalizeTwo(str);
+
+    if (data.hasOwnProperty(str)) {
+      return data[str];
+    } // -- HARDER normalizations --
+
+
+    str = normalizeThree(str);
 
     if (data.hasOwnProperty(str)) {
       return data[str];
@@ -2171,7 +2396,7 @@
 
   var display_1 = display;
 
-  var _version = '0.3.0';
+  var _version = '0.4.0';
 
   var src = {
     find: find_1,
