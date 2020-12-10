@@ -2390,7 +2390,7 @@ var display = function display(str) {
 
 var display_1 = display;
 
-var _version = '0.4.0';
+var _version = '0.5.0';
 
 var src = {
   find: find_1,
