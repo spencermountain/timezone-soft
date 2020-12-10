@@ -6,6 +6,7 @@
   "main": "builds/spacetime-informal.js",
   "module": "builds/spacetime-informal.mjs",
   "unpkg": "builds/spacetime-informal.min.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "watch": "amble ./scratch.js",
     "build": "node ./scripts/version.js && rollup -c && npm run filesize",
