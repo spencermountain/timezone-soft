@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/spencermountain/spacetime-abbreviation#readme",
   "files": [
-    "builds"
+    "builds",
+    "types"
   ],
   "prettier": {
     "trailingComma": "none",
