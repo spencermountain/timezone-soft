@@ -7,11 +7,11 @@ const lexicon = Object.assign({}, misc, unpack(pckd))
 Object.keys(lexicon).filter((k) => {
   let val = lexicon[k].toLowerCase()
   if (lexicon[val] === undefined) {
-    lexicon[val] = k
+    lexicon[val] = lexicon[k]
   }
 })
 // console.log(Object.keys(lexicon).filter((k) => k.match('santo')))
-// console.log(lexicon['america/la_paz'])
+// console.log(lexicon['america/swift_current'])
 
 const parseOffset = require('./parseOffset')
 

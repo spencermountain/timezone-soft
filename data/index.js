@@ -58,7 +58,8 @@ Object.keys(all).forEach((k) => {
   }
   // remove any problematic keys
   if (str.match(/[0-9]/)) {
-    delete str
+    // delete str
+    // console.log(str)
   }
 })
 // console.log(all['est'])
