@@ -57,12 +57,12 @@ Object.keys(all).forEach((k) => {
     // console.log(k, oldZones[str])
   }
   // remove any problematic keys
-  if (str.match(/[0-9]/)) {
-    // delete str
-    // console.log(str)
-  }
+  // if (str.match(/[0-9]/)) {
+  // delete str
+  // console.log(str)
+  // }
 })
-// console.log(all['est'])
+// console.log(all['asia/ulan_bator'])
 // console.log(Object.keys(all).length)
 
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))

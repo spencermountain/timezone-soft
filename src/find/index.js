@@ -1,7 +1,9 @@
 const pckd = require('./_data')
 const misc = require('./misc')
 const unpack = require('efrt-unpack')
-const lexicon = Object.assign({}, misc, unpack(pckd))
+let lexicon = unpack(pckd)
+// console.log(lexicon['asia/ulan_bator'])
+lexicon = Object.assign(lexicon, misc)
 
 // add some redundant data that didn't pack properly
 Object.keys(lexicon).filter((k) => {
@@ -10,8 +12,7 @@ Object.keys(lexicon).filter((k) => {
     lexicon[val] = lexicon[k]
   }
 })
-// console.log(Object.keys(lexicon).filter((k) => k.match('santo')))
-// console.log(lexicon['america/swift_current'])
+// console.log(Object.keys(lexicon).filter((k) => k.match('bator')))
 
 const parseOffset = require('./parseOffset')
 

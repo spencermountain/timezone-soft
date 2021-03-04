@@ -444,7 +444,7 @@ const iana = {
     'Mayotte',
     'Reunion'
   ],
-  Mexico: ['Bajanorte', 'Bajasur', 'General'],
+  Mexico: ['Bajanorte', 'Bajasur'],
   Pacific: [
     'Apia',
     'Auckland',
@@ -490,7 +490,7 @@ const iana = {
     'Wallis',
     'Yap'
   ],
-  ETC: ['GMT', 'GMT+0', 'GMT-0', 'GMT0', 'Greenwich', 'UTC', 'Universal', 'Zulu']
+  ETC: ['GMT', 'Greenwich', 'UTC', 'Universal', 'Zulu']
 }
 
 const ignore = {
