@@ -2,7 +2,7 @@
 const test = require('tape')
 const informal = require('../src')
 
-test('informal timezones', t => {
+test('informal timezones', (t) => {
   let arr = [
     ['Toronto', 'America/Toronto'],
     ['toronto', 'America/Toronto'],
@@ -51,9 +51,11 @@ test('informal timezones', t => {
     ['Etc/gmt-5', 'Etc/GMT-5'],
     ['-3', 'Etc/GMT+3'],
     ['3', 'Etc/GMT-3'],
-    [`Eastern Time - US & Canada`, 'Canada/Eastern']
+    [`Eastern Time - US & Canada`, 'Canada/Eastern'],
+    ['kandahar', 'Asia/Kabul'],
+    ['yorkshire', 'Europe/London']
   ]
-  arr.forEach(a => {
+  arr.forEach((a) => {
     let found = informal.find(a[0])
     t.equal(found, a[1], a[0])
   })

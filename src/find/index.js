@@ -1,9 +1,17 @@
 const pckd = require('./_data')
+const misc = require('./misc')
 const unpack = require('efrt-unpack')
-const lexicon = unpack(pckd)
+const lexicon = Object.assign({}, misc, unpack(pckd))
 
-// console.log(Object.keys(lexicon).filter((k) => typeof lexicon[k] !== 'string'))
-// console.log(lexicon.canberra)
+// add some redundant data that didn't pack properly
+Object.keys(lexicon).filter((k) => {
+  let val = lexicon[k].toLowerCase()
+  if (lexicon[val] === undefined) {
+    lexicon[val] = k
+  }
+})
+// console.log(Object.keys(lexicon).filter((k) => k.match('santo')))
+// console.log(lexicon['america/la_paz'])
 
 const parseOffset = require('./parseOffset')
 

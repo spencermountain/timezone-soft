@@ -82,9 +82,6 @@ module.exports = {
   'europe/tiraspol': 'Europe/Chisinau',
   gb: 'Europe/London',
   'gb-eire': 'Europe/London',
-  'gmt+0': 'etc/Gmt',
-  'gmt-0': 'etc/Gmt',
-  gmt0: 'etc/Gmt',
   greenwich: 'etc/Gmt',
   hongkong: 'Asia/Hong_Kong',
   iceland: 'atlantic/Reykjavik',
@@ -141,10 +138,6 @@ module.exports = {
   'asia/kathmandu': 'Asia/Katmandu',
   'asia/ho_chi_minh': 'Asia/Saigon',
   'asia/istanbul': 'Europe/Istanbul',
-
-  'etc/gmt+0': 'Etc/Gmt',
-  'etc/gmt-0': 'Etc/Gmt',
-  'etc/gmt0': 'Etc/Gmt',
   'etc/greenwich': 'etc/Gmt',
   'etc/uct': 'Etc/Utc',
   'etc/universal': 'Etc/Utc',
@@ -154,8 +147,8 @@ module.exports = {
   'easter island': 'Chile/EasterIsland',
   'us/pacific-new': 'America/Los_Angeles',
   uct: 'Etc/Utc',
-  utc: 'Etc/Utc',
-  est: 'Etc/Gmt+5',
-  mst: 'Etc/Gmt+7',
-  hst: 'Etc/Gmt+10'
+  utc: 'Etc/Utc'
+  // est: 'Etc/Gmt+5',
+  // mst: 'Etc/Gmt+7',
+  // hst: 'Etc/Gmt+10'
 }
