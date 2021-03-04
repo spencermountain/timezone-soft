@@ -23,6 +23,7 @@ test('display-test', (t) => {
   ]
   arr.forEach((a) => {
     let display = informal.display(a[0])
+    console.log(display)
 
     t.equal(display.standard.abbrev, a[1], a[0] + ' standard')
     if (display.daylight) {

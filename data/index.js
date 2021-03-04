@@ -1,12 +1,12 @@
 const iana = require('./01-iana')
 const byCity = require('./02-byCity')
-const oldZones = require('./04-oldZones')
-const parentheses = require('./07-parentheses')
-let all = Object.assign({}, iana, byCity, oldZones, parentheses)
-
-const abbreviations = require('./06-abbreviations')
-const metazones = require('./05-metazones')
 const byCountry = require('./03-byCountry')
+const byState = require('./04-byState')
+const oldZones = require('./04-oldZones')
+const metazones = require('./05-metazones')
+const abbreviations = require('./06-abbreviations')
+const parentheses = require('./07-parentheses')
+let all = Object.assign({}, iana, byCity, byState, oldZones, parentheses)
 
 //Add country info
 Object.keys(byCountry).forEach((key) => {
@@ -48,4 +48,8 @@ Object.keys(abbreviations).forEach((k) => {
 })
 // console.log(all['canada/vancouver'])
 // console.log(Object.keys(all).length)
+
+// console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))
+// console.log(all.canberra)
+
 module.exports = all

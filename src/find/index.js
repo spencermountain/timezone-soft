@@ -1,4 +1,10 @@
-const lookup = require('../../data/')
+const pckd = require('./_data')
+const unpack = require('efrt-unpack')
+const lexicon = unpack(pckd)
+
+console.log(Object.keys(lexicon).filter((k) => typeof lexicon[k] !== 'string'))
+console.log(lexicon.canberra)
+
 const parseOffset = require('./parseOffset')
 
 //try to match these against iana form
@@ -31,8 +37,8 @@ const find = function (str) {
   }
   str = str.toLowerCase().trim()
   // lookup known abbreviations
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
 
   // -8hrs
@@ -45,39 +51,39 @@ const find = function (str) {
 
   // start fuzzy-match against iana timezones
   str = normalizeOne(str)
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
   // 'eastern daylight'
   let tmp = str + ' time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
   // 'pacific'
   tmp = str + ' standard time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
 
   // -- harder normalizations --
   str = normalizeTwo(str)
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
   // -- HARDER normalizations --
   str = normalizeThree(str)
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
   // 'eastern daylight'
   tmp = str + ' time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
   // 'pacific'
   tmp = str + ' standard time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
 
   return null
