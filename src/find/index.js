@@ -2,8 +2,8 @@ const pckd = require('./_data')
 const unpack = require('efrt-unpack')
 const lexicon = unpack(pckd)
 
-console.log(Object.keys(lexicon).filter((k) => typeof lexicon[k] !== 'string'))
-console.log(lexicon.canberra)
+// console.log(Object.keys(lexicon).filter((k) => typeof lexicon[k] !== 'string'))
+// console.log(lexicon.canberra)
 
 const parseOffset = require('./parseOffset')
 

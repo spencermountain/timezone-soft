@@ -136,7 +136,7 @@ module.exports = {
   'pacific/pohnpei': 'Pacific/Ponape',
   'pacific/chuuk': 'Pacific/Truk',
   'atlantic/faroe': 'atlantic/Faeroe',
-  'asia/kolkata': 'Asia/Calcutta',
+  // 'asia/kolkata': 'Asia/Calcutta',
   'asia/yangon': 'Asia/Rangoon',
   'asia/kathmandu': 'Asia/Katmandu',
   'asia/ho_chi_minh': 'Asia/Saigon',

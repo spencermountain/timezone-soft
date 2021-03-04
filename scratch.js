@@ -1,8 +1,8 @@
 const informal = require('./src/index')
 const spacetime = require('/Users/spencer/mountain/spacetime')
-let zones = spacetime().timezones
+// let zones = spacetime().timezones
 
-let display = informal.find('montreal')
+let display = informal.find('calcutta')
 console.log(display)
 
 // const tzCodes = informal.display('Pacific/Auckland')

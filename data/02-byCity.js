@@ -2469,6 +2469,9 @@ const byCity = {
   cotia: 'America/Sao_Paulo',
   tomakomai: 'Asia/Tokyo',
   tambaram: 'Asia/Kolkata',
-  pamulang: 'Asia/Jakarta'
+  pamulang: 'Asia/Jakarta',
+
+  // misc
+  calcutta: 'Asia/Kolkata'
 }
 module.exports = byCity

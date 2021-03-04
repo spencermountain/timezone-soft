@@ -6,7 +6,8 @@ const oldZones = require('./04-oldZones')
 const metazones = require('./05-metazones')
 const abbreviations = require('./06-abbreviations')
 const parentheses = require('./07-parentheses')
-let all = Object.assign({}, iana, byCity, byState, oldZones, parentheses)
+let all = Object.assign({}, iana, oldZones, parentheses, byCity, byState)
+// console.log(all.calcutta)
 
 //Add country info
 Object.keys(byCountry).forEach((key) => {
