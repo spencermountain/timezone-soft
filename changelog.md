@@ -1,3 +1,7 @@
+### 0.6.0 [March 2021]
+- add (way) more cities and provinces & compression scheme using efrt-unpack
+- update deps
+
 ### 0.4.0
 - add more formats from tzinfo db
 - fix case-sensitivity issue

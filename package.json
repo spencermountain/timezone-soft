@@ -1,6 +1,6 @@
 {
   "name": "spacetime-informal",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "spencermountain",
   "description": "interpret abbreviated and informal timezone names",
   "main": "builds/spacetime-informal.js",
