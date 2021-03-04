@@ -147,7 +147,9 @@ module.exports = {
   'easter island': 'Chile/EasterIsland',
   'us/pacific-new': 'America/Los_Angeles',
   uct: 'Etc/Utc',
-  utc: 'Etc/Utc'
+  utc: 'Etc/Utc',
+  'america/argentina/tucuman': 'America/Argentina',
+  'america/argentina/salta': 'America/Argentina'
   // est: 'Etc/Gmt+5',
   // mst: 'Etc/Gmt+7',
   // hst: 'Etc/Gmt+10'
