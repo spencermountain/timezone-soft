@@ -2,7 +2,6 @@ const pckd = require('./_data')
 const misc = require('./misc')
 const unpack = require('efrt-unpack')
 let lexicon = unpack(pckd)
-// console.log(lexicon['asia/ulan_bator'])
 lexicon = Object.assign(lexicon, misc)
 
 // add some redundant data that didn't pack properly
@@ -12,12 +11,12 @@ Object.keys(lexicon).filter((k) => {
     lexicon[val] = lexicon[k]
   }
 })
-// console.log(Object.keys(lexicon).filter((k) => k.match('bator')))
 
 const parseOffset = require('./parseOffset')
 
 //try to match these against iana form
 const normalizeOne = (tz) => {
+  tz = tz.replace(/^in /g, '')
   tz = tz.replace(/ time/g, '')
   tz = tz.replace(/ (standard|daylight|summer)/g, '')
   tz = tz.replace(/ - .*/g, '') //`Eastern Time - US & Canada`

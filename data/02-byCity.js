@@ -2473,6 +2473,10 @@ const byCity = {
   pamulang: 'Asia/Jakarta',
 
   // misc
-  calcutta: 'Asia/Kolkata'
+  calcutta: 'Asia/Kolkata',
+  sf: 'America/Los_Angeles',
+  'san fran': 'America/Los_Angeles',
+  ny: 'America/New_York',
+  ldn: 'Europe/London'
 }
 module.exports = byCity
