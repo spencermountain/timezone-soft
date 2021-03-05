@@ -1,6 +1,15 @@
 const timezoneSoft = require('./src/index')
-// const spacetime = require('/Users/spencer/mountain/spacetime')
-// let zones = spacetime().timezones
+const spacetime = require('spacetime')
+let zones = spacetime.timezones()
+const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let ids = timezoneSoft('5h')
-console.log(ids)
+arr.forEach((a) => {
+  let found = zones[a.ids[0].toLowerCase()]
+  if (found.offset !== a.offset) {
+    console.log(found.offset + '     -   ' + a.ids[0])
+  }
+  // console.log(found)
+})
+
+// let ids = timezoneSoft('5h')
+// console.log(ids)
