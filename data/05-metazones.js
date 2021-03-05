@@ -1,42 +1,50 @@
 //From https://Github.com/Mj1856/Timezonenames
 // and from  https://Github.com/Nodatime/Nodatime/Blob/Master/Data/Cldr/Windowszones-35.xml
 
+// do some ad-hoc compression
+const eu = 'Europe/'
+const af = 'Africa/'
+const am = 'America/'
+const au = 'Australia/'
+const as = 'Asia/'
+const pa = 'Pacific/'
+
 module.exports = [
   //gmt-0, with daylight savings
   {
-    standard: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
-    daylight: { name: 'British Summer Time', abbrev: 'BST' },
+    std: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
+    dl: { name: 'British Summer Time', abbrev: 'BST' },
     alias: ['british', 'britain'],
-    pick: 'Europe/London',
-    zones: ['Europe/Guernsey', 'Europe/Isle_Of_Man', 'Europe/Jersey', 'Europe/London']
+    pick: eu + 'London',
+    ids: [eu + 'Guernsey', eu + 'Isle_Of_Man', eu + 'Jersey', eu + 'London']
   },
   {
-    standard: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
-    daylight: { name: 'Irish Summer Time', abbrev: 'IST' },
+    std: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
+    dl: { name: 'Irish Summer Time', abbrev: 'IST' },
     alias: ['ireland'],
-    zones: ['Europe/Dublin']
+    ids: [eu + 'Dublin']
   },
 
   //gmt-0, no daylight savings
   {
-    standard: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
-    pick: 'Africa/Freetown',
+    std: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
+    pick: af + 'Freetown',
     alias: ['etc', 'utc'],
-    zones: [
-      'Africa/Abidjan',
-      'Africa/Accra',
-      'Africa/Bamako',
-      'Africa/Banjul',
-      'Africa/Bissau',
-      'Africa/Conakry',
-      'Africa/Dakar',
-      'Africa/Freetown',
-      'Africa/Lome',
-      'Africa/Monrovia',
-      'Africa/Nouakchott',
-      'Africa/Ouagadougou',
-      'Africa/Sao_Tome',
-      'America/Danmarkshavn',
+    ids: [
+      af + 'Abidjan',
+      af + 'Accra',
+      af + 'Bamako',
+      af + 'Banjul',
+      af + 'Bissau',
+      af + 'Conakry',
+      af + 'Dakar',
+      af + 'Freetown',
+      af + 'Lome',
+      af + 'Monrovia',
+      af + 'Nouakchott',
+      af + 'Ouagadougou',
+      af + 'Sao_Tome',
+      am + 'Danmarkshavn',
       'Antarctica/Troll',
       'Atlantic/Reykjavik',
       'Atlantic/St_Helena',
@@ -46,627 +54,621 @@ module.exports = [
 
   //North america
   {
-    standard: { name: 'Central Standard Time', abbrev: 'CST' },
-    daylight: { name: 'Central Daylight Time', abbrev: 'CDT' },
-    pick: 'America/Chicago',
-    zones: [
-      'America/Bahia_Banderas',
-      'America/Belize',
-      'America/Chicago',
-      'America/Costa_Rica',
-      'America/El_Salvador',
-      'America/Guatemala',
-      'America/Indiana',
-      'America/Managua',
-      'America/Matamoros',
-      'America/Menominee',
-      'America/Merida',
-      'America/Mexico_City',
-      'America/Monterrey',
-      'America/North_Dakota',
-      'America/North_Dakota',
-      'America/North_Dakota',
-      'America/Rainy_River',
-      'America/Rankin_Inlet',
-      'America/Regina',
-      'America/Resolute',
-      'America/Swift_Current',
-      'America/Tegucigalpa',
-      'America/Winnipeg'
+    std: { name: 'Central Standard Time', abbrev: 'CST' },
+    dl: { name: 'Central Daylight Time', abbrev: 'CDT' },
+    pick: am + 'Chicago',
+    ids: [
+      am + 'Bahia_Banderas',
+      am + 'Belize',
+      am + 'Chicago',
+      am + 'Costa_Rica',
+      am + 'El_Salvador',
+      am + 'Guatemala',
+      am + 'Indiana',
+      am + 'Managua',
+      am + 'Matamoros',
+      am + 'Menominee',
+      am + 'Merida',
+      am + 'Mexico_City',
+      am + 'Monterrey',
+      am + 'North_Dakota',
+      am + 'North_Dakota',
+      am + 'North_Dakota',
+      am + 'Rainy_River',
+      am + 'Rankin_Inlet',
+      am + 'Regina',
+      am + 'Resolute',
+      am + 'Swift_Current',
+      am + 'Tegucigalpa',
+      am + 'Winnipeg'
     ]
   },
   {
-    standard: { name: 'Mountain Standard Time', abbrev: 'MST' },
-    daylight: { name: 'Mountain Daylight Time', abbrev: 'MDT' },
-    pick: 'America/Denver',
-    zones: [
-      'America/Boise',
-      'America/Cambridge_Bay',
-      'America/Creston',
-      'America/Dawson_Creek',
-      'America/Denver',
-      'America/Edmonton',
-      'America/Fort_Nelson',
-      'America/Inuvik',
-      'America/Ojinaga',
-      'America/Phoenix',
-      'America/Yellowknife',
+    std: { name: 'Mountain Standard Time', abbrev: 'MST' },
+    dl: { name: 'Mountain Daylight Time', abbrev: 'MDT' },
+    pick: am + 'Denver',
+    ids: [
+      am + 'Boise',
+      am + 'Cambridge_Bay',
+      am + 'Creston',
+      am + 'Dawson_Creek',
+      am + 'Denver',
+      am + 'Edmonton',
+      am + 'Fort_Nelson',
+      am + 'Inuvik',
+      am + 'Ojinaga',
+      am + 'Phoenix',
+      am + 'Yellowknife',
       // add mexico
-      'America/Chihuahua',
-      'America/Hermosillo',
-      'America/Mazatlan'
+      am + 'Chihuahua',
+      am + 'Hermosillo',
+      am + 'Mazatlan'
     ]
   },
   {
-    standard: { name: 'Atlantic Standard Time', abbrev: 'AST' },
-    daylight: { name: 'Atlantic Daylight Time', abbrev: 'ADT' },
-    pick: 'America/Halifax',
-    zones: [
-      'America/Anguilla',
-      'America/Antigua',
-      'America/Aruba',
-      'America/Barbados',
-      'America/Blanc-sablon',
-      'America/Curacao',
-      'America/Dominica',
-      'America/Glace_Bay',
-      'America/Goose_Bay',
-      'America/Grenada',
-      'America/Guadeloupe',
-      'America/Halifax',
-      'America/Kralendijk',
-      'America/Lower_Princes',
-      'America/Marigot',
-      'America/Martinique',
-      'America/Moncton',
-      'America/Montserrat',
-      'America/Port_Of_Spain',
-      'America/Puerto_Rico',
-      'America/Santo_Domingo',
-      'America/St_Barthelemy',
-      'America/St_Kitts',
-      'America/St_Lucia',
-      'America/St_Thomas',
-      'America/St_Vincent',
-      'America/Thule',
-      'America/Tortola',
+    std: { name: 'Atlantic Standard Time', abbrev: 'AST' },
+    dl: { name: 'Atlantic Daylight Time', abbrev: 'ADT' },
+    pick: am + 'Halifax',
+    ids: [
+      am + 'Anguilla',
+      am + 'Antigua',
+      am + 'Aruba',
+      am + 'Barbados',
+      am + 'Blanc-sablon',
+      am + 'Curacao',
+      am + 'Dominica',
+      am + 'Glace_Bay',
+      am + 'Goose_Bay',
+      am + 'Grenada',
+      am + 'Guadeloupe',
+      am + 'Halifax',
+      am + 'Kralendijk',
+      am + 'Lower_Princes',
+      am + 'Marigot',
+      am + 'Martinique',
+      am + 'Moncton',
+      am + 'Montserrat',
+      am + 'Port_Of_Spain',
+      am + 'Puerto_Rico',
+      am + 'Santo_Domingo',
+      am + 'St_Barthelemy',
+      am + 'St_Kitts',
+      am + 'St_Lucia',
+      am + 'St_Thomas',
+      am + 'St_Vincent',
+      am + 'Thule',
+      am + 'Tortola',
       'Atlantic/Bermuda'
     ]
   },
   {
-    standard: { name: 'Eastern Standard Time', abbrev: 'EST' },
-    daylight: { name: 'Eastern Daylight Time', abbrev: 'EDT' },
-    pick: 'America/New_York',
-    zones: [
-      'America/Cancun',
-      'America/Cayman',
-      'America/Coral_Harbour',
-      'America/Detroit',
-      'America/Grand_Turk',
-      'America/Indiana',
-      'America/Indianapolis',
-      'America/Iqaluit',
-      'America/Jamaica',
-      'America/Kentucky',
-      'America/Louisville',
-      'America/Nassau',
-      'America/New_York',
-      'America/Nipigon',
-      'America/Panama',
-      'America/Pangnirtung',
-      'America/Port-au-prince',
-      'America/Thunder_Bay',
-      'America/Toronto',
-      'America/Montreal'
+    std: { name: 'Eastern Standard Time', abbrev: 'EST' },
+    dl: { name: 'Eastern Daylight Time', abbrev: 'EDT' },
+    pick: am + 'New_York',
+    ids: [
+      am + 'Cancun',
+      am + 'Cayman',
+      am + 'Coral_Harbour',
+      am + 'Detroit',
+      am + 'Grand_Turk',
+      am + 'Indiana',
+      am + 'Indianapolis',
+      am + 'Iqaluit',
+      am + 'Jamaica',
+      am + 'Kentucky',
+      am + 'Louisville',
+      am + 'Nassau',
+      am + 'New_York',
+      am + 'Nipigon',
+      am + 'Panama',
+      am + 'Pangnirtung',
+      am + 'Port-au-prince',
+      am + 'Thunder_Bay',
+      am + 'Toronto',
+      am + 'Montreal'
     ]
   },
   {
-    standard: { name: 'Pacific Standard Time', abbrev: 'PST' },
-    daylight: { name: 'Pacific Daylight Time', abbrev: 'PDT' },
-    pick: 'America/Los_Angeles',
-    zones: [
-      'America/Dawson',
-      'America/Los_Angeles',
-      'America/Tijuana',
-      'America/Vancouver',
-      'America/Whitehorse'
+    std: { name: 'Pacific Standard Time', abbrev: 'PST' },
+    dl: { name: 'Pacific Daylight Time', abbrev: 'PDT' },
+    pick: am + 'Los_Angeles',
+    ids: [am + 'Dawson', am + 'Los_Angeles', am + 'Tijuana', am + 'Vancouver', am + 'Whitehorse']
+  },
+  {
+    std: { name: 'Alaskan Standard Time', abbrev: 'AHST' },
+    dl: { name: 'Alaskan Daylight Time', abbrev: 'AHDT' },
+    pick: am + 'Anchorage',
+    ids: [
+      am + 'Anchorage',
+      am + 'Juneau',
+      am + 'Metlakatla',
+      am + 'Nome',
+      am + 'Sitka',
+      am + 'Yakutat'
     ]
   },
   {
-    standard: { name: 'Alaskan Standard Time', abbrev: 'AHST' },
-    daylight: { name: 'Alaskan Daylight Time', abbrev: 'AHDT' },
-    pick: 'America/Anchorage',
-    zones: [
-      'America/Anchorage',
-      'America/Juneau',
-      'America/Metlakatla',
-      'America/Nome',
-      'America/Sitka',
-      'America/Yakutat'
-    ]
-  },
-  {
-    standard: { name: 'Hawaiian Standard Time', abbrev: 'HST' },
+    std: { name: 'Hawaiian Standard Time', abbrev: 'HST' },
     alias: ['aleutian', 'hawaii'],
-    pick: 'Pacific/Honolulu',
-    zones: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston']
+    pick: pa + 'Honolulu',
+    ids: [am + 'Adak', pa + 'Honolulu', pa + 'Johnston']
   },
   {
-    standard: { name: 'Newfoundland Standard Time', abbrev: 'NST' },
-    daylight: { name: 'Newfoundland Daylight Time', abbrev: 'NDT' },
-    pick: 'America/St_Johns',
-    zones: ['America/St_Johns']
+    std: { name: 'Newfoundland Standard Time', abbrev: 'NST' },
+    dl: { name: 'Newfoundland Daylight Time', abbrev: 'NDT' },
+    pick: am + 'St_Johns',
+    ids: [am + 'St_Johns']
   },
 
   ///Europe
   {
-    standard: { name: 'Central European Time', abbrev: 'CET' },
-    daylight: { name: 'Central European Summer Time', abbrev: 'CEST' },
+    std: { name: 'Central European Time', abbrev: 'CET' },
+    dl: { name: 'Central European Summer Time', abbrev: 'CEST' },
     alias: ['romance', 'central europe'],
-    pick: 'Europe/Berlin',
-    zones: [
-      'Africa/Algiers',
-      'Africa/Ceuta',
-      'Africa/Tunis',
+    pick: eu + 'Berlin',
+    ids: [
+      af + 'Algiers',
+      af + 'Ceuta',
+      af + 'Tunis',
       'arctic/Longyearbyen',
-      'Europe/Amsterdam',
-      'Europe/Andorra',
-      'Europe/Belgrade',
-      'Europe/Berlin',
-      'Europe/Bratislava',
-      'Europe/Brussels',
-      'Europe/Budapest',
-      'Europe/Busingen',
-      'Europe/Copenhagen',
-      'Europe/Gibraltar',
-      'Europe/Ljubljana',
-      'Europe/Luxembourg',
-      'Europe/Madrid',
-      'Europe/Malta',
-      'Europe/Monaco',
-      'Europe/Oslo',
-      'Europe/Paris',
-      'Europe/Podgorica',
-      'Europe/Prague',
-      'Europe/Rome',
-      'Europe/San_Marino',
-      'Europe/Sarajevo',
-      'Europe/Skopje',
-      'Europe/Stockholm',
-      'Europe/Tirane',
-      'Europe/Vaduz',
-      'Europe/Vatican',
-      'Europe/Vienna',
-      'Europe/Warsaw',
-      'Europe/Zagreb',
-      'Europe/Zurich'
+      eu + 'Amsterdam',
+      eu + 'Andorra',
+      eu + 'Belgrade',
+      eu + 'Berlin',
+      eu + 'Bratislava',
+      eu + 'Brussels',
+      eu + 'Budapest',
+      eu + 'Busingen',
+      eu + 'Copenhagen',
+      eu + 'Gibraltar',
+      eu + 'Ljubljana',
+      eu + 'Luxembourg',
+      eu + 'Madrid',
+      eu + 'Malta',
+      eu + 'Monaco',
+      eu + 'Oslo',
+      eu + 'Paris',
+      eu + 'Podgorica',
+      eu + 'Prague',
+      eu + 'Rome',
+      eu + 'San_Marino',
+      eu + 'Sarajevo',
+      eu + 'Skopje',
+      eu + 'Stockholm',
+      eu + 'Tirane',
+      eu + 'Vaduz',
+      eu + 'Vatican',
+      eu + 'Vienna',
+      eu + 'Warsaw',
+      eu + 'Zagreb',
+      eu + 'Zurich'
     ]
   },
   {
-    standard: { name: 'Eastern European Time', abbrev: 'EET' },
-    daylight: { name: 'Eastern European Summer Time', abbrev: 'EEST' },
+    std: { name: 'Eastern European Time', abbrev: 'EET' },
+    dl: { name: 'Eastern European Summer Time', abbrev: 'EEST' },
     alias: ['eastern europe'],
-    pick: 'Europe/Riga',
-    zones: [
-      'Africa/Cairo',
-      'Africa/Tripoli',
-      'Asia/Amman',
-      'Asia/Beirut',
-      'Asia/Damascus',
-      'Asia/Famagusta',
-      'Asia/Gaza',
-      'Asia/Hebron',
-      'Asia/Nicosia',
-      'Europe/Athens',
-      'Europe/Bucharest',
-      'Europe/Chisinau',
-      'Europe/Helsinki',
-      'Europe/Kaliningrad',
-      'Europe/Kiev',
-      'Europe/Mariehamn',
-      'Europe/Riga',
-      'Europe/Sofia',
-      'Europe/Tallinn',
-      'Europe/Uzhgorod',
-      'Europe/Vilnius',
-      'Europe/Zaporozhye'
+    pick: eu + 'Riga',
+    ids: [
+      af + 'Cairo',
+      af + 'Tripoli',
+      as + 'Amman',
+      as + 'Beirut',
+      as + 'Damascus',
+      as + 'Famagusta',
+      as + 'Gaza',
+      as + 'Hebron',
+      as + 'Nicosia',
+      eu + 'Athens',
+      eu + 'Bucharest',
+      eu + 'Chisinau',
+      eu + 'Helsinki',
+      eu + 'Kaliningrad',
+      eu + 'Kiev',
+      eu + 'Mariehamn',
+      eu + 'Riga',
+      eu + 'Sofia',
+      eu + 'Tallinn',
+      eu + 'Uzhgorod',
+      eu + 'Vilnius',
+      eu + 'Zaporozhye'
     ]
   },
   {
-    standard: { name: 'Western European Time', abbrev: 'WET' },
-    daylight: { name: 'Western European Summer Time', abbrev: 'WEST' },
+    std: { name: 'Western European Time', abbrev: 'WET' },
+    dl: { name: 'Western European Summer Time', abbrev: 'WEST' },
     alias: ['western europe'],
-    pick: 'Europe/Lisbon',
-    zones: [
-      'Africa/Casablanca',
-      'Africa/El_Aaiun',
+    pick: eu + 'Lisbon',
+    ids: [
+      af + 'Casablanca',
+      af + 'El_Aaiun',
       'Atlantic/Canary',
       'Atlantic/Faeroe',
       'Atlantic/Madeira',
-      'Europe/Lisbon'
+      eu + 'Lisbon'
     ]
   },
   {
-    standard: { name: 'Turkey Standard Time', abbrev: 'TRT' },
+    std: { name: 'Turkey Standard Time', abbrev: 'TRT' },
     alias: ['turkish'],
-    pick: 'Europe/Istanbul',
-    zones: ['Europe/Istanbul']
+    pick: eu + 'Istanbul',
+    ids: [eu + 'Istanbul']
   },
-  // samara: ['Europe/Samara', 'Europe/Saratov'],
+  // samara: [eu + 'Samara', eu + 'Saratov'],
 
   //Africa
   {
-    standard: { name: 'East Africa Time', abbrev: 'EAT' },
+    std: { name: 'East Africa Time', abbrev: 'EAT' },
     alias: ['east african', 'eastern africa'],
-    pick: 'Africa/Nairobi',
-    zones: [
-      'Africa/Addis_Ababa',
-      'Africa/Asmera',
-      'Africa/Dar_Es_Salaam',
-      'Africa/Djibouti',
-      'Africa/Juba',
-      'Africa/Kampala',
-      'Africa/Mogadishu',
-      'Africa/Nairobi',
+    pick: af + 'Nairobi',
+    ids: [
+      af + 'Addis_Ababa',
+      af + 'Asmera',
+      af + 'Dar_Es_Salaam',
+      af + 'Djibouti',
+      af + 'Juba',
+      af + 'Kampala',
+      af + 'Mogadishu',
+      af + 'Nairobi',
       'Indian/Antananarivo',
       'Indian/Comoro',
       'Indian/Mayotte'
     ]
   },
   {
-    standard: { name: 'Central Africa Time', abbrev: 'CAT' },
-    pick: 'Africa/Khartoum',
+    std: { name: 'Central Africa Time', abbrev: 'CAT' },
+    pick: af + 'Khartoum',
     alias: ['central africa'],
-    zones: [
-      'Africa/Blantyre',
-      'Africa/Bujumbura',
-      'Africa/Gaborone',
-      'Africa/Harare',
-      'Africa/Khartoum',
-      'Africa/Kigali',
-      'Africa/Lubumbashi',
-      'Africa/Lusaka',
-      'Africa/Maputo',
-      'Africa/Windhoek'
+    ids: [
+      af + 'Blantyre',
+      af + 'Bujumbura',
+      af + 'Gaborone',
+      af + 'Harare',
+      af + 'Khartoum',
+      af + 'Kigali',
+      af + 'Lubumbashi',
+      af + 'Lusaka',
+      af + 'Maputo',
+      af + 'Windhoek'
     ]
   },
   {
-    standard: { name: 'South Africa Standard Time', abbrev: 'SAST' },
+    std: { name: 'South Africa Standard Time', abbrev: 'SAST' },
     alias: ['southern africa', 'south african'],
-    pick: 'Africa/Johannesburg',
-    zones: ['Africa/Johannesburg', 'Africa/Maseru', 'Africa/Mbabane']
+    pick: af + 'Johannesburg',
+    ids: [af + 'Johannesburg', af + 'Maseru', af + 'Mbabane']
   },
   {
-    standard: { name: 'West Africa Standard Time', abbrev: 'WAT' },
+    std: { name: 'West Africa Standard Time', abbrev: 'WAT' },
     alias: ['western africa', 'west african'],
-    pick: 'Africa/Lagos',
-    zones: [
-      'Africa/Bangui',
-      'Africa/Brazzaville',
-      'Africa/Douala',
-      'Africa/Kinshasa',
-      'Africa/Lagos',
-      'Africa/Libreville',
-      'Africa/Luanda',
-      'Africa/Malabo',
-      'Africa/Ndjamena',
-      'Africa/Niamey',
-      'Africa/Porto-novo'
+    pick: af + 'Lagos',
+    ids: [
+      af + 'Bangui',
+      af + 'Brazzaville',
+      af + 'Douala',
+      af + 'Kinshasa',
+      af + 'Lagos',
+      af + 'Libreville',
+      af + 'Luanda',
+      af + 'Malabo',
+      af + 'Ndjamena',
+      af + 'Niamey',
+      af + 'Porto-novo'
     ]
   },
 
   //Australia
   {
-    standard: { name: 'Australian Central Standard Time', abbrev: 'ACST' },
-    daylight: { name: 'Australian Central Daylight Time', abbrev: 'ACDT' },
+    std: { name: 'Australian Central Standard Time', abbrev: 'ACST' },
+    dl: { name: 'Australian Central Daylight Time', abbrev: 'ACDT' },
     alias: ['australia central'],
-    pick: 'Australia/Adelaide',
-    zones: ['Australia/Adelaide', 'Australia/Broken_Hill', 'Australia/Darwin']
+    pick: au + 'Adelaide',
+    ids: [au + 'Adelaide', au + 'Broken_Hill', au + 'Darwin']
   },
   {
-    standard: { name: 'Australian Eastern Standard Time', abbrev: 'AEST' },
-    daylight: { name: 'Australian Eastern Daylight Time', abbrev: 'AEDT' },
+    std: { name: 'Australian Eastern Standard Time', abbrev: 'AEST' },
+    dl: { name: 'Australian Eastern Daylight Time', abbrev: 'AEDT' },
     alias: ['australia east'],
-    pick: 'Australia/Brisbane',
-    zones: [
-      'Australia/Brisbane',
-      'Australia/Currie',
-      'Australia/Hobart',
-      'Australia/Lindeman',
-      'Australia/Melbourne',
-      'Australia/Sydney'
+    pick: au + 'Brisbane',
+    ids: [
+      au + 'Brisbane',
+      au + 'Currie',
+      au + 'Hobart',
+      au + 'Lindeman',
+      au + 'Melbourne',
+      au + 'Sydney'
     ]
   },
   {
-    standard: { name: 'Australian Western Standard Time', abbrev: 'AWST' },
-    daylight: { name: 'Australian Western Daylight Time', abbrev: 'AWDT' },
+    std: { name: 'Australian Western Standard Time', abbrev: 'AWST' },
+    dl: { name: 'Australian Western Daylight Time', abbrev: 'AWDT' },
     alias: ['australia west'],
-    pick: 'Australia/Perth',
-    zones: ['Antarctica/Casey', 'Australia/Perth']
+    pick: au + 'Perth',
+    ids: ['Antarctica/Casey', au + 'Perth']
   },
   {
-    standard: { name: 'Australian Central Western Standard Time', abbrev: 'ACWST' },
+    std: { name: 'Australian Central Western Standard Time', abbrev: 'ACWST' },
     alias: ['australia central west'],
-    pick: 'Australia/Eucla',
-    zones: ['Australia/Eucla']
+    pick: au + 'Eucla',
+    ids: [au + 'Eucla']
   },
   {
-    standard: { name: 'Lord Howe Standard Time', abbrev: 'LHST' },
-    daylight: { name: 'Lord Howe Daylight Time', abbrev: 'LHDT' },
-    pick: 'Australia/Lord_Howe',
-    zones: ['Australia/Lord_Howe']
+    std: { name: 'Lord Howe Standard Time', abbrev: 'LHST' },
+    dl: { name: 'Lord Howe Daylight Time', abbrev: 'LHDT' },
+    pick: au + 'Lord_Howe',
+    ids: [au + 'Lord_Howe']
   },
   {
-    standard: { name: 'New Zealand Standard Time', abbrev: 'NZST' },
-    daylight: { name: 'New Zealand Daylight Time', abbrev: 'NZDT' },
-    pick: 'Pacific/Auckland',
-    zones: ['Antarctica/Mcmurdo', 'Pacific/Auckland']
+    std: { name: 'New Zealand Standard Time', abbrev: 'NZST' },
+    dl: { name: 'New Zealand Daylight Time', abbrev: 'NZDT' },
+    pick: pa + 'Auckland',
+    ids: ['Antarctica/Mcmurdo', pa + 'Auckland']
   },
   {
-    standard: { name: 'Chatham Island Standard Time', abbrev: 'CHAST' },
-    daylight: { name: 'Chatham Island Daylight Time', abbrev: 'CHADT' },
-    pick: 'Pacific/Chatham',
-    zones: ['Pacific/Chatham']
+    std: { name: 'Chatham Island Standard Time', abbrev: 'CHAST' },
+    dl: { name: 'Chatham Island Daylight Time', abbrev: 'CHADT' },
+    pick: pa + 'Chatham',
+    ids: [pa + 'Chatham']
   },
 
   //Russia
   {
-    standard: { name: 'Russian Standard Time', abbrev: 'MSK' },
+    std: { name: 'Russian Standard Time', abbrev: 'MSK' },
     alias: ['russian'],
-    pick: 'Europe/Moscow',
-    zones: [
-      'Europe/Astrakhan',
-      'Europe/Minsk',
-      'Europe/Moscow',
-      'Europe/Simferopol',
-      'Europe/Ulyanovsk',
-      'Europe/Kirov'
+    pick: eu + 'Moscow',
+    ids: [
+      eu + 'Astrakhan',
+      eu + 'Minsk',
+      eu + 'Moscow',
+      eu + 'Simferopol',
+      eu + 'Ulyanovsk',
+      eu + 'Kirov'
     ]
   },
   {
-    standard: { name: 'Volgograd Time', abbrev: 'VOLT' },
-    zones: ['Europe/Volgograd']
+    std: { name: 'Volgograd Time', abbrev: 'VOLT' },
+    ids: [eu + 'Volgograd']
   },
 
   //South america
   {
-    standard: { name: 'Brazil Time', abbrev: 'BRT' },
+    std: { name: 'Brazil Time', abbrev: 'BRT' },
     alias: ['brasília', 'brasilia', 'brazilian'],
-    pick: 'America/Sao_Paulo',
-    zones: [
-      'America/Araguaina',
-      'America/Bahia',
-      'America/Belem',
-      'America/Fortaleza',
-      'America/Maceio',
-      'America/Recife',
-      'America/Santarem',
-      'America/Sao_Paulo'
+    pick: am + 'Sao_Paulo',
+    ids: [
+      am + 'Araguaina',
+      am + 'Bahia',
+      am + 'Belem',
+      am + 'Fortaleza',
+      am + 'Maceio',
+      am + 'Recife',
+      am + 'Santarem',
+      am + 'Sao_Paulo'
     ]
   },
   {
-    standard: { name: 'Argentina Time', abbrev: 'ART' },
+    std: { name: 'Argentina Time', abbrev: 'ART' },
     alias: ['argentinian'],
-    pick: 'America/Buenos_Aires',
-    zones: [
-      'America/Argentina',
-      'America/Buenos_Aires',
-      'America/Catamarca',
-      'America/Cordoba',
-      'America/Jujuy',
-      'America/Mendoza'
+    pick: am + 'Buenos_Aires',
+    ids: [
+      am + 'Argentina',
+      am + 'Buenos_Aires',
+      am + 'Catamarca',
+      am + 'Cordoba',
+      am + 'Jujuy',
+      am + 'Mendoza'
     ]
   },
   {
-    standard: { name: 'Amazon Time', abbrev: 'AMT' },
+    std: { name: 'Amazon Time', abbrev: 'AMT' },
     alias: ['amazonian'],
-    pick: 'America/Manaus',
-    zones: [
-      'America/Boa_Vista',
-      'America/Campo_Grande',
-      'America/Cuiaba', //Has dst?
-      'America/Manaus',
-      'America/Porto_Velho'
+    pick: am + 'Manaus',
+    ids: [
+      am + 'Boa_Vista',
+      am + 'Campo_Grande',
+      am + 'Cuiaba', //Has dst?
+      am + 'Manaus',
+      am + 'Porto_Velho'
     ]
   },
 
   {
-    standard: { name: 'Easter Island Standard Time', abbrev: 'EAST' },
-    daylight: { name: 'Easter Island Summer Time', abbrev: 'EASST' },
-    zones: ['Chile/EasterIsland']
+    std: { name: 'Easter Island Standard Time', abbrev: 'EAST' },
+    dl: { name: 'Easter Island Summer Time', abbrev: 'EASST' },
+    ids: ['Chile/EasterIsland']
   },
   {
-    standard: { name: 'Venezuelan Standard Time', abbrev: 'VET' },
+    std: { name: 'Venezuelan Standard Time', abbrev: 'VET' },
     alias: ['venezuela'],
-    zones: ['America/Caracas']
+    ids: [am + 'Caracas']
   },
   {
-    standard: { name: 'Paraguay Time', abbrev: 'PYT' },
-    daylight: { name: 'Paraguay Summer Time', abbrev: 'PYST' },
-    zones: ['America/Asuncion']
+    std: { name: 'Paraguay Time', abbrev: 'PYT' },
+    dl: { name: 'Paraguay Summer Time', abbrev: 'PYST' },
+    ids: [am + 'Asuncion']
   },
   {
-    standard: { name: 'Cuba Standard Time', abbrev: 'CST' },
-    daylight: { name: 'Cuba Daylight Time', abbrev: 'CDT' },
+    std: { name: 'Cuba Standard Time', abbrev: 'CST' },
+    dl: { name: 'Cuba Daylight Time', abbrev: 'CDT' },
     alias: ['cuban'],
-    zones: ['America/Havana']
+    ids: [am + 'Havana']
   },
   {
-    standard: { name: 'Bolivia Time', abbrev: 'BOT' },
+    std: { name: 'Bolivia Time', abbrev: 'BOT' },
     alias: ['bolivian'],
-    zones: ['America/La_Paz']
+    ids: [am + 'La_Paz']
   },
   {
-    standard: { name: 'Colombia Time', abbrev: 'COT' },
+    std: { name: 'Colombia Time', abbrev: 'COT' },
     alias: ['colombian'],
-    zones: ['America/Bogota']
+    ids: [am + 'Bogota']
   },
   {
-    standard: { name: 'Acre Time', abbrev: 'ACT' },
+    std: { name: 'Acre Time', abbrev: 'ACT' },
     pick: null,
-    zones: ['America/Eirunepe', 'America/Rio_Branco']
+    ids: [am + 'Eirunepe', am + 'Rio_Branco']
   },
   {
-    standard: { name: 'Peru Time', abbrev: 'PET' },
-    zones: ['America/Lima']
+    std: { name: 'Peru Time', abbrev: 'PET' },
+    ids: [am + 'Lima']
   },
   {
-    standard: { name: 'Chile Standard Time', abbrev: 'CLST' },
-    daylight: { name: 'Chile Summer Time', abbrev: 'CLDT' },
+    std: { name: 'Chile Standard Time', abbrev: 'CLST' },
+    dl: { name: 'Chile Summer Time', abbrev: 'CLDT' },
     pick: null,
-    zones: ['America/Punta_Arenas', 'America/Santiago', 'Antarctica/Palmer']
+    ids: [am + 'Punta_Arenas', am + 'Santiago', 'Antarctica/Palmer']
   },
   {
-    standard: { name: 'Uruguay Time', abbrev: 'UYT' },
-    zones: ['America/Montevideo']
+    std: { name: 'Uruguay Time', abbrev: 'UYT' },
+    ids: [am + 'Montevideo']
   },
-  // argentina_Western: ['America/Argentina/San_Luis'],
-  // french_Guiana: ['America/Cayenne'],
-  // greenland_Western: ['America/Godthab'],
-  // ecuador: ['America/Guayaquil'],
-  // guyana: ['America/Guyana'],
-  // pierre_Miquelon: ['America/Miquelon'],
-  // noronha: ['America/Noronha'],
-  // suriname: ['America/Paramaribo'],
-  // mexico_Northwest: ['America/Santa_Isabel'],
+  // argentina_Western: [am + 'Argentina/San_Luis'],
+  // french_Guiana: [am + 'Cayenne'],
+  // greenland_Western: [am + 'Godthab'],
+  // ecuador: [am + 'Guayaquil'],
+  // guyana: [am + 'Guyana'],
+  // pierre_Miquelon: [am + 'Miquelon'],
+  // noronha: [am + 'Noronha'],
+  // suriname: [am + 'Paramaribo'],
+  // mexico_Northwest: [am + 'Santa_Isabel'],
 
   //Middle-east
   {
-    standard: { name: 'Arabic Standard Time', abbrev: 'AST' },
-    pick: 'Asia/Baghdad',
+    std: { name: 'Arabic Standard Time', abbrev: 'AST' },
+    pick: as + 'Baghdad',
     alias: ['arabic', 'arab'],
-    zones: ['Asia/Aden', 'Asia/Baghdad', 'Asia/Bahrain', 'Asia/Kuwait', 'Asia/Qatar', 'Asia/Riyadh']
+    ids: [as + 'Aden', as + 'Baghdad', as + 'Bahrain', as + 'Kuwait', as + 'Qatar', as + 'Riyadh']
   },
   {
-    standard: { name: 'Iran Standard Time', abbrev: 'IRST' },
-    daylight: { name: 'Iran Daylight Time', abbrev: 'IRDT' },
+    std: { name: 'Iran Standard Time', abbrev: 'IRST' },
+    dl: { name: 'Iran Daylight Time', abbrev: 'IRDT' },
     alias: ['iranian'],
-    pick: 'Asia/Tehran',
-    zones: ['Asia/Tehran']
+    pick: as + 'Tehran',
+    ids: [as + 'Tehran']
   },
   {
-    standard: { name: 'Pakistan Standard Time', abbrev: 'PKT' },
-    pick: 'Asia/Karachi',
-    zones: ['Asia/Karachi']
+    std: { name: 'Pakistan Standard Time', abbrev: 'PKT' },
+    pick: as + 'Karachi',
+    ids: [as + 'Karachi']
   },
   {
-    standard: { name: 'India Standard Time', abbrev: 'IST' },
+    std: { name: 'India Standard Time', abbrev: 'IST' },
     alias: ['indian'],
-    pick: 'Asia/Kolkata',
-    zones: ['Asia/Kolkata', 'Asia/Colombo']
+    pick: as + 'Kolkata',
+    ids: [as + 'Kolkata', as + 'Colombo']
   },
   {
-    standard: { name: 'Indochina Time', abbrev: 'ICT' },
+    std: { name: 'Indochina Time', abbrev: 'ICT' },
     alias: ['South East Asia'],
-    pick: 'Asia/Bangkok',
-    zones: ['Asia/Bangkok', 'Asia/Phnom_Penh', 'Asia/Saigon', 'Asia/Vientiane']
+    pick: as + 'Bangkok',
+    ids: [as + 'Bangkok', as + 'Phnom_Penh', as + 'Saigon', as + 'Vientiane']
   },
   {
-    standard: { name: 'China Standard Time', abbrev: 'CT' }, //cst?
+    std: { name: 'China Standard Time', abbrev: 'CT' }, //cst?
     alias: ['chinese'],
-    pick: 'Asia/Shanghai',
-    zones: ['Asia/Macau', 'Asia/Shanghai', 'Asia/Taipei']
+    pick: as + 'Shanghai',
+    ids: [as + 'Macau', as + 'Shanghai', as + 'Taipei']
   },
 
   {
-    standard: { name: 'Alma-Ata Time', abbrev: 'ALMT' },
-    pick: 'Asia/Almaty',
-    zones: ['Asia/Almaty', 'Asia/Qostanay']
+    std: { name: 'Alma-Ata Time', abbrev: 'ALMT' },
+    pick: as + 'Almaty',
+    ids: [as + 'Almaty', as + 'Qostanay']
   },
   {
-    standard: { name: 'Oral Time', abbrev: 'ORAT' },
-    pick: 'Asia/Oral',
-    zones: ['Asia/Aqtau', 'Asia/Aqtobe', 'Asia/Atyrau', 'Asia/Oral', 'Asia/Qyzylorda']
+    std: { name: 'Oral Time', abbrev: 'ORAT' },
+    pick: as + 'Oral',
+    ids: [as + 'Aqtau', as + 'Aqtobe', as + 'Atyrau', as + 'Oral', as + 'Qyzylorda']
   },
   {
-    standard: { name: 'Yakutsk Time', abbrev: 'YAKT' },
-    pick: 'Asia/Yakutsk',
-    zones: ['Asia/Chita', 'Asia/Khandyga', 'Asia/Yakutsk']
+    std: { name: 'Yakutsk Time', abbrev: 'YAKT' },
+    pick: as + 'Yakutsk',
+    ids: [as + 'Chita', as + 'Khandyga', as + 'Yakutsk']
   },
   {
-    standard: { name: 'Gulf Standard Time', abbrev: 'GST' },
-    pick: 'Asia/Dubai',
+    std: { name: 'Gulf Standard Time', abbrev: 'GST' },
+    pick: as + 'Dubai',
     alias: ['uae'],
-    zones: ['Asia/Dubai', 'Asia/Muscat']
+    ids: [as + 'Dubai', as + 'Muscat']
   },
   {
-    standard: { name: 'Hong Kong Time', abbrev: 'HKT' },
-    zones: ['Asia/Hong_Kong']
+    std: { name: 'Hong Kong Time', abbrev: 'HKT' },
+    ids: [as + 'Hong_Kong']
   },
   {
-    standard: { name: 'Western Indonesian Time', abbrev: 'WIB' },
+    std: { name: 'Western Indonesian Time', abbrev: 'WIB' },
     alias: ['indonesia'], //most of it
-    zones: ['Asia/Jakarta', 'Asia/Pontianak', 'Asia/Jayapura']
+    ids: [as + 'Jakarta', as + 'Pontianak', as + 'Jayapura']
   },
   {
-    standard: { name: 'Central Indonesian Time', abbrev: 'WITA' },
-    zones: ['Asia/Makassar']
+    std: { name: 'Central Indonesian Time', abbrev: 'WITA' },
+    ids: [as + 'Makassar']
   },
   {
-    standard: { name: 'Israel Daylight Time', abbrev: 'IDT' },
-    daylight: { name: 'Israel Standard Time', abbrev: 'IST' },
+    std: { name: 'Israel Daylight Time', abbrev: 'IDT' },
+    dl: { name: 'Israel Standard Time', abbrev: 'IST' },
     alias: ['israeli'],
-    zones: ['Asia/Jerusalem']
+    ids: [as + 'Jerusalem']
   },
   {
-    standard: { name: 'Krasnoyarsk Time', abbrev: 'KRAT' },
-    zones: ['Asia/Krasnoyarsk', 'Asia/Novokuznetsk', 'Asia/Barnaul']
+    std: { name: 'Krasnoyarsk Time', abbrev: 'KRAT' },
+    ids: [as + 'Krasnoyarsk', as + 'Novokuznetsk', as + 'Barnaul']
   },
   {
-    standard: { name: 'Malaysia Time', abbrev: 'MYT' },
-    zones: ['Asia/Kuala_Lumpur', 'Asia/Kuching']
+    std: { name: 'Malaysia Time', abbrev: 'MYT' },
+    ids: [as + 'Kuala_Lumpur', as + 'Kuching']
   },
   {
-    standard: { name: 'Singapore Time', abbrev: 'SGT' },
-    zones: ['Asia/Singapore']
+    std: { name: 'Singapore Time', abbrev: 'SGT' },
+    ids: [as + 'Singapore']
   },
   {
-    standard: { name: 'Korea Standard Time', abbrev: 'KST' },
-    pick: 'Asia/Seoul',
+    std: { name: 'Korea Standard Time', abbrev: 'KST' },
+    pick: as + 'Seoul',
     alias: ['korean'],
-    zones: ['Asia/Pyongyang', 'Asia/Seoul']
+    ids: [as + 'Pyongyang', as + 'Seoul']
   },
   {
-    standard: { name: 'Uzbekistan Time', abbrev: 'UZT' },
-    zones: ['Asia/Samarkand', 'Asia/Tashkent']
+    std: { name: 'Uzbekistan Time', abbrev: 'UZT' },
+    ids: [as + 'Samarkand', as + 'Tashkent']
   },
   {
-    standard: { name: 'Vladivostok Time', abbrev: 'VLAT' },
-    pick: 'Asia/Vladivostok',
-    zones: ['Asia/Ust-nera', 'Asia/Vladivostok']
+    std: { name: 'Vladivostok Time', abbrev: 'VLAT' },
+    pick: as + 'Vladivostok',
+    ids: [as + 'Ust-nera', as + 'Vladivostok']
   },
 
-  { standard: { name: 'Anadyr Time', abbrev: 'ANAT' }, zones: ['Asia/Anadyr'] },
-  { standard: { name: 'Turkmenistan Time', abbrev: 'TMT' }, zones: ['Asia/Ashgabat'] },
-  { standard: { name: 'Azerbaijan Time', abbrev: 'AZT' }, zones: ['Asia/Baku'] },
-  { standard: { name: 'Kyrgyzstan Time', abbrev: 'KGT' }, zones: ['Asia/Bishkek'] },
-  { standard: { name: 'Brunei Darussalam Time', abbrev: 'BNT' }, zones: ['Asia/Brunei'] },
-  // choibalsan: ['Asia/Choibalsan'],
-  // { standard: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, zones: ['Asia/Dhaka'] },
-  // east_Timor: ['Asia/Dili'],
-  // tajikistan: ['Asia/Dushanbe'],
-  // hovd: ['Asia/Hovd'],
-  // irkutsk: ['Asia/Irkutsk'],
-  { standard: { name: 'Afghanistan Time', abbrev: 'AFT' }, zones: ['Asia/Kabul'] },
-  { standard: { name: 'Kamchatka Time', abbrev: 'PETT' }, zones: ['Asia/Kamchatka'] },
-  { standard: { name: 'Nepal Time', abbrev: 'NPT' }, zones: ['Asia/Katmandu'] },
-  // magadan: ['Asia/Magadan'],
-  { standard: { name: 'Philippine Time', abbrev: 'PHT' }, zones: ['Asia/Manila'] },
-  // novosibirsk: ['Asia/Novosibirsk'],
-  // omsk: ['Asia/Omsk'],
-  { standard: { name: 'Myanmar Time', abbrev: 'MMT' }, zones: ['Asia/Rangoon'] },
-  // sakhalin: ['Asia/Sakhalin'],
-  // srednekolymsk: ['Asia/Srednekolymsk'],
-  { standard: { name: 'Georgia Standard Time', abbrev: 'GET' }, zones: ['Asia/Tbilisi'] },
-  // bhutan: ['Asia/Thimphu'],
+  { std: { name: 'Anadyr Time', abbrev: 'ANAT' }, ids: [as + 'Anadyr'] },
+  { std: { name: 'Turkmenistan Time', abbrev: 'TMT' }, ids: [as + 'Ashgabat'] },
+  { std: { name: 'Azerbaijan Time', abbrev: 'AZT' }, ids: [as + 'Baku'] },
+  { std: { name: 'Kyrgyzstan Time', abbrev: 'KGT' }, ids: [as + 'Bishkek'] },
+  { std: { name: 'Brunei Darussalam Time', abbrev: 'BNT' }, ids: [as + 'Brunei'] },
+  // choibalsan: [as+ 'Choibalsan'],
+  // { std: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, ids:[as+ 'Dhaka'] },
+  // east_Timor: [as+ 'Dili'],
+  // tajikistan: [as+ 'Dushanbe'],
+  // hovd: [as+ 'Hovd'],
+  // irkutsk: [as+ 'Irkutsk'],
+  { std: { name: 'Afghanistan Time', abbrev: 'AFT' }, ids: [as + 'Kabul'] },
+  { std: { name: 'Kamchatka Time', abbrev: 'PETT' }, ids: [as + 'Kamchatka'] },
+  { std: { name: 'Nepal Time', abbrev: 'NPT' }, ids: [as + 'Katmandu'] },
+  // magadan: [as+ 'Magadan'],
+  { std: { name: 'Philippine Time', abbrev: 'PHT' }, ids: [as + 'Manila'] },
+  // novosibirsk: [as+ 'Novosibirsk'],
+  // omsk: [as+ 'Omsk'],
+  { std: { name: 'Myanmar Time', abbrev: 'MMT' }, ids: [as + 'Rangoon'] },
+  // sakhalin: [as+ 'Sakhalin'],
+  // srednekolymsk: [as+ 'Srednekolymsk'],
+  { std: { name: 'Georgia Standard Time', abbrev: 'GET' }, ids: [as + 'Tbilisi'] },
+  // bhutan: [as+ 'Thimphu'],
   {
-    standard: { name: 'Japan Standard Time', abbrev: 'JST' },
-    zones: ['Asia/Tokyo']
+    std: { name: 'Japan Standard Time', abbrev: 'JST' },
+    ids: [as + 'Tokyo']
   },
-  { standard: { name: 'Ulaanbaatar Time', abbrev: 'ULAT' }, zones: ['Asia/Ulaanbaatar'] },
-  // urumqi: ['Asia/Urumqi'],
-  // yekaterinburg: ['Asia/Yekaterinburg'],
-  // armenia: ['Asia/Yerevan'],
+  { std: { name: 'Ulaanbaatar Time', abbrev: 'ULAT' }, ids: [as + 'Ulaanbaatar'] },
+  // urumqi: [as+ 'Urumqi'],
+  // yekaterinburg: [as+ 'Yekaterinburg'],
+  // armenia: [as+ 'Yerevan'],
   // azores: ['Atlantic/Azores'],
   // cape_Verde: ['Atlantic/Cape_Verde'],
   // south_Georgia: ['Atlantic/South_Georgia'],
@@ -674,29 +676,29 @@ module.exports = [
 
   //India
   {
-    standard: { name: 'Maldives Time', abbrev: 'MVT' },
-    zones: ['Indian/Maldives']
+    std: { name: 'Maldives Time', abbrev: 'MVT' },
+    ids: ['Indian/Maldives']
   },
   {
-    standard: { name: 'Mauritius Time', abbrev: 'MUT' },
-    zones: ['Indian/Mauritius']
+    std: { name: 'Mauritius Time', abbrev: 'MUT' },
+    ids: ['Indian/Mauritius']
   },
   {
-    standard: { name: 'Marshall Islands Time', abbrev: 'MHT' },
-    zones: ['Pacific/Kwajalein', 'Pacific/Majuro']
+    std: { name: 'Marshall Islands Time', abbrev: 'MHT' },
+    ids: [pa + 'Kwajalein', pa + 'Majuro']
   },
   {
-    standard: { name: 'Samoa Standard Time', abbrev: 'SST' },
+    std: { name: 'Samoa Standard Time', abbrev: 'SST' },
     alias: ['somoan'],
-    zones: ['Pacific/Midway', 'Pacific/Pago_Pago']
+    ids: [pa + 'Midway', pa + 'Pago_Pago']
   },
   {
-    standard: { name: 'Chamorro Standard Time', abbrev: 'CHST' },
-    zones: ['Pacific/Guam', 'Pacific/Saipan']
+    std: { name: 'Chamorro Standard Time', abbrev: 'CHST' },
+    ids: [pa + 'Guam', pa + 'Saipan']
   },
   {
-    standard: { name: 'Papua New Guinea Time', abbrev: 'PGT' },
-    zones: ['Pacific/Bougainville', 'Pacific/Port_Moresby']
+    std: { name: 'Papua New Guinea Time', abbrev: 'PGT' },
+    ids: [pa + 'Bougainville', pa + 'Port_Moresby']
   }
 
   // indian_Ocean: ['Indian/Chagos'],
@@ -707,37 +709,37 @@ module.exports = [
   // reunion: ['Indian/Reunion'],
 
   //Pacific
-  // apia: ['Pacific/Apia'],
-  // easter: ['Pacific/Easter'],
-  // vanuatu: ['Pacific/Efate'],
-  // phoenix_Islands: ['Pacific/Enderbury'],
-  // tokelau: ['Pacific/Fakaofo'],
-  // fiji: ['Pacific/Fiji'],
-  // tuvalu: ['Pacific/Funafuti'],
-  // galapagos: ['Pacific/Galapagos'],
-  // gambier: ['Pacific/Gambier'],
-  // solomon: ['Pacific/Guadalcanal'],
-  // line_Islands: ['Pacific/Kiritimati'],
-  // kosrae: ['Pacific/Kosrae'],
-  // marquesas: ['Pacific/Marquesas'],
-  // nauru: ['Pacific/Nauru'],
-  // niue: ['Pacific/Niue'],
-  // norfolk: ['Pacific/Norfolk'],
-  // new_Caledonia: ['Pacific/Noumea'],
-  // palau: ['Pacific/Palau'],
-  // pitcairn: ['Pacific/Pitcairn'],
-  // ponape: ['Pacific/Ponape'],
-  // cook: ['Pacific/Rarotonga'],
-  // tahiti: ['Pacific/Tahiti'],
-  // gilbert_Islands: ['Pacific/Tarawa'],
-  // tonga: ['Pacific/Tongatapu'],
-  // truk: ['Pacific/Truk'],
-  // wake: ['Pacific/Wake'],
-  // wallis: ['Pacific/Wallis'],
-  // tomsk: ['Asia/Tomsk']
+  // apia: [pa+ 'Apia'],
+  // easter: [pa+ 'Easter'],
+  // vanuatu: [pa+ 'Efate'],
+  // phoenix_Islands: [pa+ 'Enderbury'],
+  // tokelau: [pa+ 'Fakaofo'],
+  // fiji: [pa+ 'Fiji'],
+  // tuvalu: [pa+ 'Funafuti'],
+  // galapagos: [pa+ 'Galapagos'],
+  // gambier: [pa+ 'Gambier'],
+  // solomon: [pa+ 'Guadalcanal'],
+  // line_Islands: [pa+ 'Kiritimati'],
+  // kosrae: [pa+ 'Kosrae'],
+  // marquesas: [pa+ 'Marquesas'],
+  // nauru: [pa+ 'Nauru'],
+  // niue: [pa+ 'Niue'],
+  // norfolk: [pa+ 'Norfolk'],
+  // new_Caledonia: [pa+ 'Noumea'],
+  // palau: [pa+ 'Palau'],
+  // pitcairn: [pa+ 'Pitcairn'],
+  // ponape: [pa+ 'Ponape'],
+  // cook: [pa+ 'Rarotonga'],
+  // tahiti: [pa+ 'Tahiti'],
+  // gilbert_Islands: [pa+ 'Tarawa'],
+  // tonga: [pa+ 'Tongatapu'],
+  // truk: [pa+ 'Truk'],
+  // wake: [pa+ 'Wake'],
+  // wallis: [pa+ 'Wallis'],
+  // tomsk: [as+ 'Tomsk']
 
   // antarctic
-  // greenland_Eastern: ['America/Scoresbysund'],
+  // greenland_Eastern: [am + 'Scoresbysund'],
   // davis: ['Antarctica/Davis'],
   // dumontdurville: ['Antarctica/Dumontdurville'],
   // macquarie: ['Antarctica/Macquarie'],

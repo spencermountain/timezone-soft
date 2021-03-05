@@ -132,16 +132,23 @@ it was built to be as forgiving as possible, and return the most common-sense IA
 <!-- spacer -->
 <img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
+### DST
 
-along with [spacetime](https://github.com/spencermountain/spacetime), you can work-with human-friendly time formats, like this:
+Often, the proper timezone name will depend on which date you are referencing.
+You can reckon this pretty-easily with [spacetime](https://github.com/spencermountain/spacetime), like this:
 ```js
 const spacetime = require('spacetime')
 const soft = require('timezone-soft')
 
-let display = soft.display('montreal')
+let display = soft.display('montreal')[0]
+let show = display.standard.abbreg
+
+// are we in standard time, or daylight time?
 let s = spacetime.now(display.iana)
-let abbrev = s.isDST() ? display.daylight.abbrev : display.standard.abbrev // (add some null-checks)
-let time = `${s.time()} ${abbrev}`
+if(display.daylight && s.isDST()){
+  show = display.daylight.abbreg
+}
+console.log(s.time() + ' ' + show)
 // '4:20pm EDT'
 ```
 

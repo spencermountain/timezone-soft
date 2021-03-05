@@ -13,8 +13,9 @@ const skip = {
 let list = Object.keys(require('../data'))
 test('all words produce valid iana', (t) => {
   list.forEach((str) => {
-    let found = soft.find(str)
-    t.ok((found && zones[found.toLowerCase()]) || skip[str], str)
+    let found = soft(str)[0] || { iana: '' }
+    let id = found.iana.toLowerCase()
+    t.ok((found && zones[id]) || skip[str], str)
   })
   t.end()
 })

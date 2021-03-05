@@ -1,12 +1,10 @@
 const metas = require('../../data/05-metazones')
-const find = require('../find')
 
-const display = function (str) {
-  let id = find(str)
+const display = function (id) {
   if (!id) {
     return null
   }
-  let meta = metas.find((obj) => obj.zones.find((tz) => tz === id))
+  let meta = metas.find((obj) => obj.ids.find((tz) => tz === id))
   if (!meta) {
     meta = {
       standard: { name: id, abbrev: id } // 'Etc/GMT+5'
@@ -14,8 +12,8 @@ const display = function (str) {
   }
   return {
     iana: id,
-    standard: meta.standard,
-    daylight: meta.daylight
+    standard: meta.std,
+    daylight: meta.dl
   }
 }
 module.exports = display

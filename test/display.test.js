@@ -22,7 +22,7 @@ test('display-test', (t) => {
     ['darwin', 'ACST', 'ACDT']
   ]
   arr.forEach((a) => {
-    let display = soft.display(a[0])
+    let display = soft(a[0])[0]
     t.equal(display.standard.abbrev, a[1], a[0] + ' standard')
     if (display.daylight) {
       t.equal(display.daylight.abbrev, a[2], a[0] + ' daylight')

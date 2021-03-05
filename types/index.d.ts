@@ -1,8 +1,8 @@
-export function find(tz:string): string;
 
-export function display(geo:string): DisplayFormat;
-
-export function version(): string;
+export interface TimeZoneInfo {
+  name: string;
+  abbrev: string;
+}
 
 export interface DisplayFormat {
   iana: string;
@@ -10,7 +10,5 @@ export interface DisplayFormat {
   daylight: TimeZoneInfo;
 }
 
-export interface TimeZoneInfo {
-  name: string;
-  abbrev: string;
-}
+/** interpret timezone names */
+export default function timezoneSoft(tz:string): DisplayFormat[]

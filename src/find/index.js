@@ -1,18 +1,22 @@
+const unpack = require('efrt-unpack')
 const pckd = require('./_data')
 const misc = require('./misc')
-const unpack = require('efrt-unpack')
+const parseOffset = require('./parseOffset')
+
 let lexicon = unpack(pckd)
 lexicon = Object.assign(lexicon, misc)
+// console.log(lexicon.ist)
 
-// add some redundant data that didn't pack properly
+// add some redundant data to our lexicon
 Object.keys(lexicon).filter((k) => {
-  let val = lexicon[k].toLowerCase()
-  if (lexicon[val] === undefined) {
-    lexicon[val] = lexicon[k]
+  let val = lexicon[k]
+  if (typeof val === 'string') {
+    val = val.toLowerCase()
+    if (lexicon[val] === undefined) {
+      lexicon[val] = lexicon[k]
+    }
   }
 })
-
-const parseOffset = require('./parseOffset')
 
 //try to match these against iana form
 const normalizeOne = (tz) => {
@@ -53,7 +57,7 @@ const find = function (str) {
   if (/[0-9]/.test(str)) {
     let etc = parseOffset(str)
     if (etc) {
-      return etc
+      return [etc]
     }
   }
 

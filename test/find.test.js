@@ -56,8 +56,8 @@ test('informal timezones', (t) => {
     ['yorkshire', 'Europe/London']
   ]
   arr.forEach((a) => {
-    let found = soft.find(a[0])
-    t.equal(found, a[1], a[0])
+    let found = soft(a[0])
+    t.equal(found[0].iana, a[1], a[0])
   })
   t.end()
 })
