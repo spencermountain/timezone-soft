@@ -13,7 +13,7 @@ const display = function (id) {
   return {
     iana: id,
     standard: meta.std,
-    daylight: meta.dl
+    daylight: meta.dl || null
   }
 }
 module.exports = display

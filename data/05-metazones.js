@@ -644,7 +644,6 @@ module.exports = [
   { std: { name: 'Kyrgyzstan Time', abbrev: 'KGT' }, ids: [as + 'Bishkek'] },
   { std: { name: 'Brunei Darussalam Time', abbrev: 'BNT' }, ids: [as + 'Brunei'] },
   // choibalsan: [as+ 'Choibalsan'],
-  // { std: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, ids:[as+ 'Dhaka'] },
   // east_Timor: [as+ 'Dili'],
   // tajikistan: [as+ 'Dushanbe'],
   // hovd: [as+ 'Hovd'],
@@ -700,6 +699,9 @@ module.exports = [
     std: { name: 'Papua New Guinea Time', abbrev: 'PGT' },
     ids: [pa + 'Bougainville', pa + 'Port_Moresby']
   }
+
+  // ambiguous abbrevs
+  // { std: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, ids: [as + 'Dhaka'] }
 
   // indian_Ocean: ['Indian/Chagos'],
   // christmas: ['Indian/Christmas'],

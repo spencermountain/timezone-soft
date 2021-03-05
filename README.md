@@ -34,12 +34,13 @@
 const soft = require('timezone-soft')
 
 // get an IANA tz from user input
-let timezones = soft.find('milwaukee')
-// ['America/Chicago']
-
-// render it nicely
-let show = soft.display(timezones[0])
-// ... { name: 'Central Standard Time', abbrev: 'CST' }
+let timezones = soft('milwaukee')[0]
+/*[{
+    iana: 'America/Chicago',
+    standard: { name: 'Central Standard Time', abbrev: 'CST' },
+    daylight: { name: 'Central Daylight Time', abbrev: 'CDT' }
+  }
+]*/
 ```
 
 <!-- spacer -->
@@ -96,24 +97,18 @@ It was originally built for use in the *[spacetime timezone library](https://git
 ```js
 const soft = require('timezone-soft')
 
-soft.find('EST')
+soft('EST')
 // 'America/New_York'
 
-soft.find('central')
+soft('central')
 // 'America/Chicago'
 
-soft.find('venezuela')
+soft('venezuela')
 // 'America/Caracas'
 
-soft.find('south east asia')
+soft('south east asia')
 // 'Asia/Bangkok'
 
-soft.display('Toronto')
-/*{
-  standard: { name: 'Eastern Standard Time', abbrev: 'EST' },
-  daylight: { name: 'Eastern Daylight Time', abbrev: 'EDT' },
-  iana: 'Canada/Toronto'
-}*/
 ```
 
 Typescript/Deno/Webpack:
@@ -140,7 +135,7 @@ You can reckon this pretty-easily with [spacetime](https://github.com/spencermou
 const spacetime = require('spacetime')
 const soft = require('timezone-soft')
 
-let display = soft.display('montreal')[0]
+let display = soft('montreal')[0]
 let show = display.standard.abbreg
 
 // are we in standard time, or daylight time?
