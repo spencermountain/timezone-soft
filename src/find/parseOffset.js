@@ -3,7 +3,7 @@ const isNumber = /(\-?[0-9]+)/
 const utcOffset = /utc([\-+]?[0-9]+)/i
 const gmtOffset = /gmt([\-+]?[0-9]+)/i
 
-const toIana = function(num) {
+const toIana = function (num) {
   num = Number(num)
   if (num > -13 && num < 13) {
     num = num * -1 //it's opposite!
@@ -13,7 +13,7 @@ const toIana = function(num) {
   return null
 }
 
-const parseOffset = function(tz) {
+const parseOffset = function (tz) {
   // '+5hrs'
   let m = tz.match(isOffset)
   if (m !== null) {

@@ -9,7 +9,7 @@ const display = function (str) {
   let meta = metas.find((obj) => obj.zones.find((tz) => tz === id))
   if (!meta) {
     meta = {
-      standard: id // 'Etc/GMT+5'
+      standard: { name: id, abbrev: id } // 'Etc/GMT+5'
     }
   }
   return {

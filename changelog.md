@@ -1,3 +1,6 @@
+### 0.6.1 [March 2021]
+- better support for GMT-X offsets
+
 ### 0.6.0 [March 2021]
 - add (way) more cities and provinces & compression scheme using efrt-unpack
 - update deps
