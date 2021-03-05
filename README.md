@@ -1,6 +1,6 @@
 <div align="center">
 
-  <div>interpret abbreviated, informal, and sloppy timezone names</div>
+  <div>parse abbreviated, sloppy, and informal timezone names</div>
   <div><img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" /></div>
 
   <div align="center">
@@ -18,7 +18,7 @@
     <code>npm install timezone-soft</code>
   </div>
   <div align="center">
-    <i>(formerly called 'spacetime-informal')</i>
+    <sup><i>(formerly called 'spacetime-informal')</i></sup>
   </div>
   <sub>
     by
@@ -26,6 +26,19 @@
   </sub>
 </div>
 <p></p>
+
+<!-- spacer -->
+<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+
+```js
+const soft = require('timezone-soft')
+
+let timezones = soft.find('milwaukee')
+// ['America/Chicago']
+
+let show = soft.display(timezones[0])
+// ... { name: 'Central Standard Time', abbrev: 'CST' }
+```
 
 <!-- spacer -->
 <img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
