@@ -1,6 +1,6 @@
 'use strict'
 const test = require('tape')
-const informal = require('../src')
+const soft = require('../src')
 
 test('informal timezones', (t) => {
   let arr = [
@@ -56,7 +56,7 @@ test('informal timezones', (t) => {
     ['yorkshire', 'Europe/London']
   ]
   arr.forEach((a) => {
-    let found = informal.find(a[0])
+    let found = soft.find(a[0])
     t.equal(found, a[1], a[0])
   })
   t.end()

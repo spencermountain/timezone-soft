@@ -8,10 +8,25 @@ const abbreviations = require('./06-abbreviations')
 const parentheses = require('./07-parentheses')
 let all = Object.assign({}, iana, byState, parentheses, byCity, oldZones)
 
+// support an array of responses, when there's multiple
+const combine = (obj, key, val) => {
+  obj[key] = val
+  // if (typeof obj[key] === 'string' && obj[key] !== val) {
+  //   obj[key] = [obj[key], val]
+  // } else if (obj[key] === undefined) {
+  //   obj[key] = val
+  // } else {
+  //   // don't add a duplicate
+  //   if (!obj[key].find(val)) {
+  //     obj[key].push(val)
+  //   }
+  // }
+}
+
 //Add country info
 Object.keys(byCountry).forEach((key) => {
   //Add country name
-  all[key] = byCountry[key].choice
+  combine(all, key, byCountry[key].choice)
   //Add 2-letter country code
   all[byCountry[key].code] = byCountry[key].choice
 })
@@ -19,33 +34,39 @@ Object.keys(byCountry).forEach((key) => {
 //Add metazone info
 metazones.forEach((obj) => {
   let zone = obj.pick || obj.zones[0]
-  all[obj.standard.name.toLowerCase()] = zone
+  let str = obj.standard.name.toLowerCase()
+  combine(all, str, zone)
 
   if (obj.standard.abbrev) {
-    all[obj.standard.abbrev.toLowerCase()] = zone
+    let str = obj.standard.abbrev.toLowerCase()
+    combine(all, str, zone)
   }
   if (obj.daylight) {
     if (obj.daylight.name) {
-      all[obj.daylight.name.toLowerCase()] = zone
+      let str = obj.daylight.name.toLowerCase()
+      combine(all, str, zone)
     }
     if (obj.daylight.abbrev) {
-      all[obj.daylight.abbrev.toLowerCase()] = zone
+      let str = obj.daylight.abbrev.toLowerCase()
+      combine(all, str, zone)
     }
   }
   if (obj.alias) {
-    obj.alias.forEach((str) => (all[str.toLowerCase()] = zone))
+    obj.alias.forEach((s) => {
+      combine(all, s.toLowerCase(), zone)
+    })
   }
 })
 
 // add even-more abbreviations
-Object.keys(abbreviations).forEach((k) => {
-  let arr = (abbreviations[k] || []).filter((a) => a)
-  arr.forEach((abbr) => {
-    if (all.hasOwnProperty(abbr) === false) {
-      all[abbr] = k
-    }
-  })
-})
+// Object.keys(abbreviations).forEach((k) => {
+//   let arr = (abbreviations[k] || []).filter((a) => a)
+//   arr.forEach((abbr) => {
+//     if (all.hasOwnProperty(abbr) === false) {
+//       all[abbr] = k
+//     }
+//   })
+// })
 
 // clean-up any old timezones we may be using
 // console.log(oldZones)
@@ -62,7 +83,7 @@ Object.keys(all).forEach((k) => {
   // console.log(str)
   // }
 })
-// console.log(all['asia/ulan_bator'])
+// console.log(all['ist'])
 // console.log(Object.keys(all).length)
 
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))

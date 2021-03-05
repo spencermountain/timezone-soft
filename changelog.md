@@ -1,3 +1,7 @@
+### 1.0.0 [March 2021]
+- **[breaking]** - return an array for `.find()`
+- rename library to *timezone-soft*
+
 ### 0.6.1 [March 2021]
 - better support for GMT-X offsets
 

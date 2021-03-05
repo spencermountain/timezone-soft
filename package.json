@@ -1,11 +1,11 @@
 {
-  "name": "spacetime-informal",
+  "name": "timezone-soft",
   "version": "0.6.1",
   "author": "spencermountain",
   "description": "interpret abbreviated and informal timezone names",
-  "main": "builds/spacetime-informal.js",
-  "module": "builds/spacetime-informal.mjs",
-  "unpkg": "builds/spacetime-informal.min.js",
+  "main": "builds/timezone-soft.js",
+  "module": "builds/timezone-soft.mjs",
+  "unpkg": "builds/timezone-soft.min.js",
   "types": "types/index.d.ts",
   "scripts": {
     "watch": "amble ./scratch.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spencermountain/spacetime-abbreviation.git"
+    "url": "git+https://github.com/spencermountain/timezone-soft.git"
   },
   "bugs": {
-    "url": "https://github.com/spencermountain/spacetime-abbreviation/issues"
+    "url": "https://github.com/spencermountain/timezone-soft/issues"
   },
-  "homepage": "https://github.com/spencermountain/spacetime-abbreviation#readme",
+  "homepage": "https://github.com/spencermountain/timezone-soft#readme",
   "files": [
     "builds",
     "types"

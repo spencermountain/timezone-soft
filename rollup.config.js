@@ -9,7 +9,7 @@ export default [
     input: 'src/index.js',
     output: [
       {
-        file: 'builds/spacetime-informal.mjs',
+        file: 'builds/timezone-soft.mjs',
         format: 'esm'
       }
     ],
@@ -27,10 +27,10 @@ export default [
     input: 'src/index.js',
     output: [
       {
-        file: 'builds/spacetime-informal.js',
+        file: 'builds/timezone-soft.js',
         format: 'umd',
         sourcemap: true,
-        name: 'informal'
+        name: 'timezoneSoft'
       }
     ],
     plugins: [
@@ -47,9 +47,9 @@ export default [
     input: 'src/index.js',
     output: [
       {
-        file: 'builds/spacetime-informal.min.js',
+        file: 'builds/timezone-soft.min.js',
         format: 'umd',
-        name: 'informal'
+        name: 'timezoneSoft'
       }
     ],
     plugins: [
