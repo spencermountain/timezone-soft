@@ -1,6 +1,6 @@
 {
   "name": "timezone-soft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "spencermountain",
   "description": "interpret abbreviated and informal timezone names",
   "main": "builds/timezone-soft.js",

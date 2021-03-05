@@ -4,15 +4,19 @@ const display = function (id) {
   if (!id) {
     return null
   }
-  let meta = metas.find((obj) => obj.ids.find((tz) => tz === id))
+  let meta = metas.find((obj) => {
+    return obj.ids.find((tz) => {
+      return tz === id
+    })
+  })
   if (!meta) {
     meta = {
-      standard: { name: id, abbrev: id } // 'Etc/GMT+5'
+      std: { name: id, abbrev: id } // 'Etc/GMT+5'
     }
   }
   return {
     iana: id,
-    standard: meta.std,
+    standard: meta.std || null,
     daylight: meta.dl || null
   }
 }

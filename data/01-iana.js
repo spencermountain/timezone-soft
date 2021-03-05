@@ -510,4 +510,7 @@ Object.keys(iana).forEach((k) => {
     }
   })
 })
+// delete zones.eastern // err
+// delete zones.pacific // err
+// delete zones.mountain // err
 module.exports = zones

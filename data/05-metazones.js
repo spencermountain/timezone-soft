@@ -56,7 +56,7 @@ module.exports = [
   {
     std: { name: 'Central Standard Time', abbrev: 'CST' },
     dl: { name: 'Central Daylight Time', abbrev: 'CDT' },
-    pick: am + 'Chicago',
+    pick: 'Canada/Central',
     ids: [
       am + 'Bahia_Banderas',
       am + 'Belize',
@@ -80,13 +80,14 @@ module.exports = [
       am + 'Resolute',
       am + 'Swift_Current',
       am + 'Tegucigalpa',
-      am + 'Winnipeg'
+      am + 'Winnipeg',
+      'Canada/Central'
     ]
   },
   {
     std: { name: 'Mountain Standard Time', abbrev: 'MST' },
     dl: { name: 'Mountain Daylight Time', abbrev: 'MDT' },
-    pick: am + 'Denver',
+    pick: 'Canada/Mountain',
     ids: [
       am + 'Boise',
       am + 'Cambridge_Bay',
@@ -102,13 +103,14 @@ module.exports = [
       // add mexico
       am + 'Chihuahua',
       am + 'Hermosillo',
-      am + 'Mazatlan'
+      am + 'Mazatlan',
+      'Canada/Mountain'
     ]
   },
   {
     std: { name: 'Atlantic Standard Time', abbrev: 'AST' },
     dl: { name: 'Atlantic Daylight Time', abbrev: 'ADT' },
-    pick: am + 'Halifax',
+    pick: 'Canada/Atlantic',
     ids: [
       am + 'Anguilla',
       am + 'Antigua',
@@ -138,13 +140,15 @@ module.exports = [
       am + 'St_Vincent',
       am + 'Thule',
       am + 'Tortola',
-      'Atlantic/Bermuda'
+      'Atlantic/Bermuda',
+      'Canada/Atlantic'
     ]
   },
   {
     std: { name: 'Eastern Standard Time', abbrev: 'EST' },
     dl: { name: 'Eastern Daylight Time', abbrev: 'EDT' },
-    pick: am + 'New_York',
+    pick: 'Canada/Eastern',
+    alias: ['eastern', 'east'],
     ids: [
       am + 'Cancun',
       am + 'Cayman',
@@ -165,14 +169,22 @@ module.exports = [
       am + 'Port-au-prince',
       am + 'Thunder_Bay',
       am + 'Toronto',
-      am + 'Montreal'
+      am + 'Montreal',
+      'Canada/Eastern'
     ]
   },
   {
     std: { name: 'Pacific Standard Time', abbrev: 'PST' },
     dl: { name: 'Pacific Daylight Time', abbrev: 'PDT' },
-    pick: am + 'Los_Angeles',
-    ids: [am + 'Dawson', am + 'Los_Angeles', am + 'Tijuana', am + 'Vancouver', am + 'Whitehorse']
+    pick: 'Canada/Pacific',
+    ids: [
+      am + 'Dawson',
+      am + 'Los_Angeles',
+      am + 'Tijuana',
+      am + 'Vancouver',
+      am + 'Whitehorse',
+      'Canada/Pacific'
+    ]
   },
   {
     std: { name: 'Alaskan Standard Time', abbrev: 'AHST' },
@@ -443,7 +455,11 @@ module.exports = [
       am + 'Maceio',
       am + 'Recife',
       am + 'Santarem',
-      am + 'Sao_Paulo'
+      am + 'Sao_Paulo',
+      'Brazil/Acre',
+      'Brazil/Denoronha',
+      'Brazil/East',
+      'Brazil/West'
     ]
   },
   {

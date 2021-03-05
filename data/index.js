@@ -31,7 +31,6 @@ Object.keys(byCountry).forEach((key) => {
   //Add 2-letter country code
   all[byCountry[key].code] = byCountry[key].choice
 })
-
 //Add metazone info
 metazones.forEach((obj) => {
   let zone = obj.pick || obj.ids[0]
@@ -75,9 +74,9 @@ Object.keys(abbreviations).forEach((k) => {
 Object.keys(all).forEach((k) => {
   let str = k.toLowerCase()
   if (oldZones[str]) {
+    // console.log(k + '  |  ' + oldZones[k])
     // replace it
-    all[k] = oldZones[str]
-    // console.log(k, oldZones[str])
+    all[k] = oldZones[k]
   }
   // remove any problematic keys
   // if (str.match(/[0-9]/)) {
@@ -85,10 +84,9 @@ Object.keys(all).forEach((k) => {
   // console.log(str)
   // }
 })
-// console.log(all['indian/christmas'])
+// console.log(all['eastern'])
 // console.log(Object.keys(all).length)
 
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))
-// console.log(all['america/santo_domingo'])
 
 module.exports = all
