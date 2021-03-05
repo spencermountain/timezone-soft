@@ -7,7 +7,8 @@ const soft = function (str) {
   if (typeof ids === 'string') {
     ids = [ids]
   }
-  return ids.map(display)
+  ids = ids.map((id) => display(id, str))
+  return ids
 }
 soft.prototype.version = version
 

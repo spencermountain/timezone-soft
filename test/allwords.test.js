@@ -16,6 +16,12 @@ test('all words produce valid iana', (t) => {
     let found = soft(str)[0] || { iana: '' }
     let id = found.iana.toLowerCase()
     t.ok((found && zones[id]) || skip[str], str)
+    // if (found.offset !== zones[id].offset) {
+    //   console.log(str)
+    //   console.log(found)
+    //   console.log(zones[id])
+    // }
+    // t.equal(found.offset, zones[id].offset, '[offset] ' + str + `  (${id})`)
   })
   t.end()
 })

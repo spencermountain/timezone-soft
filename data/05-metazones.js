@@ -17,7 +17,7 @@ module.exports = [
     alias: ['british', 'britain'],
     pick: eu + 'London',
     offset: 1,
-    ids: [eu + 'Guernsey', eu + 'Isle_Of_Man', eu + 'Jersey', eu + 'London']
+    ids: [eu + 'Guernsey', eu + 'Isle_Of_Man', eu + 'Jersey', eu + 'London', 'Europe/Belfast']
   },
   {
     std: { name: 'Greenwich Standard Time', abbrev: 'GMT' },
@@ -51,7 +51,10 @@ module.exports = [
       'Antarctica/Troll',
       'Atlantic/Reykjavik',
       'Atlantic/St_Helena',
-      'ETC/GMT'
+      'ETC/GMT',
+      'Atlantic/Azores',
+      'Africa/Timbuktu',
+      'America/Scoresbysund'
     ]
   },
 
@@ -85,7 +88,12 @@ module.exports = [
       am + 'Swift_Current',
       am + 'Tegucigalpa',
       am + 'Winnipeg',
-      'Canada/Central'
+      'Canada/Central',
+      'Mexico/General',
+      'America/Knox_In',
+      'America/Atikokan',
+      'America/Guayaquil',
+      'America/Porto_Acre'
     ]
   },
   {
@@ -109,7 +117,12 @@ module.exports = [
       am + 'Chihuahua',
       am + 'Hermosillo',
       am + 'Mazatlan',
-      'Canada/Mountain'
+      'Canada/Mountain',
+      'Pacific/Easter',
+      'Mexico/Bajasur',
+      'America/Shiprock',
+      'Canada/Saskatchewan',
+      'Pacific/Galapagos'
     ]
   },
   {
@@ -147,7 +160,11 @@ module.exports = [
       am + 'Thule',
       am + 'Tortola',
       'Atlantic/Bermuda',
-      'Canada/Atlantic'
+      'Canada/Atlantic',
+      'Chile/Continental',
+      'America/Fort_Wayne',
+      'America/Guyana',
+      'America/Virgin'
     ]
   },
   {
@@ -220,7 +237,7 @@ module.exports = [
     dl: { name: 'Newfoundland Daylight Time', abbrev: 'NDT' },
     pick: am + 'St_Johns',
     offset: -2.5,
-    ids: [am + 'St_Johns']
+    ids: [am + 'St_Johns', 'Canada/Newfoundland']
   },
 
   ///Europe
@@ -319,7 +336,7 @@ module.exports = [
     alias: ['turkish'],
     pick: eu + 'Istanbul',
     offset: 3,
-    ids: [eu + 'Istanbul']
+    ids: [eu + 'Istanbul', 'Asia/Istanbul']
   },
   // samara: [eu + 'Samara', eu + 'Saratov'],
 
@@ -340,7 +357,11 @@ module.exports = [
       af + 'Nairobi',
       'Indian/Antananarivo',
       'Indian/Comoro',
-      'Indian/Mayotte'
+      'Indian/Mayotte',
+      'Antarctica/Syowa',
+      'Europe/Nicosia',
+      'Europe/Tiraspol',
+      'Africa/Asmara'
     ]
   },
   {
@@ -395,7 +416,14 @@ module.exports = [
     alias: ['australia central'],
     pick: au + 'Adelaide',
     offset: 9.5,
-    ids: [au + 'Adelaide', au + 'Broken_Hill', au + 'Darwin']
+    ids: [
+      au + 'Adelaide',
+      au + 'Broken_Hill',
+      au + 'Darwin',
+      'Australia/South',
+      'Australia/Yancowinna',
+      'Australia/North'
+    ]
   },
   {
     std: { name: 'Australian Eastern Standard Time', abbrev: 'AEST' },
@@ -409,7 +437,17 @@ module.exports = [
       au + 'Hobart',
       au + 'Lindeman',
       au + 'Melbourne',
-      au + 'Sydney'
+      au + 'Sydney',
+      'Australia/Act',
+      'Australia/Canberra',
+      'Australia/Nsw',
+      'Australia/Tasmania',
+      'Australia/Victoria',
+      'Antarctica/Dumontdurville',
+      'Australia/Queensland',
+      'Pacific/Chuuk',
+      'Pacific/Truk',
+      'Pacific/Yap'
     ]
   },
   {
@@ -439,7 +477,17 @@ module.exports = [
     dl: { name: 'New Zealand Daylight Time', abbrev: 'NZDT' },
     pick: pa + 'Auckland',
     offset: 12,
-    ids: ['Antarctica/Mcmurdo', pa + 'Auckland']
+    ids: [
+      'Antarctica/Mcmurdo',
+      pa + 'Auckland',
+      'Pacific/Fiji',
+      'Asia/Srednekolymsk',
+      'Pacific/Funafuti',
+      'Pacific/Nauru',
+      'Pacific/Tarawa',
+      'Pacific/Wake',
+      'Pacific/Wallis'
+    ]
   },
   {
     std: { name: 'Chatham Island Standard Time', abbrev: 'CHAST' },
@@ -461,7 +509,13 @@ module.exports = [
       eu + 'Moscow',
       eu + 'Simferopol',
       eu + 'Ulyanovsk',
-      eu + 'Kirov'
+      eu + 'Kirov',
+      'Indian/Reunion',
+      'Asia/Yerevan',
+      'Europe/Samara',
+      'Europe/Saratov',
+      'Asia/Volgograd',
+      'Indian/Mahe'
     ]
   },
   {
@@ -616,7 +670,7 @@ module.exports = [
     alias: ['indian'],
     pick: as + 'Kolkata',
     offset: 5.5,
-    ids: [as + 'Kolkata', as + 'Colombo']
+    ids: [as + 'Kolkata', as + 'Colombo', 'Asia/Calcutta']
   },
   {
     std: { name: 'Indochina Time', abbrev: 'ICT' },
@@ -679,7 +733,7 @@ module.exports = [
     dl: { name: 'Israel Standard Time', abbrev: 'IST' },
     alias: ['israeli'],
     offset: 3,
-    ids: [as + 'Jerusalem']
+    ids: [as + 'Jerusalem', 'Asia/Tel_Aviv']
   },
   {
     std: { name: 'Krasnoyarsk Time', abbrev: 'KRAT' },
@@ -706,7 +760,15 @@ module.exports = [
   {
     std: { name: 'Uzbekistan Time', abbrev: 'UZT' },
     offset: 5,
-    ids: [as + 'Samarkand', as + 'Tashkent']
+    ids: [
+      as + 'Samarkand',
+      as + 'Tashkent',
+      'Antarctica/Mawson',
+      'Indian/Kerguelen',
+      'Asia/Ashkhabad',
+      'Asia/Dushanbe',
+      'Asia/Yekaterinburg'
+    ]
   },
   {
     std: { name: 'Vladivostok Time', abbrev: 'VLAT' },
@@ -732,7 +794,11 @@ module.exports = [
   { std: { name: 'Philippine Time', abbrev: 'PHT' }, offset: 8, ids: [as + 'Manila'] },
   // novosibirsk: [as+ 'Novosibirsk'],
   // omsk: [as+ 'Omsk'],
-  { std: { name: 'Myanmar Time', abbrev: 'MMT' }, offset: 6.5, ids: [as + 'Rangoon'] },
+  {
+    std: { name: 'Myanmar Time', abbrev: 'MMT' },
+    offset: 6.5,
+    ids: [as + 'Rangoon', 'Asia/yangon', 'Indian/Cocos']
+  },
   // sakhalin: [as+ 'Sakhalin'],
   // srednekolymsk: [as+ 'Srednekolymsk'],
   { std: { name: 'Georgia Standard Time', abbrev: 'GET' }, offset: 4, ids: [as + 'Tbilisi'] },
@@ -781,7 +847,19 @@ module.exports = [
   {
     std: { name: 'Papua New Guinea Time', abbrev: 'PGT' },
     offset: 11,
-    ids: [pa + 'Bougainville', pa + 'Port_Moresby']
+    ids: [
+      pa + 'Bougainville',
+      pa + 'Port_Moresby',
+      'Antarctica/Macquarie',
+      'Asia/Magadan',
+      'Asia/Sakhalin',
+      'Pacific/Efate',
+      'Pacific/Guadalcanal',
+      'Pacific/Kosrae',
+      'Pacific/Noumea',
+      'Pacific/Pohnpei',
+      'Pacific/Ponape'
+    ]
   }
 
   // ambiguous abbrevs
