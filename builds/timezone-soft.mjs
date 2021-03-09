@@ -349,7 +349,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['british', 'britain'],
   pick: eu + 'London',
-  ids: [eu + 'Guernsey', eu + 'Isle_Of_Man', eu + 'Jersey', eu + 'London']
+  offset: 1,
+  ids: [eu + 'Guernsey', eu + 'Isle_Of_Man', eu + 'Jersey', eu + 'London', 'Europe/Belfast']
 }, {
   std: {
     name: 'Greenwich Standard Time',
@@ -360,6 +361,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'IST'
   },
   alias: ['ireland'],
+  offset: 1,
   ids: [eu + 'Dublin']
 }, //gmt-0, no daylight savings
 {
@@ -369,7 +371,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: af + 'Freetown',
   alias: ['etc', 'utc'],
-  ids: [af + 'Abidjan', af + 'Accra', af + 'Bamako', af + 'Banjul', af + 'Bissau', af + 'Conakry', af + 'Dakar', af + 'Freetown', af + 'Lome', af + 'Monrovia', af + 'Nouakchott', af + 'Ouagadougou', af + 'Sao_Tome', am + 'Danmarkshavn', 'Antarctica/Troll', 'Atlantic/Reykjavik', 'Atlantic/St_Helena', 'ETC/GMT']
+  offset: 0,
+  ids: [af + 'Abidjan', af + 'Accra', af + 'Bamako', af + 'Banjul', af + 'Bissau', af + 'Conakry', af + 'Dakar', af + 'Freetown', af + 'Lome', af + 'Monrovia', af + 'Nouakchott', af + 'Ouagadougou', af + 'Sao_Tome', am + 'Danmarkshavn', 'Antarctica/Troll', 'Atlantic/Reykjavik', 'Atlantic/St_Helena', 'ETC/GMT', 'Atlantic/Azores', 'Africa/Timbuktu', 'America/Scoresbysund']
 }, //North america
 {
   std: {
@@ -381,7 +384,8 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'CDT'
   },
   pick: 'Canada/Central',
-  ids: [am + 'Bahia_Banderas', am + 'Belize', am + 'Chicago', am + 'Costa_Rica', am + 'El_Salvador', am + 'Guatemala', am + 'Indiana', am + 'Managua', am + 'Matamoros', am + 'Menominee', am + 'Merida', am + 'Mexico_City', am + 'Monterrey', am + 'North_Dakota', am + 'North_Dakota', am + 'North_Dakota', am + 'Rainy_River', am + 'Rankin_Inlet', am + 'Regina', am + 'Resolute', am + 'Swift_Current', am + 'Tegucigalpa', am + 'Winnipeg', 'Canada/Central']
+  offset: -5,
+  ids: [am + 'Bahia_Banderas', am + 'Belize', am + 'Chicago', am + 'Costa_Rica', am + 'El_Salvador', am + 'Guatemala', am + 'Indiana', am + 'Managua', am + 'Matamoros', am + 'Menominee', am + 'Merida', am + 'Mexico_City', am + 'Monterrey', am + 'North_Dakota', am + 'North_Dakota', am + 'North_Dakota', am + 'Rainy_River', am + 'Rankin_Inlet', am + 'Regina', am + 'Resolute', am + 'Swift_Current', am + 'Tegucigalpa', am + 'Winnipeg', 'Canada/Central', 'Mexico/General', 'America/Knox_In', 'America/Atikokan', 'America/Guayaquil', 'America/Porto_Acre']
 }, {
   std: {
     name: 'Mountain Standard Time',
@@ -392,8 +396,9 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'MDT'
   },
   pick: 'Canada/Mountain',
+  offset: -6,
   ids: [am + 'Boise', am + 'Cambridge_Bay', am + 'Creston', am + 'Dawson_Creek', am + 'Denver', am + 'Edmonton', am + 'Fort_Nelson', am + 'Inuvik', am + 'Ojinaga', am + 'Phoenix', am + 'Yellowknife', // add mexico
-  am + 'Chihuahua', am + 'Hermosillo', am + 'Mazatlan', 'Canada/Mountain']
+  am + 'Chihuahua', am + 'Hermosillo', am + 'Mazatlan', 'Canada/Mountain', 'Pacific/Easter', 'Mexico/Bajasur', 'America/Shiprock', 'Canada/Saskatchewan', 'Pacific/Galapagos']
 }, {
   std: {
     name: 'Atlantic Standard Time',
@@ -404,7 +409,8 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'ADT'
   },
   pick: 'Canada/Atlantic',
-  ids: [am + 'Anguilla', am + 'Antigua', am + 'Aruba', am + 'Barbados', am + 'Blanc-sablon', am + 'Curacao', am + 'Dominica', am + 'Glace_Bay', am + 'Goose_Bay', am + 'Grenada', am + 'Guadeloupe', am + 'Halifax', am + 'Kralendijk', am + 'Lower_Princes', am + 'Marigot', am + 'Martinique', am + 'Moncton', am + 'Montserrat', am + 'Port_Of_Spain', am + 'Puerto_Rico', am + 'Santo_Domingo', am + 'St_Barthelemy', am + 'St_Kitts', am + 'St_Lucia', am + 'St_Thomas', am + 'St_Vincent', am + 'Thule', am + 'Tortola', 'Atlantic/Bermuda', 'Canada/Atlantic']
+  offset: -4,
+  ids: [am + 'Anguilla', am + 'Antigua', am + 'Aruba', am + 'Barbados', am + 'Blanc-sablon', am + 'Curacao', am + 'Dominica', am + 'Glace_Bay', am + 'Goose_Bay', am + 'Grenada', am + 'Guadeloupe', am + 'Halifax', am + 'Kralendijk', am + 'Lower_Princes', am + 'Marigot', am + 'Martinique', am + 'Moncton', am + 'Montserrat', am + 'Port_Of_Spain', am + 'Puerto_Rico', am + 'Santo_Domingo', am + 'St_Barthelemy', am + 'St_Kitts', am + 'St_Lucia', am + 'St_Thomas', am + 'St_Vincent', am + 'Thule', am + 'Tortola', 'Atlantic/Bermuda', 'Canada/Atlantic', 'Chile/Continental', 'America/Fort_Wayne', 'America/Guyana', 'America/Virgin']
 }, {
   std: {
     name: 'Eastern Standard Time',
@@ -416,6 +422,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: 'Canada/Eastern',
   alias: ['eastern', 'east'],
+  offset: -5,
   ids: [am + 'Cancun', am + 'Cayman', am + 'Coral_Harbour', am + 'Detroit', am + 'Grand_Turk', am + 'Indiana', am + 'Indianapolis', am + 'Iqaluit', am + 'Jamaica', am + 'Kentucky', am + 'Louisville', am + 'Nassau', am + 'New_York', am + 'Nipigon', am + 'Panama', am + 'Pangnirtung', am + 'Port-au-prince', am + 'Thunder_Bay', am + 'Toronto', am + 'Montreal', 'Canada/Eastern']
 }, {
   std: {
@@ -427,6 +434,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'PDT'
   },
   pick: 'Canada/Pacific',
+  offset: -7,
   ids: [am + 'Dawson', am + 'Los_Angeles', am + 'Tijuana', am + 'Vancouver', am + 'Whitehorse', 'Canada/Pacific']
 }, {
   std: {
@@ -438,6 +446,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'AHDT'
   },
   pick: am + 'Anchorage',
+  offset: -8,
   ids: [am + 'Anchorage', am + 'Juneau', am + 'Metlakatla', am + 'Nome', am + 'Sitka', am + 'Yakutat']
 }, {
   std: {
@@ -446,6 +455,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['aleutian', 'hawaii'],
   pick: pa + 'Honolulu',
+  offset: -9,
   ids: [am + 'Adak', pa + 'Honolulu', pa + 'Johnston']
 }, {
   std: {
@@ -457,7 +467,8 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'NDT'
   },
   pick: am + 'St_Johns',
-  ids: [am + 'St_Johns']
+  offset: -2.5,
+  ids: [am + 'St_Johns', 'Canada/Newfoundland']
 }, ///Europe
 {
   std: {
@@ -470,6 +481,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['romance', 'central europe'],
   pick: eu + 'Berlin',
+  offset: 1,
   ids: [af + 'Algiers', af + 'Ceuta', af + 'Tunis', 'arctic/Longyearbyen', eu + 'Amsterdam', eu + 'Andorra', eu + 'Belgrade', eu + 'Berlin', eu + 'Bratislava', eu + 'Brussels', eu + 'Budapest', eu + 'Busingen', eu + 'Copenhagen', eu + 'Gibraltar', eu + 'Ljubljana', eu + 'Luxembourg', eu + 'Madrid', eu + 'Malta', eu + 'Monaco', eu + 'Oslo', eu + 'Paris', eu + 'Podgorica', eu + 'Prague', eu + 'Rome', eu + 'San_Marino', eu + 'Sarajevo', eu + 'Skopje', eu + 'Stockholm', eu + 'Tirane', eu + 'Vaduz', eu + 'Vatican', eu + 'Vienna', eu + 'Warsaw', eu + 'Zagreb', eu + 'Zurich']
 }, {
   std: {
@@ -482,6 +494,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['eastern europe'],
   pick: eu + 'Riga',
+  offset: 2,
   ids: [af + 'Cairo', af + 'Tripoli', as + 'Amman', as + 'Beirut', as + 'Damascus', as + 'Famagusta', as + 'Gaza', as + 'Hebron', as + 'Nicosia', eu + 'Athens', eu + 'Bucharest', eu + 'Chisinau', eu + 'Helsinki', eu + 'Kaliningrad', eu + 'Kiev', eu + 'Mariehamn', eu + 'Riga', eu + 'Sofia', eu + 'Tallinn', eu + 'Uzhgorod', eu + 'Vilnius', eu + 'Zaporozhye']
 }, {
   std: {
@@ -494,6 +507,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['western europe'],
   pick: eu + 'Lisbon',
+  offset: 1,
   ids: [af + 'Casablanca', af + 'El_Aaiun', 'Atlantic/Canary', 'Atlantic/Faeroe', 'Atlantic/Madeira', eu + 'Lisbon']
 }, {
   std: {
@@ -502,7 +516,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['turkish'],
   pick: eu + 'Istanbul',
-  ids: [eu + 'Istanbul']
+  offset: 3,
+  ids: [eu + 'Istanbul', 'Asia/Istanbul']
 }, // samara: [eu + 'Samara', eu + 'Saratov'],
 //Africa
 {
@@ -512,7 +527,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['east african', 'eastern africa'],
   pick: af + 'Nairobi',
-  ids: [af + 'Addis_Ababa', af + 'Asmera', af + 'Dar_Es_Salaam', af + 'Djibouti', af + 'Juba', af + 'Kampala', af + 'Mogadishu', af + 'Nairobi', 'Indian/Antananarivo', 'Indian/Comoro', 'Indian/Mayotte']
+  offset: 3,
+  ids: [af + 'Addis_Ababa', af + 'Asmera', af + 'Dar_Es_Salaam', af + 'Djibouti', af + 'Juba', af + 'Kampala', af + 'Mogadishu', af + 'Nairobi', 'Indian/Antananarivo', 'Indian/Comoro', 'Indian/Mayotte', 'Antarctica/Syowa', 'Europe/Nicosia', 'Europe/Tiraspol', 'Africa/Asmara']
 }, {
   std: {
     name: 'Central Africa Time',
@@ -520,6 +536,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: af + 'Khartoum',
   alias: ['central africa'],
+  offset: 2,
   ids: [af + 'Blantyre', af + 'Bujumbura', af + 'Gaborone', af + 'Harare', af + 'Khartoum', af + 'Kigali', af + 'Lubumbashi', af + 'Lusaka', af + 'Maputo', af + 'Windhoek']
 }, {
   std: {
@@ -528,6 +545,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['southern africa', 'south african'],
   pick: af + 'Johannesburg',
+  offset: 2,
   ids: [af + 'Johannesburg', af + 'Maseru', af + 'Mbabane']
 }, {
   std: {
@@ -536,6 +554,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['western africa', 'west african'],
   pick: af + 'Lagos',
+  offset: 1,
   ids: [af + 'Bangui', af + 'Brazzaville', af + 'Douala', af + 'Kinshasa', af + 'Lagos', af + 'Libreville', af + 'Luanda', af + 'Malabo', af + 'Ndjamena', af + 'Niamey', af + 'Porto-novo']
 }, //Australia
 {
@@ -549,7 +568,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['australia central'],
   pick: au + 'Adelaide',
-  ids: [au + 'Adelaide', au + 'Broken_Hill', au + 'Darwin']
+  offset: 9.5,
+  ids: [au + 'Adelaide', au + 'Broken_Hill', au + 'Darwin', 'Australia/South', 'Australia/Yancowinna', 'Australia/North']
 }, {
   std: {
     name: 'Australian Eastern Standard Time',
@@ -561,7 +581,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['australia east'],
   pick: au + 'Brisbane',
-  ids: [au + 'Brisbane', au + 'Currie', au + 'Hobart', au + 'Lindeman', au + 'Melbourne', au + 'Sydney']
+  offset: 10,
+  ids: [au + 'Brisbane', au + 'Currie', au + 'Hobart', au + 'Lindeman', au + 'Melbourne', au + 'Sydney', 'Australia/Act', 'Australia/Canberra', 'Australia/Nsw', 'Australia/Tasmania', 'Australia/Victoria', 'Antarctica/Dumontdurville', 'Australia/Queensland', 'Pacific/Chuuk', 'Pacific/Truk', 'Pacific/Yap']
 }, {
   std: {
     name: 'Australian Western Standard Time',
@@ -573,6 +594,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['australia west'],
   pick: au + 'Perth',
+  offset: 8,
   ids: ['Antarctica/Casey', au + 'Perth']
 }, {
   std: {
@@ -581,6 +603,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['australia central west'],
   pick: au + 'Eucla',
+  offset: 8.75,
   ids: [au + 'Eucla']
 }, {
   std: {
@@ -592,6 +615,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'LHDT'
   },
   pick: au + 'Lord_Howe',
+  offset: 10.5,
   ids: [au + 'Lord_Howe']
 }, {
   std: {
@@ -603,7 +627,8 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'NZDT'
   },
   pick: pa + 'Auckland',
-  ids: ['Antarctica/Mcmurdo', pa + 'Auckland']
+  offset: 12,
+  ids: ['Antarctica/Mcmurdo', pa + 'Auckland', 'Pacific/Fiji', 'Asia/Srednekolymsk', 'Pacific/Funafuti', 'Pacific/Nauru', 'Pacific/Tarawa', 'Pacific/Wake', 'Pacific/Wallis']
 }, {
   std: {
     name: 'Chatham Island Standard Time',
@@ -614,6 +639,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'CHADT'
   },
   pick: pa + 'Chatham',
+  offset: 12.75,
   ids: [pa + 'Chatham']
 }, //Russia
 {
@@ -623,12 +649,14 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['russian'],
   pick: eu + 'Moscow',
-  ids: [eu + 'Astrakhan', eu + 'Minsk', eu + 'Moscow', eu + 'Simferopol', eu + 'Ulyanovsk', eu + 'Kirov']
+  offset: 4,
+  ids: [eu + 'Astrakhan', eu + 'Minsk', eu + 'Moscow', eu + 'Simferopol', eu + 'Ulyanovsk', eu + 'Kirov', 'Asia/Yerevan', 'Europe/Samara', 'Europe/Saratov', 'Asia/Volgograd']
 }, {
   std: {
     name: 'Volgograd Time',
     abbrev: 'VOLT'
   },
+  offset: 4,
   ids: [eu + 'Volgograd']
 }, //South america
 {
@@ -638,6 +666,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['brasília', 'brasilia', 'brazilian'],
   pick: am + 'Sao_Paulo',
+  offset: -3,
   ids: [am + 'Araguaina', am + 'Bahia', am + 'Belem', am + 'Fortaleza', am + 'Maceio', am + 'Recife', am + 'Santarem', am + 'Sao_Paulo', 'Brazil/Acre', 'Brazil/Denoronha', 'Brazil/East', 'Brazil/West']
 }, {
   std: {
@@ -646,6 +675,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['argentinian'],
   pick: am + 'Buenos_Aires',
+  offset: -3,
   ids: [am + 'Argentina', am + 'Buenos_Aires', am + 'Catamarca', am + 'Cordoba', am + 'Jujuy', am + 'Mendoza']
 }, {
   std: {
@@ -654,6 +684,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['amazonian'],
   pick: am + 'Manaus',
+  offset: -4,
   ids: [am + 'Boa_Vista', am + 'Campo_Grande', am + 'Cuiaba', //Has dst?
   am + 'Manaus', am + 'Porto_Velho']
 }, {
@@ -665,6 +696,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Easter Island Summer Time',
     abbrev: 'EASST'
   },
+  offset: -6,
   ids: ['Chile/EasterIsland']
 }, {
   std: {
@@ -672,6 +704,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'VET'
   },
   alias: ['venezuela'],
+  offset: -4,
   ids: [am + 'Caracas']
 }, {
   std: {
@@ -682,6 +715,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Paraguay Summer Time',
     abbrev: 'PYST'
   },
+  offset: -4,
   ids: [am + 'Asuncion']
 }, {
   std: {
@@ -693,6 +727,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'CDT'
   },
   alias: ['cuban'],
+  offset: -4,
   ids: [am + 'Havana']
 }, {
   std: {
@@ -700,6 +735,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'BOT'
   },
   alias: ['bolivian'],
+  offset: -4,
   ids: [am + 'La_Paz']
 }, {
   std: {
@@ -707,6 +743,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'COT'
   },
   alias: ['colombian'],
+  offset: -5,
   ids: [am + 'Bogota']
 }, {
   std: {
@@ -714,12 +751,14 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'ACT'
   },
   pick: null,
+  offset: -5,
   ids: [am + 'Eirunepe', am + 'Rio_Branco']
 }, {
   std: {
     name: 'Peru Time',
     abbrev: 'PET'
   },
+  offset: -5,
   ids: [am + 'Lima']
 }, {
   std: {
@@ -731,12 +770,14 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'CLDT'
   },
   pick: null,
+  offset: -3,
   ids: [am + 'Punta_Arenas', am + 'Santiago', 'Antarctica/Palmer']
 }, {
   std: {
     name: 'Uruguay Time',
     abbrev: 'UYT'
   },
+  offset: -3,
   ids: [am + 'Montevideo']
 }, // argentina_Western: [am + 'Argentina/San_Luis'],
 // french_Guiana: [am + 'Cayenne'],
@@ -755,6 +796,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: as + 'Baghdad',
   alias: ['arabic', 'arab'],
+  offset: 3,
   ids: [as + 'Aden', as + 'Baghdad', as + 'Bahrain', as + 'Kuwait', as + 'Qatar', as + 'Riyadh']
 }, {
   std: {
@@ -767,6 +809,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['iranian'],
   pick: as + 'Tehran',
+  offset: 4.5,
   ids: [as + 'Tehran']
 }, {
   std: {
@@ -774,6 +817,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'PKT'
   },
   pick: as + 'Karachi',
+  offset: 5,
   ids: [as + 'Karachi']
 }, {
   std: {
@@ -782,7 +826,8 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['indian'],
   pick: as + 'Kolkata',
-  ids: [as + 'Kolkata', as + 'Colombo']
+  offset: 5.5,
+  ids: [as + 'Kolkata', as + 'Colombo', 'Asia/Calcutta']
 }, {
   std: {
     name: 'Indochina Time',
@@ -790,6 +835,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['South East Asia'],
   pick: as + 'Bangkok',
+  offset: 7,
   ids: [as + 'Bangkok', as + 'Phnom_Penh', as + 'Saigon', as + 'Vientiane']
 }, {
   std: {
@@ -799,6 +845,7 @@ var _05Metazones = [//gmt-0, with daylight savings
   //cst?
   alias: ['chinese'],
   pick: as + 'Shanghai',
+  offset: 8,
   ids: [as + 'Macau', as + 'Shanghai', as + 'Taipei']
 }, {
   std: {
@@ -806,6 +853,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'ALMT'
   },
   pick: as + 'Almaty',
+  offset: 6,
   ids: [as + 'Almaty', as + 'Qostanay']
 }, {
   std: {
@@ -813,6 +861,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'ORAT'
   },
   pick: as + 'Oral',
+  offset: 5,
   ids: [as + 'Aqtau', as + 'Aqtobe', as + 'Atyrau', as + 'Oral', as + 'Qyzylorda']
 }, {
   std: {
@@ -820,6 +869,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'YAKT'
   },
   pick: as + 'Yakutsk',
+  offset: 9,
   ids: [as + 'Chita', as + 'Khandyga', as + 'Yakutsk']
 }, {
   std: {
@@ -828,12 +878,14 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: as + 'Dubai',
   alias: ['uae'],
+  offset: 4,
   ids: [as + 'Dubai', as + 'Muscat']
 }, {
   std: {
     name: 'Hong Kong Time',
     abbrev: 'HKT'
   },
+  offset: 8,
   ids: [as + 'Hong_Kong']
 }, {
   std: {
@@ -842,12 +894,14 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   alias: ['indonesia'],
   //most of it
+  offset: 7,
   ids: [as + 'Jakarta', as + 'Pontianak', as + 'Jayapura']
 }, {
   std: {
     name: 'Central Indonesian Time',
     abbrev: 'WITA'
   },
+  offset: 8,
   ids: [as + 'Makassar']
 }, {
   std: {
@@ -859,24 +913,28 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'IST'
   },
   alias: ['israeli'],
-  ids: [as + 'Jerusalem']
+  offset: 3,
+  ids: [as + 'Jerusalem', 'Asia/Tel_Aviv']
 }, {
   std: {
     name: 'Krasnoyarsk Time',
     abbrev: 'KRAT'
   },
+  offset: 7,
   ids: [as + 'Krasnoyarsk', as + 'Novokuznetsk', as + 'Barnaul']
 }, {
   std: {
     name: 'Malaysia Time',
     abbrev: 'MYT'
   },
+  offset: 8,
   ids: [as + 'Kuala_Lumpur', as + 'Kuching']
 }, {
   std: {
     name: 'Singapore Time',
     abbrev: 'SGT'
   },
+  offset: 8,
   ids: [as + 'Singapore']
 }, {
   std: {
@@ -885,12 +943,14 @@ var _05Metazones = [//gmt-0, with daylight savings
   },
   pick: as + 'Seoul',
   alias: ['korean'],
+  offset: 9,
   ids: [as + 'Pyongyang', as + 'Seoul']
 }, {
   std: {
     name: 'Uzbekistan Time',
     abbrev: 'UZT'
   },
+  offset: 5,
   ids: [as + 'Samarkand', as + 'Tashkent']
 }, {
   std: {
@@ -898,36 +958,42 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'VLAT'
   },
   pick: as + 'Vladivostok',
+  offset: 10,
   ids: [as + 'Ust-nera', as + 'Vladivostok']
 }, {
   std: {
     name: 'Anadyr Time',
     abbrev: 'ANAT'
   },
+  offset: 12,
   ids: [as + 'Anadyr']
 }, {
   std: {
     name: 'Turkmenistan Time',
     abbrev: 'TMT'
   },
+  offset: 5,
   ids: [as + 'Ashgabat']
 }, {
   std: {
     name: 'Azerbaijan Time',
     abbrev: 'AZT'
   },
+  offset: 5,
   ids: [as + 'Baku']
 }, {
   std: {
     name: 'Kyrgyzstan Time',
     abbrev: 'KGT'
   },
+  offset: 6,
   ids: [as + 'Bishkek']
 }, {
   std: {
     name: 'Brunei Darussalam Time',
     abbrev: 'BNT'
   },
+  offset: 8,
   ids: [as + 'Brunei']
 }, // choibalsan: [as+ 'Choibalsan'],
 // east_Timor: [as+ 'Dili'],
@@ -939,18 +1005,21 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Afghanistan Time',
     abbrev: 'AFT'
   },
+  offset: 4.5,
   ids: [as + 'Kabul']
 }, {
   std: {
     name: 'Kamchatka Time',
     abbrev: 'PETT'
   },
+  offset: 12,
   ids: [as + 'Kamchatka']
 }, {
   std: {
     name: 'Nepal Time',
     abbrev: 'NPT'
   },
+  offset: 5.75,
   ids: [as + 'Katmandu']
 }, // magadan: [as+ 'Magadan'],
 {
@@ -958,6 +1027,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Philippine Time',
     abbrev: 'PHT'
   },
+  offset: 8,
   ids: [as + 'Manila']
 }, // novosibirsk: [as+ 'Novosibirsk'],
 // omsk: [as+ 'Omsk'],
@@ -966,7 +1036,8 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Myanmar Time',
     abbrev: 'MMT'
   },
-  ids: [as + 'Rangoon']
+  offset: 6.5,
+  ids: [as + 'Rangoon', 'Asia/yangon']
 }, // sakhalin: [as+ 'Sakhalin'],
 // srednekolymsk: [as+ 'Srednekolymsk'],
 {
@@ -974,6 +1045,7 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Georgia Standard Time',
     abbrev: 'GET'
   },
+  offset: 4,
   ids: [as + 'Tbilisi']
 }, // bhutan: [as+ 'Thimphu'],
 {
@@ -981,12 +1053,14 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Japan Standard Time',
     abbrev: 'JST'
   },
+  offset: 9,
   ids: [as + 'Tokyo']
 }, {
   std: {
     name: 'Ulaanbaatar Time',
     abbrev: 'ULAT'
   },
+  offset: 8,
   ids: [as + 'Ulaanbaatar']
 }, // urumqi: [as+ 'Urumqi'],
 // yekaterinburg: [as+ 'Yekaterinburg'],
@@ -1001,18 +1075,21 @@ var _05Metazones = [//gmt-0, with daylight savings
     name: 'Maldives Time',
     abbrev: 'MVT'
   },
+  offset: 5,
   ids: ['Indian/Maldives']
 }, {
   std: {
     name: 'Mauritius Time',
     abbrev: 'MUT'
   },
+  offset: 4,
   ids: ['Indian/Mauritius']
 }, {
   std: {
     name: 'Marshall Islands Time',
     abbrev: 'MHT'
   },
+  offset: 12,
   ids: [pa + 'Kwajalein', pa + 'Majuro']
 }, {
   std: {
@@ -1020,21 +1097,24 @@ var _05Metazones = [//gmt-0, with daylight savings
     abbrev: 'SST'
   },
   alias: ['somoan'],
+  offset: -11,
   ids: [pa + 'Midway', pa + 'Pago_Pago']
 }, {
   std: {
     name: 'Chamorro Standard Time',
     abbrev: 'CHST'
   },
+  offset: 10,
   ids: [pa + 'Guam', pa + 'Saipan']
 }, {
   std: {
     name: 'Papua New Guinea Time',
     abbrev: 'PGT'
   },
-  ids: [pa + 'Bougainville', pa + 'Port_Moresby']
+  offset: 11,
+  ids: [pa + 'Bougainville', pa + 'Port_Moresby', 'Antarctica/Macquarie', 'Asia/Magadan', 'Asia/Sakhalin', 'Pacific/Efate', 'Pacific/Guadalcanal', 'Pacific/Kosrae', 'Pacific/Noumea', 'Pacific/Pohnpei', 'Pacific/Ponape']
 } // ambiguous abbrevs
-// { std: { name: 'Bangladesh Standard Time', abbrev: 'BST' }, ids: [as + 'Dhaka'] }
+// { std: { name: 'Bangladesh Standard Time', abbrev: 'BST' },  offset: 0, ids: [as + 'Dhaka'] }
 // indian_Ocean: ['Indian/Chagos'],
 // christmas: ['Indian/Christmas'],
 // cocos: ['Indian/Cocos'],
@@ -1097,21 +1177,23 @@ var display = function display(id) {
       std: {
         name: id,
         abbrev: id
-      } // 'Etc/GMT+5'
-
+      },
+      // 'Etc/GMT+5'
+      offset: null
     };
   }
 
   return {
     iana: id,
     standard: meta.std || null,
-    daylight: meta.dl || null
+    daylight: meta.dl || null // offset: meta.offset - 1 || null
+
   };
 };
 
 var display_1 = display;
 
-var _version = '1.0.1';
+var _version = '1.0.2';
 
 var soft = function soft(str) {
   var ids = find_1(str) || [];
@@ -1120,7 +1202,10 @@ var soft = function soft(str) {
     ids = [ids];
   }
 
-  return ids.map(display_1);
+  ids = ids.map(function (id) {
+    return display_1(id);
+  });
+  return ids;
 };
 
 soft.prototype.version = _version;

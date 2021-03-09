@@ -510,12 +510,10 @@ module.exports = [
       eu + 'Simferopol',
       eu + 'Ulyanovsk',
       eu + 'Kirov',
-      'Indian/Reunion',
       'Asia/Yerevan',
       'Europe/Samara',
       'Europe/Saratov',
-      'Asia/Volgograd',
-      'Indian/Mahe'
+      'Asia/Volgograd'
     ]
   },
   {
@@ -760,15 +758,7 @@ module.exports = [
   {
     std: { name: 'Uzbekistan Time', abbrev: 'UZT' },
     offset: 5,
-    ids: [
-      as + 'Samarkand',
-      as + 'Tashkent',
-      'Antarctica/Mawson',
-      'Indian/Kerguelen',
-      'Asia/Ashkhabad',
-      'Asia/Dushanbe',
-      'Asia/Yekaterinburg'
-    ]
+    ids: [as + 'Samarkand', as + 'Tashkent']
   },
   {
     std: { name: 'Vladivostok Time', abbrev: 'VLAT' },
@@ -797,7 +787,7 @@ module.exports = [
   {
     std: { name: 'Myanmar Time', abbrev: 'MMT' },
     offset: 6.5,
-    ids: [as + 'Rangoon', 'Asia/yangon', 'Indian/Cocos']
+    ids: [as + 'Rangoon', 'Asia/yangon']
   },
   // sakhalin: [as+ 'Sakhalin'],
   // srednekolymsk: [as+ 'Srednekolymsk'],
@@ -860,12 +850,15 @@ module.exports = [
       'Pacific/Pohnpei',
       'Pacific/Ponape'
     ]
-  }
+  },
 
   // ambiguous abbrevs
   // { std: { name: 'Bangladesh Standard Time', abbrev: 'BST' },  offset: 0, ids: [as + 'Dhaka'] }
-
-  // indian_Ocean: ['Indian/Chagos'],
+  {
+    std: { name: 'Indian Ocean Time', abbrev: 'IOT' },
+    offset: 6,
+    ids: ['Indian/Chagos']
+  }
   // christmas: ['Indian/Christmas'],
   // cocos: ['Indian/Cocos'],
   // french_Southern: ['Indian/Kerguelen'],
