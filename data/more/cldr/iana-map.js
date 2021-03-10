@@ -24,12 +24,7 @@ module.exports = {
   'UTC-09': ['Etc/GMT+9', 'Pacific/Gambier'],
   'Pacific Standard Time (Mexico)': ['America/Tijuana', 'America/Santa_Isabel'],
   'UTC-08': ['Etc/GMT+8', 'Pacific/Pitcairn'],
-  'Pacific Standard Time': [
-    'America/Los_Angeles',
-    'America/Vancouver',
-    'America/Los_Angeles',
-    'PST8PDT'
-  ],
+  'Pacific Standard Time': ['America/Los_Angeles', 'America/Vancouver', 'America/Los_Angeles'],
   'US Mountain Standard Time': [
     'America/Phoenix',
     'America/Creston',
