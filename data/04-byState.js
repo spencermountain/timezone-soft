@@ -6,6 +6,7 @@ const byState = {
   'washington state': 'America/Los_Angeles',
   nevada: 'America/Los_Angeles',
   california: 'America/Los_Angeles',
+  cali: 'America/Los_Angeles',
   oregon: 'America/Los_Angeles',
 
   // mountain
@@ -19,6 +20,7 @@ const byState = {
 
   // central
   texas: 'America/Chicago',
+  tex: 'America/Chicago',
   illinois: 'America/Chicago',
   minnesota: 'America/Chicago',
   'north dakota': 'America/Chicago',
@@ -34,6 +36,7 @@ const byState = {
   connecticut: 'America/New_York',
   delaware: 'America/New_York',
   florida: 'America/New_York',
+  fl: 'America/New_York',
   maine: 'America/New_York',
   maryland: 'America/New_York',
   massachusetts: 'America/New_York',

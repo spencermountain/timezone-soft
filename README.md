@@ -152,4 +152,7 @@ console.log(s.time() + ' ' + show)
 
 work-in-progress!
 
+### See also
+* [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) .NET Standard Library by Matt Johnson-Pint
+
 MIT

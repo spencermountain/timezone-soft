@@ -1,6 +1,6 @@
 //From https://Github.com/Mj1856/Timezonenames
 // and from  https://Github.com/Nodatime/Nodatime/Blob/Master/Data/Cldr/Windowszones-35.xml
-
+// and from https://github.com/unicode-org/cldr/blob/master/common/supplemental/windowsZones.xml
 // do some ad-hoc compression
 const eu = 'Europe/'
 const af = 'Africa/'

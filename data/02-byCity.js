@@ -2477,6 +2477,7 @@ const byCity = {
   sf: 'America/Los_Angeles',
   'san fran': 'America/Los_Angeles',
   ny: 'America/New_York',
-  ldn: 'Europe/London'
+  ldn: 'Europe/London',
+  'ho chi minh city': 'Asia/Saigon'
 }
 module.exports = byCity
