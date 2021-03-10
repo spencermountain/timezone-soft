@@ -2479,7 +2479,10 @@ const byCity = {
   ny: 'America/New_York',
   ldn: 'Europe/London',
   'ho chi minh city': 'Asia/Saigon',
+
   pst8pdt: 'America/Los_Angeles',
-  est5edt: 'America/New_York'
+  est5edt: 'America/New_York',
+  mst7mdt: 'America/Phoenix',
+  cst6cdt: 'America/Chicago'
 }
 module.exports = byCity
