@@ -1,3 +1,5 @@
+// cldr metazones
+// https://github.com/unicode-org/cldr/blob/master/common/supplemental/windowsZones.xml
 module.exports = {
   'Dateline Standard Time': '(UTC-12:00) International Date Line West',
   'UTC-11': '(UTC-11:00) Coordinated Universal Time-11',
