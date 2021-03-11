@@ -1,56 +1,55 @@
-const longNames = require('./longNames')
-const metazones = require('./metazones')
-const shortNames = require('./shortnames')
+const tzdb = require('./tzdb') //149
+const cldr = require('./cldr') //138
+console.log(tzdb.length)
+console.log(cldr.length)
 
-const spacetime = require('spacetime')
-let zones = spacetime.timezones()
-
-let result = Object.keys(metazones).map((k) => {
-  let std = {}
-  let dst = {}
-  let aliases = []
-  let name = null
-  let abbr = null
-  if (longNames[k]) {
-    name = longNames[k].Generic || name
-    std.name = longNames[k].Standard || undefined
-    dst.name = longNames[k].Daylight || undefined
-  }
-  if (shortNames[k]) {
-    abbr = shortNames[k].Generic
-    std.abbr = shortNames[k].Standard || undefined
-    dst.abbr = shortNames[k].Daylight || undefined
-  }
-  let id = metazones[k][0].toLowerCase()
-  if (id === 'america/argentina/la_rioja') {
-    id = 'america/argentina'
-  }
-  let found = zones[id]
-  std.offset = found.offset
-  if (found.dst) {
-    // dst.date = found.dst
-    dst.offset = found.offset + 1
-  }
-  // else if (Object.keys(dst).length > 0) {
-  //   if (dst.abbr) {
-  //     aliases.push(dst.abbr)
+let mixed = tzdb.forEach((obj) => {
+  let id = obj.ids[0]
+  let found = cldr.find((o) => o.ids.find((i) => i === id))
+  // if (obj.ids[1]) {
+  //   let found2 = cldr.find((o) => o.ids.find((i) => i === obj.ids[1]))
+  //   if (found !== found2) {
+  //     console.log(found.name, '  |   ', found2.name)
   //   }
-  //   dst = null
   // }
-  if (dst && Object.keys(dst).length === 0) {
-    dst = null
+  if (found.offset !== obj.std.offset) {
+    console.log(obj.name, '     ', found.name)
   }
-  aliases.push(k.replace(/_/, ' '))
-  if (!name) {
-    name = std.name
-  }
-  return {
-    name: name,
-    abbr: abbr,
-    aliases: aliases,
-    ids: metazones[k],
-    std: std,
-    dst: dst
-  }
+  // if (found) {
+  // console.log(obj.name, '     ', found.name)
+  // } else {
+  // console.log('not-found', obj.name)
+  // }
+  obj.long = found.iso
+  obj.aliases = obj.aliases.concat(found.aliases)
+
+  // if (obj.dst && obj.dst.offset) {
+  // obj.dst.offset = obj.std.offset - 1
+  // }
+  return obj
 })
-console.log(JSON.stringify(result, null, 2))
+
+/*
+GMT Standard Time                 |Greenwich Standard Time
+Romance Standard Time             |W. Central Africa Standard Time
+Namibia Standard Time             |South Africa Standard Time
+Middle East Standard Time         |Egypt Standard Time
+GMT Standard Time                 |Morocco Standard Time
+Aleutian Standard Time            |Hawaiian Standard Time
+Atlantic Standard Time            |SA Western Standard Time
+Tocantins Standard Time           |Bahia Standard Time
+Central Standard Time             |Central Standard Time (Mexico)
+SA Western Standard Time          |Central Brazilian Standard Time
+US Mountain Standard Time         |Mountain Standard Time
+Eastern Standard Time             |Eastern Standard Time (Mexico)
+Mountain Standard Time (Mexico)   |US Mountain Standard Time
+Pacific Standard Time             |Pacific Standard Time (Mexico)
+Pacific SA Standard Time          |Magallanes Standard Time
+AUS Eastern Standard Time         |Tasmania Standard Time
+Arabic Standard Time              |Arab Standard Time
+India Standard Time               |Sri Lanka Standard Time
+Transbaikal Standard Time         |Yakutsk Standard Time
+Korea Standard Time               |North Korea Standard Time
+Russian Standard Time             |Astrakhan Standard Time
+Russia Time Zone 3                |Saratov Standard Time
+*/

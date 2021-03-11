@@ -18,8 +18,8 @@ module.exports = [
   {
     ids: ['America/Adak'],
     name: 'Aleutian Standard Time',
-    offset: -10,
-    iso: '(UTC-10:00) Aleutian Islands',
+    offset: -9,
+    iso: '(UTC-09:00) Aleutian Islands',
     aliases: ['aleutian']
   },
   {

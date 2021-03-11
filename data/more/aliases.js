@@ -145,4 +145,5 @@ module.exports = {
   eet: 'Europe/Bucharest',
   met: 'Europe/Berlin',
   wet: 'Atlantic/Canary'
+  // 'antarctica/rothera': 'America/Buenos_Aires'
 }
