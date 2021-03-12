@@ -38,7 +38,8 @@ module.exports = [
     aliases: ['troll research station'],
     ids: ['Antarctica/Troll'],
     std: {
-      name: 'GMT',
+      name: 'Greenwich Mean Time',
+      abbr: 'GMT',
       offset: 0
     },
     dst: {}
@@ -72,25 +73,31 @@ module.exports = [
     aliases: ['europe western'],
     ids: ['Europe/Lisbon', 'Atlantic/Canary', 'Atlantic/Faeroe', 'Atlantic/Madeira'],
     std: {
+      abbr: 'WET',
       name: 'Western European Standard Time',
       offset: 0
     },
     dst: {
+      abbr: 'WEST',
       name: 'Western European Summer Time',
       offset: 1
     }
   },
   {
-    name: '',
-    dupe: true,
+    name: 'Morocco Standard Time',
+    offset: 1,
+    long: '(UTC+00:00) Casablanca',
+    aliases: ['casablanca', 'morocco'],
     ids: ['Africa/Casablanca', 'Africa/El_Aaiun'],
     std: {
+      abbr: 'WET',
       name: 'Western European Standard Time',
-      offset: 0
+      offset: 1
     },
     dst: {
+      abbr: 'WEST',
       name: 'Western European Summer Time',
-      offset: 1
+      offset: 0
     }
   },
   {
@@ -157,10 +164,12 @@ module.exports = [
       'Europe/Zurich'
     ],
     std: {
+      abbr: 'CET',
       name: 'Central European Standard Time',
       offset: 1
     },
     dst: {
+      abbr: 'CEST',
       name: 'Central European Summer Time',
       offset: 2
     },
@@ -174,10 +183,12 @@ module.exports = [
       'Africa/Tunis' //
     ],
     std: {
+      abbr: 'CET',
       name: 'Central European Standard Time',
       offset: 1
     },
     dst: {
+      abbr: 'CEST',
       name: 'Central European Summer Time',
       offset: 2
     }
@@ -273,10 +284,12 @@ module.exports = [
       'Europe/Zaporozhye'
     ],
     std: {
+      abbr: 'EET',
       name: 'Eastern European Standard Time',
       offset: 2
     },
     dst: {
+      abbr: 'EEST',
       name: 'Eastern European Summer Time',
       offset: 3
     }
@@ -286,6 +299,7 @@ module.exports = [
     dupe: true,
     ids: ['Asia/Gaza', 'Asia/Hebron'],
     std: {
+      abbr: 'EET',
       name: 'Eastern European Standard Time',
       offset: 2
     }
@@ -295,6 +309,7 @@ module.exports = [
     dupe: true,
     ids: ['Asia/Damascus', 'Asia/Amman'],
     std: {
+      abbr: 'EET',
       name: 'Eastern European Standard Time',
       offset: 2
     }
@@ -304,6 +319,7 @@ module.exports = [
     dupe: true,
     ids: ['Africa/Cairo', 'Africa/Tripoli', 'Europe/Kaliningrad'],
     std: {
+      abbr: 'EET',
       name: 'Eastern European Standard Time',
       offset: 2
     }
@@ -333,6 +349,7 @@ module.exports = [
     aliases: ['israel', 'israel standard time', 'jerusalem'],
     ids: ['Asia/Jerusalem'],
     std: {
+      abbr: 'IST',
       name: 'Israel Standard Time',
       offset: 2
     },
@@ -388,6 +405,7 @@ module.exports = [
     aliases: ['syowa'],
     ids: ['Antarctica/Syowa'],
     std: {
+      abbr: 'SYOT',
       name: 'Syowa Time',
       offset: 3
     },
@@ -399,6 +417,7 @@ module.exports = [
     aliases: ['arabian', 'arab standard time', 'kuwait', 'riyadh', 'arab', 'arabia', 'arabic'],
     ids: ['Asia/Baghdad', 'Asia/Aden', 'Asia/Bahrain', 'Asia/Kuwait', 'Asia/Qatar', 'Asia/Riyadh'],
     std: {
+      abbr: 'AST',
       name: 'Arabian Standard Time',
       offset: 3
     },
@@ -408,16 +427,19 @@ module.exports = [
   {
     name: 'Moscow Time',
     abbr: null,
-    aliases: ['moscow', 'russian standard time', 'st. petersburg', 'russian'],
+    aliases: ['moscow', 'russian standard time', 'st. petersburg', 'russian', 'volgograd time'],
     ids: [
       'Europe/Moscow',
       'Europe/Astrakhan',
       'Europe/Minsk',
       'Europe/Simferopol',
       'Europe/Ulyanovsk',
-      'Europe/Kirov'
+      'Europe/Kirov',
+      'Europe/Volgograd',
+      'Asia/Volgograd'
     ],
     std: {
+      abbr: 'MSK',
       name: 'Moscow Standard Time',
       offset: 3
     },
@@ -430,6 +452,8 @@ module.exports = [
     aliases: ['turkey', 'turkey standard time', 'istanbul'],
     ids: ['Europe/Istanbul'],
     std: {
+      name: 'Turkey Time',
+      abbr: 'TRT',
       offset: 3
     },
     dst: {},
@@ -441,10 +465,12 @@ module.exports = [
     aliases: ['iran', 'iran standard time', 'tehran'],
     ids: ['Asia/Tehran'],
     std: {
+      abbr: 'IRST',
       name: 'Iran Standard Time',
       offset: 3.5
     },
     dst: {
+      abbr: 'IRDT',
       name: 'Iran Daylight Time',
       offset: 4.5
     },
@@ -456,6 +482,7 @@ module.exports = [
     aliases: ['azerbaijan', 'azerbaijan standard time', 'baku'],
     ids: ['Asia/Baku'],
     std: {
+      abbr: 'AZT',
       name: 'Azerbaijan Standard Time',
       offset: 4
     },
@@ -481,6 +508,7 @@ module.exports = [
     aliases: ['georgia', 'georgian standard time', 'tbilisi', 'georgian'],
     ids: ['Asia/Tbilisi'],
     std: {
+      abbr: 'GET',
       name: 'Georgia Standard Time',
       offset: 4
     },
@@ -493,6 +521,7 @@ module.exports = [
     aliases: ['armenia', 'caucasus standard time', 'yerevan', 'caucasus'],
     ids: ['Asia/Yerevan'],
     std: {
+      abbr: 'AMT',
       name: 'Armenia Standard Time',
       offset: 4
     },
@@ -505,30 +534,21 @@ module.exports = [
     aliases: ['samara', 'russia time zone 3', 'izhevsk'],
     ids: ['Europe/Samara', 'Europe/Saratov'],
     std: {
+      abbr: 'SAMT',
       name: 'Samara Standard Time',
       offset: 4
     },
     dst: {},
     long: '(UTC+04:00) Izhevsk, Samara'
   },
-  {
-    name: 'Volgograd Time',
-    abbr: null,
-    aliases: ['volgograd', 'volgograd standard time'],
-    ids: ['Europe/Volgograd', 'Asia/Volgograd'],
-    std: {
-      name: 'Volgograd Standard Time',
-      offset: 4
-    },
-    dst: {},
-    long: '(UTC+04:00) Volgograd'
-  },
+
   {
     name: 'Seychelles Time',
     abbr: null,
     aliases: ['seychelles'],
     ids: ['Indian/Mahe'],
     std: {
+      abbr: 'SCT',
       name: 'Seychelles Time',
       offset: 4
     },
@@ -540,6 +560,7 @@ module.exports = [
     aliases: ['mauritius', 'mauritius standard time', 'port louis'],
     ids: ['Indian/Mauritius'],
     std: {
+      abbr: 'MUT',
       name: 'Mauritius Standard Time',
       offset: 4
     },
@@ -552,6 +573,7 @@ module.exports = [
     aliases: ['reunion'],
     ids: ['Indian/Reunion'],
     std: {
+      abbr: 'RET',
       name: 'Réunion Time',
       offset: 4
     },
@@ -563,6 +585,7 @@ module.exports = [
     aliases: ['afghanistan', 'afghanistan standard time', 'kabul'],
     ids: ['Asia/Kabul'],
     std: {
+      abbr: 'AFT',
       name: 'Afghanistan Time',
       offset: 4.5
     },
@@ -575,6 +598,7 @@ module.exports = [
     aliases: ['mawson'],
     ids: ['Antarctica/Mawson'],
     std: {
+      abbr: 'MAWT',
       name: 'Mawson Time',
       offset: 5
     },
@@ -583,10 +607,18 @@ module.exports = [
   {
     name: 'West Kazakhstan Time',
     abbr: null,
-    aliases: ['kazakhstan western', 'west asia standard time', 'ashgabat', 'tashkent', 'west asia'],
+    aliases: [
+      'kazakhstan western',
+      'west asia standard time',
+      'ashgabat',
+      'tashkent',
+      'west asia',
+      'alma ata'
+    ],
     ids: ['Asia/Aqtau', 'Asia/Aqtobe', 'Asia/Atyrau', 'Asia/Oral', 'Asia/Qyzylorda'],
     std: {
-      name: 'West Kazakhstan Time',
+      abbr: 'ALMT',
+      name: 'Alma-Ata Time',
       offset: 5
     },
     dst: {},
@@ -610,6 +642,7 @@ module.exports = [
     aliases: ['tajikistan'],
     ids: ['Asia/Dushanbe'],
     std: {
+      abbr: 'TJT',
       name: 'Tajikistan Time',
       offset: 5
     },
@@ -621,6 +654,7 @@ module.exports = [
     aliases: ['pakistan', 'pakistan standard time', 'islamabad', 'karachi'],
     ids: ['Asia/Karachi'],
     std: {
+      abbr: 'PKT',
       name: 'Pakistan Standard Time',
       offset: 5
     },
@@ -633,6 +667,7 @@ module.exports = [
     aliases: ['uzbekistan'],
     ids: ['Asia/Samarkand', 'Asia/Tashkent'],
     std: {
+      abbr: 'UZT',
       name: 'Uzbekistan Standard Time',
       offset: 5
     },
@@ -644,6 +679,7 @@ module.exports = [
     aliases: ['yekaterinburg', 'ekaterinburg standard time', 'ekaterinburg'],
     ids: ['Asia/Yekaterinburg'],
     std: {
+      abbr: 'YEKT',
       name: 'Yekaterinburg Standard Time',
       offset: 5
     },
@@ -656,6 +692,7 @@ module.exports = [
     aliases: ['french southern'],
     ids: ['Indian/Kerguelen'],
     std: {
+      abbr: 'TFT',
       name: 'French Southern & Antarctic Time',
       offset: 5
     },
@@ -667,6 +704,7 @@ module.exports = [
     aliases: ['maldives'],
     ids: ['Indian/Maldives'],
     std: {
+      abbr: 'MVT',
       name: 'Maldives Time',
       offset: 5
     },
@@ -691,6 +729,7 @@ module.exports = [
     aliases: ['nepal', 'nepal standard time', 'kathmandu'],
     ids: ['Asia/Katmandu'],
     std: {
+      abbr: 'NPT',
       name: 'Nepal Time',
       offset: 5.75
     },
@@ -703,6 +742,7 @@ module.exports = [
     aliases: ['vostok'],
     ids: ['Antarctica/Vostok'],
     std: {
+      abbr: 'MSK+4',
       name: 'Vostok Time',
       offset: 6
     },
@@ -714,6 +754,7 @@ module.exports = [
     aliases: ['kazakhstan eastern', 'central asia standard time', 'astana', 'central asia'],
     ids: ['Asia/Almaty', 'Asia/Qostanay'],
     std: {
+      abbr: 'ALMT',
       name: 'East Kazakhstan Time',
       offset: 6
     },
@@ -726,6 +767,7 @@ module.exports = [
     aliases: ['kyrgystan'],
     ids: ['Asia/Bishkek'],
     std: {
+      abbr: 'KGT',
       name: 'Kyrgyzstan Time',
       offset: 6
     },
@@ -737,6 +779,7 @@ module.exports = [
     aliases: ['bangladesh', 'bangladesh standard time', 'dhaka'],
     ids: ['Asia/Dhaka'],
     std: {
+      abbr: 'BST',
       name: 'Bangladesh Standard Time',
       offset: 6
     },
@@ -749,6 +792,7 @@ module.exports = [
     aliases: ['omsk', 'omsk standard time'],
     ids: ['Asia/Omsk', 'Asia/Tomsk'],
     std: {
+      abbr: 'OMST',
       name: 'Omsk Standard Time',
       offset: 6
     },
@@ -770,9 +814,10 @@ module.exports = [
   {
     name: 'Indian Ocean Time',
     abbr: null,
-    aliases: ['indian ocean'],
+    aliases: ['indian ocean', 'indian chagos'],
     ids: ['Indian/Chagos'],
     std: {
+      abbr: 'IOT',
       name: 'Indian Ocean Time',
       offset: 6
     },
@@ -784,6 +829,7 @@ module.exports = [
     aliases: ['myanmar', 'myanmar standard time'],
     ids: ['Asia/Rangoon'],
     std: {
+      abbr: 'MMT',
       name: 'Myanmar Time',
       offset: 6.5
     },
@@ -796,6 +842,7 @@ module.exports = [
     aliases: ['cocos'],
     ids: ['Indian/Cocos'],
     std: {
+      abbr: 'CCT',
       name: 'Cocos Islands Time',
       offset: 6.5
     },
@@ -807,6 +854,7 @@ module.exports = [
     aliases: ['davis'],
     ids: ['Antarctica/Davis'],
     std: {
+      abbr: 'DAVT',
       name: 'Davis Time',
       offset: 7
     },
@@ -826,6 +874,7 @@ module.exports = [
     ],
     ids: ['Asia/Bangkok', 'Asia/Phnom_Penh', 'Asia/Saigon', 'Asia/Vientiane'],
     std: {
+      abbr: 'ICT',
       name: 'Indochina Time',
       offset: 7
     },
@@ -838,6 +887,7 @@ module.exports = [
     aliases: ['hovd', 'w. mongolia standard time', 'west mongolia', 'western mongolia'],
     ids: ['Asia/Hovd'],
     std: {
+      abbr: 'HOVT',
       name: 'Hovd Standard Time',
       offset: 7
     },
@@ -862,6 +912,7 @@ module.exports = [
     aliases: ['krasnoyarsk', 'north asia standard time', 'north asia'],
     ids: ['Asia/Krasnoyarsk', 'Asia/Novokuznetsk', 'Asia/Barnaul'],
     std: {
+      abbr: 'KRAT',
       name: 'Krasnoyarsk Standard Time',
       offset: 7
     },
@@ -874,6 +925,7 @@ module.exports = [
     aliases: ['novosibirsk', 'n. central asia standard time', 'north central asia'],
     ids: ['Asia/Novosibirsk'],
     std: {
+      abbr: 'NOVT',
       name: 'Novosibirsk Standard Time',
       offset: 7
     },
@@ -886,6 +938,7 @@ module.exports = [
     aliases: ['christmas'],
     ids: ['Indian/Christmas'],
     std: {
+      abbr: 'CXT',
       name: 'Christmas Island Time',
       offset: 7
     },
@@ -897,6 +950,7 @@ module.exports = [
     aliases: ['brunei'],
     ids: ['Asia/Brunei'],
     std: {
+      abbr: 'BNT',
       name: 'Brunei Darussalam Time',
       offset: 8
     },
@@ -908,6 +962,7 @@ module.exports = [
     aliases: ['mongolia', 'ulaanbaatar standard time', 'ulaanbaatar'],
     ids: ['Asia/Ulaanbaatar', 'Asia/Choibalsan'],
     std: {
+      abbr: 'ULAT',
       name: 'Ulaanbaatar Standard Time',
       offset: 8
     },
@@ -932,6 +987,7 @@ module.exports = [
     aliases: ['irkutsk', 'north asia east standard time', 'north asia east'],
     ids: ['Asia/Irkutsk'],
     std: {
+      abbr: 'IRKT',
       name: 'Irkutsk Standard Time',
       offset: 8
     },
@@ -956,6 +1012,7 @@ module.exports = [
     aliases: ['china', 'china standard time', 'beijing', 'chongqing', 'hong kong', 'urumqi'],
     ids: ['Asia/Shanghai', 'Asia/Macau', 'Asia/Urumqi'],
     std: {
+      abbr: 'CST',
       name: 'China Standard Time',
       offset: 8
     },
@@ -1055,6 +1112,7 @@ module.exports = [
     aliases: ['yakutsk', 'yakutsk standard time'],
     ids: ['Asia/Yakutsk', 'Asia/Chita', 'Asia/Khandyga'],
     std: {
+      abbr: 'YAKT',
       name: 'Yakutsk Standard Time',
       offset: 9
     },
@@ -1067,6 +1125,7 @@ module.exports = [
     aliases: ['east timor'],
     ids: ['Asia/Dili'],
     std: {
+      abbr: 'TLT',
       name: 'East Timor Time',
       offset: 9
     },
@@ -1090,6 +1149,7 @@ module.exports = [
     aliases: ['korea', 'korea standard time', 'seoul'],
     ids: ['Asia/Seoul', 'Asia/Pyongyang'],
     std: {
+      abbr: 'KST',
       name: 'Korean Standard Time',
       offset: 9
     },
@@ -1138,6 +1198,7 @@ module.exports = [
     long: '(UTC+09:30) Adelaide'
   },
   {
+    name: '',
     dupe: true,
     ids: ['Australia/Darwin'],
     std: {
@@ -1189,7 +1250,7 @@ module.exports = [
     long: '(UTC+10:00) Canberra, Melbourne, Sydney'
   },
   {
-    name: '',
+    name: 'Brisbane Time',
     dupe: true,
     ids: ['Australia/Brisbane', 'Australia/Lindeman'],
     std: {
@@ -1204,6 +1265,7 @@ module.exports = [
     aliases: ['vladivostok', 'vladivostok standard time'],
     ids: ['Asia/Vladivostok', 'Asia/Ust-Nera'],
     std: {
+      abbr: 'VLAT',
       name: 'Vladivostok Standard Time',
       offset: 10
     },
@@ -1264,6 +1326,7 @@ module.exports = [
     aliases: ['casey'],
     ids: ['Antarctica/Casey'],
     std: {
+      abbr: 'CAST',
       name: 'Casey Time',
       offset: 11
     },
@@ -1302,6 +1365,7 @@ module.exports = [
     aliases: ['srednekolymsk', 'russia time zone 10', 'chokurdakh'],
     ids: ['Asia/Srednekolymsk'],
     std: {
+      abbr: 'SRET',
       name: 'Srednekolymsk Standard Time',
       offset: 11
     },
@@ -1313,10 +1377,7 @@ module.exports = [
     abbr: null,
     aliases: ['papua new_guinea'],
     ids: ['Pacific/Bougainville', 'Pacific/Port_Moresby'],
-    std: {
-      name: 'Papua New Guinea Time',
-      offset: 11
-    },
+    std: { abbrev: 'PGT', name: 'Papua New Guinea Time', offset: 11 },
     dst: {}
   },
   {
@@ -1399,6 +1460,7 @@ module.exports = [
     aliases: ['anadyr', 'russia time zone 11', 'petropavlovsk kamchatsky'],
     ids: ['Asia/Anadyr'],
     std: {
+      abbrev: 'ANAT',
       name: 'Anadyr Standard Time',
       offset: 12
     },
@@ -1423,6 +1485,7 @@ module.exports = [
     aliases: ['fiji', 'fiji standard time'],
     ids: ['Pacific/Fiji'],
     std: {
+      abbr: 'FJT',
       name: 'Fiji Standard Time',
       offset: 12
     },
@@ -1438,6 +1501,7 @@ module.exports = [
     aliases: ['tuvalu'],
     ids: ['Pacific/Funafuti'],
     std: {
+      abbr: 'TVT',
       name: 'Tuvalu Time',
       offset: 12
     },
@@ -1449,6 +1513,7 @@ module.exports = [
     aliases: ['marshall islands'],
     ids: ['Pacific/Kwajalein', 'Pacific/Majuro'],
     std: {
+      abbrev: 'MHT',
       name: 'Marshall Islands Time',
       offset: 12
     },
@@ -1538,6 +1603,7 @@ module.exports = [
     aliases: ['apia'],
     ids: ['Pacific/Apia'],
     std: {
+      abbr: 'WST',
       name: 'West Samoa Time',
       offset: 13
     },
@@ -1601,10 +1667,7 @@ module.exports = [
     abbr: 'SST',
     aliases: ['samoa', 'samoa standard time'],
     ids: ['Pacific/Midway', 'Pacific/Pago_Pago'],
-    std: {
-      name: 'Samoa Standard Time',
-      offset: -11
-    },
+    std: { abbr: 'SST', name: 'Samoa Standard Time', offset: -11 },
     dst: {},
     long: '(UTC+13:00) Samoa'
   },
@@ -1625,6 +1688,7 @@ module.exports = [
     aliases: ['cook'],
     ids: ['Pacific/Rarotonga'],
     std: {
+      abbr: 'CKT',
       name: 'Cook Islands Standard Time',
       offset: -10
     },
@@ -1780,6 +1844,7 @@ module.exports = [
   {
     name: '',
     dupe: true,
+    abbr: 'MT',
     std: {
       name: 'Mountain Standard Time',
       abbr: 'MST',
@@ -1824,7 +1889,12 @@ module.exports = [
   {
     name: '',
     dupe: true,
-    ids: ['America/Hermosillo']
+    ids: ['America/Hermosillo'],
+    std: {
+      name: 'Mexican Pacific Standard Time',
+      abbr: 'HNPMX',
+      offset: -7
+    }
   },
   {
     name: 'Central Time',
@@ -1852,16 +1922,9 @@ module.exports = [
     long: '(UTC-06:00) Central Time (US & Canada)'
   },
   {
-    dupe: true,
-    ids: ['America/Indiana', 'America/North_Dakota'],
-    std: {
-      name: 'Central Standard Time',
-      abbr: 'CST',
-      offset: -6
-    }
-  },
-  {
-    dupe: true,
+    name: 'Central Mexico Time',
+    long: '(UTC-06:00) Guadalajara, Mexico City, Monterrey',
+    aliases: ['guadalajara', 'mexico city', 'monterrey', 'central mexico', 'central mexican'],
     ids: ['America/Mexico_City', 'America/Merida', 'America/Monterrey', 'America/Bahia_Banderas'],
     std: {
       name: 'Central Standard Time',
@@ -1875,8 +1938,11 @@ module.exports = [
     }
   },
   {
+    name: '',
     dupe: true,
     ids: [
+      'America/Indiana',
+      'America/North_Dakota',
       'America/Belize',
       'America/Costa_Rica',
       'America/El_Salvador',
@@ -2049,6 +2115,7 @@ module.exports = [
     aliases: ['peru'],
     ids: ['America/Lima'],
     std: {
+      abbrev: 'PET',
       name: 'Peru Standard Time',
       offset: -5
     },
@@ -2082,11 +2149,12 @@ module.exports = [
     long: '(UTC-04:00) Atlantic Time (Canada)'
   },
   {
+    name: '',
     dupe: true,
     ids: [
+      'America/Puerto_Rico',
       'America/Montserrat',
       'America/Port_of_Spain',
-      'America/Puerto_Rico',
       'America/Santo_Domingo',
       'America/St_Barthelemy',
       'America/St_Kitts',
@@ -2121,6 +2189,7 @@ module.exports = [
     aliases: ['paraguay', 'paraguay standard time', 'asuncion'],
     ids: ['America/Asuncion'],
     std: {
+      abbrev: 'PYT',
       name: 'Paraguay Standard Time',
       offset: -4
     },
@@ -2142,6 +2211,7 @@ module.exports = [
     ],
     ids: ['America/Boa_Vista', 'America/Manaus', 'America/Porto_Velho'],
     std: {
+      abbrev: 'AMT',
       name: 'Amazon Standard Time',
       offset: -4
     },
@@ -2226,6 +2296,7 @@ module.exports = [
       'America/Santarem'
     ],
     std: {
+      abbr: 'BRT',
       name: 'Brasilia Standard Time',
       offset: -3
     },
@@ -2402,6 +2473,7 @@ module.exports = [
     aliases: ['azores', 'azores standard time'],
     ids: ['Atlantic/Azores'],
     std: {
+      abbr: 'AZOT',
       name: 'Azores Standard Time',
       offset: -1
     },
