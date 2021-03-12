@@ -19,7 +19,11 @@ test('display-test', (t) => {
     ['makassar', 'WITA'],
     ['acst', 'ACST', 'ACDT'],
     ['Adelaide', 'ACST', 'ACDT'],
-    ['darwin', 'ACST']
+    ['darwin', 'ACST'],
+    ['Etc/GMT+8', 'GMT+8']
+    // ['Etc/UTC+8', 'GMT+8'],
+    // ['UTC+8', 'GMT+8'],
+    // ['8h', 'GMT-8']
   ]
   arr.forEach((a) => {
     let display = soft(a[0])[0]

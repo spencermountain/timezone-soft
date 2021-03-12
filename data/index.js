@@ -44,7 +44,7 @@ metazones.forEach((obj) => {
   let str = obj.std.name.toLowerCase()
   all[str] = all[str] || zone
   if (obj.std.abbrev) {
-    str = obj.std.abbrev.toLowerCase()
+    str = obj.std.abbr.toLowerCase()
     all[str] = all[str] || zone
   }
   //do daylight time, too
@@ -53,7 +53,7 @@ metazones.forEach((obj) => {
     all[str] = all[str] || zone
   }
   if (obj.dl && obj.dl.abbrev) {
-    str = obj.dl.abbrev.toLowerCase()
+    str = obj.dl.abbr.toLowerCase()
     all[str] = all[str] || zone
   }
   // do aliases

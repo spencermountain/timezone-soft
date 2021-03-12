@@ -1,3 +1,8 @@
+### 1.2.0 [March 2021]
+- **[change]** - return abbr instead of sometimes 'abbrev' 
+- **[change]** - improved metazone results & abbreviations
+- **[change]** - shorten abbrev: 'GMT+8' instead of etc/gmt+8
+  
 ### 1.0.0 [March 2021]
 - **[breaking]** - return an array for `.find()`
 - rename library to *timezone-soft*
