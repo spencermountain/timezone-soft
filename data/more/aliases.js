@@ -2,7 +2,7 @@
 
 module.exports = {
   // 'Canada/East-Saskatchewan': 'America/Regina',
-  'Asia/Volgograd': 'Europe/Moscow',
+  'asia/volgograd': 'Europe/Moscow',
   // 'America/Argentina': '', //multiple timezones...
   // 'America/Indiana': '', //both central/eastern
   // 'America/Kentucky': '', //both central/eastern
