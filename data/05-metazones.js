@@ -905,3 +905,8 @@ module.exports = [
   // syowa: ['Antarctica/Syowa'],
   // vostok: ['Antarctica/Vostok'],
 ]
+// let arr = module.exports
+// console.log(arr.length, 'metazones')
+// let ids = 0
+// arr.forEach((o) => (ids += o.ids.length))
+// console.log(ids, 'ids')

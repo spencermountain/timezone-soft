@@ -70,14 +70,20 @@ module.exports = [
     name: 'Western European Time',
     abbr: null,
     aliases: ['europe western'],
-    ids: [
-      'Europe/Lisbon',
-      'Africa/Casablanca',
-      'Africa/El_Aaiun',
-      'Atlantic/Canary',
-      'Atlantic/Faeroe',
-      'Atlantic/Madeira'
-    ],
+    ids: ['Europe/Lisbon', 'Atlantic/Canary', 'Atlantic/Faeroe', 'Atlantic/Madeira'],
+    std: {
+      name: 'Western European Standard Time',
+      offset: 0
+    },
+    dst: {
+      name: 'Western European Summer Time',
+      offset: 1
+    }
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['Africa/Casablanca', 'Africa/El_Aaiun'],
     std: {
       name: 'Western European Standard Time',
       offset: 0
@@ -118,8 +124,6 @@ module.exports = [
     ids: [
       'Europe/Paris',
       'Africa/Ceuta',
-      'Africa/Algiers', //
-      'Africa/Tunis', //
       'Arctic/Longyearbyen',
       'Europe/Amsterdam',
       'Europe/Andorra',
@@ -161,6 +165,22 @@ module.exports = [
       offset: 2
     },
     long: '(UTC+01:00) Brussels, Copenhagen, Madrid, Paris'
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: [
+      'Africa/Algiers', //
+      'Africa/Tunis' //
+    ],
+    std: {
+      name: 'Central European Standard Time',
+      offset: 1
+    },
+    dst: {
+      name: 'Central European Summer Time',
+      offset: 2
+    }
   },
   {
     name: 'West Africa Time',
@@ -237,19 +257,12 @@ module.exports = [
     aliases: ['europe eastern'],
     ids: [
       'Asia/Beirut',
-      'Africa/Cairo',
-      'Africa/Tripoli',
-      'Asia/Amman',
-      'Asia/Damascus',
       'Asia/Famagusta',
-      'Asia/Gaza',
-      'Asia/Hebron',
       'Asia/Nicosia',
       'Europe/Athens',
       'Europe/Bucharest',
       'Europe/Chisinau',
       'Europe/Helsinki',
-      'Europe/Kaliningrad',
       'Europe/Kiev',
       'Europe/Mariehamn',
       'Europe/Riga',
@@ -266,6 +279,33 @@ module.exports = [
     dst: {
       name: 'Eastern European Summer Time',
       offset: 3
+    }
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['Asia/Gaza', 'Asia/Hebron'],
+    std: {
+      name: 'Eastern European Standard Time',
+      offset: 2
+    }
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['Asia/Damascus', 'Asia/Amman'],
+    std: {
+      name: 'Eastern European Standard Time',
+      offset: 2
+    }
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['Africa/Cairo', 'Africa/Tripoli', 'Europe/Kaliningrad'],
+    std: {
+      name: 'Eastern European Standard Time',
+      offset: 2
     }
   },
   {
@@ -1084,7 +1124,7 @@ module.exports = [
     name: 'Central Australia Time',
     abbr: 'ACT',
     aliases: ['australia central', 'cen. australia standard time', 'adelaide', 'central australia'],
-    ids: ['Australia/Adelaide', 'Australia/Broken_Hill', 'Australia/Darwin'],
+    ids: ['Australia/Adelaide', 'Australia/Broken_Hill'],
     std: {
       name: 'Australian Central Standard Time',
       abbr: 'ACST',
@@ -1096,6 +1136,15 @@ module.exports = [
       offset: 10.5
     },
     long: '(UTC+09:30) Adelaide'
+  },
+  {
+    dupe: true,
+    ids: ['Australia/Darwin'],
+    std: {
+      name: 'Australian Central Standard Time',
+      abbr: 'ACST',
+      offset: 9.5
+    }
   },
   {
     name: 'Dumont-d’Urville Time',
@@ -1123,10 +1172,8 @@ module.exports = [
     ids: [
       'Australia/Sydney',
       'Antarctica/Macquarie',
-      'Australia/Brisbane',
       'Australia/Currie',
       'Australia/Hobart',
-      'Australia/Lindeman',
       'Australia/Melbourne'
     ],
     std: {
@@ -1140,6 +1187,16 @@ module.exports = [
       offset: 11
     },
     long: '(UTC+10:00) Canberra, Melbourne, Sydney'
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['Australia/Brisbane', 'Australia/Lindeman'],
+    std: {
+      name: 'Australian Eastern Standard Time',
+      abbr: 'AEST',
+      offset: 10
+    }
   },
   {
     name: 'Vladivostok Time',
@@ -1600,7 +1657,7 @@ module.exports = [
     name: 'Hawaii-Aleutian Time',
     abbr: 'HAT',
     aliases: ['hawaii aleutian', 'aleutian standard time', 'aleutian'],
-    ids: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston'],
+    ids: ['Pacific/Honolulu', 'Pacific/Johnston'],
     std: {
       name: 'Hawaii-Aleutian Standard Time',
       abbr: 'HAST',
@@ -1612,6 +1669,23 @@ module.exports = [
       offset: -8
     },
     long: '(UTC-09:00) Aleutian Islands'
+  },
+  {
+    name: 'Aleutian Standard Time',
+    iso: '(UTC-10:00) Aleutian Islands',
+    aliases: ['aleutian'],
+    ids: ['America/Adak'],
+    abbr: 'HST',
+    std: {
+      name: 'Hawaii Standard Time',
+      abbr: 'HST',
+      offset: -10
+    },
+    dst: {
+      name: 'Hawaii Daylight Time',
+      abbr: 'HDT',
+      offset: -9
+    }
   },
   {
     name: 'Alaska Time',
@@ -1683,18 +1757,12 @@ module.exports = [
     abbr: 'MT',
     aliases: ['america mountain', 'mountain standard time', 'mountain'],
     ids: [
-      'America/Phoenix',
       'America/Boise',
       'America/Cambridge_Bay',
-      'America/Creston',
-      'America/Dawson',
-      'America/Dawson_Creek',
       'America/Denver',
       'America/Edmonton',
-      'America/Fort_Nelson',
       'America/Inuvik',
       'America/Ojinaga',
-      'America/Whitehorse',
       'America/Yellowknife'
     ],
     std: {
@@ -1710,6 +1778,26 @@ module.exports = [
     long: '(UTC-07:00) Mountain Time (US & Canada)'
   },
   {
+    name: '',
+    dupe: true,
+    std: {
+      name: 'Mountain Standard Time',
+      abbr: 'MST',
+      offset: -7
+    },
+    ids: ['America/Phoenix', 'America/Creston', 'America/Dawson_Creek', 'America/Fort_Nelson']
+  },
+  {
+    name: '',
+    dupe: true,
+    std: {
+      name: 'Mountain Standard Time',
+      abbr: 'MST',
+      offset: -7
+    },
+    ids: ['America/Dawson', 'America/Whitehorse']
+  },
+  {
     name: 'Mexican Pacific Time',
     abbr: 'HPMX',
     aliases: [
@@ -1720,7 +1808,7 @@ module.exports = [
       'mazatlan',
       'mountain mexico'
     ],
-    ids: ['America/Chihuahua', 'America/Hermosillo', 'America/Mazatlan'],
+    ids: ['America/Chihuahua', 'America/Mazatlan'],
     std: {
       name: 'Mexican Pacific Standard Time',
       abbr: 'HNPMX',
@@ -1734,36 +1822,22 @@ module.exports = [
     long: '(UTC-07:00) Chihuahua, La Paz, Mazatlan'
   },
   {
+    name: '',
+    dupe: true,
+    ids: ['America/Hermosillo']
+  },
+  {
     name: 'Central Time',
     abbr: 'CT',
     aliases: ['america central', 'central standard time', 'central'],
     ids: [
       'America/Chicago',
-      'America/Bahia_Banderas',
-      'America/Belize',
-      'America/Costa_Rica',
-      'America/El_Salvador',
-      'America/Guatemala',
-      'America/Indiana/Knox',
-      'America/Indiana/Tell_City',
-      'America/Managua',
       'America/Matamoros',
       'America/Menominee',
-      'America/Merida',
-      'America/Mexico_City',
-      'America/Monterrey',
-      'America/North_Dakota/Beulah',
-      'America/North_Dakota/Center',
-      'America/North_Dakota/New_Salem',
       'America/Rainy_River',
       'America/Rankin_Inlet',
-      'America/Regina',
       'America/Resolute',
-      'America/Swift_Current',
-      'America/Tegucigalpa',
-      'America/Winnipeg',
-      'America/Indiana',
-      'America/North_Dakota'
+      'America/Winnipeg'
     ],
     std: {
       name: 'Central Standard Time',
@@ -1776,6 +1850,52 @@ module.exports = [
       offset: -5
     },
     long: '(UTC-06:00) Central Time (US & Canada)'
+  },
+  {
+    dupe: true,
+    ids: ['America/Indiana', 'America/North_Dakota'],
+    std: {
+      name: 'Central Standard Time',
+      abbr: 'CST',
+      offset: -6
+    }
+  },
+  {
+    dupe: true,
+    ids: ['America/Mexico_City', 'America/Merida', 'America/Monterrey', 'America/Bahia_Banderas'],
+    std: {
+      name: 'Central Standard Time',
+      abbr: 'CST',
+      offset: -6
+    },
+    dst: {
+      name: 'Central Daylight Time',
+      abbr: 'CDT',
+      offset: -5
+    }
+  },
+  {
+    dupe: true,
+    ids: [
+      'America/Belize',
+      'America/Costa_Rica',
+      'America/El_Salvador',
+      'America/Guatemala',
+      'America/Indiana/Knox',
+      'America/Indiana/Tell_City',
+      'America/Managua',
+      'America/North_Dakota/Beulah',
+      'America/North_Dakota/Center',
+      'America/North_Dakota/New_Salem',
+      'America/Regina',
+      'America/Swift_Current',
+      'America/Tegucigalpa'
+    ],
+    std: {
+      name: 'Central Standard Time',
+      abbr: 'CST',
+      offset: -6
+    }
   },
   {
     name: 'Northwest Mexico Time',
@@ -1834,17 +1954,11 @@ module.exports = [
     aliases: ['america eastern', 'eastern standard time', 'eastern'],
     ids: [
       'America/New_York',
-      'America/Coral_Harbour',
       'America/Detroit',
       'America/Grand_Turk',
-      'America/Indiana/Marengo',
-      'America/Indiana/Petersburg',
-      'America/Indiana/Vevay',
-      'America/Indiana/Vincennes',
-      'America/Indiana/Winamac',
+
       'America/Indianapolis',
       'America/Iqaluit',
-      'America/Kentucky/Monticello',
       'America/Louisville',
       'America/Nassau',
       'America/Nipigon',
@@ -1853,11 +1967,7 @@ module.exports = [
       'America/Thunder_Bay',
       'America/Toronto',
       'America/Montreal',
-      'America/Kentucky',
-      'America/Cancun', //
-      'America/Cayman', //
-      'America/Jamaica', //
-      'America/Panama' //
+      'America/Kentucky'
     ],
     std: {
       name: 'Eastern Standard Time',
@@ -1870,6 +1980,28 @@ module.exports = [
       offset: -4
     },
     long: '(UTC-05:00) Eastern Time (US & Canada)'
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: [
+      'America/Coral_Harbour',
+      'America/Indiana/Marengo',
+      'America/Indiana/Petersburg',
+      'America/Indiana/Vevay',
+      'America/Indiana/Vincennes',
+      'America/Indiana/Winamac',
+      'America/Kentucky/Monticello',
+      'America/Cancun', //
+      'America/Cayman', //
+      'America/Jamaica', //
+      'America/Panama' //
+    ],
+    std: {
+      name: 'Eastern Standard Time',
+      abbr: 'EST',
+      offset: -5
+    }
   },
   {
     name: 'Acre Time',
@@ -1928,33 +2060,13 @@ module.exports = [
     aliases: ['atlantic', 'atlantic standard time'],
     ids: [
       'America/Halifax',
-      'America/Anguilla',
-      'America/Antigua',
-      'America/Aruba',
-      'America/Barbados',
-      'America/Blanc-Sablon',
-      'America/Curacao',
-      'America/Dominica',
+
       'America/Glace_Bay',
       'America/Goose_Bay',
-      'America/Grenada',
-      'America/Guadeloupe',
-      'America/Kralendijk',
-      'America/Lower_Princes',
-      'America/Marigot',
-      'America/Martinique',
+
       'America/Moncton',
-      'America/Montserrat',
-      'America/Port_of_Spain',
-      'America/Puerto_Rico',
-      'America/Santo_Domingo',
-      'America/St_Barthelemy',
-      'America/St_Kitts',
-      'America/St_Lucia',
-      'America/St_Thomas',
-      'America/St_Vincent',
+
       'America/Thule',
-      'America/Tortola',
       'Atlantic/Bermuda'
     ],
     std: {
@@ -1968,6 +2080,40 @@ module.exports = [
       offset: -3
     },
     long: '(UTC-04:00) Atlantic Time (Canada)'
+  },
+  {
+    dupe: true,
+    ids: [
+      'America/Montserrat',
+      'America/Port_of_Spain',
+      'America/Puerto_Rico',
+      'America/Santo_Domingo',
+      'America/St_Barthelemy',
+      'America/St_Kitts',
+      'America/St_Lucia',
+      'America/St_Thomas',
+      'America/St_Vincent',
+      'America/Tortola',
+      'America/Grenada',
+      'America/Guadeloupe',
+      'America/Kralendijk',
+      'America/Lower_Princes',
+      'America/Marigot',
+      'America/Martinique',
+      'America/Anguilla',
+      'America/Antigua',
+      'America/Aruba',
+      'America/Barbados',
+      'America/Blanc-Sablon',
+      'America/Curacao',
+      'America/Dominica'
+    ],
+    std: {
+      name: 'Atlantic Standard Time',
+      abbr: 'AST',
+      offset: -4
+    },
+    dst: {}
   },
   {
     name: 'Paraguay Time',
@@ -1994,19 +2140,22 @@ module.exports = [
       'central brazilian',
       'central brazil'
     ],
-    ids: [
-      'America/Boa_Vista',
-      'America/Campo_Grande',
-      'America/Cuiaba',
-      'America/Manaus',
-      'America/Porto_Velho'
-    ],
+    ids: ['America/Boa_Vista', 'America/Manaus', 'America/Porto_Velho'],
     std: {
       name: 'Amazon Standard Time',
       offset: -4
     },
     dst: {},
     long: '(UTC-04:00) Cuiaba'
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['America/Campo_Grande', 'America/Cuiaba'],
+    std: {
+      name: 'Amazon Standard Time',
+      offset: -4
+    }
   },
   {
     name: 'Venezuela Time',
@@ -2191,7 +2340,7 @@ module.exports = [
     name: 'Chile Time',
     abbr: 'CLT',
     aliases: ['chile'],
-    ids: ['America/Santiago', 'America/Punta_Arenas', 'Antarctica/Palmer'],
+    ids: ['America/Santiago'],
     std: {
       name: 'Chile Standard Time',
       abbr: 'CLT',
@@ -2201,6 +2350,16 @@ module.exports = [
       name: 'Chile Summer Time',
       abbr: 'CLST',
       offset: -4
+    }
+  },
+  {
+    name: '',
+    dupe: true,
+    ids: ['Antarctica/Palmer', 'America/Punta_Arenas'],
+    std: {
+      name: 'Chile Standard Time',
+      abbr: 'CLT',
+      offset: -3
     }
   },
   {
@@ -2266,3 +2425,8 @@ module.exports = [
     long: '(UTC-01:00) Cabo Verde Is.'
   }
 ]
+let arr = module.exports
+// console.log(arr.length, 'metazones')
+// let ids = 0
+// arr.forEach((o) => (ids += o.ids.length))
+// console.log(ids, 'ids')
