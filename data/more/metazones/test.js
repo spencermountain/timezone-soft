@@ -14,9 +14,6 @@ meta = meta.sort((a, b) => {
 })
 
 meta.forEach((obj) => {
-  if (obj.std.abbr === undefined) {
-    count += 1
-    console.log(obj.std)
-  }
+  obj.hem = zones[obj.ids[0].toLowerCase()].hem
 })
-console.log(count)
+console.log(JSON.stringify(meta, null, 2))
