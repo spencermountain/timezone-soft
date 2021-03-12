@@ -43,8 +43,8 @@ module.exports = [
       'Europe/Jersey'
     ],
     std: {
-      name: 'British Time',
-      abbr: 'BT',
+      name: 'Greenwich Mean Time',
+      abbr: 'GMT',
       offset: 0
     },
     dst: {
@@ -274,12 +274,12 @@ module.exports = [
     std: {
       name: 'Alaska Standard Time',
       abbr: 'AKST',
-      offset: -8
+      offset: -9
     },
     dst: {
       name: 'Alaska Daylight Time',
       abbr: 'AKDT',
-      offset: -7
+      offset: -8
     }
   },
   {
@@ -424,12 +424,12 @@ module.exports = [
     std: {
       name: 'Central Standard Time',
       abbr: 'CST',
-      offset: -5
+      offset: -6
     },
     dst: {
       name: 'Central Daylight Time',
       abbr: 'CDT',
-      offset: -4
+      offset: -5
     }
   },
   {
@@ -483,12 +483,12 @@ module.exports = [
     std: {
       name: 'Mountain Standard Time',
       abbr: 'MST',
-      offset: -6
+      offset: -7
     },
     dst: {
       name: 'Mountain Daylight Time',
       abbr: 'MDT',
-      offset: -5
+      offset: -6
     }
   },
   {
@@ -592,12 +592,12 @@ module.exports = [
     std: {
       name: 'West Greenland Standard Time',
       abbr: 'HNOG',
-      offset: -2
+      offset: -3
     },
     dst: {
       name: 'West Greenland Summer Time',
       abbr: 'HEOG',
-      offset: -1
+      offset: -2
     }
   },
   {
@@ -632,12 +632,12 @@ module.exports = [
     std: {
       name: 'Cuba Standard Time',
       abbr: 'HNCU',
-      offset: -4
+      offset: -5
     },
     dst: {
       name: 'Cuba Daylight Time',
       abbr: 'HECU',
-      offset: -3
+      offset: -4
     }
   },
   {
@@ -671,12 +671,12 @@ module.exports = [
     std: {
       name: 'Pacific Standard Time',
       abbr: 'PST',
-      offset: -7
+      offset: -8
     },
     dst: {
       name: 'Pacific Daylight Time',
       abbr: 'PDT',
-      offset: -6
+      offset: -7
     }
   },
   {
@@ -687,12 +687,12 @@ module.exports = [
     std: {
       name: 'St. Pierre & Miquelon Standard Time',
       abbr: 'HNPM',
-      offset: -2
+      offset: -3
     },
     dst: {
       name: 'St. Pierre & Miquelon Daylight Time',
       abbr: 'HEPM',
-      offset: -1
+      offset: -2
     }
   },
   {
@@ -786,12 +786,12 @@ module.exports = [
     std: {
       name: 'Newfoundland Standard Time',
       abbr: 'HNTN',
-      offset: -2.5
+      offset: -3.5
     },
     dst: {
       name: 'Newfoundland Daylight Time',
       abbr: 'HETN',
-      offset: -1.5
+      offset: -2.5
     }
   },
   {
@@ -846,12 +846,12 @@ module.exports = [
     std: {
       name: 'Australian Eastern Standard Time',
       abbr: 'AEST',
-      offset: 11
+      offset: 10
     },
     dst: {
       name: 'Australian Eastern Daylight Time',
       abbr: 'AEDT',
-      offset: 12
+      offset: 11
     }
   },
   {
@@ -1158,11 +1158,11 @@ module.exports = [
     ids: ['Asia/Jerusalem'],
     std: {
       name: 'Israel Standard Time',
-      offset: 3
+      offset: 2
     },
     dst: {
       name: 'Israel Daylight Time',
-      offset: 4
+      offset: 3
     }
   },
   {
@@ -1362,7 +1362,7 @@ module.exports = [
     ids: ['Asia/Srednekolymsk'],
     std: {
       name: 'Srednekolymsk Standard Time',
-      offset: 12
+      offset: 11
     },
     dst: {}
   },
@@ -1578,7 +1578,7 @@ module.exports = [
     ],
     std: {
       name: 'Moscow Standard Time',
-      offset: 4
+      offset: 3
     },
     dst: {}
   },
@@ -1936,12 +1936,12 @@ module.exports = [
     std: {
       abbr: 'NFT',
       name: 'Norfolk Island Standard Time',
-      offset: 11.5
+      offset: 12
     },
     dst: {
       abbr: 'NFDT',
       name: 'Norfolk Island Daylight Time',
-      offset: 12.5
+      offset: 11
     }
   },
   {

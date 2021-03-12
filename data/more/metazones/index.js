@@ -1,34 +1,44 @@
-const tzdb = require('./tzdb') //149
-const cldr = require('./cldr') //138
-console.log(tzdb.length)
-console.log(cldr.length)
+let tzdb = require('./tzdb') //149
+let cldr = require('./cldr') //138
+// console.log(tzdb.length)
+// console.log(cldr.length)
+const matched = require('./pairs')
+let alreadyTZ = {}
+let alreadyCL = {}
+matched.forEach((a) => {
+  alreadyTZ[a[1]] = true
+  alreadyCL[a[2]] = true
+})
 
-let mixed = tzdb.forEach((obj) => {
-  let id = obj.ids[0]
+let pairs = []
+console.log(tzdb.length, 'total')
+tzdb = tzdb.filter((o) => !alreadyTZ[o.name])
+cldr = cldr.filter((o) => !alreadyCL[o.name]) //.reverse()
+console.log(tzdb.length, 'to go')
+console.log(
+  tzdb.filter((o) => !alreadyTZ[o.name]).map((o) => [o.std.offset, o.name, '', o.ids.length])
+)
+
+tzdb.forEach((obj) => {
+  let id = obj.ids[3]
+  // let word = obj.name.split(' ')[0]
+  // let found = cldr.find((o) => word !== 'Time' && o.name.match(word))
+  // let found = cldr.find((o) => {
+  //   return JSON.stringify(o.ids) === JSON.stringify(obj.ids)
+  // })
+  // if (found && obj.ids[1]) {
+
   let found = cldr.find((o) => o.ids.find((i) => i === id))
-  // if (obj.ids[1]) {
-  //   let found2 = cldr.find((o) => o.ids.find((i) => i === obj.ids[1]))
-  //   if (found !== found2) {
-  //     console.log(found.name, '  |   ', found2.name)
-  //   }
-  // }
-  if (found.offset !== obj.std.offset) {
-    console.log(obj.name, '     ', found.name)
+  if (found) {
+    console.log([obj.std.offset, obj.name, found.name, found.offset])
   }
-  // if (found) {
-  // console.log(obj.name, '     ', found.name)
-  // } else {
-  // console.log('not-found', obj.name)
   // }
-  obj.long = found.iso
-  obj.aliases = obj.aliases.concat(found.aliases)
-
-  // if (obj.dst && obj.dst.offset) {
-  // obj.dst.offset = obj.std.offset - 1
+  // if (found) {
+  //   console.log([obj.std.offset, obj.name, found.name, found.offset])
   // }
   return obj
 })
-
+// console.log(JSON.stringify(pairs, null, 2))
 /*
 GMT Standard Time                 |Greenwich Standard Time
 Romance Standard Time             |W. Central Africa Standard Time
