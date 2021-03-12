@@ -2,8 +2,16 @@ module.exports = [
   {
     name: 'India Time',
     abbr: null,
-    aliases: ['india', 'india standard time', 'chennai', 'kolkata', 'mumbai', 'new delhi'],
-    ids: ['Asia/Calcutta', 'Asia/Colombo'],
+    aliases: [
+      'india',
+      'indian',
+      'india standard time',
+      'chennai',
+      'kolkata',
+      'mumbai',
+      'new delhi'
+    ],
+    ids: ['Asia/Kolkata', 'Asia/Calcutta', 'Asia/Colombo'],
     std: {
       name: 'India Standard Time',
       abbr: 'IST',
@@ -312,13 +320,13 @@ module.exports = [
       'eastern africa'
     ],
     ids: [
+      'Africa/Nairobi',
       'Africa/Addis_Ababa',
       'Africa/Asmera',
       'Africa/Dar_es_Salaam',
       'Africa/Djibouti',
       'Africa/Kampala',
       'Africa/Mogadishu',
-      'Africa/Nairobi',
       'Indian/Comoro',
       'Indian/Mayotte'
     ],
@@ -1054,7 +1062,7 @@ module.exports = [
   {
     name: 'Papua New Guinea Time',
     abbr: null,
-    aliases: ['papua new_guinea'],
+    aliases: ['papua new guinea', 'guinea', 'guinean'],
     ids: ['Pacific/Bougainville', 'Pacific/Port_Moresby'],
     std: {
       abbr: 'PGT',
@@ -2470,7 +2478,7 @@ module.exports = [
   {
     name: 'Venezuela Time',
     abbr: null,
-    aliases: ['venezuela', 'venezuela standard time', 'caracas'],
+    aliases: ['venezuela', 'venezuelan', 'venezuela standard time', 'caracas'],
     ids: ['America/Caracas'],
     std: {
       name: 'Venezuela Time',

@@ -7,7 +7,12 @@ const metazones = require('./metazone')
 // const metazones = require('./05-metazones')
 const abbreviations = require('./06-abbreviations')
 const parentheses = require('./07-parentheses')
+
 let all = Object.assign({}, iana, byState, parentheses, byCity, oldZones)
+
+// prefer newyork and la iana codes
+delete all.eastern
+delete all.pacific
 
 const isArray = function (arr) {
   return Object.prototype.toString.call(arr) === '[object Array]'
@@ -32,6 +37,7 @@ Object.keys(byCountry).forEach((key) => {
   //Add 2-letter country code
   all[byCountry[key].code] = byCountry[key].choice
 })
+
 //Add metazone info
 metazones.forEach((obj) => {
   let zone = obj.pick || obj.ids[0]
@@ -51,8 +57,8 @@ metazones.forEach((obj) => {
     all[str] = all[str] || zone
   }
   // do aliases
-  if (obj.alias) {
-    obj.alias.forEach((s) => {
+  if (obj.aliases) {
+    obj.aliases.forEach((s) => {
       all[s] = all[s] || zone
     })
   }
@@ -83,8 +89,8 @@ Object.keys(all).forEach((k) => {
   // console.log(str)
   // }
 })
-// console.log(all['eastern'])
 // console.log(Object.keys(all).length)
+// console.log(all['south east asia'])
 
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))
 

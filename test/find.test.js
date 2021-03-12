@@ -18,11 +18,11 @@ test('informal timezones', (t) => {
     ['edt', 'America/New_York'],
 
     ['Jamaica', 'America/Jamaica'],
-    ['PST', 'Canada/Pacific'],
-    ['pdt', 'Canada/Pacific'],
-    ['pacific', 'Canada/Pacific'],
-    ['pacific standard', 'Canada/Pacific'],
-    ['pacific daylight', 'Canada/Pacific'],
+    ['PST', 'America/Los_Angeles'],
+    ['pdt', 'America/Los_Angeles'],
+    ['pacific', 'America/Los_Angeles'],
+    ['pacific standard', 'America/Los_Angeles'],
+    ['pacific daylight', 'America/Los_Angeles'],
     ['GMT+8', 'Etc/GMT+8'],
     ['-3h', 'Etc/GMT+3'],
     ['bst', 'Europe/London'],
@@ -51,12 +51,13 @@ test('informal timezones', (t) => {
     ['Etc/gmt-5', 'Etc/GMT-5'],
     ['-3', 'Etc/GMT+3'],
     ['3', 'Etc/GMT-3'],
-    [`Eastern Time - US & Canada`, 'Canada/Eastern'],
+    [`Eastern Time - US & Canada`, 'America/New_York'],
     ['kandahar', 'Asia/Kabul'],
     ['yorkshire', 'Europe/London']
   ]
   arr.forEach((a) => {
     let found = soft(a[0])
+    found[0] = found[0] || {}
     t.equal(found[0].iana, a[1], a[0])
   })
   t.end()
