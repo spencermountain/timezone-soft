@@ -1298,6 +1298,7 @@ module.exports = [
     aliases: ['truk'],
     ids: ['Pacific/Truk'],
     std: {
+      abbr: 'CHUT',
       name: 'Chuuk Time',
       offset: 10
     },
@@ -1341,6 +1342,7 @@ module.exports = [
     aliases: ['magadan', 'magadan standard time'],
     ids: ['Asia/Magadan'],
     std: {
+      abbr: 'MAGT',
       name: 'Magadan Standard Time',
       offset: 11
     },
@@ -1353,6 +1355,7 @@ module.exports = [
     aliases: ['sakhalin', 'sakhalin standard time'],
     ids: ['Asia/Sakhalin'],
     std: {
+      abbr: 'SAKT',
       name: 'Sakhalin Standard Time',
       offset: 11
     },
@@ -1377,7 +1380,7 @@ module.exports = [
     abbr: null,
     aliases: ['papua new_guinea'],
     ids: ['Pacific/Bougainville', 'Pacific/Port_Moresby'],
-    std: { abbrev: 'PGT', name: 'Papua New Guinea Time', offset: 11 },
+    std: { abbr: 'PGT', name: 'Papua New Guinea Time', offset: 11 },
     dst: {}
   },
   {
@@ -1386,6 +1389,7 @@ module.exports = [
     aliases: ['vanuatu'],
     ids: ['Pacific/Efate'],
     std: {
+      abbr: 'VUT',
       name: 'Vanuatu Standard Time',
       offset: 11
     },
@@ -1397,6 +1401,7 @@ module.exports = [
     aliases: ['solomon'],
     ids: ['Pacific/Guadalcanal'],
     std: {
+      abbr: 'SBT',
       name: 'Solomon Islands Time',
       offset: 11
     },
@@ -1408,6 +1413,7 @@ module.exports = [
     aliases: ['kosrae'],
     ids: ['Pacific/Kosrae'],
     std: {
+      abbr: 'KOST',
       name: 'Kosrae Time',
       offset: 11
     },
@@ -1419,6 +1425,7 @@ module.exports = [
     aliases: ['new caledonia'],
     ids: ['Pacific/Noumea'],
     std: {
+      abbr: 'NCT',
       name: 'New Caledonia Standard Time',
       offset: 11
     },
@@ -1432,6 +1439,7 @@ module.exports = [
     aliases: ['ponape'],
     ids: ['Pacific/Ponape'],
     std: {
+      abbr: 'PONT',
       name: 'Ponape Time',
       offset: 11
     },
@@ -1460,7 +1468,7 @@ module.exports = [
     aliases: ['anadyr', 'russia time zone 11', 'petropavlovsk kamchatsky'],
     ids: ['Asia/Anadyr'],
     std: {
-      abbrev: 'ANAT',
+      abbr: 'ANAT',
       name: 'Anadyr Standard Time',
       offset: 12
     },
@@ -1473,6 +1481,7 @@ module.exports = [
     aliases: ['kamchatka', 'russia time zone 11', 'anadyr', 'petropavlovsk kamchatsky'],
     ids: ['Asia/Kamchatka'],
     std: {
+      abbr: 'PETT',
       name: 'Petropavlovsk-Kamchatski Standard Time',
       offset: 12
     },
@@ -1490,6 +1499,7 @@ module.exports = [
       offset: 12
     },
     dst: {
+      abbr: 'FJT',
       name: 'Fiji Summer Time',
       offset: 13
     },
@@ -1513,7 +1523,7 @@ module.exports = [
     aliases: ['marshall islands'],
     ids: ['Pacific/Kwajalein', 'Pacific/Majuro'],
     std: {
-      abbrev: 'MHT',
+      abbr: 'MHT',
       name: 'Marshall Islands Time',
       offset: 12
     },
@@ -1781,6 +1791,7 @@ module.exports = [
     aliases: ['gambier', 'utc-09', 'coordinated universal time-09'],
     ids: ['Pacific/Gambier'],
     std: {
+      abbr: 'GAMT',
       name: 'Gambier Time',
       offset: -9
     },
@@ -2115,7 +2126,7 @@ module.exports = [
     aliases: ['peru'],
     ids: ['America/Lima'],
     std: {
-      abbrev: 'PET',
+      abbr: 'PET',
       name: 'Peru Standard Time',
       offset: -5
     },
@@ -2189,7 +2200,7 @@ module.exports = [
     aliases: ['paraguay', 'paraguay standard time', 'asuncion'],
     ids: ['America/Asuncion'],
     std: {
-      abbrev: 'PYT',
+      abbr: 'PYT',
       name: 'Paraguay Standard Time',
       offset: -4
     },
@@ -2211,7 +2222,7 @@ module.exports = [
     ],
     ids: ['America/Boa_Vista', 'America/Manaus', 'America/Porto_Velho'],
     std: {
-      abbrev: 'AMT',
+      abbr: 'AMT',
       name: 'Amazon Standard Time',
       offset: -4
     },
