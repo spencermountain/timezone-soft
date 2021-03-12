@@ -565,12 +565,12 @@ module.exports = [
     std: {
       name: 'Mexican Pacific Standard Time',
       abbr: 'HNPMX',
-      offset: -6
+      offset: -7
     },
     dst: {
       name: 'Mexican Pacific Daylight Time',
       abbr: 'HEPMX',
-      offset: -5
+      offset: -6
     }
   },
   {
@@ -754,12 +754,12 @@ module.exports = [
     std: {
       name: 'Northwest Mexico Standard Time',
       abbr: 'HNNOMX',
-      offset: -7
+      offset: -6
     },
     dst: {
       name: 'Northwest Mexico Daylight Time',
       abbr: 'HENOMX',
-      offset: -6
+      offset: -5
     }
   },
   {
