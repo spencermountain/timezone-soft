@@ -1037,6 +1037,7 @@ module.exports = [
     aliases: ['philippines'],
     ids: ['Asia/Manila'],
     std: {
+      abbr: 'PHST',
       name: 'Philippine Standard Time',
       offset: 8
     },
@@ -1061,6 +1062,7 @@ module.exports = [
     aliases: ['taipei', 'taipei standard time'],
     ids: ['Asia/Taipei'],
     std: {
+      abbr: 'CST',
       name: 'Taipei Standard Time',
       offset: 8
     },
@@ -1175,6 +1177,7 @@ module.exports = [
     aliases: ['palau'],
     ids: ['Pacific/Palau'],
     std: {
+      abbr: 'PWT',
       name: 'Palau Time',
       offset: 9
     },
@@ -1213,6 +1216,7 @@ module.exports = [
     aliases: ['dumontdurville'],
     ids: ['Antarctica/DumontDUrville'],
     std: {
+      abbr: 'CLST',
       name: 'Dumont-d’Urville Time',
       offset: 10
     },
@@ -1535,6 +1539,7 @@ module.exports = [
     aliases: ['nauru'],
     ids: ['Pacific/Nauru'],
     std: {
+      abbr: 'NRT',
       name: 'Nauru Time',
       offset: 12
     },
@@ -1563,6 +1568,7 @@ module.exports = [
     aliases: ['gilbert islands'],
     ids: ['Pacific/Tarawa'],
     std: {
+      abbr: 'GILT',
       name: 'Gilbert Islands Time',
       offset: 12
     },
@@ -1574,6 +1580,7 @@ module.exports = [
     aliases: ['wake'],
     ids: ['Pacific/Wake'],
     std: {
+      abbr: 'WAKT',
       name: 'Wake Island Time',
       offset: 12
     },
@@ -1585,6 +1592,7 @@ module.exports = [
     aliases: ['wallis'],
     ids: ['Pacific/Wallis'],
     std: {
+      abbr: 'WFT',
       name: 'Wallis & Futuna Time',
       offset: 12
     },
@@ -1618,6 +1626,7 @@ module.exports = [
       offset: 13
     },
     dst: {
+      abbr: 'WST',
       name: 'West Samoa Summer Time',
       offset: 14
     }
@@ -1628,6 +1637,7 @@ module.exports = [
     aliases: ['phoenix islands'],
     ids: ['Pacific/Enderbury'],
     std: {
+      abbr: 'PHOT',
       name: 'Phoenix Islands Time',
       offset: 13
     },
@@ -1639,6 +1649,7 @@ module.exports = [
     aliases: ['tokelau'],
     ids: ['Pacific/Fakaofo'],
     std: {
+      abbr: 'TKT',
       name: 'Tokelau Time',
       offset: 13
     },
@@ -1650,6 +1661,7 @@ module.exports = [
     aliases: ['tonga', 'tonga standard time', "nuku'alofa"],
     ids: ['Pacific/Tongatapu'],
     std: {
+      abbr: 'TOT',
       name: 'Tonga Standard Time',
       offset: 13
     },
@@ -1665,6 +1677,7 @@ module.exports = [
     aliases: ['line islands', 'line islands standard time', 'kiritimati island'],
     ids: ['Pacific/Kiritimati'],
     std: {
+      abbr: 'LINT',
       name: 'Line Islands Time',
       offset: 14
     },
@@ -1687,6 +1700,7 @@ module.exports = [
     aliases: ['niue'],
     ids: ['Pacific/Niue'],
     std: {
+      abbr: 'NUT',
       name: 'Niue Time',
       offset: -11
     },
@@ -1710,6 +1724,7 @@ module.exports = [
     aliases: ['tahiti'],
     ids: ['Pacific/Tahiti'],
     std: {
+      abbr: 'TAHT',
       name: 'Tahiti Time',
       offset: -10
     },
@@ -1721,6 +1736,7 @@ module.exports = [
     aliases: ['marquesas', 'marquesas standard time'],
     ids: ['Pacific/Marquesas'],
     std: {
+      abbr: 'MART',
       name: 'Marquesas Time',
       offset: -9.5
     },
@@ -1821,6 +1837,7 @@ module.exports = [
     aliases: ['pitcairn', 'utc-08', 'coordinated universal time-08'],
     ids: ['Pacific/Pitcairn'],
     std: {
+      abbr: 'PST',
       name: 'Pitcairn Time',
       offset: -8
     },
@@ -2086,6 +2103,7 @@ module.exports = [
     aliases: ['acre'],
     ids: ['America/Eirunepe', 'America/Rio_Branco'],
     std: {
+      abbr: 'ACT',
       name: 'Acre Standard Time',
       offset: -5
     },
@@ -2234,6 +2252,7 @@ module.exports = [
     dupe: true,
     ids: ['America/Campo_Grande', 'America/Cuiaba'],
     std: {
+      abbr: 'AMT',
       name: 'Amazon Standard Time',
       offset: -4
     }
@@ -2462,6 +2481,7 @@ module.exports = [
     aliases: ['noronha'],
     ids: ['America/Noronha'],
     std: {
+      abbr: 'FNT',
       name: 'Fernando de Noronha Standard Time',
       offset: -2
     },
@@ -2473,6 +2493,7 @@ module.exports = [
     aliases: ['south georgia'],
     ids: ['Atlantic/South_Georgia'],
     std: {
+      abbr: 'GST',
       name: 'South Georgia Time',
       offset: -2
     },
@@ -2501,6 +2522,7 @@ module.exports = [
     aliases: ['cape verde', 'cape verde standard time', 'cabo verde'],
     ids: ['Atlantic/Cape_Verde'],
     std: {
+      abbr: 'CVT',
       name: 'Cape Verde Standard Time',
       offset: -1
     },
