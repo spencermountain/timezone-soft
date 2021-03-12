@@ -3,7 +3,8 @@ const byCity = require('./02-byCity')
 const byCountry = require('./03-byCountry')
 const byState = require('./04-byState')
 const oldZones = require('./04-oldZones')
-const metazones = require('./05-metazones')
+const metazones = require('./metazone')
+// const metazones = require('./05-metazones')
 const abbreviations = require('./06-abbreviations')
 const parentheses = require('./07-parentheses')
 let all = Object.assign({}, iana, byState, parentheses, byCity, oldZones)
@@ -35,26 +36,24 @@ Object.keys(byCountry).forEach((key) => {
 metazones.forEach((obj) => {
   let zone = obj.pick || obj.ids[0]
   let str = obj.std.name.toLowerCase()
-  combine(all, str, zone)
-
+  all[str] = all[str] || zone
   if (obj.std.abbrev) {
     str = obj.std.abbrev.toLowerCase()
-    combine(all, str, zone)
+    all[str] = all[str] || zone
   }
   //do daylight time, too
-  if (obj.dl) {
-    if (obj.dl.name) {
-      str = obj.dl.name.toLowerCase()
-      combine(all, str, zone)
-    }
-    if (obj.dl.abbrev) {
-      str = obj.dl.abbrev.toLowerCase()
-      combine(all, str, zone)
-    }
+  if (obj.dl && obj.dl.name) {
+    str = obj.dl.name.toLowerCase()
+    all[str] = all[str] || zone
   }
+  if (obj.dl && obj.dl.abbrev) {
+    str = obj.dl.abbrev.toLowerCase()
+    all[str] = all[str] || zone
+  }
+  // do aliases
   if (obj.alias) {
     obj.alias.forEach((s) => {
-      combine(all, s.toLowerCase(), zone)
+      all[s] = all[s] || zone
     })
   }
 })

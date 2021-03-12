@@ -15,17 +15,17 @@ test('display-test', (t) => {
     // ['Punta Arenas', 'CLST'],
     ['prague', 'CET', 'CEST'],
     ['kinshasa', 'WAT'],
-    ['chongqing', 'CT'],
+    ['chongqing', 'CST'],
     ['makassar', 'WITA'],
     ['acst', 'ACST', 'ACDT'],
     ['Adelaide', 'ACST', 'ACDT'],
-    ['darwin', 'ACST', 'ACDT']
+    ['darwin', 'ACST']
   ]
   arr.forEach((a) => {
     let display = soft(a[0])[0]
-    t.equal(display.standard.abbrev, a[1], a[0] + ' standard')
+    t.equal(display.standard.abbr, a[1], a[0] + ' standard')
     if (display.daylight) {
-      t.equal(display.daylight.abbrev, a[2], a[0] + ' daylight')
+      t.equal(display.daylight.abbr, a[2], a[0] + ' daylight')
     } else {
       t.equal(a[2], undefined, 'no-daylight')
     }

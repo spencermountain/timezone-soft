@@ -1,9 +1,9 @@
-const timezoneSoft = require('./src/index')
+const soft = require('./src/index')
 const spacetime = require('spacetime')
 let zones = spacetime.timezones()
-const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
+// const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let ids = timezoneSoft('indian ocean time')
+let ids = soft('acst')
 console.log(ids)
 
 // let res = {}

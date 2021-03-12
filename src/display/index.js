@@ -1,4 +1,5 @@
-const metas = require('../../data/05-metazones')
+const metas = require('../../data/metazone')
+// const metas = require('../../data/05-metazones')
 const offsets = require('./offsets')
 
 const titleCase = function (str) {
@@ -38,7 +39,7 @@ const display = function (id) {
   return {
     iana: id,
     standard: meta.std || null,
-    daylight: meta.dl || null
+    daylight: meta.dst || null
     // offset: meta.offset - 1 || null
   }
 }

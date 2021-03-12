@@ -1,5 +1,5 @@
-let meta = require('./meta') //149
-const aliases = require('../aliases') //149
+let meta = require('.') //149
+const aliases = require('../more/aliases') //149
 // const cldr = require('./cldr') //138
 const zones = require('spacetime').timezones()
 

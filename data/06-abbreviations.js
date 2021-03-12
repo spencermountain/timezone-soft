@@ -105,7 +105,7 @@ const informal = {
   'Asia/Novosibirsk': ['novt'],
   'Asia/Irkutsk': ['irkt'],
   'Asia/Yakutsk': ['yakt'],
-  'Asia/Cladivostok': ['vlat'],
+  'Asia/Vladivostok': ['vlat'],
   'Asia/Magadan': ['magt'],
   'Asia/Sakhalin': ['sakt'],
   'Asia/Srednekolymsk': ['sret'],
