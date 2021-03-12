@@ -1,731 +1,5 @@
 module.exports = [
   {
-    name: 'Samoa Time',
-    abbr: 'SST',
-    aliases: ['samoa', 'samoa standard time'],
-    ids: ['Pacific/Midway', 'Pacific/Pago_Pago'],
-    std: {
-      name: 'Samoa Standard Time',
-      offset: -11
-    },
-    dst: {},
-    long: '(UTC+13:00) Samoa'
-  },
-  {
-    name: 'Niue Time',
-    abbr: null,
-    aliases: ['niue'],
-    ids: ['Pacific/Niue'],
-    std: {
-      name: 'Niue Time',
-      offset: -11
-    },
-    dst: {}
-  },
-  {
-    name: 'Cook Islands Time',
-    abbr: 'CKT',
-    aliases: ['cook'],
-    ids: ['Pacific/Rarotonga'],
-    std: {
-      name: 'Cook Islands Standard Time',
-      offset: -10
-    },
-    dst: {}
-  },
-  {
-    name: 'Tahiti Time',
-    abbr: null,
-    aliases: ['tahiti'],
-    ids: ['Pacific/Tahiti'],
-    std: {
-      name: 'Tahiti Time',
-      offset: -10
-    },
-    dst: {}
-  },
-  {
-    name: 'Marquesas Time',
-    abbr: null,
-    aliases: ['marquesas', 'marquesas standard time'],
-    ids: ['Pacific/Marquesas'],
-    std: {
-      name: 'Marquesas Time',
-      offset: -9.5
-    },
-    dst: {},
-    long: '(UTC-09:30) Marquesas Islands'
-  },
-  {
-    name: 'Hawaii-Aleutian Time',
-    abbr: 'HAT',
-    aliases: ['hawaii aleutian', 'aleutian standard time', 'aleutian'],
-    ids: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston'],
-    std: {
-      name: 'Hawaii-Aleutian Standard Time',
-      abbr: 'HAST',
-      offset: -9
-    },
-    dst: {
-      name: 'Hawaii-Aleutian Daylight Time',
-      abbr: 'HADT',
-      offset: -8
-    },
-    long: '(UTC-09:00) Aleutian Islands'
-  },
-  {
-    name: 'Alaska Time',
-    abbr: 'AKT',
-    aliases: ['alaska', 'alaskan standard time', 'alaskan'],
-    ids: [
-      'America/Anchorage',
-      'America/Juneau',
-      'America/Metlakatla',
-      'America/Nome',
-      'America/Sitka',
-      'America/Yakutat'
-    ],
-    std: {
-      name: 'Alaska Standard Time',
-      abbr: 'AKST',
-      offset: -9
-    },
-    dst: {
-      name: 'Alaska Daylight Time',
-      abbr: 'AKDT',
-      offset: -8
-    },
-    long: '(UTC-09:00) Alaska'
-  },
-  {
-    name: 'Gambier Time',
-    abbr: null,
-    aliases: ['gambier', 'utc-09', 'coordinated universal time-09'],
-    ids: ['Pacific/Gambier'],
-    std: {
-      name: 'Gambier Time',
-      offset: -9
-    },
-    dst: {},
-    long: '(UTC-09:00) Coordinated Universal Time-09'
-  },
-  {
-    name: 'Pacific Time',
-    abbr: 'PT',
-    aliases: ['america pacific', 'pacific standard time', 'pacific'],
-    ids: ['America/Los_Angeles', 'America/Tijuana', 'America/Vancouver'],
-    std: {
-      name: 'Pacific Standard Time',
-      abbr: 'PST',
-      offset: -8
-    },
-    dst: {
-      name: 'Pacific Daylight Time',
-      abbr: 'PDT',
-      offset: -7
-    },
-    long: '(UTC-08:00) Pacific Time (US & Canada)'
-  },
-  {
-    name: 'Pitcairn Time',
-    abbr: null,
-    aliases: ['pitcairn', 'utc-08', 'coordinated universal time-08'],
-    ids: ['Pacific/Pitcairn'],
-    std: {
-      name: 'Pitcairn Time',
-      offset: -8
-    },
-    dst: {},
-    long: '(UTC-08:00) Coordinated Universal Time-08'
-  },
-  {
-    name: 'Mountain Time',
-    abbr: 'MT',
-    aliases: ['america mountain', 'mountain standard time', 'mountain'],
-    ids: [
-      'America/Phoenix',
-      'America/Boise',
-      'America/Cambridge_Bay',
-      'America/Creston',
-      'America/Dawson',
-      'America/Dawson_Creek',
-      'America/Denver',
-      'America/Edmonton',
-      'America/Fort_Nelson',
-      'America/Inuvik',
-      'America/Ojinaga',
-      'America/Whitehorse',
-      'America/Yellowknife'
-    ],
-    std: {
-      name: 'Mountain Standard Time',
-      abbr: 'MST',
-      offset: -7
-    },
-    dst: {
-      name: 'Mountain Daylight Time',
-      abbr: 'MDT',
-      offset: -6
-    },
-    long: '(UTC-07:00) Mountain Time (US & Canada)'
-  },
-  {
-    name: 'Mexican Pacific Time',
-    abbr: 'HPMX',
-    aliases: [
-      'mexico pacific',
-      'mountain standard time (mexico)',
-      'chihuahua',
-      'la paz',
-      'mazatlan',
-      'mountain mexico'
-    ],
-    ids: ['America/Chihuahua', 'America/Hermosillo', 'America/Mazatlan'],
-    std: {
-      name: 'Mexican Pacific Standard Time',
-      abbr: 'HNPMX',
-      offset: -7
-    },
-    dst: {
-      name: 'Mexican Pacific Daylight Time',
-      abbr: 'HEPMX',
-      offset: -6
-    },
-    long: '(UTC-07:00) Chihuahua, La Paz, Mazatlan'
-  },
-  {
-    name: 'Central Time',
-    abbr: 'CT',
-    aliases: ['america central', 'central standard time', 'central'],
-    ids: [
-      'America/Chicago',
-      'America/Bahia_Banderas',
-      'America/Belize',
-      'America/Costa_Rica',
-      'America/El_Salvador',
-      'America/Guatemala',
-      'America/Indiana/Knox',
-      'America/Indiana/Tell_City',
-      'America/Managua',
-      'America/Matamoros',
-      'America/Menominee',
-      'America/Merida',
-      'America/Mexico_City',
-      'America/Monterrey',
-      'America/North_Dakota/Beulah',
-      'America/North_Dakota/Center',
-      'America/North_Dakota/New_Salem',
-      'America/Rainy_River',
-      'America/Rankin_Inlet',
-      'America/Regina',
-      'America/Resolute',
-      'America/Swift_Current',
-      'America/Tegucigalpa',
-      'America/Winnipeg',
-      'America/Indiana',
-      'America/North_Dakota'
-    ],
-    std: {
-      name: 'Central Standard Time',
-      abbr: 'CST',
-      offset: -6
-    },
-    dst: {
-      name: 'Central Daylight Time',
-      abbr: 'CDT',
-      offset: -5
-    },
-    long: '(UTC-06:00) Central Time (US & Canada)'
-  },
-  {
-    name: 'Northwest Mexico Time',
-    abbr: 'HNOMX',
-    aliases: [
-      'mexico northwest',
-      'pacific standard time (mexico)',
-      'baja california',
-      'pacific mexico'
-    ],
-    ids: ['America/Santa_Isabel'],
-    std: {
-      name: 'Northwest Mexico Standard Time',
-      abbr: 'HNNOMX',
-      offset: -6
-    },
-    dst: {
-      name: 'Northwest Mexico Daylight Time',
-      abbr: 'HENOMX',
-      offset: -5
-    },
-    long: '(UTC-08:00) Baja California'
-  },
-  {
-    name: 'Easter Island Time',
-    abbr: null,
-    aliases: ['easter', 'easter island standard time', 'easter island'],
-    ids: ['Pacific/Easter'],
-    std: {
-      name: 'Easter Island Standard Time',
-      abbr: 'EAST',
-      offset: -6
-    },
-    dst: {
-      name: 'Easter Island Summer Time',
-      abbr: 'EASST',
-      offset: -5
-    },
-    long: '(UTC-06:00) Easter Island'
-  },
-  {
-    name: 'Colombia Time',
-    abbr: 'COT',
-    aliases: ['colombia', 'cost'],
-    ids: ['America/Bogota', 'Pacific/Galapagos'],
-    std: {
-      name: 'Colombia Standard Time',
-      abbr: 'COT',
-      offset: -5
-    },
-    dst: {}
-  },
-  {
-    name: 'Eastern Time',
-    abbr: 'ET',
-    aliases: ['america eastern', 'eastern standard time', 'eastern'],
-    ids: [
-      'America/New_York',
-      'America/Coral_Harbour',
-      'America/Detroit',
-      'America/Grand_Turk',
-      'America/Indiana/Marengo',
-      'America/Indiana/Petersburg',
-      'America/Indiana/Vevay',
-      'America/Indiana/Vincennes',
-      'America/Indiana/Winamac',
-      'America/Indianapolis',
-      'America/Iqaluit',
-      'America/Kentucky/Monticello',
-      'America/Louisville',
-      'America/Nassau',
-      'America/Nipigon',
-      'America/Pangnirtung',
-      'America/Port-au-Prince',
-      'America/Thunder_Bay',
-      'America/Toronto',
-      'America/Montreal',
-      'America/Kentucky',
-      'America/Cancun', //
-      'America/Cayman', //
-      'America/Jamaica', //
-      'America/Panama' //
-    ],
-    std: {
-      name: 'Eastern Standard Time',
-      abbr: 'EST',
-      offset: -5
-    },
-    dst: {
-      name: 'Eastern Daylight Time',
-      abbr: 'EDT',
-      offset: -4
-    },
-    long: '(UTC-05:00) Eastern Time (US & Canada)'
-  },
-  {
-    name: 'Acre Time',
-    abbr: null,
-    aliases: ['acre'],
-    ids: ['America/Eirunepe', 'America/Rio_Branco'],
-    std: {
-      name: 'Acre Standard Time',
-      offset: -5
-    },
-    dst: {}
-  },
-  {
-    name: 'Ecuador Time',
-    abbr: null,
-    aliases: ['ecuador'],
-    ids: ['America/Guayaquil'],
-    std: {
-      name: 'Ecuador Time',
-      abbr: 'ECT',
-      offset: -5
-    },
-    dst: {}
-  },
-  {
-    name: 'Cuba Time',
-    abbr: 'HCU',
-    aliases: ['cuba', 'cuba standard time', 'havana'],
-    ids: ['America/Havana'],
-    std: {
-      name: 'Cuba Standard Time',
-      abbr: 'HNCU',
-      offset: -5
-    },
-    dst: {
-      name: 'Cuba Daylight Time',
-      abbr: 'HECU',
-      offset: -4
-    },
-    long: '(UTC-05:00) Havana'
-  },
-  {
-    name: 'Peru Time',
-    abbr: null,
-    aliases: ['peru'],
-    ids: ['America/Lima'],
-    std: {
-      name: 'Peru Standard Time',
-      offset: -5
-    },
-    dst: {}
-  },
-  {
-    name: 'Atlantic Time',
-    abbr: 'AT',
-    aliases: ['atlantic', 'atlantic standard time'],
-    ids: [
-      'America/Halifax',
-      'America/Anguilla',
-      'America/Antigua',
-      'America/Aruba',
-      'America/Barbados',
-      'America/Blanc-Sablon',
-      'America/Curacao',
-      'America/Dominica',
-      'America/Glace_Bay',
-      'America/Goose_Bay',
-      'America/Grenada',
-      'America/Guadeloupe',
-      'America/Kralendijk',
-      'America/Lower_Princes',
-      'America/Marigot',
-      'America/Martinique',
-      'America/Moncton',
-      'America/Montserrat',
-      'America/Port_of_Spain',
-      'America/Puerto_Rico',
-      'America/Santo_Domingo',
-      'America/St_Barthelemy',
-      'America/St_Kitts',
-      'America/St_Lucia',
-      'America/St_Thomas',
-      'America/St_Vincent',
-      'America/Thule',
-      'America/Tortola',
-      'Atlantic/Bermuda'
-    ],
-    std: {
-      name: 'Atlantic Standard Time',
-      abbr: 'AST',
-      offset: -4
-    },
-    dst: {
-      name: 'Atlantic Daylight Time',
-      abbr: 'ADT',
-      offset: -3
-    },
-    long: '(UTC-04:00) Atlantic Time (Canada)'
-  },
-  {
-    name: 'Paraguay Time',
-    abbr: null,
-    aliases: ['paraguay', 'paraguay standard time', 'asuncion'],
-    ids: ['America/Asuncion'],
-    std: {
-      name: 'Paraguay Standard Time',
-      offset: -4
-    },
-    dst: {
-      name: 'Paraguay Summer Time',
-      offset: -3
-    },
-    long: '(UTC-04:00) Asuncion'
-  },
-  {
-    name: 'Amazon Time',
-    abbr: null,
-    aliases: [
-      'amazon',
-      'central brazilian standard time',
-      'cuiaba',
-      'central brazilian',
-      'central brazil'
-    ],
-    ids: [
-      'America/Boa_Vista',
-      'America/Campo_Grande',
-      'America/Cuiaba',
-      'America/Manaus',
-      'America/Porto_Velho'
-    ],
-    std: {
-      name: 'Amazon Standard Time',
-      offset: -4
-    },
-    dst: {},
-    long: '(UTC-04:00) Cuiaba'
-  },
-  {
-    name: 'Venezuela Time',
-    abbr: null,
-    aliases: ['venezuela', 'venezuela standard time', 'caracas'],
-    ids: ['America/Caracas'],
-    std: {
-      name: 'Venezuela Time',
-      abbr: 'VET',
-      offset: -4
-    },
-    dst: {},
-    long: '(UTC-04:00) Caracas'
-  },
-  {
-    name: 'Guyana Time',
-    abbr: null,
-    aliases: ['guyana'],
-    ids: ['America/Guyana'],
-    std: {
-      name: 'Guyana Time',
-      abbr: 'GYT',
-      offset: -4
-    },
-    dst: {}
-  },
-  {
-    name: 'Bolivia Time',
-    abbr: null,
-    aliases: ['bolivia'],
-    ids: ['America/La_Paz'],
-    std: {
-      name: 'Bolivia Time',
-      abbr: 'BOT',
-      offset: -4
-    },
-    dst: {}
-  },
-  {
-    name: 'Newfoundland Time',
-    abbr: 'HTN',
-    aliases: ['newfoundland', 'newfoundland standard time'],
-    ids: ['America/St_Johns'],
-    std: {
-      name: 'Newfoundland Standard Time',
-      abbr: 'HNTN',
-      offset: -3.5
-    },
-    dst: {
-      name: 'Newfoundland Daylight Time',
-      abbr: 'HETN',
-      offset: -2.5
-    },
-    long: '(UTC-03:30) Newfoundland'
-  },
-  {
-    name: 'Brasilia Time',
-    abbr: null,
-    aliases: ['brasilia', 'e. south america standard time', 'east south america'],
-    ids: [
-      'America/Sao_Paulo',
-      'America/Araguaina',
-      'America/Bahia',
-      'America/Belem',
-      'America/Fortaleza',
-      'America/Maceio',
-      'America/Recife',
-      'America/Santarem'
-    ],
-    std: {
-      name: 'Brasilia Standard Time',
-      offset: -3
-    },
-    dst: {},
-    long: '(UTC-03:00) Brasilia'
-  },
-  {
-    name: 'Argentina Time',
-    abbr: 'ART',
-    aliases: ['argentina', 'arst', 'argentina standard time', 'buenos aires'],
-    ids: [
-      'America/Buenos_Aires',
-      'America/Argentina/La_Rioja',
-      'America/Argentina/Rio_Gallegos',
-      'America/Argentina/Salta',
-      'America/Argentina/San_Juan',
-      'America/Argentina/San_Luis',
-      'America/Argentina/Tucuman',
-      'America/Argentina/Ushuaia',
-      'America/Catamarca',
-      'America/Cordoba',
-      'America/Jujuy',
-      'America/Mendoza',
-      'Antarctica/Rothera',
-      'America/Argentina'
-    ],
-    std: {
-      name: 'Argentina Standard Time',
-      abbr: 'ART',
-      offset: -3
-    },
-    dst: {},
-    long: '(UTC-03:00) City of Buenos Aires'
-  },
-  {
-    name: 'French Guiana Time',
-    abbr: null,
-    aliases: ['french guiana'],
-    ids: ['America/Cayenne'],
-    std: {
-      name: 'French Guiana Time',
-      abbr: 'GFT',
-      offset: -3
-    },
-    dst: {}
-  },
-  {
-    name: 'West Greenland Time',
-    abbr: 'HOG',
-    aliases: ['greenland western', 'greenland standard time', 'greenland'],
-    ids: ['America/Godthab'],
-    std: {
-      name: 'West Greenland Standard Time',
-      abbr: 'HNOG',
-      offset: -3
-    },
-    dst: {
-      name: 'West Greenland Summer Time',
-      abbr: 'HEOG',
-      offset: -2
-    },
-    long: '(UTC-03:00) Greenland'
-  },
-  {
-    name: 'St. Pierre & Miquelon Time',
-    abbr: 'HPM',
-    aliases: [
-      'pierre miquelon',
-      'saint pierre standard time',
-      'saint pierre and miquelon',
-      'saint pierre'
-    ],
-    ids: ['America/Miquelon'],
-    std: {
-      name: 'St. Pierre & Miquelon Standard Time',
-      abbr: 'HNPM',
-      offset: -3
-    },
-    dst: {
-      name: 'St. Pierre & Miquelon Daylight Time',
-      abbr: 'HEPM',
-      offset: -2
-    },
-    long: '(UTC-03:00) Saint Pierre and Miquelon'
-  },
-  {
-    name: 'Uruguay Time',
-    abbr: 'UYT',
-    aliases: ['uruguay', 'uyst', 'montevideo standard time', 'montevideo'],
-    ids: ['America/Montevideo'],
-    std: {
-      name: 'Uruguay Standard Time',
-      abbr: 'UYT',
-      offset: -3
-    },
-    dst: {},
-    long: '(UTC-03:00) Montevideo'
-  },
-  {
-    name: 'Suriname Time',
-    abbr: null,
-    aliases: ['suriname'],
-    ids: ['America/Paramaribo'],
-    std: {
-      name: 'Suriname Time',
-      abbr: 'SRT',
-      offset: -3
-    },
-    dst: {}
-  },
-  {
-    name: 'Chile Time',
-    abbr: 'CLT',
-    aliases: ['chile'],
-    ids: ['America/Santiago', 'America/Punta_Arenas', 'Antarctica/Palmer'],
-    std: {
-      name: 'Chile Standard Time',
-      abbr: 'CLT',
-      offset: -3
-    },
-    dst: {
-      name: 'Chile Summer Time',
-      abbr: 'CLST',
-      offset: -4
-    }
-  },
-  {
-    name: 'Falkland Islands Time',
-    abbr: 'FKT',
-    aliases: ['falkland'],
-    ids: ['Atlantic/Stanley'],
-    std: {
-      abbr: 'FKST',
-      name: 'Falkland Islands Summer Time',
-      offset: -3
-    },
-    dst: {}
-  },
-  {
-    name: 'Fernando de Noronha Time',
-    abbr: null,
-    aliases: ['noronha'],
-    ids: ['America/Noronha'],
-    std: {
-      name: 'Fernando de Noronha Standard Time',
-      offset: -2
-    },
-    dst: {}
-  },
-  {
-    name: 'South Georgia Time',
-    abbr: null,
-    aliases: ['south georgia'],
-    ids: ['Atlantic/South_Georgia'],
-    std: {
-      name: 'South Georgia Time',
-      offset: -2
-    },
-    dst: {}
-  },
-  {
-    name: 'Azores Time',
-    abbr: 'AZOT',
-    aliases: ['azores', 'azores standard time'],
-    ids: ['Atlantic/Azores'],
-    std: {
-      name: 'Azores Standard Time',
-      offset: -1
-    },
-    dst: {
-      name: 'Azores Summer Time',
-      abbr: 'AZOST',
-      offset: 0
-    },
-    long: '(UTC-01:00) Azores'
-  },
-  {
-    name: 'Cape Verde Time',
-    abbr: null,
-    aliases: ['cape verde', 'cape verde standard time', 'cabo verde'],
-    ids: ['Atlantic/Cape_Verde'],
-    std: {
-      name: 'Cape Verde Standard Time',
-      offset: -1
-    },
-    dst: {},
-    long: '(UTC-01:00) Cabo Verde Is.'
-  },
-  {
     name: 'Greenwich Mean Time',
     abbr: null,
     aliases: ['gmt', 'zulu', 'utc', 'coordinated universal time'],
@@ -745,7 +19,6 @@ module.exports = [
       'Africa/Ouagadougou',
       'Africa/Sao_Tome',
       'America/Danmarkshavn',
-      'Antarctica/Troll',
       'Atlantic/Reykjavik',
       'Atlantic/St_Helena',
       'Etc/UTC'
@@ -757,6 +30,18 @@ module.exports = [
     },
     dst: {},
     long: '(UTC) Coordinated Universal Time'
+  },
+  {
+    name: 'Troll Time', //'Greenwich Mean Time',
+    dupe: true,
+    abbr: null,
+    aliases: ['troll research station'],
+    ids: ['Antarctica/Troll'],
+    std: {
+      name: 'GMT',
+      offset: 0
+    },
+    dst: {}
   },
   {
     name: 'British Time',
@@ -891,11 +176,8 @@ module.exports = [
     ids: [
       'Africa/Lagos',
       'Africa/Bangui',
-      'Africa/Brazzaville',
       'Africa/Douala',
-      'Africa/Kinshasa',
       'Africa/Libreville',
-      'Africa/Luanda',
       'Africa/Malabo',
       'Africa/Ndjamena',
       'Africa/Niamey',
@@ -909,18 +191,23 @@ module.exports = [
     long: '(UTC+01:00) West Central Africa'
   },
   {
+    name: 'West Africa Time', //dupe
+    dupe: true,
+    ids: ['Africa/Luanda', 'Africa/Kinshasa', 'Africa/Brazzaville'],
+    std: {
+      name: 'West Africa Standard Time',
+      abbr: 'WAT',
+      offset: 1
+    }
+  },
+  {
     name: 'Central Africa Time',
     abbr: null,
     aliases: ['africa central', 'namibia standard time', 'windhoek', 'namibia'],
     ids: [
       'Africa/Windhoek',
-      'Africa/Blantyre',
-      'Africa/Bujumbura',
       'Africa/Gaborone',
       'Africa/Harare',
-      'Africa/Juba',
-      'Africa/Khartoum',
-      'Africa/Kigali',
       'Africa/Lubumbashi',
       'Africa/Lusaka',
       'Africa/Maputo'
@@ -932,6 +219,17 @@ module.exports = [
     },
     dst: {},
     long: '(UTC+02:00) Windhoek'
+  },
+  {
+    name: 'Central Africa Time', //dupe
+    dupe: true,
+    ids: ['Africa/Blantyre', 'Africa/Bujumbura', 'Africa/Juba', 'Africa/Khartoum', 'Africa/Kigali'],
+    std: {
+      name: 'Central Africa Time',
+      abbr: 'CAT',
+      offset: 2
+    },
+    dst: {}
   },
   {
     name: 'Eastern European Time',
@@ -1022,7 +320,6 @@ module.exports = [
       'Africa/Kampala',
       'Africa/Mogadishu',
       'Africa/Nairobi',
-      'Indian/Antananarivo',
       'Indian/Comoro',
       'Indian/Mayotte'
     ],
@@ -1033,6 +330,17 @@ module.exports = [
     },
     dst: {},
     long: '(UTC+03:00) Nairobi'
+  },
+  {
+    name: 'East Africa Time', //
+    dupe: true,
+    ids: ['Indian/Antananarivo'],
+    std: {
+      name: 'East Africa Time',
+      abbr: 'EAT',
+      offset: 3
+    },
+    dst: {}
   },
   {
     name: 'Syowa Time',
@@ -2229,5 +1537,732 @@ module.exports = [
     },
     dst: {},
     long: '(UTC+14:00) Kiritimati Island'
+  },
+
+  {
+    name: 'Samoa Time',
+    abbr: 'SST',
+    aliases: ['samoa', 'samoa standard time'],
+    ids: ['Pacific/Midway', 'Pacific/Pago_Pago'],
+    std: {
+      name: 'Samoa Standard Time',
+      offset: -11
+    },
+    dst: {},
+    long: '(UTC+13:00) Samoa'
+  },
+  {
+    name: 'Niue Time',
+    abbr: null,
+    aliases: ['niue'],
+    ids: ['Pacific/Niue'],
+    std: {
+      name: 'Niue Time',
+      offset: -11
+    },
+    dst: {}
+  },
+  {
+    name: 'Cook Islands Time',
+    abbr: 'CKT',
+    aliases: ['cook'],
+    ids: ['Pacific/Rarotonga'],
+    std: {
+      name: 'Cook Islands Standard Time',
+      offset: -10
+    },
+    dst: {}
+  },
+  {
+    name: 'Tahiti Time',
+    abbr: null,
+    aliases: ['tahiti'],
+    ids: ['Pacific/Tahiti'],
+    std: {
+      name: 'Tahiti Time',
+      offset: -10
+    },
+    dst: {}
+  },
+  {
+    name: 'Marquesas Time',
+    abbr: null,
+    aliases: ['marquesas', 'marquesas standard time'],
+    ids: ['Pacific/Marquesas'],
+    std: {
+      name: 'Marquesas Time',
+      offset: -9.5
+    },
+    dst: {},
+    long: '(UTC-09:30) Marquesas Islands'
+  },
+  {
+    name: 'Hawaii-Aleutian Time',
+    abbr: 'HAT',
+    aliases: ['hawaii aleutian', 'aleutian standard time', 'aleutian'],
+    ids: ['America/Adak', 'Pacific/Honolulu', 'Pacific/Johnston'],
+    std: {
+      name: 'Hawaii-Aleutian Standard Time',
+      abbr: 'HAST',
+      offset: -9
+    },
+    dst: {
+      name: 'Hawaii-Aleutian Daylight Time',
+      abbr: 'HADT',
+      offset: -8
+    },
+    long: '(UTC-09:00) Aleutian Islands'
+  },
+  {
+    name: 'Alaska Time',
+    abbr: 'AKT',
+    aliases: ['alaska', 'alaskan standard time', 'alaskan'],
+    ids: [
+      'America/Anchorage',
+      'America/Juneau',
+      'America/Metlakatla',
+      'America/Nome',
+      'America/Sitka',
+      'America/Yakutat'
+    ],
+    std: {
+      name: 'Alaska Standard Time',
+      abbr: 'AKST',
+      offset: -9
+    },
+    dst: {
+      name: 'Alaska Daylight Time',
+      abbr: 'AKDT',
+      offset: -8
+    },
+    long: '(UTC-09:00) Alaska'
+  },
+  {
+    name: 'Gambier Time',
+    abbr: null,
+    aliases: ['gambier', 'utc-09', 'coordinated universal time-09'],
+    ids: ['Pacific/Gambier'],
+    std: {
+      name: 'Gambier Time',
+      offset: -9
+    },
+    dst: {},
+    long: '(UTC-09:00) Coordinated Universal Time-09'
+  },
+  {
+    name: 'Pacific Time',
+    abbr: 'PT',
+    aliases: ['america pacific', 'pacific standard time', 'pacific'],
+    ids: ['America/Los_Angeles', 'America/Tijuana', 'America/Vancouver'],
+    std: {
+      name: 'Pacific Standard Time',
+      abbr: 'PST',
+      offset: -8
+    },
+    dst: {
+      name: 'Pacific Daylight Time',
+      abbr: 'PDT',
+      offset: -7
+    },
+    long: '(UTC-08:00) Pacific Time (US & Canada)'
+  },
+  {
+    name: 'Pitcairn Time',
+    abbr: null,
+    aliases: ['pitcairn', 'utc-08', 'coordinated universal time-08'],
+    ids: ['Pacific/Pitcairn'],
+    std: {
+      name: 'Pitcairn Time',
+      offset: -8
+    },
+    dst: {},
+    long: '(UTC-08:00) Coordinated Universal Time-08'
+  },
+  {
+    name: 'Mountain Time',
+    abbr: 'MT',
+    aliases: ['america mountain', 'mountain standard time', 'mountain'],
+    ids: [
+      'America/Phoenix',
+      'America/Boise',
+      'America/Cambridge_Bay',
+      'America/Creston',
+      'America/Dawson',
+      'America/Dawson_Creek',
+      'America/Denver',
+      'America/Edmonton',
+      'America/Fort_Nelson',
+      'America/Inuvik',
+      'America/Ojinaga',
+      'America/Whitehorse',
+      'America/Yellowknife'
+    ],
+    std: {
+      name: 'Mountain Standard Time',
+      abbr: 'MST',
+      offset: -7
+    },
+    dst: {
+      name: 'Mountain Daylight Time',
+      abbr: 'MDT',
+      offset: -6
+    },
+    long: '(UTC-07:00) Mountain Time (US & Canada)'
+  },
+  {
+    name: 'Mexican Pacific Time',
+    abbr: 'HPMX',
+    aliases: [
+      'mexico pacific',
+      'mountain standard time (mexico)',
+      'chihuahua',
+      'la paz',
+      'mazatlan',
+      'mountain mexico'
+    ],
+    ids: ['America/Chihuahua', 'America/Hermosillo', 'America/Mazatlan'],
+    std: {
+      name: 'Mexican Pacific Standard Time',
+      abbr: 'HNPMX',
+      offset: -7
+    },
+    dst: {
+      name: 'Mexican Pacific Daylight Time',
+      abbr: 'HEPMX',
+      offset: -6
+    },
+    long: '(UTC-07:00) Chihuahua, La Paz, Mazatlan'
+  },
+  {
+    name: 'Central Time',
+    abbr: 'CT',
+    aliases: ['america central', 'central standard time', 'central'],
+    ids: [
+      'America/Chicago',
+      'America/Bahia_Banderas',
+      'America/Belize',
+      'America/Costa_Rica',
+      'America/El_Salvador',
+      'America/Guatemala',
+      'America/Indiana/Knox',
+      'America/Indiana/Tell_City',
+      'America/Managua',
+      'America/Matamoros',
+      'America/Menominee',
+      'America/Merida',
+      'America/Mexico_City',
+      'America/Monterrey',
+      'America/North_Dakota/Beulah',
+      'America/North_Dakota/Center',
+      'America/North_Dakota/New_Salem',
+      'America/Rainy_River',
+      'America/Rankin_Inlet',
+      'America/Regina',
+      'America/Resolute',
+      'America/Swift_Current',
+      'America/Tegucigalpa',
+      'America/Winnipeg',
+      'America/Indiana',
+      'America/North_Dakota'
+    ],
+    std: {
+      name: 'Central Standard Time',
+      abbr: 'CST',
+      offset: -6
+    },
+    dst: {
+      name: 'Central Daylight Time',
+      abbr: 'CDT',
+      offset: -5
+    },
+    long: '(UTC-06:00) Central Time (US & Canada)'
+  },
+  {
+    name: 'Northwest Mexico Time',
+    abbr: 'HNOMX',
+    aliases: [
+      'mexico northwest',
+      'pacific standard time (mexico)',
+      'baja california',
+      'pacific mexico'
+    ],
+    ids: ['America/Santa_Isabel'],
+    std: {
+      name: 'Northwest Mexico Standard Time',
+      abbr: 'HNNOMX',
+      offset: -6
+    },
+    dst: {
+      name: 'Northwest Mexico Daylight Time',
+      abbr: 'HENOMX',
+      offset: -5
+    },
+    long: '(UTC-08:00) Baja California'
+  },
+  {
+    name: 'Easter Island Time',
+    abbr: null,
+    aliases: ['easter', 'easter island standard time', 'easter island'],
+    ids: ['Pacific/Easter'],
+    std: {
+      name: 'Easter Island Standard Time',
+      abbr: 'EAST',
+      offset: -6
+    },
+    dst: {
+      name: 'Easter Island Summer Time',
+      abbr: 'EASST',
+      offset: -5
+    },
+    long: '(UTC-06:00) Easter Island'
+  },
+  {
+    name: 'Colombia Time',
+    abbr: 'COT',
+    aliases: ['colombia', 'cost'],
+    ids: ['America/Bogota', 'Pacific/Galapagos'],
+    std: {
+      name: 'Colombia Standard Time',
+      abbr: 'COT',
+      offset: -5
+    },
+    dst: {}
+  },
+  {
+    name: 'Eastern Time',
+    abbr: 'ET',
+    aliases: ['america eastern', 'eastern standard time', 'eastern'],
+    ids: [
+      'America/New_York',
+      'America/Coral_Harbour',
+      'America/Detroit',
+      'America/Grand_Turk',
+      'America/Indiana/Marengo',
+      'America/Indiana/Petersburg',
+      'America/Indiana/Vevay',
+      'America/Indiana/Vincennes',
+      'America/Indiana/Winamac',
+      'America/Indianapolis',
+      'America/Iqaluit',
+      'America/Kentucky/Monticello',
+      'America/Louisville',
+      'America/Nassau',
+      'America/Nipigon',
+      'America/Pangnirtung',
+      'America/Port-au-Prince',
+      'America/Thunder_Bay',
+      'America/Toronto',
+      'America/Montreal',
+      'America/Kentucky',
+      'America/Cancun', //
+      'America/Cayman', //
+      'America/Jamaica', //
+      'America/Panama' //
+    ],
+    std: {
+      name: 'Eastern Standard Time',
+      abbr: 'EST',
+      offset: -5
+    },
+    dst: {
+      name: 'Eastern Daylight Time',
+      abbr: 'EDT',
+      offset: -4
+    },
+    long: '(UTC-05:00) Eastern Time (US & Canada)'
+  },
+  {
+    name: 'Acre Time',
+    abbr: null,
+    aliases: ['acre'],
+    ids: ['America/Eirunepe', 'America/Rio_Branco'],
+    std: {
+      name: 'Acre Standard Time',
+      offset: -5
+    },
+    dst: {}
+  },
+  {
+    name: 'Ecuador Time',
+    abbr: null,
+    aliases: ['ecuador'],
+    ids: ['America/Guayaquil'],
+    std: {
+      name: 'Ecuador Time',
+      abbr: 'ECT',
+      offset: -5
+    },
+    dst: {}
+  },
+  {
+    name: 'Cuba Time',
+    abbr: 'HCU',
+    aliases: ['cuba', 'cuba standard time', 'havana'],
+    ids: ['America/Havana'],
+    std: {
+      name: 'Cuba Standard Time',
+      abbr: 'HNCU',
+      offset: -5
+    },
+    dst: {
+      name: 'Cuba Daylight Time',
+      abbr: 'HECU',
+      offset: -4
+    },
+    long: '(UTC-05:00) Havana'
+  },
+  {
+    name: 'Peru Time',
+    abbr: null,
+    aliases: ['peru'],
+    ids: ['America/Lima'],
+    std: {
+      name: 'Peru Standard Time',
+      offset: -5
+    },
+    dst: {}
+  },
+  {
+    name: 'Atlantic Time',
+    abbr: 'AT',
+    aliases: ['atlantic', 'atlantic standard time'],
+    ids: [
+      'America/Halifax',
+      'America/Anguilla',
+      'America/Antigua',
+      'America/Aruba',
+      'America/Barbados',
+      'America/Blanc-Sablon',
+      'America/Curacao',
+      'America/Dominica',
+      'America/Glace_Bay',
+      'America/Goose_Bay',
+      'America/Grenada',
+      'America/Guadeloupe',
+      'America/Kralendijk',
+      'America/Lower_Princes',
+      'America/Marigot',
+      'America/Martinique',
+      'America/Moncton',
+      'America/Montserrat',
+      'America/Port_of_Spain',
+      'America/Puerto_Rico',
+      'America/Santo_Domingo',
+      'America/St_Barthelemy',
+      'America/St_Kitts',
+      'America/St_Lucia',
+      'America/St_Thomas',
+      'America/St_Vincent',
+      'America/Thule',
+      'America/Tortola',
+      'Atlantic/Bermuda'
+    ],
+    std: {
+      name: 'Atlantic Standard Time',
+      abbr: 'AST',
+      offset: -4
+    },
+    dst: {
+      name: 'Atlantic Daylight Time',
+      abbr: 'ADT',
+      offset: -3
+    },
+    long: '(UTC-04:00) Atlantic Time (Canada)'
+  },
+  {
+    name: 'Paraguay Time',
+    abbr: null,
+    aliases: ['paraguay', 'paraguay standard time', 'asuncion'],
+    ids: ['America/Asuncion'],
+    std: {
+      name: 'Paraguay Standard Time',
+      offset: -4
+    },
+    dst: {
+      name: 'Paraguay Summer Time',
+      offset: -3
+    },
+    long: '(UTC-04:00) Asuncion'
+  },
+  {
+    name: 'Amazon Time',
+    abbr: null,
+    aliases: [
+      'amazon',
+      'central brazilian standard time',
+      'cuiaba',
+      'central brazilian',
+      'central brazil'
+    ],
+    ids: [
+      'America/Boa_Vista',
+      'America/Campo_Grande',
+      'America/Cuiaba',
+      'America/Manaus',
+      'America/Porto_Velho'
+    ],
+    std: {
+      name: 'Amazon Standard Time',
+      offset: -4
+    },
+    dst: {},
+    long: '(UTC-04:00) Cuiaba'
+  },
+  {
+    name: 'Venezuela Time',
+    abbr: null,
+    aliases: ['venezuela', 'venezuela standard time', 'caracas'],
+    ids: ['America/Caracas'],
+    std: {
+      name: 'Venezuela Time',
+      abbr: 'VET',
+      offset: -4
+    },
+    dst: {},
+    long: '(UTC-04:00) Caracas'
+  },
+  {
+    name: 'Guyana Time',
+    abbr: null,
+    aliases: ['guyana'],
+    ids: ['America/Guyana'],
+    std: {
+      name: 'Guyana Time',
+      abbr: 'GYT',
+      offset: -4
+    },
+    dst: {}
+  },
+  {
+    name: 'Bolivia Time',
+    abbr: null,
+    aliases: ['bolivia'],
+    ids: ['America/La_Paz'],
+    std: {
+      name: 'Bolivia Time',
+      abbr: 'BOT',
+      offset: -4
+    },
+    dst: {}
+  },
+  {
+    name: 'Newfoundland Time',
+    abbr: 'HTN',
+    aliases: ['newfoundland', 'newfoundland standard time'],
+    ids: ['America/St_Johns'],
+    std: {
+      name: 'Newfoundland Standard Time',
+      abbr: 'HNTN',
+      offset: -3.5
+    },
+    dst: {
+      name: 'Newfoundland Daylight Time',
+      abbr: 'HETN',
+      offset: -2.5
+    },
+    long: '(UTC-03:30) Newfoundland'
+  },
+  {
+    name: 'Brasilia Time',
+    abbr: null,
+    aliases: ['brasilia', 'e. south america standard time', 'east south america'],
+    ids: [
+      'America/Sao_Paulo',
+      'America/Araguaina',
+      'America/Bahia',
+      'America/Belem',
+      'America/Fortaleza',
+      'America/Maceio',
+      'America/Recife',
+      'America/Santarem'
+    ],
+    std: {
+      name: 'Brasilia Standard Time',
+      offset: -3
+    },
+    dst: {},
+    long: '(UTC-03:00) Brasilia'
+  },
+  {
+    name: 'Argentina Time',
+    abbr: 'ART',
+    aliases: ['argentina', 'arst', 'argentina standard time', 'buenos aires'],
+    ids: [
+      'America/Buenos_Aires',
+      'America/Argentina/La_Rioja',
+      'America/Argentina/Rio_Gallegos',
+      'America/Argentina/Salta',
+      'America/Argentina/San_Juan',
+      'America/Argentina/San_Luis',
+      'America/Argentina/Tucuman',
+      'America/Argentina/Ushuaia',
+      'America/Catamarca',
+      'America/Cordoba',
+      'America/Jujuy',
+      'America/Mendoza',
+      'Antarctica/Rothera',
+      'America/Argentina'
+    ],
+    std: {
+      name: 'Argentina Standard Time',
+      abbr: 'ART',
+      offset: -3
+    },
+    dst: {},
+    long: '(UTC-03:00) City of Buenos Aires'
+  },
+  {
+    name: 'French Guiana Time',
+    abbr: null,
+    aliases: ['french guiana'],
+    ids: ['America/Cayenne'],
+    std: {
+      name: 'French Guiana Time',
+      abbr: 'GFT',
+      offset: -3
+    },
+    dst: {}
+  },
+  {
+    name: 'West Greenland Time',
+    abbr: 'HOG',
+    aliases: ['greenland western', 'greenland standard time', 'greenland'],
+    ids: ['America/Godthab'],
+    std: {
+      name: 'West Greenland Standard Time',
+      abbr: 'HNOG',
+      offset: -3
+    },
+    dst: {
+      name: 'West Greenland Summer Time',
+      abbr: 'HEOG',
+      offset: -2
+    },
+    long: '(UTC-03:00) Greenland'
+  },
+  {
+    name: 'St. Pierre & Miquelon Time',
+    abbr: 'HPM',
+    aliases: [
+      'pierre miquelon',
+      'saint pierre standard time',
+      'saint pierre and miquelon',
+      'saint pierre'
+    ],
+    ids: ['America/Miquelon'],
+    std: {
+      name: 'St. Pierre & Miquelon Standard Time',
+      abbr: 'HNPM',
+      offset: -3
+    },
+    dst: {
+      name: 'St. Pierre & Miquelon Daylight Time',
+      abbr: 'HEPM',
+      offset: -2
+    },
+    long: '(UTC-03:00) Saint Pierre and Miquelon'
+  },
+  {
+    name: 'Uruguay Time',
+    abbr: 'UYT',
+    aliases: ['uruguay', 'uyst', 'montevideo standard time', 'montevideo'],
+    ids: ['America/Montevideo'],
+    std: {
+      name: 'Uruguay Standard Time',
+      abbr: 'UYT',
+      offset: -3
+    },
+    dst: {},
+    long: '(UTC-03:00) Montevideo'
+  },
+  {
+    name: 'Suriname Time',
+    abbr: null,
+    aliases: ['suriname'],
+    ids: ['America/Paramaribo'],
+    std: {
+      name: 'Suriname Time',
+      abbr: 'SRT',
+      offset: -3
+    },
+    dst: {}
+  },
+  {
+    name: 'Chile Time',
+    abbr: 'CLT',
+    aliases: ['chile'],
+    ids: ['America/Santiago', 'America/Punta_Arenas', 'Antarctica/Palmer'],
+    std: {
+      name: 'Chile Standard Time',
+      abbr: 'CLT',
+      offset: -3
+    },
+    dst: {
+      name: 'Chile Summer Time',
+      abbr: 'CLST',
+      offset: -4
+    }
+  },
+  {
+    name: 'Falkland Islands Time',
+    abbr: 'FKT',
+    aliases: ['falkland'],
+    ids: ['Atlantic/Stanley'],
+    std: {
+      abbr: 'FKST',
+      name: 'Falkland Islands Summer Time',
+      offset: -3
+    },
+    dst: {}
+  },
+  {
+    name: 'Fernando de Noronha Time',
+    abbr: null,
+    aliases: ['noronha'],
+    ids: ['America/Noronha'],
+    std: {
+      name: 'Fernando de Noronha Standard Time',
+      offset: -2
+    },
+    dst: {}
+  },
+  {
+    name: 'South Georgia Time',
+    abbr: null,
+    aliases: ['south georgia'],
+    ids: ['Atlantic/South_Georgia'],
+    std: {
+      name: 'South Georgia Time',
+      offset: -2
+    },
+    dst: {}
+  },
+  {
+    name: 'Azores Time',
+    abbr: 'AZOT',
+    aliases: ['azores', 'azores standard time'],
+    ids: ['Atlantic/Azores'],
+    std: {
+      name: 'Azores Standard Time',
+      offset: -1
+    },
+    dst: {
+      name: 'Azores Summer Time',
+      abbr: 'AZOST',
+      offset: 0
+    },
+    long: '(UTC-01:00) Azores'
+  },
+  {
+    name: 'Cape Verde Time',
+    abbr: null,
+    aliases: ['cape verde', 'cape verde standard time', 'cabo verde'],
+    ids: ['Atlantic/Cape_Verde'],
+    std: {
+      name: 'Cape Verde Standard Time',
+      offset: -1
+    },
+    dst: {},
+    long: '(UTC-01:00) Cabo Verde Is.'
   }
 ]

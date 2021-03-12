@@ -3,11 +3,17 @@ const aliases = require('../aliases') //149
 // const cldr = require('./cldr') //138
 const zones = require('spacetime').timezones()
 
-console.log(zones.length)
-Object.keys(zones).forEach((k) => {
-  let found = meta.find((obj) => obj.ids.find((id) => id.toLowerCase() === k))
-  if (!found && !/[0-9]/.test(k) && !aliases[k]) {
-    console.log(k)
+meta.forEach((obj) => {
+  let hem = zones[obj.ids[0].toLowerCase()].hem
+  let arr = obj.ids.map((id) => {
+    return (zones[id.toLowerCase()] || {}).hem
+  })
+  if (arr.every((s) => s === 'n' || s === undefined)) {
+    obj.hemisphere = 'n'
+  } else if (arr.every((s) => s === 's' || s === undefined)) {
+    obj.hemisphere = 's'
+  } else {
+    console.log(obj.name, arr)
   }
-  // let id=titlecase(k)
+  // console.log(arr)
 })
