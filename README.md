@@ -136,12 +136,12 @@ const spacetime = require('spacetime')
 const soft = require('timezone-soft')
 
 let display = soft('montreal')[0]
-let show = display.standard.abbreg
+let show = display.standard.abbrev
 
 // are we in standard time, or daylight time?
 let s = spacetime.now(display.iana)
 if(display.daylight && s.isDST()){
-  show = display.daylight.abbreg
+  show = display.daylight.abbrev
 }
 console.log(s.time() + ' ' + show)
 // '4:20pm EDT'
