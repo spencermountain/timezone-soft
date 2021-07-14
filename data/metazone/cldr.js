@@ -23,13 +23,7 @@ export default [
     aliases: ['aleutian']
   },
   {
-    ids: [
-      'Pacific/Honolulu',
-      'Pacific/Rarotonga',
-      'Pacific/Tahiti',
-      'Pacific/Johnston',
-      'Etc/GMT+10'
-    ],
+    ids: ['Pacific/Honolulu', 'Pacific/Rarotonga', 'Pacific/Tahiti', 'Pacific/Johnston', 'Etc/GMT+10'],
     name: 'Hawaiian Standard Time',
     offset: -10,
     iso: '(UTC-10:00) Hawaii',
@@ -165,13 +159,13 @@ export default [
     iso: '(UTC-06:00) Central Time (US & Canada)',
     aliases: ['central']
   },
-  {
-    ids: ['Pacific/Easter'],
-    name: 'Easter Island Standard Time',
-    offset: -6,
-    iso: '(UTC-06:00) Easter Island',
-    aliases: ['easter island']
-  },
+  // {
+  //   ids: ['Pacific/Easter'],
+  //   name: 'Easter Island Standard Time',
+  //   offset: -6,
+  //   iso: '(UTC-06:00) Easter Island',
+  //   aliases: ['easter island']
+  // },
   {
     ids: ['America/Mexico_City', 'America/Bahia_Banderas', 'America/Merida', 'America/Monterrey'],
     name: 'Central Standard Time (Mexico)',
@@ -538,16 +532,7 @@ export default [
     name: 'W. Europe Standard Time',
     offset: 1,
     iso: '(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna',
-    aliases: [
-      'amsterdam',
-      'berlin',
-      'bern',
-      'rome',
-      'stockholm',
-      'vienna',
-      'west europe',
-      'western europe'
-    ]
+    aliases: ['amsterdam', 'berlin', 'bern', 'rome', 'stockholm', 'vienna', 'west europe', 'western europe']
   },
   {
     ids: [
