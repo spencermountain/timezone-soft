@@ -32,5 +32,17 @@ export default {
   'msk+08 - sakhalin island': 'Asia/Sakhalin',
   'msk+08 - sakha (e) north kuril is': 'Asia/Srednekolymsk',
   'msk+09 - kamchatka': 'Asia/Kamchatka',
-  'msk+09 - bering sea': 'Asia/Anadyr'
+  'msk+09 - bering sea': 'Asia/Anadyr',
+  // underscores in key names
+  'antarctica/south_pole': 'Pacific/Auckland',
+  'america/buenos_aires': 'America/Argentina/Buenos_Aires',
+  'america/coral_harbour': 'America/Atikokan',
+  'america/fort_wayne': 'America/Indiana/Indianapolis',
+  'america/knox_in': 'America/Indiana/Knox',
+  'america/porto_acre': 'America/Rio_Branco',
+  'america/santa_isabel': 'America/Tijuana',
+  'asia/tel_aviv': 'Asia/Jerusalem',
+  'asia/ujung_pandang': 'Asia/Makassar',
+  'asia/ulan_bator': 'Asia/Ulaanbaatar',
+  'atlantic/jan_mayen': 'Europe/Oslo'
 }

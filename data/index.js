@@ -90,8 +90,7 @@ Object.keys(all).forEach((k) => {
   // }
 })
 // console.log(Object.keys(all).length)
-// console.log(all['south east asia'])
-
+// console.log(all['mexico/bajasur'])
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))
 
 export default all

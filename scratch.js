@@ -4,6 +4,7 @@ let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
 let ids = soft('asia/tel_aviv')
+// let ids = soft('asia/macao')
 console.log(ids)
 
 // let res = {}
