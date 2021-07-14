@@ -1,4 +1,4 @@
-import unpack from 'efrt/unpack'
+import { unpack } from 'efrt'
 import pckd from './_data.js'
 import misc from './misc.js'
 import parseOffset from './parseOffset.js'
