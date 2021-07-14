@@ -13,3 +13,4 @@ const soft = function (str) {
 soft.prototype.version = version
 
 export default soft
+// export { find, display, version }
