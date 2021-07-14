@@ -3,11 +3,19 @@
   "version": "1.2.0",
   "author": "spencermountain",
   "description": "interpret abbreviated and informal timezone names",
-  "main": "builds/timezone-soft.js",
+  "main": "builds/timezone-soft.cjs",
   "module": "builds/timezone-soft.mjs",
-  "unpkg": "builds/timezone-soft.min.js",
+  "unpkg": "builds/timezone-soft.min.cjs",
   "types": "types/index.d.ts",
   "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./builds/timezone-soft.cjs",
+      "import": "./src/timezone-soft.mjs",
+      "default": "./builds/timezone-soft.cjs"
+    }
+  },
   "scripts": {
     "watch": "amble ./scratch.js",
     "pack": "node ./scripts/pack.js",
@@ -33,18 +41,15 @@
     "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
-    "printWidth": 100
+    "printWidth": 120
   },
   "dependencies": {
     "efrt-unpack": "2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.14.6",
-    "@babel/preset-env": "7.14.7",
     "amble": "1.3.0",
-    "efrt": "2.3.1",
+    "efrt": "2.3.2",
     "rollup": "2.53.1",
-    "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-terser": "7.0.2",
     "spacetime": "6.16.2",
     "tap-dancer": "0.3.4",
