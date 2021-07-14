@@ -1,6 +1,6 @@
-const metas = require('../../data/metazone')
+import metas from '../../data/metazone/index.js'
 // const metas = require('../../data/05-metazones')
-const offsets = require('./offsets')
+import offsets from './offsets.js'
 
 const titleCase = function (str) {
   return str.replace(/\w\S*/g, function (txt) {
@@ -44,4 +44,4 @@ const display = function (id) {
     // offset: meta.offset - 1 || null
   }
 }
-module.exports = display
+export default display

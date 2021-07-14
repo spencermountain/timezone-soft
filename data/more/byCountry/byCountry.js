@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   AS: ['Pacific/Pago_Pago'],
   NU: ['Pacific/Niue'],
   UM: ['Pacific/Midway', 'Pacific/Wake'],

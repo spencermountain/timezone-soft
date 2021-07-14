@@ -260,4 +260,4 @@ const informal = {
 //   return h
 // }, {})
 
-module.exports = informal
+export default informal

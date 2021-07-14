@@ -1,5 +1,5 @@
 // strings that don't pack properly
-module.exports = {
+export default {
   'gmt+0': 'etc/Gmt',
   'gmt-0': 'etc/Gmt',
   gmt0: 'etc/Gmt',

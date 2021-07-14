@@ -1,12 +1,12 @@
-const iana = require('./01-iana')
-const byCity = require('./02-byCity')
-const byCountry = require('./03-byCountry')
-const byState = require('./04-byState')
-const oldZones = require('./05-oldZones')
-const metazones = require('./metazone')
-// const metazones = require('./05-metazones')
-const abbreviations = require('./06-abbreviations')
-const parentheses = require('./07-parentheses')
+import iana from './01-iana.js'
+import byCity from './02-byCity.js'
+import byCountry from './03-byCountry.js'
+import byState from './04-byState.js'
+import oldZones from './05-oldZones.js'
+import metazones from './metazone/index.js'
+// const metazones = require('./05-metazones.js')
+import abbreviations from './06-abbreviations.js'
+import parentheses from './07-parentheses.js'
 
 let all = Object.assign({}, iana, byState, parentheses, byCity, oldZones)
 
@@ -94,4 +94,4 @@ Object.keys(all).forEach((k) => {
 
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))
 
-module.exports = all
+export default all

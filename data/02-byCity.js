@@ -2485,4 +2485,4 @@ const byCity = {
   mst7mdt: 'America/Phoenix',
   cst6cdt: 'America/Chicago'
 }
-module.exports = byCity
+export default byCity

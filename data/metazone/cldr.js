@@ -1,6 +1,6 @@
 // CLDR metazones, with aliases
 // https://github.com/unicode-org/cldr/blob/master/common/supplemental/windowsZones.xml
-module.exports = [
+export default [
   {
     ids: ['Etc/GMT+12'],
     name: 'Dateline Standard Time',

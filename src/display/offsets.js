@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   'asia/dili': '+9',
   'pacific/palau': '+9',
   'australia/west': '+8',

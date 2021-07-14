@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   'west africa time': 'Africa/Lagos',
   casey: 'Antarctica/Casey',
   davis: 'Antarctica/Davis',

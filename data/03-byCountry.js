@@ -3,7 +3,7 @@
 //  based on population, country-capital, and geographical center
 //  often some guesswork!
 
-module.exports = {
+export default {
   //First, these countries only have one timezone.
   andorra: {
     code: 'ad',

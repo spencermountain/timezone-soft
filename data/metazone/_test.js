@@ -1,5 +1,5 @@
-let meta = require('.') //149
-const aliases = require('../more/aliases') //149
+import meta from '.' //149
+import aliases from '../more/aliases' //149
 // const cldr = require('./cldr') //138
 const zones = require('spacetime').timezones()
 

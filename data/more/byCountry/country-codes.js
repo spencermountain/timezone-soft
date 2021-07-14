@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   AC: 'Ascension Island',
   AD: 'Andorra',
   AE: 'United Arab Emirates',

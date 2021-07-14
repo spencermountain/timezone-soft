@@ -1,7 +1,7 @@
-const unpack = require('efrt-unpack')
-const pckd = require('./_data')
-const misc = require('./misc')
-const parseOffset = require('./parseOffset')
+import unpack from 'efrt/unpack'
+import pckd from './_data.js'
+import misc from './misc.js'
+import parseOffset from './parseOffset.js'
 
 let lexicon = unpack(pckd)
 lexicon = Object.assign(lexicon, misc)
@@ -100,4 +100,4 @@ const find = function (str) {
 
   return null
 }
-module.exports = find
+export default find

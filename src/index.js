@@ -1,6 +1,6 @@
-const find = require('./find')
-const display = require('./display')
-const version = require('../_version')
+import find from './find/index.js'
+import display from './display/index.js'
+import version from '../_version.js'
 
 const soft = function (str) {
   let ids = find(str) || []
@@ -12,4 +12,4 @@ const soft = function (str) {
 }
 soft.prototype.version = version
 
-module.exports = soft
+export default soft

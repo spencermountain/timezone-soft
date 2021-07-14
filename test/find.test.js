@@ -1,6 +1,5 @@
-'use strict'
-const test = require('tape')
-const soft = require('../src')
+import test from 'tape'
+import soft from './_lib.js'
 
 test('informal timezones', (t) => {
   let arr = [

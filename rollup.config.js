@@ -1,8 +1,5 @@
-import commonjs from 'rollup-plugin-commonjs'
-import json from 'rollup-plugin-json'
 import { terser } from 'rollup-plugin-terser'
 import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
 
 export default [
   {
@@ -14,9 +11,6 @@ export default [
       }
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
       babel({
         babelrc: false,
         presets: ['@babel/preset-env']
@@ -34,9 +28,6 @@ export default [
       }
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
       babel({
         babelrc: false,
         presets: ['@babel/preset-env']
@@ -53,9 +44,6 @@ export default [
       }
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
       babel({
         babelrc: false,
         presets: ['@babel/preset-env']

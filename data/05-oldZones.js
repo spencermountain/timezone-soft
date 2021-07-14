@@ -5,7 +5,7 @@
 // and from https://Github.com/Mj1856/Timezonenames
 
 // link-name : target
-module.exports = {
+export default {
   'africa/asmera': 'Africa/Nairobi',
   'africa/timbuktu': 'Africa/Abidjan',
   'america/argentina/comodrivadavia': 'America/Argentina/Catamarca',
@@ -82,7 +82,7 @@ module.exports = {
   'gb-eire': 'Europe/London',
   'gmt+0': 'Etc/GMT',
   'gmt-0': 'Etc/GMT',
-  'gmt0': 'Etc/GMT',
+  gmt0: 'Etc/GMT',
   greenwich: 'Etc/GMT',
   hongkong: 'Asia/Hong_Kong',
   iceland: 'Atlantic/Reykjavik',

@@ -198,4 +198,4 @@ const byState = {
   //misc
   siberia: 'Asia/Novosibirsk'
 }
-module.exports = byState
+export default byState

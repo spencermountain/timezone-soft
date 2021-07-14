@@ -256,16 +256,7 @@ const iana = {
     'Perth',
     'Eucla'
   ],
-  Indian: [
-    'Cocos',
-    'Christmas',
-    'Chagos',
-    'Mauritius',
-    'Maldives',
-    'Reunion',
-    'Mahe',
-    'Kerguelen'
-  ],
+  Indian: ['Cocos', 'Christmas', 'Chagos', 'Mauritius', 'Maldives', 'Reunion', 'Mahe', 'Kerguelen'],
   Europe: [
     'Andorra',
     'Tirane',
@@ -314,7 +305,7 @@ const iana = {
     'Uzhgorod',
     'Zaporozhye'
   ],
-    Antarctica: [
+  Antarctica: [
     'Casey',
     'Davis',
     'DumontDUrville',
@@ -387,4 +378,4 @@ Object.keys(iana).forEach((k) => {
 // delete zones.eastern // err
 // delete zones.pacific // err
 // delete zones.mountain // err
-module.exports = zones
+export default zones

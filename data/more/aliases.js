@@ -1,6 +1,6 @@
 // tzs that dont exist in zoneinfo anymore
 
-module.exports = {
+export default {
   // 'Canada/East-Saskatchewan': 'America/Regina',
   'asia/volgograd': 'Europe/Moscow',
   // 'America/Argentina': '', //multiple timezones...

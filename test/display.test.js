@@ -1,5 +1,5 @@
-const test = require('tape')
-const soft = require('../src')
+import test from 'tape'
+import soft from './_lib.js'
 
 test('display-test', (t) => {
   let arr = [
