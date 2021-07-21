@@ -12,7 +12,7 @@
   "exports": {
     ".": {
       "require": "./builds/timezone-soft.cjs",
-      "import": "./src/timezone-soft.mjs",
+      "import": "./builds/timezone-soft.mjs",
       "default": "./builds/timezone-soft.cjs"
     }
   },
