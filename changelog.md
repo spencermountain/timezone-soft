@@ -1,3 +1,7 @@
+### 1.3.1 [July 2021]
+
+- **[fix]** - path to esmodule build
+
 ### 1.3.0 [July 2021]
 
 - **[change]** - convert to esmodules (should not be breaking)
