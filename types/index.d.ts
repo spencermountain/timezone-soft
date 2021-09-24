@@ -1,7 +1,7 @@
 
 export interface TimeZoneInfo {
   name: string;
-  abbrev: string;
+  abbr: string;
 }
 
 export interface DisplayFormat {
