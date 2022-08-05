@@ -39,7 +39,6 @@ Object.keys(zones).forEach(k => {
     packed[top][name].push(dst)
   }
 })
-console.log(packed)
 
 //write it to a file in ./src
 const outFile = path.join(new URL('./', import.meta.url).pathname, '../src/find/_data.js')
