@@ -53,7 +53,7 @@ export default {
       "algeria",
       "dz",
       "dza",
-      "central european standard time",
+      "central european",
       "cet"
     ]
   },
@@ -105,7 +105,7 @@ export default {
       "egypt",
       "eg",
       "egy",
-      "eastern european standard time",
+      "eastern european",
       "eet"
     ]
   },
@@ -134,8 +134,7 @@ export default {
       "morocco",
       "ma",
       "mar",
-      "morocco standard time",
-      "western european standard time",
+      "western european",
       "wet"
     ]
   },
@@ -147,15 +146,13 @@ export default {
       "africa",
       "ceuta",
       "ceutamelilla",
-      "central european time",
+      "central european",
       "europe central",
-      "romance standard time",
       "brussels",
       "copenhagen",
       "madrid",
       "paris",
       "romance",
-      "central european standard time",
       "cet",
     ]
   },
@@ -170,10 +167,9 @@ export default {
       "western sahara",
       "eh",
       "esh",
-      "morocco standard time",
       "casablanca",
       "morocco",
-      "western european standard time",
+      "western european",
       "wet"
     ]
   },
@@ -218,9 +214,7 @@ export default {
       "sast",
       "africa/maseru",
       "africa/mbabane",
-      "south africa time",
       "africa southern",
-      "south africa standard time",
       "harare",
     ]
   },
@@ -234,7 +228,7 @@ export default {
       "south sudan",
       "ss",
       "ssd",
-      "central africa time",
+      "central africa",
       "cat"
     ]
   },
@@ -261,7 +255,6 @@ export default {
       "sdn",
       "cat",
       "central africa",
-      "central africa time"
     ]
   },
   "Africa/Lagos": {
@@ -336,13 +329,10 @@ export default {
       "africa/malabo",
       "africa/niamey",
       "africa/porto-novo",
-      "west africa time",
       "africa western",
       "western africa",
-      "w central africa standard time",
       "west central africa",
       "w central africa",
-      "west africa standard time"
     ]
   },
   "Africa/Maputo": {
@@ -368,9 +358,7 @@ export default {
       "africa/kigali",
       "africa/lubumbashi",
       "africa/lusaka",
-      "central africa time",
       "africa central",
-      "namibia standard time",
       "windhoek",
       "namibia",
       "cat"
@@ -418,9 +406,8 @@ export default {
       "indian/antananarivo",
       "indian/comoro",
       "indian/mayotte",
-      "east africa time",
       "africa eastern",
-      "e africa standard time",
+      "e africa",
       "eastern africa"
     ]
   },
@@ -434,15 +421,13 @@ export default {
       "chad",
       "td",
       "tcd",
-      "west africa time",
+      "west africa",
       "wat",
       "africa western",
       "wast",
       "western africa",
-      "w central africa standard time",
       "west central africa",
       "w central africa",
-      "west africa standard time"
     ]
   },
   "Africa/Sao_Tome": {
@@ -476,7 +461,7 @@ export default {
       "libya",
       "ly",
       "lby",
-      "eastern european standard time",
+      "eastern european",
       "eet"
     ]
   },
@@ -490,7 +475,7 @@ export default {
       "tunisia",
       "tn",
       "tun",
-      "central european standard time",
+      "central european",
       "cet"
     ]
   },
@@ -503,7 +488,7 @@ export default {
       "namibia",
       "na",
       "nam",
-      "central africa time",
+      "central africa",
       "africa central",
       "cat"
     ]
