@@ -29,5 +29,44 @@ let oldZone = Object.entries(oldZones).reduce((h, a) => {
   return h
 }, {})
 
+import parentheses from '../data/07-parentheses.js'
+let parenthesis = Object.entries(parentheses).reduce((h, a) => {
+  h[a[1]] = h[a[1]] || []
+  h[a[1]].push(a[0])
+  return h
+}, {})
 
-export { byCity, byCountry, byState, oldZone }
+import links from '../data/links.js'
+let link = Object.entries(links).reduce((h, a) => {
+  h[a[1]] = h[a[1]] || []
+  h[a[1]].push(a[0])
+  return h
+}, {})
+
+import aliases from './aliases.js'
+let alias = Object.entries(aliases).reduce((h, a) => {
+  h[a[1]] = h[a[1]] || []
+  h[a[1]].push(a[0])
+  return h
+}, {})
+
+import metas from '../data/metazone/index.js'
+let meta = metas.reduce((h, o) => {
+  o.ids.forEach(id => {
+    h[id] = h[id] || []
+    h[id].push(o.name)
+    h[id].push(o.abbr)
+    h[id] = h[id].concat(o.aliases)
+    if (o.std) {
+      h[id].push(o.std.name)
+      h[id].push(o.std.abbr)
+    }
+    if (o.long) {
+      h[id].push(o.long.replace(/\(.*\)/, ''))
+    }
+  })
+  return h
+}, {})
+console.log(meta)
+
+export { byCity, byCountry, byState, oldZone, parenthesis, link, alias, meta }
