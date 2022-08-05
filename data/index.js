@@ -94,3 +94,4 @@ Object.keys(all).forEach((k) => {
 // console.log(Object.keys(all).filter((k) => typeof all[k] !== 'string'))
 
 export default all
+console.log(Object.keys(all).length)

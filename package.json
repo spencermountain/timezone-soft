@@ -21,8 +21,8 @@
     "pack": "node ./scripts/pack.js",
     "build": "npm run pack && node ./scripts/version.js && rollup -c && npm run filesize",
     "filesize": "node ./scripts/filesize.js",
-    "test": "TESTENV=dev tape-es ./test/**/*.test.js | tap-dancer",
-    "testb": "TESTENV=prod tape-es ./test/**/*.test.js | tap-dancer"
+    "test": "TESTENV=dev tape ./test/**/*.test.js | tap-dancer",
+    "testb": "TESTENV=prod tape ./test/**/*.test.js | tap-dancer"
   },
   "repository": {
     "type": "git",
@@ -43,16 +43,16 @@
     "singleQuote": true,
     "printWidth": 120
   },
+  "dependencies": {},
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "13.0.2",
+    "@rollup/plugin-node-resolve": "13.3.0",
     "amble": "1.3.0",
-    "efrt": "2.3.2",
-    "rollup": "2.53.3",
+    "efrt": "2.6.0",
+    "rollup": "2.77.2",
     "rollup-plugin-terser": "7.0.2",
-    "spacetime": "6.16.2",
+    "spacetime": "7.1.4",
     "tap-dancer": "0.3.4",
-    "tape": "5.2.2",
-    "tape-es": "1.2.15"
+    "tape": "5.5.3"
   },
   "license": "MIT"
 }
