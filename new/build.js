@@ -4,8 +4,9 @@ import zonefile from './zonefile.js'
 // import path from 'path'
 // import { fileURLToPath } from 'url'
 import aliases from './aliases.js'
+import abbreviatons from '../data/06-abbreviations.js'
 
-import { byCity, byCountry, byState } from './setups.js'
+import { byCity, byCountry, byState, oldZone } from './setups.js'
 
 
 //try to match these against iana form
@@ -40,19 +41,28 @@ Object.keys(zonefile).forEach(k => {
 
   //add country codes, name
   if (byCountry[k]) {
-    names = names.concat(byCountry[k])
+    names = names.concat(byCountry[k])//3457
   }
 
   //add states, provinces
   if (byState[k]) {
-    names = names.concat(byState[k])
+    names = names.concat(byState[k])//3609
+  }
+
+  //add deprecated iana codes
+  if (oldZone[k]) {
+    names = names.concat(oldZone[k])//3719
+  }
+  //add weird abbreviatons
+  if (abbreviatons[k]) {
+    names = names.concat(abbreviatons[k].filter(str => str))//3956
   }
 
 
 
 
 
-  console.log(' ', names)
+  // console.log(' ', names)
   // fs.writeFileSync(dir + `/data/${top}.js`,`export default `+JSON.stringify(zonefile[k], null, 2))
   // fs.promises.mkdir(dir + `/data/${top}.js`, { recursive: true }).catch(console.error);
   total += names.length

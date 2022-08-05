@@ -14,36 +14,31 @@ const informal = {
   'America/Anchorage': ['ahst', 'ahdt', 'akst', 'akdt', 'alaska'], //Alaska Standard Time
   'America/St_Johns': ['nst', 'ndt', 'nt', 'newfoundland', 'nddt'],
 
-  // awt: 'America/Blanc-sablon',
-  // addt: 'America/Pangnirtung',
-  // apt: 'America/Blanc-sablon',
-  // cddt: 'America/Rankin_Inlet',
-  // cwt: 'America/Mexico_City',
-  // cpt: 'America/Atikokan',
-  // eddt: 'America/Iqaluit',
-  // ept: 'America/Detroit',
-  // ewt: 'America/Detroit',
-  // ect: 'America/Anguilla', //Eastern caribbean time (does not recognise dst)
+  'America/Blanc-sablon': ['awt', 'apt'],
+  'America/Pangnirtung': ['addt'],
+  'America/Rankin_Inlet': ['cddt'],
+  'America/Mexico_City': ['cwt'],
+  'America/Atikokan': ['cpt'],
+  'America/Iqaluit': ['eddt'],
+  'America/Detroit': ['ept', 'ewt'],
+  'America/Anguilla': ['ect'],
+  'America/Martinique': ['ffmt'],
+  'America/Grand_Turk': ['kmt'],
+  'America/Cambridge_Bay': ['mddt'],
+  'America/Boise': ['mpt'],
+  'America/Phoenix': ['mwt'],
+  'America/Adak': ['nwt'],
+  'America/Goose_Bay': ['npt'],
+  'America/Inuvik': ['pddt'],
+  'America/Port-au-prince': ['ppmt'],
+  'America/Dawson_Creek': ['ppt', 'pwt'],
+  'America/Guayaquil': ['qmt'],
+  'America/Santo_Domingo': ['sdmt'],
+  'America/Costa_Rica': ['sjmt'],
+  'America/Dawson': ['ydt', 'ypt', 'yddt', 'ywt'],
+  'America/Whitehorse': ['yst'],
+
   // 'eastern caribbean': 'America/Anguilla',
-  // ffmt: 'America/Martinique',
-  // kmt: 'America/Grand_Turk',
-  // mddt: 'America/Cambridge_Bay',
-  // mpt: 'America/Boise',
-  // mwt: 'America/Phoenix',
-  // nwt: 'America/Adak',
-  // // npt: 'America/Goose_Bay',
-  // pddt: 'America/Inuvik',
-  // ppmt: 'America/Port-au-prince',
-  // ppt: 'America/Dawson_Creek',
-  // pwt: 'America/Dawson_Creek',
-  // qmt: 'America/Guayaquil',
-  // sdmt: 'America/Santo_Domingo',
-  // sjmt: 'America/Costa_Rica',
-  // ydt: 'America/Dawson', //Yukon
-  // ypt: 'America/Dawson',
-  // yddt: 'America/Dawson',
-  // ywt: 'America/Dawson',
-  // yst: 'America/Whitehorse',
 
   //South america
   'America/Caracas': ['vet', null, 'venezuela'],
@@ -73,28 +68,25 @@ const informal = {
   'ETC/GMT': ['gmt', null, 'greenwich'],
   'Europe/Lisbon': ['wet', 'west', 'west europe'], //Western europe
   'Europe/Berlin': ['cet', 'cest', 'central europe', 'middle european', 'met', 'mest'], //Central europe
-  'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt'], //Eastern europe
+  'Europe/Riga': ['eet', 'eest', 'east europe', 'kalt', 'lst'], //Eastern europe
   // -- these are old european ones, before the EU, i think:
   // 'Europe/Minsk': ['feet', 'feest', 'eastern europe'], //Further eastern europe (discontinued)
-  // ace: 'Europe/Dublin',
-  // amt: 'Europe/Amsterdam',
-  // bdst: 'Europe/Gibraltar',
-  // bmt: 'Europe/Brussels',
-  // bst: 'Europe/Gibraltar', //British summer time
-  // 'british summer': 1,
-  // dmt: 'Europe/Dublin',
-  // dft: 1, //Aix-specific equivalent of central european time
-  // cmt: 'Europe/Copenhagen',
-  // // ist: 'Europe/Dublin',
-  // imt: 'Europe/Sofia',
-  // lst: 'Europe/Riga',
-  // pmt: 'Europe/Prague',
-  // rmt: 'Europe/Rome',
-  // set: 'Europe/Stockholm',
-  // wemt: 'Europe/Madrid',
-  // tse: 'Europe/Dublin',
+  'Europe/Dublin': ['ace', 'dmt', 'ist', 'tse'],
+  'Europe/Amsterdam': ['amt'],
+  'Europe/Gibraltar': ['bdst', 'bst'],
+  'Europe/Brussels': ['bmt'],
+  'Europe/Copenhagen': ['cmt'],
+  'Europe/Sofia': ['imt'],
+  'Europe/Prague': ['pmt'],
+  'Europe/Rome': ['rmt'],
+  'Europe/Stockholm': ['set'],
+  'Europe/Madrid': ['wemt'],
+
   // utc: 'etc/Utc', //Coordinated universal time
+  // 'british summer': 1,
   // 'coordinated universal': 'etc/Utc',
+
+  // dft: 1, //Aix-specific equivalent of central european time
 
   //Russia
   'Europe/Moscow': ['msk', null, 'fet', 'mdst', 'msd'], //'further eastern europe'

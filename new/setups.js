@@ -22,4 +22,12 @@ let byState = Object.entries(byStates).reduce((h, a) => {
   return h
 }, {})
 
-export { byCity, byCountry, byState }
+import oldZones from '../data/05-oldZones.js'
+let oldZone = Object.entries(oldZones).reduce((h, a) => {
+  h[a[1]] = h[a[1]] || []
+  h[a[1]].push(a[0])
+  return h
+}, {})
+
+
+export { byCity, byCountry, byState, oldZone }
