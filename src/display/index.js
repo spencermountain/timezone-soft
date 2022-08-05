@@ -1,4 +1,4 @@
-import metas from './data.js'
+import metas from './unpack.js'
 // const metas = require('../../data/05-metazones')
 // import offsets from './offsets.js'
 
@@ -17,26 +17,26 @@ const display = function (id) {
       return tz === id
     })
   })
-  if (!meta) {
-    let offset = ''//offsets[id.toLowerCase()]
-    if (offset !== undefined) {
-      let abbr = `UTC${offset}`
-      let parts = id.split(/\//)
-      let name = titleCase(parts[parts.length - 1])
-      name = name.replace(/_/g, ' ')
-      name += ' Time'
-      meta = {
-        std: { name: name, abbr: abbr },
-        offset: null
-      }
-    } else {
-      let abbr = id.replace(/^etc\//i, '')
-      meta = {
-        std: { name: id, abbr: abbr }, // 'Etc/GMT+5'
-        offset: null
-      }
-    }
-  }
+  // if (!meta) {
+  //   let offset = ''//offsets[id.toLowerCase()]
+  //   if (offset !== undefined) {
+  //     let abbr = `UTC${offset}`
+  //     let parts = id.split(/\//)
+  //     let name = titleCase(parts[parts.length - 1])
+  //     name = name.replace(/_/g, ' ')
+  //     name += ' Time'
+  //     meta = {
+  //       std: { name: name, abbr: abbr },
+  //       offset: null
+  //     }
+  //   } else {
+  //     let abbr = id.replace(/^etc\//i, '')
+  //     meta = {
+  //       std: { name: id, abbr: abbr }, // 'Etc/GMT+5'
+  //       offset: null
+  //     }
+  //   }
+  // }
   return {
     iana: id,
     standard: meta.std || null,
