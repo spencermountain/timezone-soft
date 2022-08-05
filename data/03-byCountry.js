@@ -19,7 +19,7 @@ export default {
   },
   'virgin islands': {
     code: 'vi',
-    choice: 'America/Port_Of_Spain'
+    choice: 'America/Puerto_Rico'
   },
   albania: {
     code: 'al',
@@ -39,7 +39,7 @@ export default {
   },
   'st maarten': {
     code: 'sx',
-    choice: 'America/Curacao'
+    choice: 'America/Puerto_Rico'
   },
   finland: {
     code: 'fi',
@@ -95,7 +95,7 @@ export default {
   },
   bahamas: {
     code: 'bs',
-    choice: 'America/Nassau'
+    choice: 'America/Toronto'
   },
   bhutan: {
     code: 'bt',
@@ -203,7 +203,7 @@ export default {
   },
   ghana: {
     code: 'gh',
-    choice: 'Africa/Accra'
+    choice: 'Africa/Abidjan'
   },
   gibraltar: {
     code: 'gi',
@@ -243,7 +243,7 @@ export default {
   },
   haiti: {
     code: 'ht',
-    choice: 'America/Port-au-prince'
+    choice: 'America/Port-au-Prince'
   },
   hungary: {
     code: 'hu',
@@ -582,7 +582,7 @@ export default {
   },
   argentina: {
     code: 'ar',
-    choice: 'America/Argentina'
+    choice: 'America/Argentina/Buenos_Aires'
   },
   australia: {
     code: 'au',
@@ -598,7 +598,7 @@ export default {
   },
   congo: {
     code: 'cd',
-    choice: 'Africa/Kinshasa' //'Africa/Lagos'?
+    choice: 'Africa/Lagos'
   },
   chile: {
     code: 'cl',
@@ -614,7 +614,7 @@ export default {
   },
   germany: {
     code: 'de',
-    choice: 'Europe/Berlin'
+    choice: 'Europe/Busingen'
   },
   ecuador: {
     code: 'ec',
@@ -630,7 +630,7 @@ export default {
   },
   greenland: {
     code: 'gl',
-    choice: 'America/Godthab'
+    choice: 'America/Nuuk'
   },
   indonesia: {
     code: 'id',

@@ -1089,6 +1089,11 @@ export default {
     "hem": "n",
     "dst": "eu2"
   },
+  "Europe/Busingen": {
+    "offset": 2,
+    "hem": "n",
+    "dst": "eu2"
+  },
   "Europe/Prague": {
     "offset": 2,
     "hem": "n",

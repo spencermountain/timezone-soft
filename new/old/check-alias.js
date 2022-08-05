@@ -1,11 +1,12 @@
-import data from '../data/byOffset.js'
-import zones from './zonefile.js'
-import links from './aliases.js'
+import data from '../../data/03-byCountry.js'
+import zones from '../zonefile.js'
+// import links from '../aliases.js'
 
 
 let out = {}
 Object.entries(data).forEach(a => {
-  let [w, val] = a
+  let [w, o] = a
+  let val = o.choice
   if (!zones[val]) {
     console.log(val)
     // let alias = links[val]

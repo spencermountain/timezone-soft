@@ -5,7 +5,7 @@ import zonefile from './zonefile.js'
 // import { fileURLToPath } from 'url'
 import aliases from './aliases.js'
 
-import { byCity } from './setups.js'
+import { byCity, byCountry, byState } from './setups.js'
 
 
 //try to match these against iana form
@@ -27,16 +27,32 @@ Object.keys(zonefile).forEach(k => {
   let names = []
   console.log('\n' + k)
   let split = k.split(/\//)
+
   // add all parts of their iana code
   split.forEach(w => {
     names.push(normalize(w)) //872
   })
+
   // add notable cities in this zone
   if (byCity[k]) {
     names = names.concat(byCity[k])//3343
   }
-  console.log(' ', names)
 
+  //add country codes, name
+  if (byCountry[k]) {
+    names = names.concat(byCountry[k])
+  }
+
+  //add states, provinces
+  if (byState[k]) {
+    names = names.concat(byState[k])
+  }
+
+
+
+
+
+  console.log(' ', names)
   // fs.writeFileSync(dir + `/data/${top}.js`,`export default `+JSON.stringify(zonefile[k], null, 2))
   // fs.promises.mkdir(dir + `/data/${top}.js`, { recursive: true }).catch(console.error);
   total += names.length
