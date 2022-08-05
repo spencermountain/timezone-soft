@@ -11,15 +11,13 @@ Object.keys(pcked).forEach(top => {
     let a = pcked[top][name]
     let id = `${top}/${name}`
     zones[id] = {
-      offset: a[0],
-      hem: a[1],
     }
-    Object.keys(unpack(a[2])).forEach(k => {
+    Object.keys(unpack(a[0])).forEach(k => {
       lexicon[k] = lexicon[k] || []
       lexicon[k].push(id)
     })
     if (a[3]) {
-      zones[id].dst = dstPatterns[a[3]].split(/\|/)
+      zones[id].dst = dstPatterns[a[1]].split(/\|/)
     }
   })
 })

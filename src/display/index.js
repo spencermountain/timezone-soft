@@ -1,4 +1,4 @@
-import metas from '../old/metazone/index.js'
+import metas from './data.js'
 // const metas = require('../../data/05-metazones')
 // import offsets from './offsets.js'
 
