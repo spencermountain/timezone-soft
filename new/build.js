@@ -3,6 +3,7 @@ import zonefile from './zonefile.js'
 // const dir = path.dirname(fileURLToPath(import.meta.url))
 // import path from 'path'
 // import { fileURLToPath } from 'url'
+import aliases from './aliases.js'
 
 import { byCity } from './setups.js'
 

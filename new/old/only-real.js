@@ -336,19 +336,25 @@ let list = [
   'Pacific/Wake',
   'Pacific/Wallis',
 ]
-import zone from './zonefile.js'
-import links from '../data/links.js'
+import zone from '../zonefile.js'
+import links from '../../data/links.js'
 
-let real = new Set(list)
+// let real = new Set(list)
 
-let out = {}
-Object.keys(zone).forEach(k => {
-  if (real.has(k)) {
-    out[k] = zone[k]
-    // if (!links[k]) {
-    // } else {
-    //   console.log(k)
-    // }
+list.forEach(k => {
+  if (!zone[k]) {
+    console.log(k)
   }
 })
-console.log(JSON.stringify(out, null, 2))
+
+// let out = {}
+// Object.keys(zone).forEach(k => {
+//   if (real.has(k)) {
+//     out[k] = zone[k]
+//     // if (!links[k]) {
+//     // } else {
+//     //   console.log(k)
+//     // }
+//   }
+// })
+// console.log(JSON.stringify(out, null, 2))

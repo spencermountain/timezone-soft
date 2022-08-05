@@ -1387,6 +1387,26 @@ export default {
     "offset": -3,
     "hem": "s"
   },
+  "America/Argentina/Buenos_Aires": {
+    "offset": -3,
+    "hem": "s"
+  },
+  "America/Argentina/Catamarca": {
+    "offset": -3,
+    "hem": "s"
+  },
+  "America/Argentina/Cordoba": {
+    "offset": -3,
+    "hem": "s"
+  },
+  "America/Argentina/Jujuy": {
+    "offset": -3,
+    "hem": "s"
+  },
+  "America/Argentina/Mendoza": {
+    "offset": -3,
+    "hem": "s"
+  },
   "America/Indiana/Knox": {
     "offset": -5,
     "hem": "n",
@@ -1437,9 +1457,19 @@ export default {
     "hem": "n",
     "dst": "usa"
   },
+  "America/Indiana/Indianapolis": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa"
+  },
   "America/Kentucky/Monticello": {
     "offset": -4,
     "hem": "n",
     "dst": "usa"
-  }
+  },
+  "America/Kentucky/Louisville": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa"
+  },
 }
