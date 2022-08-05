@@ -9,12 +9,14 @@ const display = function (id) {
   }
   let metaName = zones[id].meta
   let meta = metas[metaName]
-
   let dst = null
   if (meta.dst) {
     let [abbr, offset, name] = meta.dst
     name = name || `${metaName} Daylight Time`
-    dst = { abbr, offset, name }
+    let [start, end] = zones[id].dst
+    // let change = { start, end }
+    dst = { abbr, offset, name, start, end }
+
   }
 
   let [abbr, offset] = meta.std
@@ -23,7 +25,7 @@ const display = function (id) {
     iana: id,
     standard: { abbr, offset, name: `${metaName} Standard Time`, },
     daylight: dst || null,
-    long: meta.long
+    long: meta.long,
   }
 }
 export default display

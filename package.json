@@ -18,7 +18,7 @@
   },
   "scripts": {
     "watch": "amble ./scratch.js",
-    "pack": "node ./scripts/pack.js && node ./scripts/pack-meta.js",
+    "pack": "node ./scripts/pack.js",
     "build": "npm run pack && node ./scripts/version.js && rollup -c && npm run filesize",
     "filesize": "node ./scripts/filesize.js",
     "test": "TESTENV=dev tape ./test/**/*.test.js | tap-dancer",

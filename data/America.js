@@ -2519,7 +2519,6 @@ export default {
       "yukon",
       "canada/pacific",
       "pacific bc",
-      "pacific time",
       "pt",
       "america pacific",
       "pacific standard time",

@@ -40,7 +40,7 @@ Object.keys(zones).forEach(k => {
 })
 
 //write it to a file in ./src
-const outFile = path.join(new URL('./', import.meta.url).pathname, '../src/find/_data.js')
+const outFile = path.join(new URL('./', import.meta.url).pathname, '../src/data/_data.js')
 fs.writeFileSync(outFile, 'export default ' + JSON.stringify(packed), 'utf8')
 
 //get filesize

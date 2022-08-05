@@ -4,7 +4,7 @@ import soft from './src/index.js'
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
 // let ids = soft('America/Argentina/Buenos_Aires')
-let ids = soft('dakar')
+let ids = soft('pst')
 console.log(ids)
 
 let out = {
