@@ -32,8 +32,8 @@ Object.keys(zones).forEach(k => {
   let top = arr[0]
   let name = arr.slice(1).join('/')
   packed[top] = packed[top] || {}
-  let { dst, names } = Object.assign({}, zones[k])
-  packed[top][name] = [pack(names)]
+  let { dst, names, meta, hem } = Object.assign({}, zones[k])
+  packed[top][name] = [pack(names), meta, hem]
   if (dst) {
     packed[top][name].push(dst)
   }

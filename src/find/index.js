@@ -1,4 +1,4 @@
-import { zones, lexicon } from './unpack.js'
+import { zones, lexicon } from '../data/index.js'
 import normalize from './normalize.js'
 
 
