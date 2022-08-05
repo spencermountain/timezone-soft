@@ -1,12 +1,12 @@
-import zonefile from './zonefile.js'
+import zonefile from '../scripts/zonefile.js'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 const dir = path.dirname(fileURLToPath(import.meta.url))
 // import aliases from './aliases.js'
-import abbreviatons from '../old/06-abbreviations.js'
+import abbreviatons from './06-abbreviations.js'
 
-import { byCity, byCountry, byState, oldZone, parenthesis, link, alias, meta } from './setups.js'
+import { byCity, byCountry, byState, oldZone, parenthesis, link, alias, meta } from '../scripts/setups.js'
 
 
 //try to match these against iana form

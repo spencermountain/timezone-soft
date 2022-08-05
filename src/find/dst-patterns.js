@@ -2,7 +2,7 @@
 // for example, the US changes:
 // the second Sunday of March -> first Sunday of November
 // http://www.webexhibits.org/daylightsaving/g.html
-let zones = {
+let patterns = {
   usa: '2nd-sun-mar-2h|1st-sun-nov-2h',// (From 1987 to 2006)
   // mexico
   mex: '1st-sun-apr-2h|last-sun-oct-2h',
@@ -54,36 +54,6 @@ let zones = {
   east: '1st-sat-apr-22h|1st-sat-sep-22h',
   //fiji
   fiji: '3rd-sun-jan-3h|2nd-sun-nov-2h',
-
-}
-const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
-
-const parse = function (str) {
-  let [nth, day, month, hour] = str.split(/-/g)
-  hour = hour.replace(/h$/, '')
-  hour = Number(hour)
-
-  if (nth !== 'last') {
-    nth = nth.replace(/(st|nd|rd|th)$/, '')
-    nth = Number(nth) || nth
-  }
-  //convert to numbers
-  month = months.indexOf(month) + 1
-  day = days.indexOf(day)
-  return {
-    nth, day, month, hour
-  }
 }
 
-Object.keys(zones).forEach(k => {
-  let str = zones[k]
-  let [start, end] = str.split(/\|/)
-  zones[k] = {
-    start: parse(start),
-    end: parse(end),
-  }
-})
-
-export default zones
-console.log(zones)
+export default patterns

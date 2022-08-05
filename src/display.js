@@ -1,6 +1,6 @@
-import metas from '../../old/metazone/index.js'
+import metas from '../old/metazone/index.js'
 // const metas = require('../../data/05-metazones')
-import offsets from './offsets.js'
+// import offsets from './offsets.js'
 
 const titleCase = function (str) {
   return str.replace(/\w\S*/g, function (txt) {
@@ -18,7 +18,7 @@ const display = function (id) {
     })
   })
   if (!meta) {
-    let offset = offsets[id.toLowerCase()]
+    let offset = ''//offsets[id.toLowerCase()]
     if (offset !== undefined) {
       let abbr = `UTC${offset}`
       let parts = id.split(/\//)

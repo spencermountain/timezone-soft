@@ -2,10 +2,10 @@ import test from 'tape'
 import spacetime from 'spacetime'
 import soft from './_lib.js'
 let zones = spacetime().timezones
-import data from '../data/index.js'
+import { lexicon } from '../src/find/unpack.js'
 import current from './_current.js'
 
-let list = Object.keys(data)
+let list = Object.keys(lexicon)
 test('all words produce valid iana', (t) => {
   // let olds = new Set()
   list.forEach((str) => {
@@ -17,7 +17,7 @@ test('all words produce valid iana', (t) => {
     //   olds.add(found.iana)
     // }
     // ensure we have returned a contemporary iana code
-    t.equal(current[found.iana], true, 'old-tz -' + found.iana)
+    t.ok(current[found.iana], 'old-tz -' + found.iana)
   })
   // console.log(olds)
   t.end()
