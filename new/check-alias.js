@@ -1,4 +1,4 @@
-import data from '../data/04-byState.js'
+import data from '../data/byOffset.js'
 import zones from './zonefile.js'
 import links from './aliases.js'
 
@@ -8,10 +8,10 @@ Object.entries(data).forEach(a => {
   let [w, val] = a
   if (!zones[val]) {
     console.log(val)
-    let alias = links[val]
-    if (!alias) {
-      console.log(val)
-    }
+    // let alias = links[val]
+    // if (!alias) {
+    //   console.log(val)
+    // }
 
   } else {
     out[w] = val
