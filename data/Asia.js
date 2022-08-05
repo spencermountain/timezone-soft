@@ -50,7 +50,6 @@ export default {
       "anat",
       "anadyr time",
       "petropavlovsk kamchatsky",
-      "anadyr, petropavlovsk-kamchatsky"
     ]
   },
   "Asia/Aqtau": {
@@ -68,7 +67,6 @@ export default {
       "alma ata",
       "alma-ata time",
       "almt",
-      "ashgabat, tashkent"
     ]
   },
   "Asia/Aqtobe": {
@@ -87,7 +85,6 @@ export default {
       "alma ata",
       "alma-ata time",
       "almt",
-      "ashgabat, tashkent"
     ]
   },
   "Asia/Ashgabat": {
@@ -123,7 +120,6 @@ export default {
       "alma ata",
       "alma-ata time",
       "almt",
-      "ashgabat, tashkent"
     ]
   },
   "Asia/Baghdad": {
@@ -161,7 +157,6 @@ export default {
       "arabia",
       "arabic",
       "ast",
-      "kuwait, riyadh"
     ]
   },
   "Asia/Baku": {
@@ -207,7 +202,6 @@ export default {
       "se asia",
       "south east asia",
       "ict",
-      "bangkok, hanoi, jakarta"
     ]
   },
   "Asia/Barnaul": {
@@ -310,7 +304,6 @@ export default {
       "mumbai",
       "new delhi",
       "ist",
-      "chennai, kolkata, mumbai, new delhi"
     ]
   },
   "Asia/Damascus": {
@@ -403,7 +396,6 @@ export default {
       "gulf time",
       "muscat",
       "arabian",
-      "abu dhabi, muscat"
     ]
   },
   "Asia/Dushanbe": {
@@ -657,7 +649,6 @@ export default {
       "pett",
       "petropavlovsk-kamchatski time",
       "anadyr",
-      "anadyr, petropavlovsk-kamchatsky"
     ]
   },
   "Asia/Karachi": {
@@ -707,7 +698,6 @@ export default {
       "pak",
       "pkt",
       "pakistan time",
-      "islamabad, karachi"
     ]
   },
   "Asia/Kathmandu": {
@@ -1004,7 +994,6 @@ export default {
       "slst",
       "india time",
       "indian",
-      "chennai, kolkata, mumbai, new delhi"
     ]
   },
   "Asia/Krasnoyarsk": {
@@ -1083,7 +1072,6 @@ export default {
       "hong kong",
       "urumqi",
       "cst",
-      "beijing, chongqing, hong kong, urumqi"
     ]
   },
   "Asia/Magadan": {
@@ -1264,7 +1252,6 @@ export default {
       "alma ata",
       "alma-ata time",
       "almt",
-      "ashgabat, tashkent"
     ]
   },
   "Asia/Pontianak": {
@@ -1327,7 +1314,6 @@ export default {
       "arabia",
       "arabic",
       "ast",
-      "kuwait, riyadh"
     ]
   },
   "Asia/Qostanay": {
@@ -1360,7 +1346,6 @@ export default {
       "alma ata",
       "alma-ata time",
       "almt",
-      "ashgabat, tashkent"
     ]
   },
   "Asia/Riyadh": {
@@ -1400,7 +1385,6 @@ export default {
       "arabia",
       "arabic",
       "ast",
-      "kuwait, riyadh"
     ]
   },
   "Asia/Sakhalin": {
@@ -1752,7 +1736,6 @@ export default {
       "hong kong",
       "urumqi",
       "cst",
-      "beijing, chongqing, hong kong, urumqi"
     ]
   },
   "Asia/Singapore": {
@@ -1766,7 +1749,6 @@ export default {
       "sgp",
       "sgt",
       "kuala lumpur",
-      "kuala lumpur, singapore"
     ]
   },
   "Asia/Srednekolymsk": {

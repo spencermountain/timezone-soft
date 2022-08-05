@@ -157,7 +157,6 @@ export default {
       "romance",
       "central european standard time",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Africa/El_Aaiun": {
@@ -223,7 +222,6 @@ export default {
       "africa southern",
       "south africa standard time",
       "harare",
-      "harare, pretoria"
     ]
   },
   "Africa/Juba": {

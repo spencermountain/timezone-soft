@@ -101,7 +101,6 @@ export default {
       "aus east",
       "australian eastern",
       "aest",
-      "canberra, melbourne, sydney"
     ]
   },
   "Australia/Lindeman": {
@@ -149,7 +148,6 @@ export default {
       "aus east",
       "australian eastern",
       "aest",
-      "canberra, melbourne, sydney"
     ]
   },
   "Australia/Perth": {
@@ -195,7 +193,6 @@ export default {
       "aus east",
       "australian eastern",
       "aest",
-      "canberra, melbourne, sydney"
     ]
   }
 }

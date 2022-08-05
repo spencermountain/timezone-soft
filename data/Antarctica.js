@@ -39,7 +39,6 @@ export default {
       "aus eastern",
       "aus east",
       "aest",
-      "canberra, melbourne, sydney"
     ]
   },
   "Antarctica/Mawson": {

@@ -25,7 +25,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Andorra": {
@@ -45,7 +44,6 @@ export default {
       "romance",
       "central european",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Astrakhan": {
@@ -59,7 +57,6 @@ export default {
       "russian",
       "volgograd time",
       "msk",
-      "moscow, st petersburg"
     ]
   },
   "Europe/Athens": {
@@ -104,7 +101,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Brussels": {
@@ -129,7 +125,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Bucharest": {
@@ -176,7 +171,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Busingen": {
@@ -201,7 +195,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Chisinau": {
@@ -239,7 +232,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Dublin": {
@@ -264,7 +256,6 @@ export default {
       "lisbon",
       "london",
       "greenwich mean time",
-      "dublin, edinburgh, lisbon, london"
     ]
   },
   "Europe/Gibraltar": {
@@ -286,7 +277,6 @@ export default {
       "romance",
       "central european",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Helsinki": {
@@ -444,7 +434,6 @@ export default {
       "russian",
       "volgograd time",
       "msk",
-      "moscow, st petersburg"
     ]
   },
   "Europe/Lisbon": {
@@ -559,7 +548,6 @@ export default {
       "dublin",
       "lisbon",
       "greenwich mean time",
-      "dublin, edinburgh, lisbon, london"
     ]
   },
   "Europe/Luxembourg": {
@@ -579,7 +567,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Madrid": {
@@ -640,7 +627,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Malta": {
@@ -660,7 +646,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Minsk": {
@@ -683,7 +668,6 @@ export default {
       "russian",
       "volgograd time",
       "msk",
-      "moscow, st petersburg"
     ]
   },
   "Europe/Monaco": {
@@ -703,7 +687,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Moscow": {
@@ -784,7 +767,6 @@ export default {
       "moscow time",
       "russian",
       "volgograd time",
-      "moscow, st petersburg"
     ]
   },
   "Europe/Oslo": {
@@ -808,7 +790,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Paris": {
@@ -845,7 +826,6 @@ export default {
       "copenhagen",
       "madrid",
       "romance",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Prague": {
@@ -870,7 +850,6 @@ export default {
       "paris",
       "romance",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ]
   },
   "Europe/Riga": {

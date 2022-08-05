@@ -32,7 +32,6 @@ export default {
       "antarctica/mcmurdo",
       "antarctica/south_pole",
       "nzt",
-      "auckland, wellington"
     ]
   },
   "Pacific/Bougainville": {
@@ -186,7 +185,6 @@ export default {
       "port moresby",
       "west pacific",
       "western pacific",
-      "guam, port moresby"
     ]
   },
   "Pacific/Honolulu": {

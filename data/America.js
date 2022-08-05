@@ -266,7 +266,6 @@ export default {
       "central mexican",
       "central standard time",
       "cst",
-      "guadalajara, mexico city, monterrey"
     ]
   },
   "America/Barbados": {
@@ -565,7 +564,6 @@ export default {
       "mountain mexico",
       "mexican pacific standard time",
       "hnpmx",
-      "chihuahua, la paz, mazatlan"
     ]
   },
   "America/Costa_Rica": {
@@ -1326,7 +1324,6 @@ export default {
       "mountain mexico",
       "mexican pacific standard time",
       "hnpmx",
-      "chihuahua, la paz, mazatlan"
     ]
   },
   "America/Menominee": {
@@ -1361,7 +1358,6 @@ export default {
       "central mexican",
       "central standard time",
       "cst",
-      "guadalajara, mexico city, monterrey"
     ]
   },
   "America/Metlakatla": {
@@ -1475,7 +1471,6 @@ export default {
       "central mexican",
       "central standard time",
       "cst",
-      "guadalajara, mexico city, monterrey"
     ]
   },
   "America/Miquelon": {
@@ -1540,7 +1535,6 @@ export default {
       "central mexican",
       "central standard time",
       "cst",
-      "guadalajara, mexico city, monterrey"
     ]
   },
   "America/Montevideo": {
