@@ -10,7 +10,8 @@ export default {
       "wsm",
       "west samoa",
       "wst"
-    ]
+    ],
+    "meta": "West Samoa"
   },
   "Pacific/Auckland": {
     "offset": 12,
@@ -31,8 +32,9 @@ export default {
       "nzmt",
       "antarctica/mcmurdo",
       "antarctica/south_pole",
-      "nzt",
-    ]
+      "nzt"
+    ],
+    "meta": "New Zealand"
   },
   "Pacific/Bougainville": {
     "offset": 11,
@@ -44,7 +46,8 @@ export default {
       "guinea",
       "guinean",
       "pgt"
-    ]
+    ],
+    "meta": "Papua New Guinea"
   },
   "Pacific/Chatham": {
     "offset": 12.75,
@@ -58,8 +61,9 @@ export default {
       "chadt",
       "chatham islands",
       "chatham time",
-      "chat",
-    ]
+      "chat"
+    ],
+    "meta": "Chatham"
   },
   "Pacific/Chuuk": {
     "offset": 10,
@@ -70,7 +74,8 @@ export default {
       "pacific/truk",
       "pacific/yap",
       "chuuk/trukyap"
-    ]
+    ],
+    "meta": "Chuuk"
   },
   "Pacific/Easter": {
     "offset": -6,
@@ -83,8 +88,9 @@ export default {
       "east",
       "easst",
       "easter island",
-      "emt",
-    ]
+      "emt"
+    ],
+    "meta": "Easter Island"
   },
   "Pacific/Efate": {
     "offset": 11,
@@ -94,8 +100,9 @@ export default {
       "efate",
       "vanuatu",
       "vu",
-      "vut",
-    ]
+      "vut"
+    ],
+    "meta": "Vanuatu"
   },
   "Pacific/Fakaofo": {
     "offset": 13,
@@ -106,8 +113,9 @@ export default {
       "tokelau",
       "tk",
       "tkl",
-      "tkt",
-    ]
+      "tkt"
+    ],
+    "meta": "Tokelau"
   },
   "Pacific/Fiji": {
     "offset": 12,
@@ -119,8 +127,9 @@ export default {
       "fj",
       "fji",
       "fjt",
-      "fjst",
-    ]
+      "fjst"
+    ],
+    "meta": "Fiji"
   },
   "Pacific/Funafuti": {
     "offset": 12,
@@ -132,7 +141,8 @@ export default {
       "tv",
       "tuv",
       "tvt"
-    ]
+    ],
+    "meta": "Tuvalu"
   },
   "Pacific/Galapagos": {
     "offset": -6,
@@ -144,8 +154,9 @@ export default {
       "galápagos islands",
       "cot",
       "colombia",
-      "cost",
-    ]
+      "cost"
+    ],
+    "meta": "Colombia"
   },
   "Pacific/Gambier": {
     "offset": -9,
@@ -155,7 +166,8 @@ export default {
       "gambier",
       "gambier islands",
       "gamt"
-    ]
+    ],
+    "meta": "Gambier"
   },
   "Pacific/Guadalcanal": {
     "offset": 11,
@@ -168,7 +180,8 @@ export default {
       "slb",
       "solomon",
       "sbt"
-    ]
+    ],
+    "meta": "Solomon Islands"
   },
   "Pacific/Guam": {
     "offset": 10,
@@ -184,8 +197,9 @@ export default {
       "chamorro",
       "port moresby",
       "west pacific",
-      "western pacific",
-    ]
+      "western pacific"
+    ],
+    "meta": "Chamorro"
   },
   "Pacific/Honolulu": {
     "offset": -10,
@@ -202,7 +216,8 @@ export default {
       "aleutian",
       "hast",
       "aleutian islands"
-    ]
+    ],
+    "meta": "Hawaii-Aleutian"
   },
   "Pacific/Kanton": {
     "offset": 13,
@@ -212,7 +227,8 @@ export default {
       "kanton",
       "phoenix islands",
       "pacific/enderbury"
-    ]
+    ],
+    "meta": "Phoenix Islands"
   },
   "Pacific/Kiritimati": {
     "offset": 14,
@@ -226,7 +242,8 @@ export default {
       "line islands",
       "kiritimati island",
       "lint"
-    ]
+    ],
+    "meta": "Line Islands"
   },
   "Pacific/Kosrae": {
     "offset": 11,
@@ -235,7 +252,8 @@ export default {
       "pacific",
       "kosrae",
       "kost"
-    ]
+    ],
+    "meta": "Kosrae"
   },
   "Pacific/Kwajalein": {
     "offset": 12,
@@ -245,7 +263,8 @@ export default {
       "kwajalein",
       "marshall islands",
       "mht"
-    ]
+    ],
+    "meta": "Marshall Islands"
   },
   "Pacific/Majuro": {
     "offset": 12,
@@ -257,7 +276,8 @@ export default {
       "mh",
       "mhl",
       "mht"
-    ]
+    ],
+    "meta": "Marshall Islands"
   },
   "Pacific/Marquesas": {
     "offset": -9.5,
@@ -267,7 +287,8 @@ export default {
       "marquesas",
       "marquesas islands",
       "mart"
-    ]
+    ],
+    "meta": "Marquesas"
   },
   "Pacific/Nauru": {
     "offset": 12,
@@ -278,7 +299,8 @@ export default {
       "nr",
       "nru",
       "nrt"
-    ]
+    ],
+    "meta": "Nauru"
   },
   "Pacific/Niue": {
     "offset": -11,
@@ -288,8 +310,9 @@ export default {
       "niue",
       "nu",
       "niu",
-      "nut",
-    ]
+      "nut"
+    ],
+    "meta": "Niue"
   },
   "Pacific/Norfolk": {
     "offset": 11.5,
@@ -302,7 +325,8 @@ export default {
       "nf",
       "nfk",
       "nft"
-    ]
+    ],
+    "meta": "Norfolk Island"
   },
   "Pacific/Noumea": {
     "offset": 11,
@@ -314,7 +338,8 @@ export default {
       "nc",
       "ncl",
       "nct"
-    ]
+    ],
+    "meta": "New Caledonia"
   },
   "Pacific/Pago_Pago": {
     "offset": -11,
@@ -327,8 +352,9 @@ export default {
       "samoa",
       "midway",
       "pacific/midway",
-      "sst",
-    ]
+      "sst"
+    ],
+    "meta": "Samoa"
   },
   "Pacific/Palau": {
     "offset": 9,
@@ -339,7 +365,8 @@ export default {
       "pw",
       "plw",
       "pwt"
-    ]
+    ],
+    "meta": "Palau"
   },
   "Pacific/Pitcairn": {
     "offset": -8,
@@ -351,7 +378,8 @@ export default {
       "pcn",
       "utc-08",
       "pst"
-    ]
+    ],
+    "meta": "Pitcairn"
   },
   "Pacific/Pohnpei": {
     "offset": 11,
@@ -364,7 +392,8 @@ export default {
       "pyf",
       "pacific/ponape",
       "pohnpei/ponape"
-    ]
+    ],
+    "meta": "Ponape"
   },
   "Pacific/Port_Moresby": {
     "offset": 10,
@@ -381,7 +410,8 @@ export default {
       "guinea",
       "guinean",
       "pgt"
-    ]
+    ],
+    "meta": "Papua New Guinea"
   },
   "Pacific/Rarotonga": {
     "offset": -10,
@@ -393,8 +423,9 @@ export default {
       "ck",
       "cok",
       "ckt",
-      "cook",
-    ]
+      "cook"
+    ],
+    "meta": "Cook Islands"
   },
   "Pacific/Tahiti": {
     "offset": -10,
@@ -404,7 +435,8 @@ export default {
       "tahiti",
       "society islands",
       "taht"
-    ]
+    ],
+    "meta": "Tahiti"
   },
   "Pacific/Tarawa": {
     "offset": 12,
@@ -414,7 +446,8 @@ export default {
       "tarawa",
       "gilbert islands",
       "gilt"
-    ]
+    ],
+    "meta": "Gilbert Islands"
   },
   "Pacific/Tongatapu": {
     "offset": 13,
@@ -427,7 +460,8 @@ export default {
       "ton",
       "nuku'alofa",
       "tot"
-    ]
+    ],
+    "meta": "Tonga"
   },
   "Pacific/Wake": {
     "offset": 12,
@@ -440,7 +474,8 @@ export default {
       "umi",
       "wake island",
       "wakt"
-    ]
+    ],
+    "meta": "Wake Island"
   },
   "Pacific/Wallis": {
     "offset": 12,
@@ -453,6 +488,7 @@ export default {
       "wlf",
       "wallis & futuna",
       "wft"
-    ]
+    ],
+    "meta": "Wallis & Futuna"
   }
 }

@@ -17,7 +17,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "Etc/UTC": {
     "offset": 0,
@@ -34,6 +35,7 @@ export default {
       "greenwich mean time",
       "gmt",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   }
 }

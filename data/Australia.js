@@ -15,8 +15,9 @@ export default {
       "act",
       "australia central",
       "cen australia",
-      "central australia",
-    ]
+      "central australia"
+    ],
+    "meta": "Central Australia"
   },
   "Australia/Brisbane": {
     "offset": 10,
@@ -34,7 +35,8 @@ export default {
       "australian east",
       "brisbane time",
       "australian eastern"
-    ]
+    ],
+    "meta": "Brisbane"
   },
   "Australia/Broken_Hill": {
     "offset": 9.5,
@@ -51,7 +53,8 @@ export default {
       "adelaide",
       "central australia",
       "acst"
-    ]
+    ],
+    "meta": "Central Australia"
   },
   "Australia/Darwin": {
     "offset": 9.5,
@@ -63,7 +66,8 @@ export default {
       "northern territory",
       "australian central",
       "acst"
-    ]
+    ],
+    "meta": "Australian Central"
   },
   "Australia/Eucla": {
     "offset": 8.75,
@@ -77,8 +81,9 @@ export default {
       "acwt",
       "acwdt",
       "aus central w",
-      "aus central west",
-    ]
+      "aus central west"
+    ],
+    "meta": "Australian Central Western"
   },
   "Australia/Hobart": {
     "offset": 10,
@@ -100,8 +105,9 @@ export default {
       "aus eastern",
       "aus east",
       "australian eastern",
-      "aest",
-    ]
+      "aest"
+    ],
+    "meta": "Eastern Australia"
   },
   "Australia/Lindeman": {
     "offset": 10,
@@ -113,7 +119,8 @@ export default {
       "brisbane time",
       "australian eastern",
       "aest"
-    ]
+    ],
+    "meta": "Brisbane"
   },
   "Australia/Lord_Howe": {
     "offset": 10.5,
@@ -126,8 +133,9 @@ export default {
       "lhdt",
       "lord howe island",
       "lht",
-      "lord howe",
-    ]
+      "lord howe"
+    ],
+    "meta": "Lord Howe"
   },
   "Australia/Melbourne": {
     "offset": 10,
@@ -147,8 +155,9 @@ export default {
       "aus eastern",
       "aus east",
       "australian eastern",
-      "aest",
-    ]
+      "aest"
+    ],
+    "meta": "Eastern Australia"
   },
   "Australia/Perth": {
     "offset": 8,
@@ -167,7 +176,8 @@ export default {
       "w australia",
       "west australia",
       "australian western"
-    ]
+    ],
+    "meta": "Western Australia"
   },
   "Australia/Sydney": {
     "offset": 10,
@@ -192,7 +202,8 @@ export default {
       "aus eastern",
       "aus east",
       "australian eastern",
-      "aest",
-    ]
+      "aest"
+    ],
+    "meta": "Eastern Australia"
   }
 }

@@ -8,7 +8,8 @@ export default {
       "antarctica",
       "casey",
       "cast"
-    ]
+    ],
+    "meta": "Casey"
   },
   "Antarctica/Davis": {
     "offset": 7,
@@ -19,7 +20,8 @@ export default {
       "aq",
       "ata",
       "davt"
-    ]
+    ],
+    "meta": "Davis"
   },
   "Antarctica/Macquarie": {
     "offset": 11,
@@ -38,8 +40,9 @@ export default {
       "sydney",
       "aus eastern",
       "aus east",
-      "aest",
-    ]
+      "aest"
+    ],
+    "meta": "Eastern Australia"
   },
   "Antarctica/Mawson": {
     "offset": 5,
@@ -48,7 +51,8 @@ export default {
       "antarctica",
       "mawson",
       "mawt"
-    ]
+    ],
+    "meta": "Mawson"
   },
   "Antarctica/Rothera": {
     "offset": -3,
@@ -62,7 +66,8 @@ export default {
       "arst",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "Antarctica/Troll": {
     "offset": 2,
@@ -75,7 +80,8 @@ export default {
       "troll research station",
       "greenwich mean time",
       "gmt"
-    ]
+    ],
+    "meta": "Troll"
   },
   "Antarctica/Vostok": {
     "offset": 6,
@@ -85,6 +91,7 @@ export default {
       "vostok",
       "vost",
       "msk+4"
-    ]
+    ],
+    "meta": "Vostok"
   }
 }

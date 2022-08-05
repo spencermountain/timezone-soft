@@ -22,7 +22,8 @@ export default {
       "kazakhstan eastern",
       "astana",
       "central asia"
-    ]
+    ],
+    "meta": "East Kazakhstan"
   },
   "Asia/Amman": {
     "offset": 3,
@@ -39,7 +40,8 @@ export default {
       "jo",
       "jor",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Anadyr": {
     "offset": 12,
@@ -49,8 +51,9 @@ export default {
       "anadyr",
       "anat",
       "anadyr time",
-      "petropavlovsk kamchatsky",
-    ]
+      "petropavlovsk kamchatsky"
+    ],
+    "meta": "Anadyr"
   },
   "Asia/Aqtau": {
     "offset": 5,
@@ -66,8 +69,9 @@ export default {
       "west asia",
       "alma ata",
       "alma-ata time",
-      "almt",
-    ]
+      "almt"
+    ],
+    "meta": "West Kazakhstan"
   },
   "Asia/Aqtobe": {
     "offset": 5,
@@ -84,8 +88,9 @@ export default {
       "west asia",
       "alma ata",
       "alma-ata time",
-      "almt",
-    ]
+      "almt"
+    ],
+    "meta": "West Kazakhstan"
   },
   "Asia/Ashgabat": {
     "offset": 5,
@@ -100,8 +105,9 @@ export default {
       "asia/ashkhabad",
       "tmt",
       "turkmenistan time",
-      "tmst",
-    ]
+      "tmst"
+    ],
+    "meta": "Turkmenistan"
   },
   "Asia/Atyrau": {
     "offset": 5,
@@ -119,8 +125,9 @@ export default {
       "west asia",
       "alma ata",
       "alma-ata time",
-      "almt",
-    ]
+      "almt"
+    ],
+    "meta": "West Kazakhstan"
   },
   "Asia/Baghdad": {
     "offset": 3,
@@ -156,8 +163,9 @@ export default {
       "arab",
       "arabia",
       "arabic",
-      "ast",
-    ]
+      "ast"
+    ],
+    "meta": "Arabian"
   },
   "Asia/Baku": {
     "offset": 4,
@@ -172,8 +180,9 @@ export default {
       "az",
       "aze",
       "azt",
-      "azerbaijan time",
-    ]
+      "azerbaijan time"
+    ],
+    "meta": "Azerbaijan"
   },
   "Asia/Bangkok": {
     "offset": 7,
@@ -201,8 +210,9 @@ export default {
       "jakarta",
       "se asia",
       "south east asia",
-      "ict",
-    ]
+      "ict"
+    ],
+    "meta": "Indochina"
   },
   "Asia/Barnaul": {
     "offset": 7,
@@ -215,7 +225,8 @@ export default {
       "krasnoyarsk",
       "north asia",
       "krat"
-    ]
+    ],
+    "meta": "Krasnoyarsk"
   },
   "Asia/Beirut": {
     "offset": 3,
@@ -231,7 +242,8 @@ export default {
       "eastern european time",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Bishkek": {
     "offset": 6,
@@ -246,7 +258,8 @@ export default {
       "kgt",
       "kyrgyzstan time",
       "kyrgystan"
-    ]
+    ],
+    "meta": "Kyrgyzstan"
   },
   "Asia/Brunei": {
     "offset": 8,
@@ -259,7 +272,8 @@ export default {
       "bnt",
       "bdt",
       "brunei darussalam time"
-    ]
+    ],
+    "meta": "Brunei Darussalam"
   },
   "Asia/Chita": {
     "offset": 9,
@@ -270,7 +284,8 @@ export default {
       "yakutsk time",
       "yakutsk",
       "yakt"
-    ]
+    ],
+    "meta": "Yakutsk"
   },
   "Asia/Choibalsan": {
     "offset": 8,
@@ -283,7 +298,8 @@ export default {
       "mongolia",
       "ulaanbaatar",
       "ulat"
-    ]
+    ],
+    "meta": "Ulaanbaatar"
   },
   "Asia/Colombo": {
     "offset": 5.5,
@@ -303,8 +319,9 @@ export default {
       "kolkata",
       "mumbai",
       "new delhi",
-      "ist",
-    ]
+      "ist"
+    ],
+    "meta": "India"
   },
   "Asia/Damascus": {
     "offset": 3,
@@ -323,7 +340,8 @@ export default {
       "sy",
       "syr",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Dhaka": {
     "offset": 6,
@@ -360,8 +378,9 @@ export default {
       "bgd",
       "asia/dacca",
       "bst",
-      "bangladesh time",
-    ]
+      "bangladesh time"
+    ],
+    "meta": "Bangladesh"
   },
   "Asia/Dili": {
     "offset": 9,
@@ -374,7 +393,8 @@ export default {
       "tls",
       "tlt",
       "east timor time"
-    ]
+    ],
+    "meta": "East Timor"
   },
   "Asia/Dubai": {
     "offset": 4,
@@ -395,8 +415,9 @@ export default {
       "asia/muscat",
       "gulf time",
       "muscat",
-      "arabian",
-    ]
+      "arabian"
+    ],
+    "meta": "Gulf"
   },
   "Asia/Dushanbe": {
     "offset": 5,
@@ -409,7 +430,8 @@ export default {
       "tjk",
       "tjt",
       "tajikistan time"
-    ]
+    ],
+    "meta": "Tajikistan"
   },
   "Asia/Famagusta": {
     "offset": 3,
@@ -422,7 +444,8 @@ export default {
       "eastern european time",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Gaza": {
     "offset": 3,
@@ -436,7 +459,8 @@ export default {
       "pse",
       "gaza strip",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Hebron": {
     "offset": 3,
@@ -448,7 +472,8 @@ export default {
       "east jerusalem",
       "west bank",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Ho_Chi_Minh": {
     "offset": 7,
@@ -472,7 +497,8 @@ export default {
       "vnm",
       "asia/saigon",
       "vietnam south"
-    ]
+    ],
+    "meta": "Indochina"
   },
   "Asia/Hong_Kong": {
     "offset": 8,
@@ -488,8 +514,9 @@ export default {
       "hongkong",
       "hong kong time",
       "hkt",
-      "hkst",
-    ]
+      "hkst"
+    ],
+    "meta": "Hong Kong"
   },
   "Asia/Hovd": {
     "offset": 7,
@@ -501,8 +528,9 @@ export default {
       "bayan-ölgiigovi-altaihovduvszavkhan",
       "hovd time",
       "west mongolia",
-      "western mongolia",
-    ]
+      "western mongolia"
+    ],
+    "meta": "Hovd"
   },
   "Asia/Irkutsk": {
     "offset": 8,
@@ -515,8 +543,9 @@ export default {
       "angarsk",
       "irkt",
       "irkutsk time",
-      "north asia east",
-    ]
+      "north asia east"
+    ],
+    "meta": "Irkutsk"
   },
   "Asia/Jakarta": {
     "offset": 7,
@@ -579,7 +608,8 @@ export default {
       "javasumatra",
       "western indonesia time",
       "indonesia western"
-    ]
+    ],
+    "meta": "Western Indonesia"
   },
   "Asia/Jayapura": {
     "offset": 9,
@@ -595,7 +625,8 @@ export default {
       "malukus",
       "eastern indonesia time",
       "indonesia eastern"
-    ]
+    ],
+    "meta": "Eastern Indonesia"
   },
   "Asia/Jerusalem": {
     "offset": 3,
@@ -620,7 +651,8 @@ export default {
       "asia/tel_aviv",
       "israel time",
       "ist"
-    ]
+    ],
+    "meta": "Israel"
   },
   "Asia/Kabul": {
     "offset": 4.5,
@@ -636,8 +668,9 @@ export default {
       "af",
       "afg",
       "aft",
-      "afghanistan time",
-    ]
+      "afghanistan time"
+    ],
+    "meta": "Afghanistan"
   },
   "Asia/Kamchatka": {
     "offset": 12,
@@ -648,8 +681,9 @@ export default {
       "petropavlovsk kamchatsky",
       "pett",
       "petropavlovsk-kamchatski time",
-      "anadyr",
-    ]
+      "anadyr"
+    ],
+    "meta": "Petropavlovsk-Kamchatski"
   },
   "Asia/Karachi": {
     "offset": 5,
@@ -697,8 +731,9 @@ export default {
       "pk",
       "pak",
       "pkt",
-      "pakistan time",
-    ]
+      "pakistan time"
+    ],
+    "meta": "Pakistan"
   },
   "Asia/Kathmandu": {
     "offset": 5.75,
@@ -714,7 +749,8 @@ export default {
       "npl",
       "asia/katmandu",
       "npt"
-    ]
+    ],
+    "meta": "Nepal"
   },
   "Asia/Khandyga": {
     "offset": 9,
@@ -725,7 +761,8 @@ export default {
       "yakutsk time",
       "yakutsk",
       "yakt"
-    ]
+    ],
+    "meta": "Yakutsk"
   },
   "Asia/Kolkata": {
     "offset": 5.5,
@@ -993,8 +1030,9 @@ export default {
       "ist",
       "slst",
       "india time",
-      "indian",
-    ]
+      "indian"
+    ],
+    "meta": "India"
   },
   "Asia/Krasnoyarsk": {
     "offset": 7,
@@ -1004,8 +1042,9 @@ export default {
       "krasnoyarsk",
       "krat",
       "krasnoyarsk time",
-      "north asia",
-    ]
+      "north asia"
+    ],
+    "meta": "Krasnoyarsk"
   },
   "Asia/Kuala_Lumpur": {
     "offset": 8,
@@ -1037,7 +1076,8 @@ export default {
       "mys",
       "malaysia time",
       "myt"
-    ]
+    ],
+    "meta": "Malaysia"
   },
   "Asia/Kuching": {
     "offset": 8,
@@ -1054,7 +1094,8 @@ export default {
       "malaysia time",
       "malaysia",
       "myt"
-    ]
+    ],
+    "meta": "Malaysia"
   },
   "Asia/Macau": {
     "offset": 8,
@@ -1071,8 +1112,9 @@ export default {
       "chongqing",
       "hong kong",
       "urumqi",
-      "cst",
-    ]
+      "cst"
+    ],
+    "meta": "China"
   },
   "Asia/Magadan": {
     "offset": 11,
@@ -1081,8 +1123,9 @@ export default {
       "asia",
       "magadan",
       "magt",
-      "magadan time",
-    ]
+      "magadan time"
+    ],
+    "meta": "Magadan"
   },
   "Asia/Makassar": {
     "offset": 8,
@@ -1109,7 +1152,8 @@ export default {
       "asia/ujung_pandang",
       "central indonesia time",
       "indonesia central"
-    ]
+    ],
+    "meta": "Central Indonesia"
   },
   "Asia/Manila": {
     "offset": 8,
@@ -1183,7 +1227,8 @@ export default {
       "pht",
       "philippine time",
       "phst"
-    ]
+    ],
+    "meta": "Philippine"
   },
   "Asia/Nicosia": {
     "offset": 3,
@@ -1199,7 +1244,8 @@ export default {
       "eastern european time",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Asia/Novokuznetsk": {
     "offset": 7,
@@ -1213,7 +1259,8 @@ export default {
       "krasnoyarsk",
       "north asia",
       "krat"
-    ]
+    ],
+    "meta": "Krasnoyarsk"
   },
   "Asia/Novosibirsk": {
     "offset": 7,
@@ -1224,8 +1271,9 @@ export default {
       "siberia",
       "novt",
       "novosibirsk time",
-      "north central asia",
-    ]
+      "north central asia"
+    ],
+    "meta": "Novosibirsk"
   },
   "Asia/Omsk": {
     "offset": 6,
@@ -1234,8 +1282,9 @@ export default {
       "asia",
       "omsk",
       "omst",
-      "omsk time",
-    ]
+      "omsk time"
+    ],
+    "meta": "Omsk"
   },
   "Asia/Oral": {
     "offset": 5,
@@ -1251,8 +1300,9 @@ export default {
       "west asia",
       "alma ata",
       "alma-ata time",
-      "almt",
-    ]
+      "almt"
+    ],
+    "meta": "West Kazakhstan"
   },
   "Asia/Pontianak": {
     "offset": 7,
@@ -1266,7 +1316,8 @@ export default {
       "western indonesia time",
       "indonesia western",
       "wib"
-    ]
+    ],
+    "meta": "Western Indonesia"
   },
   "Asia/Pyongyang": {
     "offset": 9,
@@ -1293,7 +1344,8 @@ export default {
       "korea",
       "seoul",
       "kst"
-    ]
+    ],
+    "meta": "Korean"
   },
   "Asia/Qatar": {
     "offset": 3,
@@ -1313,8 +1365,9 @@ export default {
       "arab",
       "arabia",
       "arabic",
-      "ast",
-    ]
+      "ast"
+    ],
+    "meta": "Arabian"
   },
   "Asia/Qostanay": {
     "offset": 6,
@@ -1328,7 +1381,8 @@ export default {
       "astana",
       "central asia",
       "almt"
-    ]
+    ],
+    "meta": "East Kazakhstan"
   },
   "Asia/Qyzylorda": {
     "offset": 6,
@@ -1345,8 +1399,9 @@ export default {
       "west asia",
       "alma ata",
       "alma-ata time",
-      "almt",
-    ]
+      "almt"
+    ],
+    "meta": "West Kazakhstan"
   },
   "Asia/Riyadh": {
     "offset": 3,
@@ -1384,8 +1439,9 @@ export default {
       "arab",
       "arabia",
       "arabic",
-      "ast",
-    ]
+      "ast"
+    ],
+    "meta": "Arabian"
   },
   "Asia/Sakhalin": {
     "offset": 11,
@@ -1397,7 +1453,8 @@ export default {
       "sakt",
       "sakhalin time",
       "sakhalin island"
-    ]
+    ],
+    "meta": "Sakhalin"
   },
   "Asia/Samarkand": {
     "offset": 5,
@@ -1412,7 +1469,8 @@ export default {
       "uzbekistan time",
       "uzbekistan",
       "uzt"
-    ]
+    ],
+    "meta": "Uzbekistan"
   },
   "Asia/Seoul": {
     "offset": 9,
@@ -1463,8 +1521,9 @@ export default {
       "rok",
       "kst",
       "korea",
-      "korean time",
-    ]
+      "korean time"
+    ],
+    "meta": "Korean"
   },
   "Asia/Shanghai": {
     "offset": 8,
@@ -1735,8 +1794,9 @@ export default {
       "china time",
       "hong kong",
       "urumqi",
-      "cst",
-    ]
+      "cst"
+    ],
+    "meta": "China"
   },
   "Asia/Singapore": {
     "offset": 8,
@@ -1748,8 +1808,9 @@ export default {
       "sg",
       "sgp",
       "sgt",
-      "kuala lumpur",
-    ]
+      "kuala lumpur"
+    ],
+    "meta": "Singapore"
   },
   "Asia/Srednekolymsk": {
     "offset": 12,
@@ -1758,8 +1819,9 @@ export default {
       "asia",
       "srednekolymsk",
       "sret",
-      "chokurdakh",
-    ]
+      "chokurdakh"
+    ],
+    "meta": "Srednekolymsk"
   },
   "Asia/Taipei": {
     "offset": 8,
@@ -1780,7 +1842,8 @@ export default {
       "twn",
       "roc",
       "cst"
-    ]
+    ],
+    "meta": "Taipei"
   },
   "Asia/Tashkent": {
     "offset": 5,
@@ -1795,8 +1858,9 @@ export default {
       "uz",
       "uzb",
       "uzt",
-      "uzbekistan east",
-    ]
+      "uzbekistan east"
+    ],
+    "meta": "Uzbekistan"
   },
   "Asia/Tbilisi": {
     "offset": 4,
@@ -1809,8 +1873,9 @@ export default {
       "ge",
       "geo",
       "get",
-      "georgian",
-    ]
+      "georgian"
+    ],
+    "meta": "Georgia"
   },
   "Asia/Tehran": {
     "offset": 3.5,
@@ -1867,8 +1932,9 @@ export default {
       "ir",
       "irn",
       "irst",
-      "irdt",
-    ]
+      "irdt"
+    ],
+    "meta": "Iran"
   },
   "Asia/Thimphu": {
     "offset": 6,
@@ -1879,8 +1945,9 @@ export default {
       "bhutan",
       "bt",
       "btn",
-      "asia/thimbu",
-    ]
+      "asia/thimbu"
+    ],
+    "meta": "Bhutan"
   },
   "Asia/Tokyo": {
     "offset": 9,
@@ -2012,7 +2079,8 @@ export default {
       "jst",
       "jdt",
       "osaka, sapporo, tokyo"
-    ]
+    ],
+    "meta": "Japan"
   },
   "Asia/Tomsk": {
     "offset": 7,
@@ -2022,7 +2090,8 @@ export default {
       "tomsk",
       "omsk",
       "omst"
-    ]
+    ],
+    "meta": "Omsk"
   },
   "Asia/Ulaanbaatar": {
     "offset": 8,
@@ -2035,8 +2104,9 @@ export default {
       "mn",
       "mng",
       "ulat",
-      "asia/ulan_bator",
-    ]
+      "asia/ulan_bator"
+    ],
+    "meta": "Ulaanbaatar"
   },
   "Asia/Ust-Nera": {
     "offset": 10,
@@ -2046,7 +2116,8 @@ export default {
       "ust-nera",
       "vladivostok",
       "vlat"
-    ]
+    ],
+    "meta": "Vladivostok"
   },
   "Asia/Vladivostok": {
     "offset": 10,
@@ -2057,8 +2128,9 @@ export default {
       "khabarovsk",
       "khabarovsk vtoroy",
       "komsomolsk on amur",
-      "vlat",
-    ]
+      "vlat"
+    ],
+    "meta": "Vladivostok"
   },
   "Asia/Yakutsk": {
     "offset": 10,
@@ -2067,8 +2139,9 @@ export default {
       "asia",
       "yakutsk",
       "blagoveshchensk",
-      "yakt",
-    ]
+      "yakt"
+    ],
+    "meta": "Yakutsk"
   },
   "Asia/Yangon": {
     "offset": 6.5,
@@ -2089,7 +2162,8 @@ export default {
       "mm",
       "mmr",
       "asia/rangoon"
-    ]
+    ],
+    "meta": "Myanmar"
   },
   "Asia/Yekaterinburg": {
     "offset": 5,
@@ -2112,8 +2186,9 @@ export default {
       "zlatoust",
       "kamensk ural'skiy",
       "yekt",
-      "ekaterinburg",
-    ]
+      "ekaterinburg"
+    ],
+    "meta": "Yekaterinburg"
   },
   "Asia/Yerevan": {
     "offset": 4,
@@ -2125,7 +2200,8 @@ export default {
       "am",
       "arm",
       "amt",
-      "caucasus",
-    ]
+      "caucasus"
+    ],
+    "meta": "Armenia"
   }
 }

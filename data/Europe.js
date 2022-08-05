@@ -24,8 +24,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Andorra": {
     "offset": 2,
@@ -43,8 +44,9 @@ export default {
       "paris",
       "romance",
       "central european",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Astrakhan": {
     "offset": 4,
@@ -56,8 +58,9 @@ export default {
       "st petersburg",
       "russian",
       "volgograd time",
-      "msk",
-    ]
+      "msk"
+    ],
+    "meta": "Moscow"
   },
   "Europe/Athens": {
     "offset": 3,
@@ -73,7 +76,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Belgrade": {
     "offset": 2,
@@ -100,8 +104,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Brussels": {
     "offset": 2,
@@ -124,8 +129,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Bucharest": {
     "offset": 3,
@@ -150,7 +156,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Budapest": {
     "offset": 2,
@@ -170,8 +177,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Busingen": {
     "offset": 2,
@@ -194,8 +202,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Chisinau": {
     "offset": 3,
@@ -211,7 +220,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Copenhagen": {
     "offset": 2,
@@ -231,8 +241,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Dublin": {
     "offset": 1,
@@ -255,8 +266,9 @@ export default {
       "edinburgh",
       "lisbon",
       "london",
-      "greenwich mean time",
-    ]
+      "greenwich mean time"
+    ],
+    "meta": "British"
   },
   "Europe/Gibraltar": {
     "offset": 2,
@@ -276,8 +288,9 @@ export default {
       "paris",
       "romance",
       "central european",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Helsinki": {
     "offset": 3,
@@ -297,7 +310,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Istanbul": {
     "offset": 3,
@@ -365,8 +379,9 @@ export default {
       "tr",
       "tur",
       "trt",
-      "asia/istanbul",
-    ]
+      "asia/istanbul"
+    ],
+    "meta": "Turkey"
   },
   "Europe/Kaliningrad": {
     "offset": 2,
@@ -376,7 +391,8 @@ export default {
       "kaliningrad",
       "eastern european",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Kiev": {
     "offset": 3,
@@ -421,7 +437,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Kirov": {
     "offset": 3,
@@ -433,8 +450,9 @@ export default {
       "st petersburg",
       "russian",
       "volgograd time",
-      "msk",
-    ]
+      "msk"
+    ],
+    "meta": "Moscow"
   },
   "Europe/Lisbon": {
     "offset": 1,
@@ -453,8 +471,9 @@ export default {
       "west europe",
       "portugal mainland",
       "western european",
-      "europe western",
-    ]
+      "europe western"
+    ],
+    "meta": "Western European"
   },
   "Europe/London": {
     "offset": 1,
@@ -547,8 +566,9 @@ export default {
       "gmt standard time",
       "dublin",
       "lisbon",
-      "greenwich mean time",
-    ]
+      "greenwich mean time"
+    ],
+    "meta": "British"
   },
   "Europe/Luxembourg": {
     "offset": 2,
@@ -566,8 +586,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Madrid": {
     "offset": 2,
@@ -626,8 +647,9 @@ export default {
       "copenhagen",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Malta": {
     "offset": 2,
@@ -645,8 +667,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Minsk": {
     "offset": 3,
@@ -667,8 +690,9 @@ export default {
       "st petersburg",
       "russian",
       "volgograd time",
-      "msk",
-    ]
+      "msk"
+    ],
+    "meta": "Moscow"
   },
   "Europe/Monaco": {
     "offset": 2,
@@ -686,8 +710,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Moscow": {
     "offset": 3,
@@ -766,8 +791,9 @@ export default {
       "msd",
       "moscow time",
       "russian",
-      "volgograd time",
-    ]
+      "volgograd time"
+    ],
+    "meta": "Moscow"
   },
   "Europe/Oslo": {
     "offset": 2,
@@ -789,8 +815,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Paris": {
     "offset": 2,
@@ -825,8 +852,9 @@ export default {
       "brussels",
       "copenhagen",
       "madrid",
-      "romance",
-    ]
+      "romance"
+    ],
+    "meta": "Central European"
   },
   "Europe/Prague": {
     "offset": 2,
@@ -849,8 +877,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Europe/Riga": {
     "offset": 3,
@@ -868,8 +897,9 @@ export default {
       "kalt",
       "lst",
       "eastern european",
-      "europe eastern",
-    ]
+      "europe eastern"
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Rome": {
     "offset": 2,
@@ -912,7 +942,8 @@ export default {
       "romance",
       "cet",
       "brussels, copenhagen, madrid, paris"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Europe/Samara": {
     "offset": 4,
@@ -925,7 +956,8 @@ export default {
       "syzran",
       "samt",
       "izhevsk, samara"
-    ]
+    ],
+    "meta": "Samara"
   },
   "Europe/Saratov": {
     "offset": 4,
@@ -938,7 +970,8 @@ export default {
       "izhevsk",
       "samt",
       "izhevsk, samara"
-    ]
+    ],
+    "meta": "Samara"
   },
   "Europe/Sofia": {
     "offset": 3,
@@ -956,8 +989,9 @@ export default {
       "imt",
       "eet",
       "eastern european",
-      "europe eastern",
-    ]
+      "europe eastern"
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Stockholm": {
     "offset": 2,
@@ -981,7 +1015,8 @@ export default {
       "romance",
       "cet",
       "brussels, copenhagen, madrid, paris"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Europe/Tallinn": {
     "offset": 3,
@@ -996,7 +1031,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Tirane": {
     "offset": 2,
@@ -1018,7 +1054,8 @@ export default {
       "romance",
       "cet",
       "brussels, copenhagen, madrid, paris"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Europe/Ulyanovsk": {
     "offset": 4,
@@ -1033,7 +1070,8 @@ export default {
       "volgograd time",
       "msk",
       "moscow, st petersburg"
-    ]
+    ],
+    "meta": "Moscow"
   },
   "Europe/Uzhgorod": {
     "offset": 3,
@@ -1046,7 +1084,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Vienna": {
     "offset": 2,
@@ -1071,7 +1110,8 @@ export default {
       "romance",
       "cet",
       "brussels, copenhagen, madrid, paris"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Europe/Vilnius": {
     "offset": 3,
@@ -1088,7 +1128,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Volgograd": {
     "offset": 4,
@@ -1104,7 +1145,8 @@ export default {
       "volgograd time",
       "msk",
       "moscow, st petersburg"
-    ]
+    ],
+    "meta": "Moscow"
   },
   "Europe/Warsaw": {
     "offset": 2,
@@ -1147,7 +1189,8 @@ export default {
       "romance",
       "cet",
       "brussels, copenhagen, madrid, paris"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Europe/Zaporozhye": {
     "offset": 3,
@@ -1164,7 +1207,8 @@ export default {
       "eastern european",
       "europe eastern",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Europe/Zurich": {
     "offset": 2,
@@ -1189,6 +1233,7 @@ export default {
       "romance",
       "cet",
       "brussels, copenhagen, madrid, paris"
-    ]
+    ],
+    "meta": "Central European"
   }
 }

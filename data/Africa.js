@@ -29,7 +29,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "Africa/Algiers": {
     "offset": 1,
@@ -55,7 +56,8 @@ export default {
       "dza",
       "central european",
       "cet"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Africa/Bissau": {
     "offset": 0,
@@ -71,7 +73,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "Africa/Cairo": {
     "offset": 2,
@@ -107,7 +110,8 @@ export default {
       "egy",
       "eastern european",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Africa/Casablanca": {
     "offset": 1,
@@ -136,7 +140,8 @@ export default {
       "mar",
       "western european",
       "wet"
-    ]
+    ],
+    "meta": "Morocco Standard"
   },
   "Africa/Ceuta": {
     "offset": 2,
@@ -153,8 +158,9 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "cet",
-    ]
+      "cet"
+    ],
+    "meta": "Central European"
   },
   "Africa/El_Aaiun": {
     "offset": 1,
@@ -171,7 +177,8 @@ export default {
       "morocco",
       "western european",
       "wet"
-    ]
+    ],
+    "meta": "Morocco Standard"
   },
   "Africa/Johannesburg": {
     "offset": 2,
@@ -215,8 +222,9 @@ export default {
       "africa/maseru",
       "africa/mbabane",
       "africa southern",
-      "harare",
-    ]
+      "harare"
+    ],
+    "meta": "South Africa"
   },
   "Africa/Juba": {
     "offset": 3,
@@ -230,7 +238,8 @@ export default {
       "ssd",
       "central africa",
       "cat"
-    ]
+    ],
+    "meta": "Central Africa"
   },
   "Africa/Khartoum": {
     "offset": 2,
@@ -254,8 +263,9 @@ export default {
       "sd",
       "sdn",
       "cat",
-      "central africa",
-    ]
+      "central africa"
+    ],
+    "meta": "Central Africa"
   },
   "Africa/Lagos": {
     "offset": 1,
@@ -332,8 +342,9 @@ export default {
       "africa western",
       "western africa",
       "west central africa",
-      "w central africa",
-    ]
+      "w central africa"
+    ],
+    "meta": "West Africa"
   },
   "Africa/Maputo": {
     "offset": 2,
@@ -362,7 +373,8 @@ export default {
       "windhoek",
       "namibia",
       "cat"
-    ]
+    ],
+    "meta": "Central Africa"
   },
   "Africa/Monrovia": {
     "offset": 0,
@@ -378,7 +390,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "Africa/Nairobi": {
     "offset": 3,
@@ -409,7 +422,8 @@ export default {
       "africa eastern",
       "e africa",
       "eastern africa"
-    ]
+    ],
+    "meta": "East Africa"
   },
   "Africa/Ndjamena": {
     "offset": 1,
@@ -427,8 +441,9 @@ export default {
       "wast",
       "western africa",
       "west central africa",
-      "w central africa",
-    ]
+      "w central africa"
+    ],
+    "meta": "West Africa"
   },
   "Africa/Sao_Tome": {
     "offset": 0,
@@ -444,7 +459,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "Africa/Tripoli": {
     "offset": 2,
@@ -463,7 +479,8 @@ export default {
       "lby",
       "eastern european",
       "eet"
-    ]
+    ],
+    "meta": "Eastern European"
   },
   "Africa/Tunis": {
     "offset": 1,
@@ -477,7 +494,8 @@ export default {
       "tun",
       "central european",
       "cet"
-    ]
+    ],
+    "meta": "Central European"
   },
   "Africa/Windhoek": {
     "offset": 1,
@@ -491,6 +509,7 @@ export default {
       "central africa",
       "africa central",
       "cat"
-    ]
+    ],
+    "meta": "Central Africa"
   }
 }

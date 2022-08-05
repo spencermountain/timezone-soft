@@ -10,7 +10,8 @@ export default {
       "iot",
       "indian chagos",
       "indian ocean"
-    ]
+    ],
+    "meta": "Indian Ocean"
   },
   "Indian/Christmas": {
     "offset": 7,
@@ -21,8 +22,9 @@ export default {
       "christmas island",
       "cx",
       "cxr",
-      "cxt",
-    ]
+      "cxt"
+    ],
+    "meta": "Christmas Island"
   },
   "Indian/Cocos": {
     "offset": 6.5,
@@ -34,8 +36,9 @@ export default {
       "cc",
       "cck",
       "cct",
-      "cocos island",
-    ]
+      "cocos island"
+    ],
+    "meta": "Cocos Islands"
   },
   "Indian/Kerguelen": {
     "offset": 5,
@@ -52,7 +55,8 @@ export default {
       "amsterdam island",
       "french southern & antarctic time",
       "french southern"
-    ]
+    ],
+    "meta": "French Southern & Antarctic"
   },
   "Indian/Mahe": {
     "offset": 4,
@@ -64,7 +68,8 @@ export default {
       "sc",
       "syc",
       "sct"
-    ]
+    ],
+    "meta": "Seychelles"
   },
   "Indian/Maldives": {
     "offset": 5,
@@ -74,8 +79,9 @@ export default {
       "maldives",
       "mv",
       "mdv",
-      "mvt",
-    ]
+      "mvt"
+    ],
+    "meta": "Maldives"
   },
   "Indian/Mauritius": {
     "offset": 4,
@@ -87,7 +93,8 @@ export default {
       "mus",
       "mut",
       "port louis"
-    ]
+    ],
+    "meta": "Mauritius"
   },
   "Indian/Reunion": {
     "offset": 4,
@@ -97,6 +104,7 @@ export default {
       "reunion",
       "ret",
       "réunion"
-    ]
+    ],
+    "meta": "Réunion"
   }
 }

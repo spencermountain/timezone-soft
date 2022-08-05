@@ -8,8 +8,9 @@ export default {
       "azores",
       "azot",
       "azost",
-      "hmt",
-    ]
+      "hmt"
+    ],
+    "meta": "Azores"
   },
   "Atlantic/Bermuda": {
     "offset": -3,
@@ -22,7 +23,8 @@ export default {
       "bmu",
       "at",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "Atlantic/Canary": {
     "offset": 1,
@@ -37,7 +39,8 @@ export default {
       "western european",
       "europe western",
       "wet"
-    ]
+    ],
+    "meta": "Western European"
   },
   "Atlantic/Cape_Verde": {
     "offset": -1,
@@ -50,7 +53,8 @@ export default {
       "cvt",
       "cabo verde",
       "cabo verde is"
-    ]
+    ],
+    "meta": "Cape Verde"
   },
   "Atlantic/Faroe": {
     "offset": 1,
@@ -63,7 +67,8 @@ export default {
       "fo",
       "fro",
       "atlantic/faeroe"
-    ]
+    ],
+    "meta": "Western European"
   },
   "Atlantic/Madeira": {
     "offset": 1,
@@ -76,7 +81,8 @@ export default {
       "western european",
       "europe western",
       "wet"
-    ]
+    ],
+    "meta": "Western European"
   },
   "Atlantic/Reykjavik": {
     "offset": 0,
@@ -92,7 +98,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "Atlantic/South_Georgia": {
     "offset": -2,
@@ -103,7 +110,8 @@ export default {
       "gs",
       "sgs",
       "gst"
-    ]
+    ],
+    "meta": "South Georgia"
   },
   "Atlantic/Stanley": {
     "offset": -3,
@@ -117,7 +125,8 @@ export default {
       "fkst",
       "falkland island",
       "fkt",
-      "falkland",
-    ]
+      "falkland"
+    ],
+    "meta": "Falkland Islands"
   }
 }

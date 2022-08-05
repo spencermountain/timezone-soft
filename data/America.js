@@ -14,7 +14,8 @@ export default {
       "hst",
       "aleutian",
       "hawaii standard time"
-    ]
+    ],
+    "meta": "Aleutian Standard"
   },
   "America/Anchorage": {
     "offset": -8,
@@ -34,7 +35,8 @@ export default {
       "alaskan standard time",
       "alaskan",
       "alaska standard time"
-    ]
+    ],
+    "meta": "Alaska"
   },
   "America/Araguaina": {
     "offset": -3,
@@ -50,7 +52,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Argentina/Buenos_Aires": {
     "offset": -3,
@@ -63,7 +66,8 @@ export default {
       "arg",
       "america/buenos_aires",
       "america/argentina"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Catamarca": {
     "offset": -3,
@@ -74,7 +78,8 @@ export default {
       "catamarca",
       "america/argentina/comodrivadavia",
       "america/catamarca"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Cordoba": {
     "offset": -3,
@@ -85,7 +90,8 @@ export default {
       "cordoba",
       "america/cordoba",
       "america/rosario"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Jujuy": {
     "offset": -3,
@@ -95,7 +101,8 @@ export default {
       "argentina",
       "jujuy",
       "america/jujuy"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/La_Rioja": {
     "offset": -3,
@@ -110,7 +117,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Mendoza": {
     "offset": -3,
@@ -120,7 +128,8 @@ export default {
       "argentina",
       "mendoza",
       "america/mendoza"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Rio_Gallegos": {
     "offset": -3,
@@ -135,7 +144,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Salta": {
     "offset": -3,
@@ -150,7 +160,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/San_Juan": {
     "offset": -3,
@@ -165,7 +176,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/San_Luis": {
     "offset": -3,
@@ -180,7 +192,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Tucuman": {
     "offset": -3,
@@ -195,7 +208,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Argentina/Ushuaia": {
     "offset": -3,
@@ -210,7 +224,8 @@ export default {
       "argentina standard time",
       "buenos aires",
       "city of buenos aires"
-    ]
+    ],
+    "meta": "Argentina"
   },
   "America/Asuncion": {
     "offset": -4,
@@ -229,7 +244,8 @@ export default {
       "pyst",
       "paraguay time",
       "paraguay standard time"
-    ]
+    ],
+    "meta": "Paraguay"
   },
   "America/Bahia": {
     "offset": -3,
@@ -248,7 +264,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Bahia_Banderas": {
     "offset": -5,
@@ -265,8 +282,9 @@ export default {
       "central mexico",
       "central mexican",
       "central standard time",
-      "cst",
-    ]
+      "cst"
+    ],
+    "meta": "Central Mexico"
   },
   "America/Barbados": {
     "offset": -4,
@@ -278,7 +296,8 @@ export default {
       "brb",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Belem": {
     "offset": -3,
@@ -296,7 +315,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Belize": {
     "offset": -6,
@@ -308,7 +328,8 @@ export default {
       "blz",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Boa_Vista": {
     "offset": -4,
@@ -326,7 +347,8 @@ export default {
       "central brazil",
       "amazon standard time",
       "amt"
-    ]
+    ],
+    "meta": "Amazon"
   },
   "America/Bogota": {
     "offset": -5,
@@ -368,7 +390,8 @@ export default {
       "colombia time",
       "cost",
       "colombia standard time"
-    ]
+    ],
+    "meta": "Colombia"
   },
   "America/Boise": {
     "offset": -6,
@@ -385,7 +408,8 @@ export default {
       "mountain standard time",
       "mountain",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Cambridge_Bay": {
     "offset": -6,
@@ -401,7 +425,8 @@ export default {
       "mountain standard time",
       "mountain",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Campo_Grande": {
     "offset": -4,
@@ -413,7 +438,8 @@ export default {
       "mato grosso do sul",
       "amazon standard time",
       "amt"
-    ]
+    ],
+    "meta": "Amazon"
   },
   "America/Cancun": {
     "offset": -5,
@@ -424,7 +450,8 @@ export default {
       "quintana roo",
       "est",
       "eastern standard time"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Caracas": {
     "offset": -4,
@@ -461,7 +488,8 @@ export default {
       "venezuela time",
       "venezuelan",
       "venezuela standard time"
-    ]
+    ],
+    "meta": "Venezuela"
   },
   "America/Cayenne": {
     "offset": -3,
@@ -474,7 +502,8 @@ export default {
       "guf",
       "gft",
       "french guiana time"
-    ]
+    ],
+    "meta": "French Guiana"
   },
   "America/Chicago": {
     "offset": -5,
@@ -546,7 +575,8 @@ export default {
       "ct",
       "america central",
       "central standard time"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Chihuahua": {
     "offset": -6,
@@ -563,8 +593,9 @@ export default {
       "mazatlan",
       "mountain mexico",
       "mexican pacific standard time",
-      "hnpmx",
-    ]
+      "hnpmx"
+    ],
+    "meta": "Mexican Pacific"
   },
   "America/Costa_Rica": {
     "offset": -6,
@@ -578,7 +609,8 @@ export default {
       "sjmt",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Cuiaba": {
     "offset": -4,
@@ -590,7 +622,8 @@ export default {
       "mato grosso",
       "amazon standard time",
       "amt"
-    ]
+    ],
+    "meta": "Amazon"
   },
   "America/Danmarkshavn": {
     "offset": 0,
@@ -603,7 +636,8 @@ export default {
       "zulu",
       "utc",
       "coordinated universal time"
-    ]
+    ],
+    "meta": "Greenwich Mean"
   },
   "America/Dawson": {
     "offset": -7,
@@ -617,7 +651,8 @@ export default {
       "ywt",
       "mountain standard time",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Dawson_Creek": {
     "offset": -7,
@@ -630,7 +665,8 @@ export default {
       "mt",
       "mountain standard time",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Denver": {
     "offset": -6,
@@ -655,7 +691,8 @@ export default {
       "mt",
       "america mountain",
       "mountain standard time"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Detroit": {
     "offset": -4,
@@ -675,7 +712,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Edmonton": {
     "offset": -6,
@@ -693,7 +731,8 @@ export default {
       "mountain standard time",
       "mountain",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Eirunepe": {
     "offset": -5,
@@ -706,7 +745,8 @@ export default {
       "acre",
       "acre standard time",
       "act"
-    ]
+    ],
+    "meta": "Acre"
   },
   "America/El_Salvador": {
     "offset": -6,
@@ -721,7 +761,8 @@ export default {
       "slv",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Fort_Nelson": {
     "offset": -7,
@@ -732,7 +773,8 @@ export default {
       "mt",
       "mountain standard time",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Fortaleza": {
     "offset": -3,
@@ -757,7 +799,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Glace_Bay": {
     "offset": -3,
@@ -772,7 +815,8 @@ export default {
       "atlantic",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Goose_Bay": {
     "offset": -3,
@@ -788,7 +832,8 @@ export default {
       "atlantic",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Grand_Turk": {
     "offset": -4,
@@ -807,7 +852,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Guatemala": {
     "offset": -6,
@@ -821,7 +867,8 @@ export default {
       "gtm",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Guayaquil": {
     "offset": -5,
@@ -841,7 +888,8 @@ export default {
       "ecuador mainland",
       "ecuador time",
       "ect"
-    ]
+    ],
+    "meta": "Ecuador"
   },
   "America/Guyana": {
     "offset": -4,
@@ -854,7 +902,8 @@ export default {
       "guy",
       "gyt",
       "guyana time"
-    ]
+    ],
+    "meta": "Guyana"
   },
   "America/Halifax": {
     "offset": -3,
@@ -875,7 +924,8 @@ export default {
       "atlantic time",
       "at",
       "atlantic standard time"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Havana": {
     "offset": -4,
@@ -904,7 +954,8 @@ export default {
       "hcu",
       "cuba standard time",
       "hncu"
-    ]
+    ],
+    "meta": "Cuba"
   },
   "America/Hermosillo": {
     "offset": -7,
@@ -917,7 +968,8 @@ export default {
       "sonora",
       "mexican pacific standard time",
       "hnpmx"
-    ]
+    ],
+    "meta": "Mexican Pacific"
   },
   "America/Indiana/Indianapolis": {
     "offset": -4,
@@ -938,7 +990,8 @@ export default {
       "starke",
       "america/fort_wayne",
       "america/indiana"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Indiana/Knox": {
     "offset": -5,
@@ -952,7 +1005,8 @@ export default {
       "america/knox_in",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Indiana/Marengo": {
     "offset": -4,
@@ -964,7 +1018,8 @@ export default {
       "marengo",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Indiana/Petersburg": {
     "offset": -4,
@@ -976,7 +1031,8 @@ export default {
       "petersburg",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Indiana/Tell_City": {
     "offset": -5,
@@ -988,7 +1044,8 @@ export default {
       "tell_city",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Indiana/Vevay": {
     "offset": -4,
@@ -1000,7 +1057,8 @@ export default {
       "vevay",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Indiana/Vincennes": {
     "offset": -4,
@@ -1012,7 +1070,8 @@ export default {
       "vincennes",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Indiana/Winamac": {
     "offset": -4,
@@ -1024,7 +1083,8 @@ export default {
       "winamac",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Inuvik": {
     "offset": -6,
@@ -1040,7 +1100,8 @@ export default {
       "mountain standard time",
       "mountain",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Iqaluit": {
     "offset": -4,
@@ -1056,7 +1117,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Jamaica": {
     "offset": -5,
@@ -1070,7 +1132,8 @@ export default {
       "jam",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Juneau": {
     "offset": -8,
@@ -1087,7 +1150,8 @@ export default {
       "alaskan",
       "alaska standard time",
       "akst"
-    ]
+    ],
+    "meta": "Alaska"
   },
   "America/Kentucky/Louisville": {
     "offset": -4,
@@ -1101,7 +1165,8 @@ export default {
       "eastern ky",
       "wayne",
       "america/kentucky"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Kentucky/Monticello": {
     "offset": -4,
@@ -1113,7 +1178,8 @@ export default {
       "monticello",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/La_Paz": {
     "offset": -4,
@@ -1131,7 +1197,8 @@ export default {
       "bol",
       "bot",
       "bolivia time"
-    ]
+    ],
+    "meta": "Bolivia"
   },
   "America/Lima": {
     "offset": -5,
@@ -1160,7 +1227,8 @@ export default {
       "pet",
       "peru time",
       "peru standard time"
-    ]
+    ],
+    "meta": "Peru"
   },
   "America/Los_Angeles": {
     "offset": -7,
@@ -1224,7 +1292,8 @@ export default {
       "pt",
       "america pacific",
       "pacific standard time"
-    ]
+    ],
+    "meta": "Pacific"
   },
   "America/Maceio": {
     "offset": -3,
@@ -1240,7 +1309,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Managua": {
     "offset": -6,
@@ -1253,7 +1323,8 @@ export default {
       "nic",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Manaus": {
     "offset": -4,
@@ -1271,7 +1342,8 @@ export default {
       "central brazilian",
       "central brazil",
       "amazon standard time"
-    ]
+    ],
+    "meta": "Amazon"
   },
   "America/Martinique": {
     "offset": -4,
@@ -1284,7 +1356,8 @@ export default {
       "ffmt",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Matamoros": {
     "offset": -5,
@@ -1302,7 +1375,8 @@ export default {
       "central standard time",
       "central",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Mazatlan": {
     "offset": -6,
@@ -1323,8 +1397,9 @@ export default {
       "la paz",
       "mountain mexico",
       "mexican pacific standard time",
-      "hnpmx",
-    ]
+      "hnpmx"
+    ],
+    "meta": "Mexican Pacific"
   },
   "America/Menominee": {
     "offset": -5,
@@ -1339,7 +1414,8 @@ export default {
       "central standard time",
       "central",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Merida": {
     "offset": -5,
@@ -1357,8 +1433,9 @@ export default {
       "central mexico",
       "central mexican",
       "central standard time",
-      "cst",
-    ]
+      "cst"
+    ],
+    "meta": "Central Mexico"
   },
   "America/Metlakatla": {
     "offset": -8,
@@ -1375,7 +1452,8 @@ export default {
       "alaskan",
       "alaska standard time",
       "akst"
-    ]
+    ],
+    "meta": "Alaska"
   },
   "America/Mexico_City": {
     "offset": -5,
@@ -1470,8 +1548,9 @@ export default {
       "central mexico",
       "central mexican",
       "central standard time",
-      "cst",
-    ]
+      "cst"
+    ],
+    "meta": "Central Mexico"
   },
   "America/Miquelon": {
     "offset": -2,
@@ -1491,7 +1570,8 @@ export default {
       "saint pierre",
       "st pierre & miquelon standard time",
       "hnpm"
-    ]
+    ],
+    "meta": "St. Pierre & Miquelon"
   },
   "America/Moncton": {
     "offset": -3,
@@ -1506,7 +1586,8 @@ export default {
       "atlantic",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Monterrey": {
     "offset": -5,
@@ -1534,8 +1615,9 @@ export default {
       "central mexico",
       "central mexican",
       "central standard time",
-      "cst",
-    ]
+      "cst"
+    ],
+    "meta": "Central Mexico"
   },
   "America/Montevideo": {
     "offset": -3,
@@ -1551,7 +1633,8 @@ export default {
       "uyst",
       "montevideo standard time",
       "uruguay standard time"
-    ]
+    ],
+    "meta": "Uruguay"
   },
   "America/New_York": {
     "offset": -4,
@@ -1653,7 +1736,8 @@ export default {
       "et",
       "america eastern",
       "eastern standard time"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Nipigon": {
     "offset": -4,
@@ -1668,7 +1752,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Nome": {
     "offset": -8,
@@ -1685,7 +1770,8 @@ export default {
       "alaskan",
       "alaska standard time",
       "akst"
-    ]
+    ],
+    "meta": "Alaska"
   },
   "America/Noronha": {
     "offset": -2,
@@ -1698,7 +1784,8 @@ export default {
       "fernando de noronha time",
       "fernando de noronha standard time",
       "fnt"
-    ]
+    ],
+    "meta": "Fernando de Noronha"
   },
   "America/North_Dakota/Beulah": {
     "offset": -5,
@@ -1710,7 +1797,8 @@ export default {
       "beulah",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/North_Dakota/Center": {
     "offset": -5,
@@ -1724,7 +1812,8 @@ export default {
       "mercer",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/North_Dakota/New_Salem": {
     "offset": -5,
@@ -1736,7 +1825,8 @@ export default {
       "new_salem",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Nuuk": {
     "offset": -2,
@@ -1749,7 +1839,8 @@ export default {
       "gl",
       "grl",
       "america/godthab"
-    ]
+    ],
+    "meta": "West Greenland"
   },
   "America/Ojinaga": {
     "offset": -6,
@@ -1766,7 +1857,8 @@ export default {
       "mountain standard time",
       "mountain",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Panama": {
     "offset": -5,
@@ -1784,7 +1876,8 @@ export default {
       "america/coral_harbour",
       "eastern standard time",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Pangnirtung": {
     "offset": -4,
@@ -1800,7 +1893,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Paramaribo": {
     "offset": -3,
@@ -1813,7 +1907,8 @@ export default {
       "sur",
       "srt",
       "suriname time"
-    ]
+    ],
+    "meta": "Suriname"
   },
   "America/Phoenix": {
     "offset": -7,
@@ -1847,7 +1942,8 @@ export default {
       "mst",
       "mt",
       "mountain standard time"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Port-au-Prince": {
     "offset": -4,
@@ -1870,7 +1966,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Porto_Velho": {
     "offset": -4,
@@ -1888,7 +1985,8 @@ export default {
       "central brazil",
       "amazon standard time",
       "amt"
-    ]
+    ],
+    "meta": "Amazon"
   },
   "America/Puerto_Rico": {
     "offset": -4,
@@ -1922,7 +2020,8 @@ export default {
       "america/tortola",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Punta_Arenas": {
     "offset": -3,
@@ -1933,7 +2032,8 @@ export default {
       "region of magallanes",
       "chile standard time",
       "clt"
-    ]
+    ],
+    "meta": "Chile"
   },
   "America/Rainy_River": {
     "offset": -5,
@@ -1949,7 +2049,8 @@ export default {
       "central standard time",
       "central",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Rankin_Inlet": {
     "offset": -5,
@@ -1965,7 +2066,8 @@ export default {
       "central standard time",
       "central",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Recife": {
     "offset": -3,
@@ -1986,7 +2088,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Regina": {
     "offset": -6,
@@ -2000,7 +2103,8 @@ export default {
       "sk",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Resolute": {
     "offset": -5,
@@ -2015,7 +2119,8 @@ export default {
       "central standard time",
       "central",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Rio_Branco": {
     "offset": -5,
@@ -2030,7 +2135,8 @@ export default {
       "acre time",
       "acre standard time",
       "act"
-    ]
+    ],
+    "meta": "Acre"
   },
   "America/Santarem": {
     "offset": -3,
@@ -2045,7 +2151,8 @@ export default {
       "east south america",
       "brasilia standard time",
       "brt"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Santiago": {
     "offset": -4,
@@ -2075,7 +2182,8 @@ export default {
       "clst",
       "chile time",
       "chile standard time"
-    ]
+    ],
+    "meta": "Chile"
   },
   "America/Santo_Domingo": {
     "offset": -4,
@@ -2096,7 +2204,8 @@ export default {
       "sdmt",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Sao_Paulo": {
     "offset": -3,
@@ -2211,7 +2320,8 @@ export default {
       "e south america standard time",
       "east south america",
       "brasilia standard time"
-    ]
+    ],
+    "meta": "Brasilia"
   },
   "America/Scoresbysund": {
     "offset": 0,
@@ -2229,7 +2339,8 @@ export default {
       "greenland eastern",
       "east greenland standard time",
       "hneg"
-    ]
+    ],
+    "meta": "East Greenland"
   },
   "America/Sitka": {
     "offset": -8,
@@ -2246,7 +2357,8 @@ export default {
       "alaskan",
       "alaska standard time",
       "akst"
-    ]
+    ],
+    "meta": "Alaska"
   },
   "America/St_Johns": {
     "offset": -2.5,
@@ -2266,7 +2378,8 @@ export default {
       "htn",
       "newfoundland standard time",
       "hntn"
-    ]
+    ],
+    "meta": "Newfoundland"
   },
   "America/Swift_Current": {
     "offset": -6,
@@ -2276,7 +2389,8 @@ export default {
       "swift_current",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Tegucigalpa": {
     "offset": -6,
@@ -2290,7 +2404,8 @@ export default {
       "hnd",
       "central standard time",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Thule": {
     "offset": -3,
@@ -2305,7 +2420,8 @@ export default {
       "atlantic",
       "atlantic standard time",
       "ast"
-    ]
+    ],
+    "meta": "Atlantic"
   },
   "America/Thunder_Bay": {
     "offset": -4,
@@ -2321,7 +2437,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Tijuana": {
     "offset": -7,
@@ -2342,7 +2459,8 @@ export default {
       "pacific standard time",
       "pacific",
       "pst"
-    ]
+    ],
+    "meta": "Pacific"
   },
   "America/Toronto": {
     "offset": -4,
@@ -2382,7 +2500,8 @@ export default {
       "eastern standard time",
       "eastern",
       "est"
-    ]
+    ],
+    "meta": "Eastern"
   },
   "America/Vancouver": {
     "offset": -7,
@@ -2406,7 +2525,8 @@ export default {
       "pacific standard time",
       "pacific",
       "pst"
-    ]
+    ],
+    "meta": "Pacific"
   },
   "America/Whitehorse": {
     "offset": -7,
@@ -2418,7 +2538,8 @@ export default {
       "yst",
       "mountain standard time",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   },
   "America/Winnipeg": {
     "offset": -5,
@@ -2436,7 +2557,8 @@ export default {
       "central standard time",
       "central",
       "cst"
-    ]
+    ],
+    "meta": "Central"
   },
   "America/Yakutat": {
     "offset": -8,
@@ -2453,7 +2575,8 @@ export default {
       "alaskan",
       "alaska standard time",
       "akst"
-    ]
+    ],
+    "meta": "Alaska"
   },
   "America/Yellowknife": {
     "offset": -6,
@@ -2468,6 +2591,7 @@ export default {
       "mountain standard time",
       "mountain",
       "mst"
-    ]
+    ],
+    "meta": "Mountain"
   }
 }
