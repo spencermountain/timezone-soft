@@ -12,16 +12,16 @@ const display = function (id) {
 
   let dst = null
   if (meta.dst) {
-    let [abbrev, offset, name] = meta.dst
+    let [abbr, offset, name] = meta.dst
     name = name || `${metaName} Daylight Time`
-    dst = { abbrev, offset, name }
+    dst = { abbr, offset, name }
   }
 
-  let [abbrev, offset] = meta.std
+  let [abbr, offset] = meta.std
   return {
     name: `${metaName} Time`,
     iana: id,
-    standard: { abbrev, offset, name: `${metaName} Standard Time`, },
+    standard: { abbr, offset, name: `${metaName} Standard Time`, },
     daylight: dst || null,
     long: meta.long
   }

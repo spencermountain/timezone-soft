@@ -14,7 +14,6 @@ export default {
     "long": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi"
   },
   "Central European": {
-    "dupe": true,
     "std": [
       "CET",
       1
@@ -23,9 +22,11 @@ export default {
       "CEST",
       2,
       "Central European Summer Time"
-    ]
+    ],
+    "long": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris"
   },
   "Atlantic": {
+    "dupe": true,
     "std": [
       "AST",
       -4
@@ -44,13 +45,18 @@ export default {
     "long": "(UTC) Coordinated Universal Time"
   },
   "Eastern European": {
-    "dupe": true,
     "std": [
       "EET",
       2
+    ],
+    "dst": [
+      "EEST",
+      3,
+      "Eastern European Summer Time"
     ]
   },
   "Central": {
+    "dupe": true,
     "std": [
       "CST",
       -6
@@ -62,11 +68,15 @@ export default {
     "long": "(UTC-06:00) Central Time (US & Canada)"
   },
   "Eastern": {
-    "dupe": true,
     "std": [
       "EST",
       -5
-    ]
+    ],
+    "dst": [
+      "EDT",
+      -4
+    ],
+    "long": "(UTC-05:00) Eastern Time (US & Canada)"
   },
   "Argentina": {
     "std": [
@@ -76,18 +86,18 @@ export default {
     "long": "(UTC-03:00) City of Buenos Aires"
   },
   "East Africa": {
-    "dupe": true,
     "std": [
       "EAT",
       3
-    ]
+    ],
+    "long": "(UTC+03:00) Nairobi"
   },
   "West Africa": {
-    "dupe": true,
     "std": [
       "WAT",
       1
-    ]
+    ],
+    "long": "(UTC+01:00) West Central Africa"
   },
   "Moscow": {
     "std": [
@@ -104,18 +114,22 @@ export default {
     "long": "(UTC-03:00) Brasilia"
   },
   "Mountain": {
-    "dupe": true,
     "std": [
       "MST",
       -7
-    ]
+    ],
+    "dst": [
+      "MDT",
+      -6
+    ],
+    "long": "(UTC-07:00) Mountain Time (US & Canada)"
   },
   "Central Africa": {
-    "dupe": true,
     "std": [
       "CAT",
       2
-    ]
+    ],
+    "long": "(UTC+02:00) Windhoek"
   },
   "Arabian": {
     "std": [
@@ -229,11 +243,11 @@ export default {
     "long": "(UTC-08:00) Pacific Time (US & Canada)"
   },
   "Amazon": {
-    "dupe": true,
     "std": [
       "AMT",
       -4
-    ]
+    ],
+    "long": "(UTC-04:00) Cuiaba"
   },
   "Morocco Standard": {
     "offset": 1,
@@ -383,11 +397,15 @@ export default {
     "long": "(UTC-09:00) Aleutian Islands"
   },
   "Mexican Pacific": {
-    "dupe": true,
     "std": [
       "HNPMX",
       -7
-    ]
+    ],
+    "dst": [
+      "HEPMX",
+      -6
+    ],
+    "long": "(UTC-07:00) Chihuahua, La Paz, Mazatlan"
   },
   "Colombia": {
     "std": [
@@ -402,6 +420,7 @@ export default {
     ]
   },
   "Chile": {
+    "dupe": true,
     "std": [
       "CLT",
       -3

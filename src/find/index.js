@@ -1,7 +1,6 @@
 import { zones, lexicon } from '../data/index.js'
 import normalize from './normalize.js'
 
-
 // match some text to an iana code
 const find = function (str) {
   // perfect id match
@@ -27,4 +26,6 @@ const find = function (str) {
   }
   return null
 }
+
 export default find
+

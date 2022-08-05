@@ -14,6 +14,13 @@ Object.keys(pcked).forEach(top => {
     Object.keys(unpack(words)).forEach(k => {
       lexicon[k] = lexicon[k] || []
       lexicon[k].push(id)
+      // use iana aliases
+      if (k.match(/\//)) {
+        let arr = k.split(/\//)
+        let last = arr[arr.length - 1].toLowerCase()
+        lexicon[last] = lexicon[last] || []
+        lexicon[last].push(id)
+      }
     })
     if (dst) {
       zones[id].dst = dstPatterns[dst].split(/\|/)
