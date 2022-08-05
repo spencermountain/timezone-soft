@@ -1,67 +1,19 @@
-import commonjs from 'rollup-plugin-commonjs'
-import json from 'rollup-plugin-json'
 import { terser } from 'rollup-plugin-terser'
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
-
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 export default [
   {
     input: 'src/index.js',
-    output: [
-      {
-        file: 'builds/spacetime-informal.mjs',
-        format: 'esm'
-      }
-    ],
-    plugins: [
-      resolve(),
-      json(),
-      commonjs(),
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-env']
-      })
-    ]
+    output: [{ file: 'builds/timezone-soft.mjs', format: 'esm' }],
+    plugins: [nodeResolve()]
   },
   {
     input: 'src/index.js',
-    output: [
-      {
-        file: 'builds/spacetime-informal.js',
-        format: 'umd',
-        sourcemap: true,
-        name: 'informal'
-      }
-    ],
-    plugins: [
-      resolve(),
-      json(),
-      commonjs(),
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-env']
-      })
-    ]
+    output: [{ file: 'builds/timezone-soft.cjs', format: 'umd', name: 'timezoneSoft' }],
+    plugins: [nodeResolve()]
   },
   {
     input: 'src/index.js',
-    output: [
-      {
-        file: 'builds/spacetime-informal.min.js',
-        format: 'umd',
-        name: 'informal'
-      }
-    ],
-    plugins: [
-      resolve(),
-      json(),
-      commonjs(),
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-env']
-      }),
-      ,
-      terser()
-    ]
+    output: [{ file: 'builds/timezone-soft.min.cjs', format: 'umd', name: 'timezoneSoft' }],
+    plugins: [nodeResolve(), terser()]
   }
 ]

@@ -105,7 +105,7 @@ const informal = {
   'Asia/Novosibirsk': ['novt'],
   'Asia/Irkutsk': ['irkt'],
   'Asia/Yakutsk': ['yakt'],
-  'Asia/Cladivostok': ['vlat'],
+  'Asia/Vladivostok': ['vlat'],
   'Asia/Magadan': ['magt'],
   'Asia/Sakhalin': ['sakt'],
   'Asia/Srednekolymsk': ['sret'],
@@ -119,7 +119,7 @@ const informal = {
   'Asia/Hovd': ['hovt'],
   'Asia/Ashgabat': ['tmt', null, 'turkmenistan'],
   // wmt: 'Europe/Warsaw',
-  // 'Europe/Volgograd':['volt']
+  'Europe/Volgograd': ['volt'],
 
   //Africa
   'Africa/Lagos': ['wat', 'wast', 'west africa'], //West african
@@ -138,7 +138,7 @@ const informal = {
   //Middle-east
   'Europe/Istanbul': ['trt', null, 'turkey'],
   'Asia/Tbilisi': ['get', null, 'georgia'],
-  // 'Asia/Yerevan': ['amt', null, 'armenia'], //(sorry!)
+  'Asia/Yerevan': ['amt', null, 'armenia'], //ambig amt
   'Asia/Baku': ['azt', null, 'azerbaijan'],
   'Asia/Jerusalem': [null, 'idt', 'israel', 'jmt', 'iddt'], //Using ist for india
   'Asia/Tehran': ['irst', 'irdt', 'iran'],
@@ -150,7 +150,7 @@ const informal = {
 
   //India
   'Asia/Kolkata': ['ist', null, 'india', 'slst'],
-  // 'Asia/Dhaka': ['bst', null, 'bangladesh'], //(sorry)
+  'Asia/Dhaka': ['bst', null, 'bangladesh'], //ambig bst
   'Asia/Thimbu': ['btt', null, 'bhutan'],
   'Indian/Maldives': ['mvt'],
   'Asia/Kathmandu': ['npt', null, 'nepal'],
@@ -187,7 +187,7 @@ const informal = {
   'Pacific/Niue': ['nut'],
   'Pacific/Fakaofo': ['tkt'],
   'Pacific/Rarotonga': ['ckt', null, 'cook islands'],
-  'Chile/EasterIsland': ['east', 'easst', 'easter island', 'emt'],
+  'Pacific/Easter': ['east', 'easst', 'easter island', 'emt'],
   'Asia/Jayapura': ['wit', null, 'east indonesia'],
   'Asia/Jakarta': ['wib', null, 'west indonesia'],
   'Asia/Makassar': ['wita', null, 'central indonesia'],
@@ -260,4 +260,4 @@ const informal = {
 //   return h
 // }, {})
 
-module.exports = informal
+export default informal

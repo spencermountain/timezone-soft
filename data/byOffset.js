@@ -1,6 +1,6 @@
 //These are pretty arbitrary and I made them up myself
-module.exports = {
-  '0': 'Europe/London', //London
+export default {
+  0: 'Europe/London', //London
   '+0': 'Europe/London', //London
   '-0': 'Europe/London', //London
   '+1': 'Europe/Paris', //Paris

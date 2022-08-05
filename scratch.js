@@ -1,7 +1,38 @@
-const informal = require('./src/index')
+import soft from './src/index.js'
+import spacetime from 'spacetime'
+// let zones = spacetime.timezones()
+// const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let display = informal.find('bermuda')
-console.log(display)
+let ids = soft('easter island standard')
+// let ids = soft('asia/macao')
+console.log(ids)
 
-// const tzCodes = informal.display('Pacific/Auckland')
-// console.log(tzCodes)
+// let res = {}
+// Object.keys(zones).map((k) => {
+//   let num = zones[k].offset
+//   if (num > 0) {
+//     num = '+' + num
+//   } else {
+//     num = String(num)
+//   }
+//   if (zones[k].dst) {
+//     let num2 = zones[k].offset - 1
+//     if (num2 > 0) {
+//       num2 = '+' + num2
+//     } else {
+//       num2 = String(num2)
+//     }
+//     num += '/' + num2
+//   }
+//   res[k] = num
+// })
+
+// // console.log(Object.keys(res).length)
+// arr.forEach((obj) => {
+//   obj.ids.forEach((id) => {
+//     delete res[id.toLowerCase()]
+//   })
+// })
+// console.log(Object.keys(res).length)
+// console.log(arr)
+// console.log(res)

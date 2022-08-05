@@ -1,28 +1,27 @@
-'use strict'
-const test = require('tape')
-const informal = require('../src')
+import test from 'tape'
+import soft from './_lib.js'
 
-test('informal timezones', t => {
+test('informal timezones', (t) => {
   let arr = [
     ['Toronto', 'America/Toronto'],
     ['toronto', 'America/Toronto'],
     ['toronto time', 'America/Toronto'],
     ['toronto standard time', 'America/Toronto'],
 
-    ['eastern standard', 'Canada/Eastern'],
+    ['eastern standard', 'America/New_York'],
     ['eastern standard time', 'America/New_York'],
-    ['eastern daylight', 'Canada/Eastern'],
+    ['eastern daylight', 'America/New_York'],
     ['eastern daylight time', 'America/New_York'],
-    ['eastern time', 'Canada/Eastern'],
+    ['eastern time', 'America/New_York'],
     ['est', 'America/New_York'],
     ['edt', 'America/New_York'],
 
     ['Jamaica', 'America/Jamaica'],
     ['PST', 'America/Los_Angeles'],
     ['pdt', 'America/Los_Angeles'],
-    ['pacific', 'Canada/Pacific'],
-    ['pacific standard', 'Canada/Pacific'],
-    ['pacific daylight', 'Canada/Pacific'],
+    ['pacific', 'America/Los_Angeles'],
+    ['pacific standard', 'America/Los_Angeles'],
+    ['pacific daylight', 'America/Los_Angeles'],
     ['GMT+8', 'Etc/GMT+8'],
     ['-3h', 'Etc/GMT+3'],
     ['bst', 'Europe/London'],
@@ -51,11 +50,14 @@ test('informal timezones', t => {
     ['Etc/gmt-5', 'Etc/GMT-5'],
     ['-3', 'Etc/GMT+3'],
     ['3', 'Etc/GMT-3'],
-    [`Eastern Time - US & Canada`, 'Canada/Eastern']
+    [`Eastern Time - US & Canada`, 'America/New_York'],
+    ['kandahar', 'Asia/Kabul'],
+    ['yorkshire', 'Europe/London']
   ]
-  arr.forEach(a => {
-    let found = informal.find(a[0])
-    t.equal(found, a[1], a[0])
+  arr.forEach((a) => {
+    let found = soft(a[0])
+    found[0] = found[0] || {}
+    t.equal(found[0].iana, a[1], a[0])
   })
   t.end()
 })

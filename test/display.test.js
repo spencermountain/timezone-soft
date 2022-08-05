@@ -1,5 +1,5 @@
-const test = require('tape')
-const informal = require('../src')
+import test from 'tape'
+import soft from './_lib.js'
 
 test('display-test', (t) => {
   let arr = [
@@ -15,18 +15,21 @@ test('display-test', (t) => {
     // ['Punta Arenas', 'CLST'],
     ['prague', 'CET', 'CEST'],
     ['kinshasa', 'WAT'],
-    ['chongqing', 'CT'],
+    ['chongqing', 'CST'],
     ['makassar', 'WITA'],
     ['acst', 'ACST', 'ACDT'],
     ['Adelaide', 'ACST', 'ACDT'],
-    ['darwin', 'ACST', 'ACDT']
+    ['darwin', 'ACST'],
+    ['Etc/GMT+8', 'GMT+8']
+    // ['Etc/UTC+8', 'GMT+8'],
+    // ['UTC+8', 'GMT+8'],
+    // ['8h', 'GMT-8']
   ]
   arr.forEach((a) => {
-    let display = informal.display(a[0])
-
-    t.equal(display.standard.abbrev, a[1], a[0] + ' standard')
+    let display = soft(a[0])[0]
+    t.equal(display.standard.abbr, a[1], a[0] + ' standard')
     if (display.daylight) {
-      t.equal(display.daylight.abbrev, a[2], a[0] + ' daylight')
+      t.equal(display.daylight.abbr, a[2], a[0] + ' daylight')
     } else {
       t.equal(a[2], undefined, 'no-daylight')
     }

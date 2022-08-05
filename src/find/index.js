@@ -1,8 +1,26 @@
-const lookup = require('../../data/')
-const parseOffset = require('./parseOffset')
+import { unpack } from 'efrt'
+import pckd from './_data.js'
+import misc from './misc.js'
+import parseOffset from './parseOffset.js'
+
+let lexicon = unpack(pckd)
+lexicon = Object.assign(lexicon, misc)
+// console.log(lexicon.ist)
+
+// add some redundant data to our lexicon
+Object.keys(lexicon).filter((k) => {
+  let val = lexicon[k]
+  if (typeof val === 'string') {
+    val = val.toLowerCase()
+    if (lexicon[val] === undefined) {
+      lexicon[val] = lexicon[k]
+    }
+  }
+})
 
 //try to match these against iana form
 const normalizeOne = (tz) => {
+  tz = tz.replace(/^in /g, '')
   tz = tz.replace(/ time/g, '')
   tz = tz.replace(/ (standard|daylight|summer)/g, '')
   tz = tz.replace(/ - .*/g, '') //`Eastern Time - US & Canada`
@@ -31,55 +49,55 @@ const find = function (str) {
   }
   str = str.toLowerCase().trim()
   // lookup known abbreviations
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
 
   // -8hrs
   if (/[0-9]/.test(str)) {
     let etc = parseOffset(str)
     if (etc) {
-      return etc
+      return [etc]
     }
   }
 
   // start fuzzy-match against iana timezones
   str = normalizeOne(str)
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
   // 'eastern daylight'
   let tmp = str + ' time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
   // 'pacific'
   tmp = str + ' standard time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
 
   // -- harder normalizations --
   str = normalizeTwo(str)
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
   // -- HARDER normalizations --
   str = normalizeThree(str)
-  if (lookup.hasOwnProperty(str)) {
-    return lookup[str]
+  if (lexicon.hasOwnProperty(str)) {
+    return lexicon[str]
   }
   // 'eastern daylight'
   tmp = str + ' time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
   // 'pacific'
   tmp = str + ' standard time'
-  if (lookup.hasOwnProperty(tmp)) {
-    return lookup[tmp]
+  if (lexicon.hasOwnProperty(tmp)) {
+    return lexicon[tmp]
   }
 
   return null
 }
-module.exports = find
+export default find
