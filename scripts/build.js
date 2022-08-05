@@ -1,10 +1,10 @@
 import zonefile from './zonefile.js'
-// import fs from 'fs'
-// const dir = path.dirname(fileURLToPath(import.meta.url))
-// import path from 'path'
-// import { fileURLToPath } from 'url'
-import aliases from './aliases.js'
-import abbreviatons from '../data/06-abbreviations.js'
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
+const dir = path.dirname(fileURLToPath(import.meta.url))
+// import aliases from './aliases.js'
+import abbreviatons from '../old/06-abbreviations.js'
 
 import { byCity, byCountry, byState, oldZone, parenthesis, link, alias, meta } from './setups.js'
 
@@ -12,6 +12,7 @@ import { byCity, byCountry, byState, oldZone, parenthesis, link, alias, meta } f
 //try to match these against iana form
 const normalize = (w) => {
   w = w.toLowerCase().trim()
+  w = w.replace(/\. /g, ' ')
   // w = w.replace(/_/g, ' ')
   // w = w.replace(/^in /g, '')
   // w = w.replace(/ time/g, '')
@@ -22,11 +23,10 @@ const normalize = (w) => {
 }
 
 
-let byDir = {}
 let total = 0
 Object.keys(zonefile).forEach(k => {
   let names = []
-  console.log('\n' + k)
+  // console.log('\n' + k)
   let split = k.split(/\//)
 
   // add all parts of their iana code
@@ -80,13 +80,23 @@ Object.keys(zonefile).forEach(k => {
   names = Array.from(new Set(names))//5469
 
   console.log(' ', names)
-  // fs.writeFileSync(dir + `/data/${top}.js`, `export default ` + JSON.stringify(zonefile[k], null, 2))
   // fs.promises.mkdir(dir + `/data/${top}.js`, { recursive: true }).catch(console.error);
   total += names.length
   zonefile[k].names = names
 })
-// console.log(total)
 
-console.log(zonefile)
+let byDir = {}
+let keys = Object.keys(zonefile).sort()
+keys.forEach(k => {
+  let top = k.split(/\//)[0]
+  byDir[top] = byDir[top] || {}
+  byDir[top][k] = zonefile[k]
+})
+
+Object.keys(byDir).forEach(top => {
+  fs.writeFileSync(dir + `/data/${top}.js`, `export default ` + JSON.stringify(byDir[top], null, 2))
+})
+
+console.log(byDir)
 // console.log(Object.keys(zonefile).length)
 
