@@ -6,15 +6,16 @@ import { zones } from '../data/index.js'
 for (let i = 0; i < 14; i += 1) {
   metas[`gmt-${i}`] = {
     name: `Etc/GMT-${i}`,
-    std: ["GMT", -i],
+    std: [`GMT-${i}`, -i],
     long: `(UTC-${i}:00) Coordinated Universal Time`
   }
   metas[`gmt+${i}`] = {
     name: `Etc/GMT+${i}`,
-    std: ["GMT", i],
+    std: [`GMT+${i}`, i],
     long: `(UTC+${i}:00) Coordinated Universal Time`
   }
 }
+
 const display = function (id) {
   if (!id) {
     return null
@@ -37,12 +38,14 @@ const display = function (id) {
   }
 
   let [abbr, offset] = meta.std
+  let name = meta.name || `${metaName} Time`
+  let long = meta.long || `(UTC+${offset}:00) ${name}`
   return {
-    name: meta.name || `${metaName} Time`,
+    name: name,
     iana: id,
     standard: { abbr, offset, name: meta.name || `${metaName} Standard Time`, },
     daylight: dst || null,
-    long: meta.long,
+    long: long,
   }
 }
 export default display

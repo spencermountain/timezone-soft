@@ -2,6 +2,8 @@ import test from 'tape'
 import spacetime from 'spacetime'
 import soft from './_lib.js'
 let zones = spacetime().timezones
+zones['pacific/kanton'] = true
+
 import { lexicon } from '../src/data/index.js'
 import current from './_current.js'
 
