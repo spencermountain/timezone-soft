@@ -7,13 +7,17 @@ const display = function (id) {
   if (!id) {
     return null
   }
+  if (!zones[id]) {
+    console.error(`missing id ${id}`)
+    return null
+  }
   let metaName = zones[id].meta
   let meta = metas[metaName]
   let dst = null
   if (meta.dst) {
     let [abbr, offset, name] = meta.dst
     name = name || `${metaName} Daylight Time`
-    let [start, end] = zones[id].dst
+    let [start, end] = zones[id].dst || []
     // let change = { start, end }
     dst = { abbr, offset, name, start, end }
 

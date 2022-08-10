@@ -2,7 +2,7 @@ import test from 'tape'
 import spacetime from 'spacetime'
 import soft from './_lib.js'
 let zones = spacetime().timezones
-import { lexicon } from '../src/find/unpack.js'
+import { lexicon } from '../src/data/index.js'
 import current from './_current.js'
 
 let list = Object.keys(lexicon)
