@@ -4,8 +4,10 @@ import soft from './src/index.js'
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
 // let ids = soft('America/Argentina/Buenos_Aires')
-let ids = soft('Africa/Addis_Ababa')
+let ids = soft('5h5h5h')
 console.log(ids)
+
+
 
 // let out = {
 //   iana: 'Australia/Lord_Howe',

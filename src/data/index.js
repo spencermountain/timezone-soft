@@ -2,6 +2,7 @@ import { unpack } from 'efrt'
 import dstPatterns from '../find/dst-patterns.js'
 import pcked from './_data.js'
 import misc from '../find/misc.js'
+import addUTC from './add-utc.js'
 
 // unpack our lexicon of words
 let zones = {}
@@ -27,4 +28,7 @@ Object.keys(pcked).forEach(top => {
     }
   })
 })
+
+addUTC(zones)
+
 export { zones, lexicon }

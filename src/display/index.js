@@ -3,6 +3,18 @@ import { zones } from '../data/index.js'
 // const metas = require('../../data/05-metazones')
 // import offsets from './offsets.js'
 
+for (let i = 0; i < 14; i += 1) {
+  metas[`gmt-${i}`] = {
+    name: `Etc/GMT-${i}`,
+    std: ["GMT", -i],
+    long: `(UTC-${i}:00) Coordinated Universal Time`
+  }
+  metas[`gmt+${i}`] = {
+    name: `Etc/GMT+${i}`,
+    std: ["GMT", i],
+    long: `(UTC+${i}:00) Coordinated Universal Time`
+  }
+}
 const display = function (id) {
   if (!id) {
     return null
@@ -12,22 +24,23 @@ const display = function (id) {
     return null
   }
   let metaName = zones[id].meta
-  let meta = metas[metaName]
+  if (!metas[metaName]) {
+    console.error(`missing tz-meta ${metaName}`)
+  }
+  let meta = metas[metaName] || {}
   let dst = null
   if (meta.dst) {
     let [abbr, offset, name] = meta.dst
     name = name || `${metaName} Daylight Time`
     let [start, end] = zones[id].dst || []
-    // let change = { start, end }
     dst = { abbr, offset, name, start, end }
-
   }
 
   let [abbr, offset] = meta.std
   return {
-    name: `${metaName} Time`,
+    name: meta.name || `${metaName} Time`,
     iana: id,
-    standard: { abbr, offset, name: `${metaName} Standard Time`, },
+    standard: { abbr, offset, name: meta.name || `${metaName} Standard Time`, },
     daylight: dst || null,
     long: meta.long,
   }

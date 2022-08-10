@@ -37,5 +37,6 @@ export default {
       "coordinated universal time"
     ],
     "meta": "Greenwich Mean"
-  }
+  },
+
 }

@@ -61,3 +61,17 @@ test('informal timezones', (t) => {
   })
   t.end()
 })
+
+test('false-positive timezones', (t) => {
+  let arr = [
+    'sf5hasdf',
+    '827219',
+    'foo',
+    '5h5h5h',
+  ]
+  arr.forEach((str) => {
+    let found = soft(str)
+    t.equal(found.length, 0, str)
+  })
+  t.end()
+})
