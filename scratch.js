@@ -1,11 +1,10 @@
 import soft from './src/index.js'
-import metas from './src/display/metas.js'
 
 // import spacetime from 'spacetime'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let ids = soft('whitehorse')
+let ids = soft('Yellowknife')
 console.log(ids)
 
 
