@@ -1057,7 +1057,7 @@ const display = function (id) {
   }
   let meta = metas[metaName] || {};
   let dst = null;
-  if (meta.dst) {
+  if (zones[id].dst && meta.dst) {
     let [abbr, offset, name] = meta.dst;
     name = name || `${metaName} Daylight Time`;
     let [start, end] = zones[id].dst || [];
