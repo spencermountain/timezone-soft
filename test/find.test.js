@@ -32,8 +32,8 @@ test('informal timezones', (t) => {
     ['south east asia', 'Asia/Bangkok'],
     ['indochina', 'Asia/Bangkok'],
     [`Europe/London`, `Europe/London`],
-    ['cet', 'Europe/Berlin'],
-    ['cest', 'Europe/Berlin'],
+    ['cet', 'Europe/Madrid'],
+    ['cest', 'Europe/Madrid'],
     ['india', 'Asia/Kolkata'],
     ['indian', 'Asia/Kolkata'],
     ['Japan', 'Asia/Tokyo'],
@@ -58,6 +58,20 @@ test('informal timezones', (t) => {
     let found = soft(a[0])
     found[0] = found[0] || {}
     t.equal(found[0].iana, a[1], a[0])
+  })
+  t.end()
+})
+
+test('false-positive timezones', (t) => {
+  let arr = [
+    'sf5hasdf',
+    '827219',
+    'foo',
+    '5h5h5h',
+  ]
+  arr.forEach((str) => {
+    let found = soft(str)
+    t.equal(found.length, 0, str)
   })
   t.end()
 })

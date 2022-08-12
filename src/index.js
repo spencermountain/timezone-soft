@@ -1,6 +1,6 @@
 import find from './find/index.js'
 import display from './display/index.js'
-import version from '../_version.js'
+import version from './_version.js'
 
 const soft = function (str) {
   let ids = find(str) || []

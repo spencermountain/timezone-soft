@@ -27,6 +27,9 @@ test('display-test', (t) => {
   ]
   arr.forEach((a) => {
     let display = soft(a[0])[0]
+    if (!display) {
+      console.log(a)
+    }
     t.equal(display.standard.abbr, a[1], a[0] + ' standard')
     if (display.daylight) {
       t.equal(display.daylight.abbr, a[2], a[0] + ' daylight')

@@ -1,3 +1,9 @@
+### 1.4.0 [July 2021]
+
+- **[change]** - internal refactor
+- **[change]** - add dst date
+- **[fix]** - fix missing timezones #17
+
 ### 1.3.1 [July 2021]
 
 - **[fix]** - path to esmodule build

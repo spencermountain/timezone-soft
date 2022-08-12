@@ -1,6 +1,6 @@
 //These are pretty arbitrary and I made them up myself
 export default {
-  0: 'Europe/London', //London
+  '0': 'Europe/London', //London
   '+0': 'Europe/London', //London
   '-0': 'Europe/London', //London
   '+1': 'Europe/Paris', //Paris
@@ -15,8 +15,8 @@ export default {
   '+10': 'Australia/Brisbane', //Brisbane
   '+11': 'Pacific/Pohnpei', //Palakir
   '+12': 'Pacific/Auckland', //Aukland
-  '-1': 'Africa/Dakar', //Dakar
-  '-2': 'America/Godthab', //Nuuk
+  '-1': 'Africa/Abidjan', //Dakar
+  '-2': 'America/Nuuk', //Nuuk
   '-3': 'America/Sao_Paulo', //Sao Paulo
   '-4': 'America/Caracas', //Caracas
   '-5': 'America/Bogota', //Bogota

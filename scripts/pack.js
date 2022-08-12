@@ -1,30 +1,47 @@
 import fs from 'fs'
 import path from 'path'
 import { pack } from 'efrt'
-// const efrt = require('/Users/spencer/mountain/efrt/builds/efrt.cjs')
-// const efrt = require('/Users/spencer/mountain/efrt')
-import lexicon from '../data/index.js'
 
-//turn them into a series of flat-arrays
-let toArrays = {}
-let words = Object.keys(lexicon)
-words.forEach((word) => {
-  let tags = lexicon[word]
-  if (typeof tags === 'string') {
-    tags = [tags]
+import Africa from '../data/Africa.js'
+import America from '../data/America.js'
+import Antarctica from '../data/Antarctica.js'
+import Asia from '../data/Asia.js'
+import Atlantic from '../data/Atlantic.js'
+import Australia from '../data/Australia.js'
+import Etc from '../data/Etc.js'
+import Europe from '../data/Europe.js'
+import Indian from '../data/Indian.js'
+import Pacific from '../data/Pacific.js'
+
+let zones = Object.assign({},
+  Africa,
+  America,
+  Antarctica,
+  Asia,
+  Atlantic,
+  Australia,
+  Etc,
+  Europe,
+  Indian,
+  Pacific,
+)
+
+let packed = {}
+Object.keys(zones).forEach(k => {
+  let arr = k.split(/\//)
+  let top = arr[0]
+  let name = arr.slice(1).join('/')
+  packed[top] = packed[top] || {}
+  let { dst, names, meta, hem } = Object.assign({}, zones[k])
+  packed[top][name] = [pack(names), meta, hem]
+  if (dst) {
+    packed[top][name].push(dst)
   }
-  tags.forEach((tag) => {
-    toArrays[tag] = toArrays[tag] || []
-    toArrays[tag].push(word)
-  })
 })
-// console.log(toArrays)
 
-console.log('\n 🕑  - packing lexicon..')
-let packed = pack(lexicon)
 //write it to a file in ./src
-const outFile = path.join(new URL('./', import.meta.url).pathname, '../src/find/_data.js')
-fs.writeFileSync(outFile, 'export default ' + JSON.stringify(packed, null, 2), 'utf8')
+const outFile = path.join(new URL('./', import.meta.url).pathname, '../src/data/_data.js')
+fs.writeFileSync(outFile, 'export default ' + JSON.stringify(packed), 'utf8')
 
 //get filesize
 const stats = fs.statSync(outFile)
