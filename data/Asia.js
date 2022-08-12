@@ -1439,7 +1439,8 @@ export default {
       "arab",
       "arabia",
       "arabic",
-      "ast"
+      "ast",
+      "syot",
     ],
     "meta": "Arabian"
   },
@@ -2128,7 +2129,8 @@ export default {
       "khabarovsk",
       "khabarovsk vtoroy",
       "komsomolsk on amur",
-      "vlat"
+      "vlat",
+      "msk+4"
     ],
     "meta": "Vladivostok"
   },
@@ -2161,6 +2163,7 @@ export default {
       "burma",
       "mm",
       "mmr",
+      "mmt",
       "asia/rangoon"
     ],
     "meta": "Myanmar"

@@ -212,50 +212,68 @@ let patterns = {
 
 var dstPatterns = patterns;
 
-var pcked = {"Africa":{"Abidjan":["true¦a5bouake,coordinated universal4daloa,g1san ped0utc,yamoussouk0zulu;ro;h0mt,reenwich mean2;!a0;!na; ti4;b5frica1tlantic/st0;;!/0;accra,ba1conakry,dakar,freetown,lo0nouakchott,ouagadougou,timbuktu;me;mako,njul;idjan,obo","Greenwich Mean","n"],"Algiers":["true¦a8b6c3dz2or5s1t0;ebessa,iaret;etif,idi bel abbes;!a;e0hlef,onstantine;ntral europe0t;an;a0iskra,lida,oumerdas;b ezzouar,tna;frica,lg0nnaba;eria,iers","Central European","n"],"Bissau":["true¦africa,b2coordinated universal1g0utc,zulu;mt,nb,reenwich mean0uinea b1w; time;issau","Greenwich Mean","n"],"Cairo":["true¦a6bani suwayf,c5damanhur,e2giza,halw8i1kafr ad dawwar,luxor,new c5port said,qina,s0tanta,zagazig;hibin al kawm,ohag,uez;dku,smail8;astern europe5et,g0;!y0;!pt;airo;frica,l2s0;w0yut;an; 1exandr0;ia;fayyum,m0;a0inya;hallah al kubra,nsurah","Eastern European","n"],"Casablanca":["true¦aCcasablanDfBkenitAm6oujda angad,rabat,sa4t1we0;stern europe2t;angier,e0;ma7tou0;an;fi,le0;! al jadida;a1ekn4o0;hammedia,rocco;!r0;!rakesh;ra;es;fri0gadir,l hoceima;ca","Morocco Standard","n","saha"],"Ceuta":["true¦africa,brussels,c0europe central,madrid,paris,romance;e0openhagen;ntral european,t,uta0;!melilla","Central European","n","eu2"],"El_Aaiun":["true¦afri4casablan4e2laayoune,morocco,we0;stern 0t;european,sahara;h,l0sh;;ca","Morocco Standard","n","saha"],"Johannesburg":["true¦africaIbEcAd9east londBharare,johannesHk7newcastDp6r5s3tembisa,uitenhage,v2w1za0;!f;elkom,itbank;anderbijlpark,ereeniging;ast,o0prings;uth africa,weto;andBichards bay,oodepoort;aarl,ietermaritzAort elizabeth,retoria;lerk0ruger0;sdorp;iepsloot,urb5;a1enturi0;on;pe town,rletonvil0;le;enoni,loemfontein,o1rakp0;an;ks0tshabelo;burg;! southern,/m0;aseru,babane","South Africa","s"],"Juba":["true¦a3c2juba,s0winejok;outh sudan,s0;!d;at,entral a0;frica","Central Africa","n"],"Khartoum":["true¦a7c6el 5k3ny4omdurm2port sud2s0wad medani;d0inga,ud1;!n;an;ass0hartoum,osti;ala;dae3fasher,obeid;at,entral af1;d damaz1f0l qadarif;rica;in","Central Africa","n"],"Lagos":["true¦aVbTcReQgPiLjKkaIlGmDnnewi,oAport harcourt,s9u7w0zar8; c3a2est0; 0ern3;a3c1;rBst,t;entral0; a0;frica;gep,muah0yo;ia;a7hagamu,okoto;kDn1w0yo;er3o;do,itsha;a0in5ubi;idugu0kurdi;ri;agos,ek0;ki;du0no,tsi0;na;imeLos;badan,jebu ode,k1l0seHwo;a orangun,eDor7;eHi8ot ekp0;ene;ombe,usau;bute ikorodu,fon alaaye,nugu;alabar,d,hakwama,o0;d,ngo;auchi,en0;in;b8do7frica1ku0tani;re;! western,/0;b2douala,kinsha1l0malabo,niamey,porto-novo;ibre2uanda;sa;angui,razza0;ville; ekiti;a,eoku1u0;ja;ta","West Africa","n"],"Maputo":["true¦africa7beiCc6ma4na2quelimaAwindhoek,z0;imbabwe,w0;!e;ca2m0;ibia,pu1;puto,to0;la;at,entral africa,himoio;! central,/0;b2gaboro1hara4kigali,lu0;bumbashi,saka;ne;lanty1ujumbu0;ra;re","Central Africa","s"],"Monrovia":["true¦africa,coordinated universal3g2l0monrov1utc,zulu;br,iber0r;ia;mt,reenwich mean0; time","Greenwich Mean","n"],"Nairobi":["true¦africa8e4indian/2kisumu,m1na0thika,yt;irobi,kuru;a1ombasa,yt;antananarivo,comoro,ma0;yotte; 2a0ldoret;st0t; 0ern 0;africa;! eastern,/0;a1d0kampala,mogadishu;ar3jibouti;ddis2sm0;a0e0;ra;","East Africa","n"],"Ndjamena":["true¦africaAchad,n8t7w0; c3a2est0; 0ern3;a3c1;st,t;entral0; a0;frica;cd,d;'d0d0;jamena;! western","West Africa","n"],"Sao_Tome":["true¦africa,coordinated universal3g2s0utc,zulu;ao to3t0;!p;mt,reenwich mean0; ti0;me","Greenwich Mean","n"],"Tripoli":["true¦a4benghazi,e3l1misrat5t0zawi2;arhuna,ripoli;by,ib0y;ya;astern european,et;frica,l khums,z zawiy0;ah","Eastern European","n"],"Tunis":["true¦africa,ce3sfax,t0;n,un0;!is0;!ia;ntral european,t","Central European","n"],"Windhoek":["true¦africa3c2na0windhoek;!m0;!ibia;at,entral africa;! central","Central Africa","s"]},"America":{"Adak":["true¦a1h0nwt,us/aleutian;awaii s4st;dak,leutian1merica0;!/atka;! 0;islands,s0;tandard time","Aleutian Standard","n","usa"],"Anchorage":["true¦a0us/alaska;h6k5laska0merica,nchorage;! 1n0;! s1;s0t1;tandard t0;ime;dt,st,t;dt,st","Alaska","n","usa"],"Araguaina":["true¦a6br1e0palmas,tocantins; south america s3ast south am6;asilia0t;! 0;s0t1;tandard t0;ime;m0raguaina;erica","Brasilia","n"],"Argentina/Buenos_Aires":["true¦a0b5;merica2r0;!g0;!e4;!/0;arge2b0;uenos0;;ntina","Argentina","s"],"Argentina/Catamarca":["true¦a0c3;merica0rgentina;!/0;argentina/comodrivadavia,c0;atamarca","Argentina","s"],"Argentina/Cordoba":["true¦a0c3;merica0rgentina;!/0;c0rosario;ordoba","Argentina","s"],"Argentina/Jujuy":["true¦a0j2;merica0rgentina;!/j0;ujuy","Argentina","s"],"Argentina/La_Rioja":["true¦a2b1city of b1la0;;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Mendoza":["true¦a0m2;merica0rgentina;!/m0;endoza","Argentina","s"],"Argentina/Rio_Gallegos":["true¦a2b1city of b1rio0;;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Salta":["true¦a1b0city of b0salta;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/San_Juan":["true¦a2b1city of b1san0;;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/San_Luis":["true¦a2b1city of b1san0;;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Tucuman":["true¦a1b0city of b0tucuman;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Ushuaia":["true¦a1b0city of b0ushuaia;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Asuncion":["true¦a6c5p0san lorenzo;araguay1ry,y0;!st,t;! 0;standard t0t0;ime;apiata,iudad del este;merica,suncion","Paraguay","s","par"],"Bahia":["true¦a8b2camacari,e1feira de santa0itabu0salvador,vitoria da conquista;na; south america s4ast south a6;ahia,r0;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","n"],"Bahia_Banderas":["true¦america,bah6c1guadalajara,m0;exico city,onterrey;entral 0st;mexic0standard 2;an,o0;! 0;time;ia0ía de banderas;","Central Mexico","n","mex"],"Barbados":["true¦a1b0;arbados,b,rb;merica,st,tlantic standard time","Atlantic","n"],"Belem":["true¦a8b2e1macapa,par0;auapebas,á east amapá; south america s4ast south am7;elem,r0;asilia0t;! 0;s0t1;tandard t0;ime;m0nanindeua;erica","Brasilia","n"],"Belize":["true¦america,b1c0;entral standard time,st;elize,lz,z","Central","n"],"Boa_Vista":["true¦am3boa vista,c0roraima;entral brazil0uiaba;!ian0;! s3;azon0erica,t;! 0;s0t1;tandard t0;ime","Amazon","n"],"Bogota":["true¦aJbEc7dosquebradas,floridablanLi6m5neiva,p3s1v0;alledupar,illavicencio;anta marFincelejo,o0;acha,ledad;a0ereiCopayan;lmiBsto;anizales,edellin,onterE;bague,taguei;a5o0ucu9;!l0st,t;!ombia0;! 0;standard t0t0;ime;li,rtagena;arran3ello,ogo2u0;caramanga,enaventu0;ra;ta;cabermeja,quilla;meri1rmen0;ia;ca","Colombia","n"],"Boise":["true¦america4boise,m0;ountain0pt,st,t;! 0;id,standard t0t0;ime;! mountain","Mountain","n","usa"],"Cambridge_Bay":["true¦america5cambridge4m0;ddt,ountain0st,t;! 0;standard t0t0;ime;;! mountain","Mountain","n","usa"],"Campo_Grande":["true¦am0campo grande,mato grosso do sul;azon standard time,erica,t","Amazon","s"],"Cancun":["true¦america,cancun,e0quintana roo;astern standard time,st","Eastern","n"],"Caracas":["true¦aKbarJcDguaBm8p7san6turmeFv0;alencia,e0;!n0t;!ezuela0;! 0n;standard t0t0;ime; cristobal,ta teresa del tuy;eta4uerto la cruz;a0ucumpiz;raca0turin;ibo,y;ren9ti0;re;a4iudad 2o1u0;a,m2;ro;bolivar,guay0;ana;bim2rac2;in1quisimeto,uta;lto barin0merica;as","Venezuela","n"],"Cayenne":["true¦america,cayenne,french guiana2g0;f0uf;!t;! time","French Guiana","n"],"Chicago":["true¦aXbUcQdPfort worth,gOhNiLk01lImBn7o6plano,s3t1us/05wi0;chiFsconsX;ex0ulsa;!as;a0hreveport,ou4t 1;int 0n antonio;louGpaul;klahoZmaha,verland park;ashNe1or0;th dako7;braska,w 0;orleans,south me6;adisOe5i1o0;biJntgomery;lwaukee,nne1ss0;issippi,ouri;apol6so0;ta;mph4;aredo,i0ouisiana,ubb1;ncoln,ttle r0;ock;llino0owa,rving;is;oustCunts7;arland,rand prairie;allCes moines;dt,entral0hicago,orpus christi,st,t;! 0;standard t0t0;ime;aton rouge,rowns0;vil0;le;laba8m5r1ust0;in;k1lingt0;on;ans0;as;arillo,erica0;! 0;central;ma","Central","n","usa"],"Chihuahua":["true¦america,chihuahua,h5la paz,m0;azatlan,exic1ountain 0;mexico,standard time (mexico);an pacific 0o pacific;standard t0t0;ime;np0p0;mx","Mexican Pacific","n","mex"],"Costa_Rica":["true¦ame2c0sjmt;entral standard time,osta 1r0st;!i;rica","Central","n"],"Cuiaba":["true¦am0cuiaba,mato grosso,varzea grande;azon standard time,erica,t","Amazon","s"],"Danmarkshavn":["true¦america,coordinated universal1danmarkshavn,g0utc,zulu;mt,reenwich mean0; time","Greenwich Mean","n"],"Dawson":["true¦america,dawson,m2y0;d0pt,wt;dt,t;ountain standard time,st","Mountain","n"],"Dawson_Creek":["true¦america,dawson2m1p0;pt,wt;ountain standard time,st,t;","Mountain","n"],"Denver":["true¦a4colorado springs,denver,el paso,m0navajo,salt lake,us/6;dt,ountain0st,t;! 0;standard t0t0;ime;lbuquerque,merica0urora;! 0/shiprock;mountain","Mountain","n","usa"],"Detroit":["true¦america4detroit,e0grand rapids,us/michigan;astern0pt,st,t,wt;! 0;mi,standard t0t0;ime;! eastern","Eastern","n","usa"],"Edmonton":["true¦a5ca4edmonton,m0;ountain0st,t;! 0;standard t0t0;ime;lgary,nada/2;lberta,merica0;! 0;mountain","Mountain","n","usa"],"Eirunepe":["true¦a0eirunepe;c1m0;azonas west,erica;re0t;! 0;standard t0t0;ime","Acre","n"],"El_Salvador":["true¦america,c2el1s0;an0lv,oyapango,v; salvador;entral standard time,st","Central","n"],"Fort_Nelson":["true¦america,fort1m0;ountain standard time,st,t;","Mountain","n"],"Fortaleza":["true¦aAbr5ca4e3fortaleza,imperatriz,j2m0natal,sao luis,teresina;a0ossoro;picernpb,racanau;oao pessoa,uazeiro do norte; south america s4ast south a6;mpina grande,ucaia;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","s"],"Glace_Bay":["true¦a1cape breton,glace0;;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Goose_Bay":["true¦a1goose0labrador,npt;;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Grand_Turk":["true¦america7e3grand2kmt,t0;c0urks and caicos;!a;;astern0st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Guatemala":["true¦america,c2g0mixco,villa nueva;t0uatemala;!m;entral standard time,st","Central","n"],"Guayaquil":["true¦ameri6cuen6ec2guayaquil,ma1q0santo domingo de los colorados;mt,uito;chala,nta;!t,u0;!ador0;! 0;mainland,time;ca","Ecuador","n"],"Guyana":["true¦america,g0;eorgetown,uy1y0;!t;!ana0;! time","Guyana","n"],"Halifax":["true¦a2canada/atlantic,halifax,n1p0;ei,rince edward island;ew brunswick,ova scotia;dt,merica,st,t0;!lantic0;! 0;ns,standard t0t0;ime","Atlantic","n","usa"],"Havana":["true¦aDbAc2diez de octubre,guantanCh1las tunas,pinar del rio,sant0;a clara,iago de cuba;avana,cu,ncu,olguin;amaguey,i5u0;!b0;!a0;! 0;standard t0t0;ime;e0udad camilo cie0;nfueg1;ay1oyer0;os;amo;merica,rroyo naranjo","Cuba","n","cuba"],"Hermosillo":["true¦america,ciudad obregon,h0mexican pacific standard time,nogales,sonora;ermosillo,npmx","Mexican Pacific","n"],"Indiana/Indianapolis":["true¦america2crawford,dadukmn,eastern in,i4p0star1us/east-indiana;erry,i0ulaski;ke;!/0;fort2i0;ndiana0;!polis;","Eastern","n","usa"],"Indiana/Knox":["true¦america1c0indiana,knox,us/indiana-starke;entral standard time,st;!/knox0;","Central","n","usa"],"Indiana/Marengo":["true¦america,e0indiana,marengo;astern standard time,st","Eastern","n","usa"],"Indiana/Petersburg":["true¦america,e0indiana,petersburg;astern standard time,st","Eastern","n","usa"],"Indiana/Tell_City":["true¦america,c1indiana,tell0;;entral standard time,st","Central","n","usa"],"Indiana/Vevay":["true¦america,e0indiana,vevay;astern standard time,st","Eastern","n","usa"],"Indiana/Vincennes":["true¦america,e0indiana,vincennes;astern standard time,st","Eastern","n","usa"],"Indiana/Winamac":["true¦america,e0indiana,winamac;astern standard time,st","Eastern","n","usa"],"Inuvik":["true¦america4inuvik,m0pddt;ountain0st,t;! 0;standard t0t0;ime;! mountain","Mountain","n","usa"],"Iqaluit":["true¦america4e0iqaluit;astern0ddt,st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Jamaica":["true¦amer4e3j1k0new k0;ingston;am0m;!a1;astern standard time,st;ica","Eastern","n"],"Juneau":["true¦a0juneau;k5laska0merica;! 1n0;! s1;juneau area,s0t1;tandard t0;ime;st,t","Alaska","n","usa"],"Kentucky/Louisville":["true¦america0eastern 4k3l2wayne;!/0;k1l0;ouisville;entuc0;ky","Eastern","n","usa"],"Kentucky/Monticello":["true¦america,e0kentucky,monticello;astern standard time,st","Eastern","n","usa"],"La_Paz":["true¦america,bo1cochabamba,la paz,oruro,s0;anta cruz de la sierra,ucre;!l0t;!ivia0;! time","Bolivia","s"],"Lima":["true¦aDc9huancCi8juliaFlima,p2sant1t0;acna,rujillo;a anita   los ficus,iago de sur8;e0iura,ucallB;!r0t;!u0;! 0;standard t0t0;ime;ca,quitos;allao,hi1us0;co;cl0mbote;ayo;meri1requi0;pa;ca","Peru","s"],"Los_Angeles":["true¦a02ba00cXfTgarden grove,hQirviPlLmoInHoEp8r7s0tacoma,us/04washington state;a1eattle,f,p0tocktRunrise manor;okaNringH;cramenHn0; 1ta 0;aRclariT;bernardiPdiego,fran0jo4;!cisco;ancho cucamonga,eNiver7;a0dt,ort7st,t;cific1radi0;se;! 0;standard t0t0;ime;ak1cean0regDxnard;side;land;evada,orth las6;des1reno0; valley;to;a1o0;ng4s angeles;!s0; vegas;ne;enders1untington0; beach;on;onta2re0;mont,s0;no;na;ali1hula vis0;ta;!f1;ja calif0kersfield;ornia;merica0naheim;! 0;pacific","Pacific","n","usa"],"Maceio":["true¦a6br1e0maceio; south america s3ast south am6;asilia0t;! 0;s0t1;tandard t0;ime;lagoassergipe,m0racaju;erica","Brasilia","n"],"Managua":["true¦america,c3man2ni0;!c0;!ar0;agua;entral standard time,st","Central","n"],"Manaus":["true¦am3brazil/we5c0manaus;entral brazil0uiaba;!ian0;! s4;azon0erica,t;! 1as ea0;st;s0t1;tandard t0;ime","Amazon","s"],"Martinique":["true¦a1ffmt,m0;artinique,q,tq;merica,st,tlantic standard time","Atlantic","n"],"Matamoros":["true¦america5c1heroica m0m0nuevo laredo,reynosa;atamoros;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Mazatlan":["true¦america,cAh8l7m0tep4;azatlAexic1ountain 0;mexico,standard time (mexico);an pacific 2o0; pacif0/bajasur;ic;standard t0t0;ime;a paz,os mochis;np0p0;mx;hihuahua,uliac0;an","Mexican Pacific","n","mex"],"Menominee":["true¦america4c0menominee;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Merida":["true¦america,c2guadalajara,m0;e0onterrey;rida,xico city;ampeche4entral 0st;mexic0standard 2;an,o0;! 0;time;!yucatán","Central Mexico","n","mex"],"Metlakatla":["true¦a0metlakatla;k5laska0merica;! 1n0;! s1;annette island,s0t1;tandard t0;ime;st,t","Alaska","n","usa"],"Mexico_City":["true¦a0Jb0HcXduran0Aecatepec de morel08guShRiPjalis0Lleon de los alda04mInHoGpEqDs9t4uruap02v2x1yucat02za0;catec0Apop01;alapa de enriqu0Oi0Jochimil0J;e0illahermosa;nustiano carranza,racruz;a3e7la1o0uxt01;lu0Gna00;huac,l0quepaque,xcaZ;nepantYpU;bas0Cmaulip02pachuX;an0oledad de graciano sanch0G; luis potosi,t0;a maria chimal0iago de q1;huO;ueretaF;achuca de soHoza rica de7ue0;bQrto vallar02;axa05jo de agua;aucalpan06icolas romeBuevo le05;agdalena contrerSex4i2o0x;nterrey,rel0;ia,os;choFguel0; h4;!ico0;! city,/general;rap5xtapaluWzta0;cTpalapa;idalI;a1erre0stavo adolfo made0;ro;dalajara,naj0;ua0;to;ampeche,eEhiBiudad 9o2st,u0wt;au0ernavaN;htemoc,titlan izcalli;a4l2yo0;ac0;an;i0onia del valle;ma;cEhui0tzacoalc2;la;lopez mate0nezahualcoyotl;os;ap1lpancin0;go;as;laya,ntral 0;mexic0standard 2;an,o0;! 0;time;enito7uenavis0;ta;capulco4guascalientes,lvaro obreg3meri2zcapotz0;al0;co;ca;on; de0; juar0;ez","Central Mexico","n","mex"],"Miquelon":["true¦america,hBmAp8s0;aint pierre2pm,t pierre 0;& miquelon 0a5;s2t3;! 0;a2s0;tandard t0;ime;nd1;ierre0m; m0;iquelon;npm,pm","St. Pierre & Miquelon","n","usa"],"Moncton":["true¦a0moncton,new brunswick;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Monterrey":["true¦ameriDc7g5m3sa1t0victoria de durango;ampico,orreon;ltillo,n0; nicolas de los garza,ta catarina;exico city,on0;clova,terrey;omez palacio,uadal0;ajara,upe;entral 1iudad 0st;apoda4general escobedo,madero,victoria;mexic0standard 2;an,o0;! 0;time;ca","Central Mexico","n","mex"],"Montevideo":["true¦america,montevideo5u0;r1y0;!st,t;uguay0y;! 0;s1t2;! s0;tandard t0;ime","Uruguay","s"],"New_York":["true¦a0Rb0Oc0Hd0Ge0Bf07g05hialeah,i02jZkYlexingtonXmTnMoKpIquHrDsAt7u5v3w0yonkers;ashington1est 0inston salem,orcD;raEvirgin04;! dc;ermont,irginia0;! beach;nited states,s0;!/0Ma;a0enne1he bronx,oleD;llaha0mpa;ssee;outh 1t0; petersburg,aten3;bo0CcC;a2hode1ichmo06och0;ester; is03;lei2;eens,intana roo;ennsylvanNhiladelphNittsbur0rovidence;gh;hio,rlan0;do;ew3or1y0;!c;folk,th c0;aroliE; 0ark,port news;hampshiYje8york0;! staU;a1eads,i0;ami,chig1;ine,nhatt0ryNssachusetts;an;! fayetP;entucky,noxA;a1e0;rsey;cks1maica;ndia1r0;on5;na;eorg0reensboro;ia;ayette1l0ort lauderda2;!orida;vil0;le;ast0dt,st,t; flatbush,ern0;! 0;standard t0t0;ime;elawa9urham;ape coral,h3incinnati,leve1o0;lumbus,nnecticut;la0;nd;a0esapeake;rlot0ttanooga;te;altimo1o0rooklyn,uffalo;st4;re;kr2merica0tlanta;! 0;eastern;on","Eastern","n","usa"],"Nipigon":["true¦america4e0nipigon;astern0st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Nome":["true¦a0no5;k5laska0merica;! 1n0;! s1;s0ti1west;tandard ti0;me;st,t","Alaska","n","usa"],"Noronha":["true¦a4brazil/den3f0n3;ernando de noronha 0nt;standard t0t0;ime;oronha;merica,tlantic islands","Fernando de Noronha","n"],"North_Dakota/Beulah":["true¦america,beulah,c1north0;;entral standard time,st","Central","n","usa"],"North_Dakota/Center":["true¦america,c2merc1north0oliv1;;er;ent0st;er,ral standard time","Central","n","usa"],"North_Dakota/New_Salem":["true¦america,c2n0;ew0orth0;;entral standard time,st","Central","n","usa"],"Nuuk":["true¦america2g0nuuk;l,r0;eenland,l;!/godthab","West Greenland","n","green"],"Ojinaga":["true¦america5c4m0ojinaga;ountain0st,t;! 0;standard t0t0;ime;hihuahua,iudad juarez;! mountain","Mountain","n","usa"],"Panama":["true¦a3coral h,e2pa0san miguelito;!n0;!ama;astern standard time,st;merica0t4;!/0;at2c0;aym2oral0;;ikok0;an","Eastern","n"],"Pangnirtung":["true¦a4e0pangnirtung;astern0st,t;! 0;standard t0t0;ime;ddt,merica0;! eastern","Eastern","n","usa"],"Paramaribo":["true¦america,paramaribo,s0;r2ur0;!iname0;! time;!t","Suriname","n"],"Phoenix":["true¦aAc8g6idaho,m4n3phoenix,s2t1u0wyoming;s/arAtah;empe,ucsC;cottsd4inaloa,onora;ayarit,ew mexico;aryv2esa,o0st,t,wt;nta6untain standard time;ilbert,lend0;ale;h0olorado;andler,ihuahua;merica2r0;izo0;na;!/crest0;on","Mountain","n"],"Port-au-Prince":["true¦americaBcAe6h4p0;etionville,ort0; 0-au-1;au 0de paix;prince;aiti,t0;!i;astern0st,t;! 0;standard t0t0;ime;arrefour,roix des bouquets;! eastern","Eastern","n","usa"],"Porto_Velho":["true¦am3c0porto velho,rondônia;entral brazil0uiaba;!ian0;! s3;azon0erica,t;! 0;s0t1;tandard t0;ime","Amazon","n"],"Puerto_Rico":["true¦a2bayam8p0;r0uerto rico;!i;merica0st,tlantic standard time;!/0;a4blanc-sabl3curacao,dominica,g2kralendijk,lower1m0port1st1torto6virgin;arigot,ontserrat;;renada,uadeloupe;on;n0ruba;guil0tigua;la","Atlantic","n"],"Punta_Arenas":["true¦america,c1punta0region of magallanes;;hile standard time,lt","Chile","s"],"Rainy_River":["true¦america5c1ft frances,rainy0;;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Rankin_Inlet":["true¦america5c1rankin0;;ddt,entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Recife":["true¦a9br4caruaru,e3jaboatao2olinda,p0recife;aulista,e0;rnambuco,trolina;! dos guararapes; south america s3ast south a5;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","n"],"Regina":["true¦america,c2regina,s0;askat0k;c1oon;anada/saskatc0entral standard time,st;hewan","Central","n"],"Resolute":["true¦america4c0resolute;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Rio_Branco":["true¦a0brazil/acre,rio branco;c2merica0;!/porto0;;re0t;! 0;standard t0t0;ime","Acre","s"],"Santarem":["true¦a6br1e0pará west,santarem; south america s3ast south a5;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","n"],"Santiago":["true¦aAc4iquique,la pintana,puente alto,rancagua,san3t1v0;alparaiso,ina del mar;alca0emuco;!huano; bernardo,tiago;h1l0oncepcion;!st,t;ile0l;! 0/continental;standard t0t0;ime;mer0ntofagasta,r0;ica","Chile","s","chile"],"Santo_Domingo":["true¦a8bella vista,do6la romana,s0;an0dmt; pedro de macoris,t0;iago de los caballeros,o domingo0;! 0;e0oe0;ste;!m0;!inican republic;merica,st,tlantic standard time","Atlantic","n"],"Sao_Paulo":["true¦a17b0Uc0Nd0Ke0If0Gg0Bhortol0Ai06j03l01mXnVosasco,pLriFs4ta3uber2v0;i0olta redon1B;amao,la velha,tor17;a0Nl07;boao da ser01uba11;a2e1oroNu0;maLzano;rYte lago0M;nt4o 0;bernardo do campo,carl04jo0leopolLpaulo,vicE;ao de meriti,se0;! do0; rio p8s camp01;a 1o0; andDs;barbara d'oes0Qluz0Umar0U;beirao 3o0;! 0;cla0de janei0g6ver7;ro;das nev08p0;reto;asso fun8e7iraci6lanaltGo4r0;aia g1esidente prud0;en0H;ran0;de;nta grossa,rto aleg0;re;caX;lotZtro0G;do;iteroi,ov0;aKo hamburgo;a1o0;gi das cruzTntes clarE;ri0ua;l08n7;imei3ondr0;ina;acarei,oinville,u0;iz de fo0ndi9;ra;ndaia2patin1ta0;bor6pevi,quaquece1;ga;tuG;andY;o3ravat2uaru0;ja,lh0;os;ai;iSvernador valadarC;loria5oz do0ran2; iguacu; south america sHast south ameri0mbu;ca;i0uque de caxi8;adema,vi0;noN;a1o0uriti2;ntagem,tK;choeiro de itapemirDmp1no3rapicui0scavel,xias do sul;ba;in1os dos goytacaz0;es;as;aBe7lumenau,r0;!a0st,t;!silia1zil0;!/east;! 0;s0t1;tandard t0;ime;l1t0;im;ford roxo,o horizon0;te;rueri,uru;lvora4merica3na2parecida de goi0;an0;ia;polis;!na;da","Brasilia","s"],"Scoresbysund":["true¦america,e1greenland eastern,h0ittoqqortoormiit,scoresbysund;eg,neg;ast greenland1g0;st,t;! 0;standard t0t0;ime","East Greenland","n","eu0"],"Sitka":["true¦a0sitka;k6laska0merica;! 1n0;! st2;s0t2;itka area,t0;andard t0;ime;st,t","Alaska","n","usa"],"St_Johns":["true¦america,canada/newfoundland,h6n1st0;;d3ewfoundland0st,t;! 0;labrador,standard t0t0;ime;dt,t;ntn,tn","Newfoundland","n","usa"],"Swift_Current":["true¦america,c1swift0;;entral standard time,st","Central","n"],"Tegucigalpa":["true¦america,c2h0san pedro sula,tegucigalpa;n0onduras;!d;entral standard time,st","Central","n"],"Thule":["true¦a0pituffik,thule;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Thunder_Bay":["true¦america4e0thunder bay;astern0st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Tijuana":["true¦america5baja california,e8mexic4p0tijuana;acific0st,t;! 0;standard t0t0;ime;ali,o/bajanorte;! pacific,/0;e1santa0;;nsenada","Pacific","n","usa"],"Toronto":["true¦americaGbEcaBe7gatineIhamilFkitchener,l4m3nepe2o0quebec,richmond hill,toronto,vaugh2windsor;n5sh0tt0;awa;an;arkham,ississauga,oF;avFon0;don on0gueuil;tario;astern0st,t;! 0;standard t0t0;ime;!n0;!ada0;!/7;arrie,ramp0;ton;! 4/0;mo1nass0;au;ntre0;al;eastern","Eastern","n","usa"],"Vancouver":["true¦america8b6canada/9ladn5okanagan,p1surrey,v0yukon;ancouv4ictor6;acific0st,t;! 0;bc,standard t0t0;ime;er;ritish columb0urnaby;ia;! 0;pacific","Pacific","n","usa"],"Whitehorse":["true¦america,canada/yukon,m0whitehorse,yst;ountain standard time,st","Mountain","n"],"Winnipeg":["true¦america6c2m1w0;est m0innipeg;anitoba;anada/4entral0st,t;! 0;standard t0t0;ime;! 0;central","Central","n","usa"],"Yakutat":["true¦a0y4;k6laska0merica;! 1n0;! s2;s1t2y0;akutat;tandard t0;ime;st,t","Alaska","n","usa"],"Yellowknife":["true¦america4m0yellowknife;ountain0st,t;! 0;standard t0t0;ime;! mountain","Mountain","n","usa"]},"Antarctica":{"Casey":["true¦antarctica,cas0;ey,t","Casey","s","ant"],"Davis":["true¦a1dav0;is,t;ntarctica,q,ta","Davis","s"],"Macquarie":["true¦a2canberra,eastern australia6m0sydney;acquarie0elbourne;! island;e4ntarctica,us0; east0tralia eastern;!ern0;! standard0; time;st,t","Eastern Australia","s","aus"],"Mawson":["true¦antarctica,maw0;son,t","Mawson","s"],"Rothera":["true¦a1b0city of b0rothera;uenos aires;ntarctica1r0;gentina,st,t;!/palmer","Argentina","s"],"Troll":["true¦antarctica,g2troll0;! 0;research station,t1;mt,reenwich mean t0;ime","Troll","s","troll"],"Vostok":["true¦antarctica,vost0;!ok","Vostok","s"]},"Asia":{"Almaty":["true¦a6central asia,east kazakhstan time,k2nur sultan,p1s0taraz,ust kamenogorsk;emey,hymkent;avlodar,etropavl;a0z;ragandy,z0;!akhstan0;! eastern;lm1s0;ia,tana;a0t; ata,ty","East Kazakhstan","n"],"Amman":["true¦a2eet,irbid,jo0russeifa,wadi as sir,zarqa;!r0;!d1;mm0sia;an","Eastern European","n","jord"],"Anadyr":["true¦a0petropavlovsk kamchatsky;na0sia;dyr0t;! time","Anadyr","n"],"Aqtau":["true¦a1kazakhstan western,mangghystaū/mankis3tashkent,west 0;asia,kazakhstan5;lm2q1s0;hgabat,ia;tau;a0t; ata,-ata0; time","West Kazakhstan","n"],"Aqtobe":["true¦a1kazakhstan western,tashkent,west 0;asia,kazakhstan5;kto5lm2qt1s0;hgabat,ia;o3ö3;a0t; ata,-ata0; time;be","West Kazakhstan","n"],"Ashgabat":["true¦as4t0;km,m2urkmen0;a4istan0;! time;!st,t;hga1ia0;!/ashkhabad;bat","Turkmenistan","n"],"Atyrau":["true¦a1gur'yev,kazakhstan western,tashkent,west 0;asia,kazakhstan6;lm3s2t0;irau,yra0;u,ū;hgabat,ia;a0t; ata,-ata0; time","West Kazakhstan","n"],"Baghdad":["true¦a6ba5dihok,erbil,i3k2mosul,na1r0;amadi,iyadh;jaf,sirC;arbala,irkuk,uwait;q,r0;aq,q;ghdad,sr9;bu ghurayb,d diw6l 5rab1s0; sulaym5ia,t;!i0;a0c;!n0;! time;amar2basrah al qadim2falluj2hill2kut,mawsil al jadid2;an0;iy0;ah","Arabian","n"],"Baku":["true¦a0baku,ganja,lankaran,sumqayit;sia,z0;!e0t;!rbaijan0;! time","Azerbaijan","n"],"Bangkok":["true¦asiaAbangkok,ch7h5i3jakarta,mueang nontha8na2pak kret,s0udon thani;amut prakan,e0i racha,outh east0; asia;khon ratchasima,m dinh;ct,ndochina0;! time;a0ue;iphong,noi,t y2;iang m1on 0;buri;ai;!/0;phnom0vientiane;","Indochina","n"],"Barnaul":["true¦a3b2kra0north a3;snoyarsk0t;! time;arnaul,iysk;sia","Krasnoyarsk","n"],"Beirut":["true¦asia,bei3e2l0ra's bay3;b0ebanon;!n;astern european time,et,urope eastern;rut","Eastern European","n","leb"],"Bishkek":["true¦asia,bishkek,k0osh;g2yrgy0;stan,zstan0;! time;!t,z","Kyrgyzstan","n"],"Brunei":["true¦asia,b0;dt,n2r0;n,unei0;! darussalam time;!t","Brunei Darussalam","n"],"Chita":["true¦asia,chita,yak0;t,utsk0;! time","Yakutsk","n"],"Choibalsan":["true¦as2choibalsan,dornodsükhbaatar,mongol2ula0;anbaatar0t;! time;ia","Ulaanbaatar","n"],"Colombo":["true¦as6c4dehiwala mount lavin6i2kolkata,lk1m0new delhi,sri lanka;oratuwa,umb4;!a;ndia0st;! time,n;henn0olombo;ai;ia","India","n"],"Damascus":["true¦a4d3eet,h2latak5sy0;!r0;!ia;am3oms;amascus,eir ez zor;leppo,r raqq1s0;ia;ah","Eastern European","n","syr"],"Dhaka":["true¦asiaGbDcBd9jess8khul7mymensingh,na4pa3ra2s1t0;angail,ungi;aid8hib4ylhet;jshahi,ng7;b3ltan,r naogaon;gar5r0t3;ayan0singdi;ganj;na;ore;haka,inaj0;pur;hattogram,o0;milla,x's bazar;a0d,gd,ogra,st;gerhat,ngladesh0rishal;! time;!/dacca","Bangladesh","n"],"Dili":["true¦asia,dili,east timor1tl0;!s,t;! time","East Timor","s"],"Dubai":["true¦a5dubai,g3mus1om0ras al khaim2sharj2;!an,n;aff0c5;ah;st,ulf0;! time;bu dhabi,jm2rabi2sia0;!/musc0;at;an","Gulf","n"],"Dushanbe":["true¦asia,dushanbe,t0;ajikistan1j0;!k,t;! time","Tajikistan","n"],"Famagusta":["true¦asia,e0famagusta,northern cyprus;astern european time,et,urope eastern","Eastern European","n","eu3"],"Gaza":["true¦asia,eet,gaza2p0;alestine,s0;!e;! strip","Eastern European","n","pal"],"Hebron":["true¦asia,e0hebron,west bank;ast jerusalem,et","Eastern European","n","pal"],"Ho_Chi_Minh":["true¦asia5bien hoa,can tho,da 3ho chi minh,nha tr4qui nh6rach gia,sa dec,thi xa phu my,v0;ietnam1n0ung tau;!m;! south;lat,n0;ang;!/saig0;on","Indochina","n"],"Hong_Kong":["true¦asia,h0kowloon,tsuen wan;k2ong0; kong0kong;! time;!g,st,t","Hong Kong","n"],"Hovd":["true¦as4bayan-ölgiigovi-altaihovduvszavkhan,hov2west0; 0ern 0;mongol2;d0t;! time;ia","Hovd","n"],"Irkutsk":["true¦a2brat3irk0north asia east,ulan ude;t,utsk0;! time;ngar0sia;sk","Irkutsk","n"],"Jakarta":["true¦aZbTcRdepQiNjKkediri,lJmGpArengasdengklQs4t2w0yogyakM;est0ib; indoneXern indonesia time;a0egal;n4sikmal3;ema4itubondo,outh tan3u0;kabumi,medaSra0;b0kF;aya;ge0;raO;a4e1robolinggo,urw0;akAokerto;ka1ma0rcut;laKtangsiantar;long2nbaru;daIl3mulaIruI;a1ed0;an;diun,laF;embaE;a0ember;k0mbi,vasumatra;arta;d1ndonesia0;! western;!n;ok;i0urug;ampea,bino5leungsir,mahi,putat,rebon;a1e0injai,ogor;kasi,ngkulu;nd0tam;a0u1; aceh,r lampu0;ng;sia","Western Indonesia","s"],"Jayapura":["true¦a2east1indonesia eastern,jayapura,m0new guinea,wit;alukus,oluccas; indones1ern indonesia time;mbon,s0;ia","Eastern Indonesia","s"],"Jerusalem":["true¦as7beersheba,haifa,i2j0petah tiqwa,rishon leziyyon,tel aviv,west je1;e0mt;rusalem;d3l,s0;r0t;!ael0;! time;dt,t;hdod,ia0;!/tel0;","Israel","n","isr"],"Kabul":["true¦a1herat,jalalabad,ka0mazar e sharif;bul,ndahar;f0sia;!g0t;!hanistan0;! time","Afghanistan","n"],"Kamchatka":["true¦a2kamchatka,pet0;ropavlovsk0t; kamchatsky,-kamchatski time;nadyr,sia","Petropavlovsk-Kamchatski","n"],"Karachi":["true¦asia,bLchiniKdera ghaziIfaisalHgujraGhyderHislamHjhang sadr,kElaDm8nawabshah,okaBp4quetta,ra3s0;a1h0ialkJukkN;ahkIekhupu9;ddiqEhiwal,rgodha;him yarEwalpindi;ak1eshawar,k0;!t;!istan0;! time;a3i1u0;lt9zaffar7;ngo0rpur khas;ra;lir cantonment,rd6;hore,rkana;a0otli;moke,rachi,s8;n5t;abad; kh0;an;ot;a1himber,ure0;wala;hawalp0ttagram;ur","Pakistan","n"],"Kathmandu":["true¦asia3biratnagar,kath4n1p0;atan,okhara;epal,p0;!l,t;!/kat0;mandu","Nepal","n"],"Khandyga":["true¦asia,khandyga,yak0;t,utsk0;! time","Yakutsk","n"],"Kolkata":["true¦0:3D;1:3L;2:2D;3:3M;4:3J;a35b2Dc24d1We1Uf1Sg1Fh1Ci18j13k0Pl0Km0Cn05odis3KpVquthbull3DrNsFt9u8v5warang2Myamun1P;a6el1Ui5;jayawa2Vsakha0HzianagC;doda2Orana11;daip0jja23lhasn1ttar pradesh;a8eXh7iru5umk0;chirap0Mnelve2p5vottiy0;a39p0;ane,iruvananthapur0Noothuku2Yriss0;mb5njo1X;ar0L;aBecunder4h9i8lst,o7r1Fu5;jan37r5;at,endr1C;l2Znip2N;k3liguKngrau2rJ;ahj1Zi5ri2Oya0L;mo1Mvaji07;har1Xlem,mbh24ng2t04ug0Y;a6e0Eoh5;iItak;ebare2i9j7m5nc1Gtl0Aurke37;ag5g5p0;und08;a5kot;hmund26sth2A;ch0p0;a9imp8roddat0u5;ducher23n5rn17;a5e;sa;ri;li,n7rbha6t5;ia2Vna;ni;chku2Ti5;ha2Gp21;a7e6izam4o5;i1Vwrang2B;l0Sw del0Y;di2Kg7i0Ejaf2Fn5re2Oshik,vi mumb15;ded,g5;i,loi j1V;ercoil,p0;a8eerut,irz25o7u5yso0Y;lugu,mb10rwa1Izaffar5;n1p0;nghyr,rad4;chili7d6harasht1Fleg07n5thu1Fu;ga0Iip0;hya,ur0V;patnG;a7u5;cknow,dhia5;na;l bahadur5t0; n1;aDhaBo8u5;kat6lt5rno1P;a2i;pal2;l5rWta,zhikode;h1Nka1Kl5;am;nd5ragp0;wa;kina13l8marOnp0r5shmir,tih3;i6na5ol ba18;l,tV;mn1;lakuric03y11;a6han5odNunagadh;si;b0Rip0l6m5;mu,n1shedp0;andh3gGna;chalkaranji,mph0In5st;!d5;!ia5o00;! time,n;a6is3ospet,u5;b2g2;o0Hp0ridw3;aChazi4o9reater noi0Mu6wali5y04;or;jar0OlbarQnt0rg6wa5;ha12;aon;rak6sa5;ba;hp0;juw8n5ya;dh6g5;an1;in1;aka;ar5iroz4;id4rukh4;l5taw0M;loF;aAe8h6indigul,ombOurg5;!ap0;anb0Uul5;ia;hra dun,l5was;hi;rbhan5vange8;ga;a09h8o5uttack;ch6imbato5;re;in;a6enn5;ai;nd5pL;a5i0C;!nn1;aNeKhBi9or7rahm04u5;landshahr,rh5;anp0;iv2;li;d3har sharif,jZkan07l5;asp0imoC;aAi7op6u5;baneshw3sav5;al;l6wan5;di,i;ai,wa6;g6ratp0tpa5vn1yand3;ra;alp0;l5ngaluru;gaum,la5;ry;hAli,r6thin5;da;a6ddham5eilly;an;n1s5;at;a6rai5;gh;ramp0;gQhmLizawl,jmKkoRlHmDnantCrrBs6urang4va5;di;ans8ia5;!/ca5;lcut5;ta;ol;ah;ap0;arnath,batt0r5;ava5its3o9;ti;ur;appuz6i5lah4w3;garh;ha;er;adn1ed4;ab5;ad;ag3;ar;arta5ra;la","India","n"],"Krasnoyarsk":["true¦a2kra0north a2;snoyarsk0t;! time;sia","Krasnoyarsk","n"],"Kuala_Lumpur":["true¦aFbukit mertajEgeorge town,ipoh,johor bahDk8m4petali3s0taipiC;e1hah alDu0;ba1ngai petani;pa9remb7;ng jaya;ala1y0;!s,t;cca,ysia0;! time;ampung baru suba3la3ota bha4ua0;la 1nt0;an;lumpur,terengganu;ng;ru;am;lor setar,sia","Malaysia","s"],"Kuching":["true¦asia,k4m2s0tawau;a0ibu;bahsarawak,ndakan;alaysia0iri,yt;! time;ota kinabalu,uching","Malaysia","n"],"Macau":["true¦asia6beiji5c2hong ko5m0urumqi;ac0o;!au;h0st;ina0ongqi1;! time;ng;!/macao","China","n"],"Magadan":["true¦asia,mag0;adan0t;! time","Magadan","n"],"Makassar":["true¦asiaBba8c5denpa4indonesia central,k3l2ma1palu,s0wita;amarinda,ulawesi;kas2nado,taram;abuan bajo,oa jan7;endari,upang;sar;e0ity of bal3;lebesbalinusa,ntral indonesia0;! time;l0njarmasin;ikpap0;an;!/ujung0;","Central Indonesia","s"],"Manila":["true¦a04bWcRdaPgeneral santOiMlJmCnaBoAp4quezIsan1ta0zamboanga;clobZguig,rlac,ytE; 1t0;a ro2ol;fernando,jose del monte,pab02;a3h1uerto prince0;sa;!ilippine0l,st,t; time,s;gadiRnalanoy,s0;ay,ig;longapo,rmoc;ga,votQ;a0eycauayN;balacat,gugpo poblaci4kati,l3n0;da1ila,silingLtamp0;ay;luyong,ue;ingDol6;on;a1egaspi,i0ucena;bertad,pa;pu lapu,s p4;l0mus;igCoiI;os;smar0v5;inB;a0ebu,otabato;b1gayan de oro,in5l0;amba,ooc6;anatu5uy0;ao;a4inan2u0;d0tu2;ta;!gon0;an;co1guio,tang0;as;lod,or;n0sia;geles,tipo0;lo","Philippine","n"],"Nicosia":["true¦a5cy3e0n2;astern european time,et,urope0; eastern,/n0;ico2;!p0;!rus;sia","Eastern European","n","eu3"],"Novokuznetsk":["true¦a5k2no0prokop'yev1;rth a4vokuznet0;sk;emerovo,ra0;snoyarsk0t;! time;sia","Krasnoyarsk","n"],"Novosibirsk":["true¦as3no0siber3;rth central as2v0;osibirsk0t;! time;ia","Novosibirsk","n"],"Omsk":["true¦asia,oms0;k0t;! time","Omsk","n"],"Oral":["true¦a2kazakhstan western,oral,tashkent,west 0;asia,kazakhstan0;! 4;lm1s0;hgabat,ia;a0t; ata,-ata 0;time","West Kazakhstan","n"],"Pontianak":["true¦asia,b2indonesia western,pontianak,tanjung pinang,w0;est0ib; b0ern indonesia time;orneo","Western Indonesia","n"],"Pyongyang":["true¦asia,chongjin,h7k4n3p2s0won8;ariw0eoul,inuiAunch'0;on;rk,yongya7;amp'o,orth korea;a1orea0p,st;!n time;eso3nggye;a1ungnam,ye0;san;e1mhu0;ng;ju","Korean","n"],"Qatar":["true¦a2doha,kuwait,qa0riyadh;!t0;!ar;r2s0;ia0t;!/bahrain; rayyan,ab0;!i0;a0c;!n0;! time","Arabian","n"],"Qostanay":["true¦a2central asia,east kazakhstan time,k0qo1;azakhstan eastern,o0;stanay;lmt,s0;ia,tana","East Kazakhstan","n"],"Qyzylorda":["true¦a4k1qy2tashkent,west 0;asia,kazakhstan7;azakhstan western,y0zyl-1;zyl0;orda;lm1s0;hgabat,ia;a0t; ata,-ata0; time","West Kazakhstan","n"],"Riyadh":["true¦a8burayd7dammam,ha6jedd7k5me4najran,riyadh,sultan7ta3y0;anbu,e0;!m0;!en;'if,buk;cca,dina;hamis mush6uw6;'il,far al batin;ah;bha,l 8ntarctica/syowa,rab4s0;ia0t;!/0;aden,kuw0;ait;!i0;a0c;!n0;! time;hufuf,jubayl,kharj,mubarraz","Arabian","n"],"Sakhalin":["true¦asia,sak0yuzhno sakhalinsk;halin0t;! 0;island,time","Sakhalin","n"],"Samarkand":["true¦asia,bukhara,nukus,qarshi,samarkand,uz0;bekistan0t;! 0;time,west","Uzbekistan","n"],"Seoul":["true¦aPbuMchHdaeGgChwaseoRiBjeAk7m6pohaFrok,s2u1wonJy0;aCeosu;ijeongbuQlsL;e1outh korea,u0;nEwH;joAo0;ngnamMul;asGokpo;imhae,or0r,st,wangmyo7;!ea0;!n time;ju,on8;cCksBn6;angneu2oyaEu1wa0;ng5;mi,ns8riD;ng;gu,je4;angw3eon2in1un0;che2;ju;an,gju7;on;c1s0;an;heon3;n0sia;san1ya0;ng0; si","Korean","n"],"Shanghai":["true¦0:3J;1:36;2:34;3:37;4:3D;a3Cb31c2Nd2He30f2Cg26h1Qji1Ek1Bl0Ym0Wn0Tordos,p0Pq0Lrizh10s08t01u3FwSxLyEz5;aoCh6i5ouc3unyi;bo,go0;a7en6ouk2u5; c3h31maWzh2;g2Vj1Izh2;b1Vng5o3E;jiakou5zh2;! shi xuanhua qu;ya0z27;an9i7u5;ci,e18n5;c3fu;b4c9n5ya0;cZgk2;c3g5ji,t2Q;j17qu1sh16zh2;i6uc5;ha0;a6n5uyi0;di,gt2Lh1Gi0pu,t2Lx13ya0;m17n5;!g5ni0t0Eya0;t1ya0;aBe9u5;h6so0w1Cx5zh2;i,ue;a5u;i,n;i0Hn5;sh1zh2;fang5nxi1;di1;a8i6ong5;chuans0XhDli02sh1;an5eli0;j4sh10;i6ng5;gu,sh1;an,hec1Wyu1zh2;anmi0hAi8u5;i5zh2;h5zh2;ua;c5pi0;hu1;a7en6i5uangya14;jiaz15qi,y1;gli,ya0zh0G;n6o5s0I;gu1xi0;g5t2;h1Pqiu,rKyu;i5uan1J;aFn5o14qih1Y;g5huangdH;dGh1L;an0Ting7rc,u5;ti1yang5;! H;ding0QxZ;an5eijYingbo;ch5ji0ni0to0ya0;a0o0;entoug2ianRuda5;njU;aEi8u5;anc3o6qi5;ao;he,ya0;a7jPn5upansh02;fTxia 5yi;chengguanI;n0Do5;c3y5;a0u1;i0Wn5ohek2;g5zh2;fa0;ai6un5;mi0sh1;fe0yu1;'1aAe9l4n6u5xi;jCt0U;an,c3g5i0zh2;de5li0zh2;zhE;ya0;musi,n8o5xi0;j6z5;uo;ia0;g5shG;m7xi;aGeCkt,oBu5;a6i0Dlan ergi,m5n1;en;i7ng5y4;ga0s5;hi;'1b9n1;hhot,ng ko0;bi,f7ga0ng5ze;sh5ya0;ui;ei;i7n5rb4;d1g5;u,zh2;c3k2l0F;a9u5;an6i5li;l4ya0zh2;g5k2;do0yu1zh2;nsu,opi0;en7o6u5;ji1shQx4zh2;sh1;d2g5;hua0;a6eNong5;gu1hR;d6lian5ndo0qi0to0;!g;o5uk2;nghN;angHh5n,st,t;aAen7i5n,oZuG;fe0na5;! time;g5zh2;d5zho0;e,u;ng6o5;ya0zh2;ch7de,sh6zh5;i,ou;a,u;un;zh2;a9e5;i6n5;gbu,xi;'1h5ji0;ai;i7o5yan nur;di0t2;ou;c3sh1y4;an;he0;nDsia5;!/5;ch8harb4kashg6u5;rumqi;ar;in;o5ungki0;ng5;qi0;da,qi0sh5ya0;an,un;ng","China","n"],"Singapore":["true¦asia,kuala lumpur,s0woodlands;g0ingapore;!p,t","Singapore","s"],"Srednekolymsk":["true¦asia,chokurdakh,sre0;dnekolymsk,t","Srednekolymsk","n"],"Taipei":["true¦asia,banqiao,cst,h7k5roc,t0;a1w0;!n;i0oyu1;ch2n0pei,w0;an;aohsi0eel0;ung;sinchu,ualien","Taipei","n"],"Tashkent":["true¦a3namangan,qo`q4tashkent,uz0;!b0t;!ekistan0;! east;ndij0sia;on","Uzbekistan","n"],"Tbilisi":["true¦asia,ge1kuta0tbil0;isi;!o0t;!rgia0;!n","Georgia","n"],"Tehran":["true¦aQbMgorgWhamViKkCmaBn8orumiy7pasragad branch,q4rasht,s2t1varam6yazd,za0;hedVnjV;abHehrU;a0hirRirjT;bzevar,nandEri,v3;a0om;rchak,zv0;in;eh;a0eyshabur;jaf0zar0;ab4;layer,shh3;a4erman3ho0;meyni sDrram0wy;ab0sC;ad;!shah;h1r0;aj;riz;r0sfahB;!an,dt,n,st;a2irjand,o0uk9;jnu0ruje0;rd;b3ndar abbas;b4hv3m2r1sia,zads0;hahr;ak,dabil;ol;az;ad0;an","Iran","n"],"Thimphu":["true¦asia2b0thimphu;hutan,t0;!n;!/thimbu","Bhutan","n"],"Tokyo":["true¦0:11;1:1A;2:10;a18ch16fu0Zgifu14h0Oi0Ij0FkZmTnMoKsFt9u8waka05y3;a6o3;k3no;kaic1Co3;ha2su0;maKo;ji,tsun0F;aka7o3sukuba;k5makom05y3;a2o3;hOna0ta;oro03us0Qyo;m0Jrazu0sa1tsu1;a5end00hi4o0u3;i10zu0;monose1zuo0;ita2k3ppoLsebo;ai,u06;dawa05i0Wka3sa0t0E;ya2za1;a6eyaga0Qi3umazu;i4shi3; tokyo0Inomiya ha2;ga0R;g3ha,ra0G;a3oX;no,o0sa1;a5i3orio0;na3to,yaza1;mirinkOto;chiDeb4tsu3;do,m8ya2;as0J;aBi9o7u3y6;mam5r4shi3;ro;ashi1e,ume;oto;be,c0Dfu,ri3shigaK;ya2;shiwa3takyushu;da;gosVkogawacho honmKmirenjaku,na8s5wa3;g3sa1;oe,uc07;hi01u3;g3kabe;ai;zaY;ap4dt,oetJp3st;!n;an;bara1chi4ta3wa1zu3;mi;ha5n3;omi3;ya;ra;a8i3oncho;meBr4t3;acR;a4os3;a1hi2;kaNtsu0;chi5kodate,mam3;at3;su;nohe,o3;ji;ji8ku3;i6o0s3ya2;hi2;ma;ka; sD;!sa7;i3ofu;ba,g6;geoshimo,k7mag5njo,omori,s3tsugi;ahika3ia;wa;asa1;ki;as4i3;ta;hi","Japan","n"],"Tomsk":["true¦asia,oms0tomsk;k,t","Omsk","n"],"Ulaanbaatar":["true¦asia3m1ula0;anbaatar,n bator,t;n0ongolia;!g;!/ulan0;","Ulaanbaatar","n"],"Ust-Nera":["true¦asia,ust-nera,vla0;divostok,t","Vladivostok","n"],"Vladivostok":["true¦asia,k1vla0;divostok,t;habarovsk0omsomolsk on amur;! vtoroy","Vladivostok","n"],"Yakutsk":["true¦asia,blagoveshchen1yak0;t,ut0;sk","Yakutsk","n"],"Yangon":["true¦asia4b3kyain seikgyi township,m0nay pyi taw,pathein,sittwe,yang5;a1eiktila,m0onywa;!r;ndalay,wlamyine;ago,urma;!/rango0;on","Myanmar","n"],"Yekaterinburg":["true¦asia,chelyabin7eka5k4magnitogor7nizhn3or2perm,s1tyumen,ufa,yek0zlatoust;a4t;terlitamak,urgut;e3sk;evartov3y tagil;amensk ural'skiy,urgan;teri0;nburg;sk","Yekaterinburg","n"],"Yerevan":["true¦a0caucasus,yerevan;m2rm0s1;!en0;ia;!t","Armenia","n"]},"Atlantic":{"Azores":["true¦a0hmt;tlantic,zo0;res,st,t","Azores","n","eu0"],"Bermuda":["true¦a2b0;ermuda,m0;!u;st,t0;!lantic","Atlantic","n","usa"],"Canary":["true¦atlantic,canary1europe western,las palmas de gran canaria,santa cruz de tenerife,we0;stern european,t;! islands","Western European","n","eu1"],"Cape_Verde":["true¦atlantic,c0;a1pv,v0;!t;bo verde0pe verde;! is","Cape Verde","n"],"Faroe":["true¦atlantic2f0;aroe0o,ro;! islands;!/faeroe","Western European","n","eu1"],"Madeira":["true¦atlantic,europe western,madeira1we0;stern european,t;! islands","Western European","n","eu1"],"Reykjavik":["true¦atlantic,coordinated universal3g2i0reykjavik,utc,zulu;celand,s0;!l;mt,reenwich mean0; time","Greenwich Mean","n"],"South_Georgia":["true¦atlantic,gs1s0;gs,outh georgia;!t","South Georgia","n"],"Stanley":["true¦atlantic,f0stanley;alkland1k0lk;!st,t;! island0;!s","Falkland Islands","s"]},"Australia":{"Adelaide":["true¦a2cen0south 1; 0tral 0;australia;c2delaide,ustralia0;! 0/south,n 0;central;dt,st,t","Central Australia","s","aus"],"Brisbane":["true¦a1brisbane0gold coast,logan,q4townsville;! time;e3ustralia0;!/q1n east0;!ern;ueensland;dt,st","Brisbane","s"],"Broken_Hill":["true¦a2broken1cen0y4; australia standard time,tral australia;;c2delaide,ustralia0;! central,/y0;ancowinna;st,t","Central Australia","s","aus"],"Darwin":["true¦a0darwin,northern territory;cst,ustralia0;!/north,n central","Australian Central","s"],"Eucla":["true¦a0cw4eucla;cw4us0; central w1tralia0;!n central western;!e0;st;dt,st,t","Australian Central Western","s"],"Hobart":["true¦a0canberra,eastern austral5hobart,king island,melbourne,sydney,t4;e8us0; east5tralia0;! 3/0n 3;currie,t0;asman0;ia;easte1;!e0;rn;st,t","Eastern Australia","s","aus"],"Lindeman":["true¦a0brisbane time,lindeman,whitsunday islands;est,ustralia0;!n eastern","Brisbane","s"],"Lord_Howe":["true¦australia3l0;h1ord howe0;! island;dt,st,t;!/lhi","Lord Howe","s","lhow"],"Melbourne":["true¦a0canberra,eastern austral4geelong,melbourne,sydney,v3;e7us0; east4tralia0;! 2/v0n 2;ictor0;ia;easte1;!e0;rn;st,t","Eastern Australia","s","aus"],"Perth":["true¦a4perth,w0; 2est0; 1ern australia0;! time;australia;ustralia1w0;dt,st,t;! weste1/west,n west0;!e0;rn","Western Australia","s"],"Sydney":["true¦a0c5eastern australia time,melbourne,new south wales,sydney,wollongong;e8u0;!s0;! east4tralia0;! 2/0n 2;act,c0nsw;anberra;easte1;!e0;rn;st,t","Eastern Australia","s","aus"]},"Etc":{"GMT":["true¦coordinated universal3etc2g0utc,zulu;mt,reenwich0;! mean1;!/greenwich; time","Greenwich Mean","n"],"UTC":["true¦coordinated universal7etc2g1u0z4;ct,n5tc;mt,reenwich mean5;!/0;u1z0;ulu;ct,n0;iversal; time","Greenwich Mean","n"]},"Europe":{"Amsterdam":["true¦a9brussels,c6e4groning7madrid,n2paris,ro1t0utrecht;he hague,ilburg;mance,t9;etherlands,l0;!d;indhov2urope0;! central;e1openhag0;en;ntral european,t;lmere stad,m0;s0t;terdam","Central European","n","eu2"],"Andorra":["true¦a3brussels,c1europe0madrid,paris,romance;! central;e0openhagen;ntral european,t;d,nd0;!orra","Central European","n","eu2"],"Astrakhan":["true¦astrakh1europe,m0russi1st petersburg,volgograd time;oscow,sk;an","Moscow","n"],"Athens":["true¦athens,e1gr0thessaloniki;!c,eece;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Belgrade":["true¦b9c7europe3madrid,n2p1romance,s0;i,lovenia,vn;aris,risti4;is,ovi sad;! central,/0;ljublja1podgorica,s0zagreb;arajevo,kopje;na;e0openhagen;ntral european,t;elgrade,russels","Central European","n","eu2"],"Brussels":["true¦antwerp6b3c1europe0gent,liege,madrid,paris,romance;! central;e0harleroi,openhag4;ntral european,t;e0mt,russels;!l0;!gium;en","Central European","n","eu2"],"Bucharest":["true¦b5c4e2gala1iasi,oradea,ploies1ro0timisoara;!mania,u;ti;astern european,et,urope0;! eastern;luj napoca,onstanta,raiova;ra0ucharest;ila,sov","Eastern European","n","eu3"],"Budapest":["true¦b6c3debrec4europe2hu0madrid,paris,romance;!n0;!gary;! central;e1openhag0;en;ntral european,t;russels,udapest","Central European","n","eu2"],"Busingen":["true¦b5c3de2europe1germa0madrid,paris,romance,saxo0;ny;! central,/berlin;!u;e0openhag3;ntral european,t;avaria,r0using1;em0ussels;en","Central European","n","eu2"],"Chisinau":["true¦chisinau,e2m0;d0oldova;!a;astern european,et,urope0;! eastern,/tiraspol","Eastern European","n","eu2"],"Copenhagen":["true¦arhus,brussels,c2d1europe0madrid,paris,romance;! central;enmark,k,nk;e0mt,openhagen;ntral european,t","Central European","n","eu2"],"Dublin":["true¦ace,british7cork,d6e5g4i2l0tse;isb0ond0;on;e,r0st;eland,l;mt,reenwich mean2;dinburgh,ire,urope;mt,ublin; time","British","n","eu1"],"Gibraltar":["true¦b5c3europe2gi0madrid,paris,romance;!b0;!raltar;! central;e0openhagen;ntral european,t;dst,russels,st","Central European","n","eu2"],"Helsinki":["true¦e3fi1helsinki,t0vantaa;ampere,urku;!n0;!land;astern european,et,spoo,urope0;! eastern,/mariehamn","Eastern European","n","eu3"],"Istanbul":["true¦aYbScQdOeKgJiHkFmBosmAs4t1u0v07zeytinburnu;eskuedWmr9;arsus,r1ur0;!kZ;!abzon,t;a3i1ultan0;beyJgazi;sIv0;as,erek;msun,n0;cakteBliurfa;aniye;a1er0uratpaH;kezefendi,sin;l0niF;atQte6;a0irikkale,onPutahP;hramanmaras,rabaglGyseS;sJzmi0;r,t;aziantep,ebze;lazig,rzurum,s1uro0;pe;en0kiC;l8yurt;eniz0iyarbakB;li;ankaEor0;lu,um;a1ur0;sa;gcil2hcelievl1likes5sak4t0;ikent,mB;er;ar;d7n4rnavutko3sia/is2ta0;seh0;ir;tanbul;ey;kara,ta0;k0l0;ya;a1iyam0;an;na,paza0;ri","Turkey","n"],"Kaliningrad":["true¦e0kaliningrad;astern european,et,urope","Eastern European","n"],"Kiev":["true¦bila tserkLcherIdGeDhorlCivano frankivHk8l7m5odessa,poltaLriv4sumy,ternopil,u2vinnyts1z0;aporizhzh0hytomyr;ya;a,kr0;!ai0;ne;a0ykolayE;ki5riu8;ut9vC;amyanske,h1iev,r0yB;emenchuk,opyv1yvyy rih;ark9erson,mel0;nytskyy;ivka;astern european,et,urope0;! eastern,/simfero0;pol;nipro,onet0;sk;kasy,ni0;h0vtsi;iv;va","Eastern European","n","eu3"],"Kirov":["true¦europe,kirov,m0russian,st petersburg,volgograd time;oscow,sk","Moscow","n"],"Lisbon":["true¦amadora,europe5lisbon,p2we0;st0t;! europe,ern european;ort0rt,t;o,ugal0;! mainland;! western","Western European","n","eu1"],"London":["true¦a0Ob0Ac07d03eXgThRiOj00kingston upon hull,lJmHnBoxSp9reading,s1w0yF;arwick0Aigan,olverha7;heffield,o3t2u1w0;an4iH;ffolk,nderland,rr0IsYttL;afNoke on tre0C;meZuth0;a1end on 0;sea;mptG;ly0orts0restF;mouth;ew4o0;r0ttinghamT;th0wC; y0amptonR;orkV;castle upon tyne,port;ancheQi0;dlan4lton keynes;ancaRdn,e2i1o0ut5;nd4;ncolnPsb3verW;e0icesterJ;ds;psw1slingt0;on;ich;ampJert0;fordI;b2l1mt0reenwich mean M;! standard L;asgow,oucesterF;!-eF;dinburgh,s4urope0;!/0;belNguernsMisle1j0;ersL;;sex;erby2o1u0;blin,dlH;rset;!sh5;a1ity of westmin0oventry,rawlE;ster;mbridge1rdiff;eAir9lack7r2st,uckingham0;sh0;ire;adford,e3i0;st4tish0;! 0;time;nt;po0;ol;kenhead,mingham;l1xl0;ey;fast;berdeen,rchway","British","n","eu1"],"Luxembourg":["true¦brussels,c3europe2lu0madrid,paris,romance;!x0;!embourg;! central;e0openhagen;ntral european,t","Central European","n","eu2"],"Madrid":["true¦aRbOcJeGfuenDgCjerez de la frontera,lBm8ovieFp6romance,s1terrassa,v0wemt,zaragoza;alladol9igo;a1evilla,pain0;! mainland;badell,n0; sebastiHt0; marti,ander,s montjuic;a0uente de vallecas;lma,mpIris;a0ostolLurcK;dr0laga;id;atiJeganI;asteiz/vitorGijon,ran1;carral el par1labr0;ada;do;ixample,lche,s1urope0;! centr2;!p;a3e1iudad line0openhagen;al;ntral europe0t;an;rabanchel,stello de la pla7;a0ilbao,russels,urgos;da0rce0sque;lo4; coru3l0;cala de henar1icante,mer0;ia;es;na","Central European","n","eu2"],"Malta":["true¦brussels,c3europe2m0paris,romance;a0lt,t;drid,lta;! central;e0openhagen;ntral european,t","Central European","n","eu2"],"Minsk":["true¦b4europe,h3m1russian,st petersburg,v0;iteb4olgograd time;ahily0in3osc0sk;ow;omyel,rodna;abruy0elarus,lr,rest,y;sk","Moscow","n"],"Monaco":["true¦brussels,c3europe2m0paris,romance;adrid,c0onaco;!o;! central;e0openhagen;ntral european,t","Central European","n","eu2"],"Moscow":["true¦ar0Db0Ac07dzerzh06europe,fet,grozn05ivano04kYlipet0FmRnNorel,pKrFs8t6v2w-su,y0zelenograd;a0oshkar oW;roslavl,sene02;asyl'evsky ostrIelikiMladi2o0ykhino zhulebT;l0ronezh;gograd Pogda;kavkaz,m08;a0uQver;ganrog,mbD;a4ever3hakhty,molen06ochi,t0yktyvkR; 4a0;ryy osk0vrop0;ol;nSodvT;int 0rX;petersburg;ostov na donu,u1y0;azLbP;!s0;!sia0;!n;e1odolUsk0;ov;nza,trozavodS;a2izhn0ovorossiyR;ekamQi0;y novM;berezhnyye chelny,l'chik;a3dst,oscow1s0urmJ;d,k;! 0;time;khachka1r'0;ino;la;a2himki,ostroma,rasno0urG;d0gvargeisky;ar;l1z0;an;ininsk5uga;vo;yy;in8;entraln1he0;boksary,repovets;iy;el1ry0;an3;gorod;khangel'1mav0;ir;sk","Moscow","n"],"Oslo":["true¦a6b5c3europe2madrid,oslo,paris,romance,s0;j0valbard and jan may7;!m;! central;e0openhag4;ntral european,t;erg2russels;rctic/longyearby1tlantic/jan0;;en","Central European","n","eu2"],"Paris":["true¦bIcFeuropeEfrBl9m7n5paris,r3s0toulouH;aint 1t0; 0rasbourg;etienne;e0oman9;ims,nn1;ant0i7ormandy;es;a0et,ontpellier;drid,rsei1;e havre,i0yon;lle;!a0;!n0;ce;! central;e0openhagen;ntral european,rgy pontoi0t;se;ordeaux,russels","Central European","n","eu2"],"Prague":["true¦br6c4europe2madrid,ostr3p1romance,s0;k,lovakia,vk;aris,mt,rague;! central,/bratisl0;ava;e0openhagen;ntral european,t;no,ussels","Central European","n","eu2"],"Riga":["true¦e2kalt,l0riga;atvia,st,v0;!a;ast2e1urope0;! eastern;st,t; europe,ern european","Eastern European","n","eu3"],"Rome":["true¦bJcFeuropeCfloreBgenoa,mAnaples,p7r5sicily,t3v0;a0eroL;!t0;!ican city;aran4rieste,u0;rin,scany;mt,om0;a4e;a1ra0;to;dova,lermo,ris;adrid,essiBil7;nce;! central,/0;san0vatic4;;atan5e1o0;penhagen,rsica;ntral europe0t;an;ari,olog2r0;esc0ussels;ia;na","Central European","n","eu2"],"Samara":["true¦europe,izhevsk,s0togliatti on the volga;am0yzran;ara,t","Samara","n"],"Saratov":["true¦balakovo,europe,izhevsk,sa0;m0ratov;ara,t","Samara","n"],"Sofia":["true¦b2e0imt,plovdiv,sof4varna;astern european,et,urope0;! eastern;g2u0;lgar0rgas;ia;!r","Eastern European","n","eu3"],"Stockholm":["true¦brussels,c5europe4goeteborg,ma3paris,romance,s0;e1tockholm,we0;!d4;!t;drid,lmoe;! central;e1openhag0;en;ntral european,t","Central European","n","eu2"],"Tallinn":["true¦e0tallinn;astern european,e2st1urope0;! eastern;!onia;!t","Eastern European","n","eu3"],"Tirane":["true¦al4brussels,c2europe1madrid,paris,romance,tiran0;a,e;! central;e0openhagen;ntral european,t;!b0;!ania","Central European","n","eu2"],"Ulyanovsk":["true¦europe,m0russian,st petersburg,ulyanovsk,volgograd 2;oscow0sk;! 0;time","Moscow","n"],"Uzhgorod":["true¦e0ruthenia,uzhgorod;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Vienna":["true¦a4brussels,c1donaustadt,europe0favorit2graz,linz,madrid,paris,romance,vienna;! central;e1openhag0;en;ntral european,t;t,u0;stria,t","Central European","n","eu2"],"Vilnius":["true¦e3k2l0vilnius;ithuania,t0;!u;aunas,laipeda;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Volgograd":["true¦europe,m2russian,st petersburg,vol0;gograd0t,zhskiy;! time;oscow,sk","Moscow","n"],"Warsaw":["true¦bKcHeuropeGgCkAl8m7p4r3s2torun,w0zabrze;ars0rocl0;aw;osnowiec,zczec6;adIomanA;aris,l,o0raga poludnie;l0znD;!and;adrid,okot3;odz,ubl0;in;ato2iel3rak0;ow;d2li0;wi0;ce;ansk,ynia;! central;e0openhagen,zestochowa;ntral europe0t;an;i2russels,y0;dgoszcz,t0;om;alystok,elsko biala","Central European","n","eu2"],"Zaporozhye":["true¦e3luhansk2sevastopol,zapor0;izhia lugansk,ozh0;'ye,ye;! east;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Zurich":["true¦brussels,c4europe2geneve,li0madrid,paris,romance,swiss time,zurich;!e0;!chtenstein;! central,/0;busin1vaduz;e1openha0;gen;ntral european,t","Central European","n","eu2"]},"Indian":{"Chagos":["true¦british indian ocean territory,c4i0;ndian1o0;!t;! 0;c0ocean;hagos","Indian Ocean","n"],"Christmas":["true¦c0indian;hristmas1x0;!r,t;! island","Christmas Island","s"],"Cocos":["true¦c0indian;c2ocos0;! island0;!s;!k,t","Cocos Islands","n"],"Kerguelen":["true¦a5french southern2indian,kerguelen1tf0;!t;!st paul4;! 0;& antarctic time,and antarctic0;! lands;msterdam0tf; island","French Southern & Antarctic","s"],"Mahe":["true¦indian,mahe,s0;c0eychelles,yc;!t","Seychelles","n"],"Maldives":["true¦indian,m0;aldives,dv,v0;!t","Maldives","n"],"Mauritius":["true¦indian,m0port louis;auritius,u0;!s,t","Mauritius","n"],"Reunion":["true¦indian,r0;e0éu1;t,u0;nion","Réunion","s"]},"Pacific":{"Apia":["true¦apia,pacific,s2w0;est s1s0;!m,t;amoa","West Samoa","s"],"Auckland":["true¦a2christchurch,manukau,n0pacific,wellington;ew zea2orth shore,z0;!dt,l,mt,st,t;ntarctica/1uck0;land;mcmurdo,south0;","New Zealand","s","nz"],"Bougainville":["true¦bougainville,guinea2p0;a0gt;cific,pua new guinea;!n","Papua New Guinea","s"],"Chatham":["true¦cha0nz-chat,pacific;dt,st,t0;!ham0;! 0;islands,time","Chatham","s","chat"],"Chuuk":["true¦chuuk2pacific0;!/0;truk,y1;!/truky0;ap","Chuuk","n"],"Easter":["true¦chile/easter4e0pacific;as0mt;st,t0;!er0;! 0;island","Easter Island","s","east"],"Efate":["true¦efate,pacific,v0;anuatu,u0;!t","Vanuatu","n"],"Fakaofo":["true¦fakaofo,pacific,t0;k0okelau;!l,t","Tokelau","n"],"Fiji":["true¦f0pacific;iji,j0;!i,st,t","Fiji","s","fiji"],"Funafuti":["true¦funafuti,pacific,t0;uv1v0;!t;!alu","Tuvalu","n"],"Galapagos":["true¦co1gal0pacific;apagos,t,ápagos islands;lombia,st,t","Colombia","n"],"Gambier":["true¦gam0pacific;bier0t;! islands","Gambier","n"],"Guadalcanal":["true¦guadalcanal,pacific,s0;b1lb,olomon0;! islands;!t","Solomon Islands","n"],"Guam":["true¦ch5guam,m4northern mariana islands,p2west0; 0ern 0;pacific;acific0ort moresby;!/saipan;np,p;amorro,st","Chamorro","n"],"Honolulu":["true¦aleutian4h1pacific0us/hawaii;!/johnston;a0onolulu,st;st,t,waii0;! aleutian;! islands","Hawaii-Aleutian","n"],"Kanton":["true¦kanton,p0;acific0hoenix islands;!/enderbury","Phoenix Islands","n"],"Kiritimati":["true¦ki1lin0pacific;e islands,t;!r0;!i0;bati,timati0;! island","Line Islands","n"],"Kosrae":["true¦kos0pacific;rae,t","Kosrae","n"],"Kwajalein":["true¦kwajalein,m0pacific;arshall islands,ht","Marshall Islands","n"],"Majuro":["true¦m0pacific;a1h0;!l,t;juro,rshall islands","Marshall Islands","n"],"Marquesas":["true¦mar0pacific;quesas0t;! islands","Marquesas","n"],"Nauru":["true¦n0pacific;auru,r0;!t,u","Nauru","n"],"Niue":["true¦n0pacific;iu1u0;!t;!e","Niue","n"],"Norfolk":["true¦n0pacific;f1orfolk0;! island;!k,t","Norfolk Island","n","aus"],"Noumea":["true¦n0pacific;c0ew caledonia,oumea;!l,t","New Caledonia","n"],"Pago_Pago":["true¦m6pa1s0us/sa5;a4st;cific1go0;;!/0;m1sa0;moa;idway","Samoa","n"],"Palau":["true¦p0;a1lw,w0;!t;cific,lau","Palau","n"],"Pitcairn":["true¦p0;acific,cn,itcairn,n,st","Pitcairn","n"],"Pohnpei":["true¦french polynesia,p0;acific0f,ohnpei0yf;!/ponape","Ponape","n"],"Port_Moresby":["true¦antarctica/dumontd4dumont-d'4guinea3p0;a1g0ng,ort moresby;!t;cific,pua new guinea;!n;urville","Papua New Guinea","s"],"Rarotonga":["true¦c0pacific,rarotonga;k2o0;k,ok0;! islands;!t","Cook Islands","n"],"Tahiti":["true¦pacific,society islands,tah0;iti,t","Tahiti","n"],"Tarawa":["true¦gil0pacific,tarawa;bert islands,t","Gilbert Islands","n"],"Tongatapu":["true¦nuku'alofa,pacific,to0;!n0t;!ga0;!tapu","Tonga","s"],"Wake":["true¦pacific,u2wak0;e0t;! island;m0s minor outlying islands;!i","Wake Island","n"],"Wallis":["true¦pacific,w0;allis1f0lf;!t;! 0;&0and0; futuna","Wallis & Futuna","n"]}};
+var pcked = {"Africa":{"Abidjan":["true¦a5bouake,coordinated universal4daloa,g1san ped0utc,yamoussouk0zulu;ro;h0mt,reenwich mean2;!a0;!na; ti3;b4frica0tlantic/st_helena;!/0;accra,ba1conakry,dakar,freetown,lo0nouakchott,ouagadougou,timbuktu;me;mako,njul;idjan,obo","Greenwich Mean","n"],"Algiers":["true¦a8b6c3dz2or5s1t0;ebessa,iaret;etif,idi bel abbes;!a;e0hlef,onstantine;ntral europe0t;an;a0iskra,lida,oumerdas;b ezzouar,tna;frica,lg0nnaba;eria,iers","Central European","n"],"Bissau":["true¦africa,b2coordinated universal1g0utc,zulu;mt,nb,reenwich mean0uinea b1w; time;issau","Greenwich Mean","n"],"Cairo":["true¦a6bani suwayf,c5damanhur,e2giza,halw8i1kafr ad dawwar,luxor,new c5port said,qina,s0tanta,zagazig;hibin al kawm,ohag,uez;dku,smail8;astern europe5et,g0;!y0;!pt;airo;frica,l2s0;w0yut;an; 1exandr0;ia;fayyum,m0;a0inya;hallah al kubra,nsurah","Eastern European","n"],"Casablanca":["true¦aCcasablanDfBkenitAm6oujda angad,rabat,sa4t1we0;stern europe2t;angier,e0;ma7tou0;an;fi,le0;! al jadida;a1ekn4o0;hammedia,rocco;!r0;!rakesh;ra;es;fri0gadir,l hoceima;ca","Morocco Standard","n","saha"],"Ceuta":["true¦africa,brussels,c0europe central,madrid,paris,romance;e0openhagen;ntral european,t,uta0;!melilla","Central European","n","eu2"],"El_Aaiun":["true¦afri3casablan3e2laayoune,morocco,we0;stern 0t;european,sahara;h,l_aaiun,sh;ca","Morocco Standard","n","saha"],"Johannesburg":["true¦africaIbEcAd9east londBharare,johannesHk7newcastDp6r5s3tembisa,uitenhage,v2w1za0;!f;elkom,itbank;anderbijlpark,ereeniging;ast,o0prings;uth africa,weto;andBichards bay,oodepoort;aarl,ietermaritzAort elizabeth,retoria;lerk0ruger0;sdorp;iepsloot,urb5;a1enturi0;on;pe town,rletonvil0;le;enoni,loemfontein,o1rakp0;an;ks0tshabelo;burg;! southern,/m0;aseru,babane","South Africa","s"],"Juba":["true¦a3c2juba,s0winejok;outh sudan,s0;!d;at,entral a0;frica","Central Africa","n"],"Khartoum":["true¦a7c6el 5k3ny4omdurm2port sud2s0wad medani;d0inga,ud1;!n;an;ass0hartoum,osti;ala;dae3fasher,obeid;at,entral af1;d damaz1f0l qadarif;rica;in","Central Africa","n"],"Lagos":["true¦aVbTcReQgPiLjKkaIlGmDnnewi,oAport harcourt,s9u7w0zar8; c3a2est0; 0ern3;a3c1;rBst,t;entral0; a0;frica;gep,muah0yo;ia;a7hagamu,okoto;kDn1w0yo;er3o;do,itsha;a0in5ubi;idugu0kurdi;ri;agos,ek0;ki;du0no,tsi0;na;imeLos;badan,jebu ode,k1l0seHwo;a orangun,eDor7;eHi8ot ekp0;ene;ombe,usau;bute ikorodu,fon alaaye,nugu;alabar,d,hakwama,o0;d,ngo;auchi,en0;in;b8do7frica1ku0tani;re;! western,/0;b2douala,kinsha1l0malabo,niamey,porto-novo;ibre2uanda;sa;angui,razza0;ville; ekiti;a,eoku1u0;ja;ta","West Africa","n"],"Maputo":["true¦africa7beiCc6ma4na2quelimaAwindhoek,z0;imbabwe,w0;!e;ca2m0;ibia,pu1;puto,to0;la;at,entral africa,himoio;! central,/0;b2gaboro1hara4kigali,lu0;bumbashi,saka;ne;lanty1ujumbu0;ra;re","Central Africa","s"],"Monrovia":["true¦africa,coordinated universal3g2l0monrov1utc,zulu;br,iber0r;ia;mt,reenwich mean0; time","Greenwich Mean","n"],"Nairobi":["true¦africa8e4indian/2kisumu,m1na0thika,yt;irobi,kuru;a1ombasa,yt;antananarivo,comoro,ma0;yotte; 2a0ldoret;st0t; 0ern 0;africa;! eastern,/0;a1d0kampala,mogadishu;ar_es_salaam,jibouti;ddis_ababa,sm0;a0e0;ra","East Africa","n"],"Ndjamena":["true¦africaAchad,n8t7w0; c3a2est0; 0ern3;a3c1;st,t;entral0; a0;frica;cd,d;'d0d0;jamena;! western","West Africa","n"],"Sao_Tome":["true¦africa,coordinated universal5g4s0utc,zulu;ao1t0;!p; 0_0;to2;mt,reenwich mean0; ti0;me","Greenwich Mean","n"],"Tripoli":["true¦a4benghazi,e3l1misrat5t0zawi2;arhuna,ripoli;by,ib0y;ya;astern european,et;frica,l khums,z zawiy0;ah","Eastern European","n"],"Tunis":["true¦africa,ce3sfax,t0;n,un0;!is0;!ia;ntral european,t","Central European","n"],"Windhoek":["true¦africa3c2na0windhoek;!m0;!ibia;at,entral africa;! central","Central Africa","s"]},"America":{"Adak":["true¦a1h0nwt,us/aleutian;awaii s4dt,st;dak,leutian1merica0;!/atka;! 0;islands,s0;tandard time","Aleutian Standard","n","usa"],"Anchorage":["true¦a0us/alaska;h6k5laska0merica,nchorage;! 1n0;! s1;s0t1;tandard t0;ime;dt,st,t;dt,st","Alaska","n","usa"],"Araguaina":["true¦a6br1e0palmas,tocantins; south america s3ast south am6;asilia0t;! 0;s0t1;tandard t0;ime;m0raguaina;erica","Brasilia","n"],"Argentina/Buenos_Aires":["true¦a0b5;merica2r0;!g0;!e3;!/0;arge1b0;uenos_aires;ntina","Argentina","s"],"Argentina/Catamarca":["true¦a0c3;merica0rgentina;!/0;argentina/comodrivadavia,c0;atamarca","Argentina","s"],"Argentina/Cordoba":["true¦a0c3;merica0rgentina;!/0;c0rosario;ordoba","Argentina","s"],"Argentina/Jujuy":["true¦a0j2;merica0rgentina;!/j0;ujuy","Argentina","s"],"Argentina/La_Rioja":["true¦a1b0city of b0la_rioja;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Mendoza":["true¦a0m2;merica0rgentina;!/m0;endoza","Argentina","s"],"Argentina/Rio_Gallegos":["true¦a1b0city of b0rio_gallegos;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Salta":["true¦a1b0city of b0salta;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/San_Juan":["true¦a1b0city of b0san_juan;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/San_Luis":["true¦a1b0city of b0san_luis;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Tucuman":["true¦a1b0city of b0tucuman;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Argentina/Ushuaia":["true¦a1b0city of b0ushuaia;uenos aires;merica,r0;gentina0st,t;! 0;standard t0t0;ime","Argentina","s"],"Asuncion":["true¦a6c5p0san lorenzo;araguay1ry,y0;!st,t;! 0;standard t0t0;ime;apiata,iudad del este;merica,suncion","Paraguay","s","par"],"Bahia":["true¦a8b2camacari,e1feira de santa0itabu0salvador,vitoria da conquista;na; south america s4ast south a6;ahia,r0;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","n"],"Bahia_Banderas":["true¦america,bah6c1guadalajara,m0;exico city,onterrey;entral 0st;mexic0standard 2;an,o0;! 0;time;ia_0ía de 0;banderas","Central Mexico","n","mex"],"Barbados":["true¦a1b0;arbados,b,rb;merica,st,tlantic standard time","Atlantic","n"],"Belem":["true¦a8b2e1macapa,par0;auapebas,á east amapá; south america s4ast south am7;elem,r0;asilia0t;! 0;s0t1;tandard t0;ime;m0nanindeua;erica","Brasilia","n"],"Belize":["true¦america,b1c0;entral standard time,st;elize,lz,z","Central","n"],"Boa_Vista":["true¦am5boa3c0roraima;entral brazil0uiaba;!ian0;! s5; 0_0;vista;azon0erica,t;! 0;s0t1;tandard t0;ime","Amazon","n"],"Bogota":["true¦aJbEc7dosquebradas,floridablanLi6m5neiva,p3s1v0;alledupar,illavicencio;anta marFincelejo,o0;acha,ledad;a0ereiCopayan;lmiBsto;anizales,edellin,onterE;bague,taguei;a5o0ucu9;!l0st,t;!ombia0;! 0;standard t0t0;ime;li,rtagena;arran3ello,ogo2u0;caramanga,enaventu0;ra;ta;cabermeja,quilla;meri1rmen0;ia;ca","Colombia","n"],"Boise":["true¦america4boise,m0;ountain0pt,st,t;! 0;id,standard t0t0;ime;! mountain","Mountain","n","usa"],"Cambridge_Bay":["true¦america4cambridge_bay,m0;ddt,ountain0st,t;! 0;standard t0t0;ime;! mountain","Mountain","n","usa"],"Campo_Grande":["true¦am2campo0mato grosso do sul; 0_0;grande;azon standard time,erica,t","Amazon","s"],"Cancun":["true¦america,cancun,e0quintana roo;astern standard time,st","Eastern","n"],"Caracas":["true¦aKbarJcDguaBm8p7san6turmeFv0;alencia,e0;!n0t;!ezuela0;! 0n;standard t0t0;ime; cristobal,ta teresa del tuy;eta4uerto la cruz;a0ucumpiz;raca0turin;ibo,y;ren9ti0;re;a4iudad 2o1u0;a,m2;ro;bolivar,guay0;ana;bim2rac2;in1quisimeto,uta;lto barin0merica;as","Venezuela","n"],"Cayenne":["true¦america,cayenne,french guiana2g0;f0uf;!t;! time","French Guiana","n"],"Chicago":["true¦aXbUcQdPfort worth,gOhNiLk01lImBn7o6plano,s3t1us/05wi0;chiFsconsX;ex0ulsa;!as;a0hreveport,ou4t 1;int 0n antonio;louGpaul;klahoZmaha,verland park;ashNe1or0;th dako7;braska,w 0;orleans,south me6;adisOe5i1o0;biJntgomery;lwaukee,nne1ss0;issippi,ouri;apol6so0;ta;mph4;aredo,i0ouisiana,ubb1;ncoln,ttle r0;ock;llino0owa,rving;is;oustCunts7;arland,rand prairie;allCes moines;dt,entral0hicago,orpus christi,st,t;! 0;standard t0t0;ime;aton rouge,rowns0;vil0;le;laba8m5r1ust0;in;k1lingt0;on;ans0;as;arillo,erica0;! 0;central;ma","Central","n","usa"],"Chihuahua":["true¦america,chihuahua,h5la paz,m0;azatlan,exic1ountain 0;mexico,standard time (mexico);an pacific 0o pacific;standard t0t0;ime;ep0np0p0;mx","Mexican Pacific","n","mex"],"Costa_Rica":["true¦ame3c0sjmt;entral standard time,osta1r0st;!i; 0_0;rica","Central","n"],"Cuiaba":["true¦am0cuiaba,mato grosso,varzea grande;azon standard time,erica,t","Amazon","s"],"Danmarkshavn":["true¦america,coordinated universal1danmarkshavn,g0utc,zulu;mt,reenwich mean0; time","Greenwich Mean","n"],"Dawson":["true¦america,dawson,m2y0;d0pt,wt;dt,t;ountain standard time,st","Mountain","n"],"Dawson_Creek":["true¦america,dawson_creek,m1p0;pt,wt;ountain standard time,st,t","Mountain","n"],"Denver":["true¦a4colorado springs,denver,el paso,m0navajo,salt lake,us/6;dt,ountain0st,t;! 0;standard t0t0;ime;lbuquerque,merica0urora;! 0/shiprock;mountain","Mountain","n","usa"],"Detroit":["true¦america4detroit,e0grand rapids,us/michigan;astern0pt,st,t,wt;! 0;mi,standard t0t0;ime;! eastern","Eastern","n","usa"],"Edmonton":["true¦a5ca4edmonton,m0;ountain0st,t;! 0;standard t0t0;ime;lgary,nada/2;lberta,merica0;! 0;mountain","Mountain","n","usa"],"Eirunepe":["true¦a0eirunepe;c1m0;azonas west,erica;re0t;! 0;standard t0t0;ime","Acre","n"],"El_Salvador":["true¦america,c3el1s0;an 1lv,oyapango,v; 0_0;salvador;entral standard time,st","Central","n"],"Fort_Nelson":["true¦america,fort_nelson,m0;ountain standard time,st,t","Mountain","n"],"Fortaleza":["true¦aAbr5ca4e3fortaleza,imperatriz,j2m0natal,sao luis,teresina;a0ossoro;picernpb,racanau;oao pessoa,uazeiro do norte; south america s4ast south a6;mpina grande,ucaia;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","s"],"Glace_Bay":["true¦a0cape breton,glace_bay;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Goose_Bay":["true¦a0goose_bay,labrador,npt;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Grand_Turk":["true¦america6e2grand_turk,kmt,t0;c0urks and caicos;!a;astern0st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Guatemala":["true¦america,c2g0mixco,villa nueva;t0uatemala;!m;entral standard time,st","Central","n"],"Guayaquil":["true¦ameri6cuen6ec2guayaquil,ma1q0santo domingo de los colorados;mt,uito;chala,nta;!t,u0;!ador0;! 0;mainland,time;ca","Ecuador","n"],"Guyana":["true¦america,g0;eorgetown,uy1y0;!t;!ana0;! time","Guyana","n"],"Halifax":["true¦a2canada/atlantic,halifax,n1p0;ei,rince edward island;ew brunswick,ova scotia;dt,merica,st,t0;!lantic0;! 0;ns,standard t0t0;ime","Atlantic","n","usa"],"Havana":["true¦aEbBc3diez de octubre,guantanDh1las tunas,pinar del rio,sant0;a clara,iago de cuba;avana,cu,e0n0olguin;cu;amaguey,i5u0;!b0;!a0;! 0;standard t0t0;ime;e0udad camilo cie0;nfueg1;ay1oyer0;os;amo;merica,rroyo naranjo","Cuba","n","cuba"],"Hermosillo":["true¦america,ciudad obregon,h0mexican pacific standard time,nogales,sonora;ermosillo,npmx","Mexican Pacific","n"],"Indiana/Indianapolis":["true¦america2crawford,dadukmn,eastern in,i4p0star1us/east-indiana;erry,i0ulaski;ke;!/0;fort_wayne,i0;ndiana0;!polis","Eastern","n","usa"],"Indiana/Knox":["true¦america1c0indiana,knox,us/indiana-starke;entral standard time,st;!/knox_in","Central","n","usa"],"Indiana/Marengo":["true¦america,e0indiana,marengo;astern standard time,st","Eastern","n","usa"],"Indiana/Petersburg":["true¦america,e0indiana,petersburg;astern standard time,st","Eastern","n","usa"],"Indiana/Tell_City":["true¦america,c0indiana,tell_city;entral standard time,st","Central","n","usa"],"Indiana/Vevay":["true¦america,e0indiana,vevay;astern standard time,st","Eastern","n","usa"],"Indiana/Vincennes":["true¦america,e0indiana,vincennes;astern standard time,st","Eastern","n","usa"],"Indiana/Winamac":["true¦america,e0indiana,winamac;astern standard time,st","Eastern","n","usa"],"Inuvik":["true¦america4inuvik,m0pddt;ountain0st,t;! 0;standard t0t0;ime;! mountain","Mountain","n","usa"],"Iqaluit":["true¦america4e0iqaluit;astern0ddt,st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Jamaica":["true¦amer4e3j1k0new k0;ingston;am0m;!a1;astern standard time,st;ica","Eastern","n"],"Juneau":["true¦a0juneau;k5laska0merica;! 1n0;! s1;juneau area,s0t1;tandard t0;ime;st,t","Alaska","n","usa"],"Kentucky/Louisville":["true¦america0eastern 4k3l2wayne;!/0;k1l0;ouisville;entuc0;ky","Eastern","n","usa"],"Kentucky/Monticello":["true¦america,e0kentucky,monticello;astern standard time,st","Eastern","n","usa"],"La_Paz":["true¦america,bo3cochabamba,la1oruro,s0;anta cruz de la sierra,ucre; 0_0;paz;!l0t;!ivia0;! time","Bolivia","s"],"Lima":["true¦aDc9huancCi8juliaFlima,p2sant1t0;acna,rujillo;a anita   los ficus,iago de sur8;e0iura,ucallB;!r0t;!u0;! 0;standard t0t0;ime;ca,quitos;allao,hi1us0;co;cl0mbote;ayo;meri1requi0;pa;ca","Peru","s"],"Los_Angeles":["true¦a04ba02cZfVgarden grove,hSirviRlLmoInHoEp8r7s0tacoma,us/06washington state;a1eattle,f,p0tocktTunrise manor;okaPringH;cramenHn0; 1ta 0;aTclariV;bernardiRdiego,fran0jo4;!cisco;ancho cucamonga,ePiver7;a0dt,ort7st,t;cific1radi0;se;! 0;standard t0t0;ime;ak1cean0regFxnard;side;land;evada,orth las8;des1reno0; valley;to;a3o0;ng6s0; 0_0;angeles;!s0; vegas;ne;enders1untington0; beach;on;onta2re0;mont,s0;no;na;ali1hula vis0;ta;!f1;ja calif0kersfield;ornia;merica0naheim;! 0;pacific","Pacific","n","usa"],"Maceio":["true¦a6br1e0maceio; south america s3ast south am6;asilia0t;! 0;s0t1;tandard t0;ime;lagoassergipe,m0racaju;erica","Brasilia","n"],"Managua":["true¦america,c3man2ni0;!c0;!ar0;agua;entral standard time,st","Central","n"],"Manaus":["true¦am3brazil/we5c0manaus;entral brazil0uiaba;!ian0;! s4;azon0erica,t;! 1as ea0;st;s0t1;tandard t0;ime","Amazon","s"],"Martinique":["true¦a1ffmt,m0;artinique,q,tq;merica,st,tlantic standard time","Atlantic","n"],"Matamoros":["true¦america5c1heroica m0m0nuevo laredo,reynosa;atamoros;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Mazatlan":["true¦america,cAh8l7m0tep4;azatlAexic1ountain 0;mexico,standard time (mexico);an pacific 2o0; pacif0/bajasur;ic;standard t0t0;ime;a paz,os mochis;np0p0;mx;hihuahua,uliac0;an","Mexican Pacific","n","mex"],"Menominee":["true¦america4c0menominee;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Merida":["true¦america,c2guadalajara,m0;e0onterrey;rida,xico city;ampeche4entral 0st;mexic0standard 2;an,o0;! 0;time;!yucatán","Central Mexico","n","mex"],"Metlakatla":["true¦a0metlakatla;k5laska0merica;! 1n0;! s1;annette island,s0t1;tandard t0;ime;st,t","Alaska","n","usa"],"Mexico_City":["true¦a0Kb0IcYduran0Becatepec de morel09guThSiQjalis0Mleon de los alda05mInHoGpEqDs9t4uruap03v2x1yucat03za0;catec0Bpop02;alapa de enriqu0Pi0Kochimil0K;e0illahermosa;nustiano carranza,racruz;a3e7la1o0uxt02;lu0Hna01;huac,l0quepaque,xca00;nepantZpV;bas0Dmaulip03pachuY;an0oledad de graciano sanch0H; luis potosi,t0;a maria chimal0iago de q1;huP;ueretaG;achuca de soIoza rica de7ue0;bRrto vallar03;axa06jo de agua;aucalpan07icolas romeCuevo le06;agdalena contrerTex4i2o0x;nterrey,rel0;ia,os;choGguel0; h5;!ico0;! 0/general,_0;city;rap5xtapaluWzta0;cTpalapa;idalI;a1erre0stavo adolfo made0;ro;dalajara,naj0;ua0;to;ampeche,eEhiBiudad 9o2st,u0wt;au0ernavaN;htemoc,titlan izcalli;a4l2yo0;ac0;an;i0onia del valle;ma;cEhui0tzacoalc2;la;lopez mate0nezahualcoyotl;os;ap1lpancin0;go;as;laya,ntral 0;mexic0standard 2;an,o0;! 0;time;enito7uenavis0;ta;capulco4guascalientes,lvaro obreg3meri2zcapotz0;al0;co;ca;on; de0; juar0;ez","Central Mexico","n","mex"],"Miquelon":["true¦america,hBmAp8s0;aint pierre2pm,t pierre 0;& miquelon 0a5;s2t3;! 0;a2s0;tandard t0;ime;nd1;ierre0m; m0;iquelon;npm,pm","St. Pierre & Miquelon","n","usa"],"Moncton":["true¦a0hepm,moncton,new brunswick;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Monterrey":["true¦ameriDc7g5m3sa1t0victoria de durango;ampico,orreon;ltillo,n0; nicolas de los garza,ta catarina;exico city,on0;clova,terrey;omez palacio,uadal0;ajara,upe;entral 1iudad 0st;apoda4general escobedo,madero,victoria;mexic0standard 2;an,o0;! 0;time;ca","Central Mexico","n","mex"],"Montevideo":["true¦america,montevideo5u0;r1y0;!st,t;uguay0y;! 0;s1t2;! s0;tandard t0;ime","Uruguay","s"],"New_York":["true¦a0Rb0Oc0Hd0Ge0Bf07g05hialeah,i02j00kZlexingtonYmUnMoKpIquHrDsAt7u5v3w0yonkers;ashington1est 0inston salem,orcD;raEvirgin04;! dc;ermont,irginia0;! beach;nited states,s0;!/0Ma;a0enne1he bronx,oleD;llaha0mpa;ssee;outh 1t0; petersburg,aten3;bo0CcC;a2hode1ichmo06och0;ester; is03;lei2;eens,intana roo;ennsylvanNhiladelphNittsbur0rovidence;gh;hio,rlan0;do;ew3or1y0;!c;folk,th c0;aroliE; 1_yo0a0port news;rk;hampshiXje8york0;! staT;a1eads,i0;ami,chig1;ine,nhatt0ryMssachusetts;an;! fayetO;entucky,nox9;acks2e0;rsey;ndia1r0;on5;na;eorg0reensboro;ia;ayette1l0ort lauderda2;!orida;vil0;le;ast0dt,st,t; flatbush,ern0;! 0;standard t0t0;ime;elawa9urham;ape coral,h3incinnati,leve1o0;lumbus,nnecticut;la0;nd;a0esapeake;rlot0ttanooga;te;altimo1o0rooklyn,uffalo;st4;re;kr2merica0tlanta;! 0;eastern;on","Eastern","n","usa"],"Nipigon":["true¦america4e0nipigon;astern0st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Nome":["true¦a0no5;k5laska0merica;! 1n0;! s1;s0ti1west;tandard ti0;me;st,t","Alaska","n","usa"],"Noronha":["true¦a4brazil/den3f0n3;ernando de noronha 0nt;standard t0t0;ime;oronha;merica,tlantic islands","Fernando de Noronha","n"],"North_Dakota/Beulah":["true¦america,beulah,c0north_dakota;entral standard time,st","Central","n","usa"],"North_Dakota/Center":["true¦america,c1merc0north_dakota,oliv0;er;ent0st;er,ral standard time","Central","n","usa"],"North_Dakota/New_Salem":["true¦america,c1n0;ew_salem,orth_dakota;entral standard time,st","Central","n","usa"],"Nuuk":["true¦america3g1nuuk,wg0;st,t;l,r0;eenland,l;!/godthab","West Greenland","n","green"],"Ojinaga":["true¦america5c4m0ojinaga;ountain0st,t;! 0;standard t0t0;ime;hihuahua,iudad juarez;! mountain","Mountain","n","usa"],"Panama":["true¦a3coral h,e2pa0san miguelito;!n0;!ama;astern standard time,st;merica0t3;!/0;at1c0;aym1oral_harbour;ikok0;an","Eastern","n"],"Pangnirtung":["true¦a4e0pangnirtung;astern0st,t;! 0;standard t0t0;ime;ddt,merica0;! eastern","Eastern","n","usa"],"Paramaribo":["true¦america,paramaribo,s0;r2ur0;!iname0;! time;!t","Suriname","n"],"Phoenix":["true¦aAc8g6idaho,m4n3phoenix,s2t1u0wyoming;s/arAtah;empe,ucsC;cottsd4inaloa,onora;ayarit,ew mexico;aryv2esa,o0st,t,wt;nta6untain standard time;ilbert,lend0;ale;h0olorado;andler,ihuahua;merica2r0;izo0;na;!/crest0;on","Mountain","n"],"Port-au-Prince":["true¦americaBcAe6h4p0;etionville,ort0; 0-au-1;au 0de paix;prince;aiti,t0;!i;astern0st,t;! 0;standard t0t0;ime;arrefour,roix des bouquets;! eastern","Eastern","n","usa"],"Porto_Velho":["true¦am5c2porto0rondônia; 0_0;velho;entral brazil0uiaba;!ian0;! s3;azon0erica,t;! 0;s0t1;tandard t0;ime","Amazon","n"],"Puerto_Rico":["true¦a4bayamBp0;r2uerto0; 0_0;rico;!i;merica0st,tlantic standard time;!/0;a5blanc-sabl4curacao,dominica,g3kralendijk,lower_princes,m2port_of_spa1st_0torto7virg1;barthelemy,kitts,lucia,thomas,vincent;in;arigot,ontserrat;renada,uadeloupe;on;n0ruba;guil0tigua;la","Atlantic","n"],"Punta_Arenas":["true¦america,c0punta_arenas,region of magallanes;hile standard time,lt","Chile","s"],"Rainy_River":["true¦america4c0ft frances,rainy_river;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Rankin_Inlet":["true¦america4c0rankin_inlet;ddt,entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Recife":["true¦a9br4caruaru,e3jaboatao2olinda,p0recife;aulista,e0;rnambuco,trolina;! dos guararapes; south america s3ast south a5;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","n"],"Regina":["true¦america,c2regina,s0;askat0k;c1oon;anada/saskatc0entral standard time,st;hewan","Central","n"],"Resolute":["true¦america4c0resolute;entral0st,t;! 0;standard t0t0;ime;! central","Central","n","usa"],"Rio_Branco":["true¦a2brazil/4rio0; 0_0;branco;c2merica0;!/porto_0;acre;re0t;! 0;standard t0t0;ime","Acre","s"],"Santarem":["true¦a6br1e0pará west,santarem; south america s3ast south a5;asilia0t;! 0;s0t1;tandard t0;ime;merica","Brasilia","n"],"Santiago":["true¦aAc4iquique,la pintana,puente alto,rancagua,san3t1v0;alparaiso,ina del mar;alca0emuco;!huano; bernardo,tiago;h1l0oncepcion;!st,t;ile0l;! 0/continental;standard t0t0;ime;mer0ntofagasta,r0;ica","Chile","s","chile"],"Santo_Domingo":["true¦a9bella vista,do7la romana,s0;an0dmt; pedro de macoris,t0;iago de los caballeros,o0; domingo0_domingo;! 0;e0oe0;ste;!m0;!inican republic;merica,st,tlantic standard time","Atlantic","n"],"Sao_Paulo":["true¦a19b0Wc0Pd0Me0Kf0Ig0Dhortol0Ci08j05l03mZnXosasco,pNriHs4ta3uber2v0;i0olta redon1D;amao,la velha,tor19;a0Pl09;boao da ser03uba13;a2e1oroPu0;maNzano;r00te lago0O;nt6o0; 0_p1;bernardo do campo,carl05jo1leopolMp0vicF;aulo;ao de meriti,se0;! do0; rio p8s camp01;a 1o0; andDs;barbara d'oes0Qluz0Umar0U;beirao 3o0;! 0;cla0de janei0g6ver7;ro;das nev08p0;reto;asso fun8e7iraci6lanaltGo4r0;aia g1esidente prud0;en0H;ran0;de;nta grossa,rto aleg0;re;caX;lotZtro0G;do;iteroi,ov0;aKo hamburgo;a1o0;gi das cruzTntes clarE;ri0ua;l08n7;imei3ondr0;ina;acarei,oinville,u0;iz de fo0ndi9;ra;ndaia2patin1ta0;bor6pevi,quaquece1;ga;tuG;andY;o3ravat2uaru0;ja,lh0;os;ai;iSvernador valadarC;loria5oz do0ran2; iguacu; south america sHast south ameri0mbu;ca;i0uque de caxi8;adema,vi0;noN;a1o0uriti2;ntagem,tK;choeiro de itapemirDmp1no3rapicui0scavel,xias do sul;ba;in1os dos goytacaz0;es;as;aBe7lumenau,r0;!a0st,t;!silia1zil0;!/east;! 0;s0t1;tandard t0;ime;l1t0;im;ford roxo,o horizon0;te;rueri,uru;lvora4merica3na2parecida de goi0;an0;ia;polis;!na;da","Brasilia","s"],"Scoresbysund":["true¦america,e2greenland eastern,h0ittoqqortoormiit,scoresbysund;e0neg;eg,g;ast greenland1g0;st,t;! 0;standard t0t0;ime","East Greenland","n","eu0"],"Sitka":["true¦a0sitka;k6laska0merica;! 1n0;! st2;s0t2;itka area,t0;andard t0;ime;st,t","Alaska","n","usa"],"St_Johns":["true¦america,canada/newfoundland,h5n0st_johns;d3ewfoundland0st,t;! 0;labrador,standard t0t0;ime;dt,t;e0n0tn;tn","Newfoundland","n","usa"],"Swift_Current":["true¦america,c0swift_current;entral standard time,st","Central","n"],"Tegucigalpa":["true¦america,c2h0san pedro sula,tegucigalpa;n0onduras;!d;entral standard time,st","Central","n"],"Thule":["true¦a0pituffik,thule;merica,st,t0;!lantic0;! 0;standard t0t0;ime","Atlantic","n","usa"],"Thunder_Bay":["true¦america6e2thunder0; 0_0;bay;astern0st,t;! 0;standard t0t0;ime;! eastern","Eastern","n","usa"],"Tijuana":["true¦america7baja california,e9h5mexic4p0tijuana;acific0st,t;! 0;standard t0t0;ime;ali,o/bajanorte;e0n0;nomx;! pacific,/0;e0santa_isabel;nsenada","Pacific","n","usa"],"Toronto":["true¦americaGbEcaBe7gatineIhamilFkitchener,l4m3nepe2o0quebec,richmond hill,toronto,vaugh2windsor;n5sh0tt0;awa;an;arkham,ississauga,oF;avFon0;don on0gueuil;tario;astern0st,t;! 0;standard t0t0;ime;!n0;!ada0;!/7;arrie,ramp0;ton;! 4/0;mo1nass0;au;ntre0;al;eastern","Eastern","n","usa"],"Vancouver":["true¦america7b5canada/8ladn4okanagan,p1surrey,v0yukon;ancouv3ictor5;acific0st,t;! 0;bc,standard time;er;ritish columb0urnaby;ia;! 0;pacific","Pacific","n","usa"],"Whitehorse":["true¦america,canada/yukon,m0whitehorse,yst;ountain standard time,st","Mountain","n"],"Winnipeg":["true¦america6c2m1w0;est m0innipeg;anitoba;anada/4entral0st,t;! 0;standard t0t0;ime;! 0;central","Central","n","usa"],"Yakutat":["true¦a0y4;k6laska0merica;! 1n0;! s2;s1t2y0;akutat;tandard t0;ime;st,t","Alaska","n","usa"],"Yellowknife":["true¦america4m0yellowknife;ountain0st,t;! 0;standard t0t0;ime;! mountain","Mountain","n","usa"]},"Antarctica":{"Casey":["true¦antarctica,cas0;ey,t","Casey","s","ant"],"Davis":["true¦a1dav0;is,t;ntarctica,q,ta","Davis","s"],"Macquarie":["true¦a2canberra,eastern australia6m0sydney;acquarie0elbourne;! island;e4ntarctica,us0; east0tralia eastern;!ern0;! standard0; time;st,t","Eastern Australia","s","aus"],"Mawson":["true¦antarctica,maw0;son,t","Mawson","s"],"Rothera":["true¦a1b0city of b0rothera;uenos aires;ntarctica1r0;gentina,st,t;!/palmer","Argentina","s"],"Troll":["true¦antarctica,g2troll0;! 0;research station,t1;mt,reenwich mean t0;ime","Troll","s","troll"],"Vostok":["true¦antarctica,vost0;!ok","Vostok","s"]},"Asia":{"Almaty":["true¦a6central asia,east kazakhstan time,k2nur sultan,p1s0taraz,ust kamenogorsk;emey,hymkent;avlodar,etropavl;a0z;ragandy,z0;!akhstan0;! eastern;lm1s0;ia,tana;a0t; ata,ty","East Kazakhstan","n"],"Amman":["true¦a2eet,irbid,jo0russeifa,wadi as sir,zarqa;!r0;!d1;mm0sia;an","Eastern European","n","jord"],"Anadyr":["true¦a0petropavlovsk kamchatsky;na0sia;dyr0t;! time","Anadyr","n"],"Aqtau":["true¦a1kazakhstan western,mangghystaū/mankis3tashkent,west 0;asia,kazakhstan5;lm2q1s0;hgabat,ia;tau;a0t; ata,-ata0; time","West Kazakhstan","n"],"Aqtobe":["true¦a1kazakhstan western,tashkent,west 0;asia,kazakhstan5;kto5lm2qt1s0;hgabat,ia;o3ö3;a0t; ata,-ata0; time;be","West Kazakhstan","n"],"Ashgabat":["true¦as4t0;km,m2urkmen0;a4istan0;! time;!st,t;hga1ia0;!/ashkhabad;bat","Turkmenistan","n"],"Atyrau":["true¦a1gur'yev,kazakhstan western,tashkent,west 0;asia,kazakhstan6;lm3s2t0;irau,yra0;u,ū;hgabat,ia;a0t; ata,-ata0; time","West Kazakhstan","n"],"Baghdad":["true¦a6ba5dihok,erbil,i3k2mosul,na1r0;amadi,iyadh;jaf,sirC;arbala,irkuk,uwait;q,r0;aq,q;ghdad,sr9;bu ghurayb,d diw6l 5rab1s0; sulaym5ia,t;!i0;a0c;!n0;! time;amar2basrah al qadim2falluj2hill2kut,mawsil al jadid2;an0;iy0;ah","Arabian","n"],"Baku":["true¦a0baku,ganja,lankaran,sumqayit;sia,z0;!e0t;!rbaijan0;! time","Azerbaijan","n"],"Bangkok":["true¦asiaAbangkok,ch7h5i3jakarta,mueang nontha8na2pak kret,s0udon thani;amut prakan,e0i racha,outh east0; asia;khon ratchasima,m di9;ct,ndochina0;! time;a0ue;iphong,noi,t y2;iang m1on 0;buri;ai;!/0;phnom_pe0vientiane;nh","Indochina","n"],"Barnaul":["true¦a3b2kra0north a3;snoyarsk0t;! time;arnaul,iysk;sia","Krasnoyarsk","n"],"Beirut":["true¦asia,bei3e2l0ra's bay3;b0ebanon;!n;astern european time,et,urope eastern;rut","Eastern European","n","leb"],"Bishkek":["true¦asia,bishkek,k0osh;g2yrgy0;stan,zstan0;! time;!t,z","Kyrgyzstan","n"],"Brunei":["true¦asia,b0;dt,n2r0;n,unei0;! darussalam time;!t","Brunei Darussalam","n"],"Chita":["true¦asia,chita,yak0;t,utsk0;! time","Yakutsk","n"],"Choibalsan":["true¦as2choibalsan,dornodsükhbaatar,mongol2ula0;anbaatar0t;! time;ia","Ulaanbaatar","n"],"Colombo":["true¦as6c4dehiwala mount lavin6i2kolkata,lk1m0new delhi,sri lanka;oratuwa,umb4;!a;ndia0st;! time,n;henn0olombo;ai;ia","India","n"],"Damascus":["true¦a4d3eet,h2latak5sy0;!r0;!ia;am3oms;amascus,eir ez zor;leppo,r raqq1s0;ia;ah","Eastern European","n","syr"],"Dhaka":["true¦asiaGbDcBd9jess8khul7mymensingh,na4pa3ra2s1t0;angail,ungi;aid8hib4ylhet;jshahi,ng7;b3ltan,r naogaon;gar5r0t3;ayan0singdi;ganj;na;ore;haka,inaj0;pur;hattogram,o0;milla,x's bazar;a0d,gd,ogra,st;gerhat,ngladesh0rishal;! time;!/dacca","Bangladesh","n"],"Dili":["true¦asia,dili,east timor1tl0;!s,t;! time","East Timor","s"],"Dubai":["true¦a5dubai,g3mus1om0ras al khaim2sharj2;!an,n;aff0c5;ah;st,ulf0;! time;bu dhabi,jm2rabi2sia0;!/musc0;at;an","Gulf","n"],"Dushanbe":["true¦asia,dushanbe,t0;ajikistan1j0;!k,t;! time","Tajikistan","n"],"Famagusta":["true¦asia,e0famagusta,northern cyprus;astern european time,et,urope eastern","Eastern European","n","eu3"],"Gaza":["true¦asia,eet,gaza2p0;alestine,s0;!e;! strip","Eastern European","n","pal"],"Hebron":["true¦asia,e0hebron,west bank;ast jerusalem,et","Eastern European","n","pal"],"Ho_Chi_Minh":["true¦asia7bien hoa,can tho,da 5ho3nha tr6qui nh8rach gia,sa dec,thi xa phu my,v0;ietnam1n0ung tau;!m;! south; chi 0_chi_0;minh;lat,n0;ang;!/saig0;on","Indochina","n"],"Hong_Kong":["true¦asia,h0kowloon,tsuen wan;k3ong0; kong1_k0k0;ong;! time;!g,st,t","Hong Kong","n"],"Hovd":["true¦as4bayan-ölgiigovi-altaihovduvszavkhan,hov2west0; 0ern 0;mongol2;d0t;! time;ia","Hovd","n"],"Irkutsk":["true¦a2brat3irk0north asia east,ulan ude;t,utsk0;! time;ngar0sia;sk","Irkutsk","n"],"Jakarta":["true¦aZbTcRdepQiNjKkediri,lJmGpArengasdengklQs4t2w0yogyakM;est0ib; indoneXern indonesia time;a0egal;n4sikmal3;ema4itubondo,outh tan3u0;kabumi,medaSra0;b0kF;aya;ge0;raO;a4e1robolinggo,urw0;akAokerto;ka1ma0rcut;laKtangsiantar;long2nbaru;daIl3mulaIruI;a1ed0;an;diun,laF;embaE;a0ember;k0mbi,vasumatra;arta;d1ndonesia0;! western;!n;ok;i0urug;ampea,bino5leungsir,mahi,putat,rebon;a1e0injai,ogor;kasi,ngkulu;nd0tam;a0u1; aceh,r lampu0;ng;sia","Western Indonesia","s"],"Jayapura":["true¦a2east1indonesia eastern,jayapura,m0new guinea,wit;alukus,oluccas; indones1ern indonesia time;mbon,s0;ia","Eastern Indonesia","s"],"Jerusalem":["true¦as7beersheba,haifa,i2j0petah tiqwa,rishon leziyyon,tel 9west je1;e0mt;rusalem;d3l,s0;r0t;!ael0;! time;dt,t;hdod,ia0;!/tel_0;aviv","Israel","n","isr"],"Kabul":["true¦a1herat,jalalabad,ka0mazar e sharif;bul,ndahar;f0sia;!g0t;!hanistan0;! time","Afghanistan","n"],"Kamchatka":["true¦a2kamchatka,pet0;ropavlovsk0t; kamchatsky,-kamchatski time;nadyr,sia","Petropavlovsk-Kamchatski","n"],"Karachi":["true¦asia,bLchiniKdera ghaziIfaisalHgujraGhyderHislamHjhang sadr,kElaDm8nawabshah,okaBp4quetta,ra3s0;a1h0ialkJukkN;ahkIekhupu9;ddiqEhiwal,rgodha;him yarEwalpindi;ak1eshawar,k0;!t;!istan0;! time;a3i1u0;lt9zaffar7;ngo0rpur khas;ra;lir cantonment,rd6;hore,rkana;a0otli;moke,rachi,s8;n5t;abad; kh0;an;ot;a1himber,ure0;wala;hawalp0ttagram;ur","Pakistan","n"],"Kathmandu":["true¦asia3biratnagar,kath4n1p0;atan,okhara;epal,p0;!l,t;!/kat0;mandu","Nepal","n"],"Khandyga":["true¦asia,khandyga,yak0;t,utsk0;! time","Yakutsk","n"],"Kolkata":["true¦0:3D;1:3L;2:2D;3:3M;4:3J;a35b2Dc24d1We1Uf1Sg1Fh1Ci18j13k0Pl0Km0Cn05odis3KpVquthbull3DrNsFt9u8v5warang2Myamun1P;a6el1Ui5;jayawa2Vsakha0HzianagC;doda2Orana11;daip0jja23lhasn1ttar pradesh;a8eXh7iru5umk0;chirap0Mnelve2p5vottiy0;a39p0;ane,iruvananthapur0Noothuku2Yriss0;mb5njo1X;ar0L;aBecunder4h9i8lst,o7r1Fu5;jan37r5;at,endr1C;l2Znip2N;k3liguKngrau2rJ;ahj1Zi5ri2Oya0L;mo1Mvaji07;har1Xlem,mbh24ng2t04ug0Y;a6e0Eoh5;iItak;ebare2i9j7m5nc1Gtl0Aurke37;ag5g5p0;und08;a5kot;hmund26sth2A;ch0p0;a9imp8roddat0u5;ducher23n5rn17;a5e;sa;ri;li,n7rbha6t5;ia2Vna;ni;chku2Ti5;ha2Gp21;a7e6izam4o5;i1Vwrang2B;l0Sw del0Y;di2Kg7i0Ejaf2Fn5re2Oshik,vi mumb15;ded,g5;i,loi j1V;ercoil,p0;a8eerut,irz25o7u5yso0Y;lugu,mb10rwa1Izaffar5;n1p0;nghyr,rad4;chili7d6harasht1Fleg07n5thu1Fu;ga0Iip0;hya,ur0V;patnG;a7u5;cknow,dhia5;na;l bahadur5t0; n1;aDhaBo8u5;kat6lt5rno1P;a2i;pal2;l5rWta,zhikode;h1Nka1Kl5;am;nd5ragp0;wa;kina13l8marOnp0r5shmir,tih3;i6na5ol ba18;l,tV;mn1;lakuric03y11;a6han5odNunagadh;si;b0Rip0l6m5;mu,n1shedp0;andh3gGna;chalkaranji,mph0In5st;!d5;!ia5o00;! time,n;a6is3ospet,u5;b2g2;o0Hp0ridw3;aChazi4o9reater noi0Mu6wali5y04;or;jar0OlbarQnt0rg6wa5;ha12;aon;rak6sa5;ba;hp0;juw8n5ya;dh6g5;an1;in1;aka;ar5iroz4;id4rukh4;l5taw0M;loF;aAe8h6indigul,ombOurg5;!ap0;anb0Uul5;ia;hra dun,l5was;hi;rbhan5vange8;ga;a09h8o5uttack;ch6imbato5;re;in;a6enn5;ai;nd5pL;a5i0C;!nn1;aNeKhBi9or7rahm04u5;landshahr,rh5;anp0;iv2;li;d3har sharif,jZkan07l5;asp0imoC;aAi7op6u5;baneshw3sav5;al;l6wan5;di,i;ai,wa6;g6ratp0tpa5vn1yand3;ra;alp0;l5ngaluru;gaum,la5;ry;hAli,r6thin5;da;a6ddham5eilly;an;n1s5;at;a6rai5;gh;ramp0;gQhmLizawl,jmKkoRlHmDnantCrrBs6urang4va5;di;ans8ia5;!/ca5;lcut5;ta;ol;ah;ap0;arnath,batt0r5;ava5its3o9;ti;ur;appuz6i5lah4w3;garh;ha;er;adn1ed4;ab5;ad;ag3;ar;arta5ra;la","India","n"],"Krasnoyarsk":["true¦a2kra0north a2;snoyarsk0t;! time;sia","Krasnoyarsk","n"],"Kuala_Lumpur":["true¦aHbukit mertajGgeorge town,ipoh,johor bahFk8m4petali3s0taipiE;e1hah alFu0;ba1ngai petani;paBremb7;ng jaya;ala1y0;!s,t;cca,ysia0;! time;ampung baru suba5la5ota bha6ua0;la1nt0;an; 0_l1;l0terengganu;umpur;ng;ru;am;lor setar,sia","Malaysia","s"],"Kuching":["true¦asia,k4m2s0tawau;a0ibu;bahsarawak,ndakan;alaysia0iri,yt;! time;ota kinabalu,uching","Malaysia","n"],"Macau":["true¦asia6beiji5c2hong ko5m0urumqi;ac0o;!au;h0st;ina0ongqi1;! time;ng;!/macao","China","n"],"Magadan":["true¦asia,mag0;adan0t;! time","Magadan","n"],"Makassar":["true¦asiaBba8c5denpa4indonesia central,k3l2ma1palu,s0wita;amarinda,ulawesi;kas2nado,taram;abuan bajo,oa jan7;endari,up8;sar;e0ity of bal3;lebesbalinusa,ntral indonesia0;! time;l0njarmasin;ikpap0;an;!/ujung_pand0;ang","Central Indonesia","s"],"Manila":["true¦a04bWcRdaPgeneral santOiMlJmCnaBoAp4quezIsan1ta0zamboanga;clobZguig,rlac,ytE; 1t0;a ro2ol;fernando,jose del monte,pab02;a3h1uerto prince0;sa;!ilippine0l,st,t; time,s;gadiRnalanoy,s0;ay,ig;longapo,rmoc;ga,votQ;a0eycauayN;balacat,gugpo poblaci4kati,l3n0;da1ila,silingLtamp0;ay;luyong,ue;ingDol6;on;a1egaspi,i0ucena;bertad,pa;pu lapu,s p4;l0mus;igCoiI;os;smar0v5;inB;a0ebu,otabato;b1gayan de oro,in5l0;amba,ooc6;anatu5uy0;ao;a4inan2u0;d0tu2;ta;!gon0;an;co1guio,tang0;as;lod,or;n0sia;geles,tipo0;lo","Philippine","n"],"Nicosia":["true¦a5cy3e0n2;astern european time,et,urope0; eastern,/n0;ico2;!p0;!rus;sia","Eastern European","n","eu3"],"Novokuznetsk":["true¦a5k2no0prokop'yev1;rth a4vokuznet0;sk;emerovo,ra0;snoyarsk0t;! time;sia","Krasnoyarsk","n"],"Novosibirsk":["true¦as3no0siber3;rth central as2v0;osibirsk0t;! time;ia","Novosibirsk","n"],"Omsk":["true¦asia,oms0;k0t;! time","Omsk","n"],"Oral":["true¦a2kazakhstan western,oral,tashkent,west 0;asia,kazakhstan0;! 4;lm1s0;hgabat,ia;a0t; ata,-ata 0;time","West Kazakhstan","n"],"Pontianak":["true¦asia,b2indonesia western,pontianak,tanjung pinang,w0;est0ib; b0ern indonesia time;orneo","Western Indonesia","n"],"Pyongyang":["true¦asia,chongjin,h7k4n3p2s0won8;ariw0eoul,inuiAunch'0;on;rk,yongya7;amp'o,orth korea;a1orea0p,st;!n time;eso3nggye;a1ungnam,ye0;san;e1mhu0;ng;ju","Korean","n"],"Qatar":["true¦a2doha,kuwait,qa0riyadh;!t0;!ar;r2s0;ia0t;!/bahrain; rayyan,ab0;!i0;a0c;!n0;! time","Arabian","n"],"Qostanay":["true¦a2central asia,east kazakhstan time,k0qo1;azakhstan eastern,o0;stanay;lmt,s0;ia,tana","East Kazakhstan","n"],"Qyzylorda":["true¦a4k1qy2tashkent,west 0;asia,kazakhstan7;azakhstan western,y0zyl-1;zyl0;orda;lm1s0;hgabat,ia;a0t; ata,-ata0; time","West Kazakhstan","n"],"Riyadh":["true¦a9burayd8dammam,ha7jedd8k6me5najran,riyadh,s4ta3y0;anbu,e0;!m0;!en;'if,buk;ultan3yot;cca,dina;hamis mush6uw6;'il,far al batin;ah;bha,l 8ntarctica/syowa,rab4s0;ia0t;!/0;aden,kuw0;ait;!i0;a0c;!n0;! time;hufuf,jubayl,kharj,mubarraz","Arabian","n"],"Sakhalin":["true¦asia,sak0yuzhno sakhalinsk;halin0t;! 0;island,time","Sakhalin","n"],"Samarkand":["true¦asia,bukhara,nukus,qarshi,samarkand,uz0;bekistan0t;! 0;time,west","Uzbekistan","n"],"Seoul":["true¦aPbuMchHdaeGgChwaseoRiBjeAk7m6pohaFrok,s2u1wonJy0;aCeosu;ijeongbuQlsL;e1outh korea,u0;nEwH;joAo0;ngnamMul;asGokpo;imhae,or0r,st,wangmyo7;!ea0;!n time;ju,on8;cCksBn6;angneu2oyaEu1wa0;ng5;mi,ns8riD;ng;gu,je4;angw3eon2in1un0;che2;ju;an,gju7;on;c1s0;an;heon3;n0sia;san1ya0;ng0; si","Korean","n"],"Shanghai":["true¦0:3J;1:36;2:34;3:37;4:3D;a3Cb31c2Nd2He30f2Cg26h1Qji1Ek1Bl0Ym0Wn0Tordos,p0Pq0Lrizh10s08t01u3FwSxLyEz5;aoCh6i5ouc3unyi;bo,go0;a7en6ouk2u5; c3h31maWzh2;g2Vj1Izh2;b1Vng5o3E;jiakou5zh2;! shi xuanhua qu;ya0z27;an9i7u5;ci,e18n5;c3fu;b4c9n5ya0;cZgk2;c3g5ji,t2Q;j17qu1sh16zh2;i6uc5;ha0;a6n5uyi0;di,gt2Lh1Gi0pu,t2Lx13ya0;m17n5;!g5ni0t0Eya0;t1ya0;aBe9u5;h6so0w1Cx5zh2;i,ue;a5u;i,n;i0Hn5;sh1zh2;fang5nxi1;di1;a8i6ong5;chuans0XhDli02sh1;an5eli0;j4sh10;i6ng5;gu,sh1;an,hec1Wyu1zh2;anmi0hAi8u5;i5zh2;h5zh2;ua;c5pi0;hu1;a7en6i5uangya14;jiaz15qi,y1;gli,ya0zh0G;n6o5s0I;gu1xi0;g5t2;h1Pqiu,rKyu;i5uan1J;aFn5o14qih1Y;g5huangdH;dGh1L;an0Ting7rc,u5;ti1yang5;! H;ding0QxZ;an5eijYingbo;ch5ji0ni0to0ya0;a0o0;entoug2ianRuda5;njU;aEi8u5;anc3o6qi5;ao;he,ya0;a7jPn5upansh02;fTxia 5yi;chengguanI;n0Do5;c3y5;a0u1;i0Wn5ohek2;g5zh2;fa0;ai6un5;mi0sh1;fe0yu1;'1aAe9l4n6u5xi;jCt0U;an,c3g5i0zh2;de5li0zh2;zhE;ya0;musi,n8o5xi0;j6z5;uo;ia0;g5shG;m7xi;aGeCkt,oBu5;a6i0Dlan ergi,m5n1;en;i7ng5y4;ga0s5;hi;'1b9n1;hhot,ng ko0;bi,f7ga0ng5ze;sh5ya0;ui;ei;i7n5rb4;d1g5;u,zh2;c3k2l0F;a9u5;an6i5li;l4ya0zh2;g5k2;do0yu1zh2;nsu,opi0;en7o6u5;ji1shQx4zh2;sh1;d2g5;hua0;a6eNong5;gu1hR;d6lian5ndo0qi0to0;!g;o5uk2;nghN;angHh5n,st,t;aAen7i5n,oZuG;fe0na5;! time;g5zh2;d5zho0;e,u;ng6o5;ya0zh2;ch7de,sh6zh5;i,ou;a,u;un;zh2;a9e5;i6n5;gbu,xi;'1h5ji0;ai;i7o5yan nur;di0t2;ou;c3sh1y4;an;he0;nDsia5;!/5;ch8harb4kashg6u5;rumqi;ar;in;o5ungki0;ng5;qi0;da,qi0sh5ya0;an,un;ng","China","n"],"Singapore":["true¦asia,kuala lumpur,s0woodlands;g0ingapore;!p,t","Singapore","s"],"Srednekolymsk":["true¦asia,chokurdakh,sre0;dnekolymsk,t","Srednekolymsk","n"],"Taipei":["true¦asia,banqiao,cst,h7k5roc,t0;a1w0;!n;i0oyu1;ch2n0pei,w0;an;aohsi0eel0;ung;sinchu,ualien","Taipei","n"],"Tashkent":["true¦a3namangan,qo`q4tashkent,uz0;!b0t;!ekistan0;! east;ndij0sia;on","Uzbekistan","n"],"Tbilisi":["true¦asia,ge1kuta0tbil0;isi;!o0t;!rgia0;!n","Georgia","n"],"Tehran":["true¦aQbMgorgWhamViKkCmaBn8orumiy7pasragad branch,q4rasht,s2t1varam6yazd,za0;hedVnjV;abHehrU;a0hirRirjT;bzevar,nandEri,v3;a0om;rchak,zv0;in;eh;a0eyshabur;jaf0zar0;ab4;layer,shh3;a4erman3ho0;meyni sDrram0wy;ab0sC;ad;!shah;h1r0;aj;riz;r0sfahB;!an,dt,n,st;a2irjand,o0uk9;jnu0ruje0;rd;b3ndar abbas;b4hv3m2r1sia,zads0;hahr;ak,dabil;ol;az;ad0;an","Iran","n"],"Thimphu":["true¦asia2b0thimphu;hutan,t0;!n;!/thimbu","Bhutan","n"],"Tokyo":["true¦0:11;1:1A;2:10;a18ch16fu0Zgifu14h0Oi0Ij0FkZmTnMoKsFt9u8waka05y3;a6o3;k3no;kaic1Co3;ha2su0;maKo;ji,tsun0F;aka7o3sukuba;k5makom05y3;a2o3;hOna0ta;oro03us0Qyo;m0Jrazu0sa1tsu1;a5end00hi4o0u3;i10zu0;monose1zuo0;ita2k3ppoLsebo;ai,u06;dawa05i0Wka3sa0t0E;ya2za1;a6eyaga0Qi3umazu;i4shi3; tokyo0Inomiya ha2;ga0R;g3ha,ra0G;a3oX;no,o0sa1;a5i3orio0;na3to,yaza1;mirinkOto;chiDeb4tsu3;do,m8ya2;as0J;aBi9o7u3y6;mam5r4shi3;ro;ashi1e,ume;oto;be,c0Dfu,ri3shigaK;ya2;shiwa3takyushu;da;gosVkogawacho honmKmirenjaku,na8s5wa3;g3sa1;oe,uc07;hi01u3;g3kabe;ai;zaY;ap4dt,oetJp3st;!n;an;bara1chi4ta3wa1zu3;mi;ha5n3;omi3;ya;ra;a8i3oncho;meBr4t3;acR;a4os3;a1hi2;kaNtsu0;chi5kodate,mam3;at3;su;nohe,o3;ji;ji8ku3;i6o0s3ya2;hi2;ma;ka; sD;!sa7;i3ofu;ba,g6;geoshimo,k7mag5njo,omori,s3tsugi;ahika3ia;wa;asa1;ki;as4i3;ta;hi","Japan","n"],"Tomsk":["true¦asia,oms0tomsk;k,t","Omsk","n"],"Ulaanbaatar":["true¦asia3m1ula0;anbaatar,n 3t;n0ongolia;!g;!/ulan_0;bator","Ulaanbaatar","n"],"Ust-Nera":["true¦asia,ust-nera,vla0;divostok,t","Vladivostok","n"],"Vladivostok":["true¦asia,k1vla0;divostok,t;habarovsk0omsomolsk on amur;! vtoroy","Vladivostok","n"],"Yakutsk":["true¦asia,blagoveshchen1yak0;t,ut0;sk","Yakutsk","n"],"Yangon":["true¦asia4b3kyain seikgyi township,m0nay pyi taw,pathein,sittwe,yang5;a1eiktila,m0onywa;!r,t;ndalay,wlamyine;ago,urma;!/rango0;on","Myanmar","n"],"Yekaterinburg":["true¦asia,chelyabin7eka5k4magnitogor7nizhn3or2perm,s1tyumen,ufa,yek0zlatoust;a4t;terlitamak,urgut;e3sk;evartov3y tagil;amensk ural'skiy,urgan;teri0;nburg;sk","Yekaterinburg","n"],"Yerevan":["true¦a0caucasus,yerevan;m2rm0s1;!en0;ia;!t","Armenia","n"]},"Atlantic":{"Azores":["true¦a0hmt;tlantic,zo0;res,st,t","Azores","n","eu0"],"Bermuda":["true¦a2b0;ermuda,m0;!u;st,t0;!lantic","Atlantic","n","usa"],"Canary":["true¦atlantic,canary1europe western,las palmas de gran canaria,santa cruz de tenerife,we0;stern european,t;! islands","Western European","n","eu1"],"Cape_Verde":["true¦atlantic,c0;a1pv,v0;!t;bo verde0pe verde;! is","Cape Verde","n"],"Faroe":["true¦atlantic2f0;aroe0o,ro;! islands;!/faeroe","Western European","n","eu1"],"Madeira":["true¦atlantic,europe western,madeira1we0;stern european,t;! islands","Western European","n","eu1"],"Reykjavik":["true¦atlantic,coordinated universal3g2i0reykjavik,utc,zulu;celand,s0;!l;mt,reenwich mean0; time","Greenwich Mean","n"],"South_Georgia":["true¦atlantic,gs1s0;gs,outh georgia;!t","South Georgia","n"],"Stanley":["true¦atlantic,f0stanley;alkland1k0lk;!st,t;! island0;!s","Falkland Islands","s"]},"Australia":{"Adelaide":["true¦a2cen0south 1; 0tral 0;australia;c2delaide,ustralia0;! 0/south,n 0;central;dt,st,t","Central Australia","s","aus"],"Brisbane":["true¦a1brisbane0gold coast,logan,q4townsville;! time;e3ustralia0;!/q1n east0;!ern;ueensland;dt,st","Brisbane","s"],"Broken_Hill":["true¦a1broken_hill,cen0y3; australia standard time,tral australia;c2delaide,ustralia0;! central,/y0;ancowinna;st,t","Central Australia","s","aus"],"Darwin":["true¦a0darwin,northern territory;cst,ustralia0;!/north,n central","Australian Central","s"],"Eucla":["true¦a0cw4eucla;cw4us0; central w1tralia0;!n central western;!e0;st;dt,st,t","Australian Central Western","s"],"Hobart":["true¦a0canberra,eastern austral5hobart,king island,melbourne,sydney,t4;e8us0; east5tralia0;! 3/0n 3;currie,t0;asman0;ia;easte1;!e0;rn;st,t","Eastern Australia","s","aus"],"Lindeman":["true¦a0brisbane time,lindeman,whitsunday islands;est,ustralia0;!n eastern","Brisbane","s"],"Lord_Howe":["true¦australia3l0;h1ord howe0;! island;dt,st,t;!/lhi","Lord Howe","s","lhow"],"Melbourne":["true¦a0canberra,eastern austral4geelong,melbourne,sydney,v3;e7us0; east4tralia0;! 2/v0n 2;ictor0;ia;easte1;!e0;rn;st,t","Eastern Australia","s","aus"],"Perth":["true¦a4perth,w0; 2est0; 1ern australia0;! time;australia;ustralia1w0;dt,st,t;! weste1/west,n west0;!e0;rn","Western Australia","s"],"Sydney":["true¦a0c5eastern australia time,melbourne,new south wales,sydney,wollongong;e8u0;!s0;! east4tralia0;! 2/0n 2;act,c0nsw;anberra;easte1;!e0;rn;st,t","Eastern Australia","s","aus"]},"Etc":{"GMT":["true¦coordinated universal3etc2g0utc,zulu;mt,reenwich0;! mean1;!/greenwich; time","Greenwich Mean","n"],"UTC":["true¦coordinated universal7etc2g1u0z4;ct,n5tc;mt,reenwich mean5;!/0;u1z0;ulu;ct,n0;iversal; time","Greenwich Mean","n"]},"Europe":{"Amsterdam":["true¦a9brussels,c6e4groning7madrid,n2paris,ro1t0utrecht;he hague,ilburg;mance,t9;etherlands,l0;!d;indhov2urope0;! central;e1openhag0;en;ntral european,st,t;lmere stad,m0;s0t;terdam","Central European","n","eu2"],"Andorra":["true¦a3brussels,c1europe0madrid,paris,romance;! central;e0openhagen;ntral european,st,t;d,nd0;!orra","Central European","n","eu2"],"Astrakhan":["true¦astrakh1europe,m0russi1st petersburg,volgograd time;oscow,sk;an","Moscow","n"],"Athens":["true¦athens,e1gr0thessaloniki;!c,eece;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Belgrade":["true¦b9c7europe3madrid,n2p1romance,s0;i,lovenia,vn;aris,risti4;is,ovi sad;! central,/0;ljublja1podgorica,s0zagreb;arajevo,kopje;na;e0openhagen;ntral european,st,t;elgrade,russels","Central European","n","eu2"],"Brussels":["true¦antwerp6b3c1europe0gent,liege,madrid,paris,romance;! central;e0harleroi,openhag4;ntral european,st,t;e0mt,russels;!l0;!gium;en","Central European","n","eu2"],"Bucharest":["true¦b5c4e2gala1iasi,oradea,ploies1ro0timisoara;!mania,u;ti;astern european,et,urope0;! eastern;luj napoca,onstanta,raiova;ra0ucharest;ila,sov","Eastern European","n","eu3"],"Budapest":["true¦b6c3debrec4europe2hu0madrid,paris,romance;!n0;!gary;! central;e1openhag0;en;ntral european,st,t;russels,udapest","Central European","n","eu2"],"Busingen":["true¦b5c3de2europe1germa0madrid,paris,romance,saxo0;ny;! central,/berlin;!u;e0openhag3;ntral european,st,t;avaria,r0using1;em0ussels;en","Central European","n","eu2"],"Chisinau":["true¦chisinau,e2m0;d0oldova;!a;astern european,et,urope0;! eastern,/tiraspol","Eastern European","n","eu2"],"Copenhagen":["true¦arhus,brussels,c2d1europe0madrid,paris,romance;! central;enmark,k,nk;e0mt,openhagen;ntral european,st,t","Central European","n","eu2"],"Dublin":["true¦ace,british7cork,d6e5g4i2l0tse;isb0ond0;on;e,r0st;eland,l;mt,reenwich mean2;dinburgh,ire,urope;mt,ublin; time","British","n","eu1"],"Gibraltar":["true¦b5c3europe2gi0madrid,paris,romance;!b0;!raltar;! central;e0openhagen;ntral european,st,t;dst,russels,st","Central European","n","eu2"],"Helsinki":["true¦e3fi1helsinki,t0vantaa;ampere,urku;!n0;!land;astern european,et,spoo,urope0;! eastern,/mariehamn","Eastern European","n","eu3"],"Istanbul":["true¦aYbScQdOeKgJiHkFmBosmAs4t1u0v07zeytinburnu;eskuedWmr9;arsus,r1ur0;!kZ;!abzon,t;a3i1ultan0;beyJgazi;sIv0;as,erek;msun,n0;cakteBliurfa;aniye;a1er0uratpaH;kezefendi,sin;l0niF;atQte6;a0irikkale,onPutahP;hramanmaras,rabaglGyseS;sJzmi0;r,t;aziantep,ebze;lazig,rzurum,s1uro0;pe;en0kiC;l8yurt;eniz0iyarbakB;li;ankaEor0;lu,um;a1ur0;sa;gcil2hcelievl1likes5sak4t0;ikent,mB;er;ar;d7n4rnavutko3sia/is2ta0;seh0;ir;tanbul;ey;kara,ta0;k0l0;ya;a1iyam0;an;na,paza0;ri","Turkey","n"],"Kaliningrad":["true¦e0kaliningrad;astern european,et,urope","Eastern European","n"],"Kiev":["true¦bila tserkLcherIdGeDhorlCivano frankivHk8l7m5odessa,poltaLriv4sumy,ternopil,u2vinnyts1z0;aporizhzh0hytomyr;ya;a,kr0;!ai0;ne;a0ykolayE;ki5riu8;ut9vC;amyanske,h1iev,r0yB;emenchuk,opyv1yvyy rih;ark9erson,mel0;nytskyy;ivka;astern european,et,urope0;! eastern,/simfero0;pol;nipro,onet0;sk;kasy,ni0;h0vtsi;iv;va","Eastern European","n","eu3"],"Kirov":["true¦europe,kirov,m0russian,st petersburg,volgograd time;oscow,sk","Moscow","n"],"Lisbon":["true¦amadora,europe5lisbon,p2we0;st0t;! europe,ern european;ort0rt,t;o,ugal0;! mainland;! western","Western European","n","eu1"],"London":["true¦a0Ob0Ac07d03eXgThRiOj00kingston upon hull,lJmHnBoxSp9reading,s1w0yF;arwick0Aig00olverha7;heffield,o3t2u1w0;an4iH;ffolk,nderland,rr0IsYttL;afNoke on tre0C;meZuth0;a1end on 0;sea;mptG;ly0orts0restF;mouth;ew4o0;r0ttinghamT;th0wC; y0amptonR;orkV;castle upon tyne,port;ancheQi0;dlan4lton keynes;ancaRdn,e2i1o0ut5;nd4;ncolnPsb3verW;e0icesterJ;ds;psw1slingt0;on;ich;ampJert0;fordI;b2l1mt0reenwich mean M;! standard L;asgow,oucesterF;!-eF;dinburgh,s4urope0;!/0;belNguernsMisle_of_m1j0;ersL;an;sex;erby2o1u0;blin,dlH;rset;!sh5;a1ity of westmin0oventry,rawlE;ster;mbridge1rdiff;eAir9lack7r2st,uckingham0;sh0;ire;adford,e3i0;st4tish0;! 0;time;nt;po0;ol;kenhead,mingham;l1xl0;ey;fast;berdeen,rchway","British","n","eu1"],"Luxembourg":["true¦brussels,c3europe2lu0madrid,paris,romance;!x0;!embourg;! central;e0openhagen;ntral european,st,t","Central European","n","eu2"],"Madrid":["true¦aRbOcJeGfuenDgCjerez de la frontera,lBm8ovieFp6romance,s1terrassa,v0wemt,zaragoza;alladol9igo;a1evilla,pain0;! mainland;badell,n0; sebastiHt0; marti,ander,s montjuic;a0uente de vallecas;lma,mpIris;a0ostolLurcK;dr0laga;id;atiJeganI;asteiz/vitorGijon,ran1;carral el par1labr0;ada;do;ixample,lche,s1urope0;! centr2;!p;a3e1iudad line0openhagen;al;ntral europe0st,t;an;rabanchel,stello de la pla7;a0ilbao,russels,urgos;da0rce0sque;lo4; coru3l0;cala de henar1icante,mer0;ia;es;na","Central European","n","eu2"],"Malta":["true¦brussels,c3europe2m0paris,romance;a0lt,t;drid,lta;! central;e0openhagen;ntral european,st,t","Central European","n","eu2"],"Minsk":["true¦b4europe,h3m1russian,st petersburg,v0;iteb4olgograd time;ahily0in3osc0sk;ow;omyel,rodna;abruy0elarus,lr,rest,y;sk","Moscow","n"],"Monaco":["true¦brussels,c3europe2m0paris,romance;adrid,c0onaco;!o;! central;e0openhagen;ntral european,st,t","Central European","n","eu2"],"Moscow":["true¦ar0Db0Ac07dzerzh06europe,fet,grozn05ivano04kYlipet0FmRnNorel,pKrFs8t6v2w-su,y0zelenograd;a0oshkar oW;roslavl,sene02;asyl'evsky ostrIelikiMladi2o0ykhino zhulebT;l0ronezh;gograd Pogda;kavkaz,m08;a0uQver;ganrog,mbD;a4ever3hakhty,molen06ochi,t0yktyvkR; 4a0;ryy osk0vrop0;ol;nSodvT;int 0rX;petersburg;ostov na donu,u1y0;azLbP;!s0;!sia0;!n;e1odolUsk0;ov;nza,trozavodS;a2izhn0ovorossiyR;ekamQi0;y novM;berezhnyye chelny,l'chik;a3dst,oscow1s0urmJ;d,k;! 0;time;khachka1r'0;ino;la;a2himki,ostroma,rasno0urG;d0gvargeisky;ar;l1z0;an;ininsk5uga;vo;yy;in8;entraln1he0;boksary,repovets;iy;el1ry0;an3;gorod;khangel'1mav0;ir;sk","Moscow","n"],"Oslo":["true¦a6b5c3europe2madrid,oslo,paris,romance,s0;j0valbard and jan 6;!m;! central;e0openhag4;ntral european,st,t;erg2russels;rctic/longyearby1tlantic/jan_0;may0;en","Central European","n","eu2"],"Paris":["true¦bIcFeuropeEfrBl9m7n5paris,r3s0toulouH;aint 1t0; 0rasbourg;etienne;e0oman9;ims,nn1;ant0i7ormandy;es;a0et,ontpellier;drid,rsei1;e havre,i0yon;lle;!a0;!n0;ce;! central;e0openhagen;ntral european,rgy pontoi0st,t;se;ordeaux,russels","Central European","n","eu2"],"Prague":["true¦br6c4europe2madrid,ostr3p1romance,s0;k,lovakia,vk;aris,mt,rague;! central,/bratisl0;ava;e0openhagen;ntral european,st,t;no,ussels","Central European","n","eu2"],"Riga":["true¦e2kalt,l0riga;atvia,st,v0;!a;ast2e1urope0;! eastern;st,t; europe,ern european","Eastern European","n","eu3"],"Rome":["true¦bIcEeuropeCfloreBgenoa,mAnaples,p7r5sicily,t3v0;a0eroK;!t0;!ican city;aran4rieste,u0;rin,scany;mt,om0;a4e;a1ra0;to;dova,lermo,ris;adrid,essiAil6;nce;! central,/0;san_marino,vatic3;atan5e1o0;penhagen,rsica;ntral europe0st,t;an;ari,olog2r0;esc0ussels;ia;na","Central European","n","eu2"],"Samara":["true¦europe,izhevsk,s0togliatti on the volga;am0yzran;ara,t","Samara","n"],"Saratov":["true¦balakovo,europe,izhevsk,sa0;m0ratov;ara,t","Samara","n"],"Sofia":["true¦b2e0imt,plovdiv,sof4varna;astern european,et,urope0;! eastern;g2u0;lgar0rgas;ia;!r","Eastern European","n","eu3"],"Stockholm":["true¦brussels,c5europe4goeteborg,ma3paris,romance,s0;e1tockholm,we0;!d4;!t;drid,lmoe;! central;e1openhag0;en;ntral european,st,t","Central European","n","eu2"],"Tallinn":["true¦e0tallinn;astern european,e2st1urope0;! eastern;!onia;!t","Eastern European","n","eu3"],"Tirane":["true¦al4brussels,c2europe1madrid,paris,romance,tiran0;a,e;! central;e0openhagen;ntral european,st,t;!b0;!ania","Central European","n","eu2"],"Ulyanovsk":["true¦europe,m0russian,st petersburg,ulyanovsk,volgograd 2;oscow0sk;! 0;time","Moscow","n"],"Uzhgorod":["true¦e0ruthenia,uzhgorod;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Vienna":["true¦a4brussels,c1donaustadt,europe0favorit2graz,linz,madrid,paris,romance,vienna;! central;e1openhag0;en;ntral european,st,t;t,u0;stria,t","Central European","n","eu2"],"Vilnius":["true¦e3k2l0vilnius;ithuania,t0;!u;aunas,laipeda;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Volgograd":["true¦europe,m2russian,st petersburg,vol0;gograd0t,zhskiy;! time;oscow,sk","Moscow","n"],"Warsaw":["true¦bKcHeuropeGgCkAl8m7p4r3s2torun,w0zabrze;ars0rocl0;aw;osnowiec,zczec6;adIomanA;aris,l,o0raga poludnie;l0znD;!and;adrid,okot3;odz,ubl0;in;ato2iel3rak0;ow;d2li0;wi0;ce;ansk,ynia;! central;e0openhagen,zestochowa;ntral europe0st,t;an;i2russels,y0;dgoszcz,t0;om;alystok,elsko biala","Central European","n","eu2"],"Zaporozhye":["true¦e3luhansk2sevastopol,zapor0;izhia lugansk,ozh0;'ye,ye;! east;astern european,et,urope0;! eastern","Eastern European","n","eu3"],"Zurich":["true¦brussels,c4europe2geneve,li0madrid,paris,romance,swiss time,zurich;!e0;!chtenstein;! central,/0;busin1vaduz;e1openha0;gen;ntral european,st,t","Central European","n","eu2"]},"Indian":{"Chagos":["true¦british indian ocean territory,c4i0;ndian1o0;!t;! 0;c0ocean;hagos","Indian Ocean","n"],"Christmas":["true¦c0indian;hristmas1x0;!r,t;! island","Christmas Island","s"],"Cocos":["true¦c0indian;c2ocos0;! island0;!s;!k,t","Cocos Islands","n"],"Kerguelen":["true¦a5french southern2indian,kerguelen1tf0;!t;!st paul4;! 0;& antarctic time,and antarctic0;! lands;msterdam0tf; island","French Southern & Antarctic","s"],"Mahe":["true¦indian,mahe,s0;c0eychelles,yc;!t","Seychelles","n"],"Maldives":["true¦indian,m0;aldives,dv,v0;!t","Maldives","n"],"Mauritius":["true¦indian,m0port louis;auritius,u0;!s,t","Mauritius","n"],"Reunion":["true¦indian,r0;e0éu1;t,u0;nion","Réunion","s"]},"Pacific":{"Apia":["true¦apia,pacific,s2w0;est s1s0;!m,t;amoa","West Samoa","s"],"Auckland":["true¦a2christchurch,manukau,n0pacific,wellington;ew zea2orth shore,z0;!dt,l,mt,st,t;ntarctica/1uck0;land;mcmurdo,south_pole","New Zealand","s","nz"],"Bougainville":["true¦bougainville,guinea2p0;a0gt;cific,pua new guinea;!n","Papua New Guinea","s"],"Chatham":["true¦cha0nz-chat,pacific;dt,st,t0;!ham0;! 0;islands,time","Chatham","s","chat"],"Chuuk":["true¦chu2pacific0;!/0;truk,y2;t,uk0;!/truky0;ap","Chuuk","n"],"Easter":["true¦chile/easter4e0pacific;as0mt;st,t0;!er0;! 0;island","Easter Island","s","east"],"Efate":["true¦efate,pacific,v0;anuatu,u0;!t","Vanuatu","n"],"Fakaofo":["true¦fakaofo,pacific,t0;k0okelau;!l,t","Tokelau","n"],"Fiji":["true¦f0pacific;iji,j0;!i,st,t","Fiji","s","fiji"],"Funafuti":["true¦funafuti,pacific,t0;uv1v0;!t;!alu","Tuvalu","n"],"Galapagos":["true¦co1gal0pacific;apagos,t,ápagos islands;lombia,st,t","Colombia","n"],"Gambier":["true¦gam0pacific;bier0t;! islands","Gambier","n"],"Guadalcanal":["true¦guadalcanal,pacific,s0;b1lb,olomon0;! islands;!t","Solomon Islands","n"],"Guam":["true¦ch5guam,m4northern mariana islands,p2west0; 0ern 0;pacific;acific0ort moresby;!/saipan;np,p;amorro,st","Chamorro","n"],"Honolulu":["true¦aleutian4h1pacific0us/hawaii;!/johnston;a0onolulu,st;dt,st,t,waii0;! aleutian;! islands","Hawaii-Aleutian","n"],"Kanton":["true¦kanton,p0;acific1ho0;enix islands,t;!/enderbury","Phoenix Islands","n"],"Kiritimati":["true¦ki1lin0pacific;e islands,t;!r0;!i0;bati,timati0;! island","Line Islands","n"],"Kosrae":["true¦kos0pacific;rae,t","Kosrae","n"],"Kwajalein":["true¦kwajalein,m0pacific;arshall islands,ht","Marshall Islands","n"],"Majuro":["true¦m0pacific;a1h0;!l,t;juro,rshall islands","Marshall Islands","n"],"Marquesas":["true¦mar0pacific;quesas0t;! islands","Marquesas","n"],"Nauru":["true¦n0pacific;auru,r0;!t,u","Nauru","n"],"Niue":["true¦n0pacific;iu1u0;!t;!e","Niue","n"],"Norfolk":["true¦n0pacific;f1orfolk0;! island;!dt,k,t","Norfolk Island","n","aus"],"Noumea":["true¦n0pacific;c0ew caledonia,oumea;!l,t","New Caledonia","n"],"Pago_Pago":["true¦m5pa1s0us/sa4;a3st;cific0go_pago;!/0;m1sa0;moa;idway","Samoa","n"],"Palau":["true¦p0;a1lw,w0;!t;cific,lau","Palau","n"],"Pitcairn":["true¦p0;acific,cn,itcairn,n,st","Pitcairn","n"],"Pohnpei":["true¦french polynesia,p0;acific1f,o0yf;hnpei0nt;!/ponape","Ponape","n"],"Port_Moresby":["true¦antarctica/dumontd6dumont-d'6guinea5p0;a3g2ng,ort0; 0_0;moresby;!t;cific,pua new guinea;!n;urville","Papua New Guinea","s"],"Rarotonga":["true¦c0pacific,rarotonga;k2o0;k,ok0;! islands;!t","Cook Islands","n"],"Tahiti":["true¦pacific,society islands,tah0;iti,t","Tahiti","n"],"Tarawa":["true¦gil0pacific,tarawa;bert islands,t","Gilbert Islands","n"],"Tongatapu":["true¦nuku'alofa,pacific,to0;!n0t;!ga0;!tapu","Tonga","s"],"Wake":["true¦pacific,u2wak0;e0t;! island;m0s minor outlying islands;!i","Wake Island","n"],"Wallis":["true¦pacific,w0;allis1f0lf;!t;! 0;&0and0; futuna","Wallis & Futuna","n"]}};
 
 // strings that don't pack properly
 var misc = {
-  'gmt+0': 'etc/GMT',
-  'gmt-0': 'etc/GMT',
-  gmt0: 'etc/GMT',
-  'etc/gmt+0': 'Etc/GMT',
-  'etc/gmt-0': 'Etc/GMT',
-  'etc/gmt0': 'Etc/GMT',
-  'msk-01 - kaliningrad': 'Europe/Kaliningrad',
-  'msk+00 - moscow area': 'Europe/Moscow',
-  'msk+00 - crimea': 'Europe/Simferopol',
-  'msk+00 - volgograd': 'Europe/Volgograd',
-  'msk+00 - kirov': 'Europe/Kirov',
-  'msk+01 - astrakhan': 'Europe/Astrakhan',
-  'msk+01 - saratov': 'Europe/Saratov',
-  'msk+01 - ulyanovsk': 'Europe/Ulyanovsk',
-  'msk+01 - samaraudmurtia': 'Europe/Samara',
-  'msk+02 - urals': 'Asia/Yekaterinburg',
-  'msk+03': 'Asia/Omsk',
-  'msk+04 - novosibirsk': 'Asia/Novosibirsk',
-  'msk+04 - altai': 'Asia/Barnaul',
-  'msk+04': 'Asia/Tomsk',
-  'msk+04 - kemerovo': 'Asia/Novokuznetsk',
-  'msk+04 - krasnoyarsk area': 'Asia/Krasnoyarsk',
-  'msk+05 - irkutskburyatia': 'Asia/Irkutsk',
-  'msk+06 - zabaykalsky': 'Asia/Chita',
-  'msk+06 - lena river': 'Asia/Yakutsk',
-  'msk+06 - tomponskyust-maysky': 'Asia/Khandyga',
-  'msk+07 - amur river': 'Asia/Vladivostok',
-  'msk+07 - oymyakonsky': 'Asia/Ust-Nera',
-  'msk+08 - magadan': 'Asia/Magadan',
-  'msk+08 - sakhalin island': 'Asia/Sakhalin',
-  'msk+08 - sakha (e) north kuril is': 'Asia/Srednekolymsk',
-  'msk+09': 'Asia/Kamchatka',
-  'msk+09 - bering sea': 'Asia/Anadyr',
-  "russia time zone 11": "Asia/Anadyr",
-  "russia time zone 10": "Asia/Srednekolymsk",
-  "russia time zone 3": "Europe/Samara",
-  "coordinated universal time-09": "Pacific/Gambier",
-  "utc-09": "Pacific/Gambier",
-  "coordinated universal time-08": "Pacific/Pitcairn"
+  'gmt+0': ['Etc/GMT'],
+  'gmt-0': ['Etc/GMT'],
+  gmt0: ['Etc/GMT'],
+  'etc/gmt+0': ['Etc/GMT'],
+  'etc/gmt-0': ['Etc/GMT'],
+  'etc/gmt0': ['Etc/GMT'],
+  'msk+00': ['Europe/Moscow'],
+  'msk-01 - kaliningrad': ['Europe/Kaliningrad'],
+  'msk+00 - moscow area': ['Europe/Moscow'],
+  'msk+00 - crimea': ['Europe/Kiev'],
+  'msk+00 - volgograd': ['Europe/Volgograd'],
+  'msk+00 - kirov': ['Europe/Kirov'],
+  'msk+01 - astrakhan': ['Europe/Astrakhan'],
+  'msk+01 - saratov': ['Europe/Saratov'],
+  'msk+01 - ulyanovsk': ['Europe/Ulyanovsk'],
+  'msk+01 - samaraudmurtia': ['Europe/Samara'],
+  'msk+02 - urals': ['Asia/Yekaterinburg'],
+  'msk+03': ['Asia/Omsk'],
+  'msk+04 - novosibirsk': ['Asia/Novosibirsk'],
+  'msk+04 - altai': ['Asia/Barnaul'],
+  'msk+04': ['Asia/Tomsk'],
+  'msk+04 - kemerovo': ['Asia/Novokuznetsk'],
+  'msk+04 - krasnoyarsk area': ['Asia/Krasnoyarsk'],
+  'msk+05 - irkutskburyatia': ['Asia/Irkutsk'],
+  'msk+06 - zabaykalsky': ['Asia/Chita'],
+  'msk+06 - lena river': ['Asia/Yakutsk'],
+  'msk+06 - tomponskyust-maysky': ['Asia/Khandyga'],
+  'msk+07 - amur river': ['Asia/Vladivostok'],
+  'msk+07 - oymyakonsky': ['Asia/Ust-Nera'],
+  'msk+08 - magadan': ['Asia/Magadan'],
+  'msk+08 - sakhalin island': ['Asia/Sakhalin'],
+  'msk+08 - sakha (e) north kuril is': ['Asia/Srednekolymsk'],
+  'msk+09': ['Asia/Kamchatka'],
+  'msk+09 - bering sea': ['Asia/Anadyr'],
+  "russia time zone 11": ["Asia/Anadyr"],
+  "russia time zone 10": ["Asia/Srednekolymsk"],
+  "russia time zone 3": ["Europe/Samara"],
+  "coordinated universal time-09": ["Pacific/Gambier"],
+  "utc-09": ["Pacific/Gambier"],
+  "coordinated universal time-08": ["Pacific/Pitcairn"]
 };
+
+const addEtc = function (zones) {
+  for (let i = 0; i < 14; i += 1) {
+    zones[`Etc/GMT-${i}`] = {
+      offset: i,
+      meta: `gmt-${i}`,
+      hem: 'n'//sorry
+    };
+    zones[`Etc/GMT+${i}`] = {
+      offset: i,
+      meta: `gmt+${i}`,
+      hem: 'n'//sorry
+    };
+  }
+};
+
+var addUTC = addEtc;
 
 // unpack our lexicon of words
 let zones = {};
@@ -265,7 +283,8 @@ Object.keys(pcked).forEach(top => {
     let [words, meta, hem, dst] = pcked[top][name];
     let id = `${top}/${name}`;
     zones[id] = { meta, hem };
-    Object.keys(unpack$1(words)).forEach(k => {
+    let keys = Object.keys(unpack$1(words));
+    keys.forEach(k => {
       lexicon[k] = lexicon[k] || [];
       lexicon[k].push(id);
       // use iana aliases
@@ -276,10 +295,36 @@ Object.keys(pcked).forEach(top => {
         lexicon[last].push(id);
       }
     });
+    zones[id].wordCount = keys.length;
     if (dst) {
       zones[id].dst = dstPatterns[dst].split(/\|/);
     }
   });
+});
+
+addUTC(zones);
+
+const unique = function (arr) {
+  let obj = {};
+  for (let i = 0; i < arr.length; i += 1) {
+    obj[arr[i]] = true;
+  }
+  return Object.keys(obj)
+};
+
+// sort by num of aliases
+Object.keys(lexicon).forEach(k => {
+  if (lexicon[k].length > 1) {
+    lexicon[k] = unique(lexicon[k]);
+    lexicon[k] = lexicon[k].sort((a, b) => {
+      if (zones[a].wordCount > zones[b].wordCount) {
+        return -1
+      } else if (zones[a].wordCount < zones[b].wordCount) {
+        return 1
+      }
+      return 0
+    });
+  }
 });
 
 //try to match these against iana form
@@ -312,6 +357,47 @@ const three = function (str) {
 
 var normalize = { one, two, three };
 
+const isOffset = /^([-+]?[0-9]+)h(r?s)?$/i;
+const isNumber = /^([-+]?[0-9]+)$/;
+const utcOffset = /utc([\-+]?[0-9]+)$/i;
+const gmtOffset = /gmt([\-+]?[0-9]+)$/i;
+
+const toIana = function (num) {
+  num = Number(num);
+  if (num > -13 && num < 13) {
+    num = num * -1; //it's opposite!
+    num = (num > 0 ? '+' : '') + num; //add plus sign
+    return 'Etc/GMT' + num
+  }
+  return null
+};
+
+const parseOffset = function (tz) {
+  // '+5hrs'
+  let m = tz.match(isOffset);
+  if (m !== null) {
+    return toIana(m[1])
+  }
+  // 'utc+5'
+  m = tz.match(utcOffset);
+  if (m !== null) {
+    return toIana(m[1])
+  }
+  // 'GMT-5' (not opposite)
+  m = tz.match(gmtOffset);
+  if (m !== null) {
+    let num = Number(m[1]) * -1;
+    return toIana(num)
+  }
+  // '+5'
+  m = tz.match(isNumber);
+  if (m !== null) {
+    return toIana(m[1])
+  }
+  return null
+};
+var parseOffset$1 = parseOffset;
+
 // match some text to an iana code
 const find = function (str) {
   // perfect id match
@@ -321,6 +407,13 @@ const find = function (str) {
   // lookup known word
   if (lexicon.hasOwnProperty(str)) {
     return lexicon[str]
+  }
+  // -8hrs
+  if (/[0-9]/.test(str)) {
+    let etc = parseOffset$1(str);
+    if (etc) {
+      return [etc]
+    }
   }
   // try a sequence of normalization steps
   str = normalize.one(str);
@@ -342,1165 +435,594 @@ var find$1 = find;
 
 var metas = {
   "India": {
-    "std": [
-      "IST",
-      5.5
-    ],
+    "std": ["IST", 5.5],
     "long": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi"
   },
   "China": {
-    "std": [
-      "CST",
-      8
-    ],
+    "std": ["CST", 8],
     "long": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi"
   },
   "Central European": {
-    "std": [
-      "CET",
-      1
-    ],
-    "dst": [
-      "CEST",
-      2,
-      "Central European Summer Time"
-    ],
+    "std": ["CET", 1],
+    "dst": ["CEST", 2, "Central European Summer Time"],
     "long": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris"
   },
   "Atlantic": {
     "dupe": true,
-    "std": [
-      "AST",
-      -4
-    ],
-    "dst": [
-      "ADT",
-      -3
-    ],
+    "std": ["AST", -4],
+    "dst": ["ADT", -3],
     "long": "(UTC-04:00) Atlantic Time (Canada)"
   },
   "Greenwich Mean": {
-    "std": [
-      "GMT",
-      0
-    ],
+    "std": ["GMT", 0],
     "long": "(UTC) Coordinated Universal Time"
   },
   "Eastern European": {
-    "std": [
-      "EET",
-      2
-    ],
-    "dst": [
-      "EEST",
-      3,
-      "Eastern European Summer Time"
+    "std": ["EET", 2],
+    "dst": ["EEST", 3, "Eastern European Summer Time"
     ]
   },
   "Central": {
     "dupe": true,
-    "std": [
-      "CST",
-      -6
-    ],
-    "dst": [
-      "CDT",
-      -5
-    ],
+    "std": ["CST", -6],
+    "dst": ["CDT", -5],
     "long": "(UTC-06:00) Central Time (US & Canada)"
   },
   "Eastern": {
-    "std": [
-      "EST",
-      -5
-    ],
-    "dst": [
-      "EDT",
-      -4
-    ],
+    "std": ["EST", -5],
+    "dst": ["EDT", -4],
     "long": "(UTC-05:00) Eastern Time (US & Canada)"
   },
   "Argentina": {
-    "std": [
-      "ART",
-      -3
-    ],
+    "std": ["ART", -3],
     "long": "(UTC-03:00) City of Buenos Aires"
   },
   "East Africa": {
-    "std": [
-      "EAT",
-      3
-    ],
+    "std": ["EAT", 3],
     "long": "(UTC+03:00) Nairobi"
   },
   "West Africa": {
-    "std": [
-      "WAT",
-      1
-    ],
+    "std": ["WAT", 1],
     "long": "(UTC+01:00) West Central Africa"
   },
   "Moscow": {
-    "std": [
-      "MSK",
-      3
-    ],
+    "std": ["MSK", 3],
     "long": "(UTC+03:00) Moscow, St. Petersburg"
   },
   "Brasilia": {
-    "std": [
-      "BRT",
-      -3
-    ],
+    "std": ["BRT", -3],
     "long": "(UTC-03:00) Brasilia"
   },
   "Mountain": {
-    "std": [
-      "MST",
-      -7
-    ],
-    "dst": [
-      "MDT",
-      -6
-    ],
+    "std": ["MST", -7],
+    "dst": ["MDT", -6],
     "long": "(UTC-07:00) Mountain Time (US & Canada)"
   },
   "Central Africa": {
-    "std": [
-      "CAT",
-      2
-    ],
+    "std": ["CAT", 2],
     "long": "(UTC+02:00) Windhoek"
   },
   "Arabian": {
-    "std": [
-      "AST",
-      3
-    ],
+    "std": ["AST", 3],
     "long": "(UTC+03:00) Kuwait, Riyadh"
   },
   "Alaska": {
-    "std": [
-      "AKST",
-      -9
-    ],
-    "dst": [
-      "AKDT",
-      -8
-    ],
+    "std": ["AKST", -9],
+    "dst": ["AKDT", -8],
     "long": "(UTC-09:00) Alaska"
   },
   "British": {
-    "std": [
-      "GMT",
-      0
-    ],
-    "dst": [
-      "BST",
-      1,
-      "British Summer Time"
-    ],
+    "std": ["GMT", 0],
+    "dst": ["BST", 1, "British Summer Time"],
     "long": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
   },
   "West Kazakhstan": {
-    "std": [
-      "ALMT",
-      5
-    ],
+    "std": ["ALMT", 5],
     "long": "(UTC+05:00) Ashgabat, Tashkent"
   },
   "Eastern Australia": {
-    "std": [
-      "AEST",
-      10
-    ],
-    "dst": [
-      "AEDT",
-      11,
-      "Australian Eastern Daylight Time"
-    ],
+    "std": ["AEST", 10],
+    "dst": ["AEDT", 11, "Australian Eastern Daylight Time"],
     "long": "(UTC+10:00) Canberra, Melbourne, Sydney"
   },
   "Western European": {
-    "std": [
-      "WET",
-      0
-    ],
-    "dst": [
-      "WEST",
-      1,
-      "Western European Summer Time"
-    ]
+    "std": ["WET", 0],
+    "dst": ["WEST", 1, "Western European Summer Time"]
   },
   "Indochina": {
-    "std": [
-      "ICT",
-      7
-    ],
+    "std": ["ICT", 7],
     "long": "(UTC+07:00) Bangkok, Hanoi, Jakarta"
   },
   "Central Mexico": {
     "long": "(UTC-06:00) Guadalajara, Mexico City, Monterrey",
-    "std": [
-      "CST",
-      -6
-    ],
-    "dst": [
-      "CDT",
-      -5,
-      "Central Daylight Time"
+    "std": ["CST", -6],
+    "dst": ["CDT", -5, "Central Daylight Time"
     ]
   },
   "South Africa": {
-    "std": [
-      "SAST",
-      2
-    ],
+    "std": ["SAST", 2],
     "long": "(UTC+02:00) Harare, Pretoria"
   },
   "Krasnoyarsk": {
-    "std": [
-      "KRAT",
-      7
-    ],
+    "std": ["KRAT", 7],
     "long": "(UTC+07:00) Krasnoyarsk"
   },
   "Yakutsk": {
-    "std": [
-      "YAKT",
-      9
-    ],
+    "std": ["YAKT", 9],
     "long": "(UTC+09:00) Yakutsk"
   },
   "Pacific": {
-    "std": [
-      "PST",
-      -8
-    ],
-    "dst": [
-      "PDT",
-      -7
-    ],
+    "std": ["PST", -8],
+    "dst": ["PDT", -7],
     "long": "(UTC-08:00) Pacific Time (US & Canada)"
   },
   "Amazon": {
-    "std": [
-      "AMT",
-      -4
-    ],
+    "std": ["AMT", -4],
     "long": "(UTC-04:00) Cuiaba"
   },
   "Morocco Standard": {
     "offset": 1,
     "long": "(UTC+00:00) Casablanca",
-    "std": [
-      "WET",
-      1
-    ],
-    "dst": [
-      "WEST",
-      0,
-      "Western European Summer Time"
+    "std": ["WET", 1],
+    "dst": ["WEST", 0, "Western European Summer Time"
     ]
   },
   "Gulf": {
-    "std": [
-      "GST",
-      4
-    ],
+    "std": ["GST", 4],
     "long": "(UTC+04:00) Abu Dhabi, Muscat"
   },
   "Samara": {
-    "std": [
-      "SAMT",
-      4
-    ],
+    "std": ["SAMT", 4],
     "long": "(UTC+04:00) Izhevsk, Samara"
   },
   "Uzbekistan": {
-    "std": [
-      "UZT",
-      5
-    ]
+    "std": ["UZT", 5]
   },
   "East Kazakhstan": {
-    "std": [
-      "ALMT",
-      6
-    ],
+    "std": ["ALMT", 6],
     "long": "(UTC+06:00) Astana"
   },
   "Omsk": {
-    "std": [
-      "OMST",
-      6
-    ],
+    "std": ["OMST", 6],
     "long": "(UTC+06:00) Omsk"
   },
   "Western Indonesia": {
-    "std": [
-      "WIB",
-      7
-    ]
+    "std": ["WIB", 7]
   },
   "Ulaanbaatar": {
-    "std": [
-      "ULAT",
-      8
-    ],
+    "std": ["ULAT", 8],
     "long": "(UTC+08:00) Ulaanbaatar"
   },
   "Malaysia": {
-    "std": [
-      "MYT",
-      8
-    ]
+    "std": ["MYT", 8]
   },
   "Korean": {
-    "std": [
-      "KST",
-      9
-    ],
+    "std": ["KST", 9],
     "long": "(UTC+09:00) Seoul"
   },
   "Central Australia": {
-    "std": [
-      "ACST",
-      9.5
-    ],
-    "dst": [
-      "ACDT",
-      10.5,
-      "Australian Central Daylight Time"
-    ],
+    "std": ["ACST", 9.5],
+    "dst": ["ACDT", 10.5, "Australian Central Daylight Time"],
     "long": "(UTC+09:30) Adelaide"
   },
   "Brisbane": {
     "dupe": true,
-    "std": [
-      "AEST",
-      10
-    ]
+    "std": ["AEST", 10]
   },
   "Vladivostok": {
-    "std": [
-      "VLAT",
-      10
-    ],
+    "std": ["VLAT", 10],
     "long": "(UTC+10:00) Vladivostok"
   },
   "Chamorro": {
-    "std": [
-      "ChST",
-      10
-    ],
+    "std": ["ChST", 10],
     "long": "(UTC+10:00) Guam, Port Moresby"
   },
   "Papua New Guinea": {
-    "std": [
-      "PGT",
-      11
-    ]
+    "std": ["PGT", 11]
   },
   "New Zealand": {
-    "std": [
-      "NZST",
-      12
-    ],
-    "dst": [
-      "NZDT",
-      13
-    ],
+    "std": ["NZST", 12],
+    "dst": ["NZDT", 13],
     "long": "(UTC+12:00) Auckland, Wellington"
   },
   "Marshall Islands": {
-    "std": [
-      "MHT",
-      12
-    ]
+    "std": ["MHT", 12]
   },
   "Samoa": {
-    "std": [
-      "SST",
-      -11
-    ],
+    "std": ["SST", -11],
     "long": "(UTC+13:00) Samoa"
   },
   "Hawaii-Aleutian": {
-    "std": [
-      "HAST",
-      -9
-    ],
-    "dst": [
-      "HADT",
-      -8
-    ],
+    "std": ["HAST", -9],
+    "dst": ["HADT", -8],
     "long": "(UTC-09:00) Aleutian Islands"
   },
   "Mexican Pacific": {
-    "std": [
-      "HNPMX",
-      -7
-    ],
-    "dst": [
-      "HEPMX",
-      -6
-    ],
+    "std": ["HNPMX", -7],
+    "dst": ["HEPMX", -6],
     "long": "(UTC-07:00) Chihuahua, La Paz, Mazatlan"
   },
   "Colombia": {
-    "std": [
-      "COT",
-      -5
-    ]
+    "std": ["COT", -5]
   },
   "Acre": {
-    "std": [
-      "ACT",
-      -5
-    ]
+    "std": ["ACT", -5]
   },
   "Chile": {
     "dupe": true,
-    "std": [
-      "CLT",
-      -3
-    ],
-    "dst": [
-      "CLST",
-      -4,
-      "Chile Summer Time"
+    "std": ["CLT", -3],
+    "dst": ["CLST", -4, "Chile Summer Time"
     ]
   },
   "Troll": {
     "dupe": true,
-    "std": [
-      "GMT",
-      0
-    ]
+    "std": ["GMT", 0]
   },
   "East Greenland": {
-    "std": [
-      "HNEG",
-      0
-    ],
-    "dst": [
-      "HEEG",
-      1,
-      "East Greenland Summer Time"
+    "std": ["HNEG", 0],
+    "dst": ["HEEG", 1, "East Greenland Summer Time"
     ]
   },
   "Israel": {
-    "std": [
-      "IST",
-      2
-    ],
-    "dst": [
-      "IDT",
-      3
-    ],
+    "std": ["IST", 2],
+    "dst": ["IDT", 3],
     "long": "(UTC+02:00) Jerusalem"
   },
   "Syowa": {
-    "std": [
-      "SYOT",
-      3
-    ]
+    "std": ["SYOT", 3]
   },
   "Turkey": {
-    "std": [
-      "TRT",
-      3
-    ],
+    "std": ["TRT", 3],
     "long": "(UTC+03:00) Istanbul"
   },
   "Iran": {
-    "std": [
-      "IRST",
-      3.5
-    ],
-    "dst": [
-      "IRDT",
-      4.5
-    ],
+    "std": ["IRST", 3.5],
+    "dst": ["IRDT", 4.5],
     "long": "(UTC+03:30) Tehran"
   },
   "Azerbaijan": {
-    "std": [
-      "AZT",
-      4
-    ],
+    "std": ["AZT", 4],
     "long": "(UTC+04:00) Baku"
   },
   "Georgia": {
-    "std": [
-      "GET",
-      4
-    ],
+    "std": ["GET", 4],
     "long": "(UTC+04:00) Tbilisi"
   },
   "Armenia": {
-    "std": [
-      "AMT",
-      4
-    ],
+    "std": ["AMT", 4],
     "long": "(UTC+04:00) Yerevan"
   },
   "Seychelles": {
-    "std": [
-      "SCT",
-      4
-    ]
+    "std": ["SCT", 4]
   },
   "Mauritius": {
-    "std": [
-      "MUT",
-      4
-    ],
+    "std": ["MUT", 4],
     "long": "(UTC+04:00) Port Louis"
   },
   "Réunion": {
-    "std": [
-      "RET",
-      4
-    ]
+    "std": ["RET", 4]
   },
   "Afghanistan": {
-    "std": [
-      "AFT",
-      4.5
-    ],
+    "std": ["AFT", 4.5],
     "long": "(UTC+04:30) Kabul"
   },
   "Mawson": {
-    "std": [
-      "MAWT",
-      5
-    ]
+    "std": ["MAWT", 5]
   },
   "Turkmenistan": {
-    "std": [
-      "TMT",
-      5
-    ]
+    "std": ["TMT", 5]
   },
   "Tajikistan": {
-    "std": [
-      "TJT",
-      5
-    ]
+    "std": ["TJT", 5]
   },
   "Pakistan": {
-    "std": [
-      "PKT",
-      5
-    ],
+    "std": ["PKT", 5],
     "long": "(UTC+05:00) Islamabad, Karachi"
   },
   "Yekaterinburg": {
-    "std": [
-      "YEKT",
-      5
-    ],
+    "std": ["YEKT", 5],
     "long": "(UTC+05:00) Ekaterinburg"
   },
   "French Southern & Antarctic": {
-    "std": [
-      "TFT",
-      5
-    ]
+    "std": ["TFT", 5]
   },
   "Maldives": {
-    "std": [
-      "MVT",
-      5
-    ]
+    "std": ["MVT", 5]
   },
   "Nepal": {
-    "std": [
-      "NPT",
-      5.75
-    ],
+    "std": ["NPT", 5.75],
     "long": "(UTC+05:45) Kathmandu"
   },
   "Vostok": {
-    "std": [
-      "MSK+4",
-      6
-    ]
+    "std": ["MSK+4", 6]
   },
   "Kyrgyzstan": {
-    "std": [
-      "KGT",
-      6
-    ]
+    "std": ["KGT", 6]
   },
   "Bangladesh": {
-    "std": [
-      "BST",
-      6
-    ],
+    "std": ["BST", 6],
     "long": "(UTC+06:00) Dhaka"
   },
   "Bhutan": {
-    "std": [
-      "BT",
-      6
-    ]
+    "std": ["BT", 6]
   },
   "Indian Ocean": {
-    "std": [
-      "IOT",
-      6
-    ]
+    "std": ["IOT", 6]
   },
   "Myanmar": {
-    "std": [
-      "MMT",
-      6.5
-    ],
+    "std": ["MMT", 6.5],
     "long": "(UTC+06:30) Yangon (Rangoon)"
   },
   "Cocos Islands": {
-    "std": [
-      "CCT",
-      6.5
-    ]
+    "std": ["CCT", 6.5]
   },
   "Davis": {
-    "std": [
-      "DAVT",
-      7
-    ]
+    "std": ["DAVT", 7]
   },
   "Hovd": {
-    "std": [
-      "HOVT",
-      7
-    ],
+    "std": ["HOVT", 7],
     "long": "(UTC+07:00) Hovd"
   },
   "Novosibirsk": {
-    "std": [
-      "NOVT",
-      7
-    ],
+    "std": ["NOVT", 7],
     "long": "(UTC+07:00) Novosibirsk"
   },
   "Christmas Island": {
-    "std": [
-      "CXT",
-      7
-    ]
+    "std": ["CXT", 7]
   },
   "Brunei Darussalam": {
-    "std": [
-      "BNT",
-      8
-    ]
+    "std": ["BNT", 8]
   },
   "Hong Kong": {
-    "std": [
-      "HKT",
-      8
-    ]
+    "std": ["HKT", 8]
   },
   "Irkutsk": {
-    "std": [
-      "IRKT",
-      8
-    ],
+    "std": ["IRKT", 8],
     "long": "(UTC+08:00) Irkutsk"
   },
   "Central Indonesia": {
-    "std": [
-      "WITA",
-      8
-    ]
+    "std": ["WITA", 8]
   },
   "Philippine": {
-    "std": [
-      "PHST",
-      8
-    ]
+    "std": ["PHST", 8]
   },
   "Singapore": {
-    "std": [
-      "SGT",
-      8
-    ],
+    "std": ["SGT", 8],
     "long": "(UTC+08:00) Kuala Lumpur, Singapore"
   },
   "Taipei": {
-    "std": [
-      "CST",
-      8
-    ],
+    "std": ["CST", 8],
     "long": "(UTC+08:00) Taipei"
   },
   "Western Australia": {
-    "std": [
-      "AWST",
-      8
-    ],
+    "std": ["AWST", 8],
     "long": "(UTC+08:00) Perth"
   },
   "Australian Central Western": {
-    "std": [
-      "ACWST",
-      8.75
-    ],
+    "std": ["ACWST", 8.75],
     "long": "(UTC+08:45) Eucla"
   },
   "East Timor": {
-    "std": [
-      "TLT",
-      9
-    ]
+    "std": ["TLT", 9]
   },
   "Eastern Indonesia": {
-    "std": [
-      "WIT",
-      9
-    ]
+    "std": ["WIT", 9]
   },
   "Japan": {
-    "std": [
-      "JST",
-      9
-    ],
+    "std": ["JST", 9],
     "long": "(UTC+09:00) Osaka, Sapporo, Tokyo"
   },
   "Palau": {
-    "std": [
-      "PWT",
-      9
-    ]
+    "std": ["PWT", 9]
   },
   "Australian Central": {
     "dupe": true,
-    "std": [
-      "ACST",
-      9.5
-    ]
+    "std": ["ACST", 9.5]
   },
   "Dumont-d’Urville": {
-    "std": [
-      "CLST",
-      10
-    ]
+    "std": ["CLST", 10]
   },
   "Chuuk": {
-    "std": [
-      "CHUT",
-      10
-    ]
+    "std": ["CHUT", 10]
   },
   "Lord Howe": {
-    "std": [
-      "LHST",
-      10.5
-    ],
-    "dst": [
-      "LHDT",
-      11.5
-    ],
+    "std": ["LHST", 10.5],
+    "dst": ["LHDT", 11.5],
     "long": "(UTC+10:30) Lord Howe Island"
   },
   "Casey": {
-    "std": [
-      "CAST",
-      11
-    ],
-    "dst": [
-      "CAST",
-      8,
-      "Casey Summer Time"
+    "std": ["CAST", 11],
+    "dst": ["CAST", 8, "Casey Summer Time"
     ]
   },
   "Magadan": {
-    "std": [
-      "MAGT",
-      11
-    ],
+    "std": ["MAGT", 11],
     "long": "(UTC+11:00) Magadan"
   },
   "Sakhalin": {
-    "std": [
-      "SAKT",
-      11
-    ],
+    "std": ["SAKT", 11],
     "long": "(UTC+11:00) Sakhalin"
   },
   "Srednekolymsk": {
-    "std": [
-      "SRET",
-      11
-    ],
+    "std": ["SRET", 11],
     "long": "(UTC+11:00) Chokurdakh"
   },
   "Vanuatu": {
-    "std": [
-      "VUT",
-      11
-    ]
+    "std": ["VUT", 11]
   },
   "Solomon Islands": {
-    "std": [
-      "SBT",
-      11
-    ]
+    "std": ["SBT", 11]
   },
   "Kosrae": {
-    "std": [
-      "KOST",
-      11
-    ]
+    "std": ["KOST", 11]
   },
   "New Caledonia": {
-    "std": [
-      "NCT",
-      11
-    ]
+    "std": ["NCT", 11]
   },
   "Ponape": {
-    "std": [
-      "PONT",
-      11
-    ]
+    "std": ["PONT", 11]
   },
   "Anadyr": {
-    "std": [
-      "ANAT",
-      12
-    ],
+    "std": ["ANAT", 12],
     "long": "(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky"
   },
   "Petropavlovsk-Kamchatski": {
-    "std": [
-      "PETT",
-      12
-    ],
+    "std": ["PETT", 12],
     "long": "(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky"
   },
   "Fiji": {
-    "std": [
-      "FJT",
-      12
-    ],
-    "dst": [
-      "FJT",
-      13,
-      "Fiji Summer Time"
-    ],
+    "std": ["FJT", 12],
+    "dst": ["FJT", 13, "Fiji Summer Time"],
     "long": "(UTC+12:00) Fiji"
   },
   "Tuvalu": {
-    "std": [
-      "TVT",
-      12
-    ]
+    "std": ["TVT", 12]
   },
   "Nauru": {
-    "std": [
-      "NRT",
-      12
-    ]
+    "std": ["NRT", 12]
   },
   "Norfolk Island": {
-    "std": [
-      "NFT",
-      12
-    ],
-    "dst": [
-      "NFDT",
-      11
-    ],
+    "std": ["NFT", 12],
+    "dst": ["NFDT", 11],
     "long": "(UTC+11:00) Norfolk Island"
   },
   "Gilbert Islands": {
-    "std": [
-      "GILT",
-      12
-    ]
+    "std": ["GILT", 12]
   },
   "Wake Island": {
-    "std": [
-      "WAKT",
-      12
-    ]
+    "std": ["WAKT", 12]
   },
   "Wallis & Futuna": {
-    "std": [
-      "WFT",
-      12
-    ]
+    "std": ["WFT", 12]
   },
   "Chatham": {
-    "std": [
-      "CHAST",
-      12.75
-    ],
-    "dst": [
-      "CHADT",
-      13.75
-    ],
+    "std": ["CHAST", 12.75],
+    "dst": ["CHADT", 13.75],
     "long": "(UTC+12:45) Chatham Islands"
   },
   "West Samoa": {
-    "std": [
-      "WST",
-      13
-    ],
-    "dst": [
-      "WST",
-      14,
-      "West Samoa Summer Time"
+    "std": ["WST", 13],
+    "dst": ["WST", 14, "West Samoa Summer Time"
     ]
   },
   "Phoenix Islands": {
-    "std": [
-      "PHOT",
-      13
-    ]
+    "std": ["PHOT", 13]
   },
   "Tokelau": {
-    "std": [
-      "TKT",
-      13
-    ]
+    "std": ["TKT", 13]
   },
   "Tonga": {
-    "std": [
-      "TOT",
-      13
-    ],
+    "std": ["TOT", 13],
     "long": "(UTC+13:00) Nuku'alofa"
   },
   "Line Islands": {
-    "std": [
-      "LINT",
-      14
-    ],
+    "std": ["LINT", 14],
     "long": "(UTC+14:00) Kiritimati Island"
   },
   "Niue": {
-    "std": [
-      "NUT",
-      -11
-    ]
+    "std": ["NUT", -11]
   },
   "Cook Islands": {
-    "std": [
-      "CKT",
-      -10
-    ]
+    "std": ["CKT", -10]
   },
   "Tahiti": {
-    "std": [
-      "TAHT",
-      -10
-    ]
+    "std": ["TAHT", -10]
   },
   "Marquesas": {
-    "std": [
-      "MART",
-      -9.5
-    ],
+    "std": ["MART", -9.5],
     "long": "(UTC-09:30) Marquesas Islands"
   },
   "Aleutian Standard": {
     "iso": "(UTC-10:00) Aleutian Islands",
-    "std": [
-      "HST",
-      -10
-    ],
-    "dst": [
-      "HDT",
-      -9,
-      "Hawaii Daylight Time"
+    "std": ["HST", -10],
+    "dst": ["HDT", -9, "Hawaii Daylight Time"
     ]
   },
   "Gambier": {
-    "std": [
-      "GAMT",
-      -9
-    ],
+    "std": ["GAMT", -9],
     "long": "(UTC-09:00) Coordinated Universal Time-09"
   },
   "Pitcairn": {
-    "std": [
-      "PST",
-      -8
-    ],
+    "std": ["PST", -8],
     "long": "(UTC-08:00) Coordinated Universal Time-08"
   },
   "Northwest Mexico": {
-    "std": [
-      "HNNOMX",
-      -6
-    ],
-    "dst": [
-      "HENOMX",
-      -5
-    ],
+    "std": ["HNNOMX", -6],
+    "dst": ["HENOMX", -5],
     "long": "(UTC-08:00) Baja California"
   },
   "Easter Island": {
-    "std": [
-      "EAST",
-      -6
-    ],
-    "dst": [
-      "EASST",
-      -5,
-      "Easter Island Summer Time"
-    ],
+    "std": ["EAST", -6],
+    "dst": ["EASST", -5, "Easter Island Summer Time"],
     "long": "(UTC-06:00) Easter Island"
   },
   "Ecuador": {
-    "std": [
-      "ECT",
-      -5
-    ]
+    "std": ["ECT", -5]
   },
   "Cuba": {
-    "std": [
-      "HNCU",
-      -5
-    ],
-    "dst": [
-      "HECU",
-      -4
-    ],
+    "std": ["HNCU", -5],
+    "dst": ["HECU", -4],
     "long": "(UTC-05:00) Havana"
   },
   "Peru": {
-    "std": [
-      "PET",
-      -5
-    ]
+    "std": ["PET", -5]
   },
   "Paraguay": {
-    "std": [
-      "PYT",
-      -4
-    ],
-    "dst": [
-      "PYST",
-      -3,
-      "Paraguay Summer Time"
-    ],
+    "std": ["PYT", -4],
+    "dst": ["PYST", -3, "Paraguay Summer Time"],
     "long": "(UTC-04:00) Asuncion"
   },
   "Venezuela": {
-    "std": [
-      "VET",
-      -4
-    ],
+    "std": ["VET", -4],
     "long": "(UTC-04:00) Caracas"
   },
   "Guyana": {
-    "std": [
-      "GYT",
-      -4
-    ]
+    "std": ["GYT", -4]
   },
   "Bolivia": {
-    "std": [
-      "BOT",
-      -4
-    ]
+    "std": ["BOT", -4]
   },
   "Newfoundland": {
-    "std": [
-      "HNTN",
-      -3.5
-    ],
-    "dst": [
-      "HETN",
-      -2.5
-    ],
+    "std": ["HNTN", -3.5],
+    "dst": ["HETN", -2.5],
     "long": "(UTC-03:30) Newfoundland"
   },
   "French Guiana": {
-    "std": [
-      "GFT",
-      -3
-    ]
+    "std": ["GFT", -3]
   },
   "West Greenland": {
-    "std": [
-      "WGT",
-      -3
-    ],
-    "dst": [
-      "WGST",
-      -2,
-      "West Greenland Summer Time"
-    ],
+    "std": ["WGT", -3],
+    "dst": ["WGST", -2, "West Greenland Summer Time"],
     "long": "(UTC-03:00) Greenland"
   },
   "St. Pierre & Miquelon": {
-    "std": [
-      "HNPM",
-      -3
-    ],
-    "dst": [
-      "HEPM",
-      -2
-    ],
+    "std": ["HNPM", -3],
+    "dst": ["HEPM", -2],
     "long": "(UTC-03:00) Saint Pierre and Miquelon"
   },
   "Uruguay": {
-    "std": [
-      "UYT",
-      -3
-    ],
+    "std": ["UYT", -3],
     "long": "(UTC-03:00) Montevideo"
   },
   "Suriname": {
-    "std": [
-      "SRT",
-      -3
-    ]
+    "std": ["SRT", -3]
   },
   "Falkland Islands": {
-    "std": [
-      "FKST",
-      -3
-    ]
+    "std": ["FKST", -3]
   },
   "Fernando de Noronha": {
-    "std": [
-      "FNT",
-      -2
-    ]
+    "std": ["FNT", -2]
   },
   "South Georgia": {
-    "std": [
-      "GST",
-      -2
-    ]
+    "std": ["GST", -2]
   },
   "Azores": {
-    "std": [
-      "AZOT",
-      -1
-    ],
-    "dst": [
-      "AZOST",
-      0,
-      "Azores Summer Time"
-    ],
+    "std": ["AZOT", -1],
+    "dst": ["AZOST", 0, "Azores Summer Time"],
     "long": "(UTC-01:00) Azores"
   },
   "Cape Verde": {
-    "std": [
-      "CVT",
-      -1
-    ],
+    "std": ["CVT", -1],
     "long": "(UTC-01:00) Cabo Verde Is."
   }
 };
@@ -1508,32 +1030,54 @@ var metas = {
 // const metas = require('../../data/05-metazones')
 // import offsets from './offsets.js'
 
+for (let i = 0; i < 14; i += 1) {
+  metas[`gmt-${i}`] = {
+    name: `Etc/GMT-${i}`,
+    std: [`GMT-${i}`, -i],
+    long: `(UTC-${i}:00) Coordinated Universal Time`
+  };
+  metas[`gmt+${i}`] = {
+    name: `Etc/GMT+${i}`,
+    std: [`GMT+${i}`, i],
+    long: `(UTC+${i}:00) Coordinated Universal Time`
+  };
+}
+
 const display = function (id) {
   if (!id) {
     return null
   }
+  if (!zones[id]) {
+    console.error(`missing id ${id}`);
+    return null
+  }
   let metaName = zones[id].meta;
-  let meta = metas[metaName];
-
+  if (!metas[metaName]) {
+    console.error(`missing tz-meta ${metaName}`);
+  }
+  let meta = metas[metaName] || {};
   let dst = null;
   if (meta.dst) {
     let [abbr, offset, name] = meta.dst;
     name = name || `${metaName} Daylight Time`;
-    dst = { abbr, offset, name };
+    let [start, end] = zones[id].dst || [];
+    dst = { abbr, offset, name, start, end };
   }
 
   let [abbr, offset] = meta.std;
+  let name = meta.name || `${metaName} Time`;
+  let long = meta.long || `(UTC+${offset}:00) ${name}`;
   return {
-    name: `${metaName} Time`,
+    name: name,
     iana: id,
-    standard: { abbr, offset, name: `${metaName} Standard Time`, },
+    standard: { abbr, offset, name: meta.name || `${metaName} Standard Time`, },
     daylight: dst || null,
-    long: meta.long
+    long: long,
   }
 };
 var display$1 = display;
 
-var version = '1.3.1';
+var version = '1.4.0';
 
 const soft = function (str) {
   let ids = find$1(str) || [];

@@ -73,7 +73,8 @@ export default {
       "chuuk",
       "pacific/truk",
       "pacific/yap",
-      "chuuk/trukyap"
+      "chuuk/trukyap",
+      "chut"
     ],
     "meta": "Chuuk"
   },
@@ -215,6 +216,7 @@ export default {
       "hawaii aleutian",
       "aleutian",
       "hast",
+      "hadt",
       "aleutian islands"
     ],
     "meta": "Hawaii-Aleutian"
@@ -225,6 +227,7 @@ export default {
     "names": [
       "pacific",
       "kanton",
+      "phot",
       "phoenix islands",
       "pacific/enderbury"
     ],
@@ -324,7 +327,8 @@ export default {
       "norfolk island",
       "nf",
       "nfk",
-      "nft"
+      "nft",
+      "nfdt"
     ],
     "meta": "Norfolk Island"
   },
@@ -390,6 +394,7 @@ export default {
       "french polynesia",
       "pf",
       "pyf",
+      "pont",
       "pacific/ponape",
       "pohnpei/ponape"
     ],

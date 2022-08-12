@@ -12,6 +12,7 @@ export default {
       "aleutian islands",
       "aleutian standard time",
       "hst",
+      "hdt",
       "aleutian",
       "hawaii standard time"
     ],
@@ -593,7 +594,8 @@ export default {
       "mazatlan",
       "mountain mexico",
       "mexican pacific standard time",
-      "hnpmx"
+      "hnpmx",
+      "hepmx"
     ],
     "meta": "Mexican Pacific"
   },
@@ -953,7 +955,8 @@ export default {
       "cuba time",
       "hcu",
       "cuba standard time",
-      "hncu"
+      "hncu",
+      "hecu"
     ],
     "meta": "Cuba"
   },
@@ -1585,7 +1588,8 @@ export default {
       "at",
       "atlantic",
       "atlantic standard time",
-      "ast"
+      "ast",
+      "hepm"
     ],
     "meta": "Atlantic"
   },
@@ -1837,6 +1841,8 @@ export default {
       "greenland",
       "gl",
       "grl",
+      "wgt",
+      "wgst",
       "america/godthab"
     ],
     "meta": "West Greenland"
@@ -2335,6 +2341,7 @@ export default {
       "ittoqqortoormiit",
       "east greenland time",
       "heg",
+      "heeg",
       "greenland eastern",
       "east greenland standard time",
       "hneg"
@@ -2376,7 +2383,8 @@ export default {
       "newfoundland time",
       "htn",
       "newfoundland standard time",
-      "hntn"
+      "hntn",
+      "hetn"
     ],
     "meta": "Newfoundland"
   },
@@ -2454,6 +2462,8 @@ export default {
       "america/santa_isabel",
       "pacific time",
       "pt",
+      "henomx",
+      "hnnomx",
       "america pacific",
       "pacific standard time",
       "pacific",

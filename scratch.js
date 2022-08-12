@@ -1,12 +1,27 @@
 import soft from './src/index.js'
+import metas from './src/display/metas.js'
+
 // import spacetime from 'spacetime'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-// let ids = soft('America/Argentina/Buenos_Aires')
-let ids = soft('5hrs')
+let ids = soft('America/Nuuk')
 console.log(ids)
 
+
+// Object.keys(metas).forEach(k => {
+//   let ids = soft(metas[k].std[0])
+//   if (ids.length === 0) {
+//     console.log(k, metas[k].std[0])
+//   }
+  // if (metas[k].dst) {
+  //   ids = soft(metas[k].dst[0])
+  //   if (ids.length === 0) {
+  //     console.log(k, metas[k].dst[0])
+  //   }
+  // }
+
+// })
 
 // let out = {
 //   iana: 'Australia/Lord_Howe',

@@ -1,6 +1,6 @@
 {
   "name": "timezone-soft",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "author": "spencermountain",
   "description": "interpret abbreviated and informal timezone names",
   "main": "builds/timezone-soft.cjs",
@@ -47,7 +47,7 @@
     "@rollup/plugin-node-resolve": "13.3.0",
     "amble": "1.3.0",
     "efrt": "2.7.0",
-    "rollup": "2.77.2",
+    "rollup": "2.77.3",
     "rollup-plugin-terser": "7.0.2",
     "spacetime": "7.1.4",
     "tap-dancer": "0.3.4",
