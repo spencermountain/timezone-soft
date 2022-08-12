@@ -1684,7 +1684,6 @@ export default {
       "chesapeake",
       "lexington",
       "richmond",
-      "jamaica",
       "rochester",
       "fayetteville",
       "yonkers",

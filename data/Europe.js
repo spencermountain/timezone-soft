@@ -24,6 +24,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -44,6 +45,7 @@ export default {
       "paris",
       "romance",
       "central european",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -104,6 +106,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -129,6 +132,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -177,6 +181,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -202,6 +207,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -241,6 +247,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -288,6 +295,7 @@ export default {
       "paris",
       "romance",
       "central european",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -586,6 +594,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -647,6 +656,7 @@ export default {
       "copenhagen",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -667,6 +677,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -710,6 +721,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -815,6 +827,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -846,6 +859,7 @@ export default {
       "fra",
       "normandy",
       "met",
+      "cest",
       "cet",
       "central european",
       "europe central",
@@ -877,6 +891,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet"
     ],
     "meta": "Central European"
@@ -940,6 +955,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet",
       "brussels, copenhagen, madrid, paris"
     ],
@@ -1013,6 +1029,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet",
       "brussels, copenhagen, madrid, paris"
     ],
@@ -1052,6 +1069,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet",
       "brussels, copenhagen, madrid, paris"
     ],
@@ -1108,6 +1126,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet",
       "brussels, copenhagen, madrid, paris"
     ],
@@ -1187,6 +1206,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet",
       "brussels, copenhagen, madrid, paris"
     ],
@@ -1231,6 +1251,7 @@ export default {
       "madrid",
       "paris",
       "romance",
+      "cest",
       "cet",
       "brussels, copenhagen, madrid, paris"
     ],
