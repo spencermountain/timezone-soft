@@ -4,7 +4,6 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
       "adak",
       "america/atka",
       "us/aleutian",
@@ -43,7 +42,7 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "araguaina",
       "palmas",
       "tocantins",
@@ -60,9 +59,8 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
-      "buenos_aires",
+      "buenos aires",
       "ar",
       "arg",
       "america/buenos_aires",
@@ -74,7 +72,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "catamarca",
       "america/argentina/comodrivadavia",
@@ -86,7 +83,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "cordoba",
       "america/cordoba",
@@ -98,7 +94,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "jujuy",
       "america/jujuy"
@@ -109,9 +104,8 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
-      "la_rioja",
+      "la rioja",
       "argentina time",
       "art",
       "arst",
@@ -125,7 +119,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "mendoza",
       "america/mendoza"
@@ -136,7 +129,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "rio_gallegos",
       "argentina time",
@@ -152,7 +144,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "salta",
       "argentina time",
@@ -168,13 +159,11 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
-      "san_juan",
+      "san juan",
       "argentina time",
       "art",
       "arst",
-      "argentina standard time",
       "buenos aires",
       "city of buenos aires"
     ],
@@ -184,13 +173,11 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
-      "san_luis",
+      "san luis",
       "argentina time",
       "art",
       "arst",
-      "argentina standard time",
       "buenos aires",
       "city of buenos aires"
     ],
@@ -200,13 +187,11 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "tucuman",
       "argentina time",
       "art",
       "arst",
-      "argentina standard time",
       "buenos aires",
       "city of buenos aires"
     ],
@@ -216,13 +201,11 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "argentina",
       "ushuaia",
       "argentina time",
       "art",
       "arst",
-      "argentina standard time",
       "buenos aires",
       "city of buenos aires"
     ],
@@ -233,7 +216,6 @@ export default {
     "hem": "s",
     "dst": "par",
     "names": [
-      "america",
       "asuncion",
       "ciudad del este",
       "san lorenzo",
@@ -244,7 +226,6 @@ export default {
       "pyt",
       "pyst",
       "paraguay time",
-      "paraguay standard time"
     ],
     "meta": "Paraguay"
   },
@@ -252,7 +233,7 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "bahia",
       "salvador",
       "feira de santana",
@@ -273,7 +254,7 @@ export default {
     "hem": "n",
     "dst": "mex",
     "names": [
-      "america",
+      "mexico",
       "bahia_banderas",
       "bahía de banderas",
       "central mexico time",
@@ -291,7 +272,6 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
       "barbados",
       "bb",
       "brb",
@@ -304,7 +284,7 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "belem",
       "ananindeua",
       "macapa",
@@ -323,7 +303,6 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
       "belize",
       "bz",
       "blz",
@@ -336,8 +315,7 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
-      "boa_vista",
+      "boa vista",
       "boa vista",
       "roraima",
       "amazon time",
@@ -355,7 +333,6 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america",
       "bogota",
       "cali",
       "medellin",
@@ -388,9 +365,7 @@ export default {
       "co",
       "col",
       "cot",
-      "colombia time",
       "cost",
-      "colombia standard time"
     ],
     "meta": "Colombia"
   },
@@ -401,6 +376,7 @@ export default {
     "names": [
       "america",
       "boise",
+      "idaho",
       "mpt",
       "mountain id",
       "mountain time",
@@ -418,7 +394,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "cambridge_bay",
+      "cambridge bay",
       "mddt",
       "mountain time",
       "mt",
@@ -433,8 +409,7 @@ export default {
     "offset": -4,
     "hem": "s",
     "names": [
-      "america",
-      "campo_grande",
+      "brazil",
       "campo grande",
       "mato grosso do sul",
       "amazon standard time",
@@ -446,7 +421,7 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america",
+      "mexico",
       "cancun",
       "quintana roo",
       "est",
@@ -458,7 +433,6 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
       "caracas",
       "maracaibo",
       "maracay",
@@ -496,9 +470,9 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
       "cayenne",
       "french guiana",
+      "guiana",
       "gf",
       "guf",
       "gft",
@@ -512,6 +486,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
+      "usa",
       "chicago",
       "houston",
       "san antonio",
@@ -575,7 +550,6 @@ export default {
       "central time",
       "ct",
       "america central",
-      "central standard time"
     ],
     "meta": "Central"
   },
@@ -584,7 +558,7 @@ export default {
     "hem": "n",
     "dst": "mex",
     "names": [
-      "america",
+      "mexico",
       "chihuahua",
       "mexican pacific time",
       "hpmx",
@@ -593,7 +567,7 @@ export default {
       "la paz",
       "mazatlan",
       "mountain mexico",
-      "mexican pacific standard time",
+      "mexican pacific",
       "hnpmx",
       "hepmx"
     ],
@@ -603,8 +577,6 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
-      "costa_rica",
       "costa rica",
       "cr",
       "cri",
@@ -618,7 +590,7 @@ export default {
     "offset": -4,
     "hem": "s",
     "names": [
-      "america",
+      "brazil",
       "cuiaba",
       "varzea grande",
       "mato grosso",
@@ -631,7 +603,7 @@ export default {
     "offset": 0,
     "hem": "n",
     "names": [
-      "america",
+      "denmark",
       "danmarkshavn",
       "greenwich mean time",
       "gmt",
@@ -645,7 +617,7 @@ export default {
     "offset": -7,
     "hem": "n",
     "names": [
-      "america",
+      "canada",
       "dawson",
       "ydt",
       "ypt",
@@ -660,8 +632,8 @@ export default {
     "offset": -7,
     "hem": "n",
     "names": [
-      "america",
-      "dawson_creek",
+      "canada",
+      "dawson creek",
       "ppt",
       "pwt",
       "mt",
@@ -676,6 +648,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
+      "usa",
       "denver",
       "el paso",
       "albuquerque",
@@ -722,7 +695,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "edmonton",
       "calgary",
       "alberta",
@@ -740,7 +713,7 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "eirunepe",
       "amazonas west",
       "acre time",
@@ -754,8 +727,6 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
-      "el_salvador",
       "san salvador",
       "soyapango",
       "el salvador",
@@ -770,8 +741,9 @@ export default {
     "offset": -7,
     "hem": "n",
     "names": [
-      "america",
-      "fort_nelson",
+      "canada",
+      "british columbia",
+      "fort nelson",
       "mt",
       "mountain standard time",
       "mst"
@@ -782,7 +754,7 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
+      "brazil",
       "fortaleza",
       "sao luis",
       "natal",
@@ -809,7 +781,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "glace_bay",
       "cape breton",
       "atlantic time",
@@ -825,7 +797,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "goose_bay",
       "npt",
       "labrador",
@@ -842,8 +814,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
-      "grand_turk",
+      "grand turk",
       "turks and caicos",
       "tc",
       "tca",
@@ -861,7 +832,6 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
       "guatemala",
       "mixco",
       "villa nueva",
@@ -876,7 +846,6 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america",
       "guayaquil",
       "quito",
       "cuenca",
@@ -897,7 +866,6 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
       "guyana",
       "georgetown",
       "gy",
@@ -912,7 +880,8 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
+      "ca",
       "halifax",
       "new brunswick",
       "nova scotia",
@@ -934,7 +903,6 @@ export default {
     "hem": "n",
     "dst": "cuba",
     "names": [
-      "america",
       "havana",
       "santiago de cuba",
       "camaguey",
@@ -964,7 +932,7 @@ export default {
     "offset": -7,
     "hem": "n",
     "names": [
-      "america",
+      "mexico",
       "hermosillo",
       "ciudad obregon",
       "nogales",
@@ -1094,7 +1062,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "inuvik",
       "pddt",
       "mountain time",
@@ -1111,7 +1079,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "iqaluit",
       "eddt",
       "eastern time",
@@ -1127,7 +1095,6 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america",
       "jamaica",
       "kingston",
       "new kingston",
@@ -1188,8 +1155,7 @@ export default {
     "offset": -4,
     "hem": "s",
     "names": [
-      "america",
-      "la_paz",
+      "la paz",
       "santa cruz de la sierra",
       "cochabamba",
       "la paz",
@@ -1207,7 +1173,6 @@ export default {
     "offset": -5,
     "hem": "s",
     "names": [
-      "america",
       "lima",
       "arequipa",
       "callao",
@@ -1239,6 +1204,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
+      "usa",
       "los_angeles",
       "los angeles",
       "la",
@@ -1302,7 +1268,6 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
       "maceio",
       "aracaju",
       "alagoassergipe",
@@ -1319,7 +1284,6 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
       "managua",
       "nicaragua",
       "ni",
@@ -1333,7 +1297,7 @@ export default {
     "offset": -4,
     "hem": "s",
     "names": [
-      "america",
+      "brazil",
       "manaus",
       "brazil/west",
       "amt",
@@ -1352,8 +1316,9 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
+      "french martinique",
       "martinique",
+      "fort de france",
       "mq",
       "mtq",
       "ffmt",
@@ -1367,7 +1332,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "mexico",
       "matamoros",
       "reynosa",
       "heroica matamoros",
@@ -1386,7 +1351,7 @@ export default {
     "hem": "n",
     "dst": "mex",
     "names": [
-      "america",
+      "mexico",
       "mazatlan",
       "culiacan",
       "tepic",
@@ -1410,6 +1375,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
+      "wisconsin",
       "menominee",
       "central time",
       "ct",
@@ -1425,7 +1391,7 @@ export default {
     "hem": "n",
     "dst": "mex",
     "names": [
-      "america",
+      "mexico",
       "merida",
       "campeche",
       "campecheyucatán",
@@ -1463,7 +1429,6 @@ export default {
     "hem": "n",
     "dst": "mex",
     "names": [
-      "america",
       "mexico_city",
       "mexico",
       "iztapalapa",
@@ -1560,7 +1525,6 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
       "miquelon",
       "st pierre and miquelon",
       "pm",
@@ -1581,7 +1545,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "moncton",
       "new brunswick",
       "atlantic time",
@@ -1598,7 +1562,7 @@ export default {
     "hem": "n",
     "dst": "mex",
     "names": [
-      "america",
+      "mexico",
       "monterrey",
       "saltillo",
       "guadalupe",
@@ -1627,7 +1591,6 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
       "montevideo",
       "uruguay",
       "uy",
@@ -1747,7 +1710,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "nipigon",
       "eastern time",
       "et",
@@ -1780,7 +1743,7 @@ export default {
     "offset": -2,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "noronha",
       "brazil/denoronha",
       "atlantic islands",
@@ -1796,7 +1759,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "north_dakota",
+      "north dakota",
       "beulah",
       "central standard time",
       "cst"
@@ -1809,7 +1772,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "north_dakota",
+      "north dakota",
       "center",
       "oliver",
       "mercer",
@@ -1824,7 +1787,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "north_dakota",
+      "north dakota",
       "new_salem",
       "central standard time",
       "cst"
@@ -1869,7 +1832,6 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america",
       "panama",
       "san miguelito",
       "pa",
@@ -1889,7 +1851,9 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "nunavit",
+      "canada",
+      "baffin island",
       "pangnirtung",
       "addt",
       "eastern time",
@@ -1905,7 +1869,6 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
       "paramaribo",
       "suriname",
       "sr",
@@ -1955,7 +1918,6 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
       "port-au-prince",
       "port au prince",
       "carrefour",
@@ -1978,7 +1940,7 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "porto_velho",
       "porto velho",
       "rondônia",
@@ -1998,7 +1960,7 @@ export default {
     "hem": "n",
     "names": [
       "america",
-      "puerto_rico",
+      "puerto rico",
       "bayamon",
       "puerto rico",
       "pr",
@@ -2032,8 +1994,8 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
-      "punta_arenas",
+      "chile",
+      "punta arenas",
       "region of magallanes",
       "chile standard time",
       "clt"
@@ -2046,7 +2008,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "rainy_river",
+      "rainy river",
       "ft frances",
       "central time",
       "ct",
@@ -2063,7 +2025,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "rankin_inlet",
+      "rankin inlet",
       "cddt",
       "central time",
       "ct",
@@ -2079,7 +2041,7 @@ export default {
     "hem": "n",
     "names": [
       "america",
-      "recife",
+      "brazil",
       "jaboatao",
       "jaboatao dos guararapes",
       "olinda",
@@ -2100,7 +2062,7 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
+      "canada",
       "regina",
       "saskatoon",
       "saskatchewan",
@@ -2131,8 +2093,7 @@ export default {
     "offset": -5,
     "hem": "s",
     "names": [
-      "america",
-      "rio_branco",
+      "brazil",
       "rio branco",
       "brazil/acre",
       "acre",
@@ -2147,7 +2108,7 @@ export default {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
+      "brazil",
       "santarem",
       "pará west",
       "brasilia time",
@@ -2164,7 +2125,7 @@ export default {
     "hem": "s",
     "dst": "chile",
     "names": [
-      "america",
+      "chile",
       "santiago",
       "puente alto",
       "antofagasta",
@@ -2194,8 +2155,6 @@ export default {
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
-      "santo_domingo",
       "santo domingo",
       "santiago de los caballeros",
       "santo domingo oeste",
@@ -2216,8 +2175,7 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america",
-      "sao_paulo",
+      "brazil",
       "sao paulo",
       "rio",
       "rio de janeiro",
@@ -2333,7 +2291,7 @@ export default {
     "hem": "n",
     "dst": "eu0",
     "names": [
-      "america",
+      "greenland",
       "scoresbysund",
       "egt",
       "egst",
@@ -2371,8 +2329,8 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
-      "st_johns",
+      "canada",
+      "st johns",
       "canada/newfoundland",
       "nst",
       "ndt",
@@ -2392,8 +2350,9 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
-      "swift_current",
+      "canada",
+      "saskatchewan",
+      "swift current",
       "central standard time",
       "cst"
     ],
@@ -2403,7 +2362,6 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "america",
       "tegucigalpa",
       "san pedro sula",
       "honduras",
@@ -2419,7 +2377,6 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
       "thule",
       "pituffik",
       "atlantic time",
@@ -2435,13 +2392,10 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
-      "thunder_bay",
+      "canada",
       "thunder bay",
       "eastern time",
       "et",
-      "america eastern",
-      "eastern standard time",
       "eastern",
       "est"
     ],
@@ -2452,7 +2406,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "mexico",
       "tijuana",
       "mexicali",
       "ensenada",
@@ -2476,7 +2430,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "toronto",
       "montreal",
       "ottawa",
@@ -2517,7 +2471,8 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
+      "ca",
       "vancouver",
       "surrey",
       "okanagan",
@@ -2540,7 +2495,7 @@ export default {
     "offset": -7,
     "hem": "n",
     "names": [
-      "america",
+      "canada",
       "whitehorse",
       "canada/yukon",
       "yst",
@@ -2554,7 +2509,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "winnipeg",
       "manitoba",
       "canada/central",
@@ -2591,7 +2546,7 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+      "canada",
       "yellowknife",
       "mountain time",
       "mt",

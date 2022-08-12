@@ -5,7 +5,7 @@ import metas from './src/display/metas.js'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let ids = soft('America/Nuuk')
+let ids = soft('whitehorse')
 console.log(ids)
 
 

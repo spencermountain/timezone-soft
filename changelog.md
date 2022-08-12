@@ -1,4 +1,4 @@
-### 1.4.1 [July 2021]
+### 1.4.0 [July 2021]
 
 - **[change]** - internal refactor
 - **[change]** - add dst date
