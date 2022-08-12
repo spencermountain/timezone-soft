@@ -2,8 +2,6 @@ import { zones, lexicon } from '../data/index.js'
 import normalize from './normalize.js'
 import parseOffset from './parseOffset.js'
 
-
-
 // match some text to an iana code
 const find = function (str) {
   // perfect id match

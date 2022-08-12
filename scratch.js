@@ -4,9 +4,8 @@ import soft from './src/index.js'
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
 // let ids = soft('America/Argentina/Buenos_Aires')
-let ids = soft('Etc/GMT+8')
+let ids = soft('eastern')
 console.log(ids)
-
 
 
 // let out = {
