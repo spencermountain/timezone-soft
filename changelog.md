@@ -1,4 +1,7 @@
-### 1.4.0 [July 2021]
+### 1.4.1 [August 2022]
+- **[change]** - move ireland off of british standard time
+
+### 1.4.0 [July 2022]
 
 - **[change]** - internal refactor
 - **[change]** - add dst date
