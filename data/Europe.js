@@ -260,6 +260,9 @@ export default {
       "europe",
       "dublin",
       "cork",
+      "limerick",
+      "galway",
+      "waterford",
       "ireland",
       "ie",
       "irl",
@@ -275,7 +278,7 @@ export default {
       "london",
       "greenwich mean time"
     ],
-    "meta": "British"
+    "meta": "Irish"
   },
   "Europe/Gibraltar": {
     "offset": 2,
