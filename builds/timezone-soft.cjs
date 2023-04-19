@@ -265,14 +265,14 @@
   };
 
   const addEtc = function (zones) {
-    for (let i = 0; i < 14; i += 1) {
+    for (let i = 0; i <= 14; i += 1) {
       zones[`Etc/GMT-${i}`] = {
         offset: i,
         meta: `gmt-${i}`,
         hem: 'n'//sorry
       };
       zones[`Etc/GMT+${i}`] = {
-        offset: i,
+        offset: i * -1,
         meta: `gmt+${i}`,
         hem: 'n'//sorry
       };
@@ -332,6 +332,8 @@
       });
     }
   });
+
+  // console.log(zones['Etc/GMT+4'])
 
   //try to match these against iana form
   const one = (str) => {
@@ -1040,15 +1042,15 @@
   // const metas = require('../../data/05-metazones')
   // import offsets from './offsets.js'
 
-  for (let i = 0; i < 14; i += 1) {
+  for (let i = 0; i <= 14; i += 1) {
     metas[`gmt-${i}`] = {
       name: `Etc/GMT-${i}`,
-      std: [`GMT-${i}`, -i],
+      std: [`GMT-${i}`, i],
       long: `(UTC-${i}:00) Coordinated Universal Time`
     };
     metas[`gmt+${i}`] = {
       name: `Etc/GMT+${i}`,
-      std: [`GMT+${i}`, i],
+      std: [`GMT+${i}`, -i],
       long: `(UTC+${i}:00) Coordinated Universal Time`
     };
   }
@@ -1087,7 +1089,7 @@
   };
   var display$1 = display;
 
-  var version = '1.4.1';
+  var version = '1.5.0';
 
   const soft = function (str) {
     let ids = find$1(str) || [];

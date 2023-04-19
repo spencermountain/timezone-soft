@@ -16,3 +16,15 @@ test('shared meta, different dst', (t) => {
 
   t.end()
 })
+
+test('gmt zones are inverted', (t) => {
+  let ids = soft('Etc/GMT+4')
+  t.equal(ids[0].standard.offset, -4, '+4')
+  ids = soft('Etc/GMT-4')
+  t.equal(ids[0].standard.offset, 4, '-4')
+  ids = soft('Etc/GMT+14')
+  t.equal(ids[0].standard.offset, -14, '+14')
+  ids = soft('Etc/GMT-14')
+  t.equal(ids[0].standard.offset, 14, '-14')
+  t.end()
+})

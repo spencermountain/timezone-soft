@@ -1,6 +1,6 @@
 {
   "name": "timezone-soft",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "author": "spencermountain",
   "description": "interpret abbreviated and informal timezone names",
   "main": "builds/timezone-soft.cjs",
@@ -49,7 +49,7 @@
     "efrt": "2.7.0",
     "rollup": "2.77.3",
     "rollup-plugin-terser": "7.0.2",
-    "spacetime": "7.1.4",
+    "spacetime": "7.4.3",
     "tap-dancer": "0.3.4",
     "tape": "5.5.3"
   },

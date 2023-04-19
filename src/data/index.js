@@ -56,3 +56,5 @@ Object.keys(lexicon).forEach(k => {
   }
 })
 export { zones, lexicon }
+
+// console.log(zones['Etc/GMT+4'])

@@ -1,3 +1,8 @@
+### 1.5.0 [April 2023]
+- **[fix]** - inverted GMT zones #21
+- **[change]** - add GMT+14, -14
+- **[change]** - update dependencies
+
 ### 1.4.1 [August 2022]
 - **[change]** - move ireland off of british standard time
 

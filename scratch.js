@@ -4,7 +4,7 @@ import soft from './src/index.js'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let ids = soft('Yellowknife')
+let ids = soft('Etc/GMT+14')
 console.log(ids)
 
 
