@@ -3,15 +3,15 @@ import { zones } from '../data/index.js'
 // const metas = require('../../data/05-metazones')
 // import offsets from './offsets.js'
 
-for (let i = 0; i < 14; i += 1) {
+for (let i = 0; i <= 14; i += 1) {
   metas[`gmt-${i}`] = {
     name: `Etc/GMT-${i}`,
-    std: [`GMT-${i}`, -i],
+    std: [`GMT-${i}`, i],
     long: `(UTC-${i}:00) Coordinated Universal Time`
   }
   metas[`gmt+${i}`] = {
     name: `Etc/GMT+${i}`,
-    std: [`GMT+${i}`, i],
+    std: [`GMT+${i}`, -i],
     long: `(UTC+${i}:00) Coordinated Universal Time`
   }
 }

@@ -81,6 +81,10 @@ export default {
     "dst": ["BST", 1, "British Summer Time"],
     "long": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
   },
+  "Irish": {
+    "std": ["GMT", 0],
+    "dst": ["IST", 1, "Irish Standard Time"]
+  },
   "West Kazakhstan": {
     "std": ["ALMT", 5],
     "long": "(UTC+05:00) Ashgabat, Tashkent"
