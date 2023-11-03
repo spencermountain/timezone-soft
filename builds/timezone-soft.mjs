@@ -1083,7 +1083,7 @@ const display = function (id) {
 };
 var display$1 = display;
 
-var version = '1.5.0';
+var version = '1.5.1';
 
 const soft = function (str) {
   let ids = find$1(str) || [];
