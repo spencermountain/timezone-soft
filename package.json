@@ -13,7 +13,8 @@
     ".": {
       "require": "./builds/timezone-soft.cjs",
       "import": "./builds/timezone-soft.mjs",
-      "default": "./builds/timezone-soft.cjs"
+      "default": "./builds/timezone-soft.cjs",
+      "types": "./types/index.d.ts"
     }
   },
   "scripts": {
