@@ -31,7 +31,6 @@ export default {
       "queensland",
       "australia/queensland",
       "aest",
-      "aedt",
       "australian east",
       "brisbane time",
       "australian eastern"
@@ -105,7 +104,8 @@ export default {
       "aus eastern",
       "aus east",
       "australian eastern",
-      "aest"
+      "aest",
+      "aedt"
     ],
     "meta": "Eastern Australia"
   },
@@ -155,7 +155,8 @@ export default {
       "aus eastern",
       "aus east",
       "australian eastern",
-      "aest"
+      "aest",
+      "aedt"
     ],
     "meta": "Eastern Australia"
   },
@@ -202,7 +203,8 @@ export default {
       "aus eastern",
       "aus east",
       "australian eastern",
-      "aest"
+      "aest",
+      "aedt"
     ],
     "meta": "Eastern Australia"
   }
