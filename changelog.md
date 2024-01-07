@@ -1,3 +1,8 @@
+### 1.5.2 [Jan 2024]
+
+- **[fix]** - AEDT Brisbane issue #27
+- **[update]** - dependencies
+
 ### 1.5.1 [Nov 2023]
 
 - **[fix]** - inverted typescript issue #25
