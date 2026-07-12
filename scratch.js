@@ -4,8 +4,9 @@ import soft from './src/index.js'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-let ids = soft('Etc/GMT+14')
-console.log(ids)
+const result = soft('Africa/Cairo');
+// let ids = soft('Etc/GMT+14')
+console.log(result)
 
 
 // Object.keys(metas).forEach(k => {
@@ -13,12 +14,12 @@ console.log(ids)
 //   if (ids.length === 0) {
 //     console.log(k, metas[k].std[0])
 //   }
-  // if (metas[k].dst) {
-  //   ids = soft(metas[k].dst[0])
-  //   if (ids.length === 0) {
-  //     console.log(k, metas[k].dst[0])
-  //   }
-  // }
+// if (metas[k].dst) {
+//   ids = soft(metas[k].dst[0])
+//   if (ids.length === 0) {
+//     console.log(k, metas[k].dst[0])
+//   }
+// }
 
 // })
 
