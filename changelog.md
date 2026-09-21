@@ -1,3 +1,20 @@
+### 1.6.0 [Sep 2026]
+
+- **[change]** - organize editable data under `data/`, generated files under `src/generated/`, and historical test fixtures under `test/fixtures/`
+- **[change]** - validate data before packing and test ambiguous ranking plus current runtime timezone coverage
+- **[change]** - document data provenance, ranking, DST limitations, contribution steps, and the release process
+- **[change]** - add Node 22/24/26 CI and isolated npm tarball tests
+- **[fix]** - expose `soft.version` and throw a clear `TypeError` for non-string input
+- **[fix]** - bundle dependencies in all builds, including standalone browser bundles
+- **[fix]** - resolve zero offsets correctly and support UTC+13 and UTC+14
+- **[fix]** - correct UTC signs in GMT zone descriptions and reject offset strings with unrelated prefixes
+- **[fix]** - typescript declarations for nullable daylight information, DST start/end rules, and CommonJS imports
+- **[update]** - README examples, return-value documentation, and fractional-offset limitations
+- **[update]** - dependencies and lockfiles
+- **[change]** - add offset regression tests, distribution smoke tests, and typescript consumer checks
+- **[change]** - fail builds on unresolved dependencies or missing browser globals; add `npm run check`
+- **[update]** - dependencies
+
 ### 1.5.2 [Jan 2024]
 
 - **[fix]** - AEDT Brisbane issue #27

@@ -1,18 +1,17 @@
-import metas from './metas.js'
+/* eslint-disable no-console */
+import metas from '../../data/metas.js'
 import { zones } from '../data/index.js'
-// const metas = require('../../data/05-metazones')
-// import offsets from './offsets.js'
 
 for (let i = 0; i <= 14; i += 1) {
   metas[`gmt-${i}`] = {
     name: `Etc/GMT-${i}`,
     std: [`GMT-${i}`, i],
-    long: `(UTC-${i}:00) Coordinated Universal Time`
+    long: `(UTC+${i}:00) Coordinated Universal Time`
   }
   metas[`gmt+${i}`] = {
     name: `Etc/GMT+${i}`,
     std: [`GMT+${i}`, -i],
-    long: `(UTC+${i}:00) Coordinated Universal Time`
+    long: `(UTC-${i}:00) Coordinated Universal Time`
   }
 }
 
@@ -43,7 +42,7 @@ const display = function (id) {
   return {
     name: name,
     iana: id,
-    standard: { abbr, offset, name: meta.name || `${metaName} Standard Time`, },
+    standard: { abbr, offset, name: meta.name || `${metaName} Standard Time` },
     daylight: dst || null,
     long: long,
   }

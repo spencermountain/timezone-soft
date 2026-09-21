@@ -1,7 +1,7 @@
 import { unpack } from 'efrt'
-import dstPatterns from '../find/dst-patterns.js'
-import pcked from './_data.js'
-import misc from './misc.js'
+import dstPatterns from '../../data/dst-patterns.js'
+import pcked from '../generated/zones.js'
+import misc from '../../data/aliases.js'
 import addUTC from './add-utc.js'
 
 // unpack our lexicon of words
@@ -56,5 +56,3 @@ Object.keys(lexicon).forEach(k => {
   }
 })
 export { zones, lexicon }
-
-// console.log(zones['Etc/GMT+4'])

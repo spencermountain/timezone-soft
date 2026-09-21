@@ -5,13 +5,22 @@ export interface TimeZoneInfo {
   abbr: string;
 }
 
+export interface DaylightTimeZoneInfo extends TimeZoneInfo {
+  start: string;
+  end: string;
+}
+
 export interface DisplayFormat {
   name: string;
   iana: string;
   standard: TimeZoneInfo;
-  daylight: TimeZoneInfo;
+  daylight: DaylightTimeZoneInfo | null;
   long: string;
 }
 
 /** interpret timezone names */
-export default function timezoneSoft(tz:string): DisplayFormat[]
+declare function timezoneSoft(tz:string): DisplayFormat[]
+declare namespace timezoneSoft {
+  const version: string;
+}
+export default timezoneSoft;

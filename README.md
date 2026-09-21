@@ -1,160 +1,167 @@
-<div align="center">
+# timezone-soft
 
-  <div>parse abbreviated, sloppy, and informal timezone names</div>
-  <div><img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" /></div>
+Parse abbreviated and informal timezone names into IANA timezone candidates.
 
-  <div align="center">
-    <a href="https://npmjs.org/package/timezone-soft">
-      <img src="https://img.shields.io/npm/v/timezone-soft.svg?style=flat-square" />
-    </a>
-    <!-- <a href="https://codecov.io/gh/spencermountain/timezone-soft">
-      <img src="https://codecov.io/gh/spencermountain/timezone-soft/branch/master/graph/badge.svg" />
-    </a> -->
-    <a href="https://unpkg.com/timezone-soft/builds/timezone-soft.min.js">
-      <img src="https://badge-size.herokuapp.com/spencermountain/timezone-soft/master/builds/timezone-soft.min.js" />
-    </a>
-  </div>
-  <div align="center">
-    <code>npm install timezone-soft</code>
-  </div>
-  <sub>
-    by
-    <a href="https://spencermountain.github.io/">Spencer Kelly</a>
-  </sub>
-  <div align="center">
-    <sup><i>(formerly called 'spacetime-informal')</i></sup>
-  </div>
-</div>
-<p></p>
-
-<!-- spacer -->
-<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+```sh
+npm install timezone-soft
+```
 
 ```js
 import soft from 'timezone-soft'
 
-// get an IANA tz from user input
-let timezones = soft('milwaukee')[0]
-/*[{
-    iana: 'America/Chicago',
-    standard: { name: 'Central Standard Time', abbrev: 'CST' },
-    daylight: { name: 'Central Daylight Time', abbrev: 'CDT' }
-  }
-]*/
+const matches = soft('milwaukee')
+const timezone = matches[0]
+if (timezone) {
+  console.log(timezone.iana) // 'America/Chicago'
+  console.log(timezone.standard.abbr) // 'CST'
+  console.log(timezone.daylight?.abbr) // 'CDT'
+}
 ```
 
-<!-- spacer -->
-<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
-
-**[IANA timezone codes](https://www.iana.org/time-zones)** are the official reference for timezone information, and is what you should use, whenever possible.
-
-Humans though, _are goofballs_, and use a whole different informal scheme:
-
----
-
-- In (North) America: **PST, MST, EST**...
-- in Europe (lately): **WEST, CEST, EEST**...
-- in Africa: **EAT, CAT, WAST**...
-- in Australia: **AWST, AEDT, ACST**...
-
----
-
-#### these line-up with the IANA codes sometimes.
-
-#### ...other times they don't.
-
-<!-- spacer -->
-<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
-
-These names also collide -
-
-'**_IST_**' is used to mean:
-
-- '_Indian Stardard Time_'
-- '_Irish Stardard Time_'
-- '_Israeli Stardard Time_'
-
-These names also produce all-sorts of ambiguities, regarding DST-changes-
-
-Both Winnipeg and Mexico City are **CST**, but have a much different DST schedule:
-![image](https://user-images.githubusercontent.com/399657/52489224-b34d0e00-2b8f-11e9-9de8-0688bec52464.png)
-
-_(thanks [timeanddate.com](https://www.timeanddate.com)!)_
-
--of course, there's a bunch of political/historical/disputed stuff going on, too. Apologies if this library steps into that unknowingly.
-
-<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
-
-...so that's what we're trying to fix - to _'soften'_ this exchange, between human and IANA timezone nomenclature, using some _opinionated-but-common-sense_ rules and decision-making.
-
-It was originally built for use in the _[spacetime timezone library](https://github.com/spencermountain/spacetime)_.
-
-<!-- spacer -->
-<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
-
-### Usage
+CommonJS is supported too:
 
 ```js
 const soft = require('timezone-soft')
 
-soft('EST')
-// 'America/New_York'
-
-soft('central')
-// 'America/Chicago'
-
-soft('venezuela')
-// 'America/Caracas'
-
-soft('south east asia')
-// 'Asia/Bangkok'
+soft('EST')[0].iana // 'America/New_York'
+soft('central')[0].iana // 'America/Chicago'
+soft('venezuela')[0].iana // 'America/Caracas'
+soft('south east asia')[0].iana // 'Asia/Bangkok'
 ```
 
-Typescript/Deno/Webpack:
+## API
+
+### `soft(input: string)`
+
+Returns an array of matching timezone objects, ordered by preference. An empty or
+unrecognized string returns `[]`. Other input types throw a `TypeError` with the
+message `timezone-soft expects a string`.
+
+A match looks like this:
 
 ```js
-import soft from 'timezone-soft'
+{
+  name: 'Central Time',
+  iana: 'America/Chicago',
+  standard: {
+    name: 'Central Standard Time',
+    abbr: 'CST',
+    offset: -6
+  },
+  daylight: {
+    name: 'Central Daylight Time',
+    abbr: 'CDT',
+    offset: -5,
+    start: '2nd-sun-mar-2h',
+    end: '1st-sun-nov-2h'
+  },
+  long: '(UTC-06:00) Central Time (US & Canada)'
+}
 ```
 
-it was built to be as forgiving as possible, and return the most common-sense IANA timezone id from user-input.
+Offsets are hours east of UTC; negative values are west of UTC. `daylight` can be
+`null`. Its `start` and `end` values are descriptive rule strings, not timestamps.
+TypeScript declarations support ESM imports and CommonJS `import = require()`.
 
-<div align="center">
-  <img height="50px" src="https://user-images.githubusercontent.com/399657/68221814-05ed1680-ffb8-11e9-8b6b-c7528d163871.png"/>
-</div>
+### `soft.version`
 
----
+The package version as a string. The older `soft.prototype.version` remains
+available for compatibility.
 
-<!-- spacer -->
-<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+## Ambiguous inputs
 
-### DST
+Abbreviations can describe several places. For example:
 
-Often, the proper timezone name will depend on which date you are referencing.
-You can reckon this pretty-easily with [spacetime](https://github.com/spencermountain/spacetime), like this:
+```js
+soft('IST').map(zone => zone.iana)
+// ['Asia/Kolkata', 'Europe/Dublin', 'Asia/Jerusalem', 'Asia/Colombo']
+```
+
+Exact supported IANA IDs select that zone directly. Alias matches are sorted by
+the number of packed aliases associated with each zone, descending. Ties preserve
+insertion order in the source data. This is a heuristic, not a population ranking
+or a confidence score; adding aliases can change the preferred result.
+
+Show all candidates when ambiguity matters, or ask for a city or IANA ID. The
+library does not use the user's location to choose a result. Regression fixtures
+cover the ordering of `CST`, `IST`, and `BST`.
+
+## UTC and GMT offsets
+
+Whole-hour offsets from UTC-12 through UTC+14 are supported:
+
+```js
+soft('UTC+0')[0].iana // 'Etc/GMT'
+soft('UTC+14')[0].iana // 'Etc/GMT-14'
+soft('-5h')[0].iana // 'Etc/GMT+5'
+```
+
+Surrounding whitespace is accepted for offset inputs. `UTC-5` means five hours
+behind UTC. For compatibility, `GMT+5` follows the reversed IANA `Etc/GMT+5`
+convention; its numeric offset and `long` description use the normal UTC sign.
+
+Fractional offset strings such as `UTC+5:30` return `[]`: the IANA fixed-offset
+`Etc/GMT` IDs have whole-hour precision. Use a named zone such as `Asia/Kolkata` or
+`india` instead. See the [IANA definitions](https://data.iana.org/time-zones/tzdb/etcetera).
+
+## Dates and daylight saving time
+
+This package finds timezone names and supplies curated display metadata. Its
+bundled DST rules are approximate, are not versioned by year, and are not suitable
+for calculating historical or future transitions. See the
+[data notes](data/README.md) for the rule syntax and provenance limitations.
+
+Use a date-aware timezone library to determine the applicable abbreviation at a
+specific instant. For example, with [spacetime](https://github.com/spencermountain/spacetime):
 
 ```js
 const spacetime = require('spacetime')
 const soft = require('timezone-soft')
 
-let display = soft('montreal')[0]
-let show = display.standard.abbrev
-
-// are we in standard time, or daylight time?
-let s = spacetime.now(display.iana)
-if (display.daylight && s.isDST()) {
-  show = display.daylight.abbrev
+const display = soft('montreal')[0]
+if (display) {
+  const now = spacetime.now(display.iana)
+  const info = now.isDST() && display.daylight ? display.daylight : display.standard
+  console.log(now.time() + ' ' + info.abbr)
 }
-console.log(s.time() + ' ' + show)
-// '4:20pm EDT'
 ```
 
-<!-- spacer -->
-<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+The returned metadata is only as current as this package's data. Current runtime
+coverage checks track known missing records for `America/Ciudad_Juarez` and
+`America/Coyhaique`; these currently return `[]`.
 
-work-in-progress!
+## Browsers and supported runtimes
 
-### See also
+The package exports ESM and CommonJS builds. `builds/timezone-soft.min.cjs` is also
+a standalone UMD script: when loaded with a classic `<script>` tag, it exposes
+`timezoneSoft` globally and includes its dependencies.
 
-- [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) .NET Standard Library by Matt Johnson-Pint
+CI is configured for Node.js 22, 24, and 26. Development requires Node 22.13+ on
+22.x, or Node 24+; `.nvmrc` selects Node 24. Browser bundles receive isolated
+JavaScript-context smoke tests, not a full browser compatibility matrix.
 
-MIT
+## Development
+
+Use npm as the primary package manager:
+
+```sh
+npm ci
+npm run check
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the project layout, adding aliases,
+tests, and releases. See [changelog.md](changelog.md) for changes.
+
+## Background
+
+Humans use a different informal scheme from [IANA timezone IDs](https://www.iana.org/time-zones):
+PST, EST, CEST, IST, city names, and regional names. Those names collide and their
+meaning can depend on the date. This library applies opinionated heuristics to
+help turn that input into useful candidates.
+
+Originally built for [spacetime](https://github.com/spencermountain/spacetime),
+and formerly called `spacetime-informal`.
+
+By [Spencer Kelly](https://spencermountain.github.io/). [MIT](LICENSE).
+
+Related: [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.

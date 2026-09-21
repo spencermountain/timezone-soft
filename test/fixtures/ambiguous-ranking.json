@@ -1,0 +1,42 @@
+{
+  "CST": [
+    "Asia/Shanghai",
+    "America/Mexico_City",
+    "America/Chicago",
+    "America/Monterrey",
+    "Asia/Taipei",
+    "America/Merida",
+    "Asia/Macau",
+    "America/Bahia_Banderas",
+    "America/Matamoros",
+    "America/Winnipeg",
+    "America/Menominee",
+    "America/Rainy_River",
+    "America/Rankin_Inlet",
+    "America/Regina",
+    "America/Resolute",
+    "America/El_Salvador",
+    "America/Guatemala",
+    "America/Indiana/Knox",
+    "America/North_Dakota/Center",
+    "America/Tegucigalpa",
+    "America/Costa_Rica",
+    "America/Managua",
+    "America/Belize",
+    "America/Indiana/Tell_City",
+    "America/North_Dakota/Beulah",
+    "America/North_Dakota/New_Salem",
+    "America/Swift_Current"
+  ],
+  "IST": [
+    "Asia/Kolkata",
+    "Europe/Dublin",
+    "Asia/Jerusalem",
+    "Asia/Colombo"
+  ],
+  "BST": [
+    "Europe/London",
+    "Asia/Dhaka",
+    "Europe/Gibraltar"
+  ]
+}

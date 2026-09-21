@@ -1,11 +1,7 @@
-import src from '../src/index.js'
-import build from '../builds/timezone-soft.mjs'
-let lib = src
-//export dev, or compiled lib
-if (typeof process !== undefined && typeof module !== undefined) {
-  if (process.env.TESTENV === 'prod') {
-    console.log('== production build test 🚀 ==')
-    lib = build
-  }
+/* eslint-disable no-console */
+const production = process.env.TESTENV === 'prod'
+const { default: lib } = await import(production ? '../builds/timezone-soft.mjs' : '../src/index.js')
+if (production) {
+  console.log('== production build test 🚀 ==')
 }
 export default lib

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import metas from '../data/meta-zones.js'
 
 import Africa from '../data/Africa.js'
@@ -11,18 +12,7 @@ import Europe from '../data/Europe.js'
 import Indian from '../data/Indian.js'
 import Pacific from '../data/Pacific.js'
 
-let zones = Object.assign({},
-  // Africa,
-  // America,
-  // Antarctica,
-  // Asia,
-  // Atlantic,
-  // Australia,
-  // Etc,
-  // Europe,
-  // Indian,
-  Pacific,
-)
+let zones = Object.assign({}, Africa, America, Antarctica, Asia, Atlantic, Australia, Etc, Europe, Indian, Pacific)
 
 let all = {}
 metas.forEach(o => {

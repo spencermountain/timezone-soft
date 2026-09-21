@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import test from 'tape'
 import soft from './_lib.js'
 

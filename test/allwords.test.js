@@ -5,22 +5,26 @@ let zones = spacetime().timezones
 zones['pacific/kanton'] = true
 
 import { lexicon } from '../src/data/index.js'
-import current from './_current.js'
+import legacy from './fixtures/legacy-zone-records.js'
+
+// A historical fixture must not prevent adding a newly supported IANA zone.
+const recognized = new Set([...Object.keys(zones), ...Intl.supportedValuesOf('timeZone').map(id => id.toLowerCase())])
 
 let list = Object.keys(lexicon)
 test('all words produce valid iana', (t) => {
-  // let olds = new Set()
   list.forEach((str) => {
     let found = soft(str)[0] || { iana: '' }
     let id = found.iana.toLowerCase()
-    t.ok(found && zones[id], str + ' -> ' + JSON.stringify(found, null, 2))
+    t.ok(found && recognized.has(id), str + ' -> ' + JSON.stringify(found, null, 2))
 
-    // if (!current[found.iana]) {
-    //   olds.add(found.iana)
-    // }
-    // ensure we have returned a contemporary iana code
-    t.ok(current[found.iana], 'old-tz -' + found.iana)
+    t.ok(soft(str).every(zone => zone && recognized.has(zone.iana.toLowerCase())), 'all candidates valid: ' + str)
   })
-  // console.log(olds)
+  t.end()
+})
+
+test('historical preferred IDs remain accepted', t => {
+  for (const id of Object.keys(legacy)) {
+    t.ok(soft(id).length > 0, id)
+  }
   t.end()
 })
