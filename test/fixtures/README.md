@@ -9,7 +9,9 @@
 - `legacy-alias-ids.js`: inherited `_outdated.js` list, retained as historical
   reference material. It is not a current authoritative list of deprecated IDs.
 - `ambiguous-ranking.json`: expected ordered candidates for CST, IST, and BST,
-  captured in September 2026 before the data-layout refactor. Review changes as
+  captured in September 2026 before the data-layout refactor, then mapped through
+  the IANA 2026d canonical IDs. The duplicate Rainy River/Winnipeg CST candidate
+  was merged; the remaining preference order was preserved. Review changes as
   public behavior changes rather than blindly regenerating this file.
 - `intl-known-gaps.js`: explicit missing records discovered in the September 2026
   runtime audit. These are coverage limitations, not substitute aliases. The

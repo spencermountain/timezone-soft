@@ -9,7 +9,7 @@ export default {
   'msk+00': ['Europe/Moscow'],
   'msk-01 - kaliningrad': ['Europe/Kaliningrad'],
   'msk+00 - moscow area': ['Europe/Moscow'],
-  'msk+00 - crimea': ['Europe/Kiev'],
+  'msk+00 - crimea': ['Europe/Kyiv'],
   'msk+00 - volgograd': ['Europe/Volgograd'],
   'msk+00 - kirov': ['Europe/Kirov'],
   'msk+01 - astrakhan': ['Europe/Astrakhan'],

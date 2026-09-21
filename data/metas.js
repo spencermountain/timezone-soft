@@ -1,4 +1,13 @@
 export default {
+  "Palmer": {
+    "std": ["-03", -3, "Palmer Time"],
+    "long": "(UTC-03:00) Palmer"
+  },
+  "Xinjiang": {
+    "std": ["+06", 6, "Xinjiang Time"],
+    "name": "Xinjiang Time",
+    "long": "(UTC+06:00) Xinjiang Time"
+  },
   "India": {
     "std": ["IST", 5.5],
     "long": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi"
@@ -82,7 +91,7 @@ export default {
     "long": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
   },
   "Irish": {
-    "std": ["GMT", 0],
+    "std": ["GMT", 0, "Greenwich Mean Time"],
     "dst": ["IST", 1, "Irish Standard Time"]
   },
   "West Kazakhstan": {

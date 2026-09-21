@@ -1,5 +1,9 @@
 ### 1.6.0 [Sep 2026]
 
+- **[change]** - canonicalize returned IDs using pinned IANA 2026d links and deduplicate equivalent candidates; retain old spellings as input aliases
+- **[fix]** - preserve explicit IANA identifiers, including Urumqi, Berlin, Simferopol, and Palmer, instead of guessing from informal aliases
+- **[fix]** - prefer Etc/UTC for UTC and reject nonexistent Etc/GMT+13 and Etc/GMT+14 IDs
+- **[fix]** - name Dublin's winter GMT correctly and document its compatible winter/summer display convention
 - **[change]** - organize editable data under `data/`, generated files under `src/generated/`, and historical test fixtures under `test/fixtures/`
 - **[change]** - validate data before packing and test ambiguous ranking plus current runtime timezone coverage
 - **[change]** - document data provenance, ranking, DST limitations, contribution steps, and the release process

@@ -46,7 +46,16 @@ Some inherited metadata fields are informational and are not read by the formatt
 must exist. Cross-zone alias collisions are expected and preserved. Lookup
 candidates are deduplicated, then ranked by packed alias count, with insertion
 order breaking ties. Aliases from this special table do not contribute to that
-count. Exact supported IANA IDs bypass alias ranking.
+count. Exact supported IANA IDs bypass alias ranking. Returned candidates are mapped
+through `iana-identifiers.js` and deduplicated after ranking.
+
+`iana-identifiers.js` is an imported IANA 2026d Zone/Link catalog (main source
+files plus `backward`, excluding `backzone`). It versions identifier relationships
+only, not offsets or DST metadata. To refresh it, download a reviewed IANA release
+archive and run `node scripts/import-iana-identifiers.js /path/to/tzdata2026d.tar.gz`.
+The importer reads the archive version, resolves link chains, and rejects cycles
+or missing targets. Review canonical-ID changes and run the full check suite.
+Every editable zone must have a bundled record for its canonical target.
 
 ## DST rule strings
 
@@ -82,3 +91,11 @@ older snapshots used for compatibility testing.
 differences are diagnostic and can be legitimate seasonal differences.
 `node scripts/fix-offset.js` only prints differences against the 2022 snapshot;
 despite its historical name, it does not fix or update records.
+
+## Dublin display convention
+
+For API compatibility, `standard` represents winter GMT and `daylight` represents
+summer IST for Dublin. Its standard tuple explicitly names Greenwich Mean Time;
+the summer tuple names Irish Standard Time. These display categories do not match
+IANA's native negative-DST flags for Ireland. Use offsets and the documented
+convention when integrating another library's seasonal classification.

@@ -1,4 +1,13 @@
 export default {
+  // Separate primary identifiers in IANA tzdata2026d; do not resolve via city aliases.
+  "Europe/Berlin": {
+    "offset": 1, "hem": "n", "dst": "eu2",
+    "names": ["berlin", "europe/berlin"], "meta": "Central European"
+  },
+  "Europe/Simferopol": {
+    "offset": 3, "hem": "n",
+    "names": ["simferopol", "europe/simferopol"], "meta": "Moscow"
+  },
   "Europe/Amsterdam": {
     "offset": 2,
     "hem": "n",
@@ -405,7 +414,7 @@ export default {
     ],
     "meta": "Eastern European"
   },
-  "Europe/Kiev": {
+  "Europe/Kyiv": {
     "offset": 3,
     "hem": "n",
     "dst": "eu3",

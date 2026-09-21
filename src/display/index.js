@@ -8,7 +8,7 @@ for (let i = 0; i <= 14; i += 1) {
     std: [`GMT-${i}`, i],
     long: `(UTC+${i}:00) Coordinated Universal Time`
   }
-  metas[`gmt+${i}`] = {
+  if (i <= 12) metas[`gmt+${i}`] = {
     name: `Etc/GMT+${i}`,
     std: [`GMT+${i}`, -i],
     long: `(UTC-${i}:00) Coordinated Universal Time`
@@ -36,13 +36,13 @@ const display = function (id) {
     dst = { abbr, offset, name, start, end }
   }
 
-  let [abbr, offset] = meta.std
+  let [abbr, offset, standardName] = meta.std
   let name = meta.name || `${metaName} Time`
   let long = meta.long || `(UTC+${offset}:00) ${name}`
   return {
     name: name,
     iana: id,
-    standard: { abbr, offset, name: meta.name || `${metaName} Standard Time` },
+    standard: { abbr, offset, name: standardName || meta.name || `${metaName} Standard Time` },
     daylight: dst || null,
     long: long,
   }

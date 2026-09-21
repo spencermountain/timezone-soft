@@ -1,4 +1,11 @@
 export default {
+  // IANA tzdata2026d, asia: Xinjiang time is distinct from Beijing time.
+  "Asia/Urumqi": {
+    "offset": 6,
+    "hem": "n",
+    "names": ["urumqi", "ürümqi", "urumchi", "wulumuqi", "xinjiang time", "asia/urumqi", "asia/kashgar", "kashgar"],
+    "meta": "Xinjiang"
+  },
   "Asia/Almaty": {
     "offset": 6,
     "hem": "n",
@@ -1787,11 +1794,9 @@ export default {
       "asia/chongqing",
       "asia/chungking",
       "asia/harbin",
-      "asia/kashgar",
       "prc",
       "ct",
       "hkt",
-      "asia/urumqi",
       "china time",
       "hong kong",
       "urumqi",

@@ -1,9 +1,19 @@
-import { zones, lexicon } from '../data/index.js'
+import { zones, lexicon, canonicalIds } from '../data/index.js'
 import normalize from './normalize.js'
 import parseOffset from './parseOffset.js'
 
 // match some text to an iana code
 const find = function (str) {
+  const input = str.trim().toLowerCase()
+  if (input === 'utc') return 'Etc/UTC'
+  if (input === 'gmt') return 'Etc/GMT'
+  // Explicit identifiers use IANA links, never informal alias ranking.
+  if (input.includes('/')) {
+    const id = canonicalIds[input]
+    if (id) return Object.hasOwn(zones, id) ? id : null
+    // Some curated informal phrases contain a slash but are not IANA IDs.
+    return Object.hasOwn(lexicon, input) ? lexicon[input] : null
+  }
   // perfect id match
   if (zones.hasOwnProperty(str)) {
     return str
@@ -36,4 +46,3 @@ const find = function (str) {
 }
 
 export default find
-

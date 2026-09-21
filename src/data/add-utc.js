@@ -7,7 +7,7 @@ const addEtc = function (zones) {
       meta: `gmt-${i}`,
       hem: 'n'//sorry
     }
-    zones[`Etc/GMT+${i}`] = {
+    if (i <= 12) zones[`Etc/GMT+${i}`] = {
       offset: i * -1,
       meta: `gmt+${i}`,
       hem: 'n'//sorry

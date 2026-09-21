@@ -77,9 +77,21 @@ soft('IST').map(zone => zone.iana)
 // ['Asia/Kolkata', 'Europe/Dublin', 'Asia/Jerusalem', 'Asia/Colombo']
 ```
 
-Exact supported IANA IDs select that zone directly. Alias matches are sorted by
+Explicit IANA IDs containing `/` are resolved case-insensitively through the pinned
+IANA **2026d** Zone/Link table before informal matching. Unknown IDs are not guessed
+from their city component. A recognized ID without bundled display metadata returns
+`[]`. Curated non-IANA phrases containing `/` can still match registered aliases.
+
+All returned IDs use that table's canonical targets. For example, `Europe/Kiev`
+returns `Europe/Kyiv`, `Asia/Kashgar` returns `Asia/Urumqi` (UTC+6, distinct from
+Shanghai's UTC+8), and `America/Yellowknife` returns `America/Edmonton`.
+This policy uses the main IANA files plus `backward`, not the optional `backzone`
+historical split. Ordinary abbreviations such as `EST` remain informal queries.
+
+Alias matches are sorted by
 the number of packed aliases associated with each zone, descending. Ties preserve
-insertion order in the source data. This is a heuristic, not a population ranking
+insertion order in the source data. Canonicalization then merges duplicate targets
+while preserving their first occurrence. This is a heuristic, not a population ranking
 or a confidence score; adding aliases can change the preferred result.
 
 Show all candidates when ambiguity matters, or ask for a city or IANA ID. The
@@ -87,6 +99,9 @@ library does not use the user's location to choose a result. Regression fixtures
 cover the ordering of `CST`, `IST`, and `BST`.
 
 ## UTC and GMT offsets
+
+`UTC` (including lowercase or surrounding whitespace) resolves only to `Etc/UTC`.
+`GMT` resolves to `Etc/GMT`. Geographic aliases cannot outrank these inputs.
 
 Whole-hour offsets from UTC-12 through UTC+14 are supported:
 
@@ -99,6 +114,8 @@ soft('-5h')[0].iana // 'Etc/GMT+5'
 Surrounding whitespace is accepted for offset inputs. `UTC-5` means five hours
 behind UTC. For compatibility, `GMT+5` follows the reversed IANA `Etc/GMT+5`
 convention; its numeric offset and `long` description use the normal UTC sign.
+`Etc/GMT+13` and `Etc/GMT+14` return `[]` because they are not IANA IDs;
+`Etc/GMT-13` and `Etc/GMT-14` remain valid.
 
 Fractional offset strings such as `UTC+5:30` return `[]`: the IANA fixed-offset
 `Etc/GMT` IDs have whole-hour precision. Use a named zone such as `Asia/Kolkata` or
@@ -126,7 +143,15 @@ if (display) {
 }
 ```
 
-The returned metadata is only as current as this package's data. Current runtime
+The `standard` and `daylight` fields are conventional display categories, not
+IANA's `tm_isdst` flags. In Dublin, `standard` means winter GMT (UTC+0, Greenwich
+Mean Time), and `daylight` means summer IST (UTC+1, Irish Standard Time). IANA's
+native model treats Irish summer as standard and winter as negative DST; this API
+retains its existing winter/summer arrangement for compatibility. Do not select a
+field using a raw IANA DST flag without reconciling those conventions.
+
+The identifier table is versioned independently of display metadata. The returned
+metadata is only as current as this package's curated data. Current runtime
 coverage checks track known missing records for `America/Ciudad_Juarez` and
 `America/Coyhaique`; these currently return `[]`.
 

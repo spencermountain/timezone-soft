@@ -1,4 +1,9 @@
 export default {
+  // IANA tzdata2026d: permanent UTC-03 since December 2016.
+  "Antarctica/Palmer": {
+    "offset": -3, "hem": "s",
+    "names": ["palmer", "antarctica/palmer"], "meta": "Palmer"
+  },
   "Antarctica/Casey": {
     "offset": 8,
     "hours": 3,

@@ -3,6 +3,7 @@ import dstPatterns from '../../data/dst-patterns.js'
 import pcked from '../generated/zones.js'
 import misc from '../../data/aliases.js'
 import addUTC from './add-utc.js'
+import identifiers from '../../data/iana-identifiers.js'
 
 // unpack our lexicon of words
 let zones = {}
@@ -33,6 +34,9 @@ Object.keys(pcked).forEach(top => {
 
 addUTC(zones)
 
+const canonicalIds = Object.fromEntries(Object.entries(identifiers).map(([id, target]) => [id.toLowerCase(), target]))
+const canonicalize = id => canonicalIds[id.toLowerCase()] || id
+
 const unique = function (arr) {
   let obj = {}
   for (let i = 0; i < arr.length; i += 1) {
@@ -55,4 +59,4 @@ Object.keys(lexicon).forEach(k => {
     })
   }
 })
-export { zones, lexicon }
+export { zones, lexicon, canonicalIds, canonicalize }

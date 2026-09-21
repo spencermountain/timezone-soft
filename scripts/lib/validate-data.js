@@ -2,12 +2,13 @@ import zones from '../../data/index.js'
 import metas from '../../data/metas.js'
 import patterns from '../../data/dst-patterns.js'
 import aliases from '../../data/aliases.js'
+import identifiers from '../../data/iana-identifiers.js'
 
 const text = value => typeof value === 'string' && value.trim().length > 0
 const offset = value => Number.isFinite(value) && value >= -14 && value <= 14
 const rule = /^(?:[1-5](?:st|nd|rd|th)|last)-(?:sun|mon|tue|wed|thu|fri|sat)-(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)-\d{1,2}h$/
 
-export const validateData = (data = { zones, metas, patterns, aliases }) => {
+export const validateData = (data = { zones, metas, patterns, aliases, identifiers }) => {
   const errors = []
   const check = (condition, message) => { if (!condition) errors.push(message) }
   for (const [name, pattern] of Object.entries(data.patterns)) {
@@ -24,6 +25,10 @@ export const validateData = (data = { zones, metas, patterns, aliases }) => {
     }
   }
   for (const [id, zone] of Object.entries(data.zones)) {
+    if (data.identifiers) {
+      check(Object.hasOwn(data.identifiers, id), `Zone ${id}: not in the pinned IANA catalog`)
+      check(Object.hasOwn(data.zones, data.identifiers[id]), `Zone ${id}: missing canonical record ${data.identifiers[id]}`)
+    }
     check(/^[A-Za-z_]+\/[A-Za-z0-9_+\-/]+$/.test(id), `Zone ${id}: invalid identifier`)
     check(Object.hasOwn(data.metas, zone.meta), `Zone ${id}: unknown metazone ${zone.meta}`)
     check(zone.dst === undefined || Object.hasOwn(data.patterns, zone.dst), `Zone ${id}: unknown DST pattern ${zone.dst}`)

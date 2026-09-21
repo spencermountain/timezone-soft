@@ -10,7 +10,7 @@ test('shared meta, different dst', (t) => {
 
   res = soft('Yellowknife')
   res[0] = res[0] || {}
-  t.equal(res[0].iana, 'America/Yellowknife', 'found iana')
+  t.equal(res[0].iana, 'America/Edmonton', 'canonical IANA link target')
   t.equal(res[0].standard.abbr, 'MST', 'mountain std')
   t.ok(res[0].daylight, 'found mountain dst')
 
@@ -23,7 +23,7 @@ test('gmt zones are inverted', (t) => {
   ids = soft('Etc/GMT-4')
   t.equal(ids[0].standard.offset, 4, '-4')
   ids = soft('Etc/GMT+14')
-  t.equal(ids[0].standard.offset, -14, '+14')
+  t.deepEqual(ids, [], '+14 is not an IANA ID')
   ids = soft('Etc/GMT-14')
   t.equal(ids[0].standard.offset, 14, '-14')
   t.end()
