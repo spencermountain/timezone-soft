@@ -1,7 +1,7 @@
 {
   "name": "timezone-soft",
   "version": "1.5.2",
-  "author": "spencermountain",
+  "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",
   "description": "interpret abbreviated and informal timezone names",
   "main": "builds/timezone-soft.cjs",
   "module": "builds/timezone-soft.mjs",
@@ -38,14 +38,7 @@
     "prepack": "npm run build",
     "prepublishOnly": "npm run check"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/spencermountain/timezone-soft.git"
-  },
-  "bugs": {
-    "url": "https://github.com/spencermountain/timezone-soft/issues"
-  },
-  "homepage": "https://github.com/spencermountain/timezone-soft#readme",
+  "repository": "github:spencermountain/timezone-soft",
   "files": [
     "builds",
     "types"
