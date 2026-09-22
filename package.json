@@ -1,14 +1,11 @@
 {
   "name": "timezone-soft",
   "version": "1.5.2",
-  "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",
   "description": "interpret abbreviated and informal timezone names",
-  "main": "builds/timezone-soft.cjs",
-  "module": "builds/timezone-soft.mjs",
-  "unpkg": "builds/timezone-soft.min.cjs",
-  "types": "types/index.d.cts",
+  "license": "MIT",
+  "repository": "github:spencermountain/timezone-soft",
+  "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",
   "type": "module",
-  "sideEffects": false,
   "exports": {
     ".": {
       "import": {
@@ -19,8 +16,18 @@
         "types": "./types/index.d.cts",
         "default": "./builds/timezone-soft.cjs"
       },
-      "default": "./builds/timezone-soft.cjs"
+      "default": {
+        "types": "./types/index.d.cts",
+        "default": "./builds/timezone-soft.cjs"
+      }
     }
+  },
+  "main": "./builds/timezone-soft.cjs",
+  "module": "./builds/timezone-soft.mjs",
+  "types": "./types/index.d.cts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
   },
   "scripts": {
     "watch": "node --watch ./scratch.js",
@@ -38,17 +45,15 @@
     "prepack": "npm run build",
     "prepublishOnly": "npm run check"
   },
-  "repository": "github:spencermountain/timezone-soft",
   "files": [
     "builds",
     "types"
   ],
-  "prettier": {
-    "trailingComma": "none",
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 120
-  },
+  "keywords": [
+    "timezone",
+    "iana",
+    "dst"
+  ],
   "dependencies": {
     "efrt": "2.7.0"
   },
@@ -62,5 +67,11 @@
     "tape": "5.10.2",
     "typescript": "^7.0.2"
   },
-  "license": "MIT"
+  "unpkg": "builds/timezone-soft.min.cjs",
+  "prettier": {
+    "trailingComma": "none",
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
+  }
 }

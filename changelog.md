@@ -1,6 +1,7 @@
 ### 1.6.0 [Sep 2026]
 
 - **[fix]** - point the legacy `types` entry to CommonJS declarations so Node10 resolution matches `main`
+- **[fix]** - include CommonJS types in the default export fallback as well as the require branch
 - **[change]** - canonicalize returned IDs using pinned IANA 2026d links and deduplicate equivalent candidates; retain old spellings as input aliases
 - **[fix]** - preserve explicit IANA identifiers, including Urumqi, Berlin, Simferopol, and Palmer, instead of guessing from informal aliases
 - **[fix]** - prefer Etc/UTC for UTC and reject nonexistent Etc/GMT+13 and Etc/GMT+14 IDs
