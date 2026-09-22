@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync, copyFileSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, readFileSync, writeFileSync, rmSync, copyFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -17,6 +17,10 @@ try {
   const target = join(temp, 'node_modules', 'timezone-soft')
   mkdirSync(target, { recursive: true })
   execFileSync('tar', ['-xzf', join(temp, packed.filename), '--strip-components=1', '-C', target], { env: { ...process.env, LC_ALL: 'C' } })
+  // Legacy Node10 resolution pairs main/types and ignores conditional exports.
+  const manifest = JSON.parse(readFileSync(join(target, 'package.json'), 'utf8'))
+  assert.equal('./' + manifest.main, manifest.exports['.'].require.default)
+  assert.equal('./' + manifest.types, manifest.exports['.'].require.types)
   writeFileSync(join(temp, 'package.json'), '{"type":"module"}\n')
   // No dependencies are installed here: every distribution must be self-contained.
   const probe = `

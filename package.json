@@ -6,7 +6,7 @@
   "main": "builds/timezone-soft.cjs",
   "module": "builds/timezone-soft.mjs",
   "unpkg": "builds/timezone-soft.min.cjs",
-  "types": "types/index.d.ts",
+  "types": "types/index.d.cts",
   "type": "module",
   "sideEffects": false,
   "exports": {
