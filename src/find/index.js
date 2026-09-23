@@ -24,7 +24,7 @@ const find = function (str) {
   }
   // -8hrs
   if (/[0-9]/.test(str)) {
-    let etc = parseOffset(str)
+    const etc = parseOffset(str)
     if (etc) {
       return [etc]
     }

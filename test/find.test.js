@@ -2,7 +2,7 @@ import test from 'tape'
 import soft from './_lib.js'
 
 test('informal timezones', (t) => {
-  let arr = [
+  const arr = [
     ['Toronto', 'America/Toronto'],
     ['toronto', 'America/Toronto'],
     ['toronto time', 'America/Toronto'],
@@ -55,7 +55,7 @@ test('informal timezones', (t) => {
     ['yorkshire', 'Europe/London']
   ]
   arr.forEach((a) => {
-    let found = soft(a[0])
+    const found = soft(a[0])
     found[0] = found[0] || {}
     t.equal(found[0].iana, a[1], a[0])
   })
@@ -63,14 +63,14 @@ test('informal timezones', (t) => {
 })
 
 test('false-positive timezones', (t) => {
-  let arr = [
+  const arr = [
     'sf5hasdf',
     '827219',
     'foo',
     '5h5h5h',
   ]
   arr.forEach((str) => {
-    let found = soft(str)
+    const found = soft(str)
     t.equal(found.length, 0, str)
   })
   t.end()

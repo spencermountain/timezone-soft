@@ -3,7 +3,7 @@ import test from 'tape'
 import soft from './_lib.js'
 
 test('display-test', (t) => {
-  let arr = [
+  const arr = [
     ['new york', 'EST', 'EDT'],
     ['easter island', 'EAST', 'EASST'],
     ['lima', 'PET'],
@@ -27,7 +27,7 @@ test('display-test', (t) => {
     // ['8h', 'GMT-8']
   ]
   arr.forEach((a) => {
-    let display = soft(a[0])[0]
+    const display = soft(a[0])[0]
     if (!display) {
       console.log(a)
     }

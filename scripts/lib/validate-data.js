@@ -43,6 +43,6 @@ export const validateData = (data = { zones, metas, patterns, aliases, identifie
       for (const id of ids) check(Object.hasOwn(data.zones, id), `Alias ${alias}: unknown zone ${id}`)
     }
   }
-  if (errors.length) throw new Error(`Invalid timezone data:\n${errors.join('\n')}`)
+  if (errors.length > 0) throw new Error(`Invalid timezone data:\n${errors.join('\n')}`)
   return Object.keys(data.zones).length
 }

@@ -6,21 +6,21 @@ import addUTC from './add-utc.js'
 import identifiers from '../../data/iana-identifiers.js'
 
 // unpack our lexicon of words
-let zones = {}
-let lexicon = Object.assign({}, misc)
+const zones = {}
+const lexicon = Object.assign({}, misc)
 Object.keys(pcked).forEach(top => {
   Object.keys(pcked[top]).forEach(name => {
-    let [words, meta, hem, dst] = pcked[top][name]
-    let id = `${top}/${name}`
+    const [words, meta, hem, dst] = pcked[top][name]
+    const id = `${top}/${name}`
     zones[id] = { meta, hem }
-    let keys = Object.keys(unpack(words))
+    const keys = Object.keys(unpack(words))
     keys.forEach(k => {
       lexicon[k] = lexicon[k] || []
       lexicon[k].push(id)
       // use iana aliases
-      if (k.match(/\//)) {
-        let arr = k.split(/\//)
-        let last = arr[arr.length - 1].toLowerCase()
+      if (/\//.test(k)) {
+        const arr = k.split(/\//)
+        const last = arr[arr.length - 1].toLowerCase()
         lexicon[last] = lexicon[last] || []
         lexicon[last].push(id)
       }
@@ -38,7 +38,7 @@ const canonicalIds = Object.fromEntries(Object.entries(identifiers).map(([id, ta
 const canonicalize = id => canonicalIds[id.toLowerCase()] || id
 
 const unique = function (arr) {
-  let obj = {}
+  const obj = {}
   for (let i = 0; i < arr.length; i += 1) {
     obj[arr[i]] = true
   }
