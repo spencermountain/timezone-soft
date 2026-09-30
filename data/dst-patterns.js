@@ -6,6 +6,9 @@ const patterns = {
   usa: '2nd-sun-mar-2h|1st-sun-nov-2h',// (From 1987 to 2006)
   // mexico
   mex: '1st-sun-apr-2h|last-sun-oct-2h',
+  // Egypt since 2023. 24h means midnight at the end of the last Thursday.
+  // https://data.iana.org/time-zones/tzdb/africa (reviewed 2026-09-30)
+  egypt: 'last-fri-apr-0h|last-thu-oct-24h',
 
   // European Union zone
   eu0: 'last-sun-mar-0h|last-sun-oct-1h',

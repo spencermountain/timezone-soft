@@ -6,7 +6,6 @@
   "repository": "github:spencermountain/timezone-soft",
   "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",
   "type": "module",
-  "packageManager": "pnpm@11.5.0",
   "exports": {
     ".": {
       "import": {
@@ -30,6 +29,7 @@
   "engines": {
     "node": ">=18"
   },
+  "packageManager": "pnpm@11.5.0",
   "scripts": {
     "watch": "node --watch ./scratch.js",
     "pack": "node ./scripts/pack.js",

@@ -5,7 +5,7 @@
 Edit `zones/*.js`, `metas.js`, `dst-patterns.js`, and `aliases.js`. `index.js`
 aggregates the regional records for build and maintenance scripts. Running
 `pnpm run build` validates these sources and writes `src/generated/zones.js`,
-`src/generated/version.js`, and the distributable bundles.
+`src/generated/metas.js`, `src/generated/version.js`, and the distributable bundles.
 
 This is a curated dataset inherited from earlier timezone-soft/spacetime work.
 It is not currently a reproducible import of a specific IANA or CLDR release.
@@ -22,7 +22,7 @@ and transition history. Informal aliases and result preferences are project poli
 | Object key | Preferred IANA identifier returned by lookup |
 | `names` | Nonempty array of informal spellings and historical ID aliases |
 | `meta` | Key into `metas.js` |
-| `hem` | `n` or `s`; retained hemisphere metadata |
+| `hem` | `n` or `s`; maintenance metadata omitted from runtime records |
 | `dst` | Optional key into `dst-patterns.js` |
 | `offset` | Legacy snapshot offset in hours; not a runtime standard-offset source |
 | `hours` | Optional legacy DST adjustment metadata; not used by the formatter |
@@ -33,10 +33,14 @@ omitted from packed runtime records. The runtime `standard.offset` and
 `daylight.offset` come exclusively from metazone tuples. A future removal of the
 legacy fields should be separate from a timezone correctness update.
 
-The packed tuple is `[packedNames, meta, hem, optionalDstPattern]`. Its field order
+The packed tuple is `[packedNames, meta, optionalDstPattern]`. Its field order
 is part of the generator/runtime contract, not a public API.
 
 ## Metazones and aliases
+
+The build includes only metazones referenced by zone records and their `std`,
+`dst`, `name`, and `long` fields. The complete editable metadata remains in
+`data/metas.js`.
 
 Metazones use `std: [abbr, offset, optionalName]` and optionally the same tuple for
 `dst`. Offsets are hours east of UTC. `name` and `long` customize display text.
@@ -57,8 +61,9 @@ The importer reads the archive version, resolves link chains, and rejects cycles
 or missing targets. Review canonical-ID changes and run the full check suite.
 Every editable zone must have a bundled record for its canonical target.
 
-The generated catalog groups aliases under each canonical ID, storing that ID
-once. A leading `/` on an alias reuses the canonical ID's directory; bare and
+The generated catalog groups canonical basenames by directory, then lists aliases
+after each basename. Each directory and canonical name is stored once. A leading
+`/` on an alias reuses the canonical ID's directory; bare and
 cross-directory aliases remain literal. The module reconstructs the same full
 lookup object at import time. The importer uses `scripts/lib/serialize-identifiers.js`
 to keep this representation reproducible. `test/identifiers.test.js` pins the
@@ -72,6 +77,9 @@ Patterns contain two rules separated by `|`, exposed as `start` and `end`:
 ```text
 2nd-sun-mar-2h|1st-sun-nov-2h
 ```
+
+`24h` means midnight at the end of the named day; Egypt's
+`last-thu-oct-24h` ends DST at the end of October's last Thursday.
 
 Each rule describes an ordinal weekday (`1st` through `5th`, or `last`), a
 three-letter weekday, month, and hour. The example describes the second Sunday of

@@ -573,6 +573,22 @@ export default {
     ],
     "meta": "Mexican Pacific"
   },
+  // US Mountain rules since 2022-11-30; distinct from Ojinaga's Central rules.
+  // https://data.iana.org/time-zones/tzdb/northamerica (reviewed 2026-09-30)
+  "America/Ciudad_Juarez": {
+    "offset": -7,
+    "hem": "n",
+    "dst": "usa",
+    "names": ["ciudad juarez", "ciudad juárez", "juarez", "juárez", "america/ciudad_juarez"],
+    "meta": "Mountain"
+  },
+  // https://data.iana.org/time-zones/tzdb/southamerica (reviewed 2026-09-30)
+  "America/Coyhaique": {
+    "offset": -3,
+    "hem": "s",
+    "names": ["coyhaique", "coihaique", "aysen", "aysén", "america/coyhaique"],
+    "meta": "Aysen"
+  },
   "America/Costa_Rica": {
     "offset": -6,
     "hem": "n",
@@ -1817,7 +1833,6 @@ export default {
     "names": [
       "america",
       "ojinaga",
-      "ciudad juarez",
       "chihuahua",
       "mountain time",
       "mt",

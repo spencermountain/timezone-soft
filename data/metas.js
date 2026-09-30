@@ -1,4 +1,16 @@
 export default {
+  "UTC": {
+    "name": "Coordinated Universal Time",
+    "std": ["UTC", 0, "Coordinated Universal Time"],
+    "long": "(UTC+00:00) Coordinated Universal Time"
+  },
+  // Permanent UTC-3 since 2025-03-20; IANA uses the numeric abbreviation -03.
+  // https://data.iana.org/time-zones/tzdb/southamerica (reviewed 2026-09-30)
+  "Aysen": {
+    "name": "Aysen Time",
+    "std": ["-03", -3, "Aysen Time"],
+    "long": "(UTC-03:00) Coyhaique"
+  },
   "Palmer": {
     "std": ["-03", -3, "Palmer Time"],
     "long": "(UTC-03:00) Palmer"

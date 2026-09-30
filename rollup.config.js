@@ -35,7 +35,7 @@ export default {
       plugins: [
         terser({ format: { comments: /^!/ } }),
         sizeCheck({
-          expect: 87, // sizes in kb
+          expect: 75, // sizes in KiB
           warn: 10, // acceptable change (+/-)
           throw: 25 // unacceptable change (+/-)
         })

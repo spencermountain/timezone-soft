@@ -13,10 +13,7 @@ export default {
       "etc/gmt-0",
       "etc/gmt0",
       "etc/greenwich",
-      "greenwich mean time",
-      "zulu",
-      "utc",
-      "coordinated universal time"
+      "greenwich mean time"
     ],
     "meta": "Greenwich Mean"
   },
@@ -32,11 +29,9 @@ export default {
       "zulu",
       "etc/universal",
       "etc/zulu",
-      "greenwich mean time",
-      "gmt",
       "coordinated universal time"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "UTC"
   },
 
 }

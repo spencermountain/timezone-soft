@@ -1,4 +1,8 @@
 ### 1.6.0 [Sep 2026]
+- **[fix]** - restore Cairo daylight metadata under Egypt's rules effective since 2023 (#29)
+- **[fix]** - give UTC its own name and abbreviation, separate from GMT (#23)
+- **[fix]** - add Ciudad Juarez and Coyhaique records; move the Ciudad Juarez alias from Ojinaga (#17)
+- **[change]** - share identifier directory prefixes and omit unused hemisphere and metadata fields from builds
 - **[change]** - compact the IANA identifier catalog without changing its mappings
 - **[fix]** - bundle dependencies in ESM, CommonJS, and `.min.js` browser builds; preserve the `timezoneSoft` global and license banners
 - **[fix]** - format generated UTC descriptions with signed, zero-padded hours and minutes

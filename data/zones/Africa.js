@@ -79,6 +79,7 @@ export default {
   "Africa/Cairo": {
     "offset": 2,
     "hem": "n",
+    "dst": "egypt",
     "names": [
       "africa",
       "cairo",

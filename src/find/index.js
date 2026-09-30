@@ -5,7 +5,7 @@ import parseOffset from './parseOffset.js'
 // match some text to an iana code
 const find = function (str) {
   const input = str.trim().toLowerCase()
-  if (input === 'utc') return 'Etc/UTC'
+  if (['utc', 'uct', 'universal', 'zulu', 'coordinated universal time'].includes(input)) return 'Etc/UTC'
   if (input === 'gmt') return 'Etc/GMT'
   // Explicit identifiers use IANA links, never informal alias ranking.
   if (input.includes('/')) {

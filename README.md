@@ -110,7 +110,9 @@ cover the ordering of `CST`, `IST`, and `BST`.
 
 ## UTC and GMT offsets
 
-`UTC` (including lowercase or surrounding whitespace) resolves only to `Etc/UTC`.
+`UTC` (including lowercase or surrounding whitespace) resolves only to `Etc/UTC`,
+with abbreviation `UTC` and name `Coordinated Universal Time`. The aliases `UCT`,
+`universal`, `zulu`, and `coordinated universal time` resolve to the same record.
 `GMT` resolves to `Etc/GMT`. Geographic aliases cannot outrank these inputs.
 
 Whole-hour offsets from UTC-12 through UTC+14 are supported:
@@ -161,9 +163,10 @@ retains its existing winter/summer arrangement for compatibility. Do not select 
 field using a raw IANA DST flag without reconciling those conventions.
 
 The identifier table is versioned independently of display metadata. The returned
-metadata is only as current as this package's curated data. Current runtime
-coverage checks track known missing records for `America/Ciudad_Juarez` and
-`America/Coyhaique`; these currently return `[]`.
+metadata is only as current as this package's curated data. Coverage includes
+`America/Ciudad_Juarez` (Mountain time with US DST rules) and
+`America/Coyhaique` (permanent UTC−3). Runtime coverage checks flag new missing
+records.
 
 ### See also
 
