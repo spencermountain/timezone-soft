@@ -5,14 +5,8 @@ import load from './load.js'
 
 const green = str => '\x1b[32m' + str + '\x1b[0m'
 const red = str => '\x1b[31m' + str + '\x1b[0m'
-const blue = str => '\x1b[34m' + str + '\x1b[0m'
-const magenta = str => '\x1b[35m' + str + '\x1b[0m'
-const cyan = str => '\x1b[36m' + str + '\x1b[0m'
 const yellow = str => '\x1b[33m' + str + '\x1b[0m'
-const black = str => '\x1b[30m' + str + '\x1b[0m'
-const b = str => '\x1b[1m' + str + '\x1b[0m'
 const dim = str => '\x1b[2m' + str + '\x1b[0m'
-const ul = str => '\x1b[4m' + str + '\x1b[0m'
 
 // Usage: pnpm test:cities 1000
 const limit = 100
@@ -40,7 +34,7 @@ cities.forEach((city, i) => {
     console.log(`${red('✗')} - '${red(city.name)}' (${dim(expected)}) - [${red(found[0])}]`)
   }
 })
-console.log(
-  `${strong}/${cities.length} correct (${((100 * strong) / cities.length).toFixed(2)}%); ${rows.length} cities`
-)
+console.log(`${green(strong)}/${cities.length} correct (${((100 * strong) / cities.length).toFixed(0)}%)`)
+console.log(`${yellow(strong + weak)}/${cities.length} weak (${((100 * (strong + weak)) / cities.length).toFixed(0)}%)`)
+console.log(`${red(wrong)}/${cities.length} wrong (${((100 * wrong) / cities.length).toFixed(0)}%)`)
 
