@@ -188,6 +188,11 @@ if (zone) {
 
 ### See also
 
+- [city-timezones](https://github.com/kevinroberts/city-timezones) — find IANA timezones by city, state, or country.
+- [@vvo/tzdb](https://github.com/vvo/tzdb) — timezone data with friendly names and major cities for timezone selectors.
+- [@coroboros/location-timezone](https://github.com/elysiumphase/node-location-timezone) — timezone lookups by city, country, or capital.
+- [chrono-node](https://github.com/wanasit/chrono) — natural-language date parsing with timezone abbreviation support.
+- [tz-lookup](https://github.com/darkskyapp/tz-lookup-oss) — approximate timezone lookup from latitude and longitude.
 - [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
 
 MIT, PRs welcome
