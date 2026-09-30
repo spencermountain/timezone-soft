@@ -3,12 +3,12 @@ export default {
     "offset": 13,
     "hem": "s",
     "names": [
-      "pacific",
       "apia",
+      "pacific",
       "samoa",
+      "west samoa",
       "ws",
       "wsm",
-      "west samoa",
       "wst"
     ],
     "meta": "West Samoa"
@@ -18,21 +18,21 @@ export default {
     "hem": "s",
     "dst": "nz",
     "names": [
-      "pacific",
-      "auckland",
-      "wellington",
-      "christchurch",
-      "manukau",
-      "north shore",
-      "new zealand",
-      "nz",
-      "nzl",
-      "nzst",
-      "nzdt",
-      "nzmt",
       "antarctica/mcmurdo",
       "antarctica/south_pole",
-      "nzt"
+      "auckland",
+      "christchurch",
+      "manukau",
+      "new zealand",
+      "north shore",
+      "nz",
+      "nzdt",
+      "nzl",
+      "nzmt",
+      "nzst",
+      "nzt",
+      "pacific",
+      "wellington"
     ],
     "meta": "New Zealand"
   },
@@ -40,11 +40,11 @@ export default {
     "offset": 11,
     "hem": "s",
     "names": [
-      "pacific",
       "bougainville",
-      "papua new guinea",
       "guinea",
       "guinean",
+      "pacific",
+      "papua new guinea",
       "pgt"
     ],
     "meta": "Bougainville"
@@ -54,14 +54,14 @@ export default {
     "hem": "s",
     "dst": "chat",
     "names": [
-      "pacific",
-      "chatham",
-      "nz-chat",
-      "chast",
       "chadt",
+      "chast",
+      "chat",
+      "chatham",
       "chatham islands",
       "chatham time",
-      "chat"
+      "nz-chat",
+      "pacific"
     ],
     "meta": "Chatham"
   },
@@ -69,12 +69,12 @@ export default {
     "offset": 10,
     "hem": "n",
     "names": [
-      "pacific",
+      "chut",
       "chuuk",
-      "pacific/truk",
-      "pacific/yap",
       "chuuk/trukyap",
-      "chut"
+      "pacific",
+      "pacific/truk",
+      "pacific/yap"
     ],
     "meta": "Chuuk"
   },
@@ -83,13 +83,13 @@ export default {
     "hem": "s",
     "dst": "east",
     "names": [
-      "pacific",
-      "easter",
       "chile/easterisland",
-      "east",
       "easst",
+      "east",
+      "easter",
       "easter island",
-      "emt"
+      "emt",
+      "pacific"
     ],
     "meta": "Easter Island"
   },
@@ -97,8 +97,8 @@ export default {
     "offset": 11,
     "hem": "n",
     "names": [
-      "pacific",
       "efate",
+      "pacific",
       "vanuatu",
       "vu",
       "vut"
@@ -109,12 +109,12 @@ export default {
     "offset": 13,
     "hem": "n",
     "names": [
-      "pacific",
       "fakaofo",
-      "tokelau",
+      "pacific",
       "tk",
       "tkl",
-      "tkt"
+      "tkt",
+      "tokelau"
     ],
     "meta": "Tokelau"
   },
@@ -122,12 +122,12 @@ export default {
     "offset": 12,
     "hem": "s",
     "names": [
-      "pacific",
       "fiji",
       "fj",
       "fji",
+      "fjst",
       "fjt",
-      "fjst"
+      "pacific"
     ],
     "meta": "Fiji"
   },
@@ -135,11 +135,11 @@ export default {
     "offset": 12,
     "hem": "n",
     "names": [
-      "pacific",
       "funafuti",
+      "pacific",
+      "tuv",
       "tuvalu",
       "tv",
-      "tuv",
       "tvt"
     ],
     "meta": "Tuvalu"
@@ -148,13 +148,13 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "pacific",
+      "colombia",
+      "cost",
+      "cot",
       "galapagos",
       "galt",
       "galápagos islands",
-      "cot",
-      "colombia",
-      "cost"
+      "pacific"
     ],
     "meta": "Galapagos"
   },
@@ -162,10 +162,10 @@ export default {
     "offset": -9,
     "hem": "n",
     "names": [
-      "pacific",
       "gambier",
       "gambier islands",
-      "gamt"
+      "gamt",
+      "pacific"
     ],
     "meta": "Gambier"
   },
@@ -173,13 +173,13 @@ export default {
     "offset": 11,
     "hem": "n",
     "names": [
-      "pacific",
       "guadalcanal",
-      "solomon islands",
+      "pacific",
       "sb",
+      "sbt",
       "slb",
       "solomon",
-      "sbt"
+      "solomon islands"
     ],
     "meta": "Solomon Islands"
   },
@@ -187,14 +187,14 @@ export default {
     "offset": 10,
     "hem": "n",
     "names": [
-      "pacific",
-      "guam",
-      "northern mariana islands",
-      "mp",
-      "mnp",
-      "chst",
-      "pacific/saipan",
       "chamorro",
+      "chst",
+      "guam",
+      "mnp",
+      "mp",
+      "northern mariana islands",
+      "pacific",
+      "pacific/saipan",
       "port moresby",
       "west pacific",
       "western pacific"
@@ -205,18 +205,18 @@ export default {
     "offset": -10,
     "hem": "n",
     "names": [
-      "pacific",
-      "honolulu",
-      "hawaii",
-      "pacific/johnston",
-      "us/hawaii",
-      "hst",
-      "hat",
-      "hawaii aleutian",
       "aleutian",
-      "hast",
+      "aleutian islands",
       "hadt",
-      "aleutian islands"
+      "hast",
+      "hat",
+      "hawaii",
+      "hawaii aleutian",
+      "honolulu",
+      "hst",
+      "pacific",
+      "pacific/johnston",
+      "us/hawaii"
     ],
     "meta": "Hawaii"
   },
@@ -224,11 +224,11 @@ export default {
     "offset": 13,
     "hem": "n",
     "names": [
-      "pacific",
       "kanton",
-      "phot",
+      "pacific",
+      "pacific/enderbury",
       "phoenix islands",
-      "pacific/enderbury"
+      "phot"
     ],
     "meta": "Phoenix Islands"
   },
@@ -236,14 +236,14 @@ export default {
     "offset": 14,
     "hem": "n",
     "names": [
-      "pacific",
-      "kiritimati",
-      "kiribati",
       "ki",
       "kir",
-      "line islands",
+      "kiribati",
+      "kiritimati",
       "kiritimati island",
-      "lint"
+      "line islands",
+      "lint",
+      "pacific"
     ],
     "meta": "Line Islands"
   },
@@ -251,9 +251,9 @@ export default {
     "offset": 11,
     "hem": "n",
     "names": [
-      "pacific",
       "kosrae",
-      "kost"
+      "kost",
+      "pacific"
     ],
     "meta": "Kosrae"
   },
@@ -261,10 +261,10 @@ export default {
     "offset": 12,
     "hem": "n",
     "names": [
-      "pacific",
       "kwajalein",
       "marshall islands",
-      "mht"
+      "mht",
+      "pacific"
     ],
     "meta": "Marshall Islands"
   },
@@ -272,12 +272,12 @@ export default {
     "offset": 12,
     "hem": "n",
     "names": [
-      "pacific",
       "majuro",
       "marshall islands",
       "mh",
       "mhl",
-      "mht"
+      "mht",
+      "pacific"
     ],
     "meta": "Marshall Islands"
   },
@@ -285,10 +285,10 @@ export default {
     "offset": -9.5,
     "hem": "n",
     "names": [
-      "pacific",
       "marquesas",
       "marquesas islands",
-      "mart"
+      "mart",
+      "pacific"
     ],
     "meta": "Marquesas"
   },
@@ -296,11 +296,11 @@ export default {
     "offset": 12,
     "hem": "n",
     "names": [
-      "pacific",
       "nauru",
       "nr",
+      "nrt",
       "nru",
-      "nrt"
+      "pacific"
     ],
     "meta": "Nauru"
   },
@@ -308,11 +308,11 @@ export default {
     "offset": -11,
     "hem": "n",
     "names": [
-      "pacific",
+      "niu",
       "niue",
       "nu",
-      "niu",
-      "nut"
+      "nut",
+      "pacific"
     ],
     "meta": "Niue"
   },
@@ -321,13 +321,13 @@ export default {
     "hem": "n",
     "dst": "aus",
     "names": [
-      "pacific",
-      "norfolk",
-      "norfolk island",
       "nf",
+      "nfdt",
       "nfk",
       "nft",
-      "nfdt"
+      "norfolk",
+      "norfolk island",
+      "pacific"
     ],
     "meta": "Norfolk Island"
   },
@@ -335,12 +335,12 @@ export default {
     "offset": 11,
     "hem": "n",
     "names": [
-      "pacific",
-      "noumea",
-      "new caledonia",
       "nc",
       "ncl",
-      "nct"
+      "nct",
+      "new caledonia",
+      "noumea",
+      "pacific"
     ],
     "meta": "New Caledonia"
   },
@@ -348,14 +348,14 @@ export default {
     "offset": -11,
     "hem": "n",
     "names": [
-      "pacific",
-      "pago_pago",
-      "pacific/samoa",
-      "us/samoa",
-      "samoa",
       "midway",
+      "pacific",
       "pacific/midway",
-      "sst"
+      "pacific/samoa",
+      "pago_pago",
+      "samoa",
+      "sst",
+      "us/samoa"
     ],
     "meta": "Samoa"
   },
@@ -365,8 +365,8 @@ export default {
     "names": [
       "pacific",
       "palau",
-      "pw",
       "plw",
+      "pw",
       "pwt"
     ],
     "meta": "Palau"
@@ -376,11 +376,11 @@ export default {
     "hem": "n",
     "names": [
       "pacific",
+      "pcn",
       "pitcairn",
       "pn",
-      "pcn",
-      "utc-08",
-      "pst"
+      "pst",
+      "utc-08"
     ],
     "meta": "Pitcairn"
   },
@@ -388,14 +388,14 @@ export default {
     "offset": 11,
     "hem": "n",
     "names": [
-      "pacific",
-      "pohnpei",
       "french polynesia",
-      "pf",
-      "pyf",
-      "pont",
+      "pacific",
       "pacific/ponape",
-      "pohnpei/ponape"
+      "pf",
+      "pohnpei",
+      "pohnpei/ponape",
+      "pont",
+      "pyf"
     ],
     "meta": "Ponape"
   },
@@ -403,17 +403,17 @@ export default {
     "offset": 10,
     "hem": "s",
     "names": [
-      "pacific",
-      "port_moresby",
-      "port moresby",
-      "papua new guinea",
-      "pg",
-      "png",
-      "dumont-d'urville",
       "antarctica/dumontdurville",
+      "dumont-d'urville",
       "guinea",
       "guinean",
-      "pgt"
+      "pacific",
+      "papua new guinea",
+      "pg",
+      "pgt",
+      "png",
+      "port moresby",
+      "port_moresby"
     ],
     "meta": "Papua New Guinea"
   },
@@ -421,13 +421,13 @@ export default {
     "offset": -10,
     "hem": "n",
     "names": [
-      "pacific",
-      "rarotonga",
-      "cook islands",
       "ck",
-      "cok",
       "ckt",
-      "cook"
+      "cok",
+      "cook",
+      "cook islands",
+      "pacific",
+      "rarotonga"
     ],
     "meta": "Cook Islands"
   },
@@ -436,8 +436,8 @@ export default {
     "hem": "n",
     "names": [
       "pacific",
-      "tahiti",
       "society islands",
+      "tahiti",
       "taht"
     ],
     "meta": "Tahiti"
@@ -446,10 +446,10 @@ export default {
     "offset": 12,
     "hem": "n",
     "names": [
-      "pacific",
-      "tarawa",
       "gilbert islands",
-      "gilt"
+      "gilt",
+      "pacific",
+      "tarawa"
     ],
     "meta": "Gilbert Islands"
   },
@@ -457,12 +457,12 @@ export default {
     "offset": 13,
     "hem": "s",
     "names": [
+      "nuku'alofa",
       "pacific",
-      "tongatapu",
-      "tonga",
       "to",
       "ton",
-      "nuku'alofa",
+      "tonga",
+      "tongatapu",
       "tot"
     ],
     "meta": "Tonga"
@@ -472,10 +472,10 @@ export default {
     "hem": "n",
     "names": [
       "pacific",
-      "wake",
-      "us minor outlying islands",
       "um",
       "umi",
+      "us minor outlying islands",
+      "wake",
       "wake island",
       "wakt"
     ],
@@ -487,11 +487,11 @@ export default {
     "names": [
       "pacific",
       "wallis",
+      "wallis & futuna",
       "wallis and futuna",
       "wf",
-      "wlf",
-      "wallis & futuna",
-      "wft"
+      "wft",
+      "wlf"
     ],
     "meta": "Wallis & Futuna"
   }

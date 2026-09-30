@@ -6,8 +6,8 @@ export default {
     "names": [
       "atlantic",
       "azores",
-      "azot",
       "azost",
+      "azot",
       "hmt"
     ],
     "meta": "Azores"
@@ -17,12 +17,12 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
+      "ast",
+      "at",
       "atlantic",
       "bermuda",
       "bm",
-      "bmu",
-      "at",
-      "ast"
+      "bmu"
     ],
     "meta": "Atlantic"
   },
@@ -33,11 +33,11 @@ export default {
     "names": [
       "atlantic",
       "canary",
+      "canary islands",
+      "europe western",
       "las palmas de gran canaria",
       "santa cruz de tenerife",
-      "canary islands",
       "western european",
-      "europe western",
       "wet"
     ],
     "meta": "Western European"
@@ -47,12 +47,12 @@ export default {
     "hem": "n",
     "names": [
       "atlantic",
-      "cape verde",
-      "cv",
-      "cpv",
-      "cvt",
       "cabo verde",
-      "cabo verde is"
+      "cabo verde is",
+      "cape verde",
+      "cpv",
+      "cv",
+      "cvt"
     ],
     "meta": "Cape Verde"
   },
@@ -62,11 +62,11 @@ export default {
     "dst": "eu1",
     "names": [
       "atlantic",
+      "atlantic/faeroe",
       "faroe",
       "faroe islands",
       "fo",
-      "fro",
-      "atlantic/faeroe"
+      "fro"
     ],
     "meta": "Western European"
   },
@@ -76,10 +76,10 @@ export default {
     "dst": "eu1",
     "names": [
       "atlantic",
+      "europe western",
       "madeira",
       "madeira islands",
       "western european",
-      "europe western",
       "wet"
     ],
     "meta": "Western European"
@@ -89,15 +89,15 @@ export default {
     "hem": "n",
     "names": [
       "atlantic",
-      "reykjavik",
+      "coordinated universal time",
+      "gmt",
+      "greenwich mean time",
       "iceland",
       "is",
       "isl",
-      "greenwich mean time",
-      "gmt",
-      "zulu",
+      "reykjavik",
       "utc",
-      "coordinated universal time"
+      "zulu"
     ],
     "meta": "Greenwich Mean"
   },
@@ -106,10 +106,10 @@ export default {
     "hem": "n",
     "names": [
       "atlantic",
-      "south georgia",
       "gs",
+      "gst",
       "sgs",
-      "gst"
+      "south georgia"
     ],
     "meta": "South Georgia"
   },
@@ -118,14 +118,14 @@ export default {
     "hem": "s",
     "names": [
       "atlantic",
-      "stanley",
+      "falkland",
+      "falkland island",
       "falkland islands",
       "fk",
-      "flk",
       "fkst",
-      "falkland island",
       "fkt",
-      "falkland"
+      "flk",
+      "stanley"
     ],
     "meta": "Falkland Islands"
   }

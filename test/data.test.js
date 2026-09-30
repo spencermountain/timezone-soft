@@ -1,5 +1,5 @@
 import test from 'tape'
-import { validateData } from '../scripts/lib/validate-data.js'
+import { validateData } from './_lib/validate-data.js'
 
 const fixture = () => ({
   zones: { 'Test/Zone': { meta: 'Test', hem: 'n', offset: 0, names: ['test'], dst: 'test' } },

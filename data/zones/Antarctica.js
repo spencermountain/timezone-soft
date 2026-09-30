@@ -1,8 +1,12 @@
 export default {
-  // IANA tzdata2026d: permanent UTC-03 since December 2016.
   "Antarctica/Palmer": {
-    "offset": -3, "hem": "s",
-    "names": ["palmer", "antarctica/palmer"], "meta": "Palmer"
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "antarctica/palmer",
+      "palmer"
+    ],
+    "meta": "Palmer"
   },
   "Antarctica/Casey": {
     "offset": 8,
@@ -20,9 +24,9 @@ export default {
     "hem": "s",
     "names": [
       "antarctica",
-      "davis",
       "aq",
       "ata",
+      "davis",
       "davt"
     ],
     "meta": "Davis"
@@ -32,19 +36,19 @@ export default {
     "hem": "s",
     "dst": "aus",
     "names": [
+      "aest",
+      "aet",
       "antarctica",
+      "aus east",
+      "aus eastern",
+      "aus eastern standard time",
+      "australia eastern",
+      "canberra",
+      "eastern australia time",
       "macquarie",
       "macquarie island",
-      "eastern australia time",
-      "aet",
-      "australia eastern",
-      "aus eastern standard time",
-      "canberra",
       "melbourne",
-      "sydney",
-      "aus eastern",
-      "aus east",
-      "aest"
+      "sydney"
     ],
     "meta": "Eastern Australia"
   },
@@ -63,13 +67,13 @@ export default {
     "hem": "s",
     "names": [
       "antarctica",
-      "rothera",
       "antarctica/palmer",
-      "art",
       "argentina",
       "arst",
+      "art",
       "buenos aires",
-      "city of buenos aires"
+      "city of buenos aires",
+      "rothera"
     ],
     "meta": "Argentina"
   },
@@ -79,11 +83,11 @@ export default {
     "dst": "troll",
     "names": [
       "antarctica",
-      "troll",
-      "troll time",
-      "troll research station",
+      "gmt",
       "greenwich mean time",
-      "gmt"
+      "troll",
+      "troll research station",
+      "troll time"
     ],
     "meta": "Troll"
   },
@@ -92,9 +96,9 @@ export default {
     "hem": "s",
     "names": [
       "antarctica",
-      "vostok",
+      "msk+4",
       "vost",
-      "msk+4"
+      "vostok"
     ],
     "meta": "Vostok"
   }

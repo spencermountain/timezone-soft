@@ -2,7 +2,7 @@ import test from 'tape'
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import identifiers from '../data/iana-identifiers.js'
-import { serializeIdentifiers } from '../scripts/lib/serialize-identifiers.js'
+import { serializeIdentifiers } from './_lib/serialize-identifiers.js'
 
 test('compact IANA catalog preserves the pinned 2026d mappings', t => {
   const entries = Object.keys(identifiers).sort().map(id => [id, identifiers[id]])

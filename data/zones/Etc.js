@@ -4,15 +4,15 @@ export default {
     "hem": "n",
     "names": [
       "etc",
+      "etc/gmt+0",
+      "etc/gmt-0",
+      "etc/gmt0",
+      "etc/greenwich",
       "gmt",
       "gmt+0",
       "gmt-0",
       "gmt0",
       "greenwich",
-      "etc/gmt+0",
-      "etc/gmt-0",
-      "etc/gmt0",
-      "etc/greenwich",
       "greenwich mean time"
     ],
     "meta": "Greenwich Mean"
@@ -21,17 +21,16 @@ export default {
     "offset": 0,
     "hem": "n",
     "names": [
+      "coordinated universal time",
       "etc",
-      "utc",
       "etc/uct",
-      "uct",
-      "universal",
-      "zulu",
       "etc/universal",
       "etc/zulu",
-      "coordinated universal time"
+      "uct",
+      "universal",
+      "utc",
+      "zulu"
     ],
     "meta": "UTC"
-  },
-
+  }
 }

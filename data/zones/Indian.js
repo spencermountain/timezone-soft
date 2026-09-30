@@ -3,13 +3,13 @@ export default {
     "offset": 6,
     "hem": "n",
     "names": [
-      "indian",
-      "chagos",
       "british indian ocean territory",
-      "io",
-      "iot",
+      "chagos",
+      "indian",
       "indian chagos",
-      "indian ocean"
+      "indian ocean",
+      "io",
+      "iot"
     ],
     "meta": "Indian Ocean"
   },
@@ -17,12 +17,12 @@ export default {
     "offset": 7,
     "hem": "s",
     "names": [
-      "indian",
       "christmas",
       "christmas island",
       "cx",
       "cxr",
-      "cxt"
+      "cxt",
+      "indian"
     ],
     "meta": "Christmas Island"
   },
@@ -30,13 +30,13 @@ export default {
     "offset": 6.5,
     "hem": "n",
     "names": [
-      "indian",
-      "cocos",
-      "cocos islands",
       "cc",
       "cck",
       "cct",
-      "cocos island"
+      "cocos",
+      "cocos island",
+      "cocos islands",
+      "indian"
     ],
     "meta": "Cocos Islands"
   },
@@ -44,17 +44,17 @@ export default {
     "offset": 5,
     "hem": "s",
     "names": [
+      "amsterdam island",
+      "atf",
+      "french southern",
+      "french southern & antarctic time",
+      "french southern and antarctic",
+      "french southern and antarctic lands",
       "indian",
       "kerguelen",
-      "french southern and antarctic lands",
-      "tf",
-      "atf",
-      "tft",
-      "french southern and antarctic",
       "kerguelenst paul island",
-      "amsterdam island",
-      "french southern & antarctic time",
-      "french southern"
+      "tf",
+      "tft"
     ],
     "meta": "French Southern & Antarctic"
   },
@@ -64,10 +64,10 @@ export default {
     "names": [
       "indian",
       "mahe",
-      "seychelles",
       "sc",
-      "syc",
-      "sct"
+      "sct",
+      "seychelles",
+      "syc"
     ],
     "meta": "Seychelles"
   },
@@ -77,8 +77,8 @@ export default {
     "names": [
       "indian",
       "maldives",
-      "mv",
       "mdv",
+      "mv",
       "mvt"
     ],
     "meta": "Maldives"
@@ -101,8 +101,8 @@ export default {
     "hem": "s",
     "names": [
       "indian",
-      "reunion",
       "ret",
+      "reunion",
       "réunion"
     ],
     "meta": "Réunion"

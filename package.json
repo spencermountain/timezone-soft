@@ -32,19 +32,22 @@
   "packageManager": "pnpm@11.5.0",
   "scripts": {
     "watch": "node --watch ./scratch.js",
-    "build:data": "node ./scripts/build/01-pack.js",
+    "build:data": "pnpm run validate:data && node ./scripts/build/01-pack.js",
     "build": "pnpm run build:data && node ./scripts/build/02-version.js && rollup -c && pnpm run filesize",
     "filesize": "node ./scripts/build/03-filesize.js",
     "test": "TESTENV=dev node --harmony-temporal ./node_modules/tape/bin/tape './test/**/*.test.js' | tap-dancer",
     "testb": "TESTENV=prod node --harmony-temporal ./node_modules/tape/bin/tape './test/**/*.test.js' | tap-dancer",
     "lint": "eslint .",
     "test:types": "tsc -p test/types/tsconfig.json && tsc -p test/types/tsconfig.bundler.json",
-    "test:dist": "node scripts/check/dist.js",
+    "test:dist": "node test/check/dist.js",
     "check": "pnpm run lint && pnpm run build && pnpm test && pnpm run testb && pnpm run test:dist && pnpm run test:types && pnpm run test:package",
-    "validate:data": "node scripts/check/data.js",
-    "test:package": "node scripts/check/package.js",
+    "validate:data": "node test/check/data.js",
+    "test:package": "node test/check/package.js",
     "prepack": "pnpm run build",
-    "prepublishOnly": "pnpm run check"
+    "prepublishOnly": "pnpm run check",
+    "test:cities": "node scripts/cities/test.js",
+    "update:cities": "node scripts/cities/_update.js",
+    "upkeep:zones": "node scripts/upkeep/zones.js"
   },
   "files": [
     "builds",

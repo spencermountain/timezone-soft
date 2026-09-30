@@ -4,18 +4,17 @@ export default {
     "hem": "s",
     "dst": "aus",
     "names": [
-      "australia",
-      "adelaide",
-      "australia/south",
-      "acst",
       "acdt",
-      "australian central",
-      "south australia",
-      "central australia",
+      "acst",
       "act",
+      "adelaide",
+      "australia",
       "australia central",
+      "australia/south",
+      "australian central",
       "cen australia",
-      "central australia"
+      "central australia",
+      "south australia"
     ],
     "meta": "Central Australia"
   },
@@ -23,17 +22,17 @@ export default {
     "offset": 10,
     "hem": "s",
     "names": [
+      "aest",
       "australia",
+      "australia/queensland",
+      "australian east",
+      "australian eastern",
       "brisbane",
+      "brisbane time",
       "gold coast",
       "logan",
-      "townsville",
       "queensland",
-      "australia/queensland",
-      "aest",
-      "australian east",
-      "brisbane time",
-      "australian eastern"
+      "townsville"
     ],
     "meta": "Brisbane"
   },
@@ -42,16 +41,16 @@ export default {
     "hem": "s",
     "dst": "aus",
     "names": [
-      "australia",
-      "broken_hill",
-      "australia/yancowinna",
-      "yancowinna",
+      "acst",
       "act",
-      "australia central",
-      "cen australia standard time",
       "adelaide",
+      "australia",
+      "australia central",
+      "australia/yancowinna",
+      "broken_hill",
+      "cen australia standard time",
       "central australia",
-      "acst"
+      "yancowinna"
     ],
     "meta": "Central Australia"
   },
@@ -59,12 +58,12 @@ export default {
     "offset": 9.5,
     "hem": "s",
     "names": [
+      "acst",
       "australia",
-      "darwin",
       "australia/north",
-      "northern territory",
       "australian central",
-      "acst"
+      "darwin",
+      "northern territory"
     ],
     "meta": "Australian Central"
   },
@@ -72,15 +71,15 @@ export default {
     "offset": 8.75,
     "hem": "s",
     "names": [
-      "australia",
-      "eucla",
-      "acwst",
-      "cwst",
-      "australian central western",
-      "acwt",
       "acwdt",
+      "acwst",
+      "acwt",
       "aus central w",
-      "aus central west"
+      "aus central west",
+      "australia",
+      "australian central western",
+      "cwst",
+      "eucla"
     ],
     "meta": "Australian Central Western"
   },
@@ -89,23 +88,23 @@ export default {
     "hem": "s",
     "dst": "aus",
     "names": [
+      "aedt",
+      "aest",
+      "aet",
+      "aus east",
+      "aus eastern",
       "australia",
-      "hobart",
-      "tasmania",
+      "australia eastern",
       "australia/currie",
       "australia/tasmania",
-      "king island",
-      "eastern australia",
-      "aet",
-      "australia eastern",
+      "australian eastern",
       "canberra",
+      "eastern australia",
+      "hobart",
+      "king island",
       "melbourne",
       "sydney",
-      "aus eastern",
-      "aus east",
-      "australian eastern",
-      "aest",
-      "aedt"
+      "tasmania"
     ],
     "meta": "Eastern Australia"
   },
@@ -113,12 +112,12 @@ export default {
     "offset": 10,
     "hem": "s",
     "names": [
+      "aest",
       "australia",
-      "lindeman",
-      "whitsunday islands",
-      "brisbane time",
       "australian eastern",
-      "aest"
+      "brisbane time",
+      "lindeman",
+      "whitsunday islands"
     ],
     "meta": "Brisbane"
   },
@@ -129,11 +128,11 @@ export default {
     "names": [
       "australia",
       "australia/lhi",
-      "lhst",
       "lhdt",
-      "lord howe island",
+      "lhst",
       "lht",
-      "lord howe"
+      "lord howe",
+      "lord howe island"
     ],
     "meta": "Lord Howe"
   },
@@ -142,21 +141,21 @@ export default {
     "hem": "s",
     "dst": "aus",
     "names": [
-      "australia",
-      "melbourne",
-      "geelong",
-      "australia/victoria",
-      "victoria",
-      "eastern australia",
-      "aet",
-      "australia eastern",
-      "canberra",
-      "sydney",
-      "aus eastern",
-      "aus east",
-      "australian eastern",
+      "aedt",
       "aest",
-      "aedt"
+      "aet",
+      "aus east",
+      "aus eastern",
+      "australia",
+      "australia eastern",
+      "australia/victoria",
+      "australian eastern",
+      "canberra",
+      "eastern australia",
+      "geelong",
+      "melbourne",
+      "sydney",
+      "victoria"
     ],
     "meta": "Eastern Australia"
   },
@@ -165,18 +164,18 @@ export default {
     "hem": "s",
     "names": [
       "australia",
-      "perth",
-      "australia/west",
-      "awst",
-      "awdt",
-      "australian west",
-      "western australia",
-      "western australia time",
-      "awt",
       "australia western",
+      "australia/west",
+      "australian west",
+      "australian western",
+      "awdt",
+      "awst",
+      "awt",
+      "perth",
       "w australia",
       "west australia",
-      "australian western"
+      "western australia",
+      "western australia time"
     ],
     "meta": "Western Australia"
   },
@@ -185,26 +184,25 @@ export default {
     "hem": "s",
     "dst": "aus",
     "names": [
-      "australia",
-      "sydney",
-      "canberra",
-      "wollongong",
+      "aedt",
+      "aest",
+      "aet",
       "au",
       "aus",
+      "aus east",
+      "aus eastern",
+      "australia",
+      "australia eastern",
       "australia/act",
       "australia/canberra",
       "australia/nsw",
-      "new south wales",
-      "eastern australia time",
-      "aet",
-      "australia eastern",
-      "aus eastern",
-      "melbourne",
-      "aus eastern",
-      "aus east",
       "australian eastern",
-      "aest",
-      "aedt"
+      "canberra",
+      "eastern australia time",
+      "melbourne",
+      "new south wales",
+      "sydney",
+      "wollongong"
     ],
     "meta": "Eastern Australia"
   }

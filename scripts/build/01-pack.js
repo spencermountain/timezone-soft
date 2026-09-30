@@ -1,12 +1,10 @@
 /* eslint-disable no-console */
 import fs from 'node:fs'
 import { pack } from 'efrt'
-import { validateData } from '../lib/validate-data.js'
 
 import zones from '../../data/index.js'
 import metas from '../../data/metas.js'
 
-validateData()
 const options = { strict: false, direction: 'auto', dictionary: true }
 
 const packed = {}
