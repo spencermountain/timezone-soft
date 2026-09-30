@@ -357,10 +357,10 @@ const addEtc = function (zones) {
       offset: i,
       meta: `gmt-${i}`
     };
-    if (i <= 12) zones[`Etc/GMT+${i}`] = {
+    if (i <= 12) {zones[`Etc/GMT+${i}`] = {
       offset: i * -1,
       meta: `gmt+${i}`
-    };
+    };}
   }
 };
 
@@ -756,37 +756,40 @@ for (const [directory, rows] of Object.entries(directories)) {
   }
 }
 
-//try to match these against iana form
-const one = (str) => {
-  str = str.toLowerCase().trim().replace(/\s+/g, ' ');
-  str = str.replace(/^in /g, '');
-  str = str.replace(/ time/g, '');
-  str = str.replace(/ (standard|daylight|summer)/g, '');
-  str = str.replace(/ - .*/g, ''); //`Eastern Time - US & Canada`
-  str = str.replace(/, .*/g, ''); //`mumbai, india`
-  str = str.replace(/\./g, '');//st. petersberg
-  return str.trim()
+const normalizeCase = input => input.trim().toLowerCase();
+
+const normalizeWhitespace = input => input.replace(/\s+/g, ' ').trim();
+
+const simplifyTimezonePhrase = input => {
+  let phrase = normalizeWhitespace(normalizeCase(input));
+  phrase = phrase.replace(/^in /, ''); // "in Toronto" → "Toronto"
+  phrase = phrase.replace(/ time/g, '');
+  phrase = phrase.replace(/ (standard|daylight|summer)/g, '');
+  phrase = phrase.replace(/ - .*/g, ''); // "Eastern Time - US & Canada"
+  phrase = phrase.replace(/\./g, ''); // "St. Petersburg" → "St Petersburg"
+  return phrase.trim()
 };
 
-//some more aggressive transformations
-const two = function (str) {
-  str = str.replace(/\b(east|west|north|south)ern/g, '$1');
-  str = str.replace(/\b(africa|america|australia)n/g, '$1');
-  str = str.replace(/\beuropean/g, 'europe');
-  str = str.replace(/\islands/g, 'island');
-  str = str.replace(/.*\//g, '');
-  return str.trim()
-};
-// even-more agressive
-const three = function (str) {
-  str = str.replace(/\(.*\)/, '');//anything in brackets
-  str = str.replace(/  +/g, ' ');//extra spaces
-  return str.trim()
+const simplifyGeographicWords = input => input
+  .replace(/\b(east|west|north|south)ern/g, '$1')
+  .replace(/\b(africa|america|australia)n/g, '$1')
+  .replace(/\beuropean/g, 'europe')
+  .replace(/islands/g, 'island')
+  .trim();
+
+// Lookup checkpoints, ordered from least to most transformed.
+const getAliasCandidates = input => {
+  const phrase = simplifyTimezonePhrase(input);
+  const geographic = simplifyGeographicWords(phrase);
+  return [
+    phrase,
+    geographic,
+    normalizeWhitespace(geographic)
+  ]
 };
 
-const fold = str => str.normalize('NFD').replace(/\p{M}/gu, '');
-
-var normalize = { one, two, three, fold };
+// Accent folding runs only after all ordinary alias checkpoints have failed.
+const foldDiacritics = input => input.normalize('NFD').replace(/\p{M}/gu, '');
 
 // unpack our lexicon of words
 const zones = {};
@@ -844,32 +847,34 @@ Object.keys(lexicon).forEach(k => {
 });
 // Only accented aliases need a second index; ordinary lookups keep their ranking.
 const foldedLexicon = {};
-for (const [alias, ids] of Object.entries(lexicon)) {
-  const folded = normalize.fold(alias);
-  if (folded === alias) continue
+Object.entries(lexicon).forEach(([alias, ids]) => {
+  const folded = foldDiacritics(alias);
+  if (folded === alias) {
+    return
+  }
   foldedLexicon[folded] = [...new Set([...(foldedLexicon[folded] || []), ...ids])]
     .sort((a, b) => zones[b].wordCount - zones[a].wordCount);
-}
+});
 
 const isOffset = /^([-+]?[0-9]+)h(r?s)?$/i;
 const isNumber = /^([-+]?[0-9]+)$/;
 const utcOffset = /^utc([\-+]?[0-9]+)$/i;
 const gmtOffset = /^(?:etc\/)?gmt([\-+]?[0-9]+)$/i;
 
-const toIana = function (num) {
+const toIana = num => {
   num = Number(num);
   if (num === 0) {
     return 'Etc/GMT'
   }
   if (num >= -12 && num <= 14) {
-    num = num * -1; //it's opposite!
-    num = (num > 0 ? '+' : '') + num; //add plus sign
+    num = num * -1; // IANA Etc/GMT signs are reversed.
+    num = (num > 0 ? '+' : '') + num;
     return 'Etc/GMT' + num
   }
   return null
 };
 
-const parseOffset = function (tz) {
+const parseOffset = tz => {
   tz = tz.trim();
   // '+5hrs'
   let m = tz.match(isOffset);
@@ -895,57 +900,134 @@ const parseOffset = function (tz) {
   return null
 };
 
-const reserved = input => {
-  if (['utc', 'uct', 'universal', 'zulu', 'coordinated universal', 'coordinated universal time'].includes(input)) return 'Etc/UTC'
-  if (input === 'gmt') return 'Etc/GMT'
+const utcNames = ['utc', 'uct', 'universal', 'zulu', 'coordinated universal', 'coordinated universal time'];
+
+const matchReservedName = (input) => {
+  if (utcNames.includes(input)) {
+    return 'Etc/UTC'
+  }
+  if (input === 'gmt') {
+    return 'Etc/GMT'
+  }
   return null
 };
 
-// match some text to an iana code
-const find = function (str) {
-  const input = str.trim().toLowerCase();
-  const special = reserved(input);
-  if (special) return special
-  // Explicit identifiers use IANA links, never informal alias ranking.
-  if (input.includes('/')) {
-    const id = canonicalIds[input];
-    if (id) return Object.hasOwn(zones, id) ? id : null
-    // Some curated informal phrases contain a slash but are not IANA IDs.
-    return Object.hasOwn(lexicon, input) ? lexicon[input] : null
+const matchAlias = (input) => (Object.hasOwn(lexicon, input) ? lexicon[input] : null);
+
+const matchNormalizedAlias = (input) => matchReservedName(input) || matchAlias(input);
+
+// Complete-input matching only; compound fallbacks run afterward.
+const matchWhole = (input) => {
+  const normalized = normalizeCase(input);
+
+  // 1. Reserved UTC/GMT names take precedence over geographic aliases.
+  const reserved = matchReservedName(normalized);
+  if (reserved) {
+    return reserved
   }
-  // perfect id match
-  if (zones.hasOwnProperty(str)) {
-    return str
+
+  // 2. Slash inputs require a known IANA ID or exact curated alias.
+  if (normalized.includes('/')) {
+    const id = canonicalIds[normalized];
+    if (id) {
+      return Object.hasOwn(zones, id) ? id : null
+    }
+    return matchAlias(normalized)
   }
-  // lookup known word
-  if (lexicon.hasOwnProperty(str)) {
-    return lexicon[str]
+
+  // 3. Preserve an exact alias before changing its spelling.
+  const exact = matchAlias(input);
+  if (exact) {
+    return exact
   }
-  // -8hrs
-  if (/[0-9]/.test(str)) {
-    const etc = parseOffset(str);
-    if (etc) {
-      return [etc]
+
+  // 4. Parse whole-hour offsets, such as UTC+5, GMT-5, or +5hrs.
+  if (/[0-9]/.test(input)) {
+    const offset = parseOffset(input);
+    if (offset) {
+      return [offset]
     }
   }
-  // try a sequence of normalization steps
-  const candidates = [input];
-  for (const step of [normalize.one, normalize.two, normalize.three]) {
-    str = step(str);
-    candidates.push(str);
-    const id = reserved(str);
-    if (id) return id
-    if (Object.hasOwn(lexicon, str)) return lexicon[str]
+
+  // 5. Try phrase cleanup, geographic word cleanup, then final spacing cleanup.
+  const candidates = getAliasCandidates(input);
+  for (let i = 0; i < candidates.length; i += 1) {
+    const match = matchNormalizedAlias(candidates[i]);
+    if (match) {
+      return match
+    }
   }
-  // Exact spellings at every normalization stage take precedence over folding.
-  for (const candidate of candidates) {
-    const folded = normalize.fold(candidate);
-    const id = reserved(folded);
-    if (id) return id
-    if (Object.hasOwn(lexicon, folded)) return lexicon[folded]
-    if (Object.hasOwn(foldedLexicon, folded)) return foldedLexicon[folded]
+
+  // 6. Fold accents after exact spellings, including the case-only candidate.
+  const foldCandidates = [normalized, ...candidates];
+  for (let i = 0; i < foldCandidates.length; i += 1) {
+    const folded = foldDiacritics(foldCandidates[i]);
+    const match = matchNormalizedAlias(folded);
+    if (match) {
+      return match
+    }
+    if (Object.hasOwn(foldedLexicon, folded)) {
+      return foldedLexicon[folded]
+    }
   }
   return null
+};
+
+const matchPart = input => {
+  const found = matchWhole(input);
+  const ids = typeof found === 'string' ? [found] : found || [];
+  return [...new Set(ids.map(canonicalize))]
+};
+
+// Preserve the first part's ranking while removing candidates absent elsewhere.
+const intersect = lists => lists[0].filter(id => lists.every(list => list.includes(id)));
+
+const matchSeparatedParts = input => {
+  const parts = input.split(/[,()]/).map(part => part.trim()).filter(Boolean);
+  const matches = parts.map(matchPart).filter(ids => ids.length);
+  // Ignore unknown parts; conflicting known parts keep an empty intersection.
+  return matches.length ? intersect(matches) : null
+};
+
+const matchWordPairs = input => {
+  const words = input.trim().split(/\s+/);
+  // Try splits left to right. Both sides must resolve: "CST China".
+  for (let boundary = 1; boundary < words.length; boundary += 1) {
+    const left = matchPart(words.slice(0, boundary).join(' '));
+    if (!left.length) {
+      continue
+    }
+    const right = matchPart(words.slice(boundary).join(' '));
+    if (!right.length) {
+      continue
+    }
+    const shared = intersect([left, right]);
+    if (shared.length) {
+      return shared
+    }
+  }
+  return null
+};
+
+const find = (input) => {
+  // Whole input, including normalization and accent folding.
+  const whole = matchWhole(input);
+  if (whole) {
+    return whole
+  }
+
+  // Unknown identifiers cannot fall back to partial matches.
+  if (input.includes('/')) {
+    return null
+  }
+
+  // Explicit separators take precedence over word-pair guesses.
+  if (/[,()]/.test(input)) {
+    return matchSeparatedParts(input)
+  }
+
+  // Last resort: intersect two recognized phrases.
+  return matchWordPairs(input)
 };
 
 // Generated by scripts/pack.js. Edit data/metas.js instead.
@@ -966,11 +1048,11 @@ for (let i = 0; i <= 14; i += 1) {
     std: [`GMT-${i}`, i],
     long: `(${formatOffset(i)}) Coordinated Universal Time`
   };
-  if (i <= 12) metas[`gmt+${i}`] = {
+  if (i <= 12) {metas[`gmt+${i}`] = {
     name: `Etc/GMT+${i}`,
     std: [`GMT+${i}`, -i],
     long: `(${formatOffset(-i)}) Coordinated Universal Time`
-  };
+  };}
 }
 
 const display = function (id) {

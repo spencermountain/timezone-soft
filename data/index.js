@@ -24,7 +24,7 @@ const regions = [
 const zones = {}
 for (const region of regions) {
   for (const [id, record] of Object.entries(region)) {
-    if (Object.hasOwn(zones, id)) throw new Error(`Duplicate zone record: ${id}`)
+    if (Object.hasOwn(zones, id)) {throw new Error(`Duplicate zone record: ${id}`)}
     zones[id] = record
   }
 }

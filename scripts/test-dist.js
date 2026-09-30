@@ -17,6 +17,8 @@ const check = (lib, label) => {
   assert.equal(lib('Toronto')[0].daylight.abbr, 'EDT', label)
   assert.equal(lib('Asia/Kolkata')[0].daylight, null, label)
   assert.equal(lib('not a timezone').length, 0, label)
+  assert.equal(lib('Springfield, Missouri')[0].iana, 'America/Chicago', label)
+  assert.equal(lib('CST China')[0].iana, 'Asia/Shanghai', label)
   console.log(`✓ ${label}`)
 }
 

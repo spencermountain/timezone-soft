@@ -108,6 +108,27 @@ Show all candidates when ambiguity matters, or ask for a city or IANA ID. The
 library does not use the user's location to choose a result. Regression fixtures
 cover the ordering of `CST`, `IST`, and `BST`.
 
+## Combined lookup strings
+
+When the whole string does not match, commas and parentheses split it into
+additional lookups using the existing aliases:
+
+```js
+soft('Springfield, Missouri')[0].iana // 'America/Chicago' (matches Missouri)
+soft('Springfield (Missouri)')[0].iana // 'America/Chicago'
+soft('Toronto, Ontario, Canada')[0].iana // 'America/Toronto'
+soft('CST China')[0].iana // 'Asia/Shanghai'
+```
+
+Recognized parts are intersected, preserving the first part's result order.
+Unknown comma-separated or parenthesized parts are ignored; conflicting known
+parts return `[]`. Without punctuation, both sides of a word-boundary split must
+match, so `Springfield Missouri` still returns `[]` while `CST China` resolves.
+
+These are alias fallbacks, not geographic validation. No additional city/country
+dataset is stored: the Springfield examples resolve through `Missouri`, not through
+a Springfield city record. Existing whole-string matches take precedence.
+
 ## UTC and GMT offsets
 
 `UTC` (including lowercase or surrounding whitespace) resolves only to `Etc/UTC`,

@@ -10,13 +10,13 @@ const rule = /^(?:[1-5](?:st|nd|rd|th)|last)-(?:sun|mon|tue|wed|thu|fri|sat)-(?:
 
 export const validateData = (data = { zones, metas, patterns, aliases, identifiers }) => {
   const errors = []
-  const check = (condition, message) => { if (!condition) errors.push(message) }
+  const check = (condition, message) => { if (!condition) {errors.push(message)} }
   for (const [name, pattern] of Object.entries(data.patterns)) {
     check(typeof pattern === 'string' && pattern.split('|').length === 2 && pattern.split('|').every(p => rule.test(p)), `DST pattern ${name}: expected two transition rules`)
   }
   for (const [name, meta] of Object.entries(data.metas)) {
     for (const field of ['std', 'dst']) {
-      if (field === 'dst' && meta.dst === undefined) continue
+      if (field === 'dst' && meta.dst === undefined) {continue}
       const tuple = meta[field]
       check(Array.isArray(tuple) && tuple.length >= 2 && tuple.length <= 3 && text(tuple[0]) && offset(tuple[1]) && (tuple[2] === undefined || text(tuple[2])), `Metazone ${name}.${field}: expected [abbreviation, offset, optional name]`)
     }
@@ -40,9 +40,9 @@ export const validateData = (data = { zones, metas, patterns, aliases, identifie
   for (const [alias, ids] of Object.entries(data.aliases)) {
     check(text(alias) && Array.isArray(ids) && ids.length > 0, `Alias ${alias}: expected zone IDs`)
     if (Array.isArray(ids)) {
-      for (const id of ids) check(Object.hasOwn(data.zones, id), `Alias ${alias}: unknown zone ${id}`)
+      for (const id of ids) {check(Object.hasOwn(data.zones, id), `Alias ${alias}: unknown zone ${id}`)}
     }
   }
-  if (errors.length > 0) throw new Error(`Invalid timezone data:\n${errors.join('\n')}`)
+  if (errors.length > 0) {throw new Error(`Invalid timezone data:\n${errors.join('\n')}`)}
   return Object.keys(data.zones).length
 }

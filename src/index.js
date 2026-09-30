@@ -11,8 +11,8 @@ const soft = function (str) {
   if (typeof ids === 'string') {
     ids = [ids]
   }
-  ids = [...new Set(ids.map(canonicalize))].filter(id => Object.hasOwn(zones, id))
-  ids = ids.map(id => display(id))
+  ids = [...new Set(ids.map(canonicalize))].filter((id) => Object.hasOwn(zones, id))
+  ids = ids.map((id) => display(id))
   return ids
 }
 soft.version = version

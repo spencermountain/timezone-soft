@@ -3,20 +3,20 @@ const isNumber = /^([-+]?[0-9]+)$/
 const utcOffset = /^utc([\-+]?[0-9]+)$/i
 const gmtOffset = /^(?:etc\/)?gmt([\-+]?[0-9]+)$/i
 
-const toIana = function (num) {
+const toIana = (num) => {
   num = Number(num)
   if (num === 0) {
     return 'Etc/GMT'
   }
   if (num >= -12 && num <= 14) {
-    num = num * -1 //it's opposite!
-    num = (num > 0 ? '+' : '') + num //add plus sign
+    num = num * -1 // IANA Etc/GMT signs are reversed.
+    num = (num > 0 ? '+' : '') + num
     return 'Etc/GMT' + num
   }
   return null
 }
 
-const parseOffset = function (tz) {
+const parseOffset = (tz) => {
   tz = tz.trim()
   // '+5hrs'
   let m = tz.match(isOffset)

@@ -52,7 +52,8 @@ export default [
       'no-unmodified-loop-condition': 'warn',
       'no-use-before-define': 'warn',
       'prefer-const': 'off',
-      radix: 'warn'
+      radix: 'warn',
+      curly: ['warn', 'all']
     }
   }
 ]

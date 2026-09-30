@@ -3,12 +3,12 @@
 export const serializeIdentifiers = identifiers => {
   const groups = new Map()
   for (const target of [...new Set(Object.values(identifiers))].sort()) {
-    if (identifiers[target] !== target) throw new Error(`Missing canonical identifier: ${target}`)
+    if (identifiers[target] !== target) {throw new Error(`Missing canonical identifier: ${target}`)}
     groups.set(target, [])
   }
   for (const id of Object.keys(identifiers).sort()) {
     const target = identifiers[id]
-    if (id !== target) groups.get(target).push(id)
+    if (id !== target) {groups.get(target).push(id)}
   }
   const directories = {}
   for (const [target, aliases] of groups) {
