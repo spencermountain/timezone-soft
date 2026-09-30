@@ -5,7 +5,7 @@ import { createRequire } from 'node:module'
 import { runInNewContext } from 'node:vm'
 import { rollup } from 'rollup'
 import soft from 'timezone-soft'
-import config from '../rollup.config.js'
+import config from '../../rollup.config.js'
 
 const require = createRequire(import.meta.url)
 const check = (lib, label) => {
@@ -26,7 +26,7 @@ check(soft, 'package ESM import')
 check(require('timezone-soft'), 'package CommonJS require')
 for (const filename of ['timezone-soft.min.js']) {
   const context = {}
-  runInNewContext(readFileSync(new URL(`../builds/${filename}`, import.meta.url), 'utf8'), context)
+  runInNewContext(readFileSync(new URL(`../../builds/${filename}`, import.meta.url), 'utf8'), context)
   check(context.timezoneSoft, `standalone browser ${filename}`)
 }
 
@@ -57,7 +57,7 @@ try {
   await bundle.close()
 }
 for (const output of config.output) {
-  const source = readFileSync(new URL(`../${output.file}`, import.meta.url), 'utf8')
+  const source = readFileSync(new URL(`../../${output.file}`, import.meta.url), 'utf8')
   assert.match(source, /^\/\*! spencermountain\/timezone-soft .* MIT \*\//, `${output.file} license banner`)
 }
 console.log('✓ unresolved imports, missing globals, and license banners')

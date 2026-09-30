@@ -7,4 +7,4 @@ is retained as reference text, not an executable maintenance command.
 The supported workflow is to edit `data/metas.js` and zone references, then run
 `pnpm run validate:data` and `pnpm run check`. Old unused `byOffset.js` guesses and
 the duplicate root version file were removed; runtime version data is generated
-from `package.json` into `src/generated/version.js`.
+from `package.json` into `src/_generated/version.js`.

@@ -277,6 +277,7 @@ export default {
       "kaduna",
       "port harcourt",
       "benin",
+      "benin city",
       "maiduguri",
       "zaria",
       "aba",

@@ -1,6 +1,6 @@
 import find from './find/index.js'
 import display from './display/index.js'
-import version from './generated/version.js'
+import version from './_generated/version.js'
 import { canonicalize, zones } from './data/index.js'
 
 const soft = function (str) {

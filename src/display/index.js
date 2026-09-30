@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import metas from '../generated/metas.js'
+import metas from '../_generated/metas.js'
 import { zones } from '../data/index.js'
 import formatOffset from './format-offset.js'
 

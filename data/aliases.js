@@ -1,5 +1,9 @@
 // strings that don't pack properly
 export default {
+  'osaka, sapporo, tokyo': ['Asia/Tokyo'],
+  'brussels, copenhagen, madrid, paris': ['Europe/Rome', 'Europe/Stockholm', 'Europe/Tirane', 'Europe/Vienna', 'Europe/Warsaw', 'Europe/Zurich'],
+  'izhevsk, samara': ['Europe/Samara', 'Europe/Saratov'],
+  'moscow, st petersburg': ['Europe/Ulyanovsk', 'Europe/Volgograd'],
   'gmt+0': ['Etc/GMT'],
   'gmt-0': ['Etc/GMT'],
   gmt0: ['Etc/GMT'],

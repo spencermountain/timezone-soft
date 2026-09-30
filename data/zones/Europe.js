@@ -1,12 +1,16 @@
 export default {
   // Separate primary identifiers in IANA tzdata2026d; do not resolve via city aliases.
   "Europe/Berlin": {
-    "offset": 1, "hem": "n", "dst": "eu2",
-    "names": ["berlin", "europe/berlin"], "meta": "Central European"
+    offset: 1,
+    hem: 'n',
+    dst: 'eu2',
+    names: ['berlin', 'hamburg', 'europe/berlin'],
+    meta: 'Central European'
   },
   "Europe/Simferopol": {
     "offset": 3, "hem": "n",
-    "names": ["simferopol", "europe/simferopol"], "meta": "Moscow"
+    names: ['simferopol', 'europe/simferopol', 'aqmescit'],
+    meta: 'Moscow'
   },
   "Europe/Amsterdam": {
     "offset": 2,
@@ -969,35 +973,51 @@ export default {
       "romance",
       "cest",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ],
     "meta": "Central European"
   },
-  "Europe/Samara": {
-    "offset": 4,
-    "hem": "n",
-    "names": [
-      "europe",
-      "samara",
-      "togliatti on the volga",
-      "izhevsk",
-      "syzran",
-      "samt",
-      "izhevsk, samara"
+  'Europe/Samara': {
+    offset: 4,
+    hem: 'n',
+    names: ['europe', 'samara', 'togliatti on the volga', 'izhevsk', 'syzran', 'samt'],
+    meta: 'Samara'
+  },
+  'Europe/Sofia': {
+    offset: 3,
+    hem: 'n',
+    dst: 'eu3',
+    names: [
+      'europe',
+      'sofia',
+      'plovdiv',
+      'varna',
+      'burgas',
+      'bulgaria',
+      'bg',
+      'bgr',
+      'imt',
+      'eet',
+      'eastern european',
+      'europe eastern'
     ],
     "meta": "Samara"
   },
-  "Europe/Saratov": {
-    "offset": 4,
-    "hem": "n",
-    "names": [
-      "europe",
-      "saratov",
-      "balakovo",
-      "samara",
-      "izhevsk",
-      "samt",
-      "izhevsk, samara"
+  'Europe/Saratov': {
+    offset: 4,
+    hem: 'n',
+    names: [
+      'europe',
+      'saratov',
+      'balakovo',
+      'samara',
+      'izhevsk',
+      'samt',
+      'europe',
+      'saratov',
+      'balakovo',
+      'samara',
+      'izhevsk',
+      'samt'
     ],
     "meta": "Samara"
   },
@@ -1043,7 +1063,6 @@ export default {
       "romance",
       "cest",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ],
     "meta": "Central European"
   },
@@ -1083,7 +1102,6 @@ export default {
       "romance",
       "cest",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ],
     "meta": "Central European"
   },
@@ -1099,7 +1117,6 @@ export default {
       "russian",
       "volgograd time",
       "msk",
-      "moscow, st petersburg"
     ],
     "meta": "Ulyanovsk"
   },
@@ -1140,7 +1157,6 @@ export default {
       "romance",
       "cest",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ],
     "meta": "Central European"
   },
@@ -1175,7 +1191,6 @@ export default {
       "russian",
       "volgograd time",
       "msk",
-      "moscow, st petersburg"
     ],
     "meta": "Moscow"
   },
@@ -1220,7 +1235,6 @@ export default {
       "romance",
       "cest",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ],
     "meta": "Central European"
   },
@@ -1265,7 +1279,6 @@ export default {
       "romance",
       "cest",
       "cet",
-      "brussels, copenhagen, madrid, paris"
     ],
     "meta": "Central European"
   }

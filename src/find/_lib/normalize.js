@@ -20,11 +20,20 @@ const simplifyGeographicWords = (input) =>
     .replace(/islands/g, 'island')
     .trim()
 
+const normalizeApostrophes = input => input.replace(/[‘’ʼ＇]/g, "'")
+
+const removeApostrophes = input => input.replace(/'/g, '')
+
+const useIdentifierSpacing = input => input.replace(/ /g, '_')
+
 // Lookup checkpoints, ordered from least to most transformed.
 const getAliasCandidates = (input) => {
   const phrase = simplifyTimezonePhrase(input)
   const geographic = simplifyGeographicWords(phrase)
-  return [phrase, geographic, normalizeWhitespace(geographic)]
+  const spaced = normalizeWhitespace(geographic)
+  const apostrophes = normalizeApostrophes(spaced)
+  const city = removeApostrophes(apostrophes)
+  return [phrase, geographic, spaced, apostrophes, city, useIdentifierSpacing(city)]
 }
 
 // Accent folding runs only after all ordinary alias checkpoints have failed.

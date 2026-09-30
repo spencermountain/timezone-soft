@@ -1,4 +1,4 @@
-import { zones, lexicon, foldedLexicon, canonicalIds } from '../data/index.js'
+import { zones, lexicon, canonicalIds } from '../data/index.js'
 import { normalizeCase, getAliasCandidates, foldDiacritics } from './_lib/normalize.js'
 import parseOffset from './_lib/parse-offset.js'
 
@@ -51,7 +51,7 @@ const matchWhole = (input) => {
     }
   }
 
-  // 5. Try phrase cleanup, geographic word cleanup, then final spacing cleanup.
+  // 5. Try phrase, geographic, punctuation, and city-spelling checkpoints.
   const candidates = getAliasCandidates(input)
   for (let i = 0; i < candidates.length; i += 1) {
     const match = matchNormalizedAlias(candidates[i])
@@ -67,9 +67,6 @@ const matchWhole = (input) => {
     const match = matchNormalizedAlias(folded)
     if (match) {
       return match
-    }
-    if (Object.hasOwn(foldedLexicon, folded)) {
-      return foldedLexicon[folded]
     }
   }
   return null

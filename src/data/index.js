@@ -1,6 +1,6 @@
 import { unpack } from 'efrt'
 import dstPatterns from '../../data/dst-patterns.js'
-import pcked from '../generated/zones.js'
+import pcked from '../_generated/zones.js'
 import misc from '../../data/aliases.js'
 import addUTC from './add-utc.js'
 import identifiers from '../../data/iana-identifiers.js'
@@ -60,15 +60,11 @@ Object.keys(lexicon).forEach((k) => {
     })
   }
 })
-// Only accented aliases need a second index; ordinary lookups keep their ranking.
-const foldedLexicon = {}
+// Add accent-free spellings without replacing existing aliases or their ranking.
 Object.entries(lexicon).forEach(([alias, ids]) => {
   const folded = foldDiacritics(alias)
-  if (folded === alias) {
-    return
+  if (!Object.hasOwn(lexicon, folded)) {
+    lexicon[folded] = [...ids]
   }
-  foldedLexicon[folded] = [...new Set([...(foldedLexicon[folded] || []), ...ids])].sort(
-    (a, b) => zones[b].wordCount - zones[a].wordCount
-  )
 })
-export { zones, lexicon, foldedLexicon, canonicalIds, canonicalize }
+export { zones, lexicon, canonicalIds, canonicalize }

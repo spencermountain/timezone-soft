@@ -4,27 +4,5 @@ import soft from './src/index.js'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-const result = soft('Africa/Cairo');
-// let ids = soft('Etc/GMT+14')
+const result = soft('Fresno')
 console.log(result)
-
-
-// Object.keys(metas).forEach(k => {
-//   let ids = soft(metas[k].std[0])
-//   if (ids.length === 0) {
-//     console.log(k, metas[k].std[0])
-//   }
-// if (metas[k].dst) {
-//   ids = soft(metas[k].dst[0])
-//   if (ids.length === 0) {
-//     console.log(k, metas[k].dst[0])
-//   }
-// }
-
-// })
-
-// let out = {
-//   iana: 'Australia/Lord_Howe',
-//   standard: { name: 'Lord Howe Standard Time', abbr: 'LHST', offset: 10.5 },
-//   daylight: { name: 'Lord Howe Daylight Time', abbr: 'LHDT', offset: 11.5 }
-// }
