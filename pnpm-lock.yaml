@@ -24,6 +24,9 @@ importers:
       rollup:
         specifier: 4.63.5
         version: 4.63.5
+      rollup-plugin-filesize-check:
+        specifier: ^2.0.1
+        version: 2.0.1(rollup@4.63.5)
       spacetime:
         specifier: 7.15.0
         version: 7.15.0
@@ -1043,6 +1046,12 @@ packages:
     resolution: {integrity: sha512-tqt+NBWwyaMgw3zDsnygx4CByWjQEJHOPMdslYhppaQSJUtL/D4JO9CcBBlhPoI8lz9oJIDXkwXfhF4aWqP8xQ==}
     engines: {node: '>= 0.4'}
     hasBin: true
+
+  rollup-plugin-filesize-check@2.0.1:
+    resolution: {integrity: sha512-B8iv8MMXwZs9/5axHCmowUEhMWrUrLoJ+FjC7j4m2bKI7yh3OiZy7mos/FTNT1T6MtHulRaufNf9+zAXMYwkLQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      rollup: '>=2.78.0'
 
   rollup@4.63.5:
     resolution: {integrity: sha512-KRWwmNLlPw5M7HcdYfm15oBv9n9LPtjzpzCIxS/phwqvPyxHSoKX6Y2YU3pxSPfy0CLquVgsx/j/hBi6OvH1Nw==}
@@ -2284,6 +2293,10 @@ snapshots:
       object-keys: 1.1.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+
+  rollup-plugin-filesize-check@2.0.1(rollup@4.63.5):
+    dependencies:
+      rollup: 4.63.5
 
   rollup@4.63.5:
     dependencies:

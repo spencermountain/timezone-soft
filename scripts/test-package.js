@@ -14,13 +14,16 @@ try {
   for (const file of [
     'builds/timezone-soft.js',
     'builds/timezone-soft.cjs',
-    'builds/timezone-soft.min.cjs',
+    'builds/timezone-soft.min.js',
     'types/index.d.ts',
     'types/index.d.cts',
     'README.md',
     'LICENSE'
   ]) {
     assert.ok(files.has(file), `Missing package file: ${file}`)
+  }
+  for (const file of ['builds/timezone-soft.mjs', 'builds/timezone-soft.min.cjs']) {
+    assert.ok(!files.has(file), `Obsolete build in package: ${file}`)
   }
   const target = join(temp, 'node_modules', 'timezone-soft')
   mkdirSync(target, { recursive: true })
@@ -53,7 +56,7 @@ try {
     }
     check(soft)
     check(require('timezone-soft'))
-    for (const file of ['timezone-soft.cjs', 'timezone-soft.min.cjs']) {
+    for (const file of ['timezone-soft.min.js']) {
       const context = {}
       runInNewContext(readFileSync('./node_modules/timezone-soft/builds/' + file, 'utf8'), context)
       check(context.timezoneSoft)

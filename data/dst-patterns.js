@@ -21,7 +21,7 @@ const patterns = {
   lhow: '1st-sun-apr-2h|1st-sun-oct-2h',
   // new zealand
   chat: '1st-sun-apr-3h|last-sun-sep-2h', //technically 3:45h -> 2:45h
-  // new Zealand, antarctica 
+  // new Zealand, antarctica
   nz: '1st-sun-apr-3h|last-sun-sep-2h',
   // casey - antarctica
   ant: '2nd-sun-mar-0h|1st-sun-oct-0h',

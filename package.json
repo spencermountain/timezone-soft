@@ -63,12 +63,13 @@
     "@rollup/plugin-terser": "^1.0.0",
     "eslint": "^10.11.0",
     "rollup": "4.63.5",
+    "rollup-plugin-filesize-check": "^2.0.1",
     "spacetime": "7.15.0",
     "tap-dancer": "0.4.3",
     "tape": "5.10.2",
     "typescript": "^7.0.2"
   },
-  "unpkg": "builds/timezone-soft.min.cjs",
+  "unpkg": "builds/timezone-soft.min.js",
   "prettier": {
     "trailingComma": "none",
     "semi": false,

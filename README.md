@@ -157,7 +157,7 @@ coverage checks track known missing records for `America/Ciudad_Juarez` and
 
 ## Browsers and supported runtimes
 
-The package exports ESM and CommonJS builds. `builds/timezone-soft.min.cjs` is also
+The package exports ESM and CommonJS builds. `builds/timezone-soft.min.js` is also
 a standalone UMD script: when loaded with a classic `<script>` tag, it exposes
 `timezoneSoft` globally and includes its dependencies.
 
