@@ -167,14 +167,14 @@ JavaScript-context smoke tests, not a full browser compatibility matrix.
 
 ## Development
 
-Use npm as the primary package manager:
+Use pnpm 11.5.0 (pinned in `package.json`) for development:
 
 ```sh
-npm ci
-npm run check
+pnpm install --frozen-lockfile
+pnpm run check
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the project layout, adding aliases,
+See [Contributing.md](Contributing.md) for the project layout, adding aliases,
 tests, and releases. See [changelog.md](changelog.md) for changes.
 
 ## Background

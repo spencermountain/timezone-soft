@@ -6,11 +6,12 @@
   "repository": "github:spencermountain/timezone-soft",
   "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",
   "type": "module",
+  "packageManager": "pnpm@11.5.0",
   "exports": {
     ".": {
       "import": {
         "types": "./types/index.d.ts",
-        "default": "./builds/timezone-soft.mjs"
+        "default": "./builds/timezone-soft.js"
       },
       "require": {
         "types": "./types/index.d.cts",
@@ -23,7 +24,7 @@
     }
   },
   "main": "./builds/timezone-soft.cjs",
-  "module": "./builds/timezone-soft.mjs",
+  "module": "./builds/timezone-soft.js",
   "types": "./types/index.d.cts",
   "sideEffects": false,
   "engines": {
@@ -55,15 +56,15 @@
     "dst"
   ],
   "dependencies": {
-    "efrt": "2.7.0"
+    "efrt": "2.9.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^1.0.0",
     "eslint": "^10.11.0",
-    "rollup": "4.63.4",
+    "rollup": "4.63.5",
     "spacetime": "7.15.0",
-    "tap-dancer": "0.4.0",
+    "tap-dancer": "0.4.3",
     "tape": "5.10.2",
     "typescript": "^7.0.2"
   },

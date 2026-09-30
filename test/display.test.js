@@ -2,6 +2,20 @@
 import test from 'tape'
 import soft from './_lib.js'
 
+test('display offsets use signed hours and minutes', t => {
+  for (const [input, expected] of [
+    ['America/Bogota', '(UTC-05:00) Colombia Time'],
+    ['Australia/Darwin', '(UTC+09:30) Australian Central Time'],
+    ['Asia/Kathmandu', '(UTC+05:45) Kathmandu'],
+    ['UTC+0', '(UTC) Coordinated Universal Time'],
+    ['UTC+5', '(UTC+05:00) Coordinated Universal Time'],
+    ['UTC-5', '(UTC-05:00) Coordinated Universal Time']
+  ]) {
+    t.equal(soft(input)[0]?.long, expected, input)
+  }
+  t.end()
+})
+
 test('display-test', (t) => {
   const arr = [
     ['new york', 'EST', 'EDT'],

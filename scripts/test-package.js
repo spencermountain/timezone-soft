@@ -11,7 +11,15 @@ const temp = mkdtempSync(join(tmpdir(), 'timezone-soft-package-'))
 try {
   const packed = JSON.parse(execFileSync('npm', ['pack', '--json', '--ignore-scripts', '--pack-destination', temp, '--cache', join(temp, 'cache')], { cwd: root, encoding: 'utf8' }))[0]
   const files = new Set(packed.files.map(file => file.path))
-  for (const file of ['builds/timezone-soft.mjs', 'builds/timezone-soft.cjs', 'builds/timezone-soft.min.cjs', 'types/index.d.ts', 'types/index.d.cts', 'README.md', 'LICENSE']) {
+  for (const file of [
+    'builds/timezone-soft.js',
+    'builds/timezone-soft.cjs',
+    'builds/timezone-soft.min.cjs',
+    'types/index.d.ts',
+    'types/index.d.cts',
+    'README.md',
+    'LICENSE'
+  ]) {
     assert.ok(files.has(file), `Missing package file: ${file}`)
   }
   const target = join(temp, 'node_modules', 'timezone-soft')

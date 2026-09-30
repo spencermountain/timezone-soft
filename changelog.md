@@ -1,5 +1,9 @@
 ### 1.6.0 [Sep 2026]
 
+- **[fix]** - align CI and contributor setup with the committed pnpm lockfile
+- **[fix]** - format generated UTC descriptions with signed, zero-padded hours and minutes
+- **[fix]** - normalize leading, repeated, and Unicode whitespace before matching informal phrases
+
 - **[fix]** - point the legacy `types` entry to CommonJS declarations so Node10 resolution matches `main`
 - **[fix]** - include CommonJS types in the default export fallback as well as the require branch
 - **[change]** - canonicalize returned IDs using pinned IANA 2026d links and deduplicate equivalent candidates; retain old spellings as input aliases

@@ -4,7 +4,7 @@
 
 Edit `zones/*.js`, `metas.js`, `dst-patterns.js`, and `aliases.js`. `index.js`
 aggregates the regional records for build and maintenance scripts. Running
-`npm run build` validates these sources and writes `src/generated/zones.js`,
+`pnpm run build` validates these sources and writes `src/generated/zones.js`,
 `src/generated/version.js`, and the distributable bundles.
 
 This is a curated dataset inherited from earlier timezone-soft/spacetime work.
@@ -78,7 +78,7 @@ it does not prove the political or historical accuracy of these patterns.
 
 ## Validation and refresh
 
-`npm run validate:data` checks zone shapes, metazone tuples, DST pattern syntax,
+`pnpm run validate:data` checks zone shapes, metazone tuples, DST pattern syntax,
 and special-alias targets. The build runs it before packing.
 
 For a refresh, identify the upstream version, review affected zone IDs and aliases,

@@ -3,13 +3,14 @@
 ## Setup
 
 Use Node 24 (`nvm use`), or Node 22.13+ on 22.x / Node 24+. CI checks Node 22, 24,
-and 26. npm is the primary package manager and `package-lock.json` is the CI
-installation source. The existing pnpm lockfile is retained for contributors
-using pnpm; synchronize both lockfiles when changing dependencies.
+and 26. Use pnpm 11.5.0, pinned in `package.json`. The committed
+`pnpm-lock.yaml` is the installation source for CI and contributors. Update it
+with pnpm when changing dependencies. CI installs pnpm automatically.
+To install it locally, run `npm install --global pnpm@11.5.0`.
 
 ```sh
-npm ci
-npm run check
+pnpm install --frozen-lockfile
+pnpm run check
 ```
 
 `check` runs lint, data validation and generation during the build, source and
@@ -45,7 +46,7 @@ builds/               published bundles, committed with relevant changes
    Use `data/aliases.js` only for strings that do not round-trip through the packer.
 2. Add a focused case in `test/find.test.js`. Test ambiguous or easily confused
    inputs as well as the new spelling.
-3. Run `npm run check`. Inspect any changes to the `CST`, `IST`, or `BST` ranking
+3. Run `pnpm run check`. Inspect any changes to the `CST`, `IST`, or `BST` ranking
    fixtures; do not automatically regenerate them to dismiss a failure.
 4. Include regenerated `src/generated/` and `builds/` files with the source change.
 
@@ -70,25 +71,25 @@ when its record is implemented. This tests name coverage, not DST correctness.
 
 | Command | Purpose |
 | --- | --- |
-| `npm run validate:data` | Check editable record shapes and references |
-| `npm run pack` | Validate and regenerate packed zone data |
-| `npm run build` | Generate data/version and rebuild all bundles |
-| `npm test` | Source tests |
-| `npm run testb` | Built-ESM tests |
-| `npm run test:dist` | ESM, CJS, browser, and warning-enforcement checks |
-| `npm run test:types` | Compile TypeScript consumers |
-| `npm run test:package` | Pack and test an isolated release artifact |
-| `npm run check` | All of the above plus lint |
+| `pnpm run validate:data` | Check editable record shapes and references |
+| `pnpm run pack` | Validate and regenerate packed zone data |
+| `pnpm run build` | Generate data/version and rebuild all bundles |
+| `pnpm test` | Source tests |
+| `pnpm run testb` | Built-ESM tests |
+| `pnpm run test:dist` | ESM, CJS, browser, and warning-enforcement checks |
+| `pnpm run test:types` | Compile TypeScript consumers |
+| `pnpm run test:package` | Pack and test an isolated release artifact |
+| `pnpm run check` | All of the above plus lint |
 
-`npm run pack` is the data generator; `npm pack` creates a release tarball.
+`pnpm run pack` is the data generator; `npm pack` creates a release tarball.
 `test:package` needs the `tar` command and removes its own temporary directory.
 
 ## Release process
 
 1. Update the Unreleased changelog entry and select the release version. Run
-   `npm version <version> --no-git-tag-version` to update npm metadata; synchronize
-   the pnpm lockfile if dependency specifications changed.
-2. Run `npm run check` and review the regenerated version, packed data, and builds.
+   `npm version <version> --no-git-tag-version` to update package metadata. If dependency
+   specifications changed, update `pnpm-lock.yaml` with `pnpm install`.
+2. Run `pnpm run check` and review the regenerated version, packed data, and builds.
    Commit generated files with their source changes. CI rejects stale generated
    artifacts after rebuilding them.
 3. Run `npm pack` and inspect the file list. Its `prepack` hook rebuilds the

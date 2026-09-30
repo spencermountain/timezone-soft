@@ -13,7 +13,7 @@ const check = (lib, label) => {
   assert.equal(lib('milwaukee')[0].iana, 'America/Chicago', label)
   assert.equal(lib('UTC+0')[0].standard.offset, 0, label)
   assert.equal(lib('UTC+14')[0].standard.offset, 14, label)
-  assert.equal(lib('UTC-5')[0].long, '(UTC-5:00) Coordinated Universal Time', label)
+  assert.equal(lib('UTC-5')[0].long, '(UTC-05:00) Coordinated Universal Time', label)
   assert.equal(lib('Toronto')[0].daylight.abbr, 'EDT', label)
   assert.equal(lib('Asia/Kolkata')[0].daylight, null, label)
   assert.equal(lib('not a timezone').length, 0, label)

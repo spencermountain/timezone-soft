@@ -19,12 +19,13 @@ test('UTC offset boundaries and display signs', t => {
       const zone = soft(input)[0]
       t.equal(zone?.iana, id, input)
       t.equal(zone?.standard.offset, offset, `${input} offset`)
-      t.equal(zone?.long, `(UTC${signed}:00) Coordinated Universal Time`, `${input} display`)
+      const label = `${offset < 0 ? '-' : '+'}${String(Math.abs(offset)).padStart(2, '0')}`
+      t.equal(zone?.long, `(UTC${label}:00) Coordinated Universal Time`, `${input} display`)
     }
   }
   const gmt = soft('GMT+5')[0]
   t.equal(gmt.standard.offset, -5, 'preserve GMT sign convention')
-  t.equal(gmt.long, '(UTC-5:00) Coordinated Universal Time', 'GMT display uses UTC sign')
+  t.equal(gmt.long, '(UTC-05:00) Coordinated Universal Time', 'GMT display uses UTC sign')
   t.end()
 })
 
