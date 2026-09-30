@@ -1,4 +1,5 @@
 ### 1.6.0 [Sep 2026]
+- **[change]** - compact the IANA identifier catalog without changing its mappings
 - **[fix]** - bundle dependencies in ESM, CommonJS, and `.min.js` browser builds; preserve the `timezoneSoft` global and license banners
 - **[fix]** - format generated UTC descriptions with signed, zero-padded hours and minutes
 - **[fix]** - normalize whitespace before matching informal phrases

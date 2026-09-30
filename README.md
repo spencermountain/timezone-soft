@@ -1,26 +1,44 @@
-# timezone-soft
+<div align="center">
+  <img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" />
+  <div>informal timezone name-lookup</div>
+  <a href="https://npmjs.org/package/timezone-soft">
+    <img src="https://img.shields.io/npm/v/timezone-soft.svg?style=flat-square" />
+  </a>
+  <a href="https://bundlephobia.com/result?p=timezone-soft@latest">
+    <img src="https://badgen.net/bundlejs/min/timezone-soft" />
+  </a>
+  <div><code>npm install timezone-soft</code></div>
+</div>
 
-Parse abbreviated and informal timezone names into IANA timezone candidates.
+<!-- spacer -->
+<img height="50px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-```sh
-npm install timezone-soft
-```
+Parse abbreviated and informal timezone names into IANA timezone ids.
 
 ```js
 import soft from 'timezone-soft'
 
 const matches = soft('milwaukee')
-const timezone = matches[0]
-if (timezone) {
-  console.log(timezone.iana) // 'America/Chicago'
-  console.log(timezone.standard.abbr) // 'CST'
-  console.log(timezone.daylight?.abbr) // 'CDT'
+matches[0].iana // 'America/Chicago'
+matches[0].standard.abbr // 'CST'
+matches[0].daylight?.abbr // 'CDT'
 }
 ```
 
-CommonJS is supported too:
+People are not usually aware of [IANA timezone IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `PST`, `EST`, `CEST`, `'vancouver bc'`, and `'china'`. 
+These names have cultural overlap, and their meaning can depend on the date. 
 
+This library applies opinionated heuristics to help turn this user-input into ranked matching IANA candidates.
+
+Originally built for [spacetime](https://github.com/spencermountain/spacetime),
+and formerly called `timezone-soft-informal`.
+
+<!-- spacer -->
+<img height="50px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+
+### Usage
 ```js
+// CommonJS is supported too
 const soft = require('timezone-soft')
 
 soft('EST')[0].iana // 'America/New_York'
@@ -28,17 +46,12 @@ soft('central')[0].iana // 'America/Chicago'
 soft('venezuela')[0].iana // 'America/Caracas'
 soft('south east asia')[0].iana // 'Asia/Bangkok'
 ```
-
-## API
-
-### `soft(input: string)`
+`soft(input: string)`
 
 Returns an array of matching timezone objects, ordered by preference. An empty or
-unrecognized string returns `[]`. Other input types throw a `TypeError` with the
-message `timezone-soft expects a string`.
+unrecognized string returns `[]`
 
 A match looks like this:
-
 ```js
 {
   name: 'Central Time',
@@ -63,10 +76,7 @@ Offsets are hours east of UTC; negative values are west of UTC. `daylight` can b
 `null`. Its `start` and `end` values are descriptive rule strings, not timestamps.
 TypeScript declarations support ESM imports and CommonJS `import = require()`.
 
-### `soft.version`
-
-The package version as a string. The older `soft.prototype.version` remains
-available for compatibility.
+---
 
 ## Ambiguous inputs
 
@@ -129,11 +139,11 @@ for calculating historical or future transitions. See the
 [data notes](data/README.md) for the rule syntax and provenance limitations.
 
 Use a date-aware timezone library to determine the applicable abbreviation at a
-specific instant. For example, with [spacetime](https://github.com/spencermountain/spacetime):
+specific instant. For example, with [timezone-soft](https://github.com/spencermountain/timezone-soft):
 
 ```js
-const spacetime = require('spacetime')
-const soft = require('timezone-soft')
+import spacetime from 'spacetime'
+import soft from 'timezone-soft'
 
 const display = soft('montreal')[0]
 if (display) {
@@ -155,38 +165,8 @@ metadata is only as current as this package's curated data. Current runtime
 coverage checks track known missing records for `America/Ciudad_Juarez` and
 `America/Coyhaique`; these currently return `[]`.
 
-## Browsers and supported runtimes
+### See also
 
-The package exports ESM and CommonJS builds. `builds/timezone-soft.min.js` is also
-a standalone UMD script: when loaded with a classic `<script>` tag, it exposes
-`timezoneSoft` globally and includes its dependencies.
+- [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
 
-CI is configured for Node.js 22, 24, and 26. Development requires Node 22.13+ on
-22.x, or Node 24+; `.nvmrc` selects Node 24. Browser bundles receive isolated
-JavaScript-context smoke tests, not a full browser compatibility matrix.
-
-## Development
-
-Use pnpm 11.5.0 (pinned in `package.json`) for development:
-
-```sh
-pnpm install --frozen-lockfile
-pnpm run check
-```
-
-See [Contributing.md](Contributing.md) for the project layout, adding aliases,
-tests, and releases. See [changelog.md](changelog.md) for changes.
-
-## Background
-
-Humans use a different informal scheme from [IANA timezone IDs](https://www.iana.org/time-zones):
-PST, EST, CEST, IST, city names, and regional names. Those names collide and their
-meaning can depend on the date. This library applies opinionated heuristics to
-help turn that input into useful candidates.
-
-Originally built for [spacetime](https://github.com/spencermountain/spacetime),
-and formerly called `spacetime-informal`.
-
-By [Spencer Kelly](https://spencermountain.github.io/). [MIT](LICENSE).
-
-Related: [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
+MIT

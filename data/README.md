@@ -57,6 +57,14 @@ The importer reads the archive version, resolves link chains, and rejects cycles
 or missing targets. Review canonical-ID changes and run the full check suite.
 Every editable zone must have a bundled record for its canonical target.
 
+The generated catalog groups aliases under each canonical ID, storing that ID
+once. A leading `/` on an alias reuses the canonical ID's directory; bare and
+cross-directory aliases remain literal. The module reconstructs the same full
+lookup object at import time. The importer uses `scripts/lib/serialize-identifiers.js`
+to keep this representation reproducible. `test/identifiers.test.js` pins the
+complete catalog with a count and SHA-256 digest of sorted `[ID, target]` pairs;
+update those only after reviewing mappings when upgrading the IANA release.
+
 ## DST rule strings
 
 Patterns contain two rules separated by `|`, exposed as `start` and `end`:
