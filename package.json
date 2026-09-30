@@ -1,7 +1,7 @@
 {
   "name": "timezone-soft",
-  "version": "1.5.2",
-  "description": "interpret abbreviated and informal timezone names",
+  "version": "1.6.0",
+  "description": "informal timezone lookup",
   "license": "MIT",
   "repository": "github:spencermountain/timezone-soft",
   "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",

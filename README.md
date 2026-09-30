@@ -13,15 +13,11 @@
 <!-- spacer -->
 <img height="50px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-Parse abbreviated and informal timezone names into IANA timezone ids.
-
 ```js
 import tzSoft from 'timezone-soft'
 
 const matches = tzSoft('milwaukee')
 matches[0].iana // 'America/Chicago'
-matches[0].standard.abbr // 'CST'
-matches[0].daylight?.abbr // 'CDT'
 ```
 
 People are not often aware of timezone [IANA IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `'PST'`, `'eastern time'`, `'vancouver bc'`, and `'china'`. 
