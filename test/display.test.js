@@ -24,7 +24,7 @@ test('display-test', (t) => {
     ['bermuda', 'AST', 'ADT'],
     ['america/manaus', 'AMT'],
     ['toronto', 'EST', 'EDT'],
-    ['vancouver', 'PST', 'PDT'],
+    ['vancouver', 'MST'],
     ['europe/paris', 'CET', 'CEST'],
     ['dakar', 'GMT'],
     // ['Punta Arenas', 'CLST'],

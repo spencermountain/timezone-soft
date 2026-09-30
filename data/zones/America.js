@@ -706,7 +706,6 @@ export default {
   "America/Edmonton": {
     "offset": -6,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "edmonton",
@@ -720,7 +719,7 @@ export default {
       "mountain",
       "mst"
     ],
-    "meta": "Mountain"
+    "meta": "Alberta and Northwest Territories"
   },
   "America/Eirunepe": {
     "offset": -5,
@@ -1073,7 +1072,6 @@ export default {
   "America/Inuvik": {
     "offset": -6,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "inuvik",
@@ -1085,7 +1083,7 @@ export default {
       "mountain",
       "mst"
     ],
-    "meta": "Mountain"
+    "meta": "Alberta and Northwest Territories"
   },
   "America/Iqaluit": {
     "offset": -4,
@@ -2477,7 +2475,6 @@ export default {
   "America/Vancouver": {
     "offset": -7,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "ca",
@@ -2497,7 +2494,7 @@ export default {
       "pacific",
       "pst"
     ],
-    "meta": "Pacific"
+    "meta": "British Columbia"
   },
   "America/Whitehorse": {
     "offset": -7,
@@ -2515,7 +2512,6 @@ export default {
   "America/Winnipeg": {
     "offset": -5,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "winnipeg",
@@ -2529,7 +2525,7 @@ export default {
       "central",
       "cst"
     ],
-    "meta": "Central"
+    "meta": "Manitoba"
   },
   "America/Yakutat": {
     "offset": -8,

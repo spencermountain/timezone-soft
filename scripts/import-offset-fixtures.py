@@ -1,7 +1,7 @@
 """Generate date-based display checks from a reviewed IANA archive, not host tzdata.
 
 Requires Python 3.9+ and zic. Run:
-  python3 scripts/import-offset-fixtures.py /path/to/tzdata2026d.tar.gz
+  python3 scripts/import-offset-fixtures.py /path/to/tzdata2026e.tar.gz
 """
 import argparse
 import hashlib
@@ -13,7 +13,7 @@ import tempfile
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-VERSION = '2026d'
+VERSION = '2026e'
 YEAR = 2027
 SOURCES = ['africa', 'antarctica', 'asia', 'australasia', 'europe',
            'northamerica', 'southamerica', 'etcetera', 'backward']
@@ -22,6 +22,8 @@ America/Asuncion America/Bahia_Banderas America/Chihuahua America/Ciudad_Juarez
 America/Coyhaique America/Mazatlan America/Merida America/Mexico_City
 America/Monterrey America/Nuuk America/Ojinaga America/Punta_Arenas
 America/Santiago America/Scoresbysund America/New_York America/Phoenix
+America/Vancouver America/Edmonton America/Inuvik America/Winnipeg
+America/Los_Angeles America/Denver America/Chicago
 Antarctica/Casey Antarctica/Troll Antarctica/Vostok
 Asia/Almaty Asia/Amman Asia/Damascus Asia/Qostanay Asia/Tomsk Asia/Omsk
 Australia/Lord_Howe Europe/Astrakhan Europe/Ulyanovsk Europe/Dublin Europe/Moscow
@@ -40,7 +42,7 @@ def generate(archive_path):
         'dates': [date.isoformat().replace('+00:00', 'Z') for date in dates],
         'conventions': {
             'Europe/Dublin': 'Winter GMT is standard; summer IST is daylight, reversing IANA negative-DST flags.',
-            'Africa/Casablanca': '2026d models permanent UTC+0 from 2026-09-20; earlier Ramadan rules are outside this snapshot.',
+            'Africa/Casablanca': '2026e models permanent UTC+0 from 2026-09-20; earlier Ramadan rules are outside this snapshot.',
             'Africa/El_Aaiun': 'Same post-2026-09-20 convention as Casablanca.'
         },
         'zones': {}
@@ -86,6 +88,6 @@ if __name__ == '__main__':
     parser.add_argument('archive', type=Path)
     args = parser.parse_args()
     fixture = generate(args.archive)
-    destination = Path(__file__).resolve().parent.parent / 'test/fixtures/offsets-2026d.json'
+    destination = Path(__file__).resolve().parent.parent / 'test/fixtures/offsets-2026e.json'
     destination.write_text(json.dumps(fixture, indent=2) + '\n')
     print(f'Wrote {len(fixture["zones"])} zones × {len(fixture["dates"])} dates to {destination}')

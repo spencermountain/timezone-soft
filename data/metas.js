@@ -1,7 +1,24 @@
-// Offset audit: IANA 2026d, sampled monthly in 2027.
-// Sources and archive SHA-256: test/fixtures/offsets-2026d.json.
+// Offset audit: IANA 2026e, sampled monthly in 2027.
+// Sources and archive SHA-256: test/fixtures/offsets-2026e.json.
 // Curated names/abbreviations are display policy, not a complete tzdb import.
 export default {
+  // IANA 2026e northamerica: announced permanent Canadian offsets.
+  // Separate records preserve seasonal US Pacific, Mountain, and Central time.
+  "British Columbia": {
+    "name": "British Columbia Time",
+    "std": ["MST", -7, "Mountain Standard Time"],
+    "long": "(UTC-07:00) British Columbia"
+  },
+  "Alberta and Northwest Territories": {
+    "name": "Alberta and Northwest Territories Time",
+    "std": ["CST", -6, "Central Standard Time"],
+    "long": "(UTC-06:00) Alberta and Northwest Territories"
+  },
+  "Manitoba": {
+    "name": "Manitoba Time",
+    "std": ["EST", -5, "Eastern Standard Time"],
+    "long": "(UTC-05:00) Manitoba"
+  },
   "Ulyanovsk": {
     "std": ["+04", 4, "Ulyanovsk Time"]
   },

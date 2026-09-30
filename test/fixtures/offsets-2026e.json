@@ -1,7 +1,7 @@
 {
-  "tzdbVersion": "2026d",
-  "source": "https://data.iana.org/time-zones/releases/tzdata2026d.tar.gz",
-  "sha256": "0cb2aa8e333c3dc049badc42a0c61f21987b8cd44e107fa900bad764aacc7767",
+  "tzdbVersion": "2026e",
+  "source": "https://data.iana.org/time-zones/releases/tzdata2026e.tar.gz",
+  "sha256": "b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652",
   "year": 2027,
   "scope": "Display offsets for sampled dates; not historical or transition-rule validation.",
   "dates": [
@@ -20,7 +20,7 @@
   ],
   "conventions": {
     "Europe/Dublin": "Winter GMT is standard; summer IST is daylight, reversing IANA negative-DST flags.",
-    "Africa/Casablanca": "2026d models permanent UTC+0 from 2026-09-20; earlier Ramadan rules are outside this snapshot.",
+    "Africa/Casablanca": "2026e models permanent UTC+0 from 2026-09-20; earlier Ramadan rules are outside this snapshot.",
     "Africa/El_Aaiun": "Same post-2026-09-20 convention as Casablanca."
   },
   "zones": {
@@ -294,6 +294,60 @@
         ]
       ]
     },
+    "America/Chicago": {
+      "standard": -6.0,
+      "daylight": -5.0,
+      "samples": [
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -5.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ]
+      ]
+    },
     "America/Chihuahua": {
       "standard": -6.0,
       "daylight": null,
@@ -452,6 +506,222 @@
         ],
         [
           -3.0,
+          "standard"
+        ]
+      ]
+    },
+    "America/Denver": {
+      "standard": -7.0,
+      "daylight": -6.0,
+      "samples": [
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -6.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ]
+      ]
+    },
+    "America/Edmonton": {
+      "standard": -6.0,
+      "daylight": null,
+      "samples": [
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ]
+      ]
+    },
+    "America/Inuvik": {
+      "standard": -6.0,
+      "daylight": null,
+      "samples": [
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ],
+        [
+          -6.0,
+          "standard"
+        ]
+      ]
+    },
+    "America/Los_Angeles": {
+      "standard": -8.0,
+      "daylight": -7.0,
+      "samples": [
+        [
+          -8.0,
+          "standard"
+        ],
+        [
+          -8.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -7.0,
+          "daylight"
+        ],
+        [
+          -8.0,
+          "standard"
+        ],
+        [
+          -8.0,
           "standard"
         ]
       ]
@@ -1046,6 +1316,114 @@
         ],
         [
           -2.0,
+          "standard"
+        ]
+      ]
+    },
+    "America/Vancouver": {
+      "standard": -7.0,
+      "daylight": null,
+      "samples": [
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ],
+        [
+          -7.0,
+          "standard"
+        ]
+      ]
+    },
+    "America/Winnipeg": {
+      "standard": -5.0,
+      "daylight": null,
+      "samples": [
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
+          "standard"
+        ],
+        [
+          -5.0,
           "standard"
         ]
       ]

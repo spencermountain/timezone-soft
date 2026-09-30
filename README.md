@@ -145,7 +145,7 @@ for calculating historical or future transitions. See the
 [data notes](data/README.md) for the rule syntax and provenance limitations.
 
 Use a date-aware timezone library to determine the applicable abbreviation at a
-specific instant. For example, with [timezone-soft](https://github.com/spencermountain/timezone-soft):
+specific instant. For example, with [spacetime](https://github.com/spencermountain/timezone-soft):
 
 ```js
 import spacetime from 'spacetime'
@@ -172,18 +172,13 @@ metadata is only as current as this package's curated data. Coverage includes
 `America/Coyhaique` (permanent UTC−3). Runtime coverage checks flag new missing
 records.
 
-### See also
 
-- [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
-
-MIT
-
-## TypeScript example
+## TypeScript
 
 ```ts
-import soft, { type DisplayFormat } from 'timezone-soft'
+import tzSoft, { type DisplayFormat } from 'timezone-soft'
 
-const matches: DisplayFormat[] = soft('montreal')
+const matches: DisplayFormat[] = tzSoft('montreal')
 const zone = matches[0]
 
 if (zone) {
@@ -194,3 +189,9 @@ if (zone) {
   console.log('No matching timezone')
 }
 ```
+
+### See also
+
+- [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
+
+MIT, PRs welcome

@@ -118,8 +118,8 @@ convention when integrating another library's seasonal classification.
 
 ## Versioned display-offset checks
 
-`test/fixtures/offsets-2026d.json` records twelve monthly UTC instants in 2027
-for 41 reviewed zones. It is generated independently from the IANA 2026d archive
+`test/fixtures/offsets-2026e.json` records twelve monthly UTC instants in 2027
+for 48 reviewed zones. It is generated independently from the IANA 2026e archive
 and records the source URL and archive SHA-256. The tests compare both display
 categories and every sampled offset, including absence of DST. They run without
 network access or dependence on the host Node/ICU timezone version.
@@ -127,7 +127,7 @@ network access or dependence on the host Node/ICU timezone version.
 To regenerate, install Python 3.9+ and `zic`, then run:
 
 ```sh
-python3 scripts/import-offset-fixtures.py /path/to/tzdata2026d.tar.gz
+python3 scripts/import-offset-fixtures.py /path/to/tzdata2026e.tar.gz
 ```
 
 The generator rejects a different release until its version and sampling year
@@ -143,3 +143,18 @@ exceptions. Santiago and Norfolk use standard/winter offsets below their summer
 offsets; Lord Howe's seasonal adjustment is half an hour. Punta Arenas and
 Bougainville have separate metadata so changes to Santiago and Port Moresby do
 not alter their permanent offsets.
+
+## Canadian permanent-offset metadata
+
+The IANA 2026e `northamerica` source specifies permanent UTC-7 (MST) for Vancouver,
+UTC-6 (CST) for Edmonton and Inuvik, and UTC-5 (EST) for Winnipeg. Dedicated
+metazones keep US Pacific, Mountain, and Central seasonal metadata unchanged.
+Existing informal aliases remain accepted for compatibility; explicit IANA
+links such as `Canada/Pacific` and `America/Yellowknife` use the updated records.
+
+This static API exposes the announced permanent regime, not the abbreviation
+at a given historical instant. In 2026e, IANA temporarily retains the previous
+DST abbreviations until November 1, 2026; Manitoba's legal change is October 31.
+The offset fixtures sample every month of 2027, after those changes, and include
+Los Angeles, Denver, and Chicago as controls. Use a date-aware implementation
+for dates during the transition or before it.

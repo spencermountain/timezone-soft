@@ -2,7 +2,7 @@ import test from 'tape'
 import { readFileSync } from 'node:fs'
 import soft from './_lib.js'
 
-const fixture = JSON.parse(readFileSync(new URL('./fixtures/offsets-2026d.json', import.meta.url), 'utf8'))
+const fixture = JSON.parse(readFileSync(new URL('./fixtures/offsets-2026e.json', import.meta.url), 'utf8'))
 
 test(`display offsets match IANA ${fixture.tzdbVersion} across ${fixture.year}`, t => {
   for (const [id, expected] of Object.entries(fixture.zones)) {

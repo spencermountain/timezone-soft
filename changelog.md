@@ -17,6 +17,7 @@
 - **[fix]** - prefer Etc/UTC for UTC and reject nonexistent Etc/GMT+13 and Etc/GMT+14 IDs
 - **[fix]** - resolve zero offsets correctly and support UTC+13 and UTC+14
 - **[fix]** - name Dublin's winter GMT correctly and document its compatible winter/summer display convention
+- **[fix]** - use permanent offsets for Vancouver, Edmonton, Inuvik, and Winnipeg; expand offset fixtures to 48 zones
 - **[fix]** - UTC signs in GMT zone descriptions
 - **[update]** - dependencies
 
