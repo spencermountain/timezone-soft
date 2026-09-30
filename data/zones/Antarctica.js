@@ -8,7 +8,6 @@ export default {
     "offset": 8,
     "hours": 3,
     "hem": "s",
-    "dst": "ant",
     "names": [
       "antarctica",
       "casey",

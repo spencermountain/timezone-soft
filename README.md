@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" />
-  <div>informal timezone name-lookup</div>
+  <div>informal timezone lookup</div>
   <a href="https://npmjs.org/package/timezone-soft">
     <img src="https://img.shields.io/npm/v/timezone-soft.svg?style=flat-square" />
   </a>
@@ -16,39 +16,43 @@
 Parse abbreviated and informal timezone names into IANA timezone ids.
 
 ```js
-import soft from 'timezone-soft'
+import tzSoft from 'timezone-soft'
 
-const matches = soft('milwaukee')
+const matches = tzSoft('milwaukee')
 matches[0].iana // 'America/Chicago'
 matches[0].standard.abbr // 'CST'
 matches[0].daylight?.abbr // 'CDT'
-}
 ```
 
-People are not usually aware of [IANA timezone IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `PST`, `EST`, `CEST`, `'vancouver bc'`, and `'china'`. 
+People are not often aware of timezone [IANA IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `'PST'`, `'eastern time'`, `'vancouver bc'`, and `'china'`. 
+
 These names have cultural overlap, and their meaning can depend on the date. 
 
 This library applies opinionated heuristics to help turn this user-input into ranked matching IANA candidates.
 
 Originally built for [spacetime](https://github.com/spencermountain/spacetime),
-and formerly called `timezone-soft-informal`.
+and formerly called `timezone-soft-informal`. This is a compressed dictionary of lookup terms for timezone ids, and some basic ranking heuristics when >1 results.
 
 <!-- spacer -->
-<img height="50px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+<img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+
+<div align="center">
+  <img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" />
+</div>
 
 ### Usage
 ```js
-// CommonJS is supported too
-const soft = require('timezone-soft')
+const tzSoft = require('timezone-soft') //commonjs supported
 
-soft('EST')[0].iana // 'America/New_York'
-soft('central')[0].iana // 'America/Chicago'
-soft('venezuela')[0].iana // 'America/Caracas'
-soft('south east asia')[0].iana // 'Asia/Bangkok'
+tzSoft('EST')[0].iana // 'America/New_York'
+tzSoft('central')[0].iana // 'America/Chicago'
+tzSoft('venezuela')[0].iana // 'America/Caracas'
+tzSoft('south east asia')[0].iana // 'Asia/Bangkok'
 ```
-`soft(input: string)`
 
-Returns an array of matching timezone objects, ordered by preference. An empty or
+`tzSoft(input: string)`
+
+This returns an array of matching timezone objects, ordered by preference. An empty or
 unrecognized string returns `[]`
 
 A match looks like this:
@@ -73,10 +77,10 @@ A match looks like this:
 ```
 
 Offsets are hours east of UTC; negative values are west of UTC. `daylight` can be
-`null`. Its `start` and `end` values are descriptive rule strings, not timestamps.
-TypeScript declarations support ESM imports and CommonJS `import = require()`.
+`null`. 
 
----
+`start` and `end` values are descriptive rule strings.
+
 
 ## Ambiguous inputs
 
@@ -145,9 +149,9 @@ specific instant. For example, with [timezone-soft](https://github.com/spencermo
 
 ```js
 import spacetime from 'spacetime'
-import soft from 'timezone-soft'
+import tzSoft from 'timezone-soft'
 
-const display = soft('montreal')[0]
+const display = tzSoft('montreal')[0]
 if (display) {
   const now = spacetime.now(display.iana)
   const info = now.isDST() && display.daylight ? display.daylight : display.standard
@@ -173,3 +177,20 @@ records.
 - [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
 
 MIT
+
+## TypeScript example
+
+```ts
+import soft, { type DisplayFormat } from 'timezone-soft'
+
+const matches: DisplayFormat[] = soft('montreal')
+const zone = matches[0]
+
+if (zone) {
+  console.log(zone.iana) // 'America/Toronto'
+  console.log(zone.standard.abbr) // 'EST'
+  console.log(zone.daylight?.abbr) // 'EDT'; undefined for zones without DST
+} else {
+  console.log('No matching timezone')
+}
+```

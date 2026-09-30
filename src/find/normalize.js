@@ -27,4 +27,6 @@ const three = function (str) {
   return str.trim()
 }
 
-export default { one, two, three }
+const fold = str => str.normalize('NFD').replace(/\p{M}/gu, '')
+
+export default { one, two, three, fold }

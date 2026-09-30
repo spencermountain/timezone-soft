@@ -1,4 +1,38 @@
+// Offset audit: IANA 2026d, sampled monthly in 2027.
+// Sources and archive SHA-256: test/fixtures/offsets-2026d.json.
+// Curated names/abbreviations are display policy, not a complete tzdb import.
 export default {
+  "Ulyanovsk": {
+    "std": ["+04", 4, "Ulyanovsk Time"]
+  },
+  "Astrakhan": {
+    "std": ["+04", 4, "Astrakhan Time"]
+  },
+  "Tomsk": {
+    "std": ["+07", 7, "Tomsk Time"]
+  },
+  "Syria": {
+    "std": ["+03", 3, "Syria Time"]
+  },
+  "Jordan": {
+    "std": ["+03", 3, "Jordan Time"]
+  },
+  "Bougainville": {
+    "std": ["+11", 11, "Bougainville Time"]
+  },
+  "Magallanes": {
+    "std": ["-03", -3, "Magallanes Time"],
+    "long": "(UTC-03:00) Punta Arenas"
+  },
+  "Galapagos": {
+    "std": ["GALT", -6],
+    "long": "(UTC-06:00) Galapagos Islands"
+  },
+  "Hawaii": {
+    "name": "Hawaii Time",
+    "std": ["HST", -10, "Hawaii Standard Time"],
+    "long": "(UTC-10:00) Hawaii"
+  },
   "UTC": {
     "name": "Coordinated Universal Time",
     "std": ["UTC", 0, "Coordinated Universal Time"],
@@ -151,11 +185,8 @@ export default {
     "long": "(UTC-04:00) Cuiaba"
   },
   "Morocco Standard": {
-    "offset": 1,
     "long": "(UTC+00:00) Casablanca",
-    "std": ["WET", 1],
-    "dst": ["WEST", 0, "Western European Summer Time"
-    ]
+    "std": ["+00", 0]
   },
   "Gulf": {
     "std": ["GST", 4],
@@ -169,8 +200,8 @@ export default {
     "std": ["UZT", 5]
   },
   "East Kazakhstan": {
-    "std": ["ALMT", 6],
-    "long": "(UTC+06:00) Astana"
+    "std": ["ALMT", 5],
+    "long": "(UTC+05:00) Astana"
   },
   "Omsk": {
     "std": ["OMST", 6],
@@ -208,7 +239,7 @@ export default {
     "long": "(UTC+10:00) Guam, Port Moresby"
   },
   "Papua New Guinea": {
-    "std": ["PGT", 11]
+    "std": ["PGT", 10]
   },
   "New Zealand": {
     "std": ["NZST", 12],
@@ -240,18 +271,17 @@ export default {
   },
   "Chile": {
     "dupe": true,
-    "std": ["CLT", -3],
-    "dst": ["CLST", -4, "Chile Summer Time"
-    ]
+    "std": ["CLT", -4],
+    "dst": ["CLST", -3, "Chile Summer Time"]
   },
   "Troll": {
     "dupe": true,
-    "std": ["GMT", 0]
+    "std": ["GMT", 0],
+    "dst": ["+02", 2, "Troll Summer Time"]
   },
   "East Greenland": {
-    "std": ["HNEG", 0],
-    "dst": ["HEEG", 1, "East Greenland Summer Time"
-    ]
+    "std": ["EGT", -2],
+    "dst": ["EGST", -1, "East Greenland Summer Time"]
   },
   "Israel": {
     "std": ["IST", 2],
@@ -324,7 +354,7 @@ export default {
     "long": "(UTC+05:45) Kathmandu"
   },
   "Vostok": {
-    "std": ["MSK+4", 6]
+    "std": ["+05", 5]
   },
   "Kyrgyzstan": {
     "std": ["KGT", 6]
@@ -417,13 +447,11 @@ export default {
   },
   "Lord Howe": {
     "std": ["LHST", 10.5],
-    "dst": ["LHDT", 11.5],
+    "dst": ["LHDT", 11],
     "long": "(UTC+10:30) Lord Howe Island"
   },
   "Casey": {
-    "std": ["CAST", 11],
-    "dst": ["CAST", 8, "Casey Summer Time"
-    ]
+    "std": ["CAST", 8]
   },
   "Magadan": {
     "std": ["MAGT", 11],
@@ -462,7 +490,6 @@ export default {
   },
   "Fiji": {
     "std": ["FJT", 12],
-    "dst": ["FJT", 13, "Fiji Summer Time"],
     "long": "(UTC+12:00) Fiji"
   },
   "Tuvalu": {
@@ -472,8 +499,8 @@ export default {
     "std": ["NRT", 12]
   },
   "Norfolk Island": {
-    "std": ["NFT", 12],
-    "dst": ["NFDT", 11],
+    "std": ["NFT", 11],
+    "dst": ["NFDT", 12],
     "long": "(UTC+11:00) Norfolk Island"
   },
   "Gilbert Islands": {
@@ -558,9 +585,8 @@ export default {
     "std": ["PET", -5]
   },
   "Paraguay": {
-    "std": ["PYT", -4],
-    "dst": ["PYST", -3, "Paraguay Summer Time"],
-    "long": "(UTC-04:00) Asuncion"
+    "std": ["PYT", -3],
+    "long": "(UTC-03:00) Asuncion"
   },
   "Venezuela": {
     "std": ["VET", -4],
@@ -581,9 +607,9 @@ export default {
     "std": ["GFT", -3]
   },
   "West Greenland": {
-    "std": ["WGT", -3],
-    "dst": ["WGST", -2, "West Greenland Summer Time"],
-    "long": "(UTC-03:00) Greenland"
+    "std": ["WGT", -2],
+    "dst": ["WGST", -1, "West Greenland Summer Time"],
+    "long": "(UTC-02:00) Greenland"
   },
   "St. Pierre & Miquelon": {
     "std": ["HNPM", -3],

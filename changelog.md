@@ -1,4 +1,7 @@
 ### 1.6.0 [Sep 2026]
+- **[fix]** - audit display offsets against IANA 2026d, including Honolulu, Lord Howe, Santiago, Ojinaga, Kazakhstan, Greenland, and obsolete DST records
+- **[change]** - add reproducible monthly offset fixtures for 41 zones; Ojinaga now participates in CST matches without reordering prior candidates
+- **[fix]** - preserve reserved UTC/GMT results through phrase normalization and add an accent-insensitive fallback after exact matching
 - **[fix]** - restore Cairo daylight metadata under Egypt's rules effective since 2023 (#29)
 - **[fix]** - give UTC its own name and abbreviation, separate from GMT (#23)
 - **[fix]** - add Ciudad Juarez and Coyhaique records; move the Ciudad Juarez alias from Ojinaga (#17)

@@ -115,3 +115,31 @@ summer IST for Dublin. Its standard tuple explicitly names Greenwich Mean Time;
 the summer tuple names Irish Standard Time. These display categories do not match
 IANA's native negative-DST flags for Ireland. Use offsets and the documented
 convention when integrating another library's seasonal classification.
+
+## Versioned display-offset checks
+
+`test/fixtures/offsets-2026d.json` records twelve monthly UTC instants in 2027
+for 41 reviewed zones. It is generated independently from the IANA 2026d archive
+and records the source URL and archive SHA-256. The tests compare both display
+categories and every sampled offset, including absence of DST. They run without
+network access or dependence on the host Node/ICU timezone version.
+
+To regenerate, install Python 3.9+ and `zic`, then run:
+
+```sh
+python3 scripts/import-offset-fixtures.py /path/to/tzdata2026d.tar.gz
+```
+
+The generator rejects a different release until its version and sampling year
+are explicitly reviewed. When updating, inspect changes to the fixture before
+changing metadata. A passing fixture covers only its listed zones and dates;
+it is not a claim that all bundled metadata is current. The static display API
+does not calculate historical offsets or transitions.
+
+Dublin's negative-DST flags are mapped to this API's winter-standard/summer-daylight
+convention. Morocco's 2026d rules move to permanent UTC+0 on September 20, 2026;
+the 2027 fixtures intentionally do not apply that metadata to earlier Ramadan
+exceptions. Santiago and Norfolk use standard/winter offsets below their summer
+offsets; Lord Howe's seasonal adjustment is half an hour. Punta Arenas and
+Bougainville have separate metadata so changes to Santiago and Port Moresby do
+not alter their permanent offsets.

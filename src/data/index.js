@@ -4,6 +4,7 @@ import pcked from '../generated/zones.js'
 import misc from '../../data/aliases.js'
 import addUTC from './add-utc.js'
 import identifiers from '../../data/iana-identifiers.js'
+import normalize from '../find/normalize.js'
 
 // unpack our lexicon of words
 const zones = {}
@@ -59,4 +60,12 @@ Object.keys(lexicon).forEach(k => {
     })
   }
 })
-export { zones, lexicon, canonicalIds, canonicalize }
+// Only accented aliases need a second index; ordinary lookups keep their ranking.
+const foldedLexicon = {}
+for (const [alias, ids] of Object.entries(lexicon)) {
+  const folded = normalize.fold(alias)
+  if (folded === alias) continue
+  foldedLexicon[folded] = [...new Set([...(foldedLexicon[folded] || []), ...ids])]
+    .sort((a, b) => zones[b].wordCount - zones[a].wordCount)
+}
+export { zones, lexicon, foldedLexicon, canonicalIds, canonicalize }

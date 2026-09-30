@@ -11,7 +11,8 @@
 - `ambiguous-ranking.json`: expected ordered candidates for CST, IST, and BST,
   captured in September 2026 before the data-layout refactor, then mapped through
   the IANA 2026d canonical IDs. The duplicate Rainy River/Winnipeg CST candidate
-  was merged; the remaining preference order was preserved. Review changes as
+  was merged; Ojinaga was subsequently added to CST after correcting its Central
+  timezone metadata. All preexisting CST candidates retain their relative order. Review changes as
   public behavior changes rather than blindly regenerating this file.
 - `intl-known-gaps.js`: explicit missing records discovered in the September 2026
   runtime audit. These are coverage limitations, not substitute aliases. The
@@ -19,5 +20,10 @@
 
 `intl-current.test.js` independently checks `Intl.supportedValuesOf('timeZone')`
 from the installed runtime and reports its Node, ICU, and tz versions. Differences
-between runtimes are expected. These fixtures and checks validate name coverage;
-they do not establish that all offsets or DST metadata are current.
+between runtimes are expected. The legacy fixtures and Intl checks validate name coverage, not metadata freshness.
+
+`offsets-2026d.json` separately validates display offsets across twelve dates in
+2027 for 41 reviewed zones. It comes from compiled IANA 2026d data, records the
+archive hash, and handles Dublin and Morocco explicitly. Regenerate with
+`python3 scripts/import-offset-fixtures.py /path/to/tzdata2026d.tar.gz`; see
+`data/README.md` for scope and update instructions.

@@ -117,7 +117,6 @@ export default {
   "Africa/Casablanca": {
     "offset": 1,
     "hem": "n",
-    "dst": "saha",
     "names": [
       "africa",
       "casablanca",
@@ -166,7 +165,6 @@ export default {
   "Africa/El_Aaiun": {
     "offset": 1,
     "hem": "n",
-    "dst": "saha",
     "names": [
       "africa",
       "el_aaiun",

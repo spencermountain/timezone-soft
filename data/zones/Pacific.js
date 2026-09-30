@@ -47,7 +47,7 @@ export default {
       "guinean",
       "pgt"
     ],
-    "meta": "Papua New Guinea"
+    "meta": "Bougainville"
   },
   "Pacific/Chatham": {
     "offset": 12.75,
@@ -121,7 +121,6 @@ export default {
   "Pacific/Fiji": {
     "offset": 12,
     "hem": "s",
-    "dst": "fiji",
     "names": [
       "pacific",
       "fiji",
@@ -157,7 +156,7 @@ export default {
       "colombia",
       "cost"
     ],
-    "meta": "Colombia"
+    "meta": "Galapagos"
   },
   "Pacific/Gambier": {
     "offset": -9,
@@ -219,7 +218,7 @@ export default {
       "hadt",
       "aleutian islands"
     ],
-    "meta": "Hawaii-Aleutian"
+    "meta": "Hawaii"
   },
   "Pacific/Kanton": {
     "offset": 13,
