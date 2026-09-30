@@ -71,7 +71,7 @@ export default {
       "volgograd time",
       "msk"
     ],
-    "meta": "Moscow"
+    "meta": "Astrakhan"
   },
   "Europe/Athens": {
     "offset": 3,
@@ -1101,7 +1101,7 @@ export default {
       "msk",
       "moscow, st petersburg"
     ],
-    "meta": "Moscow"
+    "meta": "Ulyanovsk"
   },
   "Europe/Uzhgorod": {
     "offset": 3,

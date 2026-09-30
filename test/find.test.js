@@ -1,8 +1,24 @@
 import test from 'tape'
 import soft from './_lib.js'
 
+test('whitespace is normalized before phrase matching', t => {
+  for (const input of [
+    ' in toronto ',
+    '\tIN\tToronto\n',
+    'Toronto\tTime',
+    ' in   toronto  standard  time ',
+    'Toronto\u00a0Time',
+    'Toronto\nDaylight\tTime'
+  ]) {
+    t.deepEqual(soft(input), soft('toronto'), JSON.stringify(input))
+  }
+  t.deepEqual(soft(' \t\n '), [], 'whitespace alone has no match')
+  t.deepEqual(soft(' in unknown city time '), [], 'unknown phrase has no match')
+  t.end()
+})
+
 test('informal timezones', (t) => {
-  let arr = [
+  const arr = [
     ['Toronto', 'America/Toronto'],
     ['toronto', 'America/Toronto'],
     ['toronto time', 'America/Toronto'],
@@ -55,7 +71,7 @@ test('informal timezones', (t) => {
     ['yorkshire', 'Europe/London']
   ]
   arr.forEach((a) => {
-    let found = soft(a[0])
+    const found = soft(a[0])
     found[0] = found[0] || {}
     t.equal(found[0].iana, a[1], a[0])
   })
@@ -63,14 +79,14 @@ test('informal timezones', (t) => {
 })
 
 test('false-positive timezones', (t) => {
-  let arr = [
+  const arr = [
     'sf5hasdf',
     '827219',
     'foo',
     '5h5h5h',
   ]
   arr.forEach((str) => {
-    let found = soft(str)
+    const found = soft(str)
     t.equal(found.length, 0, str)
   })
   t.end()

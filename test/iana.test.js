@@ -22,7 +22,7 @@ test('explicit IANA identifiers bypass informal aliases', t => {
     t.equal(matches[0]?.iana, id, `${input} canonical ID`)
     t.equal(matches[0]?.standard.offset, offset, `${input} offset`)
   }
-  for (const input of ['Fake/London', 'Asia/Coyhaique', 'America/Coyhaique']) {
+  for (const input of ['Fake/London', 'Asia/Coyhaique']) {
     t.deepEqual(soft(input), [], `${input} does not guess from the final component`)
   }
   t.equal(soft('kyiv')[0].iana, 'Europe/Kyiv', 'informal results also use canonical spelling')

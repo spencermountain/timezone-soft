@@ -2,10 +2,13 @@
 // for example, the US changes:
 // the second Sunday of March -> first Sunday of November
 // http://www.webexhibits.org/daylightsaving/g.html
-let patterns = {
+const patterns = {
   usa: '2nd-sun-mar-2h|1st-sun-nov-2h',// (From 1987 to 2006)
   // mexico
   mex: '1st-sun-apr-2h|last-sun-oct-2h',
+  // Egypt since 2023. 24h means midnight at the end of the last Thursday.
+  // https://data.iana.org/time-zones/tzdb/africa (reviewed 2026-09-30)
+  egypt: 'last-fri-apr-0h|last-thu-oct-24h',
 
   // European Union zone
   eu0: 'last-sun-mar-0h|last-sun-oct-1h',
@@ -13,20 +16,20 @@ let patterns = {
   eu2: 'last-sun-mar-2h|last-sun-oct-3h',
   eu3: 'last-sun-mar-3h|last-sun-oct-4h',
   //greenland
-  green: 'last-sat-mar-22h|last-sat-oct-23h',
+  green: 'last-sat-mar-23h|last-sun-oct-0h',
 
   // australia
   aus: '1st-sun-apr-3h|1st-sun-oct-2h',
   //lord howe australia
-  lhow: '1st-sun-apr-2h|1st-sun-oct-2h',
+  lhow: '1st-sun-oct-2h|1st-sun-apr-2h',
   // new zealand
   chat: '1st-sun-apr-3h|last-sun-sep-2h', //technically 3:45h -> 2:45h
-  // new Zealand, antarctica 
+  // new Zealand, antarctica
   nz: '1st-sun-apr-3h|last-sun-sep-2h',
   // casey - antarctica
   ant: '2nd-sun-mar-0h|1st-sun-oct-0h',
   // troll - antarctica
-  troll: '3rd-sun-mar-1h|last-sun-oct-3h',
+  troll: 'last-sun-mar-1h|last-sun-oct-3h',
 
   //jordan
   jord: 'last-fri-feb-0h|last-fri-oct-1h',
@@ -49,7 +52,7 @@ let patterns = {
   //cuba
   cuba: '2nd-sun-mar-0h|1st-sun-nov-1h',
   //chile
-  chile: '1st-sun-apr-0h|1st-sun-sep-0h',
+  chile: '1st-sat-sep-24h|1st-sat-apr-24h',
   //easter island
   east: '1st-sat-apr-22h|1st-sat-sep-22h',
   //fiji

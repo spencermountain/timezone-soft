@@ -1,7 +1,7 @@
 
 //try to match these against iana form
 const one = (str) => {
-  str = str.toLowerCase()
+  str = str.toLowerCase().trim().replace(/\s+/g, ' ')
   str = str.replace(/^in /g, '')
   str = str.replace(/ time/g, '')
   str = str.replace(/ (standard|daylight|summer)/g, '')
@@ -27,4 +27,6 @@ const three = function (str) {
   return str.trim()
 }
 
-export default { one, two, three }
+const fold = str => str.normalize('NFD').replace(/\p{M}/gu, '')
+
+export default { one, two, three, fold }

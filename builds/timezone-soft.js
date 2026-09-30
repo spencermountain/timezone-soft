@@ -1,6 +1,4 @@
 /*! spencermountain/timezone-soft 1.6.0 MIT */
-'use strict';
-
 /* eslint-disable no-empty */
 const BASE = 36;
 const seq = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -1024,4 +1022,4 @@ const soft = function (str) {
 soft.version = version;
 soft.prototype.version = version; // retain compatibility with earlier releases
 
-module.exports = soft;
+export { soft as default };

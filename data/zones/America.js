@@ -214,7 +214,6 @@ export default {
   "America/Asuncion": {
     "offset": -4,
     "hem": "s",
-    "dst": "par",
     "names": [
       "asuncion",
       "ciudad del este",
@@ -225,7 +224,7 @@ export default {
       "pry",
       "pyt",
       "pyst",
-      "paraguay time",
+      "paraguay time"
     ],
     "meta": "Paraguay"
   },
@@ -252,7 +251,6 @@ export default {
   "America/Bahia_Banderas": {
     "offset": -5,
     "hem": "n",
-    "dst": "mex",
     "names": [
       "mexico",
       "bahia_banderas",
@@ -556,7 +554,6 @@ export default {
   "America/Chihuahua": {
     "offset": -6,
     "hem": "n",
-    "dst": "mex",
     "names": [
       "mexico",
       "chihuahua",
@@ -571,7 +568,23 @@ export default {
       "hnpmx",
       "hepmx"
     ],
-    "meta": "Mexican Pacific"
+    "meta": "Central Mexico"
+  },
+  // US Mountain rules since 2022-11-30; distinct from Ojinaga's Central rules.
+  // https://data.iana.org/time-zones/tzdb/northamerica (reviewed 2026-09-30)
+  "America/Ciudad_Juarez": {
+    "offset": -7,
+    "hem": "n",
+    "dst": "usa",
+    "names": ["ciudad juarez", "ciudad juárez", "juarez", "juárez", "america/ciudad_juarez"],
+    "meta": "Mountain"
+  },
+  // https://data.iana.org/time-zones/tzdb/southamerica (reviewed 2026-09-30)
+  "America/Coyhaique": {
+    "offset": -3,
+    "hem": "s",
+    "names": ["coyhaique", "coihaique", "aysen", "aysén", "america/coyhaique"],
+    "meta": "Aysen"
   },
   "America/Costa_Rica": {
     "offset": -6,
@@ -693,7 +706,6 @@ export default {
   "America/Edmonton": {
     "offset": -6,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "edmonton",
@@ -707,7 +719,7 @@ export default {
       "mountain",
       "mst"
     ],
-    "meta": "Mountain"
+    "meta": "Alberta and Northwest Territories"
   },
   "America/Eirunepe": {
     "offset": -5,
@@ -1060,7 +1072,6 @@ export default {
   "America/Inuvik": {
     "offset": -6,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "inuvik",
@@ -1072,7 +1083,7 @@ export default {
       "mountain",
       "mst"
     ],
-    "meta": "Mountain"
+    "meta": "Alberta and Northwest Territories"
   },
   "America/Iqaluit": {
     "offset": -4,
@@ -1349,7 +1360,6 @@ export default {
   "America/Mazatlan": {
     "offset": -6,
     "hem": "n",
-    "dst": "mex",
     "names": [
       "mexico",
       "mazatlan",
@@ -1389,7 +1399,6 @@ export default {
   "America/Merida": {
     "offset": -5,
     "hem": "n",
-    "dst": "mex",
     "names": [
       "mexico",
       "merida",
@@ -1427,7 +1436,6 @@ export default {
   "America/Mexico_City": {
     "offset": -5,
     "hem": "n",
-    "dst": "mex",
     "names": [
       "mexico_city",
       "mexico",
@@ -1560,7 +1568,6 @@ export default {
   "America/Monterrey": {
     "offset": -5,
     "hem": "n",
-    "dst": "mex",
     "names": [
       "mexico",
       "monterrey",
@@ -1817,16 +1824,15 @@ export default {
     "names": [
       "america",
       "ojinaga",
-      "ciudad juarez",
       "chihuahua",
-      "mountain time",
-      "mt",
-      "america mountain",
-      "mountain standard time",
-      "mountain",
-      "mst"
+      "central time",
+      "ct",
+      "america central",
+      "central standard time",
+      "central",
+      "cst"
     ],
-    "meta": "Mountain"
+    "meta": "Central"
   },
   "America/Panama": {
     "offset": -5,
@@ -2000,7 +2006,7 @@ export default {
       "chile standard time",
       "clt"
     ],
-    "meta": "Chile"
+    "meta": "Magallanes"
   },
   "America/Rainy_River": {
     "offset": -5,
@@ -2289,7 +2295,7 @@ export default {
   "America/Scoresbysund": {
     "offset": 0,
     "hem": "n",
-    "dst": "eu0",
+    "dst": "green",
     "names": [
       "greenland",
       "scoresbysund",
@@ -2469,7 +2475,6 @@ export default {
   "America/Vancouver": {
     "offset": -7,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "ca",
@@ -2489,7 +2494,7 @@ export default {
       "pacific",
       "pst"
     ],
-    "meta": "Pacific"
+    "meta": "British Columbia"
   },
   "America/Whitehorse": {
     "offset": -7,
@@ -2507,7 +2512,6 @@ export default {
   "America/Winnipeg": {
     "offset": -5,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "canada",
       "winnipeg",
@@ -2521,7 +2525,7 @@ export default {
       "central",
       "cst"
     ],
-    "meta": "Central"
+    "meta": "Manitoba"
   },
   "America/Yakutat": {
     "offset": -8,

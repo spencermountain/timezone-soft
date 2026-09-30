@@ -4,23 +4,24 @@ import pcked from '../generated/zones.js'
 import misc from '../../data/aliases.js'
 import addUTC from './add-utc.js'
 import identifiers from '../../data/iana-identifiers.js'
+import normalize from '../find/normalize.js'
 
 // unpack our lexicon of words
-let zones = {}
-let lexicon = Object.assign({}, misc)
+const zones = {}
+const lexicon = Object.assign({}, misc)
 Object.keys(pcked).forEach(top => {
   Object.keys(pcked[top]).forEach(name => {
-    let [words, meta, hem, dst] = pcked[top][name]
-    let id = `${top}/${name}`
-    zones[id] = { meta, hem }
-    let keys = Object.keys(unpack(words))
+    const [words, meta, dst] = pcked[top][name]
+    const id = `${top}/${name}`
+    zones[id] = { meta }
+    const keys = Object.keys(unpack(words))
     keys.forEach(k => {
       lexicon[k] = lexicon[k] || []
       lexicon[k].push(id)
       // use iana aliases
-      if (k.match(/\//)) {
-        let arr = k.split(/\//)
-        let last = arr[arr.length - 1].toLowerCase()
+      if (/\//.test(k)) {
+        const arr = k.split(/\//)
+        const last = arr[arr.length - 1].toLowerCase()
         lexicon[last] = lexicon[last] || []
         lexicon[last].push(id)
       }
@@ -38,7 +39,7 @@ const canonicalIds = Object.fromEntries(Object.entries(identifiers).map(([id, ta
 const canonicalize = id => canonicalIds[id.toLowerCase()] || id
 
 const unique = function (arr) {
-  let obj = {}
+  const obj = {}
   for (let i = 0; i < arr.length; i += 1) {
     obj[arr[i]] = true
   }
@@ -59,4 +60,12 @@ Object.keys(lexicon).forEach(k => {
     })
   }
 })
-export { zones, lexicon, canonicalIds, canonicalize }
+// Only accented aliases need a second index; ordinary lookups keep their ranking.
+const foldedLexicon = {}
+for (const [alias, ids] of Object.entries(lexicon)) {
+  const folded = normalize.fold(alias)
+  if (folded === alias) continue
+  foldedLexicon[folded] = [...new Set([...(foldedLexicon[folded] || []), ...ids])]
+    .sort((a, b) => zones[b].wordCount - zones[a].wordCount)
+}
+export { zones, lexicon, foldedLexicon, canonicalIds, canonicalize }

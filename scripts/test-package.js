@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync, copyFileSync } from 'node:fs'
+import { mkdtempSync, mkdirSync, readFileSync, writeFileSync, rmSync, copyFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -11,12 +11,33 @@ const temp = mkdtempSync(join(tmpdir(), 'timezone-soft-package-'))
 try {
   const packed = JSON.parse(execFileSync('npm', ['pack', '--json', '--ignore-scripts', '--pack-destination', temp, '--cache', join(temp, 'cache')], { cwd: root, encoding: 'utf8' }))[0]
   const files = new Set(packed.files.map(file => file.path))
-  for (const file of ['builds/timezone-soft.mjs', 'builds/timezone-soft.cjs', 'builds/timezone-soft.min.cjs', 'types/index.d.ts', 'types/index.d.cts', 'README.md', 'LICENSE']) {
+  for (const file of [
+    'builds/timezone-soft.js',
+    'builds/timezone-soft.cjs',
+    'builds/timezone-soft.min.js',
+    'types/index.d.ts',
+    'types/index.d.cts',
+    'README.md',
+    'LICENSE'
+  ]) {
     assert.ok(files.has(file), `Missing package file: ${file}`)
+  }
+  for (const file of ['builds/timezone-soft.mjs', 'builds/timezone-soft.min.cjs']) {
+    assert.ok(!files.has(file), `Obsolete build in package: ${file}`)
   }
   const target = join(temp, 'node_modules', 'timezone-soft')
   mkdirSync(target, { recursive: true })
   execFileSync('tar', ['-xzf', join(temp, packed.filename), '--strip-components=1', '-C', target], { env: { ...process.env, LC_ALL: 'C' } })
+  // Legacy Node10 resolution pairs main/types and ignores conditional exports.
+  const manifest = JSON.parse(readFileSync(join(target, 'package.json'), 'utf8'))
+  assert.equal(join(target, manifest.main), join(target, manifest.exports['.'].require.default))
+  assert.equal(join(target, manifest.types), join(target, manifest.exports['.'].require.types))
+  for (const condition of ['import', 'require', 'default']) {
+    const branch = manifest.exports['.'][condition]
+    assert.equal(Object.keys(branch)[0], 'types', `${condition} must declare types before its JavaScript target`)
+    assert.ok(files.has(branch.types.replace(/^\.\//, '')), `${condition} declarations must be packaged`)
+  }
+  assert.deepEqual(manifest.exports['.'].default, manifest.exports['.'].require, 'fallback matches CommonJS exports')
   writeFileSync(join(temp, 'package.json'), '{"type":"module"}\n')
   // No dependencies are installed here: every distribution must be self-contained.
   const probe = `
@@ -35,7 +56,7 @@ try {
     }
     check(soft)
     check(require('timezone-soft'))
-    for (const file of ['timezone-soft.cjs', 'timezone-soft.min.cjs']) {
+    for (const file of ['timezone-soft.min.js']) {
       const context = {}
       runInNewContext(readFileSync('./node_modules/timezone-soft/builds/' + file, 'utf8'), context)
       check(context.timezoneSoft)

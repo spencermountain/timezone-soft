@@ -4,7 +4,7 @@ import tzs from '../test/fixtures/spacetime-zones-2022.js'
 import zones from '../data/index.js'
 
 Object.keys(zones).forEach(k => {
-  let smol = k.toLowerCase()
+  const smol = k.toLowerCase()
   if (!tzs[smol]) {
     console.log(smol)
     return

@@ -1,34 +1,45 @@
-/* eslint-disable no-console */
+import sizeCheck from 'rollup-plugin-filesize-check'
 import terser from '@rollup/plugin-terser'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import fs from 'node:fs'
 
-const pkg = JSON.parse(fs.readFileSync('./package.json').toString())
-console.log('\n 📦  - running rollup..\n')
+const pkg = JSON.parse(fs.readFileSync(new URL('./package.json', import.meta.url), 'utf8'))
 
-const banner = `/* spencermountain/${pkg.name} ${pkg.version} ${pkg.license} */`
+const banner = `/*! spencermountain/${pkg.name} ${pkg.version} ${pkg.license} */`
 
-const onwarn = (warning, warn) => {
-  if (warning.code === 'UNRESOLVED_IMPORT' || warning.code === 'MISSING_GLOBAL_NAME') {
-    throw new Error(warning.message)
-  }
-  warn(warning)
+export default {
+  input: 'src/index.js',
+  plugins: [nodeResolve()],
+  onwarn(warning, warn) {
+    if (warning.code === 'UNRESOLVED_IMPORT' || warning.code === 'MISSING_GLOBAL_NAME') {
+      throw new Error(warning.message)
+    }
+    warn(warning)
+  },
+  output: [
+    {
+      banner,
+      file: 'builds/timezone-soft.js',
+      format: 'esm'
+    },
+    {
+      banner,
+      file: 'builds/timezone-soft.cjs',
+      format: 'cjs'
+    },
+    {
+      banner,
+      file: 'builds/timezone-soft.min.js',
+      format: 'umd',
+      name: 'timezoneSoft',
+      plugins: [
+        terser({ format: { comments: /^!/ } }),
+        sizeCheck({
+          expect: 75, // sizes in KiB
+          warn: 10, // acceptable change (+/-)
+          throw: 25 // unacceptable change (+/-)
+        })
+      ]
+    }
+  ]
 }
-
-export default [
-  {
-    input: 'src/index.js',
-    output: [{ banner, file: 'builds/timezone-soft.mjs', format: 'esm' }],
-    plugins: [nodeResolve()]
-  },
-  {
-    input: 'src/index.js',
-    output: [{ banner, file: 'builds/timezone-soft.cjs', format: 'umd', name: 'timezoneSoft' }],
-    plugins: [nodeResolve()]
-  },
-  {
-    input: 'src/index.js',
-    output: [{ banner, file: 'builds/timezone-soft.min.cjs', format: 'umd', name: 'timezoneSoft' }],
-    plugins: [nodeResolve(), terser()]
-  }
-].map(config => ({ ...config, onwarn }))

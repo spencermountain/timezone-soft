@@ -35,7 +35,6 @@ export default {
   "Asia/Amman": {
     "offset": 3,
     "hem": "n",
-    "dst": "jord",
     "names": [
       "asia",
       "amman",
@@ -48,7 +47,7 @@ export default {
       "jor",
       "eet"
     ],
-    "meta": "Eastern European"
+    "meta": "Jordan"
   },
   "Asia/Anadyr": {
     "offset": 12,
@@ -333,7 +332,6 @@ export default {
   "Asia/Damascus": {
     "offset": 3,
     "hem": "n",
-    "dst": "syr",
     "names": [
       "asia",
       "damascus",
@@ -348,7 +346,7 @@ export default {
       "syr",
       "eet"
     ],
-    "meta": "Eastern European"
+    "meta": "Syria"
   },
   "Asia/Dhaka": {
     "offset": 6,
@@ -2097,7 +2095,7 @@ export default {
       "omsk",
       "omst"
     ],
-    "meta": "Omsk"
+    "meta": "Tomsk"
   },
   "Asia/Ulaanbaatar": {
     "offset": 8,
