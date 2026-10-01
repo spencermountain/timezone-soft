@@ -384,6 +384,7 @@
       "santa teresa del tuy",
       "turmero",
       "valencia",
+      "valencia venezuela",
       "ve",
       "ven",
       "venezuela standard",
@@ -1211,7 +1212,6 @@
     "offset": -6,
     "hem": "n",
     "names": [
-      "chihuahua",
       "culiacan",
       "hnpmx",
       "hpmx",
@@ -1630,7 +1630,6 @@
       "america central",
       "central",
       "central standard",
-      "chihuahua",
       "cst",
       "ct"
     ],
@@ -1686,7 +1685,6 @@
     "names": [
       "arizona",
       "chandler",
-      "chihuahua",
       "colorado",
       "gilbert",
       "glendale",

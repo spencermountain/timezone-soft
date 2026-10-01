@@ -5,5 +5,5 @@ import soft from './src/index.js'
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
 // "st barthelemy","saint barthelemy"
-const result = soft('st barthelemy')
+const result = soft('Hong Kong Island')
 console.log(result)

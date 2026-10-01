@@ -46,7 +46,8 @@
     "prepack": "pnpm run build",
     "prepublishOnly": "pnpm run check",
     "upkeep:cities": "node scripts/cities/test.js",
-    "upkeep": "node scripts/upkeep/zones.js"
+    "upkeep": "node scripts/upkeep/zones.js",
+    "upkeep:overlap": "node scripts/upkeep/overlap.js"
   },
   "files": [
     "builds",

@@ -6,6 +6,8 @@ const replacements = [
   ['st.', 'saint'],
   ['st', 'saint'],
   ['saint', 'st'],
+  ['saint', ''],
+  ['st', ''],
   ['democratic', ''],
   ['socialist', ''],
   ['republic', ''],
@@ -17,6 +19,7 @@ const replacements = [
   ['united', ''],
   ['kingdom', ''],
   ['islands', ''],
+  ['island', ''],
   ['of', ''],
   ['the', ''],
 ]
@@ -46,6 +49,7 @@ const getAlternatives = (input, includeWords = true) => {
     const phrases = [name, ...candidates]
     phrases.forEach(phrase => phrase.split(' ').forEach(add))
   }
+  // console.log(candidates)
   return [...candidates].slice(0, maxCandidates)
 }
 
