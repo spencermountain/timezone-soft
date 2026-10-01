@@ -58,11 +58,7 @@
     "Australia/Sydney"
   ],
   "alma-ata time": [
-    "Asia/Aqtau",
-    "Asia/Aqtobe",
-    "Asia/Atyrau",
-    "Asia/Oral",
-    "Asia/Qyzylorda"
+    "Asia/Almaty"
   ],
   "anadyr time": [
     "Asia/Anadyr"
@@ -80,6 +76,7 @@
     "Asia/Riyadh"
   ],
   "yakutsk time": [
+    "Asia/Yakutsk",
     "Asia/Chita",
     "Asia/Khandyga"
   ],

@@ -513,7 +513,7 @@
       "SST",
       -11
     ],
-    "long": "(UTC+13:00) Samoa"
+    "long": "(UTC-11:00) American Samoa"
   },
   "Hawaii-Aleutian": {
     "std": [
@@ -531,7 +531,7 @@
       "HNPMX",
       -7
     ],
-    "long": "(UTC-07:00) Chihuahua, La Paz, Mazatlan"
+    "long": "(UTC-07:00) Hermosillo, La Paz, Mazatlan"
   },
   "Colombia": {
     "std": [

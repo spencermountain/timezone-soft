@@ -21,7 +21,11 @@ const ignore = new Set([
   'Barcelona',
   'Victoria',
   'Valencia',
-  'San Luis Potosí'
+  'San Luis Potosí',
+  'Córdoba',
+  'San-Pédro',
+  'San José',
+  'Kochi'
 ])
 
 const rows = await load()

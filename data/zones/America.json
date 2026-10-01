@@ -104,9 +104,7 @@
   "America/Argentina/San_Juan": {
     "offset": -3,
     "hem": "s",
-    "names": [
-      "san juan"
-    ],
+    "names": [],
     "meta": "Argentina",
     "country": "ar"
   },
@@ -167,7 +165,8 @@
     "hem": "n",
     "names": [
       "bahia de banderas",
-      "guadalajara"
+      "guadalajara",
+      "nayarit"
     ],
     "meta": "Central Mexico",
     "country": "mx"
@@ -461,7 +460,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "denmark",
       "utc",
       "zulu"
     ],
@@ -531,7 +529,8 @@
     "names": [
       "alberta",
       "ca mountain",
-      "calgary"
+      "calgary",
+      "northwest territories"
     ],
     "meta": "Alberta and Northwest Territories",
     "country": "ca"
@@ -809,6 +808,7 @@
     "offset": -6,
     "hem": "n",
     "names": [
+      "northwest territories",
       "pddt"
     ],
     "meta": "Alberta and Northwest Territories",
@@ -1031,6 +1031,8 @@
       "mexico pacific",
       "mountain mexico",
       "mountain standard mexico",
+      "nayarit",
+      "sinaloa",
       "tepic"
     ],
     "meta": "Mexican Pacific",
@@ -1053,7 +1055,9 @@
       "campeche",
       "campecheyucatan",
       "guadalajara",
-      "tuxtla"
+      "tapachula",
+      "tuxtla",
+      "villahermosa"
     ],
     "meta": "Central Mexico",
     "country": "mx"
@@ -1130,7 +1134,6 @@
       "soledad de graciano sanchez",
       "tabasco",
       "tamaulipas",
-      "tapachula",
       "tehuacan",
       "tlahuac",
       "tlalnepantla",
@@ -1142,7 +1145,6 @@
       "uruapan",
       "venustiano carranza",
       "veracruz",
-      "villahermosa",
       "xalapa de enriquez",
       "xico",
       "xochimilco",
@@ -1435,10 +1437,7 @@
       "mst",
       "mt",
       "mwt",
-      "nayarit",
       "scottsdale",
-      "sinaloa",
-      "sonora",
       "tempe",
       "tucson"
     ],
@@ -1479,9 +1478,35 @@
     "offset": -4,
     "hem": "n",
     "names": [
+      "ag",
+      "antigua barbuda",
       "bayamon",
+      "bq",
+      "british virgin islands",
+      "caribbean netherlands",
+      "caribbean nl",
+      "dutch sint maarten",
+      "dutch st maarten",
+      "kn",
+      "nevis",
       "pr",
-      "pri"
+      "pri",
+      "saint maarten",
+      "sint maarten",
+      "st kitts",
+      "st kitts nevis",
+      "st maarten",
+      "sx",
+      "tobago",
+      "trinidad",
+      "trinidad tobago",
+      "tt",
+      "uk virgin islands",
+      "united states virgin islands",
+      "us virgin islands",
+      "vg",
+      "vi",
+      "virgin islands"
     ],
     "meta": "Atlantic Standard",
     "country": "pr"
@@ -1500,11 +1525,10 @@
   "America/Rainy_River": {
     "offset": -5,
     "hem": "n",
-    "dst": "usa",
     "names": [
       "ft frances"
     ],
-    "meta": "Central",
+    "meta": "Manitoba",
     "country": "ca"
   },
   "America/Rankin_Inlet": {
@@ -1826,8 +1850,10 @@
     "hem": "n",
     "dst": "usa",
     "names": [
+      "bahamas",
       "barrie",
       "brampton",
+      "bs",
       "ca",
       "can",
       "etobicoke",
@@ -1835,12 +1861,14 @@
       "hamilton",
       "kitchener",
       "laval",
+      "london on",
       "london ontario",
       "longueuil",
       "markham",
       "mississauga",
       "montreal",
       "nepean",
+      "ont",
       "ontario",
       "oshawa",
       "ottawa",
@@ -1899,9 +1927,8 @@
   "America/Yellowknife": {
     "offset": -6,
     "hem": "n",
-    "dst": "usa",
     "names": [],
-    "meta": "Mountain",
+    "meta": "Alberta and Northwest Territories",
     "country": "ca"
   }
 }
