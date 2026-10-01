@@ -10,9 +10,9 @@ const yellow = str => '\x1b[33m' + str + '\x1b[0m'
 const dim = str => '\x1b[2m' + str + '\x1b[0m'
 const magenta = (str) => '\x1b[35m' + str + '\x1b[0m'
 
-const limit = 800
+const limit = 1000
 
-const ignore = new Set(['Hyderabad', 'Barcelona', 'Victoria', 'Valencia'])
+const ignore = new Set(['Hyderabad', 'Barcelona', 'Victoria', 'Valencia', 'San Luis Potosí'])
 
 const rows = await load()
 const cities = rows.slice(0, limit)
@@ -49,7 +49,14 @@ cities.forEach(city => {
 console.log(`\n  ${green(strong)}/${cities.length} correct (${((100 * strong) / cities.length).toFixed(0)}%)`)
 console.log(`  ${yellow(weak)}/${cities.length} weak`)
 console.log(`  ${red(wrong)}/${cities.length} wrong`)
-if (mistakes.length > 0) {
+
+const { added } = await saveMissing(missing)
+if (added) {
+  console.log(`\n  ${magenta(added)} names added to data/zones.\n`)
+  missing.forEach(({ name, timezone }) => {
+    console.log(`  ${dim(name)} -> ${timezone}`)
+  })
+} else if (mistakes.length > 0) {
   console.log(`\n`)
   mistakes.forEach((mistake) => {
     if (mistake.type === 'weak') {
@@ -59,14 +66,5 @@ if (mistakes.length > 0) {
     }
   })
   console.log(`\n`)
-}
-
-
-const { added } = await saveMissing(missing)
-if (added) {
-  console.log(`\n  ${magenta(added)} names added to data/zones.\n`)
-  missing.forEach(({ name, timezone }) => {
-    console.log(`  ${dim(name)} -> ${timezone}`)
-  })
 }
 

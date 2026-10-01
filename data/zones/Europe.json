@@ -4,9 +4,14 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
+      "dusseldorf",
+      "essen",
+      "frankfurt am main",
+      "gothenburg",
       "hamburg",
       "koln",
-      "munich"
+      "munich",
+      "stuttgart"
     ],
     "meta": "Central European",
     "country": "de"
@@ -821,7 +826,8 @@
       "izhevsk",
       "samt",
       "syzran",
-      "togliatti on the volga"
+      "togliatti on the volga",
+      "tolyatti"
     ],
     "meta": "Samara",
     "country": "ru"
@@ -1000,7 +1006,9 @@
       "szczecin",
       "torun",
       "wroclaw",
-      "zabrze"
+      "wrocław",
+      "zabrze",
+      "łodz"
     ],
     "meta": "Central European",
     "country": "pl"

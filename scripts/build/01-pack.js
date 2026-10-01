@@ -9,12 +9,14 @@ import { serializeIdentifiers } from '../../test/_lib/serialize-identifiers.js'
 const options = { strict: false, direction: 'auto', dictionary: true }
 
 const packed = {}
+let totalWords = 0
 Object.keys(zones).forEach((k) => {
   const arr = k.split(/\//)
   const top = arr[0]
   const name = arr.slice(1).join('/')
   packed[top] = packed[top] || {}
   const { dst, names, meta } = zones[k]
+  totalWords += names.length
   packed[top][name] = [pack(names, options), meta]
   if (dst) {
     packed[top][name].push(dst)
@@ -71,4 +73,5 @@ fs.writeFileSync(
 const stats = fs.statSync(outFile)
 const size = (stats['size'] / 1000.0).toFixed(1)
 
+console.log(`       - ${totalWords.toLocaleString('en-US')} total words across ${Object.keys(zones).length} zones`)
 console.log('       - packed into  ' + size + 'k\n')

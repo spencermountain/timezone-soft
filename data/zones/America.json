@@ -48,10 +48,7 @@
   "America/Argentina/Buenos_Aires": {
     "offset": -3,
     "hem": "s",
-    "names": [
-      "america/argentina",
-      "ar",
-      "arg"
+    "names": ["america/argentina", "ar", "arg", "mar del plata"
     ],
     "meta": "Argentina",
     "country": "ar"
@@ -251,7 +248,6 @@
       "central brazil",
       "central brazilian",
       "central brazilian standard",
-      "cuiaba",
       "roraima"
     ],
     "meta": "Amazon",
@@ -518,7 +514,7 @@
     "hem": "s",
     "names": [
       "amazon standard",
-      "amt",
+      "amt", "cuiaba",
       "mato grosso",
       "varzea grande"
     ],
@@ -1145,8 +1141,7 @@
       "amt",
       "central brazil",
       "central brazilian",
-      "central brazilian standard",
-      "cuiaba"
+      "central brazilian standard"
     ],
     "meta": "Amazon",
     "country": "br"
@@ -1216,14 +1211,7 @@
   "America/Merida": {
     "offset": -5,
     "hem": "n",
-    "names": [
-      "campeche",
-      "campecheyucatan",
-      "central mexican",
-      "central standard",
-      "cst",
-      "guadalajara"
-    ],
+    "names": ["campeche", "campecheyucatan", "central mexican", "central standard", "cst", "tuxtla", "guadalajara"],
     "meta": "Central Mexico",
     "country": "mx"
   },
@@ -1316,7 +1304,6 @@
       "tlaxcala",
       "toluca",
       "tonala",
-      "tuxtla",
       "uruapan",
       "venustiano carranza",
       "veracruz",
@@ -1700,7 +1687,6 @@
       "central brazil",
       "central brazilian",
       "central brazilian standard",
-      "cuiaba",
       "rondonia"
     ],
     "meta": "Amazon",
