@@ -63,13 +63,6 @@
     "hem": "s",
     "dst": "aus",
     "names": [
-      "aedt",
-      "aest",
-      "aet",
-      "aus east",
-      "aus eastern",
-      "australia eastern",
-      "australian eastern",
       "canberra",
       "king island",
       "tasmania"
@@ -81,8 +74,6 @@
     "offset": 10,
     "hem": "s",
     "names": [
-      "aest",
-      "australian eastern",
       "whitsunday islands"
     ],
     "meta": "Brisbane",
@@ -106,13 +97,6 @@
     "hem": "s",
     "dst": "aus",
     "names": [
-      "aedt",
-      "aest",
-      "aet",
-      "aus east",
-      "aus eastern",
-      "australia eastern",
-      "australian eastern",
       "canberra",
       "geelong"
     ],
@@ -140,10 +124,6 @@
     "hem": "s",
     "dst": "aus",
     "names": [
-      "aedt",
-      "aest",
-      "aet",
-      "au",
       "aus",
       "aus east",
       "aus eastern",

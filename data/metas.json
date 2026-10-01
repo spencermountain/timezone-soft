@@ -305,7 +305,8 @@
       "ALMT",
       5
     ],
-    "long": "(UTC+05:00) Ashgabat, Tashkent"
+    "long": "(UTC+05:00) Ashgabat, Tashkent",
+    "alt": ["kazakhstan western", "west asia", "alma ata", "almt"]
   },
   "Eastern Australia": {
     "std": [
@@ -317,7 +318,8 @@
       11,
       "Australian Eastern Daylight Time"
     ],
-    "long": "(UTC+10:00) Canberra, Melbourne, Sydney"
+    "long": "(UTC+10:00) Canberra, Melbourne, Sydney",
+    "alt": ["australia east", "australian east", "australia eastern", "aus east", "aus eastern", "aet", "aest"]
   },
   "Western European": {
     "std": [

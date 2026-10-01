@@ -123,7 +123,7 @@
   "America/Bahia_Banderas": {
     "offset": -5,
     "hem": "n",
-    "names": ["bahia de banderas", "central mexican", "guadalajara"],
+    "names": ["bahia de banderas", "guadalajara"],
     "meta": "Central Mexico",
     "country": "mx"
   },
@@ -828,7 +828,7 @@
   "America/Merida": {
     "offset": -5,
     "hem": "n",
-    "names": ["campeche", "campecheyucatan", "central mexican", "guadalajara", "tuxtla"],
+    "names": ["campeche", "campecheyucatan", "guadalajara", "tuxtla"],
     "meta": "Central Mexico",
     "country": "mx"
   },
@@ -852,7 +852,6 @@
       "buenavista",
       "campeche",
       "celaya",
-      "central mexican",
       "chiapas",
       "chilpancingo",
       "ciudad lopez mateos",
@@ -955,7 +954,6 @@
     "offset": -5,
     "hem": "n",
     "names": [
-      "central mexican",
       "ciudad apodaca",
       "ciudad general escobedo",
       "ciudad madero",

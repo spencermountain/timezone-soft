@@ -4,5 +4,5 @@ import soft from './src/index.js'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-const result = soft('bst')
+const result = soft('south sandwich')
 console.log(result)

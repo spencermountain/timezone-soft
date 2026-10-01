@@ -14,6 +14,9 @@ const replacements = [
   // dst name cruft
   ['standard', ''],
   ['daylight', ''],
+  ['dst', ''],
+  ['timezone', ''],
+  ['savings', ''],
   // west/east/south/north
   ['west', 'western'],
   ['east', 'eastern'],

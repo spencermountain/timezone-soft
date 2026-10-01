@@ -63,26 +63,14 @@
   "Asia/Aqtau": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "alma ata",
-      "almt",
-      "kazakhstan western",
-      "mangghystau/mankistau",
-      "west asia"
-    ],
+    "names": ["mangghystau", "mankistau"],
     "meta": "West Kazakhstan",
     "country": "kz"
   },
   "Asia/Aqtobe": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "aktobe",
-      "alma ata",
-      "almt",
-      "kazakhstan western",
-      "west asia"
-    ],
+    "names": ["aktobe"],
     "meta": "West Kazakhstan",
     "country": "kz"
   },
@@ -102,13 +90,7 @@
   "Asia/Atyrau": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "alma ata",
-      "almt",
-      "atirau",
-      "guryev",
-      "kazakhstan western",
-      "west asia"
+    "names": ["atirau", "guryev"
     ],
     "meta": "West Kazakhstan",
     "country": "kz"
@@ -1187,10 +1169,6 @@
     "offset": 5,
     "hem": "n",
     "names": [
-      "alma ata",
-      "almt",
-      "kazakhstan western",
-      "west asia"
     ],
     "meta": "West Kazakhstan",
     "country": "kz"
@@ -1267,13 +1245,7 @@
   "Asia/Qyzylorda": {
     "offset": 6,
     "hem": "n",
-    "names": [
-      "alma ata",
-      "almt",
-      "kazakhstan western",
-      "kyzylorda",
-      "kzyl orda",
-      "west asia"
+    "names": ["kyzylorda", "kzyl orda"
     ],
     "meta": "West Kazakhstan",
     "country": "kz"
