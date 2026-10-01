@@ -33,6 +33,12 @@
   "mexican pacific time": [
     "America/Mazatlan"
   ],
+  "atlantic canada": [
+    "America/Glace_Bay",
+    "America/Goose_Bay",
+    "America/Halifax",
+    "America/Moncton"
+  ],
   "atlantic time": [
     "America/Glace_Bay",
     "America/Goose_Bay",
@@ -158,7 +164,7 @@
     "Europe/Moscow"
   ],
   "msk+00 - crimea": [
-    "Europe/Kyiv"
+    "Europe/Simferopol"
   ],
   "msk+00 - volgograd": [
     "Europe/Volgograd"

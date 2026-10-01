@@ -165,7 +165,7 @@
       -3
     ],
     "long": "(UTC-04:00) Atlantic Time (Canada)",
-    "alt": ["at", "us atlantic", "atlantic canada", "atlantic"]
+    "alt": ["at", "us atlantic", "atlantic"]
   },
   "Greenwich": {
     "std": [
@@ -342,7 +342,6 @@
   "Central Mexico": {
     "long": "(UTC-06:00) Guadalajara, Mexico City, Monterrey",
     "std": ["CST", -6],
-    "dst": ["CDT", -5, "Central Daylight Time"],
     "alt": ["central mx", "mx central", "central mexican"]
   },
   "South Africa": {
@@ -532,10 +531,6 @@
       "HNPMX",
       -7
     ],
-    "dst": [
-      "HEPMX",
-      -6
-    ],
     "long": "(UTC-07:00) Chihuahua, La Paz, Mazatlan"
   },
   "Colombia": {
@@ -613,10 +608,6 @@
     "std": [
       "IRST",
       3.5
-    ],
-    "dst": [
-      "IRDT",
-      4.5
     ],
     "long": "(UTC+03:30) Tehran"
   },
@@ -1036,11 +1027,6 @@
     "std": [
       "WST",
       13
-    ],
-    "dst": [
-      "WST",
-      14,
-      "West Samoa Summer Time"
     ]
   },
   "Phoenix Islands": {
@@ -1321,8 +1307,7 @@
     "alt": [
       "atlantic",
       "at",
-      "us atlantic",
-      "atlantic canada"
+      "us atlantic"
     ]
   },
   "Central Standard": {
