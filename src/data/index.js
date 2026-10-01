@@ -1,9 +1,14 @@
 import { unpack } from 'efrt'
 import dstPatterns from '../_generated/dst-patterns.js'
-import pcked from '../_generated/zones.js'
+import pcked, { shared } from '../_generated/zones.js'
 import addUTC from './add-utc.js'
 import identifiers from '../_generated/iana-identifiers.js'
 import { foldDiacritics, normalizeAlias } from '../find/_lib/normalize.js'
+
+// Decode each shared list once; complete alias counts preserve result ranking.
+const sharedAliases = Object.fromEntries(
+  Object.entries(shared).map(([meta, words]) => [meta, Object.keys(unpack(words))])
+)
 
 // unpack our lexicon of words
 const zones = {}
@@ -13,7 +18,7 @@ Object.keys(pcked).forEach((top) => {
     const [words, meta, dst] = pcked[top][name]
     const id = `${top}/${name}`
     zones[id] = { meta }
-    const keys = Object.keys(unpack(words))
+    const keys = [...Object.keys(unpack(words)), ...(sharedAliases[meta] || [])]
     keys.forEach((k) => {
       lexicon[k] = lexicon[k] || []
       lexicon[k].push(id)
