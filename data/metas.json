@@ -1281,5 +1281,91 @@
       -1
     ],
     "long": "(UTC-01:00) Cabo Verde Is."
+  },
+  "Central European Standard": {
+    "name": "Central European Time",
+    "std": [
+      "CET",
+      1,
+      "Central European Standard Time"
+    ],
+    "long": "(UTC+01:00) Central European Standard Time",
+    "alt": [
+      "central european",
+      "europe central",
+      "central europe"
+    ]
+  },
+  "Eastern European Standard": {
+    "name": "Eastern European Time",
+    "std": [
+      "EET",
+      2,
+      "Eastern European Standard Time"
+    ],
+    "long": "(UTC+02:00) Eastern European Standard Time",
+    "alt": [
+      "eastern european",
+      "europe eastern",
+      "eastern europe"
+    ]
+  },
+  "Atlantic Standard": {
+    "name": "Atlantic Time",
+    "std": [
+      "AST",
+      -4,
+      "Atlantic Standard Time"
+    ],
+    "long": "(UTC-04:00) Atlantic Standard Time",
+    "alt": [
+      "atlantic",
+      "at",
+      "us atlantic",
+      "atlantic canada"
+    ]
+  },
+  "Central Standard": {
+    "name": "Central Time",
+    "std": [
+      "CST",
+      -6,
+      "Central Standard Time"
+    ],
+    "long": "(UTC-06:00) Central Standard Time",
+    "alt": [
+      "central",
+      "us central",
+      "american central",
+      "ct"
+    ]
+  },
+  "Mountain Standard": {
+    "name": "Mountain Time",
+    "std": [
+      "MST",
+      -7,
+      "Mountain Standard Time"
+    ],
+    "long": "(UTC-07:00) Mountain Standard Time",
+    "alt": [
+      "mountain"
+    ]
+  },
+  "Eastern Standard": {
+    "name": "Eastern Time",
+    "std": [
+      "EST",
+      -5,
+      "Eastern Standard Time"
+    ],
+    "long": "(UTC-05:00) Eastern Standard Time",
+    "alt": [
+      "eastern",
+      "us eastern",
+      "us east",
+      "america eastern",
+      "et"
+    ]
   }
 }

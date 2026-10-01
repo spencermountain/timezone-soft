@@ -131,7 +131,7 @@
     "offset": -4,
     "hem": "n",
     "names": ["bb", "brb"],
-    "meta": "Atlantic",
+    "meta": "Atlantic Standard",
     "country": "bb"
   },
   "America/Belem": {
@@ -145,7 +145,7 @@
     "offset": -6,
     "hem": "n",
     "names": ["blz", "bz"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "bz"
   },
   "America/Boa_Vista": {
@@ -222,7 +222,7 @@
     "offset": -5,
     "hem": "n",
     "names": ["quintana roo"],
-    "meta": "Eastern",
+    "meta": "Eastern Standard",
     "country": "mx"
   },
   "America/Caracas": {
@@ -358,7 +358,7 @@
     "offset": -6,
     "hem": "n",
     "names": ["cr", "cri", "sjmt"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "cr"
   },
   "America/Cuiaba": {
@@ -379,14 +379,14 @@
     "offset": -7,
     "hem": "n",
     "names": ["mst", "yddt", "ydt", "ypt", "ywt"],
-    "meta": "Mountain",
+    "meta": "Mountain Standard",
     "country": "ca"
   },
   "America/Dawson_Creek": {
     "offset": -7,
     "hem": "n",
     "names": ["ppt", "pwt"],
-    "meta": "Mountain",
+    "meta": "British Columbia",
     "country": "ca"
   },
   "America/Denver": {
@@ -436,14 +436,14 @@
     "offset": -6,
     "hem": "n",
     "names": ["san salvador", "slv", "soyapango", "sv"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "sv"
   },
   "America/Fort_Nelson": {
     "offset": -7,
     "hem": "n",
     "names": ["british columbia"],
-    "meta": "Mountain",
+    "meta": "British Columbia",
     "country": "ca"
   },
   "America/Fortaleza": {
@@ -493,7 +493,7 @@
     "offset": -6,
     "hem": "n",
     "names": ["gt", "gtm", "mixco", "villa nueva"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "gt"
   },
   "America/Guayaquil": {
@@ -646,7 +646,7 @@
     "offset": -5,
     "hem": "n",
     "names": ["jam", "jm", "kingston", "new kingston"],
-    "meta": "Eastern",
+    "meta": "Eastern Standard",
     "country": "jm"
   },
   "America/Juneau": {
@@ -772,7 +772,7 @@
     "offset": -6,
     "hem": "n",
     "names": ["ni", "nic"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "ni"
   },
   "America/Manaus": {
@@ -786,7 +786,7 @@
     "offset": -4,
     "hem": "n",
     "names": ["ffmt", "fort de france", "french martinique", "mq", "mtq"],
-    "meta": "Atlantic",
+    "meta": "Atlantic Standard",
     "country": "mq"
   },
   "America/Matamoros": {
@@ -1131,7 +1131,7 @@
     "offset": -5,
     "hem": "n",
     "names": ["atikokan", "pa", "pan", "san miguelito"],
-    "meta": "Eastern",
+    "meta": "Eastern Standard",
     "country": "pa"
   },
   "America/Pangnirtung": {
@@ -1170,7 +1170,7 @@
       "tempe",
       "tucson"
     ],
-    "meta": "Mountain",
+    "meta": "Mountain Standard",
     "country": "us"
   },
   "America/Port-au-Prince": {
@@ -1199,7 +1199,7 @@
     "offset": -4,
     "hem": "n",
     "names": ["bayamon", "pr", "pri"],
-    "meta": "Atlantic",
+    "meta": "Atlantic Standard",
     "country": "pr"
   },
   "America/Punta_Arenas": {
@@ -1236,7 +1236,7 @@
     "offset": -6,
     "hem": "n",
     "names": ["saskatchewan", "saskatoon", "sk"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "ca"
   },
   "America/Resolute": {
@@ -1302,7 +1302,7 @@
       "santo domingo oeste",
       "sdmt"
     ],
-    "meta": "Atlantic",
+    "meta": "Atlantic Standard",
     "country": "do"
   },
   "America/Sao_Paulo": {
@@ -1437,14 +1437,14 @@
     "offset": -6,
     "hem": "n",
     "names": ["saskatchewan"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "ca"
   },
   "America/Tegucigalpa": {
     "offset": -6,
     "hem": "n",
     "names": ["hn", "hnd", "san pedro sula"],
-    "meta": "Central",
+    "meta": "Central Standard",
     "country": "hn"
   },
   "America/Thule": {
@@ -1512,7 +1512,7 @@
     "offset": -7,
     "hem": "n",
     "names": ["mountain standard", "mst", "yst"],
-    "meta": "Mountain",
+    "meta": "Mountain Standard",
     "country": "ca"
   },
   "America/Winnipeg": {

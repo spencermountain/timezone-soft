@@ -47,7 +47,7 @@
       "tebessa",
       "tiaret"
     ],
-    "meta": "Central European",
+    "meta": "Central European Standard",
     "country": "dz"
   },
   "Africa/Bissau": {
@@ -435,7 +435,7 @@
       "tarhuna",
       "zawiya"
     ],
-    "meta": "Eastern European",
+    "meta": "Eastern European Standard",
     "country": "ly"
   },
   "Africa/Tunis": {
@@ -446,7 +446,7 @@
       "tn",
       "tun"
     ],
-    "meta": "Central European",
+    "meta": "Central European Standard",
     "country": "tn"
   },
   "Africa/Windhoek": {
