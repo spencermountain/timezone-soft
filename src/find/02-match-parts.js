@@ -1,6 +1,6 @@
 import { canonicalize, lexicon } from '../data/index.js'
 import matchWhole from './01-match-whole.js'
-import alternativeSpellings from './_lib/alternative-spellings.js'
+import alternativeSpellings from './_lib/get-alternatives.js'
 
 const matchPart = (input) => {
   const found = matchWhole(input)

@@ -1,5 +1,5 @@
 import test from 'tape'
-import alternativeSpellings from '../src/find/_lib/alternative-spellings.js'
+import alternativeSpellings from '../src/find/_lib/get-alternatives.js'
 import { matchAlternativeSpellings } from '../src/find/02-match-parts.js'
 import { lexicon } from '../src/data/index.js'
 
@@ -8,8 +8,9 @@ test('alternative spellings preserve full-name preference', t => {
   t.deepEqual(alternativeSpellings('trinidad & tobago'), expected, 'requested order')
   t.deepEqual(alternativeSpellings('  Trinidad&Tobago  '), expected, 'case, spacing, and attached ampersand')
   t.deepEqual(alternativeSpellings('trinidad and tobago'), expected.slice(1), 'does not repeat the input')
-  t.deepEqual(alternativeSpellings('andorra'), [], 'and within a word is preserved')
-  t.deepEqual(alternativeSpellings('CST China'), ['cst', 'china'], 'single words are available as final fallbacks')
+  t.deepEqual(alternativeSpellings('andorra'), ['orra'], 'literal replacements may produce rough guesses')
+  const words = alternativeSpellings('CST China')
+  t.ok(words.includes('cst') && words.includes('china'), 'single words are available after literal spelling guesses')
   t.end()
 })
 

@@ -46,7 +46,7 @@
     "prepack": "pnpm run build",
     "prepublishOnly": "pnpm run check",
     "upkeep:cities": "node scripts/cities/test.js",
-    "upkeep:zones": "node scripts/upkeep/zones.js"
+    "upkeep": "node scripts/upkeep/zones.js"
   },
   "files": [
     "builds",

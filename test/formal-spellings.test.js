@@ -1,5 +1,5 @@
 import test from 'tape'
-import alternativeSpellings from '../src/find/_lib/alternative-spellings.js'
+import alternativeSpellings from '../src/find/_lib/get-alternatives.js'
 import soft from './_lib.js'
 
 test('formal names expand into bounded, ordered spelling alternatives', t => {
