@@ -5,7 +5,6 @@
     "names": [
       "abidjan",
       "abobo",
-      "africa",
       "africa/accra",
       "africa/bamako",
       "africa/banjul",
@@ -37,7 +36,6 @@
     "offset": 1,
     "hem": "n",
     "names": [
-      "africa",
       "algeria",
       "algiers",
       "annaba",
@@ -46,8 +44,6 @@
       "biskra",
       "blida",
       "boumerdas",
-      "central european",
-      "cet",
       "chlef",
       "constantine",
       "dz",
@@ -64,7 +60,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "africa",
       "bissau",
       "gmt",
       "gnb",
@@ -81,7 +76,6 @@
     "hem": "n",
     "dst": "egypt",
     "names": [
-      "africa",
       "al fayyum",
       "al mahallah al kubra",
       "al mansurah",
@@ -92,8 +86,6 @@
       "bani suwayf",
       "cairo",
       "damanhur",
-      "eastern european",
-      "eet",
       "eg",
       "egy",
       "egypt",
@@ -118,7 +110,6 @@
     "offset": 1,
     "hem": "n",
     "names": [
-      "africa",
       "agadir",
       "al hoceima",
       "casablanca",
@@ -137,9 +128,7 @@
       "sale al jadida",
       "tangier",
       "temara",
-      "tetouan",
-      "western european",
-      "wet"
+      "tetouan"
     ],
     "meta": "Morocco Standard"
   },
@@ -147,43 +136,20 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": [
-      "africa",
-      "brussels",
-      "central european",
-      "cet",
-      "ceuta",
-      "ceutamelilla",
-      "copenhagen",
-      "europe central",
-      "madrid",
-      "paris",
-      "romance"
+    "names": ["ceuta", "ceutamelilla"
     ],
     "meta": "Central European"
   },
   "Africa/El_Aaiun": {
     "offset": 1,
     "hem": "n",
-    "names": [
-      "africa",
-      "casablanca",
-      "eh",
-      "el aaiun",
-      "esh",
-      "laayoune",
-      "morocco",
-      "western european",
-      "western sahara",
-      "wet"
-    ],
+    "names": ["casablanca", "eh", "el aaiun", "esh", "laayoune", "morocco", "western sahara"],
     "meta": "Morocco Standard"
   },
   "Africa/Johannesburg": {
     "offset": 2,
     "hem": "s",
     "names": [
-      "africa",
       "africa southern",
       "africa/maseru",
       "africa/mbabane",
@@ -229,7 +195,6 @@
     "offset": 3,
     "hem": "n",
     "names": [
-      "africa",
       "cat",
       "central africa",
       "juba",
@@ -245,7 +210,6 @@
     "hem": "n",
     "names": [
       "ad damazin",
-      "africa",
       "al qadarif",
       "cat",
       "central africa",
@@ -274,7 +238,6 @@
       "abeokuta",
       "abuja",
       "ado ekiti",
-      "africa",
       "africa western",
       "africa/bangui",
       "africa/brazzaville",
@@ -349,7 +312,6 @@
     "offset": 2,
     "hem": "s",
     "names": [
-      "africa",
       "africa central",
       "africa/blantyre",
       "africa/bujumbura",
@@ -362,6 +324,7 @@
       "cat",
       "central africa",
       "chimoio",
+      "kisangani",
       "maputo",
       "matola",
       "mbuji mayi",
@@ -380,7 +343,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "africa",
       "gmt",
       "greenwich mean",
       "lbr",
@@ -396,7 +358,6 @@
     "offset": 3,
     "hem": "n",
     "names": [
-      "africa",
       "africa eastern",
       "africa/addis_ababa",
       "africa/asmara",
@@ -429,7 +390,6 @@
     "offset": 1,
     "hem": "n",
     "names": [
-      "africa",
       "africa western",
       "chad",
       "ndjamena",
@@ -448,7 +408,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "africa",
       "gmt",
       "greenwich mean",
       "sao tome",
@@ -463,12 +422,9 @@
     "offset": 2,
     "hem": "n",
     "names": [
-      "africa",
       "al khums",
       "az zawiyah",
       "benghazi",
-      "eastern european",
-      "eet",
       "lby",
       "libya",
       "ly",
@@ -483,9 +439,6 @@
     "offset": 1,
     "hem": "n",
     "names": [
-      "africa",
-      "central european",
-      "cet",
       "sfax",
       "tn",
       "tun",
@@ -498,7 +451,6 @@
     "offset": 1,
     "hem": "s",
     "names": [
-      "africa",
       "africa central",
       "cat",
       "central africa",
