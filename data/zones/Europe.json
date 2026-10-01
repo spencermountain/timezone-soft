@@ -4,7 +4,9 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
+      "bielefeld",
       "bochum",
+      "bonn",
       "bremen",
       "dortmund",
       "dresden",
@@ -14,13 +16,18 @@
       "frankfurt am main",
       "gothenburg",
       "hamburg",
+      "hamburg nord",
       "hannover",
       "koln",
       "leipzig",
+      "malmo",
+      "mannheim",
       "munich",
+      "munster",
       "nuremberg",
       "stuttgart",
-      "wandsbek"
+      "wandsbek",
+      "wuppertal"
     ],
     "meta": "Central European",
     "country": "de"
@@ -28,7 +35,12 @@
   "Europe/Simferopol": {
     "offset": 3,
     "hem": "n",
-    "names": ["aqmescit", "bakhchysarai", "sevastopol", "yalta"],
+    "names": [
+      "aqmescit",
+      "bakhchysarai",
+      "sevastopol",
+      "yalta"
+    ],
     "meta": "Moscow",
     "country": "ua"
   },
@@ -57,7 +69,9 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["ad", "and"
+    "names": [
+      "ad",
+      "and"
     ],
     "meta": "Central European",
     "country": "ad"
@@ -132,6 +146,7 @@
       "ro",
       "rou",
       "sector 3",
+      "sector 6",
       "timisoara"
     ],
     "meta": "Eastern European",
@@ -141,7 +156,13 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["buda", "debrecen", "hu", "hun", "pest"],
+    "names": [
+      "buda",
+      "debrecen",
+      "hu",
+      "hun",
+      "pest"
+    ],
     "meta": "Central European",
     "country": "hu"
   },
@@ -174,7 +195,12 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["arhus", "cmt", "dk", "dnk"],
+    "names": [
+      "arhus",
+      "cmt",
+      "dk",
+      "dnk"
+    ],
     "meta": "Central European",
     "country": "dk"
   },
@@ -234,6 +260,8 @@
       "adana",
       "adapazari",
       "adiyaman",
+      "aksaray",
+      "alanya",
       "ankara",
       "antakya",
       "antalya",
@@ -261,14 +289,17 @@
       "esenler",
       "esenyurt",
       "eskisehir",
+      "fatih",
       "gaziantep",
       "gebze",
       "izmir",
       "izmit",
       "kahramanmaras",
       "karabaglar",
+      "karsıyaka",
       "kayseri",
       "kirikkale",
+      "konak",
       "konya",
       "kucukcekmece",
       "kutahya",
@@ -296,6 +327,7 @@
       "tur",
       "ueskuedar",
       "umraniye",
+      "usak",
       "uskudar",
       "van",
       "zeytinburnu"
@@ -306,7 +338,10 @@
   "Europe/Kaliningrad": {
     "offset": 2,
     "hem": "n",
-    "names": ["baltiysk", "chernyakhovsk", "sovetsk"
+    "names": [
+      "baltiysk",
+      "chernyakhovsk",
+      "sovetsk"
     ],
     "meta": "Eastern European Standard",
     "country": "ru"
@@ -320,7 +355,10 @@
       "cherkasy",
       "chernihiv",
       "chernivtsi",
+      "darnytsya",
+      "desna",
       "dnipro",
+      "dniprovskyi",
       "donetsk",
       "horlivka",
       "ivano frankivsk",
@@ -335,13 +373,16 @@
       "lutsk",
       "lviv",
       "makiivka",
+      "makiyivka",
       "mariupol",
       "mykolayiv",
       "odesa",
       "odessa",
       "poltava",
+      "pravyi bereh",
       "rivne",
       "saltivka",
+      "saltivskyi",
       "sumy",
       "ternopil",
       "ua",
@@ -668,6 +709,7 @@
       "le havre",
       "lille",
       "lyon",
+      "marne la vallee",
       "marseille",
       "met",
       "montpellier",
@@ -804,7 +846,11 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": ["narva", "tartu", "viljandi"],
+    "names": [
+      "narva",
+      "tartu",
+      "viljandi"
+    ],
     "meta": "Eastern European",
     "country": "ee"
   },
@@ -872,7 +918,8 @@
       "msk",
       "st petersburg",
       "volt",
-      "volzhskiy"
+      "volzhskiy",
+      "volzhsky"
     ],
     "meta": "Moscow",
     "country": "ru"
@@ -931,7 +978,8 @@
     "names": [
       "geneve",
       "li",
-      "lie", "liechtenstein"
+      "lie",
+      "liechtenstein"
     ],
     "meta": "Central European",
     "country": "ch"

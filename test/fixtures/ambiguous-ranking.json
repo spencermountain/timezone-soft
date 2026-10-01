@@ -30,8 +30,7 @@
   ],
   "IST": [
     "Asia/Kolkata",
-    "Europe/Dublin",
-    "Asia/Jerusalem",
+    "Asia/Jerusalem", "Europe/Dublin",
     "Asia/Colombo"
   ],
   "BST": [

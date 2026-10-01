@@ -10,7 +10,7 @@ const yellow = str => '\x1b[33m' + str + '\x1b[0m'
 const dim = str => '\x1b[2m' + str + '\x1b[0m'
 const magenta = (str) => '\x1b[35m' + str + '\x1b[0m'
 
-const limit = 1600
+const limit = 2000
 
 const ignore = new Set([
   'Hyderabad',

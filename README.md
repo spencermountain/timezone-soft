@@ -84,7 +84,7 @@ Abbreviations can describe several places. For example:
 
 ```js
 soft('IST').map(zone => zone.iana)
-// ['Asia/Kolkata', 'Europe/Dublin', 'Asia/Jerusalem', 'Asia/Colombo']
+// ['Asia/Kolkata', 'Asia/Jerusalem', 'Europe/Dublin', 'Asia/Colombo']
 ```
 
 Explicit IANA IDs containing `/` are resolved case-insensitively through the pinned
