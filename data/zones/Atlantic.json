@@ -19,7 +19,6 @@
     "names": [
       "ast",
       "at",
-      "atlantic",
       "bm",
       "bmu"
     ],
@@ -36,7 +35,6 @@
       "europe western",
       "las palmas de gran canaria",
       "santa cruz de tenerife",
-      "western european",
       "wet"
     ],
     "meta": "Western European",
@@ -75,7 +73,6 @@
       "atlantic",
       "europe western",
       "madeira islands",
-      "western european",
       "wet"
     ],
     "meta": "Western European",
@@ -87,7 +84,6 @@
     "names": [
       "atlantic",
       "gmt",
-      "greenwich mean",
       "is",
       "isl",
       "utc",

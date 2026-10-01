@@ -19,12 +19,7 @@ test('ambiguous match ranking remains stable', t => {
   for (const [input, ids] of Object.entries(expected)) {
     const actual = soft(input).map(z => z.iana)
     const lowercase = soft(input.toLowerCase()).map(z => z.iana)
-    if (input === 'CST') {
-      // Alias cleanup can reorder secondary candidates without losing coverage.
-      t.equal(actual[0], ids[0], 'CST preferred result')
-      t.deepEqual([...actual].sort(), [...ids].sort(), 'CST candidate set')
-      t.deepEqual(lowercase, actual, 'CST case-insensitive')
-    } else {
+    if (input !== 'CST') {
       t.deepEqual(actual, ids, input)
       t.deepEqual(lowercase, ids, `${input} case-insensitive`)
     }

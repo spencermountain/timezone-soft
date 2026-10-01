@@ -6,7 +6,6 @@
     "names": [
       "aleutian",
       "aleutian islands",
-      "aleutian standard",
       "hawaii standard",
       "hdt",
       "hst",
@@ -25,7 +24,6 @@
       "akdt",
       "akst",
       "akt",
-      "alaska",
       "alaska standard",
       "alaskan",
       "alaskan standard"
@@ -37,7 +35,6 @@
     "offset": -3,
     "hem": "n",
     "names": [
-      "brasilia",
       "brasilia standard",
       "brt",
       "e south america standard",
@@ -179,7 +176,6 @@
     "offset": -3,
     "hem": "n",
     "names": [
-      "brasilia",
       "brasilia standard",
       "brt",
       "camacari",
@@ -199,7 +195,6 @@
     "names": [
       "bahia de banderas",
       "central mexican",
-      "central mexico",
       "central standard",
       "cst",
       "guadalajara"
@@ -224,7 +219,6 @@
     "hem": "n",
     "names": [
       "ananindeua",
-      "brasilia",
       "brasilia standard",
       "brt",
       "e south america standard",
@@ -252,7 +246,6 @@
     "offset": -4,
     "hem": "n",
     "names": [
-      "amazon",
       "amazon standard",
       "amt",
       "central brazil",
@@ -311,7 +304,6 @@
     "names": [
       "america mountain",
       "idaho",
-      "mountain",
       "mountain id",
       "mountain standard",
       "mpt",
@@ -328,7 +320,6 @@
     "names": [
       "america mountain",
       "mddt",
-      "mountain",
       "mountain standard",
       "mst",
       "mt"
@@ -420,7 +411,6 @@
       "baton rouge",
       "brownsville",
       "cdt",
-      "central",
       "corpus christi",
       "cst",
       "cst6cdt",
@@ -505,7 +495,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "aysen",
       "coihaique"
     ],
     "meta": "Aysen",
@@ -542,7 +531,6 @@
     "names": [
       "denmark",
       "gmt",
-      "greenwich mean",
       "utc",
       "zulu"
     ],
@@ -587,7 +575,6 @@
       "colorado springs",
       "el paso",
       "mdt",
-      "mountain",
       "mountain standard",
       "mst",
       "mst7mdt",
@@ -604,7 +591,6 @@
     "dst": "usa",
     "names": [
       "america eastern",
-      "eastern",
       "eastern mi",
       "eastern standard",
       "ept",
@@ -635,7 +621,6 @@
     "offset": -5,
     "hem": "n",
     "names": [
-      "acre",
       "acre standard",
       "act",
       "amazonas west"
@@ -673,7 +658,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "brasilia",
       "brasilia standard",
       "brt",
       "campina grande",
@@ -700,7 +684,6 @@
     "names": [
       "ast",
       "at",
-      "atlantic",
       "atlantic standard",
       "cape breton"
     ],
@@ -714,7 +697,6 @@
     "names": [
       "ast",
       "at",
-      "atlantic",
       "atlantic standard",
       "labrador",
       "npt"
@@ -728,7 +710,6 @@
     "dst": "usa",
     "names": [
       "america eastern",
-      "eastern",
       "eastern standard",
       "est",
       "et",
@@ -792,7 +773,6 @@
       "adt",
       "ast",
       "at",
-      "atlantic",
       "atlantic ns",
       "atlantic standard",
       "ca",
@@ -967,7 +947,6 @@
     "dst": "usa",
     "names": [
       "america eastern",
-      "eastern",
       "eastern standard",
       "eddt",
       "est",
@@ -997,7 +976,6 @@
     "names": [
       "akst",
       "akt",
-      "alaska",
       "alaska juneau area",
       "alaska standard",
       "alaskan",
@@ -1102,7 +1080,6 @@
       "oceanside",
       "oregon",
       "oxnard",
-      
       "pacific standard",
       "paradise",
       "pdt",
@@ -1139,7 +1116,6 @@
     "names": [
       "alagoassergipe",
       "aracaju",
-      "brasilia",
       "brasilia standard",
       "brt",
       "e south america standard",
@@ -1164,7 +1140,6 @@
     "offset": -4,
     "hem": "s",
     "names": [
-      "amazon",
       "amazon standard",
       "amazonas east",
       "amt",
@@ -1197,7 +1172,6 @@
     "dst": "usa",
     "names": [
       "america central",
-      "central",
       "central standard",
       "cst",
       "ct",
@@ -1231,7 +1205,6 @@
     "dst": "usa",
     "names": [
       "america central",
-      "central",
       "central standard",
       "cst",
       "ct",
@@ -1247,7 +1220,6 @@
       "campeche",
       "campecheyucatan",
       "central mexican",
-      "central mexico",
       "central standard",
       "cst",
       "guadalajara"
@@ -1262,7 +1234,6 @@
     "names": [
       "akst",
       "akt",
-      "alaska",
       "alaska annette island",
       "alaska standard",
       "alaskan",
@@ -1284,7 +1255,6 @@
       "campeche",
       "celaya",
       "central mexican",
-      "central mexico",
       "central standard",
       "chiapas",
       "chilpancingo",
@@ -1386,7 +1356,6 @@
     "names": [
       "ast",
       "at",
-      "atlantic",
       "atlantic standard",
       "hepm",
       "new brunswick"
@@ -1399,7 +1368,6 @@
     "hem": "n",
     "names": [
       "central mexican",
-      "central mexico",
       "central standard",
       "ciudad apodaca",
       "ciudad general escobedo",
@@ -1457,7 +1425,6 @@
       "delaware",
       "durham",
       "east flatbush",
-      "eastern",
       "eastern standard",
       "edt",
       "est",
@@ -1535,7 +1502,6 @@
     "dst": "usa",
     "names": [
       "america eastern",
-      "eastern",
       "eastern standard",
       "est",
       "et"
@@ -1550,7 +1516,6 @@
     "names": [
       "akst",
       "akt",
-      "alaska",
       "alaska standard",
       "alaska west",
       "alaskan",
@@ -1564,7 +1529,6 @@
     "hem": "n",
     "names": [
       "atlantic islands",
-      "fernando de noronha",
       "fernando de noronha standard",
       "fnt"
     ],
@@ -1628,7 +1592,6 @@
     "dst": "usa",
     "names": [
       "america central",
-      "central",
       "central standard",
       "cst",
       "ct"
@@ -1659,7 +1622,6 @@
       "addt",
       "america eastern",
       "baffin island",
-      "eastern",
       "eastern standard",
       "est",
       "et",
@@ -1718,7 +1680,6 @@
       "america eastern",
       "carrefour",
       "croix des bouquets",
-      "eastern",
       "eastern standard",
       "est",
       "et",
@@ -1734,7 +1695,6 @@
     "offset": -4,
     "hem": "n",
     "names": [
-      "amazon",
       "amazon standard",
       "amt",
       "central brazil",
@@ -1776,7 +1736,6 @@
     "dst": "usa",
     "names": [
       "america central",
-      "central",
       "central standard",
       "cst",
       "ct",
@@ -1792,7 +1751,6 @@
     "names": [
       "america central",
       "cddt",
-      "central",
       "central standard",
       "cst",
       "ct"
@@ -1804,7 +1762,6 @@
     "offset": -3,
     "hem": "n",
     "names": [
-      "brasilia",
       "brasilia standard",
       "brt",
       "caruaru",
@@ -1839,7 +1796,6 @@
     "dst": "usa",
     "names": [
       "america central",
-      "central",
       "central standard",
       "cst",
       "ct"
@@ -1851,7 +1807,6 @@
     "offset": -5,
     "hem": "s",
     "names": [
-      "acre",
       "acre standard",
       "act"
     ],
@@ -1862,7 +1817,6 @@
     "offset": -3,
     "hem": "n",
     "names": [
-      "brasilia",
       "brasilia standard",
       "brt",
       "e south america standard",
@@ -1934,7 +1888,6 @@
       "blumenau",
       "br",
       "bra",
-      "brasilia",
       "brasilia standard",
       "brst",
       "brt",
@@ -2034,7 +1987,6 @@
     "hem": "n",
     "dst": "green",
     "names": [
-      "east greenland",
       "east greenland standard",
       "egst",
       "egt",
@@ -2054,7 +2006,6 @@
     "names": [
       "akst",
       "akt",
-      "alaska",
       "alaska sitka area",
       "alaska standard",
       "alaskan",
@@ -2073,7 +2024,6 @@
       "htn",
       "nddt",
       "ndt",
-      "newfoundland",
       "newfoundland labrador",
       "newfoundland standard",
       "nst",
@@ -2113,7 +2063,6 @@
     "names": [
       "ast",
       "at",
-      "atlantic",
       "atlantic standard",
       "pituffik"
     ],
@@ -2125,7 +2074,6 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-      "eastern",
       "est",
       "et"
     ],
@@ -2143,7 +2091,6 @@
       "henomx",
       "hnnomx",
       "mexicali",
-      
       "pacific standard",
       "pst",
       "pt"
@@ -2161,7 +2108,6 @@
       "brampton",
       "ca",
       "can",
-      "eastern",
       "eastern standard",
       "est",
       "et",
@@ -2191,12 +2137,10 @@
     "hem": "n",
     "names": [
       "america pacific",
-      "british columbia",
       "burnaby",
       "ca",
       "ladner",
       "okanagan",
-      
       "pacific bc",
       "pacific standard",
       "pst",
@@ -2228,7 +2172,6 @@
       "central standard",
       "cst",
       "ct",
-      "manitoba",
       "west manitoba"
     ],
     "meta": "Manitoba",
@@ -2241,7 +2184,6 @@
     "names": [
       "akst",
       "akt",
-      "alaska",
       "alaska standard",
       "alaska yakutat",
       "alaskan",
@@ -2256,7 +2198,6 @@
     "dst": "usa",
     "names": [
       "america mountain",
-      "mountain",
       "mountain standard",
       "mst",
       "mt"

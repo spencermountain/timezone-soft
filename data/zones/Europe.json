@@ -27,7 +27,6 @@
     "names": [
       "almere stad",
       "amt",
-      "central european",
       "cest",
       "cet",
       "eindhoven",
@@ -50,7 +49,6 @@
     "names": [
       "ad",
       "and",
-      "central european",
       "cest",
       "cet",
       "europe central"
@@ -75,7 +73,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eastern european",
       "eet",
       "europe eastern",
       "gr",
@@ -90,7 +87,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -113,7 +109,6 @@
       "be",
       "bel",
       "bmt",
-      "central european",
       "cest",
       "cet",
       "charleroi",
@@ -134,7 +129,6 @@
       "cluj napoca",
       "constanta",
       "craiova",
-      "eastern european",
       "eet",
       "europe eastern",
       "galati",
@@ -153,7 +147,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "debrecen",
@@ -172,7 +165,6 @@
     "names": [
       "bavaria",
       "bremen",
-      "central european",
       "cest",
       "cet",
       "de",
@@ -188,7 +180,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "eastern european",
       "eet",
       "europe eastern",
       "md",
@@ -203,7 +194,6 @@
     "dst": "eu2",
     "names": [
       "arhus",
-      "central european",
       "cest",
       "cet",
       "cmt",
@@ -246,7 +236,6 @@
     "names": [
       "bdst",
       "bst",
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -261,7 +250,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eastern european",
       "eet",
       "espoo",
       "europe eastern",
@@ -348,7 +336,6 @@
     "offset": 2,
     "hem": "n",
     "names": [
-      "eastern european",
       "eet"
     ],
     "meta": "Eastern European",
@@ -365,7 +352,6 @@
       "chernivtsi",
       "dnipro",
       "donetsk",
-      "eastern european",
       "eet",
       "europe eastern",
       "horlivka",
@@ -402,7 +388,6 @@
     "offset": 3,
     "hem": "n",
     "names": [
-      "moscow",
       "msk",
       "russian",
       "st petersburg"
@@ -423,7 +408,6 @@
       "pt",
       "west",
       "west europe",
-      "western european",
       "wet"
     ],
     "meta": "Western European",
@@ -444,7 +428,6 @@
       "bradford",
       "brent",
       "bristol",
-      "british",
       "bst",
       "buckinghamshire",
       "cambridgeshire",
@@ -521,7 +504,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -547,7 +529,6 @@
       "burgos",
       "carabanchel",
       "castello de la plana",
-      "central european",
       "cest",
       "cet",
       "ciudad lineal",
@@ -576,12 +557,12 @@
       "san sebastian",
       "sant marti",
       "santander",
-      "valencia",
-      "valencia spain",
       "sants montjuic",
       "sevilla",
       "spain mainland",
       "terrassa",
+      "valencia",
+      "valencia spain",
       "valladolid",
       "vigo",
       "wemt",
@@ -595,7 +576,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -616,7 +596,6 @@
       "homyel",
       "hrodna",
       "mahilyow",
-      "moscow",
       "msk",
       "russian",
       "st petersburg",
@@ -630,7 +609,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -724,7 +702,6 @@
     "dst": "eu2",
     "names": [
       "bergen",
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -740,7 +717,6 @@
     "dst": "eu2",
     "names": [
       "bordeaux",
-      "central european",
       "cergy pontoise",
       "cest",
       "cet",
@@ -773,7 +749,6 @@
     "dst": "eu2",
     "names": [
       "brno",
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -792,7 +767,6 @@
     "dst": "eu3",
     "names": [
       "east europe",
-      "eastern european",
       "eest",
       "eet",
       "europe eastern",
@@ -813,7 +787,6 @@
       "bologna",
       "brescia",
       "catania",
-      "central european",
       "cest",
       "cet",
       "corsica",
@@ -872,7 +845,6 @@
       "bg",
       "bgr",
       "burgas",
-      "eastern european",
       "eet",
       "europe eastern",
       "imt",
@@ -887,7 +859,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -905,7 +876,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eastern european",
       "ee",
       "eet",
       "est",
@@ -921,7 +891,6 @@
     "names": [
       "al",
       "alb",
-      "central european",
       "cest",
       "cet",
       "europe central",
@@ -947,7 +916,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eastern european",
       "eet",
       "europe eastern",
       "ruthenia"
@@ -962,7 +930,6 @@
     "names": [
       "at",
       "aut",
-      "central european",
       "cest",
       "cet",
       "donaustadt",
@@ -979,7 +946,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eastern european",
       "eet",
       "europe eastern",
       "kaunas",
@@ -994,7 +960,6 @@
     "offset": 4,
     "hem": "n",
     "names": [
-      "moscow",
       "msk",
       "russian",
       "st petersburg",
@@ -1013,7 +978,6 @@
       "bielsko biala",
       "bydgoszcz",
       "bytom",
-      "central european",
       "cest",
       "cet",
       "czestochowa",
@@ -1046,7 +1010,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eastern european",
       "eet",
       "europe eastern",
       "luhansk",
@@ -1062,7 +1025,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "central european",
       "cest",
       "cet",
       "europe central",

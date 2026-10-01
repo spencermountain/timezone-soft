@@ -3,8 +3,6 @@
     "offset": 13,
     "hem": "s",
     "names": [
-      
-      "west samoa",
       "ws",
       "wsm",
       "wst"
@@ -26,7 +24,6 @@
       "nzmt",
       "nzst",
       "nzt",
-      
       "wellington"
     ],
     "meta": "New Zealand",
@@ -38,7 +35,6 @@
     "names": [
       "guinea",
       "guinean",
-      
       "pgt"
     ],
     "meta": "Bougainville",
@@ -77,7 +73,6 @@
     "names": [
       "easst",
       "east",
-      "easter island",
       "emt",
       "pacific"
     ],
@@ -88,7 +83,6 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      
       "vu",
       "vut"
     ],
@@ -99,7 +93,6 @@
     "offset": 13,
     "hem": "n",
     "names": [
-      
       "tk",
       "tkl",
       "tkt"
@@ -124,7 +117,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      
       "tuv",
       "tv",
       "tvt"
@@ -161,7 +153,6 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      
       "sb",
       "sbt",
       "slb",
@@ -174,12 +165,10 @@
     "offset": 10,
     "hem": "n",
     "names": [
-      "chamorro",
       "chst",
       "mnp",
       "mp",
       "northern mariana islands",
-      
       "port moresby",
       "west pacific",
       "western pacific"
@@ -196,7 +185,6 @@
       "hadt",
       "hast",
       "hat",
-      "hawaii",
       "hawaii aleutian",
       "hst",
       "pacific"
@@ -208,8 +196,6 @@
     "offset": 13,
     "hem": "n",
     "names": [
-      
-      "phoenix islands",
       "phot"
     ],
     "meta": "Phoenix Islands",
@@ -222,7 +208,6 @@
       "ki",
       "kir",
       "kiritimati island",
-      "line islands",
       "lint",
       "pacific"
     ],
@@ -327,7 +312,6 @@
     "hem": "n",
     "names": [
       "midway",
-      
       "sst"
     ],
     "meta": "Samoa",
@@ -337,7 +321,6 @@
     "offset": 9,
     "hem": "n",
     "names": [
-      
       "plw",
       "pw",
       "pwt"
@@ -349,7 +332,6 @@
     "offset": -8,
     "hem": "n",
     "names": [
-      
       "pcn",
       "pn",
       "pst",
@@ -363,7 +345,6 @@
     "hem": "n",
     "names": [
       "french polynesia",
-      
       "pf",
       "pohnpei/ponape",
       "pont",
@@ -379,7 +360,6 @@
       "dumont durville",
       "guinea",
       "guinean",
-      
       "pg",
       "pgt"
     ],
@@ -403,7 +383,6 @@
     "offset": -10,
     "hem": "n",
     "names": [
-      
       "society islands",
       "taht"
     ],
@@ -414,7 +393,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      "gilbert islands",
       "gilt",
       "pacific"
     ],
@@ -426,7 +404,6 @@
     "hem": "s",
     "names": [
       "nukualofa",
-      
       "to",
       "ton",
       "tot"
@@ -438,10 +415,8 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      
       "um",
       "umi",
-      "wake island",
       "wakt"
     ],
     "meta": "Wake Island",
@@ -451,7 +426,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      
       "wf",
       "wft",
       "wlf"

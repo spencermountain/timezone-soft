@@ -5,8 +5,7 @@
     "names": [
       "kashgar",
       "urumchi",
-      "wulumuqi",
-      "xinjiang"
+      "wulumuqi"
     ],
     "meta": "Xinjiang",
     "country": "cn"
@@ -19,7 +18,6 @@
       "almt",
       "astana",
       "central asia",
-      "east kazakhstan",
       "karagandy",
       "kaz",
       "kazakhstan eastern",
@@ -127,7 +125,6 @@
       "al mawsil al jadidah",
       "arab",
       "arabia",
-      "arabian",
       "arabic",
       "as sulaymaniyah",
       "ast",
@@ -175,7 +172,6 @@
       "hat yai",
       "hue",
       "ict",
-      "indochina",
       "jakarta",
       "mueang nonthaburi",
       "nakhon ratchasima",
@@ -238,8 +234,7 @@
       "bdt",
       "bn",
       "bnt",
-      "brn",
-      "brunei darussalam"
+      "brn"
     ],
     "meta": "Brunei Darussalam",
     "country": "bn"
@@ -248,8 +243,7 @@
     "offset": 9,
     "hem": "n",
     "names": [
-      "yakt",
-      "yakutsk"
+      "yakt"
     ],
     "meta": "Yakutsk",
     "country": "ru"
@@ -259,7 +253,6 @@
     "hem": "n",
     "names": [
       "dornodsukhbaatar",
-      "ulaanbaatar",
       "ulat"
     ],
     "meta": "Ulaanbaatar",
@@ -271,7 +264,6 @@
     "names": [
       "chennai",
       "dehiwala mount lavinia",
-      "india",
       "indian",
       "ist",
       "kolkata",
@@ -357,7 +349,6 @@
       "al ain",
       "arabian",
       "gst",
-      "gulf",
       "musaffah",
       "muscat",
       "om",
@@ -542,7 +533,6 @@
       "tasikmalaya",
       "tegal",
       "west indonesia",
-      "western indonesia",
       "wib",
       "yogyakarta"
     ],
@@ -555,7 +545,6 @@
     "names": [
       "ambon",
       "east indonesia",
-      "eastern indonesia",
       "indonesia eastern",
       "malukus",
       "moluccas",
@@ -607,7 +596,6 @@
     "hem": "n",
     "names": [
       "anadyr",
-      "petropavlovsk kamchatski",
       "petropavlovsk kamchatsky",
       "pett"
     ],
@@ -682,8 +670,7 @@
     "offset": 9,
     "hem": "n",
     "names": [
-      "yakt",
-      "yakutsk"
+      "yakt"
     ],
     "meta": "Yakutsk",
     "country": "ru"
@@ -1026,7 +1013,6 @@
     "hem": "n",
     "names": [
       "beijing",
-      "china",
       "chongqing",
       "cst",
       "mac",
@@ -1052,7 +1038,6 @@
       "balikpapan",
       "banjarmasin",
       "celebesbalinusa",
-      "central indonesia",
       "denpasar",
       "indonesia central",
       "kendari",
@@ -1122,7 +1107,6 @@
       "pasay",
       "pasig",
       "ph",
-      "philippine",
       "phl",
       "phst",
       "pht",
@@ -1150,7 +1134,6 @@
     "names": [
       "cy",
       "cyp",
-      "eastern european",
       "eet",
       "europe eastern"
     ],
@@ -1196,8 +1179,7 @@
       "alma ata",
       "almt",
       "kazakhstan western",
-      "west asia",
-      "west kazakhstan"
+      "west asia"
     ],
     "meta": "West Kazakhstan",
     "country": "kz"
@@ -1210,7 +1192,6 @@
       "indonesia western",
       "tanjung pinang",
       "west borneo",
-      "western indonesia",
       "wib"
     ],
     "meta": "Western Indonesia",
@@ -1228,7 +1209,6 @@
       "kaesong",
       "kanggye",
       "korea",
-      "korean",
       "kp",
       "kst",
       "nampo",
@@ -1249,7 +1229,6 @@
       "ar rayyan",
       "arab",
       "arabia",
-      "arabian",
       "arabic",
       "ast",
       "doha",
@@ -1268,7 +1247,6 @@
       "almt",
       "astana",
       "central asia",
-      "east kazakhstan",
       "kazakhstan eastern",
       "kostanay"
     ],
@@ -1301,7 +1279,6 @@
       "al mubarraz",
       "arab",
       "arabia",
-      "arabian",
       "arabic",
       "ast",
       "buraydah",
@@ -1385,7 +1362,6 @@
       "kimhae",
       "kor",
       "korea",
-      "korean",
       "kr",
       "kst",
       "kwangmyong",
@@ -2065,7 +2041,6 @@
     "offset": 10,
     "hem": "n",
     "names": [
-      "vladivostok",
       "vlat"
     ],
     "meta": "Vladivostok",

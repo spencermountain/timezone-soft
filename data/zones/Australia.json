@@ -10,7 +10,6 @@
       "australia central",
       "australian central",
       "cen australia",
-      "central australia",
       "south australia"
     ],
     "meta": "Central Australia",
@@ -41,7 +40,6 @@
       "adelaide",
       "australia central",
       "cen australia standard",
-      "central australia",
       "yancowinna"
     ],
     "meta": "Central Australia",
@@ -52,7 +50,6 @@
     "hem": "s",
     "names": [
       "acst",
-      "australian central",
       "northern territory"
     ],
     "meta": "Australian Central",
@@ -67,7 +64,6 @@
       "acwt",
       "aus central w",
       "aus central west",
-      "australian central western",
       "cwst"
     ],
     "meta": "Australian Central Western",
@@ -86,7 +82,6 @@
       "australia eastern",
       "australian eastern",
       "canberra",
-      "eastern australia",
       "king island",
       "tasmania"
     ],
@@ -130,7 +125,6 @@
       "australia eastern",
       "australian eastern",
       "canberra",
-      "eastern australia",
       "geelong"
     ],
     "meta": "Eastern Australia",
@@ -147,8 +141,7 @@
       "awst",
       "awt",
       "w australia",
-      "west australia",
-      "western australia"
+      "west australia"
     ],
     "meta": "Western Australia",
     "country": "au"

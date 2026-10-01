@@ -14,11 +14,14 @@ for (const file of files) {
   Object.entries(zones).forEach(([id, zone]) => {
     const basename = normalizeName(id.split('/').pop())
     const countryNames = new Set((countries[zone.country] || []).map(normalizeName))
+    // Pack adds meta names automatically, except Krasnoyarsk.
+    const metaName = zone.meta === 'Krasnoyarsk' ? '' : normalizeName(zone.meta || '')
     // Full IANA identifiers already resolve through the identifier table.
     // Special-case spellings are stored separately and must not be folded here.
     const names = zone.names
       .filter(name => !misc[name]?.includes(id))
       .map(normalizeName)
+      .filter(name => name !== metaName)
       .filter(name => name && !timezoneIds.has(name) && name !== basename && !countryNames.has(name))
     zone.names = [...new Set(names)].sort()
   })

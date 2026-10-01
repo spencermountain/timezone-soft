@@ -12,7 +12,6 @@
       "gha",
       "ghana",
       "gmt",
-      "greenwich mean",
       "kumasi",
       "pikine",
       "san pedro",
@@ -53,7 +52,6 @@
     "names": [
       "gmt",
       "gnb",
-      "greenwich mean",
       "gw",
       "utc",
       "zulu"
@@ -193,7 +191,6 @@
     "hem": "n",
     "names": [
       "cat",
-      "central africa",
       "ss",
       "ssd",
       "winejok"
@@ -208,7 +205,6 @@
       "ad damazin",
       "al qadarif",
       "cat",
-      "central africa",
       "el daein",
       "el fasher",
       "el obeid",
@@ -292,7 +288,6 @@
       "warri",
       "wast",
       "wat",
-      "west africa",
       "west central africa",
       "western africa",
       "yaounde",
@@ -309,7 +304,6 @@
       "beira",
       "bukavu",
       "cat",
-      "central africa",
       "chimoio",
       "harare",
       "kananga",
@@ -335,7 +329,6 @@
     "hem": "n",
     "names": [
       "gmt",
-      "greenwich mean",
       "lbr",
       "lr",
       "utc",
@@ -351,7 +344,6 @@
       "africa eastern",
       "dodoma",
       "e africa",
-      "east africa",
       "eastern africa",
       "eat",
       "eldoret",
@@ -378,7 +370,6 @@
       "w central africa",
       "wast",
       "wat",
-      "west africa",
       "west central africa",
       "western africa"
     ],
@@ -390,7 +381,6 @@
     "hem": "n",
     "names": [
       "gmt",
-      "greenwich mean",
       "st",
       "stp",
       "utc",
@@ -432,7 +422,6 @@
     "names": [
       "africa central",
       "cat",
-      "central africa",
       "na",
       "nam"
     ],
