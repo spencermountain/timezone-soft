@@ -46,7 +46,8 @@
       "chadt",
       "chast",
       "chat",
-      "chatham islands", "nz chat"
+      "chatham islands",
+      "nz chat"
     ],
     "meta": "Chatham",
     "country": "nz"
@@ -55,7 +56,8 @@
     "offset": 10,
     "hem": "n",
     "names": [
-      "chut", "chuuk/trukyap"
+      "chut",
+      "chuuk/trukyap"
     ],
     "meta": "Chuuk",
     "country": "fm"
@@ -66,7 +68,8 @@
     "dst": "east",
     "names": [
       "easst",
-      "east", "emt"
+      "east",
+      "emt"
     ],
     "meta": "Easter Island",
     "country": "cl"
@@ -98,7 +101,8 @@
     "names": [
       "fj",
       "fji",
-      "fjst", "fjt"
+      "fjst",
+      "fjt"
     ],
     "meta": "Fiji",
     "country": "fj"
@@ -165,7 +169,15 @@
   "Pacific/Honolulu": {
     "offset": -10,
     "hem": "n",
-    "names": ["aleutian", "aleutian islands", "hadt", "hast", "hat", "hawaii aleutian", "hst"],
+    "names": [
+      "aleutian",
+      "aleutian islands",
+      "hadt",
+      "hast",
+      "hat",
+      "hawaii aleutian",
+      "hst"
+    ],
     "meta": "Hawaii",
     "country": "us"
   },
@@ -184,7 +196,8 @@
     "names": [
       "ki",
       "kir",
-      "kiritimati island", "lint"
+      "kiritimati island",
+      "lint"
     ],
     "meta": "Line Islands",
     "country": "ki"
@@ -192,7 +205,8 @@
   "Pacific/Kosrae": {
     "offset": 11,
     "hem": "n",
-    "names": ["kost"
+    "names": [
+      "kost"
     ],
     "meta": "Kosrae",
     "country": "fm"
@@ -200,7 +214,8 @@
   "Pacific/Kwajalein": {
     "offset": 12,
     "hem": "n",
-    "names": ["mht"
+    "names": [
+      "mht"
     ],
     "meta": "Marshall Islands",
     "country": "mh"
@@ -210,7 +225,8 @@
     "hem": "n",
     "names": [
       "mh",
-      "mhl", "mht"
+      "mhl",
+      "mht"
     ],
     "meta": "Marshall Islands",
     "country": "mh"
@@ -231,7 +247,8 @@
     "hem": "s",
     "names": [
       "nr",
-      "nrt", "nru"
+      "nrt",
+      "nru"
     ],
     "meta": "Nauru",
     "country": "nr"
@@ -241,7 +258,8 @@
     "hem": "s",
     "names": [
       "niu",
-      "nu", "nut"
+      "nu",
+      "nut"
     ],
     "meta": "Niue",
     "country": "nu"
@@ -253,7 +271,8 @@
     "names": [
       "nf",
       "nfdt",
-      "nfk", "nft"
+      "nfk",
+      "nft"
     ],
     "meta": "Norfolk Island",
     "country": "nf"
@@ -263,7 +282,8 @@
     "hem": "s",
     "names": [
       "nc",
-      "ncl", "nct"
+      "ncl",
+      "nct"
     ],
     "meta": "New Caledonia",
     "country": "nc"
@@ -327,7 +347,8 @@
     "names": [
       "ck",
       "ckt",
-      "cok", "cook"
+      "cok",
+      "cook"
     ],
     "meta": "Cook Islands",
     "country": "ck"
@@ -346,7 +367,8 @@
   "Pacific/Tarawa": {
     "offset": 12,
     "hem": "n",
-    "names": ["gilt"
+    "names": [
+      "gilt"
     ],
     "meta": "Gilbert Islands",
     "country": "ki"

@@ -10,9 +10,19 @@ const yellow = str => '\x1b[33m' + str + '\x1b[0m'
 const dim = str => '\x1b[2m' + str + '\x1b[0m'
 const magenta = (str) => '\x1b[35m' + str + '\x1b[0m'
 
-const limit = 1200
+const limit = 1600
 
-const ignore = new Set(['Hyderabad', 'Newcastle', 'Surrey', 'Barcelona', 'Victoria', 'Valencia', 'San Luis Potosí'])
+const ignore = new Set([
+  'Hyderabad',
+  'Newcastle',
+  'London',
+  'San Juan',
+  'Surrey',
+  'Barcelona',
+  'Victoria',
+  'Valencia',
+  'San Luis Potosí'
+])
 
 const rows = await load()
 const cities = rows.slice(0, limit)

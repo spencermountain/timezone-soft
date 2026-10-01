@@ -26,7 +26,7 @@ const replacements = [
   ['eastern', 'east'],
   ['southern', 'south'],
   ['northern', 'north'],
-  // country-name cruft
+  // place-name cruft
   ['democratic', ''],
   ['socialist', ''],
   ['republic', ''],
@@ -37,14 +37,21 @@ const replacements = [
   ['islamic', ''],
   ['united', ''],
   ['kingdom', ''],
+  ['city', ''],
+  ['township', ''],
   ['of', ''],
   ['the', ''],
   // generic place names
   ['region', ''],
+  ['country', ''],
+  ['county', ''],
   ['regional', ''],
   ['district', ''],
   ['province', ''],
   ['state', ''],
+  ['metro', ''],
+  ['greater', ''],
+  ['metropolitan', ''],
   ['area', '']
 ]
 

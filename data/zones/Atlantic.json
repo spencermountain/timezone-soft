@@ -28,7 +28,8 @@
     "dst": "eu1",
     "names": [
       "canary islands",
-      "las palmas de gran canaria", "santa cruz de tenerife"
+      "las palmas de gran canaria",
+      "santa cruz de tenerife"
     ],
     "meta": "Western European",
     "country": "es"
@@ -60,7 +61,8 @@
     "offset": 1,
     "hem": "n",
     "dst": "eu1",
-    "names": ["madeira islands"
+    "names": [
+      "madeira islands"
     ],
     "meta": "Western European",
     "country": "pt"

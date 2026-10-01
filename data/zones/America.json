@@ -3,7 +3,7 @@
     "offset": -9,
     "hem": "n",
     "dst": "usa",
-    "names": ["aleutian", "aleutian islands", "hdt", "hst", "nwt"],
+    "names": ["aleutian islands", "hdt", "hst", "nwt"],
     "meta": "Aleutian",
     "country": "us"
   },
@@ -39,7 +39,7 @@
   "America/Argentina/Cordoba": {
     "offset": -3,
     "hem": "s",
-    "names": [],
+    "names": ["santa fe"],
     "meta": "Argentina",
     "country": "ar"
   },
@@ -81,7 +81,7 @@
   "America/Argentina/San_Juan": {
     "offset": -3,
     "hem": "s",
-    "names": [],
+    "names": ["san juan"],
     "meta": "Argentina",
     "country": "ar"
   },
@@ -255,7 +255,6 @@
       "ve",
       "ven",
       "venezuela standard",
-      "venezuelan",
       "vet"
     ],
     "meta": "Venezuela",
@@ -442,7 +441,7 @@
   "America/Fort_Nelson": {
     "offset": -7,
     "hem": "n",
-    "names": ["british columbia"],
+    "names": [],
     "meta": "British Columbia",
     "country": "ca"
   },
@@ -500,6 +499,7 @@
     "offset": -5,
     "hem": "s",
     "names": [
+      "ambato",
       "cuenca",
       "ec",
       "ect",
@@ -764,7 +764,7 @@
   "America/Maceio": {
     "offset": -3,
     "hem": "s",
-    "names": ["alagoassergipe", "aracaju", "brasilia"],
+    "names": ["alagoassergipe", "aracaju"],
     "meta": "Brasilia",
     "country": "br"
   },
@@ -806,7 +806,6 @@
       "hnpmx",
       "hpmx",
       "los mochis",
-      "mexican pacific",
       "mexico pacific",
       "mountain mexico",
       "mountain standard mexico",
@@ -927,16 +926,7 @@
     "offset": -2,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "hnpm",
-      "hpm",
-      "pierre miquelon",
-      "pm",
-      "saint pierre",
-      "saint pierre and miquelon",
-      "spm",
-      "st pierre miquelon"
-    ],
+    "names": ["hnpm", "hpm", "pierre miquelon", "pm", "saint pierre", "saint pierre and miquelon", "spm"],
     "meta": "St. Pierre & Miquelon",
     "country": "pm"
   },
@@ -1159,7 +1149,6 @@
       "glendale",
       "maryvale",
       "mesa",
-      "mountain standard",
       "mst",
       "mt",
       "mwt",
@@ -1177,7 +1166,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["carrefour", "croix des bouquets", "ht", "hti", "petionville", "port de paix"],
+    "names": ["carrefour", "croix des bouquets", "delmas", "ht", "hti", "petionville", "port de paix"],
     "meta": "Eastern",
     "country": "ht"
   },
@@ -1276,6 +1265,7 @@
       "concepcion",
       "iquique",
       "la pintana",
+      "maipu",
       "puente alto",
       "rancagua",
       "san bernardo",
@@ -1313,6 +1303,7 @@
       "americana",
       "anapolis",
       "aparecida de goiania",
+      "barra da tijuca",
       "barueri",
       "bauru",
       "belford roxo",
@@ -1325,6 +1316,7 @@
       "campos dos goytacazes",
       "canoas",
       "carapicuiba",
+      "cariacica",
       "cascavel",
       "caxias do sul",
       "contagem",
@@ -1339,6 +1331,7 @@
       "franca",
       "goiania",
       "governador valadares",
+      "grajau",
       "gravatai",
       "guaruja",
       "guarulhos",
@@ -1511,7 +1504,7 @@
   "America/Whitehorse": {
     "offset": -7,
     "hem": "n",
-    "names": ["mountain standard", "mst", "yst"],
+    "names": ["mst", "yst"],
     "meta": "Mountain Standard",
     "country": "ca"
   },

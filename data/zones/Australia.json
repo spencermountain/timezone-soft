@@ -20,6 +20,7 @@
       "gold coast",
       "logan",
       "queensland",
+      "sunshine coast",
       "townsville"
     ],
     "meta": "Brisbane",
@@ -124,7 +125,6 @@
     "hem": "s",
     "dst": "aus",
     "names": [
-      "aus",
       "aus east",
       "aus eastern",
       "australia eastern",

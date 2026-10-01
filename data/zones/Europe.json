@@ -4,11 +4,12 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
+      "bochum",
+      "bremen",
       "dortmund",
       "dresden",
       "duisburg",
       "dusseldorf",
-      "bremen",
       "essen",
       "frankfurt am main",
       "gothenburg",
@@ -18,7 +19,8 @@
       "leipzig",
       "munich",
       "nuremberg",
-      "stuttgart"
+      "stuttgart",
+      "wandsbek"
     ],
     "meta": "Central European",
     "country": "de"
@@ -26,7 +28,7 @@
   "Europe/Simferopol": {
     "offset": 3,
     "hem": "n",
-    "names": ["aqmescit", "sevastopol", "yalta", "bakhchysarai"],
+    "names": ["aqmescit", "bakhchysarai", "sevastopol", "yalta"],
     "meta": "Moscow",
     "country": "ua"
   },
@@ -63,9 +65,7 @@
   "Europe/Astrakhan": {
     "offset": 4,
     "hem": "n",
-    "names": [
-      "russian"
-    ],
+    "names": [],
     "meta": "Astrakhan",
     "country": "ru"
   },
@@ -131,6 +131,7 @@
       "ploiesti",
       "ro",
       "rou",
+      "sector 3",
       "timisoara"
     ],
     "meta": "Eastern European",
@@ -192,7 +193,6 @@
       "irl",
       "ist",
       "limerick",
-      "london",
       "tse",
       "waterford"
     ],
@@ -246,6 +246,8 @@
       "basaksehir",
       "batikent",
       "batman",
+      "beylikduzu",
+      "bornova",
       "bursa",
       "cankaya",
       "corlu",
@@ -254,6 +256,7 @@
       "diyarbakir",
       "diyarbakır",
       "elazig",
+      "elazıg",
       "erzurum",
       "esenler",
       "esenyurt",
@@ -280,6 +283,7 @@
       "samsun",
       "sancaktepe",
       "sanliurfa",
+      "sanlıurfa",
       "sisli",
       "sivas",
       "siverek",
@@ -302,7 +306,7 @@
   "Europe/Kaliningrad": {
     "offset": 2,
     "hem": "n",
-    "names": ["sovetsk", "chernyakhovsk", "baltiysk"
+    "names": ["baltiysk", "chernyakhovsk", "sovetsk"
     ],
     "meta": "Eastern European Standard",
     "country": "ru"
@@ -337,6 +341,7 @@
       "odessa",
       "poltava",
       "rivne",
+      "saltivka",
       "sumy",
       "ternopil",
       "ua",
@@ -351,8 +356,7 @@
   "Europe/Kirov": {
     "offset": 3,
     "hem": "n",
-    "names": [
-    ],
+    "names": [],
     "meta": "Moscow",
     "country": "ru"
   },
@@ -402,8 +406,8 @@
       "dudley",
       "edinburgh",
       "essex",
-      "gb eire",
       "gb",
+      "gb eire",
       "glasgow",
       "gloucestershire",
       "guernsey",
@@ -412,7 +416,6 @@
       "ipswich",
       "isle of man",
       "islington",
-      "jersey",
       "jersey",
       "kingston upon hull",
       "lancashire",
@@ -426,8 +429,8 @@
       "manchester",
       "midlands",
       "milton keynes",
-      "newcastle upon tyne",
       "newcastle",
+      "newcastle upon tyne",
       "newport",
       "north yorkshire",
       "northampton",
@@ -801,7 +804,7 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": ["tartu", "narva", "viljandi"],
+    "names": ["narva", "tartu", "viljandi"],
     "meta": "Eastern European",
     "country": "ee"
   },
@@ -820,9 +823,7 @@
   "Europe/Ulyanovsk": {
     "offset": 4,
     "hem": "n",
-    "names": [
-      "russian"
-    ],
+    "names": [],
     "meta": "Ulyanovsk",
     "country": "ru"
   },
@@ -869,7 +870,6 @@
     "hem": "n",
     "names": [
       "msk",
-      "russian",
       "st petersburg",
       "volt",
       "volzhskiy"
@@ -931,9 +931,7 @@
     "names": [
       "geneve",
       "li",
-      "lie",
-      "liechtenstein",
-      "swiss"
+      "lie", "liechtenstein"
     ],
     "meta": "Central European",
     "country": "ch"
