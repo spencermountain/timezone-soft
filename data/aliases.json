@@ -31,7 +31,6 @@
     "America/Mexico_City"
   ],
   "mexican pacific time": [
-    "America/Chihuahua",
     "America/Mazatlan"
   ],
   "atlantic time": [
@@ -95,15 +94,9 @@
     "Australia/Lindeman"
   ],
   "moscow time": [
-    "Europe/Moscow",
-    "Europe/Ulyanovsk"
+    "Europe/Moscow"
   ],
   "volgograd time": [
-    "Europe/Astrakhan",
-    "Europe/Kirov",
-    "Europe/Minsk",
-    "Europe/Moscow",
-    "Europe/Ulyanovsk",
     "Europe/Volgograd"
   ],
   "british time": [
@@ -135,8 +128,7 @@
     "Europe/Saratov"
   ],
   "moscow, st petersburg": [
-    "Europe/Ulyanovsk",
-    "Europe/Volgograd"
+    "Europe/Moscow"
   ],
   "gmt+0": [
     "Etc/GMT"
