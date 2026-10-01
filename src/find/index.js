@@ -2,7 +2,12 @@ import matchRegion from './00-match-region.js'
 import matchWhole from './01-match-whole.js'
 import { matchAlternativeSpellings, matchSeparatedParts, matchWordPairs } from './02-match-parts.js'
 
+const longName = /^\s*\(utc(?:[+-]\d{2}:\d{2})?\)\s*([^()]+?)(?:\s*\([^()]*\))?\s*$/i
+
 const find = (input) => {
+  // "(UTC-06:00) Central Time (US & Canada)" → "Central Time".
+  input = input.replace(longName, '$1').trim()
+
   // Region names must include every supported zone, not just curated aliases.
   const region = matchRegion(input)
   if (region) {

@@ -151,7 +151,8 @@
       2,
       "Central European Summer Time"
     ],
-    "long": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris"
+    "long": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris",
+    "alt": ["europe central", "central europe"]
   },
   "Atlantic": {
     "dupe": true,
@@ -163,7 +164,8 @@
       "ADT",
       -3
     ],
-    "long": "(UTC-04:00) Atlantic Time (Canada)"
+    "long": "(UTC-04:00) Atlantic Time (Canada)",
+    "alt": ["at", "us atlantic", "atlantic canada", "atlantic standard"]
   },
   "Greenwich Mean": {
     "std": [
@@ -173,15 +175,9 @@
     "long": "(UTC) Coordinated Universal Time"
   },
   "Eastern European": {
-    "std": [
-      "EET",
-      2
-    ],
-    "dst": [
-      "EEST",
-      3,
-      "Eastern European Summer Time"
-    ]
+    "std": ["EET", 2],
+    "dst": ["EEST", 3, "Eastern European Summer Time"],
+    "alt": ["europe eastern", "eastern europe"]
   },
   "Central": {
     "dupe": true,
@@ -193,7 +189,8 @@
       "CDT",
       -5
     ],
-    "long": "(UTC-06:00) Central Time (US & Canada)"
+    "long": "(UTC-06:00) Central Time (US & Canada)",
+    "alt": ["central standard"]
   },
   "Eastern": {
     "std": [
@@ -204,28 +201,32 @@
       "EDT",
       -4
     ],
-    "long": "(UTC-05:00) Eastern Time (US & Canada)"
+    "long": "(UTC-05:00) Eastern Time (US & Canada)",
+    "alt": ["us eastern", "us east", "america eastern", "et"]
   },
   "Argentina": {
     "std": [
       "ART",
       -3
     ],
-    "long": "(UTC-03:00) City of Buenos Aires"
+    "long": "(UTC-03:00) City of Buenos Aires",
+    "alt": ["argentina standard", "argentinian", "arst"]
   },
   "East Africa": {
     "std": [
       "EAT",
       3
     ],
-    "long": "(UTC+03:00) Nairobi"
+    "long": "(UTC+03:00) Nairobi",
+    "alt": ["east african"]
   },
   "West Africa": {
     "std": [
       "WAT",
       1
     ],
-    "long": "(UTC+01:00) West Central Africa"
+    "long": "(UTC+01:00) West Central Africa",
+    "alt": ["west african"]
   },
   "Moscow": {
     "std": [
@@ -340,15 +341,9 @@
   },
   "Central Mexico": {
     "long": "(UTC-06:00) Guadalajara, Mexico City, Monterrey",
-    "std": [
-      "CST",
-      -6
-    ],
-    "dst": [
-      "CDT",
-      -5,
-      "Central Daylight Time"
-    ]
+    "std": ["CST", -6],
+    "dst": ["CDT", -5, "Central Daylight Time"],
+    "alt": ["central standard"]
   },
   "South Africa": {
     "std": [
@@ -380,7 +375,8 @@
       "PDT",
       -7
     ],
-    "long": "(UTC-08:00) Pacific Time (US & Canada)"
+    "long": "(UTC-08:00) Pacific Time (US & Canada)",
+    "alt": ["pt"]
   },
   "Amazon": {
     "std": [
@@ -466,7 +462,8 @@
       10.5,
       "Australian Central Daylight Time"
     ],
-    "long": "(UTC+09:30) Adelaide"
+    "long": "(UTC+09:30) Adelaide",
+    "alt": ["australia central", "australian central", "cen australia", "aus central"]
   },
   "Brisbane": {
     "dupe": true,
@@ -827,7 +824,8 @@
       "SGT",
       8
     ],
-    "long": "(UTC+08:00) Kuala Lumpur, Singapore"
+    "long": "(UTC+08:00) Kuala Lumpur, Singapore",
+    "alt": ["indonesia central"]
   },
   "Taipei": {
     "std": [
@@ -841,7 +839,8 @@
       "AWST",
       8
     ],
-    "long": "(UTC+08:00) Perth"
+    "long": "(UTC+08:00) Perth",
+    "alt": ["aus western", "west australia"]
   },
   "Australian Central Western": {
     "std": [
@@ -877,10 +876,8 @@
   },
   "Australian Central": {
     "dupe": true,
-    "std": [
-      "ACST",
-      9.5
-    ]
+    "std": ["ACST", 9.5],
+    "alt": ["aus central"]
   },
   "Dumont-d’Urville": {
     "std": [

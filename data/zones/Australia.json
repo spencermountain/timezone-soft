@@ -4,12 +4,7 @@
     "hem": "s",
     "dst": "aus",
     "names": [
-      "acdt",
-      "acst",
       "act",
-      "australia central",
-      "australian central",
-      "cen australia",
       "south australia"
     ],
     "meta": "Central Australia",
@@ -35,11 +30,6 @@
     "hem": "s",
     "dst": "aus",
     "names": [
-      "acst",
-      "act",
-      "adelaide",
-      "australia central",
-      "cen australia standard",
       "yancowinna"
     ],
     "meta": "Central Australia",
@@ -49,7 +39,6 @@
     "offset": 9.5,
     "hem": "s",
     "names": [
-      "acst",
       "northern territory"
     ],
     "meta": "Australian Central",

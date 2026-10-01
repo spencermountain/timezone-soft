@@ -48,9 +48,7 @@
       "chadt",
       "chast",
       "chat",
-      "chatham islands",
-      "nz chat",
-      "pacific"
+      "chatham islands", "nz chat"
     ],
     "meta": "Chatham",
     "country": "nz"
@@ -59,9 +57,7 @@
     "offset": 10,
     "hem": "n",
     "names": [
-      "chut",
-      "chuuk/trukyap",
-      "pacific"
+      "chut", "chuuk/trukyap"
     ],
     "meta": "Chuuk",
     "country": "fm"
@@ -72,9 +68,7 @@
     "dst": "east",
     "names": [
       "easst",
-      "east",
-      "emt",
-      "pacific"
+      "east", "emt"
     ],
     "meta": "Easter Island",
     "country": "cl"
@@ -106,9 +100,7 @@
     "names": [
       "fj",
       "fji",
-      "fjst",
-      "fjt",
-      "pacific"
+      "fjst", "fjt"
     ],
     "meta": "Fiji",
     "country": "fj"
@@ -131,9 +123,7 @@
       "colombia",
       "cost",
       "cot",
-      "galapagos islands",
-      "galt",
-      "pacific"
+      "galapagos islands", "galt"
     ],
     "meta": "Galapagos",
     "country": "ec"
@@ -142,9 +132,7 @@
     "offset": -9,
     "hem": "n",
     "names": [
-      "gambier islands",
-      "gamt",
-      "pacific"
+      "gambier islands", "gamt"
     ],
     "meta": "Gambier",
     "country": "pf"
@@ -179,16 +167,7 @@
   "Pacific/Honolulu": {
     "offset": -10,
     "hem": "n",
-    "names": [
-      "aleutian",
-      "aleutian islands",
-      "hadt",
-      "hast",
-      "hat",
-      "hawaii aleutian",
-      "hst",
-      "pacific"
-    ],
+    "names": ["aleutian", "aleutian islands", "hadt", "hast", "hat", "hawaii aleutian", "hst"],
     "meta": "Hawaii",
     "country": "us"
   },
@@ -207,9 +186,7 @@
     "names": [
       "ki",
       "kir",
-      "kiritimati island",
-      "lint",
-      "pacific"
+      "kiritimati island", "lint"
     ],
     "meta": "Line Islands",
     "country": "ki"
@@ -217,9 +194,7 @@
   "Pacific/Kosrae": {
     "offset": 11,
     "hem": "n",
-    "names": [
-      "kost",
-      "pacific"
+    "names": ["kost"
     ],
     "meta": "Kosrae",
     "country": "fm"
@@ -227,9 +202,7 @@
   "Pacific/Kwajalein": {
     "offset": 12,
     "hem": "n",
-    "names": [
-      "mht",
-      "pacific"
+    "names": ["mht"
     ],
     "meta": "Marshall Islands",
     "country": "mh"
@@ -239,9 +212,7 @@
     "hem": "n",
     "names": [
       "mh",
-      "mhl",
-      "mht",
-      "pacific"
+      "mhl", "mht"
     ],
     "meta": "Marshall Islands",
     "country": "mh"
@@ -250,9 +221,7 @@
     "offset": -9.5,
     "hem": "n",
     "names": [
-      "marquesas islands",
-      "mart",
-      "pacific"
+      "marquesas islands", "mart"
     ],
     "meta": "Marquesas",
     "country": "pf"
@@ -262,9 +231,7 @@
     "hem": "n",
     "names": [
       "nr",
-      "nrt",
-      "nru",
-      "pacific"
+      "nrt", "nru"
     ],
     "meta": "Nauru",
     "country": "nr"
@@ -274,9 +241,7 @@
     "hem": "n",
     "names": [
       "niu",
-      "nu",
-      "nut",
-      "pacific"
+      "nu", "nut"
     ],
     "meta": "Niue",
     "country": "nu"
@@ -288,9 +253,7 @@
     "names": [
       "nf",
       "nfdt",
-      "nfk",
-      "nft",
-      "pacific"
+      "nfk", "nft"
     ],
     "meta": "Norfolk Island",
     "country": "nf"
@@ -300,9 +263,7 @@
     "hem": "n",
     "names": [
       "nc",
-      "ncl",
-      "nct",
-      "pacific"
+      "ncl", "nct"
     ],
     "meta": "New Caledonia",
     "country": "nc"
@@ -334,7 +295,6 @@
     "names": [
       "pcn",
       "pn",
-      "pst",
       "utc-08"
     ],
     "meta": "Pitcairn",
@@ -372,9 +332,7 @@
     "names": [
       "ck",
       "ckt",
-      "cok",
-      "cook",
-      "pacific"
+      "cok", "cook"
     ],
     "meta": "Cook Islands",
     "country": "ck"
@@ -392,9 +350,7 @@
   "Pacific/Tarawa": {
     "offset": 12,
     "hem": "n",
-    "names": [
-      "gilt",
-      "pacific"
+    "names": ["gilt"
     ],
     "meta": "Gilbert Islands",
     "country": "ki"

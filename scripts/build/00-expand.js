@@ -18,12 +18,28 @@ Object.entries(zones).forEach(([id, zone]) => {
   const ignoredMetas = new Set(['Krasnoyarsk'])
   if (meta && !ignoredMetas.has(meta)) {
     words.add(normalizeAlias(meta))
-    let codes = metas[meta].std
-    if (codes) {
-      codes.forEach((code) => {
+    let std = metas[meta].std
+    if (std) {
+      std.forEach((code) => {
+        if (typeof code === 'string' && !/^[+-0-9]/.test(code)) {
+          if (words.has(normalizeAlias(code))) {
+            console.log(normalizeAlias(code))
+          }
+          words.add(normalizeAlias(code))
+        }
+      })
+    }
+    let dst = metas[meta].dst
+    if (dst) {
+      dst.forEach((code) => {
         if (typeof code === 'string' && !/^[+-0-9]/.test(code)) {
           words.add(normalizeAlias(code))
         }
+      })
+    }
+    if (metas[meta].alt) {
+      metas[meta].alt.forEach((code) => {
+        words.add(normalizeAlias(code))
       })
     }
   }

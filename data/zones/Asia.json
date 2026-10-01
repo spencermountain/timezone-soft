@@ -40,7 +40,6 @@
     "offset": 3,
     "hem": "n",
     "names": [
-      "eet",
       "irbid",
       "jo",
       "jor",
@@ -208,8 +207,6 @@
     "hem": "n",
     "dst": "leb",
     "names": [
-      "eet",
-      "europe eastern",
       "lb",
       "lbn",
       "ras bayrut"
@@ -286,7 +283,6 @@
       "aleppo",
       "ar raqqah",
       "deir ez zor",
-      "eet",
       "hamah",
       "homs",
       "latakia",
@@ -382,8 +378,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eet",
-      "europe eastern",
       "northern cyprus"
     ],
     "meta": "Eastern European",
@@ -394,7 +388,6 @@
     "hem": "n",
     "dst": "pal",
     "names": [
-      "eet",
       "gaza strip",
       "ps",
       "pse"
@@ -408,7 +401,6 @@
     "dst": "pal",
     "names": [
       "east jerusalem",
-      "eet",
       "west bank"
     ],
     "meta": "Eastern European",
@@ -1034,7 +1026,6 @@
     "names": [
       "beijing",
       "chongqing",
-      "cst",
       "mac",
       "mo",
       "urumqi"
@@ -1155,9 +1146,7 @@
     "dst": "eu3",
     "names": [
       "cy",
-      "cyp",
-      "eet",
-      "europe eastern"
+      "cyp"
     ],
     "meta": "Eastern European",
     "country": "cy"
@@ -1460,7 +1449,6 @@
       "chuzhou",
       "cixi",
       "cn",
-      "cst",
       "ct",
       "dadonghai",
       "dadukou",
@@ -1836,7 +1824,6 @@
     "hem": "n",
     "names": [
       "banqiao",
-      "cst",
       "hsinchu",
       "hualien",
       "kaohsiung",

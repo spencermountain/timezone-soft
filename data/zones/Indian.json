@@ -3,7 +3,6 @@
     "offset": 6,
     "hem": "n",
     "names": [
-      "indian",
       "indian chagos",
       "io",
       "iot"
@@ -17,9 +16,7 @@
     "names": [
       "cx",
       "cxr",
-      "cxt",
-      "indian"
-    ],
+      "cxt"],
     "meta": "Christmas Island",
     "country": "cx"
   },
@@ -30,9 +27,7 @@
       "cc",
       "cck",
       "cct",
-      "cocos island",
-      "indian"
-    ],
+      "cocos island"],
     "meta": "Cocos Islands",
     "country": "cc"
   },
@@ -45,7 +40,6 @@
       "french southern",
       "french southern and antarctic",
       "french southern and antarctic lands",
-      "indian",
       "kerguelenst paul island",
       "tf",
       "tft"
@@ -57,7 +51,6 @@
     "offset": 4,
     "hem": "n",
     "names": [
-      "indian",
       "sc",
       "sct",
       "syc"
@@ -69,7 +62,6 @@
     "offset": 5,
     "hem": "n",
     "names": [
-      "indian",
       "mdv",
       "mv",
       "mvt"
@@ -81,7 +73,6 @@
     "offset": 4,
     "hem": "n",
     "names": [
-      "indian",
       "mu",
       "mus",
       "mut",
@@ -94,7 +85,6 @@
     "offset": 4,
     "hem": "s",
     "names": [
-      "indian",
       "ret"
     ],
     "meta": "Réunion",

@@ -4,6 +4,5 @@ import soft from './src/index.js'
 // let zones = spacetime.timezones()
 // const arr = require('/Users/spencer/mountain/timezone-soft/data/05-metazones.js')
 
-// "st barthelemy","saint barthelemy"
-const result = soft('Al Ḩudaydah')
+const result = soft('eastern standard')
 console.log(result)

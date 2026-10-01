@@ -8,6 +8,19 @@ const replacements = [
   ['saint', 'st'],
   ['saint', ''],
   ['st', ''],
+  ['islands', ''],
+  ['island', ''],
+  ['isl', 'island'],
+  // west/east/south/north
+  ['west', 'western'],
+  ['east', 'eastern'],
+  ['south', 'southern'],
+  ['north', 'northern'],
+  ['western', 'west'],
+  ['eastern', 'east'],
+  ['southern', 'south'],
+  ['northern', 'north'],
+  // country-name cruft
   ['democratic', ''],
   ['socialist', ''],
   ['republic', ''],
@@ -18,8 +31,6 @@ const replacements = [
   ['islamic', ''],
   ['united', ''],
   ['kingdom', ''],
-  ['islands', ''],
-  ['island', ''],
   ['of', ''],
   ['the', ''],
 ]

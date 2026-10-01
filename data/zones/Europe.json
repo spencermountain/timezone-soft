@@ -38,7 +38,6 @@
       "almere stad",
       "amt",
       "cest",
-      "cet",
       "eindhoven",
       "europe central",
       "groningen",
@@ -56,12 +55,7 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": [
-      "ad",
-      "and",
-      "cest",
-      "cet",
-      "europe central"
+    "names": ["ad", "and"
     ],
     "meta": "Central European",
     "country": "ad"
@@ -83,7 +77,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eet",
       "europe eastern",
       "gr",
       "grc",
@@ -97,9 +90,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "cest",
-      "cet",
-      "europe central",
       "nis",
       "novi sad",
       "pristina",
@@ -120,10 +110,7 @@
       "be",
       "bel",
       "bmt",
-      "cest",
-      "cet",
       "charleroi",
-      "europe central",
       "gent",
       "liege"
     ],
@@ -140,7 +127,6 @@
       "cluj napoca",
       "constanta",
       "craiova",
-      "eet",
       "europe eastern",
       "galati",
       "iasi",
@@ -157,7 +143,7 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["buda", "cest", "cet", "debrecen", "europe central", "hu", "hun", "pest"],
+    "names": ["buda", "debrecen", "hu", "hun", "pest"],
     "meta": "Central European",
     "country": "hu"
   },
@@ -168,10 +154,8 @@
     "names": [
       "bavaria",
       "cest",
-      "cet",
       "de",
       "deu",
-      "europe central",
       "saxony"
     ],
     "meta": "Central European",
@@ -182,8 +166,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "eet",
-      "europe eastern",
       "md",
       "mda"
     ],
@@ -194,15 +176,7 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": [
-      "arhus",
-      "cest",
-      "cet",
-      "cmt",
-      "dk",
-      "dnk",
-      "europe central"
-    ],
+    "names": ["arhus", "cmt", "dk", "dnk"],
     "meta": "Central European",
     "country": "dk"
   },
@@ -237,9 +211,6 @@
     "names": [
       "bdst",
       "bst",
-      "cest",
-      "cet",
-      "europe central",
       "gi",
       "gib"
     ],
@@ -251,9 +222,7 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eet",
       "espoo",
-      "europe eastern",
       "fi",
       "fin",
       "tampere",
@@ -338,8 +307,7 @@
   "Europe/Kaliningrad": {
     "offset": 2,
     "hem": "n",
-    "names": [
-      "eet"
+    "names": ["sovetsk", "chernyakhovsk", "baltiysk"
     ],
     "meta": "Eastern European",
     "country": "ru"
@@ -355,8 +323,6 @@
       "chernivtsi",
       "dnipro",
       "donetsk",
-      "eet",
-      "europe eastern",
       "horlivka",
       "ivano frankivsk",
       "kamyanske",
@@ -507,9 +473,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "cest",
-      "cet",
-      "europe central",
       "lu",
       "lux"
     ],
@@ -532,14 +495,11 @@
       "burgos",
       "carabanchel",
       "castello de la plana",
-      "cest",
-      "cet",
       "ciudad lineal",
       "eixample",
       "elche",
       "es",
       "esp",
-      "europe central",
       "fuencarral el pardo",
       "fuenlabrada",
       "gasteiz/vitoria",
@@ -579,9 +539,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "cest",
-      "cet",
-      "europe central",
       "mlt",
       "mt"
     ],
@@ -612,9 +569,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "cest",
-      "cet",
-      "europe central",
       "mc",
       "mco"
     ],
@@ -705,9 +659,6 @@
     "dst": "eu2",
     "names": [
       "bergen",
-      "cest",
-      "cet",
-      "europe central",
       "sj",
       "sjm"
     ],
@@ -721,9 +672,6 @@
     "names": [
       "bordeaux",
       "cergy pontoise",
-      "cest",
-      "cet",
-      "europe central",
       "fr",
       "fra",
       "le havre",
@@ -753,8 +701,6 @@
     "names": [
       "brno",
       "cest",
-      "cet",
-      "europe central",
       "ostrava",
       "pmt",
       "sk",
@@ -769,10 +715,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "east europe",
-      "eest",
-      "eet",
-      "europe eastern",
       "kalt",
       "lst",
       "lv",
@@ -790,10 +732,7 @@
       "bologna",
       "brescia",
       "catania",
-      "cest",
-      "cet",
       "corsica",
-      "europe central",
       "florence",
       "genoa",
       "messina",
@@ -849,8 +788,6 @@
       "bg",
       "bgr",
       "burgas",
-      "eet",
-      "europe eastern",
       "imt",
       "plovdiv",
       "varna"
@@ -863,9 +800,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "cest",
-      "cet",
-      "europe central",
       "goeteborg",
       "malmoe",
       "se",
@@ -879,12 +813,7 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": [
-      "ee",
-      "eet",
-      "est",
-      "europe eastern"
-    ],
+    "names": ["tartu", "narva", "viljandi"],
     "meta": "Eastern European",
     "country": "ee"
   },
@@ -895,9 +824,6 @@
     "names": [
       "al",
       "alb",
-      "cest",
-      "cet",
-      "europe central",
       "tirana"
     ],
     "meta": "Central European",
@@ -920,8 +846,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eet",
-      "europe eastern",
       "ruthenia"
     ],
     "meta": "Eastern European",
@@ -934,10 +858,7 @@
     "names": [
       "at",
       "aut",
-      "cest",
-      "cet",
       "donaustadt",
-      "europe central",
       "favoriten",
       "graz",
       "linz"
@@ -950,8 +871,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eet",
-      "europe eastern",
       "kaunas",
       "klaipeda",
       "lt",
@@ -982,10 +901,7 @@
       "bielsko biala",
       "bydgoszcz",
       "bytom",
-      "cest",
-      "cet",
       "czestochowa",
-      "europe central",
       "gdansk",
       "gdynia",
       "gliwice",
@@ -1016,8 +932,6 @@
     "hem": "n",
     "dst": "eu3",
     "names": [
-      "eet",
-      "europe eastern",
       "luhansk",
       "luhansk east",
       "zaporizhia lugansk"
@@ -1030,9 +944,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "cest",
-      "cet",
-      "europe central",
       "geneve",
       "li",
       "lie",
