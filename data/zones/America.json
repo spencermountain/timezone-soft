@@ -48,7 +48,11 @@
   "America/Argentina/Buenos_Aires": {
     "offset": -3,
     "hem": "s",
-    "names": ["america/argentina", "ar", "arg", "mar del plata"
+    "names": [
+      "america/argentina",
+      "ar",
+      "arg",
+      "mar del plata"
     ],
     "meta": "Argentina",
     "country": "ar"
@@ -139,7 +143,8 @@
     "hem": "s",
     "names": [
       "arst",
-      "art"
+      "art",
+      "san miguel de tucuman"
     ],
     "meta": "Argentina",
     "country": "ar"
@@ -514,7 +519,7 @@
     "hem": "s",
     "names": [
       "amazon standard",
-      "amt", "cuiaba",
+      "amt",
       "mato grosso",
       "varzea grande"
     ],
@@ -1211,7 +1216,15 @@
   "America/Merida": {
     "offset": -5,
     "hem": "n",
-    "names": ["campeche", "campecheyucatan", "central mexican", "central standard", "cst", "tuxtla", "guadalajara"],
+    "names": [
+      "campeche",
+      "campecheyucatan",
+      "central mexican",
+      "central standard",
+      "cst",
+      "guadalajara",
+      "tuxtla"
+    ],
     "meta": "Central Mexico",
     "country": "mx"
   },

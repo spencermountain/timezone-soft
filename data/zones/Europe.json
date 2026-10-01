@@ -4,13 +4,20 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
+      "dortmund",
+      "dresden",
+      "duisburg",
       "dusseldorf",
+      "bremen",
       "essen",
       "frankfurt am main",
       "gothenburg",
       "hamburg",
+      "hannover",
       "koln",
+      "leipzig",
       "munich",
+      "nuremberg",
       "stuttgart"
     ],
     "meta": "Central European",
@@ -19,9 +26,7 @@
   "Europe/Simferopol": {
     "offset": 3,
     "hem": "n",
-    "names": [
-      "aqmescit"
-    ],
+    "names": ["aqmescit", "sevastopol", "yalta", "bakhchysarai"],
     "meta": "Moscow",
     "country": "ua"
   },
@@ -110,6 +115,7 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
+      "antwerp",
       "antwerpen",
       "be",
       "bel",
@@ -151,15 +157,7 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": [
-      "cest",
-      "cet",
-      "debrecen",
-      "europe central",
-      "hu",
-      "hun",
-      "pest"
-    ],
+    "names": ["buda", "cest", "cet", "debrecen", "europe central", "hu", "hun", "pest"],
     "meta": "Central European",
     "country": "hu"
   },
@@ -169,7 +167,6 @@
     "dst": "eu2",
     "names": [
       "bavaria",
-      "bremen",
       "cest",
       "cet",
       "de",
@@ -226,7 +223,6 @@
       "irl",
       "ist",
       "limerick",
-      "lisbon",
       "london",
       "tse",
       "waterford"
@@ -315,6 +311,7 @@
       "merkezefendi",
       "mersin",
       "muratpasa",
+      "nilufer",
       "osmaniye",
       "samsun",
       "sancaktepe",
@@ -331,6 +328,7 @@
       "tur",
       "ueskuedar",
       "umraniye",
+      "uskudar",
       "van",
       "zeytinburnu"
     ],
@@ -464,12 +462,12 @@
       "leicester",
       "leicestershire",
       "lincolnshire",
-      "lisbon",
       "liverpool",
       "luton",
       "manchester",
       "midlands",
       "milton keynes",
+      "newcastle",
       "newcastle upon tyne",
       "newport",
       "north yorkshire",
@@ -1022,7 +1020,6 @@
       "europe eastern",
       "luhansk",
       "luhansk east",
-      "sevastopol",
       "zaporizhia lugansk"
     ],
     "meta": "Eastern European",
