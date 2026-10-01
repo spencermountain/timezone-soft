@@ -1,7 +1,7 @@
 {
   "Indian/Chagos": {
     "offset": 6,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "indian chagos",
       "io",
@@ -22,7 +22,7 @@
   },
   "Indian/Cocos": {
     "offset": 6.5,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "cc",
       "cck",
@@ -49,7 +49,7 @@
   },
   "Indian/Mahe": {
     "offset": 4,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "sc",
       "sct",
@@ -71,7 +71,7 @@
   },
   "Indian/Mauritius": {
     "offset": 4,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "mu",
       "mus",

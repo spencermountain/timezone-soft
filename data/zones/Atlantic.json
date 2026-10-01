@@ -80,7 +80,7 @@
   },
   "Atlantic/South_Georgia": {
     "offset": -2,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "gs",
       "gst",

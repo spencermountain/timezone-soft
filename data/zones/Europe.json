@@ -64,10 +64,7 @@
     "offset": 4,
     "hem": "n",
     "names": [
-      "moscow",
-      "msk",
-      "russian",
-      "st petersburg"
+      "russian"
     ],
     "meta": "Astrakhan",
     "country": "ru"
@@ -824,10 +821,7 @@
     "offset": 4,
     "hem": "n",
     "names": [
-      "moscow",
-      "msk",
-      "russian",
-      "st petersburg"
+      "russian"
     ],
     "meta": "Ulyanovsk",
     "country": "ru"

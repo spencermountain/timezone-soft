@@ -75,7 +75,7 @@
   },
   "Pacific/Efate": {
     "offset": 11,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "vu",
       "vut"
@@ -85,7 +85,7 @@
   },
   "Pacific/Fakaofo": {
     "offset": 13,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "tk",
       "tkl",
@@ -107,7 +107,7 @@
   },
   "Pacific/Funafuti": {
     "offset": 12,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "tuv",
       "tv",
@@ -118,28 +118,28 @@
   },
   "Pacific/Galapagos": {
     "offset": -6,
-    "hem": "n",
+    "hem": "s",
     "names": [
-      "colombia",
-      "cost",
-      "cot",
-      "galapagos islands", "galt"
+      "galapagos islands",
+      "galt"
     ],
     "meta": "Galapagos",
     "country": "ec"
   },
   "Pacific/Gambier": {
     "offset": -9,
-    "hem": "n",
+    "hem": "s",
     "names": [
-      "gambier islands", "gamt"
+      "gambier islands",
+      "gamt",
+      "pyf"
     ],
     "meta": "Gambier",
     "country": "pf"
   },
   "Pacific/Guadalcanal": {
     "offset": 11,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "sb",
       "sbt",
@@ -173,7 +173,7 @@
   },
   "Pacific/Kanton": {
     "offset": 13,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "phot"
     ],
@@ -219,16 +219,18 @@
   },
   "Pacific/Marquesas": {
     "offset": -9.5,
-    "hem": "n",
+    "hem": "s",
     "names": [
-      "marquesas islands", "mart"
+      "marquesas islands",
+      "mart",
+      "pyf"
     ],
     "meta": "Marquesas",
     "country": "pf"
   },
   "Pacific/Nauru": {
     "offset": 12,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "nr",
       "nrt", "nru"
@@ -238,7 +240,7 @@
   },
   "Pacific/Niue": {
     "offset": -11,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "niu",
       "nu", "nut"
@@ -248,7 +250,7 @@
   },
   "Pacific/Norfolk": {
     "offset": 11.5,
-    "hem": "n",
+    "hem": "s",
     "dst": "aus",
     "names": [
       "nf",
@@ -260,7 +262,7 @@
   },
   "Pacific/Noumea": {
     "offset": 11,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "nc",
       "ncl", "nct"
@@ -270,7 +272,7 @@
   },
   "Pacific/Pago_Pago": {
     "offset": -11,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "midway",
       "sst"
@@ -291,7 +293,7 @@
   },
   "Pacific/Pitcairn": {
     "offset": -8,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "pcn",
       "pn",
@@ -304,11 +306,8 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      "french polynesia",
-      "pf",
       "pohnpei/ponape",
-      "pont",
-      "pyf"
+      "pont"
     ],
     "meta": "Ponape",
     "country": "fm"
@@ -328,7 +327,7 @@
   },
   "Pacific/Rarotonga": {
     "offset": -10,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "ck",
       "ckt",
@@ -339,8 +338,9 @@
   },
   "Pacific/Tahiti": {
     "offset": -10,
-    "hem": "n",
+    "hem": "s",
     "names": [
+      "pyf",
       "society islands",
       "taht"
     ],
@@ -380,7 +380,7 @@
   },
   "Pacific/Wallis": {
     "offset": 12,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "wf",
       "wft",

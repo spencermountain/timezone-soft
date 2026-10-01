@@ -17,7 +17,7 @@
   },
   "America/Araguaina": {
     "offset": -3,
-    "hem": "n",
+    "hem": "s",
     "names": ["east south america", "palmas", "tocantins"],
     "meta": "Brasilia",
     "country": "br"
@@ -115,7 +115,7 @@
   },
   "America/Bahia": {
     "offset": -3,
-    "hem": "n",
+    "hem": "s",
     "names": ["camacari", "east south america", "feira de santana", "itabuna", "salvador", "vitoria da conquista"],
     "meta": "Brasilia",
     "country": "br"
@@ -136,7 +136,7 @@
   },
   "America/Belem": {
     "offset": -3,
-    "hem": "n",
+    "hem": "s",
     "names": ["ananindeua", "macapa", "para east amapa", "parauapebas"],
     "meta": "Brasilia",
     "country": "br"
@@ -335,16 +335,7 @@
   "America/Chihuahua": {
     "offset": -6,
     "hem": "n",
-    "names": [
-      "hepmx",
-      "hnpmx",
-      "hpmx",
-      "mazatlan",
-      "mexican pacific",
-      "mexico pacific",
-      "mountain mexico",
-      "mountain standard mexico"
-    ],
+    "names": [],
     "meta": "Central Mexico",
     "country": "mx"
   },
@@ -405,11 +396,16 @@
     "names": [
       "albuquerque",
       "aurora",
+      "colorado",
       "colorado springs",
       "el paso",
+      "montana",
       "mst7mdt",
       "navajo",
-      "salt lake"
+      "new mexico",
+      "salt lake",
+      "utah",
+      "wyoming"
     ],
     "meta": "Mountain",
     "country": "us"
@@ -431,7 +427,7 @@
   },
   "America/Eirunepe": {
     "offset": -5,
-    "hem": "n",
+    "hem": "s",
     "names": ["acre standard", "act", "amazonas west"],
     "meta": "Acre",
     "country": "br"
@@ -502,7 +498,7 @@
   },
   "America/Guayaquil": {
     "offset": -5,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "cuenca",
       "ec",
@@ -767,7 +763,7 @@
   },
   "America/Maceio": {
     "offset": -3,
-    "hem": "n",
+    "hem": "s",
     "names": ["alagoassergipe", "aracaju", "brasilia"],
     "meta": "Brasilia",
     "country": "br"
@@ -806,9 +802,11 @@
     "hem": "n",
     "names": [
       "culiacan",
+      "hepmx",
       "hnpmx",
       "hpmx",
       "los mochis",
+      "mexican pacific",
       "mexico pacific",
       "mountain mexico",
       "mountain standard mexico",
@@ -1084,7 +1082,7 @@
   },
   "America/Noronha": {
     "offset": -2,
-    "hem": "n",
+    "hem": "s",
     "names": ["atlantic islands", "fernando de noronha standard", "fnt"],
     "meta": "Fernando de Noronha",
     "country": "br"
@@ -1157,27 +1155,20 @@
     "names": [
       "arizona",
       "chandler",
-      "colorado",
       "gilbert",
       "glendale",
-      "idaho",
       "maryvale",
       "mesa",
-      "montana",
       "mountain standard",
       "mst",
-      "mst7mdt",
       "mt",
       "mwt",
       "nayarit",
-      "new mexico",
       "scottsdale",
       "sinaloa",
       "sonora",
       "tempe",
-      "tucson",
-      "utah",
-      "wyoming"
+      "tucson"
     ],
     "meta": "Mountain",
     "country": "us"
@@ -1192,7 +1183,7 @@
   },
   "America/Porto_Velho": {
     "offset": -4,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "amazon standard",
       "amt",
@@ -1236,7 +1227,7 @@
   },
   "America/Recife": {
     "offset": -3,
-    "hem": "n",
+    "hem": "s",
     "names": ["caruaru", "jaboatao", "jaboatao dos guararapes", "olinda", "paulista", "pernambuco", "petrolina"],
     "meta": "Brasilia",
     "country": "br"
@@ -1265,7 +1256,7 @@
   },
   "America/Santarem": {
     "offset": -3,
-    "hem": "n",
+    "hem": "s",
     "names": ["para west"],
     "meta": "Brasilia",
     "country": "br"

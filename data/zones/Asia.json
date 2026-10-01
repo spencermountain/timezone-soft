@@ -960,7 +960,7 @@
   },
   "Asia/Kuala_Lumpur": {
     "offset": 8,
-    "hem": "s",
+    "hem": "n",
     "names": [
       "alor setar",
       "bukit mertajam",
@@ -1175,7 +1175,7 @@
   },
   "Asia/Pontianak": {
     "offset": 7,
-    "hem": "n",
+    "hem": "s",
     "names": [
       "borneo",
       "indonesia western",
@@ -1763,7 +1763,7 @@
   },
   "Asia/Singapore": {
     "offset": 8,
-    "hem": "s",
+    "hem": "n",
     "names": [
       "bukit rahman putra",
       "iskandar puteri",
