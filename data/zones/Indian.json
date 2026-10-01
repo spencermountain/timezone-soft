@@ -1,0 +1,99 @@
+{
+  "Indian/Chagos": {
+    "offset": 6,
+    "hem": "s",
+    "names": [
+      "indian chagos",
+      "io",
+      "iot"
+    ],
+    "meta": "Indian Ocean",
+    "country": "io"
+  },
+  "Indian/Christmas": {
+    "offset": 7,
+    "hem": "s",
+    "names": [
+      "cx",
+      "cxr",
+      "cxt"
+    ],
+    "meta": "Christmas Island",
+    "country": "cx"
+  },
+  "Indian/Cocos": {
+    "offset": 6.5,
+    "hem": "s",
+    "names": [
+      "cc",
+      "cck",
+      "cct",
+      "cocos island"
+    ],
+    "meta": "Cocos Islands",
+    "country": "cc"
+  },
+  "Indian/Kerguelen": {
+    "offset": 5,
+    "hem": "s",
+    "names": [
+      "amsterdam island",
+      "atf",
+      "french southern",
+      "french southern and antarctic",
+      "french southern and antarctic lands",
+      "heard and mcdonald islands",
+      "heard island",
+      "heard mcdonald",
+      "hm",
+      "kerguelenst paul island",
+      "tf",
+      "tft"
+    ],
+    "meta": "French Southern & Antarctic",
+    "country": "tf"
+  },
+  "Indian/Mahe": {
+    "offset": 4,
+    "hem": "s",
+    "names": [
+      "sc",
+      "sct",
+      "syc"
+    ],
+    "meta": "Seychelles",
+    "country": "sc"
+  },
+  "Indian/Maldives": {
+    "offset": 5,
+    "hem": "n",
+    "names": [
+      "mdv",
+      "mv",
+      "mvt"
+    ],
+    "meta": "Maldives",
+    "country": "mv"
+  },
+  "Indian/Mauritius": {
+    "offset": 4,
+    "hem": "s",
+    "names": [
+      "mu",
+      "mus",
+      "mut",
+      "port louis"
+    ],
+    "meta": "Mauritius",
+    "country": "mu"
+  },
+  "Indian/Reunion": {
+    "offset": 4,
+    "hem": "s",
+    "names": [
+      "ret"
+    ],
+    "meta": "Réunion",
+    "country": "re"
+  }
+}

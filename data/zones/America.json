@@ -1,0 +1,1934 @@
+{
+  "America/Adak": {
+    "offset": -9,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "aleutian islands",
+      "hdt",
+      "hst",
+      "nwt"
+    ],
+    "meta": "Aleutian",
+    "country": "us"
+  },
+  "America/Anchorage": {
+    "offset": -8,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "ahdt",
+      "ahst",
+      "alaskan"
+    ],
+    "meta": "Alaska",
+    "country": "us"
+  },
+  "America/Araguaina": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "east south america",
+      "palmas",
+      "tocantins"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Argentina/Buenos_Aires": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "america/argentina",
+      "ar",
+      "arg",
+      "avellaneda",
+      "mar del plata"
+    ],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Catamarca": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Cordoba": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "corrientes",
+      "posadas",
+      "santa fe"
+    ],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Jujuy": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/La_Rioja": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Mendoza": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Rio_Gallegos": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Salta": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/San_Juan": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/San_Luis": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Tucuman": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "san miguel de tucuman"
+    ],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Argentina/Ushuaia": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Argentina",
+    "country": "ar"
+  },
+  "America/Asuncion": {
+    "offset": -4,
+    "hem": "s",
+    "names": [
+      "capiata",
+      "ciudad del este",
+      "pry",
+      "py",
+      "pyst",
+      "pyt",
+      "san lorenzo"
+    ],
+    "meta": "Paraguay",
+    "country": "py"
+  },
+  "America/Bahia": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "camacari",
+      "east south america",
+      "feira de santana",
+      "itabuna",
+      "salvador",
+      "vitoria da conquista"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Bahia_Banderas": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "bahia de banderas",
+      "guadalajara",
+      "nayarit"
+    ],
+    "meta": "Central Mexico",
+    "country": "mx"
+  },
+  "America/Barbados": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "bb",
+      "brb"
+    ],
+    "meta": "Atlantic Standard",
+    "country": "bb"
+  },
+  "America/Belem": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "ananindeua",
+      "macapa",
+      "para east amapa",
+      "parauapebas"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Belize": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "blz",
+      "bz"
+    ],
+    "meta": "Central Standard",
+    "country": "bz"
+  },
+  "America/Boa_Vista": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "amazon standard",
+      "amt",
+      "central brazil",
+      "central brazilian",
+      "central brazilian standard",
+      "roraima"
+    ],
+    "meta": "Amazon",
+    "country": "br"
+  },
+  "America/Bogota": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "armenia",
+      "barrancabermeja",
+      "barranquilla",
+      "bello",
+      "bucaramanga",
+      "buenaventura",
+      "cali",
+      "cartagena",
+      "co",
+      "col",
+      "cost",
+      "cot",
+      "cucuta",
+      "dosquebradas",
+      "floridablanca",
+      "ibague",
+      "itaguei",
+      "kennedy",
+      "manizales",
+      "medellin",
+      "monteria",
+      "neiva",
+      "palmira",
+      "pasto",
+      "pereira",
+      "popayan",
+      "santa marta",
+      "sincelejo",
+      "soacha",
+      "soledad",
+      "valledupar",
+      "villavicencio"
+    ],
+    "meta": "Colombia",
+    "country": "co"
+  },
+  "America/Boise": {
+    "offset": -6,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "idaho",
+      "mountain id"
+    ],
+    "meta": "Mountain",
+    "country": "us"
+  },
+  "America/Cambridge_Bay": {
+    "offset": -6,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "mddt"
+    ],
+    "meta": "Mountain",
+    "country": "ca"
+  },
+  "America/Campo_Grande": {
+    "offset": -4,
+    "hem": "s",
+    "names": [
+      "amazon standard",
+      "amt",
+      "mato grosso do sul"
+    ],
+    "meta": "Amazon",
+    "country": "br"
+  },
+  "America/Cancun": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "quintana roo"
+    ],
+    "meta": "Eastern Standard",
+    "country": "mx"
+  },
+  "America/Caracas": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "alto barinas",
+      "barinas",
+      "barquisimeto",
+      "baruta",
+      "cabimas",
+      "ciudad bolivar",
+      "ciudad guayana",
+      "coro",
+      "cua",
+      "cumana",
+      "guarenas",
+      "guatire",
+      "maracaibo",
+      "maracay",
+      "maturin",
+      "mucumpiz",
+      "petare",
+      "puerto la cruz",
+      "san cristobal",
+      "santa teresa del tuy",
+      "turmero",
+      "valencia",
+      "valencia venezuela",
+      "ve",
+      "ven",
+      "venezuela standard",
+      "vet"
+    ],
+    "meta": "Venezuela",
+    "country": "ve"
+  },
+  "America/Cayenne": {
+    "offset": -3,
+    "hem": "n",
+    "names": [
+      "gf",
+      "gft",
+      "guf",
+      "guiana"
+    ],
+    "meta": "French Guiana",
+    "country": "gf"
+  },
+  "America/Chicago": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "alabama",
+      "amarillo",
+      "arkansas",
+      "arlington",
+      "austin",
+      "baton rouge",
+      "brownsville",
+      "corpus christi",
+      "cst6cdt",
+      "dallas",
+      "des moines",
+      "fort worth",
+      "garland",
+      "grand prairie",
+      "houston",
+      "huntsville",
+      "illinois",
+      "iowa",
+      "irving",
+      "kansas",
+      "laredo",
+      "lincoln",
+      "little rock",
+      "louisiana",
+      "lubbock",
+      "madison",
+      "memphis",
+      "milwaukee",
+      "minneapolis",
+      "minnesota",
+      "mississippi",
+      "missouri",
+      "mobile",
+      "montgomery",
+      "nashville",
+      "nebraska",
+      "new orleans",
+      "new south memphis",
+      "north dakota",
+      "oklahoma",
+      "omaha",
+      "overland park",
+      "plano",
+      "saint louis",
+      "saint paul",
+      "san antonio",
+      "shreveport",
+      "south dakota",
+      "st louis",
+      "st paul",
+      "tex",
+      "texas",
+      "tulsa",
+      "wichita",
+      "wisconsin"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/Chihuahua": {
+    "offset": -6,
+    "hem": "n",
+    "names": [],
+    "meta": "Central Mexico",
+    "country": "mx"
+  },
+  "America/Ciudad_Juarez": {
+    "offset": -7,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "juarez"
+    ],
+    "meta": "Mountain",
+    "country": "mx"
+  },
+  "America/Coyhaique": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "coihaique"
+    ],
+    "meta": "Aysen",
+    "country": "cl"
+  },
+  "America/Costa_Rica": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "cr",
+      "cri",
+      "sjmt"
+    ],
+    "meta": "Central Standard",
+    "country": "cr"
+  },
+  "America/Cuiaba": {
+    "offset": -4,
+    "hem": "s",
+    "names": [
+      "mato grosso",
+      "varzea grande"
+    ],
+    "meta": "Amazon",
+    "country": "br"
+  },
+  "America/Danmarkshavn": {
+    "offset": 0,
+    "hem": "n",
+    "names": [
+      "utc",
+      "zulu"
+    ],
+    "meta": "Greenwich",
+    "country": "gl"
+  },
+  "America/Dawson": {
+    "offset": -7,
+    "hem": "n",
+    "names": [
+      "mst",
+      "yddt",
+      "ydt",
+      "ypt",
+      "ywt"
+    ],
+    "meta": "Mountain Standard",
+    "country": "ca"
+  },
+  "America/Dawson_Creek": {
+    "offset": -7,
+    "hem": "n",
+    "names": [
+      "ppt",
+      "pwt"
+    ],
+    "meta": "British Columbia",
+    "country": "ca"
+  },
+  "America/Denver": {
+    "offset": -6,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "albuquerque",
+      "aurora",
+      "colorado",
+      "colorado springs",
+      "el paso",
+      "montana",
+      "mst7mdt",
+      "navajo",
+      "new mexico",
+      "salt lake",
+      "utah",
+      "wyoming"
+    ],
+    "meta": "Mountain",
+    "country": "us"
+  },
+  "America/Detroit": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "eastern mi",
+      "ept",
+      "ewt",
+      "grand rapids"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Edmonton": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "alberta",
+      "ca mountain",
+      "calgary",
+      "northwest territories"
+    ],
+    "meta": "Alberta and Northwest Territories",
+    "country": "ca"
+  },
+  "America/Eirunepe": {
+    "offset": -5,
+    "hem": "s",
+    "names": [
+      "acre standard",
+      "act",
+      "amazonas west"
+    ],
+    "meta": "Acre",
+    "country": "br"
+  },
+  "America/El_Salvador": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "san salvador",
+      "slv",
+      "soyapango",
+      "sv"
+    ],
+    "meta": "Central Standard",
+    "country": "sv"
+  },
+  "America/Fort_Nelson": {
+    "offset": -7,
+    "hem": "n",
+    "names": [],
+    "meta": "British Columbia",
+    "country": "ca"
+  },
+  "America/Fortaleza": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "campina grande",
+      "caucaia",
+      "imperatriz",
+      "joao pessoa",
+      "juazeiro do norte",
+      "mapicernpb",
+      "maracanau",
+      "mossoro",
+      "natal",
+      "sao luis",
+      "teresina"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Glace_Bay": {
+    "offset": -3,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "cape breton"
+    ],
+    "meta": "Atlantic",
+    "country": "ca"
+  },
+  "America/Goose_Bay": {
+    "offset": -3,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "labrador",
+      "npt"
+    ],
+    "meta": "Atlantic",
+    "country": "ca"
+  },
+  "America/Grand_Turk": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "kmt",
+      "tc",
+      "tca",
+      "turks and caicos"
+    ],
+    "meta": "Eastern",
+    "country": "tc"
+  },
+  "America/Guatemala": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "gt",
+      "gtm",
+      "mixco",
+      "villa nueva"
+    ],
+    "meta": "Central Standard",
+    "country": "gt"
+  },
+  "America/Guayaquil": {
+    "offset": -5,
+    "hem": "s",
+    "names": [
+      "ambato",
+      "cuenca",
+      "ec",
+      "ect",
+      "ecu",
+      "ecuador mainland",
+      "eloy alfaro",
+      "machala",
+      "manta",
+      "portoviejo",
+      "qmt",
+      "quito",
+      "santo domingo de los colorados"
+    ],
+    "meta": "Ecuador",
+    "country": "ec"
+  },
+  "America/Guyana": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "georgetown",
+      "guy",
+      "gy",
+      "gyt"
+    ],
+    "meta": "Guyana",
+    "country": "gy"
+  },
+  "America/Halifax": {
+    "offset": -3,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "ca",
+      "new brunswick",
+      "nova scotia",
+      "pei",
+      "prince edward island"
+    ],
+    "meta": "Atlantic",
+    "country": "ca"
+  },
+  "America/Havana": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "cuba",
+    "names": [
+      "arroyo naranjo",
+      "bayamo",
+      "boyeros",
+      "camaguey",
+      "cienfuegos",
+      "ciudad camilo cienfuegos",
+      "cu",
+      "cub",
+      "diez de octubre",
+      "guantanamo",
+      "hcu",
+      "hecu",
+      "hncu",
+      "holguin",
+      "las tunas",
+      "pinar del rio",
+      "santa clara",
+      "santiago de cuba"
+    ],
+    "meta": "Cuba",
+    "country": "cu"
+  },
+  "America/Hermosillo": {
+    "offset": -7,
+    "hem": "n",
+    "names": [
+      "ciudad obregon",
+      "hnpmx",
+      "nogales",
+      "sonora"
+    ],
+    "meta": "Mexican Pacific",
+    "country": "mx"
+  },
+  "America/Indiana/Indianapolis": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "america/indiana",
+      "crawford",
+      "dadukmn",
+      "eastern in",
+      "indiana",
+      "perry",
+      "pike",
+      "pulaski",
+      "starke"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Indiana/Knox": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/Indiana/Marengo": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Indiana/Petersburg": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Indiana/Tell_City": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/Indiana/Vevay": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Indiana/Vincennes": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Indiana/Winamac": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "indiana"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Inuvik": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "northwest territories",
+      "pddt"
+    ],
+    "meta": "Alberta and Northwest Territories",
+    "country": "ca"
+  },
+  "America/Iqaluit": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "eddt"
+    ],
+    "meta": "Eastern",
+    "country": "ca"
+  },
+  "America/Jamaica": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "jam",
+      "jm",
+      "kingston",
+      "new kingston"
+    ],
+    "meta": "Eastern Standard",
+    "country": "jm"
+  },
+  "America/Juneau": {
+    "offset": -8,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Alaska",
+    "country": "us"
+  },
+  "America/Kentucky/Louisville": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "america/kentucky",
+      "eastern ky",
+      "kentucky",
+      "wayne"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Kentucky/Monticello": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "kentucky"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/La_Paz": {
+    "offset": -4,
+    "hem": "s",
+    "names": [
+      "bo",
+      "bol",
+      "bot",
+      "cochabamba",
+      "oruro",
+      "santa cruz de la sierra",
+      "sucre"
+    ],
+    "meta": "Bolivia",
+    "country": "bo"
+  },
+  "America/Lima": {
+    "offset": -5,
+    "hem": "s",
+    "names": [
+      "arequipa",
+      "callao",
+      "chiclayo",
+      "chimbote",
+      "cusco",
+      "huancayo",
+      "ica",
+      "iquitos",
+      "juliaca",
+      "pe",
+      "per",
+      "pet",
+      "piura",
+      "pucallpa",
+      "santa anita los ficus",
+      "santiago de surco",
+      "tacna",
+      "trujillo"
+    ],
+    "meta": "Peru",
+    "country": "pe"
+  },
+  "America/Los_Angeles": {
+    "offset": -7,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "america pacific",
+      "anaheim",
+      "baja california",
+      "bakersfield",
+      "california",
+      "chula vista",
+      "fontana",
+      "fremont",
+      "fresno",
+      "garden grove",
+      "henderson",
+      "huntington beach",
+      "irvine",
+      "la",
+      "las vegas",
+      "long beach",
+      "modesto",
+      "moreno valley",
+      "nevada",
+      "north las vegas",
+      "oakland",
+      "oceanside",
+      "oregon",
+      "oxnard",
+      "paradise",
+      "portland",
+      "pst8pdt",
+      "rancho cucamonga",
+      "reno",
+      "riverside",
+      "sacramento",
+      "san bernardino",
+      "san diego",
+      "san fran",
+      "san francisco",
+      "san jose",
+      "santa ana",
+      "santa clarita",
+      "seattle",
+      "sf",
+      "spokane",
+      "spring valley",
+      "stockton",
+      "sunrise manor",
+      "tacoma",
+      "washington state"
+    ],
+    "meta": "Pacific",
+    "country": "us"
+  },
+  "America/Maceio": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "alagoassergipe",
+      "aracaju"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Managua": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "ni",
+      "nic"
+    ],
+    "meta": "Central Standard",
+    "country": "ni"
+  },
+  "America/Manaus": {
+    "offset": -4,
+    "hem": "s",
+    "names": [
+      "amazonas east",
+      "central brazil",
+      "central brazilian"
+    ],
+    "meta": "Amazon",
+    "country": "br"
+  },
+  "America/Martinique": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "ffmt",
+      "fort de france",
+      "french martinique",
+      "mq",
+      "mtq"
+    ],
+    "meta": "Atlantic Standard",
+    "country": "mq"
+  },
+  "America/Matamoros": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "heroica matamoros",
+      "nuevo laredo",
+      "reynosa"
+    ],
+    "meta": "Central",
+    "country": "mx"
+  },
+  "America/Mazatlan": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "culiacan",
+      "hepmx",
+      "hnpmx",
+      "hpmx",
+      "los mochis",
+      "mexico pacific",
+      "mountain mexico",
+      "mountain standard mexico",
+      "nayarit",
+      "sinaloa",
+      "tepic"
+    ],
+    "meta": "Mexican Pacific",
+    "country": "mx"
+  },
+  "America/Menominee": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "wisconsin"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/Merida": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "campeche",
+      "campecheyucatan",
+      "guadalajara",
+      "tapachula",
+      "tuxtla",
+      "villahermosa"
+    ],
+    "meta": "Central Mexico",
+    "country": "mx"
+  },
+  "America/Metlakatla": {
+    "offset": -8,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "alaska annette island"
+    ],
+    "meta": "Alaska",
+    "country": "us"
+  },
+  "America/Mexico_City": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "acapulco de juarez",
+      "aguascalientes",
+      "alvaro obregon",
+      "azcapotzalco",
+      "benito juarez",
+      "buenavista",
+      "campeche",
+      "celaya",
+      "chiapas",
+      "chilpancingo",
+      "ciudad lopez mateos",
+      "ciudad nezahualcoyotl",
+      "coacalco",
+      "coahuila",
+      "coatzacoalcos",
+      "colima",
+      "colonia del valle",
+      "coyoacan",
+      "cuauhtemoc",
+      "cuautitlan izcalli",
+      "cuernavaca",
+      "cwt",
+      "durango",
+      "ecatepec de morelos",
+      "guadalajara",
+      "guanajuato",
+      "guerrero",
+      "gustavo adolfo madero",
+      "hidalgo",
+      "irapuato",
+      "ixtapaluca",
+      "iztacalco",
+      "iztapalapa",
+      "jalisco",
+      "leon de los aldama",
+      "magdalena contreras",
+      "mex",
+      "michoacan",
+      "miguel hidalgo",
+      "morelia",
+      "morelos",
+      "mx",
+      "naucalpan de juarez",
+      "nicolas romero",
+      "nuevo leon",
+      "oaxaca",
+      "ojo de agua",
+      "pachuca de soto",
+      "poza rica de hidalgo",
+      "puebla",
+      "puerto vallarta",
+      "queretaro",
+      "san luis potosi",
+      "santa maria chimalhuacan",
+      "santiago de queretaro",
+      "soledad de graciano sanchez",
+      "tabasco",
+      "tamaulipas",
+      "tehuacan",
+      "tlahuac",
+      "tlalnepantla",
+      "tlalpan",
+      "tlaquepaque",
+      "tlaxcala",
+      "toluca",
+      "tonala",
+      "uruapan",
+      "venustiano carranza",
+      "veracruz",
+      "xalapa de enriquez",
+      "xico",
+      "xochimilco",
+      "yucatan",
+      "zacatecas",
+      "zapopan"
+    ],
+    "meta": "Central Mexico",
+    "country": "mx"
+  },
+  "America/Miquelon": {
+    "offset": -2,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "hnpm",
+      "hpm",
+      "pierre miquelon",
+      "pm",
+      "saint pierre",
+      "saint pierre and miquelon",
+      "spm"
+    ],
+    "meta": "St. Pierre & Miquelon",
+    "country": "pm"
+  },
+  "America/Moncton": {
+    "offset": -3,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "hepm",
+      "new brunswick"
+    ],
+    "meta": "Atlantic",
+    "country": "ca"
+  },
+  "America/Monterrey": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "ciudad apodaca",
+      "ciudad benito juarez",
+      "ciudad general escobedo",
+      "ciudad madero",
+      "ciudad victoria",
+      "gomez palacio",
+      "guadalajara",
+      "guadalupe",
+      "monclova",
+      "saltillo",
+      "san nicolas de los garza",
+      "santa catarina",
+      "tampico",
+      "torreon",
+      "victoria de durango"
+    ],
+    "meta": "Central Mexico",
+    "country": "mx"
+  },
+  "America/Montevideo": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "montevideo standard",
+      "uruguay standard",
+      "ury",
+      "uy",
+      "uyst",
+      "uyt"
+    ],
+    "meta": "Uruguay",
+    "country": "uy"
+  },
+  "America/New_York": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "akron",
+      "atlanta",
+      "baltimore",
+      "boston",
+      "brooklyn",
+      "buffalo",
+      "cape coral",
+      "charlotte",
+      "chattanooga",
+      "chesapeake",
+      "cincinnati",
+      "cleveland",
+      "columbus",
+      "connecticut",
+      "delaware",
+      "durham",
+      "east flatbush",
+      "est5edt",
+      "fayetteville",
+      "fl",
+      "florida",
+      "fort lauderdale",
+      "georgia",
+      "greensboro",
+      "hialeah",
+      "ironville",
+      "jacksonville",
+      "jersey",
+      "kentucky",
+      "knoxville",
+      "lexington",
+      "lexington fayette",
+      "maine",
+      "manhattan",
+      "maryland",
+      "massachusetts",
+      "meads",
+      "miami",
+      "michigan",
+      "new hampshire",
+      "new jersey",
+      "new york state",
+      "newark",
+      "newport news",
+      "norfolk",
+      "north carolina",
+      "ny",
+      "nyc",
+      "ohio",
+      "orlando",
+      "pennsylvania",
+      "philadelphia",
+      "pittsburgh",
+      "providence",
+      "queens",
+      "quintana roo",
+      "raleigh",
+      "rhode island",
+      "richmond",
+      "rochester",
+      "south boston",
+      "south carolina",
+      "staten island",
+      "tallahassee",
+      "tampa",
+      "tennessee",
+      "the bronx",
+      "toledo",
+      "vermont",
+      "virginia",
+      "virginia beach",
+      "washington",
+      "washington dc",
+      "west raleigh",
+      "west virginia",
+      "winston salem",
+      "worcester",
+      "yonkers"
+    ],
+    "meta": "Eastern",
+    "country": "us"
+  },
+  "America/Nipigon": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Eastern",
+    "country": "ca"
+  },
+  "America/Nome": {
+    "offset": -8,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "alaska west",
+      "west alaskan"
+    ],
+    "meta": "Alaska",
+    "country": "us"
+  },
+  "America/Noronha": {
+    "offset": -2,
+    "hem": "s",
+    "names": [
+      "atlantic islands",
+      "fernando de noronha standard",
+      "fnt"
+    ],
+    "meta": "Fernando de Noronha",
+    "country": "br"
+  },
+  "America/North_Dakota/Beulah": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "north dakota"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/North_Dakota/Center": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "mercer",
+      "north dakota",
+      "oliver"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/North_Dakota/New_Salem": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "north dakota"
+    ],
+    "meta": "Central",
+    "country": "us"
+  },
+  "America/Nuuk": {
+    "offset": -2,
+    "hem": "n",
+    "dst": "green",
+    "names": [
+      "gl",
+      "grl",
+      "wgst",
+      "wgt"
+    ],
+    "meta": "West Greenland",
+    "country": "gl"
+  },
+  "America/Ojinaga": {
+    "offset": -6,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Central",
+    "country": "mx"
+  },
+  "America/Panama": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "atikokan",
+      "pa",
+      "pan",
+      "san miguelito"
+    ],
+    "meta": "Eastern Standard",
+    "country": "pa"
+  },
+  "America/Pangnirtung": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "addt",
+      "baffin island",
+      "nunavit"
+    ],
+    "meta": "Eastern",
+    "country": "ca"
+  },
+  "America/Paramaribo": {
+    "offset": -3,
+    "hem": "n",
+    "names": [
+      "sr",
+      "srt",
+      "sur"
+    ],
+    "meta": "Suriname",
+    "country": "sr"
+  },
+  "America/Phoenix": {
+    "offset": -7,
+    "hem": "n",
+    "names": [
+      "arizona",
+      "chandler",
+      "gilbert",
+      "glendale",
+      "maryvale",
+      "mesa",
+      "mst",
+      "mt",
+      "mwt",
+      "scottsdale",
+      "tempe",
+      "tucson"
+    ],
+    "meta": "Mountain Standard",
+    "country": "us"
+  },
+  "America/Port-au-Prince": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "carrefour",
+      "croix des bouquets",
+      "delmas",
+      "ht",
+      "hti",
+      "petionville",
+      "port de paix"
+    ],
+    "meta": "Eastern",
+    "country": "ht"
+  },
+  "America/Porto_Velho": {
+    "offset": -4,
+    "hem": "s",
+    "names": [
+      "amazon standard",
+      "amt",
+      "central brazil",
+      "central brazilian",
+      "central brazilian standard",
+      "rondonia"
+    ],
+    "meta": "Amazon",
+    "country": "br"
+  },
+  "America/Puerto_Rico": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "ag",
+      "antigua barbuda",
+      "bayamon",
+      "bq",
+      "british virgin islands",
+      "caribbean netherlands",
+      "caribbean nl",
+      "dutch sint maarten",
+      "dutch st maarten",
+      "kn",
+      "nevis",
+      "pr",
+      "pri",
+      "saint maarten",
+      "sint maarten",
+      "st kitts",
+      "st kitts nevis",
+      "st maarten",
+      "sx",
+      "tobago",
+      "trinidad",
+      "trinidad tobago",
+      "tt",
+      "uk virgin islands",
+      "united states virgin islands",
+      "us virgin islands",
+      "vg",
+      "vi",
+      "virgin islands"
+    ],
+    "meta": "Atlantic Standard",
+    "country": "pr"
+  },
+  "America/Punta_Arenas": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "chile standard",
+      "clt",
+      "region of magallanes"
+    ],
+    "meta": "Magallanes",
+    "country": "cl"
+  },
+  "America/Rainy_River": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "ft frances"
+    ],
+    "meta": "Manitoba",
+    "country": "ca"
+  },
+  "America/Rankin_Inlet": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "cddt",
+      "ct"
+    ],
+    "meta": "Central",
+    "country": "ca"
+  },
+  "America/Recife": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "caruaru",
+      "jaboatao",
+      "jaboatao dos guararapes",
+      "olinda",
+      "paulista",
+      "pernambuco",
+      "petrolina"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Regina": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "saskatchewan",
+      "saskatoon",
+      "sk"
+    ],
+    "meta": "Central Standard",
+    "country": "ca"
+  },
+  "America/Resolute": {
+    "offset": -5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Central",
+    "country": "ca"
+  },
+  "America/Rio_Branco": {
+    "offset": -5,
+    "hem": "s",
+    "names": [
+      "acre standard",
+      "act"
+    ],
+    "meta": "Acre",
+    "country": "br"
+  },
+  "America/Santarem": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "para west"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Santiago": {
+    "offset": -4,
+    "hem": "s",
+    "dst": "chile",
+    "names": [
+      "antofagasta",
+      "arica",
+      "chile standard",
+      "chl",
+      "cl",
+      "clst",
+      "clt",
+      "concepcion",
+      "iquique",
+      "la pintana",
+      "maipu",
+      "puente alto",
+      "rancagua",
+      "san bernardo",
+      "talca",
+      "talcahuano",
+      "temuco",
+      "valparaiso",
+      "vina del mar"
+    ],
+    "meta": "Chile",
+    "country": "cl"
+  },
+  "America/Santo_Domingo": {
+    "offset": -4,
+    "hem": "n",
+    "names": [
+      "bella vista",
+      "do",
+      "dom",
+      "la romana",
+      "san pedro de macoris",
+      "santiago de los caballeros",
+      "santo domingo este",
+      "santo domingo oeste",
+      "sdmt"
+    ],
+    "meta": "Atlantic Standard",
+    "country": "do"
+  },
+  "America/Sao_Paulo": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "alvorada",
+      "americana",
+      "anapolis",
+      "aparecida de goiania",
+      "barra da tijuca",
+      "barueri",
+      "bauru",
+      "belford roxo",
+      "belo horizonte",
+      "betim",
+      "blumenau",
+      "bra",
+      "cachoeiro de itapemirim",
+      "campinas",
+      "campos dos goytacazes",
+      "canoas",
+      "carapicuiba",
+      "cariacica",
+      "cascavel",
+      "caxias do sul",
+      "contagem",
+      "cotia",
+      "curitiba",
+      "diadema",
+      "divinopolis",
+      "duque de caxias",
+      "embu",
+      "florianopolis",
+      "foz do iguacu",
+      "franca",
+      "goiania",
+      "governador valadares",
+      "grajau",
+      "gravatai",
+      "guaruja",
+      "guarulhos",
+      "hortolandia",
+      "indaiatuba",
+      "ipatinga",
+      "itaborai",
+      "itapevi",
+      "itaquaquecetuba",
+      "jacarei",
+      "jardim angela",
+      "joinville",
+      "juiz de fora",
+      "jundiai",
+      "limeira",
+      "londrina",
+      "marilia",
+      "maringa",
+      "maua",
+      "mogi das cruzes",
+      "montes claros",
+      "niteroi",
+      "nova iguacu",
+      "novo hamburgo",
+      "osasco",
+      "passo fundo",
+      "pelotas",
+      "petropolis",
+      "piracicaba",
+      "planaltina",
+      "ponta grossa",
+      "porto alegre",
+      "praia grande",
+      "presidente prudente",
+      "ribeirao das neves",
+      "ribeirao preto",
+      "rio",
+      "rio claro",
+      "rio de janeiro",
+      "rio grande",
+      "rio verde",
+      "santa barbara doeste",
+      "santa luzia",
+      "santa maria",
+      "santo andre",
+      "santos",
+      "sao bernardo do campo",
+      "sao carlos",
+      "sao joao de meriti",
+      "sao jose",
+      "sao jose do rio preto",
+      "sao jose dos campos",
+      "sao jose dos pinhais",
+      "sao leopoldo",
+      "sao vicente",
+      "serra",
+      "sete lagoas",
+      "sorocaba",
+      "sumare",
+      "suzano",
+      "taboao da serra",
+      "taubate",
+      "uberaba",
+      "uberlandia",
+      "viamao",
+      "vila velha",
+      "vitoria",
+      "volta redonda"
+    ],
+    "meta": "Brasilia",
+    "country": "br"
+  },
+  "America/Scoresbysund": {
+    "offset": 0,
+    "hem": "n",
+    "dst": "green",
+    "names": [
+      "east greenland standard",
+      "egst",
+      "egt",
+      "greenland eastern",
+      "heeg",
+      "heg",
+      "hneg",
+      "ittoqqortoormiit"
+    ],
+    "meta": "East Greenland",
+    "country": "gl"
+  },
+  "America/Sitka": {
+    "offset": -8,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Alaska",
+    "country": "us"
+  },
+  "America/St_Johns": {
+    "offset": -2.5,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "hetn",
+      "hntn",
+      "htn",
+      "nddt",
+      "ndt",
+      "newfoundland labrador",
+      "newfoundland standard",
+      "nst",
+      "nt"
+    ],
+    "meta": "Newfoundland",
+    "country": "ca"
+  },
+  "America/Swift_Current": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "saskatchewan"
+    ],
+    "meta": "Central Standard",
+    "country": "ca"
+  },
+  "America/Tegucigalpa": {
+    "offset": -6,
+    "hem": "n",
+    "names": [
+      "hn",
+      "hnd",
+      "san pedro sula"
+    ],
+    "meta": "Central Standard",
+    "country": "hn"
+  },
+  "America/Thule": {
+    "offset": -3,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "pituffik"
+    ],
+    "meta": "Atlantic",
+    "country": "gl"
+  },
+  "America/Thunder_Bay": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Eastern",
+    "country": "ca"
+  },
+  "America/Tijuana": {
+    "offset": -7,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "america pacific",
+      "baja california",
+      "ensenada",
+      "henomx",
+      "hnnomx",
+      "mexicali"
+    ],
+    "meta": "Pacific",
+    "country": "mx"
+  },
+  "America/Toronto": {
+    "offset": -4,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "bahamas",
+      "barrie",
+      "brampton",
+      "bs",
+      "ca",
+      "can",
+      "etobicoke",
+      "gatineau",
+      "hamilton",
+      "kitchener",
+      "laval",
+      "london on",
+      "london ontario",
+      "longueuil",
+      "markham",
+      "mississauga",
+      "montreal",
+      "nepean",
+      "ont",
+      "ontario",
+      "oshawa",
+      "ottawa",
+      "quebec",
+      "richmond hill",
+      "vaughan",
+      "windsor"
+    ],
+    "meta": "Eastern",
+    "country": "ca"
+  },
+  "America/Vancouver": {
+    "offset": -7,
+    "hem": "n",
+    "names": [
+      "america pacific",
+      "burnaby",
+      "ca",
+      "ladner",
+      "okanagan",
+      "pacific bc",
+      "surrey",
+      "victoria",
+      "yukon"
+    ],
+    "meta": "British Columbia",
+    "country": "ca"
+  },
+  "America/Whitehorse": {
+    "offset": -7,
+    "hem": "n",
+    "names": [
+      "mst",
+      "yst"
+    ],
+    "meta": "Mountain Standard",
+    "country": "ca"
+  },
+  "America/Winnipeg": {
+    "offset": -5,
+    "hem": "n",
+    "names": [
+      "west manitoba"
+    ],
+    "meta": "Manitoba",
+    "country": "ca"
+  },
+  "America/Yakutat": {
+    "offset": -8,
+    "hem": "n",
+    "dst": "usa",
+    "names": [],
+    "meta": "Alaska",
+    "country": "us"
+  },
+  "America/Yellowknife": {
+    "offset": -6,
+    "hem": "n",
+    "names": [],
+    "meta": "Alberta and Northwest Territories",
+    "country": "ca"
+  }
+}

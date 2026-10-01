@@ -1,21 +1,25 @@
 import { unpack } from 'efrt'
-import dstPatterns from '../../data/dst-patterns.js'
-import pcked from '../generated/zones.js'
-import misc from '../../data/aliases.js'
+import dstPatterns from '../_generated/dst-patterns.js'
+import pcked, { shared } from '../_generated/zones.js'
 import addUTC from './add-utc.js'
-import identifiers from '../../data/iana-identifiers.js'
-import normalize from '../find/normalize.js'
+import identifiers from '../_generated/iana-identifiers.js'
+import { foldDiacritics, normalizeAlias } from '../find/_lib/normalize.js'
+
+// Decode each shared list once; complete alias counts preserve result ranking.
+const sharedAliases = Object.fromEntries(
+  Object.entries(shared).map(([meta, words]) => [meta, Object.keys(unpack(words))])
+)
 
 // unpack our lexicon of words
 const zones = {}
-const lexicon = Object.assign({}, misc)
-Object.keys(pcked).forEach(top => {
-  Object.keys(pcked[top]).forEach(name => {
+const lexicon = {}
+Object.keys(pcked).forEach((top) => {
+  Object.keys(pcked[top]).forEach((name) => {
     const [words, meta, dst] = pcked[top][name]
     const id = `${top}/${name}`
     zones[id] = { meta }
-    const keys = Object.keys(unpack(words))
-    keys.forEach(k => {
+    const keys = [...Object.keys(unpack(words)), ...(sharedAliases[meta] || [])]
+    keys.forEach((k) => {
       lexicon[k] = lexicon[k] || []
       lexicon[k].push(id)
       // use iana aliases
@@ -36,7 +40,22 @@ Object.keys(pcked).forEach(top => {
 addUTC(zones)
 
 const canonicalIds = Object.fromEntries(Object.entries(identifiers).map(([id, target]) => [id.toLowerCase(), target]))
-const canonicalize = id => canonicalIds[id.toLowerCase()] || id
+const canonicalize = (id) => canonicalIds[id.toLowerCase()] || id
+
+// Derive city spellings from IANA IDs instead of storing IDs in zone names.
+Object.entries(identifiers).forEach(([id, target]) => {
+  if (!id.includes('/') || id.startsWith('Etc/') || !Object.hasOwn(zones, target)) {
+    return
+  }
+  const name = id.split('/').pop().toLowerCase()
+  const names = new Set([name, normalizeAlias(name)])
+  names.forEach(alias => {
+    if (alias) {
+      lexicon[alias] = lexicon[alias] || []
+      lexicon[alias].push(target)
+    }
+  })
+})
 
 const unique = function (arr) {
   const obj = {}
@@ -47,7 +66,7 @@ const unique = function (arr) {
 }
 
 // sort by num of aliases
-Object.keys(lexicon).forEach(k => {
+Object.keys(lexicon).forEach((k) => {
   if (lexicon[k].length > 1) {
     lexicon[k] = unique(lexicon[k])
     lexicon[k] = lexicon[k].sort((a, b) => {
@@ -60,12 +79,11 @@ Object.keys(lexicon).forEach(k => {
     })
   }
 })
-// Only accented aliases need a second index; ordinary lookups keep their ranking.
-const foldedLexicon = {}
-for (const [alias, ids] of Object.entries(lexicon)) {
-  const folded = normalize.fold(alias)
-  if (folded === alias) continue
-  foldedLexicon[folded] = [...new Set([...(foldedLexicon[folded] || []), ...ids])]
-    .sort((a, b) => zones[b].wordCount - zones[a].wordCount)
-}
-export { zones, lexicon, foldedLexicon, canonicalIds, canonicalize }
+// Add accent-free spellings without replacing existing aliases or their ranking.
+Object.entries(lexicon).forEach(([alias, ids]) => {
+  const folded = foldDiacritics(alias)
+  if (!Object.hasOwn(lexicon, folded)) {
+    lexicon[folded] = [...ids]
+  }
+})
+export { zones, lexicon, canonicalIds, canonicalize }

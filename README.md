@@ -84,7 +84,7 @@ Abbreviations can describe several places. For example:
 
 ```js
 soft('IST').map(zone => zone.iana)
-// ['Asia/Kolkata', 'Europe/Dublin', 'Asia/Jerusalem', 'Asia/Colombo']
+// ['Asia/Kolkata', 'Asia/Jerusalem', 'Europe/Dublin', 'Asia/Colombo']
 ```
 
 Explicit IANA IDs containing `/` are resolved case-insensitively through the pinned
@@ -107,6 +107,27 @@ or a confidence score; adding aliases can change the preferred result.
 Show all candidates when ambiguity matters, or ask for a city or IANA ID. The
 library does not use the user's location to choose a result. Regression fixtures
 cover the ordering of `CST`, `IST`, and `BST`.
+
+## Combined lookup strings
+
+When the whole string does not match, commas and parentheses split it into
+additional lookups using the existing aliases:
+
+```js
+soft('Springfield, Missouri')[0].iana // 'America/Chicago' (matches Missouri)
+soft('Springfield (Missouri)')[0].iana // 'America/Chicago'
+soft('Toronto, Ontario, Canada')[0].iana // 'America/Toronto'
+soft('CST China')[0].iana // 'Asia/Shanghai'
+```
+
+Recognized parts are intersected, preserving the first part's result order.
+Unknown comma-separated or parenthesized parts are ignored; conflicting known
+parts return `[]`. Without punctuation, both sides of a word-boundary split must
+match, so `Springfield Missouri` still returns `[]` while `CST China` resolves.
+
+These are alias fallbacks, not geographic validation. No additional city/country
+dataset is stored: the Springfield examples resolve through `Missouri`, not through
+a Springfield city record. Existing whole-string matches take precedence.
 
 ## UTC and GMT offsets
 
@@ -188,6 +209,11 @@ if (zone) {
 
 ### See also
 
+- [city-timezones](https://github.com/kevinroberts/city-timezones) — find IANA timezones by city, state, or country.
+- [@vvo/tzdb](https://github.com/vvo/tzdb) — timezone data with friendly names and major cities for timezone selectors.
+- [@coroboros/location-timezone](https://github.com/elysiumphase/node-location-timezone) — timezone lookups by city, country, or capital.
+- [chrono-node](https://github.com/wanasit/chrono) — natural-language date parsing with timezone abbreviation support.
+- [tz-lookup](https://github.com/darkskyapp/tz-lookup-oss) — approximate timezone lookup from latitude and longitude.
 - [TimeZoneNames](https://github.com/mattjohnsonpint/TimeZoneNames) for .NET.
 
 MIT, PRs welcome

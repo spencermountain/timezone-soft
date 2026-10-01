@@ -1,0 +1,107 @@
+{
+  "Atlantic/Azores": {
+    "offset": 0,
+    "hem": "n",
+    "dst": "eu0",
+    "names": [
+      "azost",
+      "azot",
+      "hmt"
+    ],
+    "meta": "Azores",
+    "country": "pt"
+  },
+  "Atlantic/Bermuda": {
+    "offset": -3,
+    "hem": "n",
+    "dst": "usa",
+    "names": [
+      "bm",
+      "bmu"
+    ],
+    "meta": "Atlantic",
+    "country": "bm"
+  },
+  "Atlantic/Canary": {
+    "offset": 1,
+    "hem": "n",
+    "dst": "eu1",
+    "names": [
+      "canary islands",
+      "las palmas de gran canaria",
+      "santa cruz de tenerife"
+    ],
+    "meta": "Western European",
+    "country": "es"
+  },
+  "Atlantic/Cape_Verde": {
+    "offset": -1,
+    "hem": "n",
+    "names": [
+      "cabo verde is",
+      "cpv",
+      "cv",
+      "cvt"
+    ],
+    "meta": "Cape Verde",
+    "country": "cv"
+  },
+  "Atlantic/Faroe": {
+    "offset": 1,
+    "hem": "n",
+    "dst": "eu1",
+    "names": [
+      "fo",
+      "fro"
+    ],
+    "meta": "Western European",
+    "country": "fo"
+  },
+  "Atlantic/Madeira": {
+    "offset": 1,
+    "hem": "n",
+    "dst": "eu1",
+    "names": [
+      "madeira islands"
+    ],
+    "meta": "Western European",
+    "country": "pt"
+  },
+  "Atlantic/Reykjavik": {
+    "offset": 0,
+    "hem": "n",
+    "names": [
+      "gmt",
+      "is",
+      "isl",
+      "utc",
+      "zulu"
+    ],
+    "meta": "Greenwich",
+    "country": "is"
+  },
+  "Atlantic/South_Georgia": {
+    "offset": -2,
+    "hem": "s",
+    "names": [
+      "gs",
+      "gst",
+      "sgs"
+    ],
+    "meta": "South Georgia",
+    "country": "gs"
+  },
+  "Atlantic/Stanley": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "falkland island",
+      "fk",
+      "fkst",
+      "fkt",
+      "flk"
+    ],
+    "meta": "Falkland Islands",
+    "country": "fk"
+  }
+}

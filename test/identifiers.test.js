@@ -1,15 +1,15 @@
 import test from 'tape'
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
-import identifiers from '../data/iana-identifiers.js'
-import { serializeIdentifiers } from '../scripts/lib/serialize-identifiers.js'
+import { identifiers } from '../data/index.js'
+import { serializeIdentifiers } from './_lib/serialize-identifiers.js'
 
 test('compact IANA catalog preserves the pinned 2026d mappings', t => {
   const entries = Object.keys(identifiers).sort().map(id => [id, identifiers[id]])
   t.equal(entries.length, 597, 'all canonical IDs and aliases are retained')
   // Digest of the original uncompressed catalog, independent of insertion order.
   t.equal(createHash('sha256').update(JSON.stringify(entries)).digest('hex'), '304de5348c5f1666d1684b7a760c36ec24e2d50207dca44e24546173710ec2b7', 'every mapping matches the original catalog')
-  const generated = readFileSync(new URL('../data/iana-identifiers.js', import.meta.url), 'utf8')
+  const generated = readFileSync(new URL('../src/_generated/iana-identifiers.js', import.meta.url), 'utf8')
   t.ok(generated.endsWith(serializeIdentifiers(identifiers)), 'importer output is reproducible')
   t.end()
 })

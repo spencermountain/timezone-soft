@@ -1,56 +1,57 @@
-import { zones, lexicon, foldedLexicon, canonicalIds } from '../data/index.js'
-import normalize from './normalize.js'
-import parseOffset from './parseOffset.js'
+import matchRegion from './00-match-region.js'
+import matchWhole from './01-match-whole.js'
+import { matchAlternativeSpellings, matchSeparatedParts, matchWordPairs } from './02-match-parts.js'
 
-const reserved = input => {
-  if (['utc', 'uct', 'universal', 'zulu', 'coordinated universal', 'coordinated universal time'].includes(input)) return 'Etc/UTC'
-  if (input === 'gmt') return 'Etc/GMT'
-  return null
-}
+const longName = /^\s*\(utc(?:[+-]\d{2}:\d{2})?\)\s*([^()]+?)(?:\s*\([^()]*\))?\s*$/i
 
-// match some text to an iana code
-const find = function (str) {
-  const input = str.trim().toLowerCase()
-  const special = reserved(input)
-  if (special) return special
-  // Explicit identifiers use IANA links, never informal alias ranking.
-  if (input.includes('/')) {
-    const id = canonicalIds[input]
-    if (id) return Object.hasOwn(zones, id) ? id : null
-    // Some curated informal phrases contain a slash but are not IANA IDs.
-    return Object.hasOwn(lexicon, input) ? lexicon[input] : null
+const find = (input) => {
+  // "(UTC-06:00) Central Time (US & Canada)" → "Central Time".
+  input = input.replace(longName, '$1').trim()
+
+  // Region names must include every supported zone, not just curated aliases.
+  const region = matchRegion(input)
+  if (region) {
+    return region
   }
-  // perfect id match
-  if (zones.hasOwnProperty(str)) {
-    return str
-  }
-  // lookup known word
-  if (lexicon.hasOwnProperty(str)) {
-    return lexicon[str]
-  }
-  // -8hrs
-  if (/[0-9]/.test(str)) {
-    const etc = parseOffset(str)
-    if (etc) {
-      return [etc]
+
+  // Try complete spelling variants before normalization drops punctuation.
+  // Keep explicit identifier and qualifier handling separate.
+  if (input.includes('&') && !/[\/,()]/.test(input)) {
+    const alternative = matchAlternativeSpellings(input, false)
+    if (alternative) {
+      return alternative
     }
   }
-  // try a sequence of normalization steps
-  const candidates = [input]
-  for (const step of [normalize.one, normalize.two, normalize.three]) {
-    str = step(str)
-    candidates.push(str)
-    const id = reserved(str)
-    if (id) return id
-    if (Object.hasOwn(lexicon, str)) return lexicon[str]
+
+  // Whole input, including normalization and accent folding.
+  const whole = matchWhole(input)
+  if (whole) {
+    return whole
   }
-  // Exact spellings at every normalization stage take precedence over folding.
-  for (const candidate of candidates) {
-    const folded = normalize.fold(candidate)
-    const id = reserved(folded)
-    if (id) return id
-    if (Object.hasOwn(lexicon, folded)) return lexicon[folded]
-    if (Object.hasOwn(foldedLexicon, folded)) return foldedLexicon[folded]
+
+  // Unknown identifiers cannot fall back to partial matches.
+  if (input.includes('/')) {
+    return null
+  }
+
+  const alternative = matchAlternativeSpellings(input, false)
+  if (alternative) {
+    return alternative
+  }
+
+  // Explicit separators take precedence over word-pair guesses.
+  if (/[,()]/.test(input)) {
+    return matchSeparatedParts(input)
+  }
+
+  // Preserve qualifier intersections before trying individual words.
+  const pair = matchWordPairs(input)
+  if (pair) {
+    return pair
+  }
+  // Don't turn arbitrary unknown phrases into matches for one familiar word.
+  if (/&|\b(?:and|st|saint|democratic|republic|of|the|peoples|federal|federated|islamic|plurinational|bolivarian|kingdom)\b/i.test(input)) {
+    return matchAlternativeSpellings(input)
   }
   return null
 }

@@ -1,0 +1,85 @@
+{
+  "Antarctica/Palmer": {
+    "offset": -3,
+    "hem": "s",
+    "names": [],
+    "meta": "Palmer",
+    "country": "aq"
+  },
+  "Antarctica/Casey": {
+    "offset": 8,
+    "hours": 3,
+    "hem": "s",
+    "names": [
+      "cast"
+    ],
+    "meta": "Casey",
+    "country": "aq"
+  },
+  "Antarctica/Davis": {
+    "offset": 7,
+    "hem": "s",
+    "names": [
+      "aq",
+      "ata",
+      "davt"
+    ],
+    "meta": "Davis",
+    "country": "aq"
+  },
+  "Antarctica/Macquarie": {
+    "offset": 11,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "aest",
+      "aet",
+      "aus east",
+      "aus eastern",
+      "aus eastern standard",
+      "australia eastern",
+      "macquarie island"
+    ],
+    "meta": "Eastern Australia",
+    "country": "au"
+  },
+  "Antarctica/Mawson": {
+    "offset": 5,
+    "hem": "s",
+    "names": [
+      "mawt"
+    ],
+    "meta": "Mawson",
+    "country": "aq"
+  },
+  "Antarctica/Rothera": {
+    "offset": -3,
+    "hem": "s",
+    "names": [
+      "arst",
+      "art"
+    ],
+    "meta": "Argentina",
+    "country": "aq"
+  },
+  "Antarctica/Troll": {
+    "offset": 2,
+    "hem": "s",
+    "dst": "troll",
+    "names": [
+      "troll research station"
+    ],
+    "meta": "Troll",
+    "country": "aq"
+  },
+  "Antarctica/Vostok": {
+    "offset": 6,
+    "hem": "s",
+    "names": [
+      "msk+4",
+      "vost"
+    ],
+    "meta": "Vostok",
+    "country": "aq"
+  }
+}

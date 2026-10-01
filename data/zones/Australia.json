@@ -1,0 +1,140 @@
+{
+  "Australia/Adelaide": {
+    "offset": 9.5,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "act",
+      "south australia"
+    ],
+    "meta": "Central Australia",
+    "country": "au"
+  },
+  "Australia/Brisbane": {
+    "offset": 10,
+    "hem": "s",
+    "names": [
+      "aest",
+      "australian east",
+      "australian eastern",
+      "gold coast",
+      "logan",
+      "queensland",
+      "sunshine coast",
+      "townsville"
+    ],
+    "meta": "Brisbane",
+    "country": "au"
+  },
+  "Australia/Broken_Hill": {
+    "offset": 9.5,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "yancowinna"
+    ],
+    "meta": "Central Australia",
+    "country": "au"
+  },
+  "Australia/Darwin": {
+    "offset": 9.5,
+    "hem": "s",
+    "names": [
+      "northern territory"
+    ],
+    "meta": "Australian Central",
+    "country": "au"
+  },
+  "Australia/Eucla": {
+    "offset": 8.75,
+    "hem": "s",
+    "names": [
+      "acwdt",
+      "acwst",
+      "acwt",
+      "aus central w",
+      "aus central west",
+      "cwst"
+    ],
+    "meta": "Australian Central Western",
+    "country": "au"
+  },
+  "Australia/Hobart": {
+    "offset": 10,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "canberra",
+      "king island",
+      "tasmania"
+    ],
+    "meta": "Eastern Australia",
+    "country": "au"
+  },
+  "Australia/Lindeman": {
+    "offset": 10,
+    "hem": "s",
+    "names": [
+      "whitsunday islands"
+    ],
+    "meta": "Brisbane",
+    "country": "au"
+  },
+  "Australia/Lord_Howe": {
+    "offset": 10.5,
+    "hem": "s",
+    "dst": "lhow",
+    "names": [
+      "lhdt",
+      "lhst",
+      "lht",
+      "lord howe island"
+    ],
+    "meta": "Lord Howe",
+    "country": "au"
+  },
+  "Australia/Melbourne": {
+    "offset": 10,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "canberra",
+      "geelong"
+    ],
+    "meta": "Eastern Australia",
+    "country": "au"
+  },
+  "Australia/Perth": {
+    "offset": 8,
+    "hem": "s",
+    "names": [
+      "australia western",
+      "australian west",
+      "australian western",
+      "awdt",
+      "awst",
+      "awt",
+      "w australia",
+      "west australia"
+    ],
+    "meta": "Western Australia",
+    "country": "au"
+  },
+  "Australia/Sydney": {
+    "offset": 10,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "aus east",
+      "aus eastern",
+      "australia eastern",
+      "australian eastern",
+      "central coast",
+      "new south wales",
+      "newcastle",
+      "wollongong"
+    ],
+    "meta": "Eastern Australia",
+    "country": "au"
+  }
+}

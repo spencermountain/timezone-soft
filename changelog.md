@@ -1,3 +1,7 @@
+### 1.7.0 [Sep 2026]
+- **[fix]** - major improvements to data quality
+- **[change]** - support for top-2,000 populuous cities
+
 ### 1.6.0 [Sep 2026]
 - **[fix]** - audit display offsets against IANA 2026d, including Honolulu, Lord Howe, Santiago, Ojinaga, Kazakhstan, Greenland, and obsolete DST records
 - **[change]** - add reproducible monthly offset fixtures for 41 zones; Ojinaga now participates in CST matches without reordering prior candidates

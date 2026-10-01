@@ -1,0 +1,21 @@
+{
+  "Etc/GMT": {
+    "offset": 0,
+    "hem": "n",
+    "names": [
+      "etc"
+    ],
+    "meta": "Greenwich"
+  },
+  "Etc/UTC": {
+    "offset": 0,
+    "hem": "n",
+    "names": [
+      "etc",
+      "uct",
+      "universal",
+      "zulu"
+    ],
+    "meta": "UTC"
+  }
+}

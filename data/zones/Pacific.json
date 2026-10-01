@@ -1,0 +1,410 @@
+{
+  "Pacific/Apia": {
+    "offset": 13,
+    "hem": "s",
+    "names": [
+      "ws",
+      "wsm",
+      "wst"
+    ],
+    "meta": "West Samoa",
+    "country": "ws"
+  },
+  "Pacific/Auckland": {
+    "offset": 12,
+    "hem": "s",
+    "dst": "nz",
+    "names": [
+      "christchurch",
+      "manukau",
+      "north shore",
+      "nz",
+      "nzdt",
+      "nzl",
+      "nzmt",
+      "nzst",
+      "nzt",
+      "wellington"
+    ],
+    "meta": "New Zealand",
+    "country": "nz"
+  },
+  "Pacific/Bougainville": {
+    "offset": 11,
+    "hem": "s",
+    "names": [
+      "pgt"
+    ],
+    "meta": "Bougainville",
+    "country": "pg"
+  },
+  "Pacific/Chatham": {
+    "offset": 12.75,
+    "hem": "s",
+    "dst": "chat",
+    "names": [
+      "chadt",
+      "chast",
+      "chat",
+      "chatham islands",
+      "nz chat"
+    ],
+    "meta": "Chatham",
+    "country": "nz"
+  },
+  "Pacific/Chuuk": {
+    "offset": 10,
+    "hem": "n",
+    "names": [
+      "chut",
+      "chuuk/trukyap"
+    ],
+    "meta": "Chuuk",
+    "country": "fm"
+  },
+  "Pacific/Easter": {
+    "offset": -6,
+    "hem": "s",
+    "dst": "east",
+    "names": [
+      "easst",
+      "east",
+      "emt"
+    ],
+    "meta": "Easter Island",
+    "country": "cl"
+  },
+  "Pacific/Efate": {
+    "offset": 11,
+    "hem": "s",
+    "names": [
+      "vu",
+      "vut"
+    ],
+    "meta": "Vanuatu",
+    "country": "vu"
+  },
+  "Pacific/Fakaofo": {
+    "offset": 13,
+    "hem": "s",
+    "names": [
+      "tk",
+      "tkl",
+      "tkt"
+    ],
+    "meta": "Tokelau",
+    "country": "tk"
+  },
+  "Pacific/Fiji": {
+    "offset": 12,
+    "hem": "s",
+    "names": [
+      "fj",
+      "fji",
+      "fjst",
+      "fjt"
+    ],
+    "meta": "Fiji",
+    "country": "fj"
+  },
+  "Pacific/Funafuti": {
+    "offset": 12,
+    "hem": "s",
+    "names": [
+      "tuv",
+      "tv",
+      "tvt"
+    ],
+    "meta": "Tuvalu",
+    "country": "tv"
+  },
+  "Pacific/Galapagos": {
+    "offset": -6,
+    "hem": "s",
+    "names": [
+      "galapagos islands",
+      "galt"
+    ],
+    "meta": "Galapagos",
+    "country": "ec"
+  },
+  "Pacific/Gambier": {
+    "offset": -9,
+    "hem": "s",
+    "names": [
+      "gambier islands",
+      "gamt",
+      "pyf"
+    ],
+    "meta": "Gambier",
+    "country": "pf"
+  },
+  "Pacific/Guadalcanal": {
+    "offset": 11,
+    "hem": "s",
+    "names": [
+      "sb",
+      "sbt",
+      "slb",
+      "solomon"
+    ],
+    "meta": "Solomon Islands",
+    "country": "sb"
+  },
+  "Pacific/Guam": {
+    "offset": 10,
+    "hem": "n",
+    "names": [
+      "chst",
+      "mnp",
+      "mp",
+      "northern mariana islands",
+      "port moresby",
+      "west pacific",
+      "western pacific"
+    ],
+    "meta": "Chamorro",
+    "country": "gu"
+  },
+  "Pacific/Honolulu": {
+    "offset": -10,
+    "hem": "n",
+    "names": [
+      "aleutian",
+      "aleutian islands",
+      "hadt",
+      "hast",
+      "hat",
+      "hawaii aleutian",
+      "hst"
+    ],
+    "meta": "Hawaii",
+    "country": "us"
+  },
+  "Pacific/Kanton": {
+    "offset": 13,
+    "hem": "s",
+    "names": [
+      "phot"
+    ],
+    "meta": "Phoenix Islands",
+    "country": "ki"
+  },
+  "Pacific/Kiritimati": {
+    "offset": 14,
+    "hem": "n",
+    "names": [
+      "ki",
+      "kir",
+      "kiritimati island",
+      "lint"
+    ],
+    "meta": "Line Islands",
+    "country": "ki"
+  },
+  "Pacific/Kosrae": {
+    "offset": 11,
+    "hem": "n",
+    "names": [
+      "kost"
+    ],
+    "meta": "Kosrae",
+    "country": "fm"
+  },
+  "Pacific/Kwajalein": {
+    "offset": 12,
+    "hem": "n",
+    "names": [
+      "mht"
+    ],
+    "meta": "Marshall Islands",
+    "country": "mh"
+  },
+  "Pacific/Majuro": {
+    "offset": 12,
+    "hem": "n",
+    "names": [
+      "mh",
+      "mhl",
+      "mht"
+    ],
+    "meta": "Marshall Islands",
+    "country": "mh"
+  },
+  "Pacific/Marquesas": {
+    "offset": -9.5,
+    "hem": "s",
+    "names": [
+      "marquesas islands",
+      "mart",
+      "pyf"
+    ],
+    "meta": "Marquesas",
+    "country": "pf"
+  },
+  "Pacific/Nauru": {
+    "offset": 12,
+    "hem": "s",
+    "names": [
+      "nr",
+      "nrt",
+      "nru"
+    ],
+    "meta": "Nauru",
+    "country": "nr"
+  },
+  "Pacific/Niue": {
+    "offset": -11,
+    "hem": "s",
+    "names": [
+      "niu",
+      "nu",
+      "nut"
+    ],
+    "meta": "Niue",
+    "country": "nu"
+  },
+  "Pacific/Norfolk": {
+    "offset": 11.5,
+    "hem": "s",
+    "dst": "aus",
+    "names": [
+      "nf",
+      "nfdt",
+      "nfk",
+      "nft"
+    ],
+    "meta": "Norfolk Island",
+    "country": "nf"
+  },
+  "Pacific/Noumea": {
+    "offset": 11,
+    "hem": "s",
+    "names": [
+      "nc",
+      "ncl",
+      "nct"
+    ],
+    "meta": "New Caledonia",
+    "country": "nc"
+  },
+  "Pacific/Pago_Pago": {
+    "offset": -11,
+    "hem": "s",
+    "names": [
+      "midway",
+      "sst"
+    ],
+    "meta": "Samoa",
+    "country": "as"
+  },
+  "Pacific/Palau": {
+    "offset": 9,
+    "hem": "n",
+    "names": [
+      "plw",
+      "pw",
+      "pwt"
+    ],
+    "meta": "Palau",
+    "country": "pw"
+  },
+  "Pacific/Pitcairn": {
+    "offset": -8,
+    "hem": "s",
+    "names": [
+      "pcn",
+      "pn",
+      "utc-08"
+    ],
+    "meta": "Pitcairn",
+    "country": "pn"
+  },
+  "Pacific/Pohnpei": {
+    "offset": 11,
+    "hem": "n",
+    "names": [
+      "pohnpei/ponape",
+      "pont"
+    ],
+    "meta": "Ponape",
+    "country": "fm"
+  },
+  "Pacific/Port_Moresby": {
+    "offset": 10,
+    "hem": "s",
+    "names": [
+      "dumont durville",
+      "pg",
+      "pgt"
+    ],
+    "meta": "Papua New Guinea",
+    "country": "pg"
+  },
+  "Pacific/Rarotonga": {
+    "offset": -10,
+    "hem": "s",
+    "names": [
+      "ck",
+      "ckt",
+      "cok",
+      "cook"
+    ],
+    "meta": "Cook Islands",
+    "country": "ck"
+  },
+  "Pacific/Tahiti": {
+    "offset": -10,
+    "hem": "s",
+    "names": [
+      "pyf",
+      "society islands",
+      "taht"
+    ],
+    "meta": "Tahiti",
+    "country": "pf"
+  },
+  "Pacific/Tarawa": {
+    "offset": 12,
+    "hem": "n",
+    "names": [
+      "gilt"
+    ],
+    "meta": "Gilbert Islands",
+    "country": "ki"
+  },
+  "Pacific/Tongatapu": {
+    "offset": 13,
+    "hem": "s",
+    "names": [
+      "nukualofa",
+      "to",
+      "ton",
+      "tot"
+    ],
+    "meta": "Tonga",
+    "country": "to"
+  },
+  "Pacific/Wake": {
+    "offset": 12,
+    "hem": "n",
+    "names": [
+      "um",
+      "umi",
+      "wakt"
+    ],
+    "meta": "Wake Island",
+    "country": "um"
+  },
+  "Pacific/Wallis": {
+    "offset": 12,
+    "hem": "s",
+    "names": [
+      "wf",
+      "wft",
+      "wlf"
+    ],
+    "meta": "Wallis & Futuna",
+    "country": "wf"
+  }
+}

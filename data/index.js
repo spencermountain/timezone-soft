@@ -1,31 +1,24 @@
-import Africa from './zones/Africa.js'
-import America from './zones/America.js'
-import Antarctica from './zones/Antarctica.js'
-import Asia from './zones/Asia.js'
-import Atlantic from './zones/Atlantic.js'
-import Australia from './zones/Australia.js'
-import Etc from './zones/Etc.js'
-import Europe from './zones/Europe.js'
-import Indian from './zones/Indian.js'
-import Pacific from './zones/Pacific.js'
+import { readdirSync, readFileSync } from 'node:fs'
 
-const regions = [
-  Africa,
-  America,
-  Antarctica,
-  Asia,
-  Atlantic,
-  Australia,
-  Etc,
-  Europe,
-  Indian,
-  Pacific,
-]
+const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+const directory = new URL('./zones/', import.meta.url)
+const files = readdirSync(directory).filter(file => file.endsWith('.json')).sort()
 const zones = {}
-for (const region of regions) {
-  for (const [id, record] of Object.entries(region)) {
-    if (Object.hasOwn(zones, id)) throw new Error(`Duplicate zone record: ${id}`)
+
+files.forEach(file => {
+  const region = read(`./zones/${file}`)
+  Object.entries(region).forEach(([id, record]) => {
+    if (Object.hasOwn(zones, id)) {
+      throw new Error(`Duplicate zone record: ${id}`)
+    }
     zones[id] = record
-  }
-}
+  })
+})
+
+const patterns = read('./dst-patterns.json')
+const identifiers = read('./iana-identifiers.json')
+const metas = read('./metas.json')
+const countries = read('./countries.json')
+
+export { patterns, identifiers, metas, countries }
 export default zones

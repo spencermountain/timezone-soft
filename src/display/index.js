@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import metas from '../generated/metas.js'
+import metas from '../_generated/metas.js'
 import { zones } from '../data/index.js'
 import formatOffset from './format-offset.js'
 
@@ -9,10 +9,12 @@ for (let i = 0; i <= 14; i += 1) {
     std: [`GMT-${i}`, i],
     long: `(${formatOffset(i)}) Coordinated Universal Time`
   }
-  if (i <= 12) metas[`gmt+${i}`] = {
-    name: `Etc/GMT+${i}`,
-    std: [`GMT+${i}`, -i],
-    long: `(${formatOffset(-i)}) Coordinated Universal Time`
+  if (i <= 12) {
+    metas[`gmt+${i}`] = {
+      name: `Etc/GMT+${i}`,
+      std: [`GMT+${i}`, -i],
+      long: `(${formatOffset(-i)}) Coordinated Universal Time`
+    }
   }
 }
 
@@ -45,7 +47,7 @@ const display = function (id) {
     iana: id,
     standard: { abbr, offset, name: standardName || meta.name || `${metaName} Standard Time` },
     daylight: dst || null,
-    long: long,
+    long: long
   }
 }
 export default display

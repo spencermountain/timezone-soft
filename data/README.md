@@ -4,8 +4,8 @@
 
 Edit `zones/*.js`, `metas.js`, `dst-patterns.js`, and `aliases.js`. `index.js`
 aggregates the regional records for build and maintenance scripts. Running
-`pnpm run build` validates these sources and writes `src/generated/zones.js`,
-`src/generated/metas.js`, `src/generated/version.js`, and the distributable bundles.
+`pnpm run build` validates these sources and writes `src/_generated/zones.js`,
+`src/_generated/metas.js`, `src/_generated/version.js`, and the distributable bundles.
 
 This is a curated dataset inherited from earlier timezone-soft/spacetime work.
 It is not currently a reproducible import of a specific IANA or CLDR release.

@@ -15,7 +15,7 @@ test('Canadian permanent offsets follow IANA 2026e', t => {
     t.equal(expected?.daylight, null, `${id} no DST`)
     const prefix = `(UTC-${String(-offset).padStart(2, '0')}:00)`
     t.ok(expected?.long.startsWith(prefix), `${id} description uses permanent offset`)
-    for (const alias of aliases) t.deepEqual(soft(alias)[0], expected, alias)
+    for (const alias of aliases) {t.deepEqual(soft(alias)[0], expected, alias)}
   }
   t.end()
 })
