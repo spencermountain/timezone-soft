@@ -7,21 +7,20 @@
       "acdt",
       "acst",
       "act",
-      "australia",
       "australia central",
       "australian central",
       "cen australia",
       "central australia",
       "south australia"
     ],
-    "meta": "Central Australia"
+    "meta": "Central Australia",
+    "country": "au"
   },
   "Australia/Brisbane": {
     "offset": 10,
     "hem": "s",
     "names": [
       "aest",
-      "australia",
       "australian east",
       "australian eastern",
       "gold coast",
@@ -29,7 +28,8 @@
       "queensland",
       "townsville"
     ],
-    "meta": "Brisbane"
+    "meta": "Brisbane",
+    "country": "au"
   },
   "Australia/Broken_Hill": {
     "offset": 9.5,
@@ -39,24 +39,24 @@
       "acst",
       "act",
       "adelaide",
-      "australia",
       "australia central",
       "cen australia standard",
       "central australia",
       "yancowinna"
     ],
-    "meta": "Central Australia"
+    "meta": "Central Australia",
+    "country": "au"
   },
   "Australia/Darwin": {
     "offset": 9.5,
     "hem": "s",
     "names": [
       "acst",
-      "australia",
       "australian central",
       "northern territory"
     ],
-    "meta": "Australian Central"
+    "meta": "Australian Central",
+    "country": "au"
   },
   "Australia/Eucla": {
     "offset": 8.75,
@@ -67,11 +67,11 @@
       "acwt",
       "aus central w",
       "aus central west",
-      "australia",
       "australian central western",
       "cwst"
     ],
-    "meta": "Australian Central Western"
+    "meta": "Australian Central Western",
+    "country": "au"
   },
   "Australia/Hobart": {
     "offset": 10,
@@ -83,7 +83,6 @@
       "aet",
       "aus east",
       "aus eastern",
-      "australia",
       "australia eastern",
       "australian eastern",
       "canberra",
@@ -91,31 +90,32 @@
       "king island",
       "tasmania"
     ],
-    "meta": "Eastern Australia"
+    "meta": "Eastern Australia",
+    "country": "au"
   },
   "Australia/Lindeman": {
     "offset": 10,
     "hem": "s",
     "names": [
       "aest",
-      "australia",
       "australian eastern",
       "whitsunday islands"
     ],
-    "meta": "Brisbane"
+    "meta": "Brisbane",
+    "country": "au"
   },
   "Australia/Lord_Howe": {
     "offset": 10.5,
     "hem": "s",
     "dst": "lhow",
     "names": [
-      "australia",
       "lhdt",
       "lhst",
       "lht",
       "lord howe island"
     ],
-    "meta": "Lord Howe"
+    "meta": "Lord Howe",
+    "country": "au"
   },
   "Australia/Melbourne": {
     "offset": 10,
@@ -127,20 +127,19 @@
       "aet",
       "aus east",
       "aus eastern",
-      "australia",
       "australia eastern",
       "australian eastern",
       "canberra",
       "eastern australia",
       "geelong"
     ],
-    "meta": "Eastern Australia"
+    "meta": "Eastern Australia",
+    "country": "au"
   },
   "Australia/Perth": {
     "offset": 8,
     "hem": "s",
     "names": [
-      "australia",
       "australia western",
       "australian west",
       "australian western",
@@ -151,7 +150,8 @@
       "west australia",
       "western australia"
     ],
-    "meta": "Western Australia"
+    "meta": "Western Australia",
+    "country": "au"
   },
   "Australia/Sydney": {
     "offset": 10,
@@ -165,12 +165,12 @@
       "aus",
       "aus east",
       "aus eastern",
-      "australia",
       "australia eastern",
       "australian eastern",
       "new south wales",
       "wollongong"
     ],
-    "meta": "Eastern Australia"
+    "meta": "Eastern Australia",
+    "country": "au"
   }
 }

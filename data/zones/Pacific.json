@@ -4,13 +4,13 @@
     "hem": "s",
     "names": [
       "pacific",
-      "samoa",
       "west samoa",
       "ws",
       "wsm",
       "wst"
     ],
-    "meta": "West Samoa"
+    "meta": "West Samoa",
+    "country": "ws"
   },
   "Pacific/Auckland": {
     "offset": 12,
@@ -19,7 +19,6 @@
     "names": [
       "christchurch",
       "manukau",
-      "new zealand",
       "north shore",
       "nz",
       "nzdt",
@@ -30,7 +29,8 @@
       "pacific",
       "wellington"
     ],
-    "meta": "New Zealand"
+    "meta": "New Zealand",
+    "country": "nz"
   },
   "Pacific/Bougainville": {
     "offset": 11,
@@ -39,10 +39,10 @@
       "guinea",
       "guinean",
       "pacific",
-      "papua new guinea",
       "pgt"
     ],
-    "meta": "Bougainville"
+    "meta": "Bougainville",
+    "country": "pg"
   },
   "Pacific/Chatham": {
     "offset": 12.75,
@@ -56,7 +56,8 @@
       "nz chat",
       "pacific"
     ],
-    "meta": "Chatham"
+    "meta": "Chatham",
+    "country": "nz"
   },
   "Pacific/Chuuk": {
     "offset": 10,
@@ -66,7 +67,8 @@
       "chuuk/trukyap",
       "pacific"
     ],
-    "meta": "Chuuk"
+    "meta": "Chuuk",
+    "country": "fm"
   },
   "Pacific/Easter": {
     "offset": -6,
@@ -79,18 +81,19 @@
       "emt",
       "pacific"
     ],
-    "meta": "Easter Island"
+    "meta": "Easter Island",
+    "country": "cl"
   },
   "Pacific/Efate": {
     "offset": 11,
     "hem": "n",
     "names": [
       "pacific",
-      "vanuatu",
       "vu",
       "vut"
     ],
-    "meta": "Vanuatu"
+    "meta": "Vanuatu",
+    "country": "vu"
   },
   "Pacific/Fakaofo": {
     "offset": 13,
@@ -99,10 +102,10 @@
       "pacific",
       "tk",
       "tkl",
-      "tkt",
-      "tokelau"
+      "tkt"
     ],
-    "meta": "Tokelau"
+    "meta": "Tokelau",
+    "country": "tk"
   },
   "Pacific/Fiji": {
     "offset": 12,
@@ -114,7 +117,8 @@
       "fjt",
       "pacific"
     ],
-    "meta": "Fiji"
+    "meta": "Fiji",
+    "country": "fj"
   },
   "Pacific/Funafuti": {
     "offset": 12,
@@ -122,11 +126,11 @@
     "names": [
       "pacific",
       "tuv",
-      "tuvalu",
       "tv",
       "tvt"
     ],
-    "meta": "Tuvalu"
+    "meta": "Tuvalu",
+    "country": "tv"
   },
   "Pacific/Galapagos": {
     "offset": -6,
@@ -139,7 +143,8 @@
       "galt",
       "pacific"
     ],
-    "meta": "Galapagos"
+    "meta": "Galapagos",
+    "country": "ec"
   },
   "Pacific/Gambier": {
     "offset": -9,
@@ -149,7 +154,8 @@
       "gamt",
       "pacific"
     ],
-    "meta": "Gambier"
+    "meta": "Gambier",
+    "country": "pf"
   },
   "Pacific/Guadalcanal": {
     "offset": 11,
@@ -159,10 +165,10 @@
       "sb",
       "sbt",
       "slb",
-      "solomon",
-      "solomon islands"
+      "solomon"
     ],
-    "meta": "Solomon Islands"
+    "meta": "Solomon Islands",
+    "country": "sb"
   },
   "Pacific/Guam": {
     "offset": 10,
@@ -178,7 +184,8 @@
       "west pacific",
       "western pacific"
     ],
-    "meta": "Chamorro"
+    "meta": "Chamorro",
+    "country": "gu"
   },
   "Pacific/Honolulu": {
     "offset": -10,
@@ -194,7 +201,8 @@
       "hst",
       "pacific"
     ],
-    "meta": "Hawaii"
+    "meta": "Hawaii",
+    "country": "us"
   },
   "Pacific/Kanton": {
     "offset": 13,
@@ -204,7 +212,8 @@
       "phoenix islands",
       "phot"
     ],
-    "meta": "Phoenix Islands"
+    "meta": "Phoenix Islands",
+    "country": "ki"
   },
   "Pacific/Kiritimati": {
     "offset": 14,
@@ -212,13 +221,13 @@
     "names": [
       "ki",
       "kir",
-      "kiribati",
       "kiritimati island",
       "line islands",
       "lint",
       "pacific"
     ],
-    "meta": "Line Islands"
+    "meta": "Line Islands",
+    "country": "ki"
   },
   "Pacific/Kosrae": {
     "offset": 11,
@@ -227,29 +236,30 @@
       "kost",
       "pacific"
     ],
-    "meta": "Kosrae"
+    "meta": "Kosrae",
+    "country": "fm"
   },
   "Pacific/Kwajalein": {
     "offset": 12,
     "hem": "n",
     "names": [
-      "marshall islands",
       "mht",
       "pacific"
     ],
-    "meta": "Marshall Islands"
+    "meta": "Marshall Islands",
+    "country": "mh"
   },
   "Pacific/Majuro": {
     "offset": 12,
     "hem": "n",
     "names": [
-      "marshall islands",
       "mh",
       "mhl",
       "mht",
       "pacific"
     ],
-    "meta": "Marshall Islands"
+    "meta": "Marshall Islands",
+    "country": "mh"
   },
   "Pacific/Marquesas": {
     "offset": -9.5,
@@ -259,7 +269,8 @@
       "mart",
       "pacific"
     ],
-    "meta": "Marquesas"
+    "meta": "Marquesas",
+    "country": "pf"
   },
   "Pacific/Nauru": {
     "offset": 12,
@@ -270,7 +281,8 @@
       "nru",
       "pacific"
     ],
-    "meta": "Nauru"
+    "meta": "Nauru",
+    "country": "nr"
   },
   "Pacific/Niue": {
     "offset": -11,
@@ -281,7 +293,8 @@
       "nut",
       "pacific"
     ],
-    "meta": "Niue"
+    "meta": "Niue",
+    "country": "nu"
   },
   "Pacific/Norfolk": {
     "offset": 11.5,
@@ -292,10 +305,10 @@
       "nfdt",
       "nfk",
       "nft",
-      "norfolk island",
       "pacific"
     ],
-    "meta": "Norfolk Island"
+    "meta": "Norfolk Island",
+    "country": "nf"
   },
   "Pacific/Noumea": {
     "offset": 11,
@@ -304,10 +317,10 @@
       "nc",
       "ncl",
       "nct",
-      "new caledonia",
       "pacific"
     ],
-    "meta": "New Caledonia"
+    "meta": "New Caledonia",
+    "country": "nc"
   },
   "Pacific/Pago_Pago": {
     "offset": -11,
@@ -318,7 +331,8 @@
       "samoa",
       "sst"
     ],
-    "meta": "Samoa"
+    "meta": "Samoa",
+    "country": "as"
   },
   "Pacific/Palau": {
     "offset": 9,
@@ -329,7 +343,8 @@
       "pw",
       "pwt"
     ],
-    "meta": "Palau"
+    "meta": "Palau",
+    "country": "pw"
   },
   "Pacific/Pitcairn": {
     "offset": -8,
@@ -341,7 +356,8 @@
       "pst",
       "utc-08"
     ],
-    "meta": "Pitcairn"
+    "meta": "Pitcairn",
+    "country": "pn"
   },
   "Pacific/Pohnpei": {
     "offset": 11,
@@ -354,7 +370,8 @@
       "pont",
       "pyf"
     ],
-    "meta": "Ponape"
+    "meta": "Ponape",
+    "country": "fm"
   },
   "Pacific/Port_Moresby": {
     "offset": 10,
@@ -364,12 +381,11 @@
       "guinea",
       "guinean",
       "pacific",
-      "papua new guinea",
       "pg",
-      "pgt",
-      "png"
+      "pgt"
     ],
-    "meta": "Papua New Guinea"
+    "meta": "Papua New Guinea",
+    "country": "pg"
   },
   "Pacific/Rarotonga": {
     "offset": -10,
@@ -379,10 +395,10 @@
       "ckt",
       "cok",
       "cook",
-      "cook islands",
       "pacific"
     ],
-    "meta": "Cook Islands"
+    "meta": "Cook Islands",
+    "country": "ck"
   },
   "Pacific/Tahiti": {
     "offset": -10,
@@ -392,7 +408,8 @@
       "society islands",
       "taht"
     ],
-    "meta": "Tahiti"
+    "meta": "Tahiti",
+    "country": "pf"
   },
   "Pacific/Tarawa": {
     "offset": 12,
@@ -402,7 +419,8 @@
       "gilt",
       "pacific"
     ],
-    "meta": "Gilbert Islands"
+    "meta": "Gilbert Islands",
+    "country": "ki"
   },
   "Pacific/Tongatapu": {
     "offset": 13,
@@ -412,10 +430,10 @@
       "pacific",
       "to",
       "ton",
-      "tonga",
       "tot"
     ],
-    "meta": "Tonga"
+    "meta": "Tonga",
+    "country": "to"
   },
   "Pacific/Wake": {
     "offset": 12,
@@ -424,23 +442,22 @@
       "pacific",
       "um",
       "umi",
-      "us minor outlying islands",
       "wake island",
       "wakt"
     ],
-    "meta": "Wake Island"
+    "meta": "Wake Island",
+    "country": "um"
   },
   "Pacific/Wallis": {
     "offset": 12,
     "hem": "n",
     "names": [
       "pacific",
-      "wallis and futuna",
-      "wallis futuna",
       "wf",
       "wft",
       "wlf"
     ],
-    "meta": "Wallis & Futuna"
+    "meta": "Wallis & Futuna",
+    "country": "wf"
   }
 }

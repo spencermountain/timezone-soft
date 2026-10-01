@@ -8,7 +8,8 @@
       "koln",
       "munich"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "de"
   },
   "Europe/Simferopol": {
     "offset": 3,
@@ -16,7 +17,8 @@
     "names": [
       "aqmescit"
     ],
-    "meta": "Moscow"
+    "meta": "Moscow",
+    "country": "ua"
   },
   "Europe/Amsterdam": {
     "offset": 2,
@@ -31,7 +33,6 @@
       "eindhoven",
       "europe central",
       "groningen",
-      "netherlands",
       "nl",
       "nld",
       "rotterdam",
@@ -39,7 +40,8 @@
       "tilburg",
       "utrecht"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "nl"
   },
   "Europe/Andorra": {
     "offset": 2,
@@ -53,7 +55,8 @@
       "cet",
       "europe central"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "ad"
   },
   "Europe/Astrakhan": {
     "offset": 4,
@@ -64,7 +67,8 @@
       "russian",
       "st petersburg"
     ],
-    "meta": "Astrakhan"
+    "meta": "Astrakhan",
+    "country": "ru"
   },
   "Europe/Athens": {
     "offset": 3,
@@ -76,10 +80,10 @@
       "europe eastern",
       "gr",
       "grc",
-      "greece",
       "thessaloniki"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "gr"
   },
   "Europe/Belgrade": {
     "offset": 2,
@@ -97,7 +101,8 @@
       "slovenia",
       "svn"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "rs"
   },
   "Europe/Brussels": {
     "offset": 2,
@@ -107,7 +112,6 @@
       "antwerpen",
       "be",
       "bel",
-      "belgium",
       "bmt",
       "central european",
       "cest",
@@ -117,7 +121,8 @@
       "gent",
       "liege"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "be"
   },
   "Europe/Bucharest": {
     "offset": 3,
@@ -137,11 +142,11 @@
       "oradea",
       "ploiesti",
       "ro",
-      "romania",
       "rou",
       "timisoara"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ro"
   },
   "Europe/Budapest": {
     "offset": 2,
@@ -155,10 +160,10 @@
       "europe central",
       "hu",
       "hun",
-      "hungary",
       "pest"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "hu"
   },
   "Europe/Busingen": {
     "offset": 2,
@@ -173,10 +178,10 @@
       "de",
       "deu",
       "europe central",
-      "germany",
       "saxony"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "de"
   },
   "Europe/Chisinau": {
     "offset": 3,
@@ -187,10 +192,10 @@
       "eet",
       "europe eastern",
       "md",
-      "mda",
-      "moldova"
+      "mda"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "md"
   },
   "Europe/Copenhagen": {
     "offset": 2,
@@ -202,12 +207,12 @@
       "cest",
       "cet",
       "cmt",
-      "denmark",
       "dk",
       "dnk",
       "europe central"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "dk"
   },
   "Europe/Dublin": {
     "offset": 1,
@@ -223,7 +228,6 @@
       "gmt",
       "greenwich mean",
       "ie",
-      "ireland",
       "irl",
       "ist",
       "limerick",
@@ -232,7 +236,8 @@
       "tse",
       "waterford"
     ],
-    "meta": "Irish"
+    "meta": "Irish",
+    "country": "ie"
   },
   "Europe/Gibraltar": {
     "offset": 2,
@@ -248,7 +253,8 @@
       "gi",
       "gib"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "gi"
   },
   "Europe/Helsinki": {
     "offset": 3,
@@ -261,12 +267,12 @@
       "europe eastern",
       "fi",
       "fin",
-      "finland",
       "tampere",
       "turku",
       "vantaa"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "fi"
   },
   "Europe/Istanbul": {
     "offset": 3,
@@ -328,13 +334,13 @@
       "trabzon",
       "trt",
       "tur",
-      "turkey",
       "ueskuedar",
       "umraniye",
       "van",
       "zeytinburnu"
     ],
-    "meta": "Turkey"
+    "meta": "Turkey",
+    "country": "tr"
   },
   "Europe/Kaliningrad": {
     "offset": 2,
@@ -343,7 +349,8 @@
       "eastern european",
       "eet"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ru"
   },
   "Europe/Kyiv": {
     "offset": 3,
@@ -382,12 +389,12 @@
       "ternopil",
       "ua",
       "ukr",
-      "ukraine",
       "vinnytsya",
       "zaporizhzhya",
       "zhytomyr"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ua"
   },
   "Europe/Kirov": {
     "offset": 3,
@@ -398,7 +405,8 @@
       "russian",
       "st petersburg"
     ],
-    "meta": "Moscow"
+    "meta": "Moscow",
+    "country": "ru"
   },
   "Europe/Lisbon": {
     "offset": 1,
@@ -408,7 +416,6 @@
       "amadora",
       "europe western",
       "porto",
-      "portugal",
       "portugal mainland",
       "prt",
       "pt",
@@ -417,7 +424,8 @@
       "western european",
       "wet"
     ],
-    "meta": "Western European"
+    "meta": "Western European",
+    "country": "pt"
   },
   "Europe/London": {
     "offset": 1,
@@ -503,7 +511,8 @@
       "wolverhampton",
       "yorkshire"
     ],
-    "meta": "British"
+    "meta": "British",
+    "country": "gb"
   },
   "Europe/Luxembourg": {
     "offset": 2,
@@ -517,7 +526,8 @@
       "lu",
       "lux"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "lu"
   },
   "Europe/Madrid": {
     "offset": 2,
@@ -566,7 +576,6 @@
       "santander",
       "sants montjuic",
       "sevilla",
-      "spain",
       "spain mainland",
       "terrassa",
       "valladolid",
@@ -574,7 +583,8 @@
       "wemt",
       "zaragoza"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "es"
   },
   "Europe/Malta": {
     "offset": 2,
@@ -588,14 +598,14 @@
       "mlt",
       "mt"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "mt"
   },
   "Europe/Minsk": {
     "offset": 3,
     "hem": "n",
     "names": [
       "babruysk",
-      "belarus",
       "blr",
       "brest",
       "by",
@@ -608,7 +618,8 @@
       "st petersburg",
       "vitebsk"
     ],
-    "meta": "Moscow"
+    "meta": "Moscow",
+    "country": "by"
   },
   "Europe/Monaco": {
     "offset": 2,
@@ -622,7 +633,8 @@
       "mc",
       "mco"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "mc"
   },
   "Europe/Moscow": {
     "offset": 3,
@@ -668,7 +680,6 @@
       "rostov on don",
       "ru",
       "rus",
-      "russia",
       "russian",
       "ryazan",
       "rybinsk",
@@ -700,7 +711,8 @@
       "yoshkar ola",
       "zelenograd"
     ],
-    "meta": "Moscow"
+    "meta": "Moscow",
+    "country": "ru"
   },
   "Europe/Oslo": {
     "offset": 2,
@@ -715,7 +727,8 @@
       "sj",
       "sjm"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "no"
   },
   "Europe/Paris": {
     "offset": 2,
@@ -730,7 +743,6 @@
       "europe central",
       "fr",
       "fra",
-      "france",
       "le havre",
       "lille",
       "lyon",
@@ -748,7 +760,8 @@
       "strasbourg",
       "toulouse"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "fr"
   },
   "Europe/Prague": {
     "offset": 2,
@@ -766,7 +779,8 @@
       "slovakia",
       "svk"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "cz"
   },
   "Europe/Riga": {
     "offset": 3,
@@ -779,12 +793,12 @@
       "eet",
       "europe eastern",
       "kalt",
-      "latvia",
       "lst",
       "lv",
       "lva"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "lv"
   },
   "Europe/Rome": {
     "offset": 2,
@@ -820,25 +834,31 @@
       "vatican",
       "verona"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "it"
   },
   "Europe/Samara": {
     "offset": 4,
     "hem": "n",
     "names": [
-      "izhevsk", "samt",
+      "izhevsk",
+      "samt",
       "syzran",
       "togliatti on the volga"
     ],
-    "meta": "Samara"
+    "meta": "Samara",
+    "country": "ru"
   },
   "Europe/Saratov": {
     "offset": 4,
     "hem": "n",
     "names": [
-      "balakovo", "izhevsk", "samt"
+      "balakovo",
+      "izhevsk",
+      "samt"
     ],
-    "meta": "Samara"
+    "meta": "Samara",
+    "country": "ru"
   },
   "Europe/Sofia": {
     "offset": 3,
@@ -847,7 +867,6 @@
     "names": [
       "bg",
       "bgr",
-      "bulgaria",
       "burgas",
       "eastern european",
       "eet",
@@ -856,7 +875,8 @@
       "plovdiv",
       "varna"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "bg"
   },
   "Europe/Stockholm": {
     "offset": 2,
@@ -871,10 +891,10 @@
       "malmoe",
       "se",
       "set",
-      "swe",
-      "sweden"
+      "swe"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "se"
   },
   "Europe/Tallinn": {
     "offset": 3,
@@ -885,10 +905,10 @@
       "ee",
       "eet",
       "est",
-      "estonia",
       "europe eastern"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ee"
   },
   "Europe/Tirane": {
     "offset": 2,
@@ -897,14 +917,14 @@
     "names": [
       "al",
       "alb",
-      "albania",
       "central european",
       "cest",
       "cet",
       "europe central",
       "tirana"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "al"
   },
   "Europe/Ulyanovsk": {
     "offset": 4,
@@ -915,7 +935,8 @@
       "russian",
       "st petersburg"
     ],
-    "meta": "Ulyanovsk"
+    "meta": "Ulyanovsk",
+    "country": "ru"
   },
   "Europe/Uzhgorod": {
     "offset": 3,
@@ -927,7 +948,8 @@
       "europe eastern",
       "ruthenia"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ua"
   },
   "Europe/Vienna": {
     "offset": 2,
@@ -935,7 +957,6 @@
     "dst": "eu2",
     "names": [
       "at",
-      "austria",
       "aut",
       "central european",
       "cest",
@@ -946,7 +967,8 @@
       "graz",
       "linz"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "at"
   },
   "Europe/Vilnius": {
     "offset": 3,
@@ -958,11 +980,11 @@
       "europe eastern",
       "kaunas",
       "klaipeda",
-      "lithuania",
       "lt",
       "ltu"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "lt"
   },
   "Europe/Volgograd": {
     "offset": 4,
@@ -975,7 +997,8 @@
       "volt",
       "volzhskiy"
     ],
-    "meta": "Moscow"
+    "meta": "Moscow",
+    "country": "ru"
   },
   "Europe/Warsaw": {
     "offset": 2,
@@ -1002,7 +1025,6 @@
       "mokotow",
       "pl",
       "pol",
-      "poland",
       "poznan",
       "praga poludnie",
       "radom",
@@ -1012,7 +1034,8 @@
       "wroclaw",
       "zabrze"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "pl"
   },
   "Europe/Zaporozhye": {
     "offset": 3,
@@ -1027,7 +1050,8 @@
       "sevastopol",
       "zaporizhia lugansk"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ua"
   },
   "Europe/Zurich": {
     "offset": 2,
@@ -1044,6 +1068,7 @@
       "liechtenstein",
       "swiss"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "ch"
   }
 }

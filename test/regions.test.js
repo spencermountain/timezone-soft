@@ -7,6 +7,10 @@ test('top-level IANA regions return all supported canonical timezones', t => {
   const regions = ['Africa', 'America', 'Antarctica', 'Asia', 'Atlantic', 'Australia', 'Europe', 'Indian', 'Pacific', 'Etc']
   regions.forEach(region => {
     const expected = supported.filter(id => id.startsWith(`${region}/`))
+    if (region === 'Australia') {
+      expected.push('Antarctica/Macquarie')
+      expected.sort()
+    }
     const found = soft(region).map(zone => zone.iana)
     t.ok(expected.length > 0, `${region} has supported zones`)
     t.deepEqual(found, expected, `${region} is complete, sorted, and unique`)

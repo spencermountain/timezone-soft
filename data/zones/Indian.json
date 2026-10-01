@@ -3,26 +3,26 @@
     "offset": 6,
     "hem": "n",
     "names": [
-      "british indian ocean territory",
       "indian",
       "indian chagos",
       "indian ocean",
       "io",
       "iot"
     ],
-    "meta": "Indian Ocean"
+    "meta": "Indian Ocean",
+    "country": "io"
   },
   "Indian/Christmas": {
     "offset": 7,
     "hem": "s",
     "names": [
-      "christmas island",
       "cx",
       "cxr",
       "cxt",
       "indian"
     ],
-    "meta": "Christmas Island"
+    "meta": "Christmas Island",
+    "country": "cx"
   },
   "Indian/Cocos": {
     "offset": 6.5,
@@ -32,10 +32,10 @@
       "cck",
       "cct",
       "cocos island",
-      "cocos islands",
       "indian"
     ],
-    "meta": "Cocos Islands"
+    "meta": "Cocos Islands",
+    "country": "cc"
   },
   "Indian/Kerguelen": {
     "offset": 5,
@@ -52,7 +52,8 @@
       "tf",
       "tft"
     ],
-    "meta": "French Southern & Antarctic"
+    "meta": "French Southern & Antarctic",
+    "country": "tf"
   },
   "Indian/Mahe": {
     "offset": 4,
@@ -61,10 +62,10 @@
       "indian",
       "sc",
       "sct",
-      "seychelles",
       "syc"
     ],
-    "meta": "Seychelles"
+    "meta": "Seychelles",
+    "country": "sc"
   },
   "Indian/Maldives": {
     "offset": 5,
@@ -75,7 +76,8 @@
       "mv",
       "mvt"
     ],
-    "meta": "Maldives"
+    "meta": "Maldives",
+    "country": "mv"
   },
   "Indian/Mauritius": {
     "offset": 4,
@@ -87,7 +89,8 @@
       "mut",
       "port louis"
     ],
-    "meta": "Mauritius"
+    "meta": "Mauritius",
+    "country": "mu"
   },
   "Indian/Reunion": {
     "offset": 4,
@@ -96,6 +99,7 @@
       "indian",
       "ret"
     ],
-    "meta": "Réunion"
+    "meta": "Réunion",
+    "country": "re"
   }
 }

@@ -20,13 +20,13 @@
       "yamoussoukro",
       "zulu"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "Greenwich Mean",
+    "country": "ci"
   },
   "Africa/Algiers": {
     "offset": 1,
     "hem": "n",
     "names": [
-      "algeria",
       "annaba",
       "bab ezzouar",
       "batna",
@@ -43,7 +43,8 @@
       "tebessa",
       "tiaret"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "dz"
   },
   "Africa/Bissau": {
     "offset": 0,
@@ -52,12 +53,12 @@
       "gmt",
       "gnb",
       "greenwich mean",
-      "guinea bissau",
       "gw",
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "Greenwich Mean",
+    "country": "gw"
   },
   "Africa/Cairo": {
     "offset": 2,
@@ -75,7 +76,6 @@
       "damanhur",
       "eg",
       "egy",
-      "egypt",
       "giza",
       "halwan",
       "idku",
@@ -92,7 +92,8 @@
       "tanta",
       "zagazig"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "eg"
   },
   "Africa/Casablanca": {
     "offset": 1,
@@ -107,7 +108,6 @@
       "marrakesh",
       "meknes",
       "mohammedia",
-      "morocco",
       "oujda angad",
       "rabat",
       "safi",
@@ -117,7 +117,8 @@
       "temara",
       "tetouan"
     ],
-    "meta": "Morocco Standard"
+    "meta": "Morocco Standard",
+    "country": "ma"
   },
   "Africa/Ceuta": {
     "offset": 2,
@@ -126,7 +127,8 @@
     "names": [
       "ceutamelilla"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "es"
   },
   "Africa/El_Aaiun": {
     "offset": 1,
@@ -136,10 +138,10 @@
       "eh",
       "esh",
       "laayoune",
-      "morocco",
-      "western sahara"
+      "morocco"
     ],
-    "meta": "Morocco Standard"
+    "meta": "Morocco Standard",
+    "country": "eh"
   },
   "Africa/Johannesburg": {
     "offset": 2,
@@ -169,7 +171,6 @@
       "richards bay",
       "roodepoort",
       "sast",
-      "south africa",
       "soweto",
       "springs",
       "tembisa",
@@ -181,7 +182,8 @@
       "za",
       "zaf"
     ],
-    "meta": "South Africa"
+    "meta": "South Africa",
+    "country": "za"
   },
   "Africa/Juba": {
     "offset": 3,
@@ -189,12 +191,12 @@
     "names": [
       "cat",
       "central africa",
-      "south sudan",
       "ss",
       "ssd",
       "winejok"
     ],
-    "meta": "Central Africa"
+    "meta": "Central Africa",
+    "country": "ss"
   },
   "Africa/Khartoum": {
     "offset": 2,
@@ -216,10 +218,10 @@
       "sd",
       "sdn",
       "singa",
-      "sudan",
       "wad medani"
     ],
-    "meta": "Central Africa"
+    "meta": "Central Africa",
+    "country": "sd"
   },
   "Africa/Lagos": {
     "offset": 1,
@@ -289,7 +291,8 @@
       "yaounde",
       "zaria"
     ],
-    "meta": "West Africa"
+    "meta": "West Africa",
+    "country": "ng"
   },
   "Africa/Maputo": {
     "offset": 2,
@@ -315,7 +318,8 @@
       "zw",
       "zwe"
     ],
-    "meta": "Central Africa"
+    "meta": "Central Africa",
+    "country": "mz"
   },
   "Africa/Monrovia": {
     "offset": 0,
@@ -324,12 +328,12 @@
       "gmt",
       "greenwich mean",
       "lbr",
-      "liberia",
       "lr",
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "Greenwich Mean",
+    "country": "lr"
   },
   "Africa/Nairobi": {
     "offset": 3,
@@ -351,14 +355,14 @@
       "thika",
       "yt"
     ],
-    "meta": "East Africa"
+    "meta": "East Africa",
+    "country": "ke"
   },
   "Africa/Ndjamena": {
     "offset": 1,
     "hem": "n",
     "names": [
       "africa western",
-      "chad",
       "tcd",
       "td",
       "w central africa",
@@ -368,7 +372,8 @@
       "west central africa",
       "western africa"
     ],
-    "meta": "West Africa"
+    "meta": "West Africa",
+    "country": "td"
   },
   "Africa/Sao_Tome": {
     "offset": 0,
@@ -381,7 +386,8 @@
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "Greenwich Mean",
+    "country": "st"
   },
   "Africa/Tripoli": {
     "offset": 2,
@@ -391,13 +397,13 @@
       "az zawiyah",
       "benghazi",
       "lby",
-      "libya",
       "ly",
       "misratah",
       "tarhuna",
       "zawiya"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ly"
   },
   "Africa/Tunis": {
     "offset": 1,
@@ -405,10 +411,10 @@
     "names": [
       "sfax",
       "tn",
-      "tun",
-      "tunisia"
+      "tun"
     ],
-    "meta": "Central European"
+    "meta": "Central European",
+    "country": "tn"
   },
   "Africa/Windhoek": {
     "offset": 1,
@@ -418,9 +424,9 @@
       "cat",
       "central africa",
       "na",
-      "nam",
-      "namibia"
+      "nam"
     ],
-    "meta": "Central Africa"
+    "meta": "Central Africa",
+    "country": "na"
   }
 }

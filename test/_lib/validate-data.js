@@ -44,6 +44,8 @@ const validateData = (data = { zones, metas, patterns, aliases, identifiers }) =
     check(Object.hasOwn(data.metas, zone.meta), `Zone ${id}: unknown metazone ${zone.meta}`)
     check(zone.dst === undefined || Object.hasOwn(data.patterns, zone.dst), `Zone ${id}: unknown DST pattern ${zone.dst}`)
     check(['n', 's'].includes(zone.hem), `Zone ${id}: hemisphere must be n or s`)
+    // IANA zone.tab's country for the named location, not all countries sharing its rules.
+    check(zone.country === undefined || /^[a-z]{2}$/.test(zone.country), `Zone ${id}: country must be a lowercase two-letter ISO code`)
     // Legacy offset fields are checked for shape, not against current timezone rules.
     check(offset(zone.offset), `Zone ${id}: invalid legacy offset`)
     check(zone.hours === undefined || Number.isFinite(zone.hours), `Zone ${id}: invalid legacy DST hours`)

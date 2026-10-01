@@ -9,7 +9,8 @@
       "azot",
       "hmt"
     ],
-    "meta": "Azores"
+    "meta": "Azores",
+    "country": "pt"
   },
   "Atlantic/Bermuda": {
     "offset": -3,
@@ -22,7 +23,8 @@
       "bm",
       "bmu"
     ],
-    "meta": "Atlantic"
+    "meta": "Atlantic",
+    "country": "bm"
   },
   "Atlantic/Canary": {
     "offset": 1,
@@ -37,20 +39,21 @@
       "western european",
       "wet"
     ],
-    "meta": "Western European"
+    "meta": "Western European",
+    "country": "es"
   },
   "Atlantic/Cape_Verde": {
     "offset": -1,
     "hem": "n",
     "names": [
       "atlantic",
-      "cabo verde",
       "cabo verde is",
       "cpv",
       "cv",
       "cvt"
     ],
-    "meta": "Cape Verde"
+    "meta": "Cape Verde",
+    "country": "cv"
   },
   "Atlantic/Faroe": {
     "offset": 1,
@@ -58,11 +61,11 @@
     "dst": "eu1",
     "names": [
       "atlantic",
-      "faroe islands",
       "fo",
       "fro"
     ],
-    "meta": "Western European"
+    "meta": "Western European",
+    "country": "fo"
   },
   "Atlantic/Madeira": {
     "offset": 1,
@@ -75,7 +78,8 @@
       "western european",
       "wet"
     ],
-    "meta": "Western European"
+    "meta": "Western European",
+    "country": "pt"
   },
   "Atlantic/Reykjavik": {
     "offset": 0,
@@ -84,13 +88,13 @@
       "atlantic",
       "gmt",
       "greenwich mean",
-      "iceland",
       "is",
       "isl",
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "Greenwich Mean",
+    "country": "is"
   },
   "Atlantic/South_Georgia": {
     "offset": -2,
@@ -101,7 +105,8 @@
       "gst",
       "sgs"
     ],
-    "meta": "South Georgia"
+    "meta": "South Georgia",
+    "country": "gs"
   },
   "Atlantic/Stanley": {
     "offset": -3,
@@ -110,12 +115,12 @@
       "atlantic",
       "falkland",
       "falkland island",
-      "falkland islands",
       "fk",
       "fkst",
       "fkt",
       "flk"
     ],
-    "meta": "Falkland Islands"
+    "meta": "Falkland Islands",
+    "country": "fk"
   }
 }

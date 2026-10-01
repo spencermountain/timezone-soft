@@ -3,7 +3,8 @@
     "offset": -3,
     "hem": "s",
     "names": [],
-    "meta": "Palmer"
+    "meta": "Palmer",
+    "country": "aq"
   },
   "Antarctica/Casey": {
     "offset": 8,
@@ -12,7 +13,8 @@
     "names": [
       "cast"
     ],
-    "meta": "Casey"
+    "meta": "Casey",
+    "country": "aq"
   },
   "Antarctica/Davis": {
     "offset": 7,
@@ -22,7 +24,8 @@
       "ata",
       "davt"
     ],
-    "meta": "Davis"
+    "meta": "Davis",
+    "country": "aq"
   },
   "Antarctica/Macquarie": {
     "offset": 11,
@@ -37,7 +40,8 @@
       "australia eastern",
       "macquarie island"
     ],
-    "meta": "Eastern Australia"
+    "meta": "Eastern Australia",
+    "country": "au"
   },
   "Antarctica/Mawson": {
     "offset": 5,
@@ -45,7 +49,8 @@
     "names": [
       "mawt"
     ],
-    "meta": "Mawson"
+    "meta": "Mawson",
+    "country": "aq"
   },
   "Antarctica/Rothera": {
     "offset": -3,
@@ -55,7 +60,8 @@
       "arst",
       "art"
     ],
-    "meta": "Argentina"
+    "meta": "Argentina",
+    "country": "aq"
   },
   "Antarctica/Troll": {
     "offset": 2,
@@ -66,7 +72,8 @@
       "greenwich mean",
       "troll research station"
     ],
-    "meta": "Troll"
+    "meta": "Troll",
+    "country": "aq"
   },
   "Antarctica/Vostok": {
     "offset": 6,
@@ -75,6 +82,7 @@
       "msk+4",
       "vost"
     ],
-    "meta": "Vostok"
+    "meta": "Vostok",
+    "country": "aq"
   }
 }

@@ -8,7 +8,8 @@
       "wulumuqi",
       "xinjiang"
     ],
-    "meta": "Xinjiang"
+    "meta": "Xinjiang",
+    "country": "cn"
   },
   "Asia/Almaty": {
     "offset": 6,
@@ -21,7 +22,6 @@
       "east kazakhstan",
       "karagandy",
       "kaz",
-      "kazakhstan",
       "kazakhstan eastern",
       "kz",
       "nur sultan",
@@ -32,7 +32,8 @@
       "taraz",
       "ust kamenogorsk"
     ],
-    "meta": "East Kazakhstan"
+    "meta": "East Kazakhstan",
+    "country": "kz"
   },
   "Asia/Amman": {
     "offset": 3,
@@ -42,12 +43,12 @@
       "irbid",
       "jo",
       "jor",
-      "jordan",
       "russeifa",
       "wadi as sir",
       "zarqa"
     ],
-    "meta": "Jordan"
+    "meta": "Jordan",
+    "country": "jo"
   },
   "Asia/Anadyr": {
     "offset": 12,
@@ -56,7 +57,8 @@
       "anat",
       "petropavlovsk kamchatsky"
     ],
-    "meta": "Anadyr"
+    "meta": "Anadyr",
+    "country": "ru"
   },
   "Asia/Aqtau": {
     "offset": 5,
@@ -69,7 +71,8 @@
       "tashkent",
       "west asia"
     ],
-    "meta": "West Kazakhstan"
+    "meta": "West Kazakhstan",
+    "country": "kz"
   },
   "Asia/Aqtobe": {
     "offset": 5,
@@ -82,7 +85,8 @@
       "tashkent",
       "west asia"
     ],
-    "meta": "West Kazakhstan"
+    "meta": "West Kazakhstan",
+    "country": "kz"
   },
   "Asia/Ashgabat": {
     "offset": 5,
@@ -92,10 +96,10 @@
       "tm",
       "tmst",
       "tmt",
-      "turkmenabat",
-      "turkmenistan"
+      "turkmenabat"
     ],
-    "meta": "Turkmenistan"
+    "meta": "Turkmenistan",
+    "country": "tm"
   },
   "Asia/Atyrau": {
     "offset": 5,
@@ -109,7 +113,8 @@
       "tashkent",
       "west asia"
     ],
-    "meta": "West Kazakhstan"
+    "meta": "West Kazakhstan",
+    "country": "kz"
   },
   "Asia/Baghdad": {
     "offset": 3,
@@ -133,7 +138,6 @@
       "dihok",
       "erbil",
       "iq",
-      "iraq",
       "irq",
       "karbala",
       "kirkuk",
@@ -145,7 +149,8 @@
       "riyadh",
       "sadr"
     ],
-    "meta": "Arabian"
+    "meta": "Arabian",
+    "country": "iq"
   },
   "Asia/Baku": {
     "offset": 4,
@@ -153,13 +158,13 @@
     "names": [
       "az",
       "aze",
-      "azerbaijan",
       "azt",
       "ganja",
       "lankaran",
       "sumqayit"
     ],
-    "meta": "Azerbaijan"
+    "meta": "Azerbaijan",
+    "country": "az"
   },
   "Asia/Bangkok": {
     "offset": 7,
@@ -184,7 +189,8 @@
       "south east asia",
       "udon thani"
     ],
-    "meta": "Indochina"
+    "meta": "Indochina",
+    "country": "th"
   },
   "Asia/Barnaul": {
     "offset": 7,
@@ -194,7 +200,8 @@
       "krat",
       "north asia"
     ],
-    "meta": "Krasnoyarsk"
+    "meta": "Krasnoyarsk",
+    "country": "ru"
   },
   "Asia/Beirut": {
     "offset": 3,
@@ -205,10 +212,10 @@
       "europe eastern",
       "lb",
       "lbn",
-      "lebanon",
       "ras bayrut"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "lb"
   },
   "Asia/Bishkek": {
     "offset": 6,
@@ -218,10 +225,10 @@
       "kgt",
       "kgz",
       "kyrgystan",
-      "kyrgyzstan",
       "osh"
     ],
-    "meta": "Kyrgyzstan"
+    "meta": "Kyrgyzstan",
+    "country": "kg"
   },
   "Asia/Brunei": {
     "offset": 8,
@@ -233,7 +240,8 @@
       "brn",
       "brunei darussalam"
     ],
-    "meta": "Brunei Darussalam"
+    "meta": "Brunei Darussalam",
+    "country": "bn"
   },
   "Asia/Chita": {
     "offset": 9,
@@ -242,18 +250,19 @@
       "yakt",
       "yakutsk"
     ],
-    "meta": "Yakutsk"
+    "meta": "Yakutsk",
+    "country": "ru"
   },
   "Asia/Choibalsan": {
     "offset": 8,
     "hem": "n",
     "names": [
       "dornodsukhbaatar",
-      "mongolia",
       "ulaanbaatar",
       "ulat"
     ],
-    "meta": "Ulaanbaatar"
+    "meta": "Ulaanbaatar",
+    "country": "mn"
   },
   "Asia/Colombo": {
     "offset": 5.5,
@@ -269,10 +278,10 @@
       "lka",
       "moratuwa",
       "mumbai",
-      "new delhi",
-      "sri lanka"
+      "new delhi"
     ],
-    "meta": "India"
+    "meta": "India",
+    "country": "lk"
   },
   "Asia/Damascus": {
     "offset": 3,
@@ -286,17 +295,16 @@
       "homs",
       "latakia",
       "sy",
-      "syr",
-      "syria"
+      "syr"
     ],
-    "meta": "Syria"
+    "meta": "Syria",
+    "country": "sy"
   },
   "Asia/Dhaka": {
     "offset": 6,
     "hem": "n",
     "names": [
       "bagerhat",
-      "bangladesh",
       "barishal",
       "bd",
       "bgd",
@@ -325,18 +333,19 @@
       "tangail",
       "tungi"
     ],
-    "meta": "Bangladesh"
+    "meta": "Bangladesh",
+    "country": "bd"
   },
   "Asia/Dili": {
     "offset": 9,
     "hem": "s",
     "names": [
-      "east timor",
       "tl",
       "tls",
       "tlt"
     ],
-    "meta": "East Timor"
+    "meta": "East Timor",
+    "country": "tl"
   },
   "Asia/Dubai": {
     "offset": 4,
@@ -355,18 +364,19 @@
       "ras al khaimah",
       "sharjah"
     ],
-    "meta": "Gulf"
+    "meta": "Gulf",
+    "country": "ae"
   },
   "Asia/Dushanbe": {
     "offset": 5,
     "hem": "n",
     "names": [
-      "tajikistan",
       "tj",
       "tjk",
       "tjt"
     ],
-    "meta": "Tajikistan"
+    "meta": "Tajikistan",
+    "country": "tj"
   },
   "Asia/Famagusta": {
     "offset": 3,
@@ -377,7 +387,8 @@
       "europe eastern",
       "northern cyprus"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "cy"
   },
   "Asia/Gaza": {
     "offset": 3,
@@ -386,11 +397,11 @@
     "names": [
       "eet",
       "gaza strip",
-      "palestine",
       "ps",
       "pse"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ps"
   },
   "Asia/Hebron": {
     "offset": 3,
@@ -401,7 +412,8 @@
       "eet",
       "west bank"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "ps"
   },
   "Asia/Ho_Chi_Minh": {
     "offset": 7,
@@ -416,13 +428,13 @@
       "rach gia",
       "sa dec",
       "thi xa phu my",
-      "vietnam",
       "vietnam south",
       "vn",
       "vnm",
       "vung tau"
     ],
-    "meta": "Indochina"
+    "meta": "Indochina",
+    "country": "vn"
   },
   "Asia/Hong_Kong": {
     "offset": 8,
@@ -438,7 +450,8 @@
       "new territories",
       "tsuen wan"
     ],
-    "meta": "Hong Kong"
+    "meta": "Hong Kong",
+    "country": "hk"
   },
   "Asia/Hovd": {
     "offset": 7,
@@ -449,7 +462,8 @@
       "west mongolia",
       "western mongolia"
     ],
-    "meta": "Hovd"
+    "meta": "Hovd",
+    "country": "mn"
   },
   "Asia/Irkutsk": {
     "offset": 8,
@@ -461,7 +475,8 @@
       "north asia east",
       "ulan ude"
     ],
-    "meta": "Irkutsk"
+    "meta": "Irkutsk",
+    "country": "ru"
   },
   "Asia/Jakarta": {
     "offset": 7,
@@ -485,7 +500,6 @@
       "depok",
       "id",
       "idn",
-      "indonesia",
       "indonesia western",
       "jambi",
       "javasumatra",
@@ -524,7 +538,8 @@
       "wib",
       "yogyakarta"
     ],
-    "meta": "Western Indonesia"
+    "meta": "Western Indonesia",
+    "country": "id"
   },
   "Asia/Jayapura": {
     "offset": 9,
@@ -539,7 +554,8 @@
       "new guinea",
       "wit"
     ],
-    "meta": "Eastern Indonesia"
+    "meta": "Eastern Indonesia",
+    "country": "id"
   },
   "Asia/Jerusalem": {
     "offset": 3,
@@ -553,7 +569,6 @@
       "idt",
       "il",
       "isr",
-      "israel",
       "ist",
       "jmt",
       "petah tiqwa",
@@ -561,7 +576,8 @@
       "tel aviv",
       "west jerusalem"
     ],
-    "meta": "Israel"
+    "meta": "Israel",
+    "country": "il"
   },
   "Asia/Kabul": {
     "offset": 4.5,
@@ -569,14 +585,14 @@
     "names": [
       "af",
       "afg",
-      "afghanistan",
       "aft",
       "herat",
       "jalalabad",
       "kandahar",
       "mazar e sharif"
     ],
-    "meta": "Afghanistan"
+    "meta": "Afghanistan",
+    "country": "af"
   },
   "Asia/Kamchatka": {
     "offset": 12,
@@ -587,7 +603,8 @@
       "petropavlovsk kamchatsky",
       "pett"
     ],
-    "meta": "Petropavlovsk-Kamchatski"
+    "meta": "Petropavlovsk-Kamchatski",
+    "country": "ru"
   },
   "Asia/Karachi": {
     "offset": 5,
@@ -620,7 +637,6 @@
       "nawabshah",
       "okara",
       "pak",
-      "pakistan",
       "peshawar",
       "pk",
       "pkt",
@@ -635,21 +651,22 @@
       "sialkot",
       "sukkur"
     ],
-    "meta": "Pakistan"
+    "meta": "Pakistan",
+    "country": "pk"
   },
   "Asia/Kathmandu": {
     "offset": 5.75,
     "hem": "n",
     "names": [
       "biratnagar",
-      "nepal",
       "np",
       "npl",
       "npt",
       "patan",
       "pokhara"
     ],
-    "meta": "Nepal"
+    "meta": "Nepal",
+    "country": "np"
   },
   "Asia/Khandyga": {
     "offset": 9,
@@ -658,7 +675,8 @@
       "yakt",
       "yakutsk"
     ],
-    "meta": "Yakutsk"
+    "meta": "Yakutsk",
+    "country": "ru"
   },
   "Asia/Kolkata": {
     "offset": 5.5,
@@ -772,7 +790,6 @@
       "imphal",
       "in",
       "ind",
-      "india",
       "indian",
       "indore",
       "ist",
@@ -932,7 +949,8 @@
       "warangal",
       "yamunanagar"
     ],
-    "meta": "India"
+    "meta": "India",
+    "country": "in"
   },
   "Asia/Krasnoyarsk": {
     "offset": 7,
@@ -941,7 +959,8 @@
       "krat",
       "north asia"
     ],
-    "meta": "Krasnoyarsk"
+    "meta": "Krasnoyarsk",
+    "country": "ru"
   },
   "Asia/Kuala_Lumpur": {
     "offset": 8,
@@ -958,7 +977,6 @@
       "kuala terengganu",
       "kuantan",
       "malacca",
-      "malaysia",
       "my",
       "mys",
       "myt",
@@ -970,14 +988,14 @@
       "sungai petani",
       "taiping"
     ],
-    "meta": "Malaysia"
+    "meta": "Malaysia",
+    "country": "my"
   },
   "Asia/Kuching": {
     "offset": 8,
     "hem": "n",
     "names": [
       "kota kinabalu",
-      "malaysia",
       "miri",
       "myt",
       "sabahsarawak",
@@ -985,7 +1003,8 @@
       "sibu",
       "tawau"
     ],
-    "meta": "Malaysia"
+    "meta": "Malaysia",
+    "country": "my"
   },
   "Asia/Macau": {
     "offset": 8,
@@ -999,7 +1018,8 @@
       "mo",
       "urumqi"
     ],
-    "meta": "China"
+    "meta": "China",
+    "country": "mo"
   },
   "Asia/Magadan": {
     "offset": 11,
@@ -1007,7 +1027,8 @@
     "names": [
       "magt"
     ],
-    "meta": "Magadan"
+    "meta": "Magadan",
+    "country": "ru"
   },
   "Asia/Makassar": {
     "offset": 8,
@@ -1030,7 +1051,8 @@
       "sulawesi",
       "wita"
     ],
-    "meta": "Central Indonesia"
+    "meta": "Central Indonesia",
+    "country": "id"
   },
   "Asia/Manila": {
     "offset": 8,
@@ -1086,7 +1108,6 @@
       "pasig",
       "ph",
       "philippine",
-      "philippines",
       "phl",
       "phst",
       "pht",
@@ -1103,7 +1124,8 @@
       "taytay",
       "zamboanga"
     ],
-    "meta": "Philippine"
+    "meta": "Philippine",
+    "country": "ph"
   },
   "Asia/Nicosia": {
     "offset": 3,
@@ -1112,11 +1134,12 @@
     "names": [
       "cy",
       "cyp",
-      "cyprus",
       "eastern european",
-      "eet", "europe eastern"
+      "eet",
+      "europe eastern"
     ],
-    "meta": "Eastern European"
+    "meta": "Eastern European",
+    "country": "cy"
   },
   "Asia/Novokuznetsk": {
     "offset": 7,
@@ -1127,7 +1150,8 @@
       "north asia",
       "prokopyevsk"
     ],
-    "meta": "Krasnoyarsk"
+    "meta": "Krasnoyarsk",
+    "country": "ru"
   },
   "Asia/Novosibirsk": {
     "offset": 7,
@@ -1137,7 +1161,8 @@
       "novt",
       "siberia"
     ],
-    "meta": "Novosibirsk"
+    "meta": "Novosibirsk",
+    "country": "ru"
   },
   "Asia/Omsk": {
     "offset": 6,
@@ -1145,7 +1170,8 @@
     "names": [
       "omst"
     ],
-    "meta": "Omsk"
+    "meta": "Omsk",
+    "country": "ru"
   },
   "Asia/Oral": {
     "offset": 5,
@@ -1158,7 +1184,8 @@
       "west asia",
       "west kazakhstan"
     ],
-    "meta": "West Kazakhstan"
+    "meta": "West Kazakhstan",
+    "country": "kz"
   },
   "Asia/Pontianak": {
     "offset": 7,
@@ -1171,7 +1198,8 @@
       "western indonesia",
       "wib"
     ],
-    "meta": "Western Indonesia"
+    "meta": "Western Indonesia",
+    "country": "id"
   },
   "Asia/Pyongyang": {
     "offset": 9,
@@ -1189,7 +1217,6 @@
       "kp",
       "kst",
       "nampo",
-      "north korea",
       "prk",
       "sariwon",
       "seoul",
@@ -1197,7 +1224,8 @@
       "sunchon",
       "wonsan"
     ],
-    "meta": "Korean"
+    "meta": "Korean",
+    "country": "kp"
   },
   "Asia/Qatar": {
     "offset": 3,
@@ -1215,7 +1243,8 @@
       "qat",
       "riyadh"
     ],
-    "meta": "Arabian"
+    "meta": "Arabian",
+    "country": "qa"
   },
   "Asia/Qostanay": {
     "offset": 6,
@@ -1225,9 +1254,11 @@
       "astana",
       "central asia",
       "east kazakhstan",
-      "kazakhstan eastern", "kostanay"
+      "kazakhstan eastern",
+      "kostanay"
     ],
-    "meta": "East Kazakhstan"
+    "meta": "East Kazakhstan",
+    "country": "kz"
   },
   "Asia/Qyzylorda": {
     "offset": 6,
@@ -1241,7 +1272,8 @@
       "tashkent",
       "west asia"
     ],
-    "meta": "West Kazakhstan"
+    "meta": "West Kazakhstan",
+    "country": "kz"
   },
   "Asia/Riyadh": {
     "offset": 3,
@@ -1279,7 +1311,8 @@
       "yem",
       "yemen"
     ],
-    "meta": "Arabian"
+    "meta": "Arabian",
+    "country": "sa"
   },
   "Asia/Sakhalin": {
     "offset": 11,
@@ -1289,7 +1322,8 @@
       "sakt",
       "yuzhno sakhalinsk"
     ],
-    "meta": "Sakhalin"
+    "meta": "Sakhalin",
+    "country": "ru"
   },
   "Asia/Samarkand": {
     "offset": 5,
@@ -1298,11 +1332,11 @@
       "bukhara",
       "nukus",
       "qarshi",
-      "uzbekistan",
       "uzbekistan west",
       "uzt"
     ],
-    "meta": "Uzbekistan"
+    "meta": "Uzbekistan",
+    "country": "uz"
   },
   "Asia/Seoul": {
     "offset": 9,
@@ -1344,7 +1378,6 @@
       "rok",
       "sejong",
       "seongnam si",
-      "south korea",
       "suncheon",
       "suwon",
       "uijeongbu si",
@@ -1353,7 +1386,8 @@
       "yangju",
       "yeosu"
     ],
-    "meta": "Korean"
+    "meta": "Korean",
+    "country": "kr"
   },
   "Asia/Shanghai": {
     "offset": 8,
@@ -1396,7 +1430,6 @@
       "chengzhong",
       "chenzhou",
       "chifeng",
-      "china",
       "chn",
       "chongqing",
       "chuzhou",
@@ -1688,7 +1721,8 @@
       "zoucheng",
       "zunyi"
     ],
-    "meta": "China"
+    "meta": "China",
+    "country": "cn"
   },
   "Asia/Singapore": {
     "offset": 8,
@@ -1700,7 +1734,8 @@
       "sgt",
       "woodlands"
     ],
-    "meta": "Singapore"
+    "meta": "Singapore",
+    "country": "sg"
   },
   "Asia/Srednekolymsk": {
     "offset": 12,
@@ -1709,7 +1744,8 @@
       "chokurdakh",
       "sret"
     ],
-    "meta": "Srednekolymsk"
+    "meta": "Srednekolymsk",
+    "country": "ru"
   },
   "Asia/Taipei": {
     "offset": 8,
@@ -1725,12 +1761,12 @@
       "roc",
       "taichung",
       "tainan",
-      "taiwan",
       "taoyuan",
       "tw",
       "twn"
     ],
-    "meta": "Taipei"
+    "meta": "Taipei",
+    "country": "tw"
   },
   "Asia/Tashkent": {
     "offset": 5,
@@ -1742,11 +1778,11 @@
       "qoqon",
       "uz",
       "uzb",
-      "uzbekistan",
       "uzbekistan east",
       "uzt"
     ],
-    "meta": "Uzbekistan"
+    "meta": "Uzbekistan",
+    "country": "uz"
   },
   "Asia/Tbilisi": {
     "offset": 4,
@@ -1754,11 +1790,12 @@
     "names": [
       "ge",
       "geo",
-      "georgia",
       "georgian",
-      "get", "kutaisi"
+      "get",
+      "kutaisi"
     ],
-    "meta": "Georgia"
+    "meta": "Georgia",
+    "country": "ge"
   },
   "Asia/Tehran": {
     "offset": 3.5,
@@ -1779,7 +1816,6 @@
       "gorgan",
       "hamadan",
       "ir",
-      "iran",
       "irdt",
       "irn",
       "irst",
@@ -1815,16 +1851,18 @@
       "zahedan",
       "zanjan"
     ],
-    "meta": "Iran"
+    "meta": "Iran",
+    "country": "ir"
   },
   "Asia/Thimphu": {
     "offset": 6,
     "hem": "n",
     "names": [
-      "bhutan",
-      "bt", "btn"
+      "bt",
+      "btn"
     ],
-    "meta": "Bhutan"
+    "meta": "Bhutan",
+    "country": "bt"
   },
   "Asia/Tokyo": {
     "offset": 9,
@@ -1865,7 +1903,6 @@
       "itami",
       "iwaki",
       "izumi",
-      "japan",
       "jdt",
       "joetsu",
       "jp",
@@ -1954,14 +1991,17 @@
       "yokosuka",
       "yono"
     ],
-    "meta": "Japan"
+    "meta": "Japan",
+    "country": "jp"
   },
   "Asia/Tomsk": {
     "offset": 7,
     "hem": "n",
-    "names": ["omst"
+    "names": [
+      "omst"
     ],
-    "meta": "Tomsk"
+    "meta": "Tomsk",
+    "country": "ru"
   },
   "Asia/Ulaanbaatar": {
     "offset": 8,
@@ -1969,11 +2009,11 @@
     "names": [
       "mn",
       "mng",
-      "mongolia",
       "ulan bator",
       "ulat"
     ],
-    "meta": "Ulaanbaatar"
+    "meta": "Ulaanbaatar",
+    "country": "mn"
   },
   "Asia/Ust-Nera": {
     "offset": 10,
@@ -1982,7 +2022,8 @@
       "vladivostok",
       "vlat"
     ],
-    "meta": "Vladivostok"
+    "meta": "Vladivostok",
+    "country": "ru"
   },
   "Asia/Vladivostok": {
     "offset": 10,
@@ -1994,22 +2035,24 @@
       "msk+4",
       "vlat"
     ],
-    "meta": "Vladivostok"
+    "meta": "Vladivostok",
+    "country": "ru"
   },
   "Asia/Yakutsk": {
     "offset": 10,
     "hem": "n",
     "names": [
-      "blagoveshchensk", "yakt"
+      "blagoveshchensk",
+      "yakt"
     ],
-    "meta": "Yakutsk"
+    "meta": "Yakutsk",
+    "country": "ru"
   },
   "Asia/Yangon": {
     "offset": 6.5,
     "hem": "n",
     "names": [
       "bago",
-      "burma",
       "kyain seikgyi township",
       "mandalay",
       "mawlamyine",
@@ -2022,7 +2065,8 @@
       "pathein",
       "sittwe"
     ],
-    "meta": "Myanmar"
+    "meta": "Myanmar",
+    "country": "mm"
   },
   "Asia/Yekaterinburg": {
     "offset": 5,
@@ -2045,7 +2089,8 @@
       "yekt",
       "zlatoust"
     ],
-    "meta": "Yekaterinburg"
+    "meta": "Yekaterinburg",
+    "country": "ru"
   },
   "Asia/Yerevan": {
     "offset": 4,
@@ -2054,8 +2099,9 @@
       "am",
       "amt",
       "arm",
-      "armenia", "caucasus"
+      "caucasus"
     ],
-    "meta": "Armenia"
+    "meta": "Armenia",
+    "country": "am"
   }
 }
