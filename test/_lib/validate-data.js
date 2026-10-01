@@ -47,7 +47,8 @@ const validateData = (data = { zones, metas, patterns, aliases, identifiers }) =
     // Legacy offset fields are checked for shape, not against current timezone rules.
     check(offset(zone.offset), `Zone ${id}: invalid legacy offset`)
     check(zone.hours === undefined || Number.isFinite(zone.hours), `Zone ${id}: invalid legacy DST hours`)
-    check(Array.isArray(zone.names) && zone.names.length > 0 && zone.names.every(text), `Zone ${id}: names must be nonempty strings`)
+    // A zone can rely entirely on the aliases derived from its IANA identifier.
+    check(Array.isArray(zone.names) && zone.names.every(text), `Zone ${id}: names must be nonempty strings`)
   })
 
   Object.entries(data.aliases).forEach(([alias, ids]) => {

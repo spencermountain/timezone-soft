@@ -2,9 +2,7 @@
   "Antarctica/Palmer": {
     "offset": -3,
     "hem": "s",
-    "names": [
-      "palmer"
-    ],
+    "names": [],
     "meta": "Palmer"
   },
   "Antarctica/Casey": {
@@ -12,7 +10,6 @@
     "hours": 3,
     "hem": "s",
     "names": [
-      "casey",
       "cast"
     ],
     "meta": "Casey"
@@ -23,7 +20,6 @@
     "names": [
       "aq",
       "ata",
-      "davis",
       "davt"
     ],
     "meta": "Davis"
@@ -39,7 +35,6 @@
       "aus eastern",
       "aus eastern standard",
       "australia eastern",
-      "macquarie",
       "macquarie island"
     ],
     "meta": "Eastern Australia"
@@ -48,7 +43,6 @@
     "offset": 5,
     "hem": "s",
     "names": [
-      "mawson",
       "mawt"
     ],
     "meta": "Mawson"
@@ -59,8 +53,7 @@
     "names": [
       "argentina",
       "arst",
-      "art",
-      "rothera"
+      "art"
     ],
     "meta": "Argentina"
   },
@@ -71,7 +64,6 @@
     "names": [
       "gmt",
       "greenwich mean",
-      "troll",
       "troll research station"
     ],
     "meta": "Troll"
@@ -81,8 +73,7 @@
     "hem": "s",
     "names": [
       "msk+4",
-      "vost",
-      "vostok"
+      "vost"
     ],
     "meta": "Vostok"
   }

@@ -4,7 +4,7 @@ import pcked from '../_generated/zones.js'
 import misc from '../_generated/aliases.js'
 import addUTC from './add-utc.js'
 import identifiers from '../_generated/iana-identifiers.js'
-import { foldDiacritics } from '../find/_lib/normalize.js'
+import { foldDiacritics, normalizeAlias } from '../find/_lib/normalize.js'
 
 // unpack our lexicon of words
 const zones = {}
@@ -44,8 +44,13 @@ Object.entries(identifiers).forEach(([id, target]) => {
     return
   }
   const name = id.split('/').pop().toLowerCase()
-  lexicon[name] = lexicon[name] || []
-  lexicon[name].push(target)
+  const names = new Set([name, normalizeAlias(name)])
+  names.forEach(alias => {
+    if (alias) {
+      lexicon[alias] = lexicon[alias] || []
+      lexicon[alias].push(target)
+    }
+  })
 })
 
 const unique = function (arr) {

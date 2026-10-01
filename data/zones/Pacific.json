@@ -3,7 +3,6 @@
     "offset": 13,
     "hem": "s",
     "names": [
-      "apia",
       "pacific",
       "samoa",
       "west samoa",
@@ -18,7 +17,6 @@
     "hem": "s",
     "dst": "nz",
     "names": [
-      "auckland",
       "christchurch",
       "manukau",
       "new zealand",
@@ -38,7 +36,6 @@
     "offset": 11,
     "hem": "s",
     "names": [
-      "bougainville",
       "guinea",
       "guinean",
       "pacific",
@@ -55,7 +52,6 @@
       "chadt",
       "chast",
       "chat",
-      "chatham",
       "chatham islands",
       "nz chat",
       "pacific"
@@ -67,7 +63,6 @@
     "hem": "n",
     "names": [
       "chut",
-      "chuuk",
       "chuuk/trukyap",
       "pacific"
     ],
@@ -80,7 +75,6 @@
     "names": [
       "easst",
       "east",
-      "easter",
       "easter island",
       "emt",
       "pacific"
@@ -91,7 +85,6 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      "efate",
       "pacific",
       "vanuatu",
       "vu",
@@ -103,7 +96,6 @@
     "offset": 13,
     "hem": "n",
     "names": [
-      "fakaofo",
       "pacific",
       "tk",
       "tkl",
@@ -116,7 +108,6 @@
     "offset": 12,
     "hem": "s",
     "names": [
-      "fiji",
       "fj",
       "fji",
       "fjst",
@@ -129,7 +120,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      "funafuti",
       "pacific",
       "tuv",
       "tuvalu",
@@ -145,7 +135,6 @@
       "colombia",
       "cost",
       "cot",
-      "galapagos",
       "galapagos islands",
       "galt",
       "pacific"
@@ -156,7 +145,6 @@
     "offset": -9,
     "hem": "n",
     "names": [
-      "gambier",
       "gambier islands",
       "gamt",
       "pacific"
@@ -167,7 +155,6 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      "guadalcanal",
       "pacific",
       "sb",
       "sbt",
@@ -183,7 +170,6 @@
     "names": [
       "chamorro",
       "chst",
-      "guam",
       "mnp",
       "mp",
       "northern mariana islands",
@@ -205,7 +191,6 @@
       "hat",
       "hawaii",
       "hawaii aleutian",
-      "honolulu",
       "hst",
       "pacific"
     ],
@@ -215,7 +200,6 @@
     "offset": 13,
     "hem": "n",
     "names": [
-      "kanton",
       "pacific",
       "phoenix islands",
       "phot"
@@ -229,7 +213,6 @@
       "ki",
       "kir",
       "kiribati",
-      "kiritimati",
       "kiritimati island",
       "line islands",
       "lint",
@@ -241,7 +224,6 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      "kosrae",
       "kost",
       "pacific"
     ],
@@ -251,7 +233,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      "kwajalein",
       "marshall islands",
       "mht",
       "pacific"
@@ -262,7 +243,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      "majuro",
       "marshall islands",
       "mh",
       "mhl",
@@ -275,7 +255,6 @@
     "offset": -9.5,
     "hem": "n",
     "names": [
-      "marquesas",
       "marquesas islands",
       "mart",
       "pacific"
@@ -286,7 +265,6 @@
     "offset": 12,
     "hem": "n",
     "names": [
-      "nauru",
       "nr",
       "nrt",
       "nru",
@@ -299,7 +277,6 @@
     "hem": "n",
     "names": [
       "niu",
-      "niue",
       "nu",
       "nut",
       "pacific"
@@ -315,7 +292,6 @@
       "nfdt",
       "nfk",
       "nft",
-      "norfolk",
       "norfolk island",
       "pacific"
     ],
@@ -329,7 +305,6 @@
       "ncl",
       "nct",
       "new caledonia",
-      "noumea",
       "pacific"
     ],
     "meta": "New Caledonia"
@@ -340,7 +315,6 @@
     "names": [
       "midway",
       "pacific",
-      "pago pago",
       "samoa",
       "sst"
     ],
@@ -351,7 +325,6 @@
     "hem": "n",
     "names": [
       "pacific",
-      "palau",
       "plw",
       "pw",
       "pwt"
@@ -364,7 +337,6 @@
     "names": [
       "pacific",
       "pcn",
-      "pitcairn",
       "pn",
       "pst",
       "utc-08"
@@ -378,7 +350,6 @@
       "french polynesia",
       "pacific",
       "pf",
-      "pohnpei",
       "pohnpei/ponape",
       "pont",
       "pyf"
@@ -396,8 +367,7 @@
       "papua new guinea",
       "pg",
       "pgt",
-      "png",
-      "port moresby"
+      "png"
     ],
     "meta": "Papua New Guinea"
   },
@@ -410,8 +380,7 @@
       "cok",
       "cook",
       "cook islands",
-      "pacific",
-      "rarotonga"
+      "pacific"
     ],
     "meta": "Cook Islands"
   },
@@ -421,7 +390,6 @@
     "names": [
       "pacific",
       "society islands",
-      "tahiti",
       "taht"
     ],
     "meta": "Tahiti"
@@ -432,8 +400,7 @@
     "names": [
       "gilbert islands",
       "gilt",
-      "pacific",
-      "tarawa"
+      "pacific"
     ],
     "meta": "Gilbert Islands"
   },
@@ -446,7 +413,6 @@
       "to",
       "ton",
       "tonga",
-      "tongatapu",
       "tot"
     ],
     "meta": "Tonga"
@@ -459,7 +425,6 @@
       "um",
       "umi",
       "us minor outlying islands",
-      "wake",
       "wake island",
       "wakt"
     ],
@@ -470,7 +435,6 @@
     "hem": "n",
     "names": [
       "pacific",
-      "wallis",
       "wallis and futuna",
       "wallis futuna",
       "wf",

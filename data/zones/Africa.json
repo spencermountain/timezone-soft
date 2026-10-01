@@ -3,7 +3,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "abidjan",
       "abobo",
       "bouake",
       "camayenne",
@@ -28,7 +27,6 @@
     "hem": "n",
     "names": [
       "algeria",
-      "algiers",
       "annaba",
       "bab ezzouar",
       "batna",
@@ -51,7 +49,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "bissau",
       "gmt",
       "gnb",
       "greenwich mean",
@@ -75,7 +72,6 @@
       "aswan",
       "asyut",
       "bani suwayf",
-      "cairo",
       "damanhur",
       "eg",
       "egy",
@@ -104,7 +100,6 @@
     "names": [
       "agadir",
       "al hoceima",
-      "casablanca",
       "fes",
       "kenitra",
       "ma",
@@ -129,7 +124,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "ceuta",
       "ceutamelilla"
     ],
     "meta": "Central European"
@@ -140,7 +134,6 @@
     "names": [
       "casablanca",
       "eh",
-      "el aaiun",
       "esh",
       "laayoune",
       "morocco",
@@ -165,8 +158,6 @@
       "durban",
       "east london",
       "gqeberha",
-      "harare",
-      "johannesburg",
       "klerksdorp",
       "krugersdorp",
       "newcastle",
@@ -198,7 +189,6 @@
     "names": [
       "cat",
       "central africa",
-      "juba",
       "south sudan",
       "ss",
       "ssd",
@@ -218,7 +208,6 @@
       "el fasher",
       "el obeid",
       "kassala",
-      "khartoum",
       "khartoum north",
       "kosti",
       "nyala",
@@ -270,7 +259,6 @@
       "kaduna",
       "kano",
       "katsina",
-      "lagos",
       "lekki",
       "maiduguri",
       "makurdi",
@@ -312,10 +300,10 @@
       "cat",
       "central africa",
       "chimoio",
+      "harare",
       "kananga",
       "kisangani",
       "lilongwe",
-      "maputo",
       "matola",
       "mbuji mayi",
       "nacala",
@@ -338,7 +326,6 @@
       "lbr",
       "liberia",
       "lr",
-      "monrovia",
       "utc",
       "zulu"
     ],
@@ -360,7 +347,6 @@
       "mombasa",
       "mwanza",
       "myt",
-      "nairobi",
       "nakuru",
       "thika",
       "yt"
@@ -373,7 +359,6 @@
     "names": [
       "africa western",
       "chad",
-      "ndjamena",
       "tcd",
       "td",
       "w central africa",
@@ -391,7 +376,6 @@
     "names": [
       "gmt",
       "greenwich mean",
-      "sao tome",
       "st",
       "stp",
       "utc",
@@ -411,7 +395,6 @@
       "ly",
       "misratah",
       "tarhuna",
-      "tripoli",
       "zawiya"
     ],
     "meta": "Eastern European"
@@ -423,7 +406,6 @@
       "sfax",
       "tn",
       "tun",
-      "tunis",
       "tunisia"
     ],
     "meta": "Central European"
@@ -437,8 +419,7 @@
       "central africa",
       "na",
       "nam",
-      "namibia",
-      "windhoek"
+      "namibia"
     ],
     "meta": "Central Africa"
   }

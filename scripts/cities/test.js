@@ -12,17 +12,7 @@ const magenta = (str) => '\x1b[35m' + str + '\x1b[0m'
 
 const limit = 600
 
-const ignore = new Set([
-  // 'Melbourne',
-  // 'Hong Kong',
-  // 'Berlin',
-  // 'Hyderabad',
-  // 'Harare',
-  // 'La Paz',
-  // 'Omsk',
-  // 'Krasnoyarsk',
-  // 'Monterrey',
-  // 'Ashgabat'
+const ignore = new Set(['Hyderabad'
 ])
 
 const rows = await load()
@@ -46,8 +36,7 @@ cities.forEach(city => {
     console.log(
       `${green('✓')} - '${green(city.name)}' (${dim(expected)}) ${ignore.has(city.name) ? yellow(found[0]) : ''}`
     )
-  }
-  else if (weakMatch) {
+  } else if (weakMatch) {
     weak += 1
     console.log(`${yellow('-')} - '${yellow(city.name)}' (${dim(expected)})  - [${yellow(found[0])}]`)
   } else {
@@ -56,10 +45,8 @@ cities.forEach(city => {
   }
 })
 console.log(`\n  ${green(strong)}/${cities.length} correct (${((100 * strong) / cities.length).toFixed(0)}%)`)
-console.log(
-  `  ${yellow(strong + weak)}/${cities.length} weak (${((100 * (strong + weak)) / cities.length).toFixed(0)}%)`
-)
-console.log(`  ${red(wrong)}/${cities.length} wrong (${((100 * wrong) / cities.length).toFixed(0)}%)`)
+console.log(`  ${yellow(weak)}/${cities.length} weak`)
+console.log(`  ${red(wrong)}/${cities.length} wrong`)
 
 const { added } = await saveMissing(missing)
 if (added) {

@@ -7,7 +7,6 @@
       "acdt",
       "acst",
       "act",
-      "adelaide",
       "australia",
       "australia central",
       "australian central",
@@ -25,7 +24,6 @@
       "australia",
       "australian east",
       "australian eastern",
-      "brisbane",
       "gold coast",
       "logan",
       "queensland",
@@ -43,7 +41,6 @@
       "adelaide",
       "australia",
       "australia central",
-      "broken hill",
       "cen australia standard",
       "central australia",
       "yancowinna"
@@ -57,7 +54,6 @@
       "acst",
       "australia",
       "australian central",
-      "darwin",
       "northern territory"
     ],
     "meta": "Australian Central"
@@ -73,8 +69,7 @@
       "aus central west",
       "australia",
       "australian central western",
-      "cwst",
-      "eucla"
+      "cwst"
     ],
     "meta": "Australian Central Western"
   },
@@ -93,7 +88,6 @@
       "australian eastern",
       "canberra",
       "eastern australia",
-      "hobart",
       "king island",
       "tasmania"
     ],
@@ -106,7 +100,6 @@
       "aest",
       "australia",
       "australian eastern",
-      "lindeman",
       "whitsunday islands"
     ],
     "meta": "Brisbane"
@@ -120,7 +113,6 @@
       "lhdt",
       "lhst",
       "lht",
-      "lord howe",
       "lord howe island"
     ],
     "meta": "Lord Howe"
@@ -140,8 +132,7 @@
       "australian eastern",
       "canberra",
       "eastern australia",
-      "geelong",
-      "melbourne"
+      "geelong"
     ],
     "meta": "Eastern Australia"
   },
@@ -156,7 +147,6 @@
       "awdt",
       "awst",
       "awt",
-      "perth",
       "w australia",
       "west australia",
       "western australia"
@@ -179,7 +169,6 @@
       "australia eastern",
       "australian eastern",
       "new south wales",
-      "sydney",
       "wollongong"
     ],
     "meta": "Eastern Australia"

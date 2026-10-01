@@ -12,12 +12,13 @@ for (const file of files) {
   const path = new URL(file, directory)
   const zones = JSON.parse(await readFile(path, 'utf8'))
   Object.entries(zones).forEach(([id, zone]) => {
+    const basename = normalizeName(id.split('/').pop())
     // Full IANA identifiers already resolve through the identifier table.
     // Special-case spellings are stored separately and must not be folded here.
     const names = zone.names
       .filter(name => !misc[name]?.includes(id))
       .map(normalizeName)
-      .filter(name => name && !timezoneIds.has(name))
+      .filter(name => name && !timezoneIds.has(name) && name !== basename)
     zone.names = [...new Set(names)].sort()
   })
   await writeFile(path, JSON.stringify(zones, null, 2) + '\n')

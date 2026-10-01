@@ -5,7 +5,6 @@
     "dst": "eu0",
     "names": [
       "atlantic",
-      "azores",
       "azost",
       "azot",
       "hmt"
@@ -20,7 +19,6 @@
       "ast",
       "at",
       "atlantic",
-      "bermuda",
       "bm",
       "bmu"
     ],
@@ -32,7 +30,6 @@
     "dst": "eu1",
     "names": [
       "atlantic",
-      "canary",
       "canary islands",
       "europe western",
       "las palmas de gran canaria",
@@ -49,7 +46,6 @@
       "atlantic",
       "cabo verde",
       "cabo verde is",
-      "cape verde",
       "cpv",
       "cv",
       "cvt"
@@ -62,7 +58,6 @@
     "dst": "eu1",
     "names": [
       "atlantic",
-      "faroe",
       "faroe islands",
       "fo",
       "fro"
@@ -76,7 +71,6 @@
     "names": [
       "atlantic",
       "europe western",
-      "madeira",
       "madeira islands",
       "western european",
       "wet"
@@ -93,7 +87,6 @@
       "iceland",
       "is",
       "isl",
-      "reykjavik",
       "utc",
       "zulu"
     ],
@@ -106,8 +99,7 @@
       "atlantic",
       "gs",
       "gst",
-      "sgs",
-      "south georgia"
+      "sgs"
     ],
     "meta": "South Georgia"
   },
@@ -122,8 +114,7 @@
       "fk",
       "fkst",
       "fkt",
-      "flk",
-      "stanley"
+      "flk"
     ],
     "meta": "Falkland Islands"
   }
