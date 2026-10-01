@@ -1,9 +1,8 @@
-export default {
+{
   "Antarctica/Palmer": {
     "offset": -3,
     "hem": "s",
     "names": [
-      "antarctica/palmer",
       "palmer"
     ],
     "meta": "Palmer"
@@ -41,10 +40,9 @@ export default {
       "antarctica",
       "aus east",
       "aus eastern",
-      "aus eastern standard time",
+      "aus eastern standard",
       "australia eastern",
       "canberra",
-      "eastern australia time",
       "macquarie",
       "macquarie island",
       "melbourne",
@@ -72,7 +70,7 @@ export default {
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
+      "of buenos aires",
       "rothera"
     ],
     "meta": "Argentina"
@@ -84,10 +82,9 @@ export default {
     "names": [
       "antarctica",
       "gmt",
-      "greenwich mean time",
+      "greenwich mean",
       "troll",
-      "troll research station",
-      "troll time"
+      "troll research station"
     ],
     "meta": "Troll"
   },

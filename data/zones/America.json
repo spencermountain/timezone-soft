@@ -1,4 +1,4 @@
-export default {
+{
   "America/Adak": {
     "offset": -9,
     "hem": "n",
@@ -7,9 +7,9 @@ export default {
       "adak",
       "aleutian",
       "aleutian islands",
-      "aleutian standard time",
+      "aleutian standard",
       "america/atka",
-      "hawaii standard time",
+      "hawaii standard",
       "hdt",
       "hst",
       "nwt",
@@ -28,10 +28,9 @@ export default {
       "akst",
       "akt",
       "alaska",
-      "alaska standard time",
-      "alaska time",
+      "alaska standard",
       "alaskan",
-      "alaskan standard time",
+      "alaskan standard",
       "america",
       "anchorage",
       "us/alaska"
@@ -44,11 +43,10 @@ export default {
     "names": [
       "araguaina",
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brt",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "palmas",
       "tocantins"
@@ -105,13 +103,12 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina standard time",
-      "argentina time",
+      "argentina standard",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
-      "la rioja"
+      "la rioja",
+      "of buenos aires"
     ],
     "meta": "Argentina"
   },
@@ -130,13 +127,12 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina standard time",
-      "argentina time",
+      "argentina standard",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
-      "rio_gallegos"
+      "of buenos aires",
+      "rio gallegos"
     ],
     "meta": "Argentina"
   },
@@ -145,12 +141,11 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina standard time",
-      "argentina time",
+      "argentina standard",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
+      "of buenos aires",
       "salta"
     ],
     "meta": "Argentina"
@@ -160,11 +155,10 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina time",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
+      "of buenos aires",
       "san juan"
     ],
     "meta": "Argentina"
@@ -174,11 +168,10 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina time",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
+      "of buenos aires",
       "san luis"
     ],
     "meta": "Argentina"
@@ -188,11 +181,10 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina time",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
+      "of buenos aires",
       "tucuman"
     ],
     "meta": "Argentina"
@@ -202,11 +194,10 @@ export default {
     "hem": "s",
     "names": [
       "argentina",
-      "argentina time",
       "arst",
       "art",
       "buenos aires",
-      "city of buenos aires",
+      "of buenos aires",
       "ushuaia"
     ],
     "meta": "Argentina"
@@ -219,7 +210,6 @@ export default {
       "capiata",
       "ciudad del este",
       "paraguay",
-      "paraguay time",
       "pry",
       "py",
       "pyst",
@@ -234,12 +224,11 @@ export default {
     "names": [
       "bahia",
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brt",
       "camacari",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "feira de santana",
       "itabuna",
@@ -252,16 +241,14 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "bahia_banderas",
-      "bahía de banderas",
+      "bahia banderas",
+      "bahia de banderas",
       "central mexican",
       "central mexico",
-      "central mexico time",
-      "central standard time",
+      "central standard",
       "cst",
       "guadalajara",
       "mexico",
-      "mexico city",
       "monterrey"
     ],
     "meta": "Central Mexico"
@@ -271,7 +258,7 @@ export default {
     "hem": "n",
     "names": [
       "ast",
-      "atlantic standard time",
+      "atlantic standard",
       "barbados",
       "bb",
       "brb"
@@ -285,15 +272,14 @@ export default {
       "ananindeua",
       "belem",
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brt",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "macapa",
-      "parauapebas",
-      "pará east amapá"
+      "para east amapa",
+      "parauapebas"
     ],
     "meta": "Brasilia"
   },
@@ -304,7 +290,7 @@ export default {
       "belize",
       "blz",
       "bz",
-      "central standard time",
+      "central standard",
       "cst"
     ],
     "meta": "Central"
@@ -314,13 +300,12 @@ export default {
     "hem": "n",
     "names": [
       "amazon",
-      "amazon standard time",
-      "amazon time",
+      "amazon standard",
       "amt",
       "boa vista",
       "central brazil",
       "central brazilian",
-      "central brazilian standard time",
+      "central brazilian standard",
       "cuiaba",
       "roraima"
     ],
@@ -377,8 +362,7 @@ export default {
       "idaho",
       "mountain",
       "mountain id",
-      "mountain standard time",
-      "mountain time",
+      "mountain standard",
       "mpt",
       "mst",
       "mt"
@@ -395,8 +379,7 @@ export default {
       "cambridge bay",
       "mddt",
       "mountain",
-      "mountain standard time",
-      "mountain time",
+      "mountain standard",
       "mst",
       "mt"
     ],
@@ -406,7 +389,7 @@ export default {
     "offset": -4,
     "hem": "s",
     "names": [
-      "amazon standard time",
+      "amazon standard",
       "amt",
       "brazil",
       "campo grande",
@@ -419,7 +402,7 @@ export default {
     "hem": "n",
     "names": [
       "cancun",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "mexico",
       "quintana roo"
@@ -456,8 +439,7 @@ export default {
       "ve",
       "ven",
       "venezuela",
-      "venezuela standard time",
-      "venezuela time",
+      "venezuela standard",
       "venezuelan",
       "vet"
     ],
@@ -469,7 +451,6 @@ export default {
     "names": [
       "cayenne",
       "french guiana",
-      "french guiana time",
       "gf",
       "gft",
       "guf",
@@ -493,7 +474,6 @@ export default {
       "brownsville",
       "cdt",
       "central",
-      "central time",
       "chicago",
       "corpus christi",
       "cst",
@@ -561,11 +541,10 @@ export default {
       "la paz",
       "mazatlan",
       "mexican pacific",
-      "mexican pacific time",
       "mexico",
       "mexico pacific",
       "mountain mexico",
-      "mountain standard time (mexico)"
+      "mountain standard mexico"
     ],
     "meta": "Central Mexico"
   },
@@ -574,11 +553,8 @@ export default {
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america/ciudad_juarez",
       "ciudad juarez",
-      "ciudad juárez",
-      "juarez",
-      "juárez"
+      "juarez"
     ],
     "meta": "Mountain"
   },
@@ -586,9 +562,7 @@ export default {
     "offset": -3,
     "hem": "s",
     "names": [
-      "america/coyhaique",
       "aysen",
-      "aysén",
       "coihaique",
       "coyhaique"
     ],
@@ -598,7 +572,7 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "central standard time",
+      "central standard",
       "costa rica",
       "cr",
       "cri",
@@ -611,7 +585,7 @@ export default {
     "offset": -4,
     "hem": "s",
     "names": [
-      "amazon standard time",
+      "amazon standard",
       "amt",
       "brazil",
       "cuiaba",
@@ -624,11 +598,10 @@ export default {
     "offset": 0,
     "hem": "n",
     "names": [
-      "coordinated universal time",
       "danmarkshavn",
       "denmark",
       "gmt",
-      "greenwich mean time",
+      "greenwich mean",
       "utc",
       "zulu"
     ],
@@ -640,7 +613,7 @@ export default {
     "names": [
       "canada",
       "dawson",
-      "mountain standard time",
+      "mountain standard",
       "mst",
       "yddt",
       "ydt",
@@ -655,7 +628,7 @@ export default {
     "names": [
       "canada",
       "dawson creek",
-      "mountain standard time",
+      "mountain standard",
       "mst",
       "mt",
       "ppt",
@@ -678,8 +651,7 @@ export default {
       "el paso",
       "mdt",
       "mountain",
-      "mountain standard time",
-      "mountain time",
+      "mountain standard",
       "mst",
       "mst7mdt",
       "mt",
@@ -700,8 +672,7 @@ export default {
       "detroit",
       "eastern",
       "eastern mi",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "ept",
       "est",
       "et",
@@ -722,8 +693,7 @@ export default {
       "canada/mountain",
       "edmonton",
       "mountain",
-      "mountain standard time",
-      "mountain time",
+      "mountain standard",
       "mst",
       "mt"
     ],
@@ -734,8 +704,7 @@ export default {
     "hem": "n",
     "names": [
       "acre",
-      "acre standard time",
-      "acre time",
+      "acre standard",
       "act",
       "amazonas west",
       "brazil",
@@ -747,7 +716,7 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "central standard time",
+      "central standard",
       "cst",
       "el salvador",
       "san salvador",
@@ -764,7 +733,7 @@ export default {
       "british columbia",
       "canada",
       "fort nelson",
-      "mountain standard time",
+      "mountain standard",
       "mst",
       "mt"
     ],
@@ -775,13 +744,12 @@ export default {
     "hem": "s",
     "names": [
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brt",
       "campina grande",
       "caucaia",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "fortaleza",
       "imperatriz",
@@ -804,11 +772,10 @@ export default {
       "ast",
       "at",
       "atlantic",
-      "atlantic standard time",
-      "atlantic time",
+      "atlantic standard",
       "canada",
       "cape breton",
-      "glace_bay"
+      "glace bay"
     ],
     "meta": "Atlantic"
   },
@@ -820,10 +787,9 @@ export default {
       "ast",
       "at",
       "atlantic",
-      "atlantic standard time",
-      "atlantic time",
+      "atlantic standard",
       "canada",
-      "goose_bay",
+      "goose bay",
       "labrador",
       "npt"
     ],
@@ -836,8 +802,7 @@ export default {
     "names": [
       "america eastern",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "est",
       "et",
       "grand turk",
@@ -852,7 +817,7 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "central standard time",
+      "central standard",
       "cst",
       "gt",
       "gtm",
@@ -872,7 +837,6 @@ export default {
       "ecu",
       "ecuador",
       "ecuador mainland",
-      "ecuador time",
       "guayaquil",
       "machala",
       "manta",
@@ -889,7 +853,6 @@ export default {
       "georgetown",
       "guy",
       "guyana",
-      "guyana time",
       "gy",
       "gyt"
     ],
@@ -905,8 +868,7 @@ export default {
       "at",
       "atlantic",
       "atlantic ns",
-      "atlantic standard time",
-      "atlantic time",
+      "atlantic standard",
       "ca",
       "canada",
       "canada/atlantic",
@@ -932,8 +894,7 @@ export default {
       "cu",
       "cub",
       "cuba",
-      "cuba standard time",
-      "cuba time",
+      "cuba standard",
       "diez de octubre",
       "guantanamo",
       "havana",
@@ -955,7 +916,7 @@ export default {
       "ciudad obregon",
       "hermosillo",
       "hnpmx",
-      "mexican pacific standard time",
+      "mexican pacific standard",
       "mexico",
       "nogales",
       "sonora"
@@ -991,7 +952,7 @@ export default {
     "names": [
       "america",
       "america/knox_in",
-      "central standard time",
+      "central standard",
       "cst",
       "indiana",
       "knox",
@@ -1005,7 +966,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "indiana",
       "marengo"
@@ -1018,7 +979,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "indiana",
       "petersburg"
@@ -1031,10 +992,10 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "central standard time",
+      "central standard",
       "cst",
       "indiana",
-      "tell_city"
+      "tell"
     ],
     "meta": "Central"
   },
@@ -1044,7 +1005,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "indiana",
       "vevay"
@@ -1057,7 +1018,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "indiana",
       "vincennes"
@@ -1070,7 +1031,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "indiana",
       "winamac"
@@ -1085,8 +1046,7 @@ export default {
       "canada",
       "inuvik",
       "mountain",
-      "mountain standard time",
-      "mountain time",
+      "mountain standard",
       "mst",
       "mt",
       "pddt"
@@ -1101,8 +1061,7 @@ export default {
       "america eastern",
       "canada",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "eddt",
       "est",
       "et",
@@ -1114,7 +1073,7 @@ export default {
     "offset": -5,
     "hem": "n",
     "names": [
-      "eastern standard time",
+      "eastern standard",
       "est",
       "jam",
       "jamaica",
@@ -1133,10 +1092,9 @@ export default {
       "akt",
       "alaska",
       "alaska juneau area",
-      "alaska standard time",
-      "alaska time",
+      "alaska standard",
       "alaskan",
-      "alaskan standard time",
+      "alaskan standard",
       "america",
       "juneau"
     ],
@@ -1163,7 +1121,7 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "kentucky",
       "monticello"
@@ -1177,7 +1135,6 @@ export default {
       "bo",
       "bol",
       "bolivia",
-      "bolivia time",
       "bot",
       "cochabamba",
       "la paz",
@@ -1204,8 +1161,7 @@ export default {
       "pe",
       "per",
       "peru",
-      "peru standard time",
-      "peru time",
+      "peru standard",
       "pet",
       "piura",
       "pucallpa",
@@ -1240,7 +1196,6 @@ export default {
       "las vegas",
       "long beach",
       "los angeles",
-      "los_angeles",
       "modesto",
       "moreno valley",
       "nevada",
@@ -1250,8 +1205,7 @@ export default {
       "oregon",
       "oxnard",
       "pacific",
-      "pacific standard time",
-      "pacific time",
+      "pacific standard",
       "paradise",
       "pdt",
       "portland",
@@ -1289,10 +1243,9 @@ export default {
       "alagoassergipe",
       "aracaju",
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brt",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "maceio"
     ],
@@ -1302,7 +1255,7 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "central standard time",
+      "central standard",
       "cst",
       "managua",
       "ni",
@@ -1316,15 +1269,14 @@ export default {
     "hem": "s",
     "names": [
       "amazon",
-      "amazon standard time",
-      "amazon time",
+      "amazon standard",
       "amazonas east",
       "amt",
       "brazil",
       "brazil/west",
       "central brazil",
       "central brazilian",
-      "central brazilian standard time",
+      "central brazilian standard",
       "cuiaba",
       "manaus"
     ],
@@ -1335,7 +1287,7 @@ export default {
     "hem": "n",
     "names": [
       "ast",
-      "atlantic standard time",
+      "atlantic standard",
       "ffmt",
       "fort de france",
       "french martinique",
@@ -1352,8 +1304,7 @@ export default {
     "names": [
       "america central",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "cst",
       "ct",
       "heroica matamoros",
@@ -1375,13 +1326,12 @@ export default {
       "la paz",
       "los mochis",
       "mazatlan",
-      "mexican pacific standard time",
-      "mexican pacific time",
+      "mexican pacific standard",
       "mexico",
       "mexico pacific",
       "mexico/bajasur",
       "mountain mexico",
-      "mountain standard time (mexico)",
+      "mountain standard mexico",
       "tepic"
     ],
     "meta": "Mexican Pacific"
@@ -1394,8 +1344,7 @@ export default {
       "america",
       "america central",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "cst",
       "ct",
       "menominee",
@@ -1408,16 +1357,14 @@ export default {
     "hem": "n",
     "names": [
       "campeche",
-      "campecheyucatán",
+      "campecheyucatan",
       "central mexican",
       "central mexico",
-      "central mexico time",
-      "central standard time",
+      "central standard",
       "cst",
       "guadalajara",
       "merida",
       "mexico",
-      "mexico city",
       "monterrey"
     ],
     "meta": "Central Mexico"
@@ -1431,10 +1378,9 @@ export default {
       "akt",
       "alaska",
       "alaska annette island",
-      "alaska standard time",
-      "alaska time",
+      "alaska standard",
       "alaskan",
-      "alaskan standard time",
+      "alaskan standard",
       "america",
       "metlakatla"
     ],
@@ -1454,8 +1400,7 @@ export default {
       "celaya",
       "central mexican",
       "central mexico",
-      "central mexico time",
-      "central standard time",
+      "central standard",
       "chiapas",
       "chilpancingo",
       "ciudad lopez mateos",
@@ -1487,9 +1432,7 @@ export default {
       "magdalena contreras",
       "mex",
       "mexico",
-      "mexico city",
       "mexico/general",
-      "mexico_city",
       "michoacan",
       "miguel hidalgo",
       "monterrey",
@@ -1547,11 +1490,11 @@ export default {
       "pm",
       "saint pierre",
       "saint pierre and miquelon",
-      "saint pierre standard time",
+      "saint pierre standard",
       "spm",
-      "st pierre & miquelon standard time",
-      "st pierre & miquelon time",
-      "st pierre and miquelon"
+      "st pierre and miquelon",
+      "st pierre miquelon",
+      "st pierre miquelon standard"
     ],
     "meta": "St. Pierre & Miquelon"
   },
@@ -1563,8 +1506,7 @@ export default {
       "ast",
       "at",
       "atlantic",
-      "atlantic standard time",
-      "atlantic time",
+      "atlantic standard",
       "canada",
       "hepm",
       "moncton",
@@ -1578,8 +1520,7 @@ export default {
     "names": [
       "central mexican",
       "central mexico",
-      "central mexico time",
-      "central standard time",
+      "central standard",
       "ciudad apodaca",
       "ciudad general escobedo",
       "ciudad madero",
@@ -1589,7 +1530,6 @@ export default {
       "guadalajara",
       "guadalupe",
       "mexico",
-      "mexico city",
       "monclova",
       "monterrey",
       "saltillo",
@@ -1606,10 +1546,9 @@ export default {
     "hem": "s",
     "names": [
       "montevideo",
-      "montevideo standard time",
+      "montevideo standard",
       "uruguay",
-      "uruguay standard time",
-      "uruguay time",
+      "uruguay standard",
       "ury",
       "uy",
       "uyst",
@@ -1642,8 +1581,7 @@ export default {
       "durham",
       "east flatbush",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "edt",
       "est",
       "est5edt",
@@ -1673,9 +1611,7 @@ export default {
       "new hampshire",
       "new jersey",
       "new york",
-      "new york city",
       "new york state",
-      "new_york",
       "newark",
       "newport news",
       "norfolk",
@@ -1728,8 +1664,7 @@ export default {
       "america eastern",
       "canada",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "est",
       "et",
       "nipigon"
@@ -1744,11 +1679,10 @@ export default {
       "akst",
       "akt",
       "alaska",
-      "alaska standard time",
-      "alaska time",
+      "alaska standard",
       "alaska west",
       "alaskan",
-      "alaskan standard time",
+      "alaskan standard",
       "america",
       "nome"
     ],
@@ -1761,8 +1695,8 @@ export default {
       "atlantic islands",
       "brazil",
       "brazil/denoronha",
-      "fernando de noronha standard time",
-      "fernando de noronha time",
+      "fernando de noronha",
+      "fernando de noronha standard",
       "fnt",
       "noronha"
     ],
@@ -1775,7 +1709,7 @@ export default {
     "names": [
       "america",
       "beulah",
-      "central standard time",
+      "central standard",
       "cst",
       "north dakota"
     ],
@@ -1788,7 +1722,7 @@ export default {
     "names": [
       "america",
       "center",
-      "central standard time",
+      "central standard",
       "cst",
       "mercer",
       "north dakota",
@@ -1802,9 +1736,9 @@ export default {
     "dst": "usa",
     "names": [
       "america",
-      "central standard time",
+      "central standard",
       "cst",
-      "new_salem",
+      "new salem",
       "north dakota"
     ],
     "meta": "Central"
@@ -1833,8 +1767,7 @@ export default {
       "america",
       "america central",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "chihuahua",
       "cst",
       "ct",
@@ -1851,7 +1784,7 @@ export default {
       "america/coral_harbour",
       "atikokan",
       "coral h",
-      "eastern standard time",
+      "eastern standard",
       "est",
       "pa",
       "pan",
@@ -1870,8 +1803,7 @@ export default {
       "baffin island",
       "canada",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "est",
       "et",
       "nunavit",
@@ -1887,8 +1819,7 @@ export default {
       "sr",
       "srt",
       "sur",
-      "suriname",
-      "suriname time"
+      "suriname"
     ],
     "meta": "Suriname"
   },
@@ -1908,7 +1839,7 @@ export default {
       "maryvale",
       "mesa",
       "montana",
-      "mountain standard time",
+      "mountain standard",
       "mst",
       "mst7mdt",
       "mt",
@@ -1936,8 +1867,7 @@ export default {
       "carrefour",
       "croix des bouquets",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "est",
       "et",
       "haiti",
@@ -1945,8 +1875,7 @@ export default {
       "hti",
       "petionville",
       "port au prince",
-      "port de paix",
-      "port-au-prince"
+      "port de paix"
     ],
     "meta": "Eastern"
   },
@@ -1955,17 +1884,15 @@ export default {
     "hem": "n",
     "names": [
       "amazon",
-      "amazon standard time",
-      "amazon time",
+      "amazon standard",
       "amt",
       "brazil",
       "central brazil",
       "central brazilian",
-      "central brazilian standard time",
+      "central brazilian standard",
       "cuiaba",
       "porto velho",
-      "porto_velho",
-      "rondônia"
+      "rondonia"
     ],
     "meta": "Amazon"
   },
@@ -1995,7 +1922,7 @@ export default {
       "america/tortola",
       "america/virgin",
       "ast",
-      "atlantic standard time",
+      "atlantic standard",
       "bayamon",
       "pr",
       "pri",
@@ -2008,7 +1935,7 @@ export default {
     "hem": "s",
     "names": [
       "chile",
-      "chile standard time",
+      "chile standard",
       "clt",
       "punta arenas",
       "region of magallanes"
@@ -2023,8 +1950,7 @@ export default {
       "america",
       "america central",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "cst",
       "ct",
       "ft frances",
@@ -2041,8 +1967,7 @@ export default {
       "america central",
       "cddt",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "cst",
       "ct",
       "rankin inlet"
@@ -2055,12 +1980,11 @@ export default {
     "names": [
       "america",
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brt",
       "caruaru",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "jaboatao",
       "jaboatao dos guararapes",
@@ -2077,7 +2001,7 @@ export default {
     "names": [
       "canada",
       "canada/saskatchewan",
-      "central standard time",
+      "central standard",
       "cst",
       "regina",
       "saskatchewan",
@@ -2094,8 +2018,7 @@ export default {
       "america",
       "america central",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "cst",
       "ct",
       "resolute"
@@ -2107,8 +2030,7 @@ export default {
     "hem": "s",
     "names": [
       "acre",
-      "acre standard time",
-      "acre time",
+      "acre standard",
       "act",
       "america/porto_acre",
       "brazil",
@@ -2122,13 +2044,12 @@ export default {
     "hem": "n",
     "names": [
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brt",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
-      "pará west",
+      "para west",
       "santarem"
     ],
     "meta": "Brasilia"
@@ -2141,8 +2062,7 @@ export default {
       "antofagasta",
       "arica",
       "chile",
-      "chile standard time",
-      "chile time",
+      "chile standard",
       "chile/continental",
       "chl",
       "cl",
@@ -2168,7 +2088,7 @@ export default {
     "hem": "n",
     "names": [
       "ast",
-      "atlantic standard time",
+      "atlantic standard",
       "bella vista",
       "do",
       "dom",
@@ -2200,8 +2120,7 @@ export default {
       "br",
       "bra",
       "brasilia",
-      "brasilia standard time",
-      "brasilia time",
+      "brasilia standard",
       "brazil",
       "brazil/east",
       "brst",
@@ -2219,7 +2138,7 @@ export default {
       "diadema",
       "divinopolis",
       "duque de caxias",
-      "e south america standard time",
+      "e south america standard",
       "east south america",
       "embu",
       "florianopolis",
@@ -2267,7 +2186,7 @@ export default {
       "rio de janeiro",
       "rio grande",
       "rio verde",
-      "santa barbara d'oeste",
+      "santa barbara doeste",
       "santa luzia",
       "santa maria",
       "santo andre",
@@ -2303,8 +2222,7 @@ export default {
     "dst": "green",
     "names": [
       "east greenland",
-      "east greenland standard time",
-      "east greenland time",
+      "east greenland standard",
       "egst",
       "egt",
       "greenland",
@@ -2326,10 +2244,9 @@ export default {
       "akt",
       "alaska",
       "alaska sitka area",
-      "alaska standard time",
-      "alaska time",
+      "alaska standard",
       "alaskan",
-      "alaskan standard time",
+      "alaskan standard",
       "america",
       "sitka"
     ],
@@ -2349,8 +2266,7 @@ export default {
       "ndt",
       "newfoundland",
       "newfoundland labrador",
-      "newfoundland standard time",
-      "newfoundland time",
+      "newfoundland standard",
       "nst",
       "nt",
       "st johns"
@@ -2362,7 +2278,7 @@ export default {
     "hem": "n",
     "names": [
       "canada",
-      "central standard time",
+      "central standard",
       "cst",
       "saskatchewan",
       "swift current"
@@ -2373,7 +2289,7 @@ export default {
     "offset": -6,
     "hem": "n",
     "names": [
-      "central standard time",
+      "central standard",
       "cst",
       "hn",
       "hnd",
@@ -2391,8 +2307,7 @@ export default {
       "ast",
       "at",
       "atlantic",
-      "atlantic standard time",
-      "atlantic time",
+      "atlantic standard",
       "pituffik",
       "thule"
     ],
@@ -2405,7 +2320,6 @@ export default {
     "names": [
       "canada",
       "eastern",
-      "eastern time",
       "est",
       "et",
       "thunder bay"
@@ -2428,8 +2342,7 @@ export default {
       "mexico",
       "mexico/bajanorte",
       "pacific",
-      "pacific standard time",
-      "pacific time",
+      "pacific standard",
       "pst",
       "pt",
       "tijuana"
@@ -2451,8 +2364,7 @@ export default {
       "canada",
       "canada/eastern",
       "eastern",
-      "eastern standard time",
-      "eastern time",
+      "eastern standard",
       "est",
       "et",
       "gatineau",
@@ -2490,7 +2402,7 @@ export default {
       "okanagan",
       "pacific",
       "pacific bc",
-      "pacific standard time",
+      "pacific standard",
       "pst",
       "pt",
       "surrey",
@@ -2506,7 +2418,7 @@ export default {
     "names": [
       "canada",
       "canada/yukon",
-      "mountain standard time",
+      "mountain standard",
       "mst",
       "whitehorse",
       "yst"
@@ -2521,8 +2433,7 @@ export default {
       "canada",
       "canada/central",
       "central",
-      "central standard time",
-      "central time",
+      "central standard",
       "cst",
       "ct",
       "manitoba",
@@ -2539,11 +2450,10 @@ export default {
       "akst",
       "akt",
       "alaska",
-      "alaska standard time",
-      "alaska time",
+      "alaska standard",
       "alaska yakutat",
       "alaskan",
-      "alaskan standard time",
+      "alaskan standard",
       "america",
       "yakutat"
     ],
@@ -2557,8 +2467,7 @@ export default {
       "america mountain",
       "canada",
       "mountain",
-      "mountain standard time",
-      "mountain time",
+      "mountain standard",
       "mst",
       "mt",
       "yellowknife"

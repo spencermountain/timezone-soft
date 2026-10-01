@@ -1,11 +1,10 @@
-export default {
+{
   "Europe/Berlin": {
     "offset": 1,
     "hem": "n",
     "dst": "eu2",
     "names": [
       "berlin",
-      "europe/berlin",
       "hamburg"
     ],
     "meta": "Central European"
@@ -15,7 +14,6 @@ export default {
     "hem": "n",
     "names": [
       "aqmescit",
-      "europe/simferopol",
       "simferopol"
     ],
     "meta": "Moscow"
@@ -80,8 +78,7 @@ export default {
       "moscow",
       "msk",
       "russian",
-      "st petersburg",
-      "volgograd time"
+      "st petersburg"
     ],
     "meta": "Astrakhan"
   },
@@ -279,7 +276,6 @@ export default {
     "dst": "eu1",
     "names": [
       "ace",
-      "british time",
       "cork",
       "dmt",
       "dublin",
@@ -288,7 +284,7 @@ export default {
       "europe",
       "galway",
       "gmt",
-      "greenwich mean time",
+      "greenwich mean",
       "ie",
       "ireland",
       "irl",
@@ -481,8 +477,7 @@ export default {
       "moscow",
       "msk",
       "russian",
-      "st petersburg",
-      "volgograd time"
+      "st petersburg"
     ],
     "meta": "Moscow"
   },
@@ -523,12 +518,10 @@ export default {
       "brent",
       "bristol",
       "british",
-      "british time",
       "bst",
       "buckinghamshire",
       "cambridgeshire",
       "cardiff",
-      "city of westminster",
       "coventry",
       "crawley",
       "derby",
@@ -544,12 +537,12 @@ export default {
       "europe/isle_of_man",
       "europe/jersey",
       "gb",
-      "gb-eire",
+      "gb eire",
       "glasgow",
       "gloucestershire",
       "gmt",
-      "gmt standard time",
-      "greenwich mean time",
+      "gmt standard",
+      "greenwich mean",
       "hampshire",
       "hertfordshire",
       "ipswich",
@@ -577,6 +570,7 @@ export default {
       "norwich",
       "nottingham",
       "nottinghamshire",
+      "of westminster",
       "oxfordshire",
       "plymouth",
       "portsmouth",
@@ -724,8 +718,7 @@ export default {
       "msk",
       "russian",
       "st petersburg",
-      "vitebsk",
-      "volgograd time"
+      "vitebsk"
     ],
     "meta": "Moscow"
   },
@@ -754,7 +747,7 @@ export default {
     "offset": 3,
     "hem": "n",
     "names": [
-      "arkhangel'sk",
+      "arkhangelsk",
       "armavir",
       "belgorod",
       "bryansk",
@@ -776,15 +769,14 @@ export default {
       "kursk",
       "lipetsk",
       "makhachkala",
-      "mar'ino",
+      "marino",
       "mdst",
       "moscow",
-      "moscow time",
       "msd",
       "msk",
       "murmansk",
       "naberezhnyye chelny",
-      "nal'chik",
+      "nalchik",
       "nizhnekamsk",
       "nizhniy novgorod",
       "novorossiysk",
@@ -815,15 +807,14 @@ export default {
       "tambov",
       "tula",
       "tver",
-      "vasyl'evsky ostrov",
+      "vasylevsky ostrov",
       "velikiy novgorod",
       "vladikavkaz",
       "vladimir",
-      "volgograd time",
       "vologda",
       "voronezh",
       "vykhino zhulebino",
-      "w-su",
+      "w su",
       "yaroslavl",
       "yasenevo",
       "yoshkar ola",
@@ -979,7 +970,7 @@ export default {
       "tuscany",
       "va",
       "vat",
-      "vatican city",
+      "vatican",
       "verona"
     ],
     "meta": "Central European"
@@ -1100,12 +1091,10 @@ export default {
     "names": [
       "europe",
       "moscow",
-      "moscow time",
       "msk",
       "russian",
       "st petersburg",
-      "ulyanovsk",
-      "volgograd time"
+      "ulyanovsk"
     ],
     "meta": "Ulyanovsk"
   },
@@ -1177,7 +1166,6 @@ export default {
       "russian",
       "st petersburg",
       "volgograd",
-      "volgograd time",
       "volt",
       "volzhskiy"
     ],
@@ -1240,7 +1228,6 @@ export default {
       "luhansk east",
       "sevastopol",
       "zaporizhia lugansk",
-      "zaporozh'ye",
       "zaporozhye"
     ],
     "meta": "Eastern European"
@@ -1266,7 +1253,7 @@ export default {
       "madrid",
       "paris",
       "romance",
-      "swiss time",
+      "swiss",
       "zurich"
     ],
     "meta": "Central European"

@@ -1,4 +1,4 @@
-export default {
+{
   "Pacific/Apia": {
     "offset": 13,
     "hem": "s",
@@ -59,8 +59,7 @@ export default {
       "chat",
       "chatham",
       "chatham islands",
-      "chatham time",
-      "nz-chat",
+      "nz chat",
       "pacific"
     ],
     "meta": "Chatham"
@@ -152,8 +151,8 @@ export default {
       "cost",
       "cot",
       "galapagos",
+      "galapagos islands",
       "galt",
-      "galápagos islands",
       "pacific"
     ],
     "meta": "Galapagos"
@@ -352,7 +351,7 @@ export default {
       "pacific",
       "pacific/midway",
       "pacific/samoa",
-      "pago_pago",
+      "pago pago",
       "samoa",
       "sst",
       "us/samoa"
@@ -404,7 +403,7 @@ export default {
     "hem": "s",
     "names": [
       "antarctica/dumontdurville",
-      "dumont-d'urville",
+      "dumont durville",
       "guinea",
       "guinean",
       "pacific",
@@ -412,8 +411,7 @@ export default {
       "pg",
       "pgt",
       "png",
-      "port moresby",
-      "port_moresby"
+      "port moresby"
     ],
     "meta": "Papua New Guinea"
   },
@@ -457,7 +455,7 @@ export default {
     "offset": 13,
     "hem": "s",
     "names": [
-      "nuku'alofa",
+      "nukualofa",
       "pacific",
       "to",
       "ton",
@@ -487,8 +485,8 @@ export default {
     "names": [
       "pacific",
       "wallis",
-      "wallis & futuna",
       "wallis and futuna",
+      "wallis futuna",
       "wf",
       "wft",
       "wlf"

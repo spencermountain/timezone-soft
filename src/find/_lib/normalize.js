@@ -39,4 +39,17 @@ const getAliasCandidates = (input) => {
 // Accent folding runs only after all ordinary alias checkpoints have failed.
 const foldDiacritics = (input) => input.normalize('NFD').replace(/\p{M}/gu, '')
 
-export { normalizeCase, getAliasCandidates, foldDiacritics }
+// Keep identifier separators and signed offsets meaningful.
+const normalizeAlias = input => {
+  let name = normalizeWhitespace(foldDiacritics(normalizeCase(input)))
+  if (name.includes('/') || /(?:gmt|utc|msk)?[+-]\d/i.test(name)) {
+    return name
+  }
+  name = normalizeApostrophes(name)
+    .replace(/['.]/g, '')
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .replace(/\b(?:time|city)\b/g, '')
+  return normalizeWhitespace(name)
+}
+
+export { normalizeCase, getAliasCandidates, foldDiacritics, normalizeAlias }

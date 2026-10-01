@@ -1,9 +1,9 @@
 import { unpack } from 'efrt'
-import dstPatterns from '../../data/dst-patterns.js'
+import dstPatterns from '../_generated/dst-patterns.js'
 import pcked from '../_generated/zones.js'
-import misc from '../../data/aliases.js'
+import misc from '../_generated/aliases.js'
 import addUTC from './add-utc.js'
-import identifiers from '../../data/iana-identifiers.js'
+import identifiers from '../_generated/iana-identifiers.js'
 import { foldDiacritics } from '../find/_lib/normalize.js'
 
 // unpack our lexicon of words

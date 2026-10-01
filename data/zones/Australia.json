@@ -1,4 +1,4 @@
-export default {
+{
   "Australia/Adelaide": {
     "offset": 9.5,
     "hem": "s",
@@ -28,7 +28,6 @@ export default {
       "australian east",
       "australian eastern",
       "brisbane",
-      "brisbane time",
       "gold coast",
       "logan",
       "queensland",
@@ -47,8 +46,8 @@ export default {
       "australia",
       "australia central",
       "australia/yancowinna",
-      "broken_hill",
-      "cen australia standard time",
+      "broken hill",
+      "cen australia standard",
       "central australia",
       "yancowinna"
     ],
@@ -115,7 +114,6 @@ export default {
       "aest",
       "australia",
       "australian eastern",
-      "brisbane time",
       "lindeman",
       "whitsunday islands"
     ],
@@ -174,8 +172,7 @@ export default {
       "perth",
       "w australia",
       "west australia",
-      "western australia",
-      "western australia time"
+      "western australia"
     ],
     "meta": "Western Australia"
   },
@@ -198,7 +195,6 @@ export default {
       "australia/nsw",
       "australian eastern",
       "canberra",
-      "eastern australia time",
       "melbourne",
       "new south wales",
       "sydney",

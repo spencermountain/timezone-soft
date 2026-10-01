@@ -1,4 +1,4 @@
-export default {
+{
   "Atlantic/Azores": {
     "offset": 0,
     "hem": "n",
@@ -89,9 +89,8 @@ export default {
     "hem": "n",
     "names": [
       "atlantic",
-      "coordinated universal time",
       "gmt",
-      "greenwich mean time",
+      "greenwich mean",
       "iceland",
       "is",
       "isl",

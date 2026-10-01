@@ -1,5 +1,5 @@
 import { zones, lexicon, canonicalIds } from '../data/index.js'
-import { normalizeCase, getAliasCandidates, foldDiacritics } from './_lib/normalize.js'
+import { normalizeCase, getAliasCandidates, foldDiacritics, normalizeAlias } from './_lib/normalize.js'
 import parseOffset from './_lib/parse-offset.js'
 
 const utcNames = ['utc', 'uct', 'universal', 'zulu', 'coordinated universal', 'coordinated universal time']
@@ -68,6 +68,11 @@ const matchWhole = (input) => {
     if (match) {
       return match
     }
+  }
+  // 7. Match the upkeep spelling after exact and historical spellings.
+  const alias = normalizeAlias(input)
+  if (alias && !utcNames.includes(alias) && alias !== 'gmt') {
+    return matchAlias(alias)
   }
   return null
 }

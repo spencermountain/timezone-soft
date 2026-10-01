@@ -45,8 +45,7 @@
     "test:package": "node test/check/package.js",
     "prepack": "pnpm run build",
     "prepublishOnly": "pnpm run check",
-    "test:cities": "node scripts/cities/test.js",
-    "update:cities": "node scripts/cities/_update.js",
+    "upkeep:cities": "node scripts/cities/test.js",
     "upkeep:zones": "node scripts/upkeep/zones.js"
   },
   "files": [

@@ -1,4 +1,4 @@
-export default {
+{
   "Indian/Chagos": {
     "offset": 6,
     "hem": "n",
@@ -47,9 +47,9 @@ export default {
       "amsterdam island",
       "atf",
       "french southern",
-      "french southern & antarctic time",
       "french southern and antarctic",
       "french southern and antarctic lands",
+      "french southern antarctic",
       "indian",
       "kerguelen",
       "kerguelenst paul island",
@@ -102,8 +102,7 @@ export default {
     "names": [
       "indian",
       "ret",
-      "reunion",
-      "réunion"
+      "reunion"
     ],
     "meta": "Réunion"
   }

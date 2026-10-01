@@ -1,8 +1,4 @@
-import zones from '../../data/index.js'
-import metas from '../../data/metas.js'
-import patterns from '../../data/dst-patterns.js'
-import aliases from '../../data/aliases.js'
-import identifiers from '../../data/iana-identifiers.js'
+import zones, { metas, patterns, aliases, identifiers } from '../../data/index.js'
 
 const text = value => typeof value === 'string' && value.trim().length > 0
 const offset = value => Number.isFinite(value) && value >= -14 && value <= 14
