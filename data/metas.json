@@ -167,12 +167,13 @@
     "long": "(UTC-04:00) Atlantic Time (Canada)",
     "alt": ["at", "us atlantic", "atlantic canada", "atlantic"]
   },
-  "Greenwich Mean": {
+  "Greenwich": {
     "std": [
       "GMT",
       0
     ],
-    "long": "(UTC) Coordinated Universal Time"
+    "long": "(UTC) Coordinated Universal Time",
+    "alt": ["greenwich mean"]
   },
   "Eastern European": {
     "std": ["EET", 2],
@@ -190,7 +191,7 @@
       -5
     ],
     "long": "(UTC-06:00) Central Time (US & Canada)",
-    "alt": ["us central"]
+    "alt": ["us central", "american central", "ct"]
   },
   "Eastern": {
     "std": [
@@ -292,16 +293,9 @@
     "long": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
   },
   "Irish": {
-    "std": [
-      "GMT",
-      0,
-      "Greenwich Mean Time"
-    ],
-    "dst": [
-      "IST",
-      1,
-      "Irish Standard Time"
-    ]
+    "std": ["GMT", 0, "Greenwich Mean Time"],
+    "dst": ["IST", 1, "Irish Standard Time"],
+    "alt": ["ireland"]
   },
   "West Kazakhstan": {
     "std": [
@@ -377,7 +371,7 @@
       -7
     ],
     "long": "(UTC-08:00) Pacific Time (US & Canada)",
-    "alt": ["pt"]
+    "alt": ["us pacific", "pt"]
   },
   "Amazon": {
     "std": [

@@ -293,16 +293,13 @@
     "names": [
       "alabama",
       "amarillo",
-      "america central",
       "arkansas",
       "arlington",
       "austin",
       "baton rouge",
       "brownsville",
-      "cdt",
       "corpus christi",
       "cst6cdt",
-      "ct",
       "dallas",
       "des moines",
       "fort worth",
@@ -401,8 +398,8 @@
   "America/Danmarkshavn": {
     "offset": 0,
     "hem": "n",
-    "names": ["denmark", "gmt", "utc", "zulu"],
-    "meta": "Greenwich Mean",
+    "names": ["denmark", "utc", "zulu"],
+    "meta": "Greenwich",
     "country": "gl"
   },
   "America/Dawson": {
@@ -826,7 +823,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "ct", "heroica matamoros", "nuevo laredo", "reynosa"],
+    "names": ["heroica matamoros", "nuevo laredo", "reynosa"],
     "meta": "Central",
     "country": "mx"
   },
@@ -850,7 +847,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "ct", "wisconsin"],
+    "names": ["wisconsin"],
     "meta": "Central",
     "country": "us"
   },
@@ -1035,7 +1032,6 @@
       "durham",
       "east flatbush",
       "est5edt",
-
       "fayetteville",
       "fl",
       "florida",
@@ -1043,7 +1039,6 @@
       "georgia",
       "greensboro",
       "hialeah",
-      "indiana",
       "ironville",
       "jacksonville",
       "jersey",
@@ -1161,7 +1156,7 @@
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "ct"],
+    "names": [],
     "meta": "Central",
     "country": "mx"
   },
@@ -1258,7 +1253,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "ct", "ft frances"],
+    "names": ["ft frances"],
     "meta": "Central",
     "country": "ca"
   },
@@ -1266,7 +1261,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "cddt", "ct"],
+    "names": ["cddt", "ct"],
     "meta": "Central",
     "country": "ca"
   },
@@ -1300,7 +1295,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "ct"],
+    "names": [],
     "meta": "Central",
     "country": "ca"
   },
@@ -1581,7 +1576,7 @@
   "America/Winnipeg": {
     "offset": -5,
     "hem": "n",
-    "names": ["america central", "central", "ct", "west manitoba"],
+    "names": ["west manitoba"],
     "meta": "Manitoba",
     "country": "ca"
   },

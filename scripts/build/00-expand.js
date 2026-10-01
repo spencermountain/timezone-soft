@@ -20,6 +20,8 @@ Object.entries(zones).forEach(([id, zone]) => {
     words.add(normalizeAlias(meta))
     let std = metas[meta].std
     if (std) {
+      // Include the default names used by display when metadata omits them.
+      words.add(normalizeAlias(std[2] || metas[meta].name || `${meta} Standard Time`))
       std.forEach((code) => {
         if (typeof code === 'string' && !/^[+-0-9]/.test(code)) {
           if (words.has(normalizeAlias(code))) {
@@ -31,6 +33,7 @@ Object.entries(zones).forEach(([id, zone]) => {
     }
     let dst = metas[meta].dst
     if (dst) {
+      words.add(normalizeAlias(dst[2] || `${meta} Daylight Time`))
       dst.forEach((code) => {
         if (typeof code === 'string' && !/^[+-0-9]/.test(code)) {
           words.add(normalizeAlias(code))

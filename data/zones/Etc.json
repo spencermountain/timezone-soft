@@ -6,7 +6,7 @@
       "etc",
       "greenwich"
     ],
-    "meta": "Greenwich Mean"
+    "meta": "Greenwich"
   },
   "Etc/UTC": {
     "offset": 0,

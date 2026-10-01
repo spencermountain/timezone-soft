@@ -20,7 +20,7 @@
       "yamoussoukro",
       "zulu"
     ],
-    "meta": "Greenwich Mean",
+    "meta": "Greenwich",
     "country": "ci"
   },
   "Africa/Algiers": {
@@ -56,7 +56,7 @@
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean",
+    "meta": "Greenwich",
     "country": "gw"
   },
   "Africa/Cairo": {
@@ -357,7 +357,7 @@
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean",
+    "meta": "Greenwich",
     "country": "lr"
   },
   "Africa/Nairobi": {
@@ -415,7 +415,7 @@
       "utc",
       "zulu"
     ],
-    "meta": "Greenwich Mean",
+    "meta": "Greenwich",
     "country": "st"
   },
   "Africa/Tripoli": {
