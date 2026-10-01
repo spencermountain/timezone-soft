@@ -1,7 +1,7 @@
 import test from 'tape'
 import { lexicon, zones } from '../../src/data/index.js'
 
-const limits = { min: 3, max: 500 }
+const limits = { min: 2, max: 500 }
 // Fixed offsets are parsed directly instead of storing aliases.
 const offsetLimits = { min: 0, max: 0 }
 

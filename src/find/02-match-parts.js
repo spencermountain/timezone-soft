@@ -1,10 +1,30 @@
-import { canonicalize } from '../data/index.js'
+import { canonicalize, lexicon } from '../data/index.js'
 import matchWhole from './01-match-whole.js'
+import alternativeSpellings from './_lib/alternative-spellings.js'
 
 const matchPart = (input) => {
   const found = matchWhole(input)
   const ids = typeof found === 'string' ? [found] : found || []
   return [...new Set(ids.map(canonicalize))]
+}
+
+const matchAlternativeSpellings = (input, includeWords = true) => {
+  const candidates = alternativeSpellings(input, includeWords)
+  if (!candidates.length) {
+    return null
+  }
+  // Keep curated exact aliases ahead of spelling guesses.
+  const exact = input.trim().toLowerCase()
+  if (Object.hasOwn(lexicon, exact)) {
+    return [...new Set(lexicon[exact].map(canonicalize))]
+  }
+  for (let i = 0; i < candidates.length; i += 1) {
+    const found = matchPart(candidates[i])
+    if (found.length) {
+      return found
+    }
+  }
+  return null
 }
 
 // Preserve the first part's ranking while removing candidates absent elsewhere.
@@ -40,4 +60,4 @@ const matchWordPairs = (input) => {
   return null
 }
 
-export { matchSeparatedParts, matchWordPairs }
+export { matchAlternativeSpellings, matchSeparatedParts, matchWordPairs }

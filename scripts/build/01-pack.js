@@ -15,9 +15,13 @@ Object.keys(zones).forEach(k => {
   const name = arr.slice(1).join('/')
   packed[top] = packed[top] || {}
   const { dst, names, meta, country } = zones[k]
-  const countryNames = countries[country] || []
+  let countryNames = countries[country] || []
+  if (country) {
+    countryNames.push(country)
+    countryNames = countryNames.map(normalizeAlias)
+  }
   // Country aliases belong to every zone with that country code.
-  const words = [...new Set([...names, ...countryNames, ...countryNames.map(normalizeAlias)])].filter(Boolean)
+  const words = [...new Set([...names, ...countryNames])].filter(Boolean)
   packed[top][name] = [pack(words, options), meta]
   if (dst) {
     packed[top][name].push(dst)
