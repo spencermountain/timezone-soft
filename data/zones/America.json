@@ -31,7 +31,7 @@
       "alaska standard",
       "alaskan",
       "alaskan standard",
-      "america",
+
       "anchorage",
       "us/alaska"
     ],
@@ -327,6 +327,7 @@
       "floridablanca",
       "ibague",
       "itaguei",
+      "kennedy",
       "manizales",
       "medellin",
       "monteria",
@@ -348,34 +349,14 @@
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america mountain",
-      "boise",
-      "idaho",
-      "mountain",
-      "mountain id",
-      "mountain standard",
-      "mpt",
-      "mst",
-      "mt"
-    ],
+    "names": ["america mountain", "boise", "idaho", "mountain", "mountain id", "mountain standard", "mpt", "mst", "mt"],
     "meta": "Mountain"
   },
   "America/Cambridge_Bay": {
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america mountain",
-      "cambridge bay",
-      "mddt",
-      "mountain",
-      "mountain standard",
-      "mst",
-      "mt"
-    ],
+    "names": ["america mountain", "cambridge bay", "mddt", "mountain", "mountain standard", "mst", "mt"],
     "meta": "Mountain"
   },
   "America/Campo_Grande": {
@@ -458,7 +439,7 @@
     "names": [
       "alabama",
       "amarillo",
-      "america",
+
       "america central",
       "arkansas",
       "arlington",
@@ -635,7 +616,7 @@
     "dst": "usa",
     "names": [
       "albuquerque",
-      "america",
+
       "america mountain",
       "america/shiprock",
       "aurora",
@@ -660,7 +641,7 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+
       "america eastern",
       "detroit",
       "eastern",
@@ -921,7 +902,7 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+
       "america/fort_wayne",
       "america/indiana",
       "america/indianapolis",
@@ -942,24 +923,14 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america/knox_in",
-      "central standard",
-      "cst",
-      "indiana",
-      "knox",
-      "us/indiana-starke"
-    ],
+    "names": ["america/knox_in", "central standard", "cst", "indiana", "knox", "us/indiana-starke"],
     "meta": "Central"
   },
   "America/Indiana/Marengo": {
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "eastern standard",
+    "names": ["eastern standard",
       "est",
       "indiana",
       "marengo"
@@ -970,9 +941,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "eastern standard",
+    "names": ["eastern standard",
       "est",
       "indiana",
       "petersburg"
@@ -983,9 +952,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "central standard",
+    "names": ["central standard",
       "cst",
       "indiana",
       "tell"
@@ -996,9 +963,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "eastern standard",
+    "names": ["eastern standard",
       "est",
       "indiana",
       "vevay"
@@ -1009,9 +974,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "eastern standard",
+    "names": ["eastern standard",
       "est",
       "indiana",
       "vincennes"
@@ -1022,9 +985,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "eastern standard",
+    "names": ["eastern standard",
       "est",
       "indiana",
       "winamac"
@@ -1088,7 +1049,7 @@
       "alaska standard",
       "alaskan",
       "alaskan standard",
-      "america",
+
       "juneau"
     ],
     "meta": "Alaska"
@@ -1097,24 +1058,14 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america/kentucky",
-      "america/louisville",
-      "eastern ky",
-      "kentucky",
-      "louisville",
-      "wayne"
-    ],
+    "names": ["america/kentucky", "america/louisville", "eastern ky", "kentucky", "louisville", "wayne"],
     "meta": "Eastern"
   },
   "America/Kentucky/Monticello": {
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "eastern standard",
+    "names": ["eastern standard",
       "est",
       "kentucky",
       "monticello"
@@ -1170,7 +1121,7 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-      "america",
+
       "america pacific",
       "anaheim",
       "baja california",
@@ -1331,16 +1282,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america central",
-      "central",
-      "central standard",
-      "cst",
-      "ct",
-      "menominee",
-      "wisconsin"
-    ],
+    "names": ["america central", "central", "central standard", "cst", "ct", "menominee", "wisconsin"],
     "meta": "Central"
   },
   "America/Merida": {
@@ -1372,7 +1314,7 @@
       "alaska standard",
       "alaskan",
       "alaskan standard",
-      "america",
+
       "metlakatla"
     ],
     "meta": "Alaska"
@@ -1553,7 +1495,7 @@
     "dst": "usa",
     "names": [
       "akron",
-      "america",
+
       "america eastern",
       "atlanta",
       "baltimore",
@@ -1666,17 +1608,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "akst",
-      "akt",
-      "alaska",
-      "alaska standard",
-      "alaska west",
-      "alaskan",
-      "alaskan standard",
-      "america",
-      "nome"
-    ],
+    "names": ["akst", "akt", "alaska", "alaska standard", "alaska west", "alaskan", "alaskan standard", "nome"],
     "meta": "Alaska"
   },
   "America/Noronha": {
@@ -1697,9 +1629,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "beulah",
+    "names": ["beulah",
       "central standard",
       "cst",
       "north dakota"
@@ -1710,24 +1640,14 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "center",
-      "central standard",
-      "cst",
-      "mercer",
-      "north dakota",
-      "oliver"
-    ],
+    "names": ["center", "central standard", "cst", "mercer", "north dakota", "oliver"],
     "meta": "Central"
   },
   "America/North_Dakota/New_Salem": {
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "central standard",
+    "names": ["central standard",
       "cst",
       "new salem",
       "north dakota"
@@ -1738,32 +1658,14 @@
     "offset": -2,
     "hem": "n",
     "dst": "green",
-    "names": [
-      "america",
-      "america/godthab",
-      "gl",
-      "greenland",
-      "grl",
-      "nuuk",
-      "wgst",
-      "wgt"
-    ],
+    "names": ["america/godthab", "gl", "greenland", "grl", "nuuk", "wgst", "wgt"],
     "meta": "West Greenland"
   },
   "America/Ojinaga": {
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america central",
-      "central",
-      "central standard",
-      "chihuahua",
-      "cst",
-      "ct",
-      "ojinaga"
-    ],
+    "names": ["america central", "central", "central standard", "chihuahua", "cst", "ct", "ojinaga"],
     "meta": "Central"
   },
   "America/Panama": {
@@ -1818,7 +1720,7 @@
     "offset": -7,
     "hem": "n",
     "names": [
-      "america",
+
       "america/creston",
       "arizona",
       "chandler",
@@ -1891,7 +1793,7 @@
     "offset": -4,
     "hem": "n",
     "names": [
-      "america",
+
       "america/anguilla",
       "america/antigua",
       "america/aruba",
@@ -1937,39 +1839,21 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america central",
-      "central",
-      "central standard",
-      "cst",
-      "ct",
-      "ft frances",
-      "rainy river"
-    ],
+    "names": ["america central", "central", "central standard", "cst", "ct", "ft frances", "rainy river"],
     "meta": "Central"
   },
   "America/Rankin_Inlet": {
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america central",
-      "cddt",
-      "central",
-      "central standard",
-      "cst",
-      "ct",
-      "rankin inlet"
-    ],
+    "names": ["america central", "cddt", "central", "central standard", "cst", "ct", "rankin inlet"],
     "meta": "Central"
   },
   "America/Recife": {
     "offset": -3,
     "hem": "n",
     "names": [
-      "america",
+
       "brasilia",
       "brasilia standard",
       "brazil",
@@ -2006,15 +1890,7 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "america",
-      "america central",
-      "central",
-      "central standard",
-      "cst",
-      "ct",
-      "resolute"
-    ],
+    "names": ["america central", "central", "central standard", "cst", "ct", "resolute"],
     "meta": "Central"
   },
   "America/Rio_Branco": {
@@ -2231,17 +2107,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "akst",
-      "akt",
-      "alaska",
-      "alaska sitka area",
-      "alaska standard",
-      "alaskan",
-      "alaskan standard",
-      "america",
-      "sitka"
-    ],
+    "names": ["akst", "akt", "alaska", "alaska sitka area", "alaska standard", "alaskan", "alaskan standard", "sitka"],
     "meta": "Alaska"
   },
   "America/St_Johns": {
@@ -2438,17 +2304,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": [
-      "akst",
-      "akt",
-      "alaska",
-      "alaska standard",
-      "alaska yakutat",
-      "alaskan",
-      "alaskan standard",
-      "america",
-      "yakutat"
-    ],
+    "names": ["akst", "akt", "alaska", "alaska standard", "alaska yakutat", "alaskan", "alaskan standard", "yakutat"],
     "meta": "Alaska"
   },
   "America/Yellowknife": {

@@ -11,9 +11,7 @@
     "offset": 8,
     "hours": 3,
     "hem": "s",
-    "names": [
-      "antarctica",
-      "casey",
+    "names": ["casey",
       "cast"
     ],
     "meta": "Casey"
@@ -21,9 +19,7 @@
   "Antarctica/Davis": {
     "offset": 7,
     "hem": "s",
-    "names": [
-      "antarctica",
-      "aq",
+    "names": ["aq",
       "ata",
       "davis",
       "davt"
@@ -37,25 +33,19 @@
     "names": [
       "aest",
       "aet",
-      "antarctica",
       "aus east",
       "aus eastern",
       "aus eastern standard",
       "australia eastern",
-      "canberra",
       "macquarie",
-      "macquarie island",
-      "melbourne",
-      "sydney"
+      "macquarie island"
     ],
     "meta": "Eastern Australia"
   },
   "Antarctica/Mawson": {
     "offset": 5,
     "hem": "s",
-    "names": [
-      "antarctica",
-      "mawson",
+    "names": ["mawson",
       "mawt"
     ],
     "meta": "Mawson"
@@ -63,9 +53,7 @@
   "Antarctica/Rothera": {
     "offset": -3,
     "hem": "s",
-    "names": [
-      "antarctica",
-      "antarctica/palmer",
+    "names": ["antarctica/palmer",
       "argentina",
       "arst",
       "art",
@@ -77,9 +65,7 @@
     "offset": 2,
     "hem": "s",
     "dst": "troll",
-    "names": [
-      "antarctica",
-      "gmt",
+    "names": ["gmt",
       "greenwich mean",
       "troll",
       "troll research station"
@@ -89,9 +75,7 @@
   "Antarctica/Vostok": {
     "offset": 6,
     "hem": "s",
-    "names": [
-      "antarctica",
-      "msk+4",
+    "names": ["msk+4",
       "vost",
       "vostok"
     ],

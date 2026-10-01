@@ -3,7 +3,7 @@
     "offset": 1,
     "hem": "n",
     "dst": "eu2",
-    "names": ["berlin", "hamburg", "munich"
+    "names": ["berlin", "hamburg", "koln", "munich"
     ],
     "meta": "Central European"
   },
@@ -28,7 +28,6 @@
       "cest",
       "cet",
       "eindhoven",
-
       "europe central",
       "groningen",
       "netherlands",
@@ -74,7 +73,6 @@
       "central european",
       "cest",
       "cet",
-
       "europe central",
       "europe/ljubljana",
       "europe/podgorica",
@@ -105,7 +103,6 @@
       "cest",
       "cet",
       "charleroi",
-
       "europe central",
       "gent",
       "liege"
@@ -125,7 +122,6 @@
       "craiova",
       "eastern european",
       "eet",
-
       "europe eastern",
       "galati",
       "iasi",
@@ -142,7 +138,18 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["budapest", "central european", "cest", "cet", "debrecen", "europe central", "hu", "hun", "hungary"],
+    "names": [
+      "budapest",
+      "central european",
+      "cest",
+      "cet",
+      "debrecen",
+      "europe central",
+      "hu",
+      "hun",
+      "hungary",
+      "pest"
+    ],
     "meta": "Central European"
   },
   "Europe/Busingen": {
@@ -158,7 +165,6 @@
       "cet",
       "de",
       "deu",
-
       "europe central",
       "europe/berlin",
       "germany",
@@ -187,7 +193,6 @@
       "denmark",
       "dk",
       "dnk",
-
       "europe central"
     ],
     "meta": "Central European"
@@ -203,7 +208,6 @@
       "dublin",
       "edinburgh",
       "eire",
-
       "galway",
       "gmt",
       "greenwich mean",
@@ -234,7 +238,6 @@
       "eastern european",
       "eet",
       "espoo",
-
       "europe eastern",
       "europe/mariehamn",
       "fi",
@@ -278,7 +281,6 @@
       "esenler",
       "esenyurt",
       "eskisehir",
-
       "gaziantep",
       "gebze",
       "istanbul",
@@ -321,8 +323,7 @@
   "Europe/Kaliningrad": {
     "offset": 2,
     "hem": "n",
-    "names": [
-      "eastern european", "eet", "kaliningrad"
+    "names": ["eastern european", "eet", "kaliningrad"
     ],
     "meta": "Eastern European"
   },
@@ -339,7 +340,6 @@
       "donetsk",
       "eastern european",
       "eet",
-
       "europe eastern",
       "europe/simferopol",
       "horlivka",
@@ -358,6 +358,7 @@
       "makiivka",
       "mariupol",
       "mykolayiv",
+      "odesa",
       "odessa",
       "poltava",
       "rivne",
@@ -389,7 +390,6 @@
     "dst": "eu1",
     "names": [
       "amadora",
-
       "europe western",
       "lisbon",
       "porto",
@@ -433,7 +433,6 @@
       "dudley",
       "edinburgh",
       "essex",
-
       "europe/belfast",
       "europe/guernsey",
       "europe/isle_of_man",
@@ -528,7 +527,6 @@
       "elche",
       "es",
       "esp",
-
       "europe central",
       "fuencarral el pardo",
       "fuenlabrada",
@@ -579,7 +577,6 @@
       "blr",
       "brest",
       "by",
-
       "homyel",
       "hrodna",
       "mahilyow",
@@ -611,7 +608,6 @@
       "cheboksary",
       "cherepovets",
       "dzerzhinsk",
-
       "fet",
       "groznyy",
       "ivanovo",
@@ -642,6 +638,7 @@
       "podolsk",
       "pskov",
       "rostov na donu",
+      "rostov on don",
       "ru",
       "rus",
       "russia",
@@ -689,7 +686,6 @@
       "central european",
       "cest",
       "cet",
-
       "europe central",
       "oslo",
       "sj",
@@ -707,7 +703,6 @@
       "cergy pontoise",
       "cest",
       "cet",
-
       "europe central",
       "fr",
       "fra",
@@ -741,7 +736,6 @@
       "central european",
       "cest",
       "cet",
-
       "europe central",
       "europe/bratislava",
       "ostrava",
@@ -762,7 +756,6 @@
       "eastern european",
       "eest",
       "eet",
-
       "europe eastern",
       "kalt",
       "latvia",
@@ -786,7 +779,6 @@
       "cest",
       "cet",
       "corsica",
-
       "europe central",
       "europe/san_marino",
       "europe/vatican",
@@ -845,7 +837,6 @@
       "burgas",
       "eastern european",
       "eet",
-
       "europe eastern",
       "imt",
       "plovdiv",
@@ -862,7 +853,6 @@
       "central european",
       "cest",
       "cet",
-
       "europe central",
       "goeteborg",
       "malmoe",
@@ -903,8 +893,7 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": [
-      "eastern european", "eet", "europe eastern",
+    "names": ["eastern european", "eet", "europe eastern",
       "ruthenia",
       "uzhgorod"
     ],
@@ -922,7 +911,6 @@
       "cest",
       "cet",
       "donaustadt",
-
       "europe central",
       "favoriten",
       "graz",
@@ -957,7 +945,6 @@
       "cest",
       "cet",
       "czestochowa",
-
       "europe central",
       "gdansk",
       "gdynia",
@@ -990,7 +977,6 @@
     "names": [
       "eastern european",
       "eet",
-
       "europe eastern",
       "luhansk",
       "luhansk east",
@@ -1008,7 +994,6 @@
       "central european",
       "cest",
       "cet",
-
       "europe central",
       "europe/busingen",
       "europe/vaduz",

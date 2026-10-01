@@ -101,8 +101,6 @@
       "eastern australia",
       "hobart",
       "king island",
-      "melbourne",
-      "sydney",
       "tasmania"
     ],
     "meta": "Eastern Australia"
@@ -152,8 +150,6 @@
       "eastern australia",
       "geelong",
       "melbourne",
-      "sydney",
-      "victoria"
     ],
     "meta": "Eastern Australia"
   },
@@ -194,8 +190,6 @@
       "australia/canberra",
       "australia/nsw",
       "australian eastern",
-      "canberra",
-      "melbourne",
       "new south wales",
       "sydney",
       "wollongong"

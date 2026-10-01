@@ -25,7 +25,9 @@
       "gmt",
       "greenwich mean",
       "kumasi",
+      "pikine",
       "san pedro",
+      "touba",
       "utc",
       "yamoussoukro",
       "zulu"
@@ -99,6 +101,7 @@
       "port said",
       "qina",
       "shibin al kawm",
+      "shubra al khaymah",
       "sohag",
       "suez",
       "tanta",
@@ -136,14 +139,24 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["ceuta", "ceutamelilla"
+    "names": [
+      "ceuta",
+      "ceutamelilla"
     ],
     "meta": "Central European"
   },
   "Africa/El_Aaiun": {
     "offset": 1,
     "hem": "n",
-    "names": ["casablanca", "eh", "el aaiun", "esh", "laayoune", "morocco", "western sahara"],
+    "names": [
+      "casablanca",
+      "eh",
+      "el aaiun",
+      "esh",
+      "laayoune",
+      "morocco",
+      "western sahara"
+    ],
     "meta": "Morocco Standard"
   },
   "Africa/Johannesburg": {
@@ -164,6 +177,7 @@
       "diepsloot",
       "durban",
       "east london",
+      "gqeberha",
       "harare",
       "johannesburg",
       "klerksdorp",
@@ -218,6 +232,7 @@
       "el obeid",
       "kassala",
       "khartoum",
+      "khartoum north",
       "kosti",
       "nyala",
       "omdurman",
@@ -290,6 +305,7 @@
       "owerri",
       "owo",
       "oyo",
+      "pointe noire",
       "port harcourt",
       "saki",
       "shagamu",
@@ -304,6 +320,7 @@
       "west africa",
       "west central africa",
       "western africa",
+      "yaounde",
       "zaria"
     ],
     "meta": "West Africa"
@@ -324,7 +341,9 @@
       "cat",
       "central africa",
       "chimoio",
+      "kananga",
       "kisangani",
+      "lilongwe",
       "maputo",
       "matola",
       "mbuji mayi",
@@ -378,6 +397,7 @@
       "kisumu",
       "mayotte",
       "mombasa",
+      "mwanza",
       "myt",
       "nairobi",
       "nakuru",

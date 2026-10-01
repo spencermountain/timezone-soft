@@ -19,7 +19,7 @@
       "alma ata",
       "almaty",
       "almt",
-      "asia",
+
       "astana",
       "central asia",
       "east kazakhstan",
@@ -41,18 +41,7 @@
   "Asia/Amman": {
     "offset": 3,
     "hem": "n",
-    "names": [
-      "amman",
-      "asia",
-      "eet",
-      "irbid",
-      "jo",
-      "jor",
-      "jordan",
-      "russeifa",
-      "wadi as sir",
-      "zarqa"
-    ],
+    "names": ["amman", "eet", "irbid", "jo", "jor", "jordan", "russeifa", "wadi as sir", "zarqa"],
     "meta": "Jordan"
   },
   "Asia/Anadyr": {
@@ -60,9 +49,7 @@
     "hem": "n",
     "names": [
       "anadyr",
-      "anat",
-      "asia",
-      "petropavlovsk kamchatsky"
+      "anat", "petropavlovsk kamchatsky"
     ],
     "meta": "Anadyr"
   },
@@ -74,7 +61,7 @@
       "almt",
       "aqtau",
       "ashgabat",
-      "asia",
+
       "kazakhstan western",
       "mangghystau/mankistau",
       "tashkent",
@@ -85,33 +72,13 @@
   "Asia/Aqtobe": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "aktobe",
-      "alma ata",
-      "almt",
-      "aqtobe",
-      "ashgabat",
-      "asia",
-      "kazakhstan western",
-      "tashkent",
-      "west asia"
-    ],
+    "names": ["aktobe", "alma ata", "almt", "aqtobe", "ashgabat", "kazakhstan western", "tashkent", "west asia"],
     "meta": "West Kazakhstan"
   },
   "Asia/Ashgabat": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "ashgabat",
-      "asia",
-      "asia/ashkhabad",
-      "tkm",
-      "tm",
-      "tmst",
-      "tmt",
-      "turkmenabat",
-      "turkmenistan"
-    ],
+    "names": ["ashgabat", "asia/ashkhabad", "tkm", "tm", "tmst", "tmt", "turkmenabat", "turkmenistan"],
     "meta": "Turkmenistan"
   },
   "Asia/Atyrau": {
@@ -121,7 +88,7 @@
       "alma ata",
       "almt",
       "ashgabat",
-      "asia",
+
       "atirau",
       "atyrau",
       "guryev",
@@ -148,7 +115,7 @@
       "arabian",
       "arabic",
       "as sulaymaniyah",
-      "asia",
+
       "ast",
       "baghdad",
       "basrah",
@@ -164,31 +131,22 @@
       "najaf",
       "nasiriyah",
       "ramadi",
-      "riyadh"
+      "riyadh",
+      "sadr"
     ],
     "meta": "Arabian"
   },
   "Asia/Baku": {
     "offset": 4,
     "hem": "n",
-    "names": [
-      "asia",
-      "az",
-      "aze",
-      "azerbaijan",
-      "azt",
-      "baku",
-      "ganja",
-      "lankaran",
-      "sumqayit"
-    ],
+    "names": ["az", "aze", "azerbaijan", "azt", "baku", "ganja", "lankaran", "sumqayit"],
     "meta": "Azerbaijan"
   },
   "Asia/Bangkok": {
     "offset": 7,
     "hem": "n",
     "names": [
-      "asia",
+
       "asia/phnom_penh",
       "asia/vientiane",
       "bangkok",
@@ -216,9 +174,7 @@
   "Asia/Barnaul": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "barnaul",
+    "names": ["barnaul",
       "biysk",
       "krasnoyarsk",
       "krat",
@@ -230,53 +186,25 @@
     "offset": 3,
     "hem": "n",
     "dst": "leb",
-    "names": [
-      "asia",
-      "beirut",
-      "eet",
-      "europe eastern",
-      "lb",
-      "lbn",
-      "lebanon",
-      "ras bayrut"
-    ],
+    "names": ["beirut", "eet", "europe eastern", "lb", "lbn", "lebanon", "ras bayrut"],
     "meta": "Eastern European"
   },
   "Asia/Bishkek": {
     "offset": 6,
     "hem": "n",
-    "names": [
-      "asia",
-      "bishkek",
-      "kg",
-      "kgt",
-      "kgz",
-      "kyrgystan",
-      "kyrgyzstan",
-      "osh"
-    ],
+    "names": ["bishkek", "kg", "kgt", "kgz", "kyrgystan", "kyrgyzstan", "osh"],
     "meta": "Kyrgyzstan"
   },
   "Asia/Brunei": {
     "offset": 8,
     "hem": "n",
-    "names": [
-      "asia",
-      "bdt",
-      "bn",
-      "bnt",
-      "brn",
-      "brunei",
-      "brunei darussalam"
-    ],
+    "names": ["bdt", "bn", "bnt", "brn", "brunei", "brunei darussalam"],
     "meta": "Brunei Darussalam"
   },
   "Asia/Chita": {
     "offset": 9,
     "hem": "n",
-    "names": [
-      "asia",
-      "chita",
+    "names": ["chita",
       "yakt",
       "yakutsk"
     ],
@@ -285,9 +213,7 @@
   "Asia/Choibalsan": {
     "offset": 8,
     "hem": "n",
-    "names": [
-      "asia",
-      "choibalsan",
+    "names": ["choibalsan",
       "dornodsukhbaatar",
       "mongolia",
       "ulaanbaatar",
@@ -299,7 +225,7 @@
     "offset": 5.5,
     "hem": "n",
     "names": [
-      "asia",
+
       "chennai",
       "colombo",
       "dehiwala mount lavinia",
@@ -322,7 +248,7 @@
     "names": [
       "aleppo",
       "ar raqqah",
-      "asia",
+
       "damascus",
       "deir ez zor",
       "eet",
@@ -339,7 +265,7 @@
     "offset": 6,
     "hem": "n",
     "names": [
-      "asia",
+
       "asia/dacca",
       "bagerhat",
       "bangladesh",
@@ -377,9 +303,7 @@
   "Asia/Dili": {
     "offset": 9,
     "hem": "s",
-    "names": [
-      "asia",
-      "dili",
+    "names": ["dili",
       "east timor",
       "tl",
       "tls",
@@ -394,7 +318,7 @@
       "abu dhabi",
       "ajman",
       "arabian",
-      "asia",
+
       "asia/muscat",
       "dubai",
       "gst",
@@ -412,9 +336,7 @@
   "Asia/Dushanbe": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "asia",
-      "dushanbe",
+    "names": ["dushanbe",
       "tajikistan",
       "tj",
       "tjk",
@@ -426,9 +348,7 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": [
-      "asia",
-      "eet",
+    "names": ["eet",
       "europe eastern",
       "famagusta",
       "northern cyprus"
@@ -439,24 +359,14 @@
     "offset": 3,
     "hem": "n",
     "dst": "pal",
-    "names": [
-      "asia",
-      "eet",
-      "gaza",
-      "gaza strip",
-      "palestine",
-      "ps",
-      "pse"
-    ],
+    "names": ["eet", "gaza", "gaza strip", "palestine", "ps", "pse"],
     "meta": "Eastern European"
   },
   "Asia/Hebron": {
     "offset": 3,
     "hem": "n",
     "dst": "pal",
-    "names": [
-      "asia",
-      "east jerusalem",
+    "names": ["east jerusalem",
       "eet",
       "hebron",
       "west bank"
@@ -467,7 +377,7 @@
     "offset": 7,
     "hem": "n",
     "names": [
-      "asia",
+
       "asia/saigon",
       "bien hoa",
       "can tho",
@@ -491,12 +401,13 @@
     "offset": 8,
     "hem": "n",
     "names": [
-      "asia",
+
       "hk",
       "hkg",
       "hkst",
       "hkt",
       "hong kong",
+      "hong kong island",
       "hongkong",
       "kowloon",
       "new territories",
@@ -507,9 +418,7 @@
   "Asia/Hovd": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "bayan olgiigovi altaihovduvszavkhan",
+    "names": ["bayan olgiigovi altaihovduvszavkhan",
       "hovd",
       "hovt",
       "west mongolia",
@@ -520,22 +429,14 @@
   "Asia/Irkutsk": {
     "offset": 8,
     "hem": "n",
-    "names": [
-      "angarsk",
-      "asia",
-      "bratsk",
-      "irkt",
-      "irkutsk",
-      "north asia east",
-      "ulan ude"
-    ],
+    "names": ["angarsk", "bratsk", "irkt", "irkutsk", "north asia east", "ulan ude"],
     "meta": "Irkutsk"
   },
   "Asia/Jakarta": {
     "offset": 7,
     "hem": "s",
     "names": [
-      "asia",
+
       "banda aceh",
       "bandar lampung",
       "bandung",
@@ -560,6 +461,7 @@
       "jambi",
       "javasumatra",
       "jember",
+      "jepara",
       "kediri",
       "lembang",
       "madiun",
@@ -600,7 +502,7 @@
     "hem": "s",
     "names": [
       "ambon",
-      "asia",
+
       "east indonesia",
       "eastern indonesia",
       "indonesia eastern",
@@ -618,7 +520,7 @@
     "dst": "isr",
     "names": [
       "ashdod",
-      "asia",
+
       "asia/tel_aviv",
       "beersheba",
       "haifa",
@@ -640,27 +542,14 @@
   "Asia/Kabul": {
     "offset": 4.5,
     "hem": "n",
-    "names": [
-      "af",
-      "afg",
-      "afghanistan",
-      "aft",
-      "asia",
-      "herat",
-      "jalalabad",
-      "kabul",
-      "kandahar",
-      "mazar e sharif"
-    ],
+    "names": ["af", "afg", "afghanistan", "aft", "herat", "jalalabad", "kabul", "kandahar", "mazar e sharif"],
     "meta": "Afghanistan"
   },
   "Asia/Kamchatka": {
     "offset": 12,
     "hem": "n",
     "names": [
-      "anadyr",
-      "asia",
-      "kamchatka",
+      "anadyr", "kamchatka",
       "petropavlovsk kamchatski",
       "petropavlovsk kamchatsky",
       "pett"
@@ -671,7 +560,7 @@
     "offset": 5,
     "hem": "n",
     "names": [
-      "asia",
+
       "bahawalpur",
       "bannu",
       "battagram",
@@ -720,26 +609,13 @@
   "Asia/Kathmandu": {
     "offset": 5.75,
     "hem": "n",
-    "names": [
-      "asia",
-      "asia/katmandu",
-      "biratnagar",
-      "kathmandu",
-      "nepal",
-      "np",
-      "npl",
-      "npt",
-      "patan",
-      "pokhara"
-    ],
+    "names": ["asia/katmandu", "biratnagar", "kathmandu", "nepal", "np", "npl", "npt", "patan", "pokhara"],
     "meta": "Nepal"
   },
   "Asia/Khandyga": {
     "offset": 9,
     "hem": "n",
-    "names": [
-      "asia",
-      "khandyga",
+    "names": ["khandyga",
       "yakt",
       "yakutsk"
     ],
@@ -768,7 +644,7 @@
       "anantapur",
       "arrah",
       "asansol",
-      "asia",
+
       "asia/calcutta",
       "aurangabad",
       "avadi",
@@ -822,6 +698,7 @@
       "dhanbad",
       "dhulia",
       "dindigul",
+      "dombivali",
       "dombivli",
       "durg",
       "durgapur",
@@ -850,6 +727,7 @@
       "haridwar",
       "hisar",
       "hospet",
+      "howrah",
       "hubli",
       "hugli",
       "hyderabad",
@@ -944,6 +822,7 @@
       "patna",
       "pimpri",
       "pimpri chinchwad",
+      "prayagraj",
       "proddatur",
       "puducherry",
       "punasa",
@@ -976,6 +855,7 @@
       "shahjanpur",
       "shimoga",
       "shivaji nagar",
+      "sholapur",
       "shrirampur",
       "shyamnagar",
       "sikar",
@@ -1010,6 +890,7 @@
       "varanasi",
       "vellore",
       "vijayawada",
+      "virar",
       "visakhapatnam",
       "vizianagaram",
       "warangal",
@@ -1020,9 +901,7 @@
   "Asia/Krasnoyarsk": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "krasnoyarsk",
+    "names": ["krasnoyarsk",
       "krat",
       "north asia"
     ],
@@ -1033,7 +912,7 @@
     "hem": "s",
     "names": [
       "alor setar",
-      "asia",
+
       "bukit mertajam",
       "george town",
       "ipoh",
@@ -1062,44 +941,19 @@
   "Asia/Kuching": {
     "offset": 8,
     "hem": "n",
-    "names": [
-      "asia",
-      "kota kinabalu",
-      "kuching",
-      "malaysia",
-      "miri",
-      "myt",
-      "sabahsarawak",
-      "sandakan",
-      "sibu",
-      "tawau"
-    ],
+    "names": ["kota kinabalu", "kuching", "malaysia", "miri", "myt", "sabahsarawak", "sandakan", "sibu", "tawau"],
     "meta": "Malaysia"
   },
   "Asia/Macau": {
     "offset": 8,
     "hem": "n",
-    "names": [
-      "asia",
-      "asia/macao",
-      "beijing",
-      "china",
-      "chongqing",
-      "cst",
-      "hong kong",
-      "mac",
-      "macau",
-      "mo",
-      "urumqi"
-    ],
+    "names": ["asia/macao", "beijing", "china", "chongqing", "cst", "mac", "macau", "mo", "urumqi"],
     "meta": "China"
   },
   "Asia/Magadan": {
     "offset": 11,
     "hem": "n",
-    "names": [
-      "asia",
-      "magadan",
+    "names": ["magadan",
       "magt"
     ],
     "meta": "Magadan"
@@ -1108,7 +962,7 @@
     "offset": 8,
     "hem": "s",
     "names": [
-      "asia",
+
       "asia/ujung_pandang",
       "balikpapan",
       "banjarmasin",
@@ -1136,7 +990,7 @@
     "names": [
       "angeles",
       "antipolo",
-      "asia",
+
       "bacolod",
       "bacoor",
       "baguio",
@@ -1209,39 +1063,19 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": [
-      "asia",
-      "cy",
-      "cyp",
-      "cyprus",
-      "eastern european",
-      "eet",
-      "europe eastern",
-      "europe/nicosia",
-      "nicosia"
-    ],
+    "names": ["cy", "cyp", "cyprus", "eastern european", "eet", "europe eastern", "europe/nicosia", "nicosia"],
     "meta": "Eastern European"
   },
   "Asia/Novokuznetsk": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "kemerovo",
-      "krasnoyarsk",
-      "krat",
-      "north asia",
-      "novokuznetsk",
-      "prokopyevsk"
-    ],
+    "names": ["kemerovo", "krasnoyarsk", "krat", "north asia", "novokuznetsk", "prokopyevsk"],
     "meta": "Krasnoyarsk"
   },
   "Asia/Novosibirsk": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "north central asia",
+    "names": ["north central asia",
       "novosibirsk",
       "novt",
       "siberia"
@@ -1251,9 +1085,7 @@
   "Asia/Omsk": {
     "offset": 6,
     "hem": "n",
-    "names": [
-      "asia",
-      "omsk",
+    "names": ["omsk",
       "omst"
     ],
     "meta": "Omsk"
@@ -1261,39 +1093,20 @@
   "Asia/Oral": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "alma ata",
-      "almt",
-      "ashgabat",
-      "asia",
-      "kazakhstan western",
-      "oral",
-      "tashkent",
-      "west asia",
-      "west kazakhstan"
-    ],
+    "names": ["alma ata", "almt", "ashgabat", "kazakhstan western", "oral", "tashkent", "west asia", "west kazakhstan"],
     "meta": "West Kazakhstan"
   },
   "Asia/Pontianak": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "borneo",
-      "indonesia western",
-      "pontianak",
-      "tanjung pinang",
-      "west borneo",
-      "western indonesia",
-      "wib"
-    ],
+    "names": ["borneo", "indonesia western", "pontianak", "tanjung pinang", "west borneo", "western indonesia", "wib"],
     "meta": "Western Indonesia"
   },
   "Asia/Pyongyang": {
     "offset": 9,
     "hem": "n",
     "names": [
-      "asia",
+
       "chongjin",
       "haeju",
       "hamhung",
@@ -1326,7 +1139,7 @@
       "arabia",
       "arabian",
       "arabic",
-      "asia",
+
       "asia/bahrain",
       "ast",
       "doha",
@@ -1341,16 +1154,7 @@
   "Asia/Qostanay": {
     "offset": 6,
     "hem": "n",
-    "names": [
-      "almt",
-      "asia",
-      "astana",
-      "central asia",
-      "east kazakhstan",
-      "kazakhstan eastern",
-      "kostanay",
-      "qostanay"
-    ],
+    "names": ["almt", "astana", "central asia", "east kazakhstan", "kazakhstan eastern", "kostanay", "qostanay"],
     "meta": "East Kazakhstan"
   },
   "Asia/Qyzylorda": {
@@ -1360,7 +1164,7 @@
       "alma ata",
       "almt",
       "ashgabat",
-      "asia",
+
       "kazakhstan western",
       "kyzylorda",
       "kzyl orda",
@@ -1384,7 +1188,7 @@
       "arabia",
       "arabian",
       "arabic",
-      "asia",
+
       "asia/aden",
       "asia/kuwait",
       "ast",
@@ -1395,6 +1199,7 @@
       "jeddah",
       "khamis mushait",
       "kuwait",
+      "madinah",
       "makkah",
       "mecca",
       "medina",
@@ -1415,9 +1220,7 @@
   "Asia/Sakhalin": {
     "offset": 11,
     "hem": "n",
-    "names": [
-      "asia",
-      "sakhalin",
+    "names": ["sakhalin",
       "sakhalin island",
       "sakt",
       "yuzhno sakhalinsk"
@@ -1427,16 +1230,7 @@
   "Asia/Samarkand": {
     "offset": 5,
     "hem": "n",
-    "names": [
-      "asia",
-      "bukhara",
-      "nukus",
-      "qarshi",
-      "samarkand",
-      "uzbekistan",
-      "uzbekistan west",
-      "uzt"
-    ],
+    "names": ["bukhara", "nukus", "qarshi", "samarkand", "uzbekistan", "uzbekistan west", "uzt"],
     "meta": "Uzbekistan"
   },
   "Asia/Seoul": {
@@ -1445,7 +1239,7 @@
     "names": [
       "ansan si",
       "anyang si",
-      "asia",
+
       "bucheon si",
       "busan",
       "changwon",
@@ -1501,7 +1295,7 @@
       "anshan",
       "anshun",
       "anyang",
-      "asia",
+
       "asia/chongqing",
       "asia/chungking",
       "asia/harbin",
@@ -1520,6 +1314,7 @@
       "beijing",
       "bengbu",
       "benxi",
+      "bijie",
       "bozhou",
       "cangzhou",
       "changchun",
@@ -1555,9 +1350,12 @@
       "dezhou",
       "dongguan",
       "donghai",
+      "dongying",
       "ezhou",
+      "feicheng",
       "fendou",
       "fenghuang",
+      "fengxiang",
       "foshan",
       "fujian",
       "fushun",
@@ -1571,6 +1369,7 @@
       "guangyuan",
       "guangzhou",
       "guankou",
+      "guigang",
       "guilin",
       "guiyang",
       "guizhou",
@@ -1581,13 +1380,16 @@
       "handan",
       "hangu",
       "hangzhou",
+      "hanzhong",
       "harbin",
       "hebi",
       "hefei",
       "hegang",
       "hengshui",
       "hengyang",
+      "heshan",
       "heze",
+      "hezhou",
       "hkt",
       "hohhot",
       "hong kong",
@@ -1601,6 +1403,7 @@
       "hulan ergi",
       "humen",
       "hunan",
+      "huzhou",
       "jiading",
       "jiamusi",
       "jian",
@@ -1621,6 +1424,7 @@
       "jinhua",
       "jining",
       "jinjiang",
+      "jinzhong",
       "jinzhou",
       "jiujiang",
       "jiutai",
@@ -1629,6 +1433,7 @@
       "kaiyuan",
       "kunming",
       "kunshan",
+      "laiwu",
       "laizhou",
       "langfang",
       "lanzhou",
@@ -1645,13 +1450,18 @@
       "linyi",
       "liupanshui",
       "liuzhou",
+      "longyan",
       "luan",
       "luancheng",
       "luliang",
       "luohe",
+      "luohu district",
       "luoyang",
       "luqiao",
+      "luzhou",
       "maoming",
+      "meishan",
+      "meizhou",
       "mentougou",
       "mianyang",
       "minhang",
@@ -1666,6 +1476,7 @@
       "neijiang",
       "ningbo",
       "ordos",
+      "panjin",
       "panshan",
       "pingdingshan",
       "pingxiang",
@@ -1673,21 +1484,27 @@
       "pudong",
       "puning",
       "putian",
+      "putuo",
       "puxi",
       "puyang",
       "puyang chengguanzhen",
       "qianjiang",
       "qingdao",
       "qinghai",
+      "qingpu",
       "qingyang",
       "qingyuan",
       "qinhuangdao",
+      "qinzhou",
       "qionghai",
       "qiqihar",
       "quanzhou",
       "qujing",
       "rizhao",
+      "ruian",
+      "sanhe",
       "sanming",
+      "sanya",
       "shanghai",
       "shangqiu",
       "shangrao",
@@ -1728,8 +1545,10 @@
       "wanxian",
       "wanzhou",
       "weifang",
+      "weinan",
       "wenshan",
       "wenzhou",
+      "wuchang",
       "wuhai",
       "wuhan",
       "wuhu",
@@ -1754,10 +1573,14 @@
       "xintai",
       "xinxiang",
       "xinyang",
+      "xinyi",
       "xiuying",
       "xuchang",
+      "xuhui",
+      "xuzhou",
       "yancheng",
       "yangjiang",
+      "yangpu",
       "yangquan",
       "yangshuo",
       "yangzhou",
@@ -1765,12 +1588,17 @@
       "yantai",
       "yibin",
       "yichang",
+      "yichun",
       "yinchuan",
       "yingkou",
+      "yishui",
       "yiwu",
+      "yixing",
       "yiyang",
+      "yongzhou",
       "yuci",
       "yueyang",
+      "yulin",
       "yuncheng",
       "yunfu",
       "zaoyang",
@@ -1786,6 +1614,7 @@
       "zhenjiang",
       "zhenzhou",
       "zhongshan",
+      "zhongwei",
       "zhoukou",
       "zhu cheng",
       "zhuhai",
@@ -1801,23 +1630,13 @@
   "Asia/Singapore": {
     "offset": 8,
     "hem": "s",
-    "names": [
-      "asia",
-      "kuala lumpur",
-      "sg",
-      "sgp",
-      "sgt",
-      "singapore",
-      "woodlands"
-    ],
+    "names": ["kuala lumpur", "sg", "sgp", "sgt", "singapore", "woodlands"],
     "meta": "Singapore"
   },
   "Asia/Srednekolymsk": {
     "offset": 12,
     "hem": "n",
-    "names": [
-      "asia",
-      "chokurdakh",
+    "names": ["chokurdakh",
       "srednekolymsk",
       "sret"
     ],
@@ -1827,7 +1646,7 @@
     "offset": 8,
     "hem": "n",
     "names": [
-      "asia",
+
       "banqiao",
       "cst",
       "hsinchu",
@@ -1851,7 +1670,7 @@
     "hem": "n",
     "names": [
       "andijon",
-      "asia",
+
       "namangan",
       "qo qon",
       "qoqon",
@@ -1867,16 +1686,7 @@
   "Asia/Tbilisi": {
     "offset": 4,
     "hem": "n",
-    "names": [
-      "asia",
-      "ge",
-      "geo",
-      "georgia",
-      "georgian",
-      "get",
-      "kutaisi",
-      "tbilisi"
-    ],
+    "names": ["ge", "geo", "georgia", "georgian", "get", "kutaisi", "tbilisi"],
     "meta": "Georgia"
   },
   "Asia/Tehran": {
@@ -1888,7 +1698,7 @@
       "amol",
       "arak",
       "ardabil",
-      "asia",
+
       "azadshahr",
       "babol",
       "bandar abbas",
@@ -1941,9 +1751,7 @@
   "Asia/Thimphu": {
     "offset": 6,
     "hem": "n",
-    "names": [
-      "asia",
-      "asia/thimbu",
+    "names": ["asia/thimbu",
       "bhutan",
       "bt",
       "btn",
@@ -1962,7 +1770,7 @@
       "anjo",
       "aomori",
       "asahikawa",
-      "asia",
+
       "atsugi",
       "chiba",
       "chigasaki",
@@ -2086,9 +1894,7 @@
   "Asia/Tomsk": {
     "offset": 7,
     "hem": "n",
-    "names": [
-      "asia",
-      "omsk",
+    "names": ["omsk",
       "omst",
       "tomsk"
     ],
@@ -2097,24 +1903,13 @@
   "Asia/Ulaanbaatar": {
     "offset": 8,
     "hem": "n",
-    "names": [
-      "asia",
-      "asia/ulan_bator",
-      "mn",
-      "mng",
-      "mongolia",
-      "ulaanbaatar",
-      "ulan bator",
-      "ulat"
-    ],
+    "names": ["asia/ulan_bator", "mn", "mng", "mongolia", "ulaanbaatar", "ulan bator", "ulat"],
     "meta": "Ulaanbaatar"
   },
   "Asia/Ust-Nera": {
     "offset": 10,
     "hem": "n",
-    "names": [
-      "asia",
-      "ust nera",
+    "names": ["ust nera",
       "vladivostok",
       "vlat"
     ],
@@ -2123,23 +1918,13 @@
   "Asia/Vladivostok": {
     "offset": 10,
     "hem": "n",
-    "names": [
-      "asia",
-      "khabarovsk",
-      "khabarovsk vtoroy",
-      "komsomolsk on amur",
-      "msk+4",
-      "vladivostok",
-      "vlat"
-    ],
+    "names": ["khabarovsk", "khabarovsk vtoroy", "komsomolsk on amur", "msk+4", "vladivostok", "vlat"],
     "meta": "Vladivostok"
   },
   "Asia/Yakutsk": {
     "offset": 10,
     "hem": "n",
-    "names": [
-      "asia",
-      "blagoveshchensk",
+    "names": ["blagoveshchensk",
       "yakt",
       "yakutsk"
     ],
@@ -2149,7 +1934,7 @@
     "offset": 6.5,
     "hem": "n",
     "names": [
-      "asia",
+
       "asia/rangoon",
       "bago",
       "burma",
@@ -2172,7 +1957,7 @@
     "offset": 5,
     "hem": "n",
     "names": [
-      "asia",
+
       "chelyabinsk",
       "ekaterinburg",
       "kamensk uralskiy",
@@ -2196,15 +1981,7 @@
   "Asia/Yerevan": {
     "offset": 4,
     "hem": "n",
-    "names": [
-      "am",
-      "amt",
-      "arm",
-      "armenia",
-      "asia",
-      "caucasus",
-      "yerevan"
-    ],
+    "names": ["am", "amt", "arm", "armenia", "caucasus", "yerevan"],
     "meta": "Armenia"
   }
 }

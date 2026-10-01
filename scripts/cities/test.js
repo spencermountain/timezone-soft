@@ -10,9 +10,20 @@ const yellow = str => '\x1b[33m' + str + '\x1b[0m'
 const dim = str => '\x1b[2m' + str + '\x1b[0m'
 const magenta = (str) => '\x1b[35m' + str + '\x1b[0m'
 
-const limit = 400
+const limit = 600
 
-const ignore = new Set(['Melbourne', 'Hong Kong', 'Berlin', 'Hyderabad', 'Harare', 'La Paz'])
+const ignore = new Set([
+  // 'Melbourne',
+  // 'Hong Kong',
+  // 'Berlin',
+  // 'Hyderabad',
+  // 'Harare',
+  // 'La Paz',
+  // 'Omsk',
+  // 'Krasnoyarsk',
+  // 'Monterrey',
+  // 'Ashgabat'
+])
 
 const rows = await load()
 const cities = rows.slice(0, limit)
@@ -53,12 +64,8 @@ console.log(`  ${red(wrong)}/${cities.length} wrong (${((100 * wrong) / cities.l
 const { added } = await saveMissing(missing)
 if (added) {
   console.log(`\n  ${magenta(added)} names added to data/zones.\n`)
-  console.log(
-    JSON.stringify(
-      missing.map(({ name, timezone }) => [name, timezone]),
-      null,
-      2
-    )
-  )
+  missing.forEach(({ name, timezone }) => {
+    console.log(`  ${dim(name)} -> ${timezone}`)
+  })
 }
 
