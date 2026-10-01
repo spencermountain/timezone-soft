@@ -10,7 +10,8 @@
       "korla",
       "shihezi",
       "urumchi",
-      "wulumuqi"
+      "wulumuqi",
+      "ürümqi"
     ],
     "meta": "Xinjiang",
     "country": "cn"
@@ -20,6 +21,7 @@
     "hem": "n",
     "names": [
       "alma ata",
+      "alma-ata time",
       "almt",
       "astana",
       "central asia",
@@ -57,7 +59,11 @@
     "hem": "n",
     "names": [
       "anat",
-      "petropavlovsk kamchatsky"
+      "bering sea",
+      "msk+09",
+      "petropavlovsk kamchatsky",
+      "russia time zone 11",
+      "russia zone 11"
     ],
     "meta": "Anadyr",
     "country": "ru"
@@ -67,6 +73,8 @@
     "hem": "n",
     "names": [
       "mangghystau",
+      "mangghystau/mankistau",
+      "mangghystaū/mankistau",
       "mankistau"
     ],
     "meta": "West Kazakhstan",
@@ -207,8 +215,10 @@
     "offset": 7,
     "hem": "n",
     "names": [
+      "altai",
       "biysk",
       "krat",
+      "msk+04",
       "north asia"
     ],
     "meta": "Krasnoyarsk",
@@ -255,7 +265,9 @@
     "offset": 9,
     "hem": "n",
     "names": [
-      "yakt"
+      "msk+06",
+      "yakt",
+      "zabaykalsky"
     ],
     "meta": "Yakutsk",
     "country": "ru"
@@ -505,6 +517,8 @@
       "angarsk",
       "bratsk",
       "irkt",
+      "irkutskburyatia",
+      "msk+05",
       "north asia east",
       "ulan ude"
     ],
@@ -634,6 +648,7 @@
     "hem": "n",
     "names": [
       "anadyr",
+      "msk+09",
       "petropavlovsk kamchatsky",
       "pett"
     ],
@@ -720,6 +735,8 @@
     "offset": 9,
     "hem": "n",
     "names": [
+      "msk+06",
+      "tomponsky",
       "yakt"
     ],
     "meta": "Yakutsk",
@@ -1028,6 +1045,7 @@
     "hem": "n",
     "names": [
       "krat",
+      "msk+04",
       "north asia"
     ],
     "meta": "Krasnoyarsk",
@@ -1094,7 +1112,8 @@
     "offset": 11,
     "hem": "n",
     "names": [
-      "magt"
+      "magt",
+      "msk+08"
     ],
     "meta": "Magadan",
     "country": "ru"
@@ -1217,6 +1236,7 @@
     "names": [
       "kemerovo",
       "krat",
+      "msk+04",
       "north asia",
       "prokopyevsk"
     ],
@@ -1227,6 +1247,7 @@
     "offset": 7,
     "hem": "n",
     "names": [
+      "msk+04",
       "north central asia",
       "novt",
       "siberia"
@@ -1238,6 +1259,7 @@
     "offset": 6,
     "hem": "n",
     "names": [
+      "msk+03",
       "omst"
     ],
     "meta": "Omsk",
@@ -1380,6 +1402,7 @@
     "offset": 11,
     "hem": "n",
     "names": [
+      "msk+08",
       "sakhalin island",
       "sakt",
       "yuzhno sakhalinsk"
@@ -1934,6 +1957,11 @@
     "hem": "n",
     "names": [
       "chokurdakh",
+      "msk+08",
+      "russia time zone 10",
+      "russia zone 10",
+      "sakha (e) north kuril is",
+      "sakha e north kuril is",
       "sret"
     ],
     "meta": "Srednekolymsk",
@@ -2213,6 +2241,7 @@
     "offset": 7,
     "hem": "n",
     "names": [
+      "msk+04",
       "omst"
     ],
     "meta": "Tomsk",
@@ -2234,6 +2263,8 @@
     "offset": 10,
     "hem": "n",
     "names": [
+      "msk+07",
+      "oymyakonsky",
       "vlat"
     ],
     "meta": "Vladivostok",
@@ -2243,9 +2274,11 @@
     "offset": 10,
     "hem": "n",
     "names": [
+      "amur river",
       "khabarovsk",
       "khabarovsk vtoroy",
       "komsomolsk on amur",
+      "msk+07",
       "msk+4",
       "vlat"
     ],
@@ -2257,6 +2290,8 @@
     "hem": "n",
     "names": [
       "blagoveshchensk",
+      "lena river",
+      "msk+06",
       "yakt"
     ],
     "meta": "Yakutsk",
@@ -2293,6 +2328,7 @@
       "kamensk uralskiy",
       "kurgan",
       "magnitogorsk",
+      "msk+02",
       "nizhnevartovsk",
       "nizhny tagil",
       "orenburg",
@@ -2302,6 +2338,7 @@
       "surgut",
       "tyumen",
       "ufa",
+      "urals",
       "yekt",
       "zlatoust"
     ],

@@ -42,6 +42,8 @@
     "names": [
       "aqmescit",
       "bakhchysarai",
+      "crimea",
+      "msk+00",
       "sevastopol",
       "yalta"
     ],
@@ -83,7 +85,9 @@
   "Europe/Astrakhan": {
     "offset": 4,
     "hem": "n",
-    "names": [],
+    "names": [
+      "msk+01"
+    ],
     "meta": "Astrakhan",
     "country": "ru"
   },
@@ -357,6 +361,7 @@
     "names": [
       "baltiysk",
       "chernyakhovsk",
+      "msk-01",
       "sovetsk"
     ],
     "meta": "Eastern European Standard",
@@ -413,7 +418,9 @@
   "Europe/Kirov": {
     "offset": 3,
     "hem": "n",
-    "names": [],
+    "names": [
+      "msk+00"
+    ],
     "meta": "Moscow",
     "country": "ru"
   },
@@ -655,6 +662,10 @@
       "makhachkala",
       "marino",
       "mdst",
+      "moscow area",
+      "moscow st petersburg",
+      "moscow, st petersburg",
+      "msk+00",
       "murmansk",
       "naberezhnyye chelny",
       "nalchik",
@@ -810,6 +821,10 @@
     "hem": "n",
     "names": [
       "izhevsk",
+      "msk+01",
+      "russia time zone 3",
+      "russia zone 3",
+      "samaraudmurtia",
       "samt",
       "syzran",
       "togliatti on the volga",
@@ -824,6 +839,7 @@
     "names": [
       "balakovo",
       "izhevsk",
+      "msk+01",
       "samt"
     ],
     "meta": "Samara",
@@ -885,7 +901,9 @@
   "Europe/Ulyanovsk": {
     "offset": 4,
     "hem": "n",
-    "names": [],
+    "names": [
+      "msk+01"
+    ],
     "meta": "Ulyanovsk",
     "country": "ru"
   },
@@ -932,6 +950,7 @@
     "hem": "n",
     "names": [
       "msk",
+      "msk+00",
       "st petersburg",
       "volt",
       "volzhskiy",

@@ -152,7 +152,7 @@
       "Central European Summer Time"
     ],
     "long": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris",
-    "alt": ["europe central", "central europe"]
+    "alt": ["europe central", "central europe", "brussels, copenhagen, madrid, paris"]
   },
   "Atlantic": {
     "dupe": true,
@@ -1097,14 +1097,16 @@
       "GAMT",
       -9
     ],
-    "long": "(UTC-09:00) Coordinated Universal Time-09"
+    "long": "(UTC-09:00) Coordinated Universal Time-09",
+    "alt": ["coordinated universal time-09"]
   },
   "Pitcairn": {
     "std": [
       "PST",
       -8
     ],
-    "long": "(UTC-08:00) Coordinated Universal Time-08"
+    "long": "(UTC-08:00) Coordinated Universal Time-08",
+    "alt": ["coordinated universal time-08"]
   },
   "Northwest Mexico": {
     "std": [

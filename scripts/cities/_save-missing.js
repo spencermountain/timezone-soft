@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises'
-import zones, { aliases } from '../../data/index.js'
+import zones from '../../data/index.js'
 import normalizeName from '../upkeep/_lib.js'
 
 const directory = new URL('../../data/zones/', import.meta.url)
@@ -15,8 +15,7 @@ const saveMissing = async cities => {
       skipped.push(`${name}: missing zone record or empty normalized name (${timezone})`)
       return
     }
-    // Upkeep keeps these spellings in misc rather than in the zone's names.
-    if (aliases[name]?.includes(timezone) || aliases[normalized]?.includes(timezone) || normalized === timezone.toLowerCase()) {
+    if (normalized === timezone.toLowerCase()) {
       return
     }
     const region = timezone.split('/')[0]

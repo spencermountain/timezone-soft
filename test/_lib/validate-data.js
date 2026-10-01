@@ -1,4 +1,4 @@
-import zones, { metas, patterns, aliases, identifiers } from '../../data/index.js'
+import zones, { metas, patterns, identifiers } from '../../data/index.js'
 
 const text = value => typeof value === 'string' && value.trim().length > 0
 const offset = value => Number.isFinite(value) && value >= -14 && value <= 14
@@ -9,7 +9,7 @@ const validTuple = tuple => Array.isArray(tuple) && tuple.length >= 2 && tuple.l
   text(tuple[0]) && offset(tuple[1]) && (tuple[2] === undefined || text(tuple[2]))
 
 // Check source records before packing. Tests can supply small, independent fixtures.
-const validateData = (data = { zones, metas, patterns, aliases, identifiers }) => {
+const validateData = (data = { zones, metas, patterns, identifiers }) => {
   const errors = []
   const check = (condition, message) => {
     if (!condition) {
@@ -53,7 +53,8 @@ const validateData = (data = { zones, metas, patterns, aliases, identifiers }) =
     check(Array.isArray(zone.names) && zone.names.every(text), `Zone ${id}: names must be nonempty strings`)
   })
 
-  Object.entries(data.aliases).forEach(([alias, ids]) => {
+  // Legacy fixture inputs can still supply explicit alias targets.
+  Object.entries(data.aliases || {}).forEach(([alias, ids]) => {
     check(text(alias) && Array.isArray(ids) && ids.length > 0, `Alias ${alias}: expected zone IDs`)
     if (Array.isArray(ids)) {
       ids.forEach(id => {

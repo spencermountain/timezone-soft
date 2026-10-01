@@ -1,14 +1,13 @@
 import { unpack } from 'efrt'
 import dstPatterns from '../_generated/dst-patterns.js'
 import pcked from '../_generated/zones.js'
-import misc from '../_generated/aliases.js'
 import addUTC from './add-utc.js'
 import identifiers from '../_generated/iana-identifiers.js'
 import { foldDiacritics, normalizeAlias } from '../find/_lib/normalize.js'
 
 // unpack our lexicon of words
 const zones = {}
-const lexicon = Object.assign({}, misc)
+const lexicon = {}
 Object.keys(pcked).forEach((top) => {
   Object.keys(pcked[top]).forEach((name) => {
     const [words, meta, dst] = pcked[top][name]

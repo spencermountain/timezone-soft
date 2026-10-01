@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import normalizeName from './_lib.js'
-import { aliases as misc, identifiers, countries } from '../../data/index.js'
+import { identifiers, countries } from '../../data/index.js'
 
 const directory = new URL('../../data/zones/', import.meta.url)
 const files = (await readdir(directory)).filter(file => file.endsWith('.json')).sort()
@@ -17,10 +17,9 @@ for (const file of files) {
     // Pack adds meta names automatically, except Krasnoyarsk.
     const metaName = zone.meta === 'Krasnoyarsk' ? '' : normalizeName(zone.meta || '')
     // Full IANA identifiers already resolve through the identifier table.
-    // Special-case spellings are stored separately and must not be folded here.
+    // Preserve curated spellings alongside their normalized lookup forms.
     const names = zone.names
-      .filter(name => !misc[name]?.includes(id))
-      .map(normalizeName)
+      .flatMap(name => [name, normalizeName(name)])
       .filter(name => name !== metaName)
       .filter(name => name && !timezoneIds.has(name) && name !== basename && !countryNames.has(name))
     zone.names = [...new Set(names)].sort()

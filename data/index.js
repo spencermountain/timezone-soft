@@ -15,11 +15,10 @@ files.forEach(file => {
   })
 })
 
-const aliases = read('./aliases.json')
 const patterns = read('./dst-patterns.json')
 const identifiers = read('./iana-identifiers.json')
 const metas = read('./metas.json')
 const countries = read('./countries.json')
 
-export { aliases, patterns, identifiers, metas, countries }
+export { patterns, identifiers, metas, countries }
 export default zones
