@@ -24,9 +24,9 @@ Object.entries(zones).forEach(([id, zone]) => {
       words.add(normalizeAlias(std[2] || metas[meta].name || `${meta} Standard Time`))
       std.forEach((code) => {
         if (typeof code === 'string' && !/^[+-0-9]/.test(code)) {
-          if (words.has(normalizeAlias(code))) {
-            console.log(normalizeAlias(code))
-          }
+          // if (words.has(normalizeAlias(code))) {
+          //   console.log(normalizeAlias(code))
+          // }
           words.add(normalizeAlias(code))
         }
       })
@@ -49,8 +49,8 @@ Object.entries(zones).forEach(([id, zone]) => {
   words = [...words].filter(Boolean)
   expanded[id] = { ...zone, names: words }
 
-  // A country may include zones outside its namesake IANA region.
-  countryNames.forEach((region) => {
+  // Only the primary country name can expand its namesake IANA region.
+  countryNames.slice(0, 1).forEach((region) => {
     if (regions.has(region) && id.split('/')[0].toLowerCase() !== region) {
       regionCountries[region] = regionCountries[region] || []
       regionCountries[region].push(id)

@@ -11,14 +11,14 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["ahdt", "ahst", "akdt", "akst", "akt", "alaska standard", "alaskan", "alaskan standard"],
+    "names": ["ahdt", "ahst", "alaskan"],
     "meta": "Alaska",
     "country": "us"
   },
   "America/Araguaina": {
     "offset": -3,
     "hem": "n",
-    "names": ["brasilia standard", "brt", "east south america", "palmas", "tocantins"],
+    "names": ["east south america", "palmas", "tocantins"],
     "meta": "Brasilia",
     "country": "br"
   },
@@ -116,23 +116,14 @@
   "America/Bahia": {
     "offset": -3,
     "hem": "n",
-    "names": [
-      "brasilia standard",
-      "brt",
-      "camacari",
-      "east south america",
-      "feira de santana",
-      "itabuna",
-      "salvador",
-      "vitoria da conquista"
-    ],
+    "names": ["camacari", "east south america", "feira de santana", "itabuna", "salvador", "vitoria da conquista"],
     "meta": "Brasilia",
     "country": "br"
   },
   "America/Bahia_Banderas": {
     "offset": -5,
     "hem": "n",
-    "names": ["bahia de banderas", "central mexican", "central standard", "guadalajara"],
+    "names": ["bahia de banderas", "central mexican", "guadalajara"],
     "meta": "Central Mexico",
     "country": "mx"
   },
@@ -146,16 +137,7 @@
   "America/Belem": {
     "offset": -3,
     "hem": "n",
-    "names": [
-      "ananindeua",
-      "brasilia standard",
-      "brt",
-      "e south america standard",
-      "east south america",
-      "macapa",
-      "para east amapa",
-      "parauapebas"
-    ],
+    "names": ["ananindeua", "macapa", "para east amapa", "parauapebas"],
     "meta": "Brasilia",
     "country": "br"
   },
@@ -217,7 +199,7 @@
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america mountain", "idaho", "mountain id"],
+    "names": ["idaho", "mountain id"],
     "meta": "Mountain",
     "country": "us"
   },
@@ -225,7 +207,7 @@
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america mountain", "mddt"],
+    "names": ["mddt"],
     "meta": "Mountain",
     "country": "ca"
   },
@@ -422,7 +404,6 @@
     "dst": "usa",
     "names": [
       "albuquerque",
-      "america mountain",
       "aurora",
       "colorado springs",
       "el paso",
@@ -437,7 +418,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["america eastern", "eastern mi", "ept", "ewt", "grand rapids"],
+    "names": ["eastern mi", "ept", "ewt", "grand rapids"],
     "meta": "Eastern",
     "country": "us"
   },
@@ -473,11 +454,8 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "brasilia standard",
-      "brt",
       "campina grande",
       "caucaia",
-      "east south america",
       "imperatriz",
       "joao pessoa",
       "juazeiro do norte",
@@ -511,7 +489,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["america eastern", "kmt", "tc", "tca", "turks and caicos"],
+    "names": ["kmt", "tc", "tca", "turks and caicos"],
     "meta": "Eastern",
     "country": "tc"
   },
@@ -656,7 +634,7 @@
   "America/Inuvik": {
     "offset": -6,
     "hem": "n",
-    "names": ["america mountain", "pddt"],
+    "names": ["pddt"],
     "meta": "Alberta and Northwest Territories",
     "country": "ca"
   },
@@ -679,7 +657,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska juneau area", "alaskan"],
+    "names": [],
     "meta": "Alaska",
     "country": "us"
   },
@@ -790,10 +768,7 @@
   "America/Maceio": {
     "offset": -3,
     "hem": "n",
-    "names": ["alagoassergipe", "aracaju", "brasilia",
-      "brt",
-      "east south america"
-    ],
+    "names": ["alagoassergipe", "aracaju", "brasilia"],
     "meta": "Brasilia",
     "country": "br"
   },
@@ -807,8 +782,7 @@
   "America/Manaus": {
     "offset": -4,
     "hem": "s",
-    "names": ["amazonas east", "central brazil", "central brazilian"
-    ],
+    "names": ["amazonas east", "central brazil", "central brazilian"],
     "meta": "Amazon",
     "country": "br"
   },
@@ -862,7 +836,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska annette island", "alaskan"],
+    "names": ["alaska annette island"],
     "meta": "Alaska",
     "country": "us"
   },
@@ -982,7 +956,6 @@
     "hem": "n",
     "names": [
       "central mexican",
-      "central standard",
       "ciudad apodaca",
       "ciudad general escobedo",
       "ciudad madero",
@@ -1014,7 +987,6 @@
     "dst": "usa",
     "names": [
       "akron",
-      "america eastern",
       "atlanta",
       "baltimore",
       "boston",
@@ -1076,7 +1048,6 @@
       "rochester",
       "south boston",
       "south carolina",
-      "st petersburg",
       "staten island",
       "tallahassee",
       "tampa",
@@ -1109,7 +1080,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska standard", "alaska west", "alaskan", "alaskan standard"],
+    "names": ["alaska west", "west alaskan"],
     "meta": "Alaska",
     "country": "us"
   },
@@ -1171,7 +1142,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["addt", "america eastern", "baffin island", "nunavit"],
+    "names": ["addt", "baffin island", "nunavit"],
     "meta": "Eastern",
     "country": "ca"
   },
@@ -1217,7 +1188,7 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["america eastern", "carrefour", "croix des bouquets", "ht", "hti", "petionville", "port de paix"],
+    "names": ["carrefour", "croix des bouquets", "ht", "hti", "petionville", "port de paix"],
     "meta": "Eastern",
     "country": "ht"
   },
@@ -1268,19 +1239,7 @@
   "America/Recife": {
     "offset": -3,
     "hem": "n",
-    "names": [
-      "brasilia standard",
-      "brt",
-      "caruaru",
-      "e south america standard",
-      "east south america",
-      "jaboatao",
-      "jaboatao dos guararapes",
-      "olinda",
-      "paulista",
-      "pernambuco",
-      "petrolina"
-    ],
+    "names": ["caruaru", "jaboatao", "jaboatao dos guararapes", "olinda", "paulista", "pernambuco", "petrolina"],
     "meta": "Brasilia",
     "country": "br"
   },
@@ -1309,7 +1268,7 @@
   "America/Santarem": {
     "offset": -3,
     "hem": "n",
-    "names": ["brasilia standard", "brt", "e south america standard", "east south america", "para west"],
+    "names": ["para west"],
     "meta": "Brasilia",
     "country": "br"
   },
@@ -1371,11 +1330,7 @@
       "belo horizonte",
       "betim",
       "blumenau",
-      "br",
       "bra",
-      "brasilia standard",
-      "brst",
-      "brt",
       "cachoeiro de itapemirim",
       "campinas",
       "campos dos goytacazes",
@@ -1389,8 +1344,6 @@
       "diadema",
       "divinopolis",
       "duque de caxias",
-      "e south america standard",
-      "east south america",
       "embu",
       "florianopolis",
       "foz do iguacu",
@@ -1479,7 +1432,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska sitka area", "alaska standard", "alaskan", "alaskan standard"],
+    "names": [],
     "meta": "Alaska",
     "country": "us"
   },
@@ -1584,7 +1537,7 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska standard", "alaska yakutat", "alaskan", "alaskan standard"],
+    "names": [],
     "meta": "Alaska",
     "country": "us"
   },
@@ -1592,7 +1545,7 @@
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america mountain", "mountain standard", "mst", "mt"],
+    "names": [],
     "meta": "Mountain",
     "country": "ca"
   }

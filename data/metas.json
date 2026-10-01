@@ -234,14 +234,16 @@
       "MSK",
       3
     ],
-    "long": "(UTC+03:00) Moscow, St. Petersburg"
+    "long": "(UTC+03:00) Moscow, St. Petersburg",
+    "alt": ["mst", "msd"]
   },
   "Brasilia": {
     "std": [
       "BRT",
       -3
     ],
-    "long": "(UTC-03:00) Brasilia"
+    "long": "(UTC-03:00) Brasilia",
+    "alt": ["brasilian", "east south america", "south american east", "brst"]
   },
   "Mountain": {
     "std": [
@@ -278,7 +280,8 @@
       "AKDT",
       -8
     ],
-    "long": "(UTC-09:00) Alaska"
+    "long": "(UTC-09:00) Alaska",
+    "alt": ["akt", "alaskan"]
   },
   "British": {
     "std": [
@@ -338,7 +341,7 @@
     "long": "(UTC-06:00) Guadalajara, Mexico City, Monterrey",
     "std": ["CST", -6],
     "dst": ["CDT", -5, "Central Daylight Time"],
-    "alt": ["central mx", "mx central"]
+    "alt": ["central mx", "mx central", "central mexican"]
   },
   "South Africa": {
     "std": [

@@ -36,16 +36,23 @@ const replacements = [
   ['kingdom', ''],
   ['of', ''],
   ['the', ''],
+  // generic place names
+  ['region', ''],
+  ['regional', ''],
+  ['district', ''],
+  ['province', ''],
+  ['state', ''],
+  ['area', '']
 ]
 
 const maxCandidates = 96
-const clean = value => value.toLowerCase().split(' ').filter(Boolean).join(' ')
+const clean = (value) => value.toLowerCase().split(' ').filter(Boolean).join(' ')
 const ignored = new Set(replacements.filter(([, to]) => !to).map(([from]) => from))
 
 const getAlternatives = (input, includeWords = true) => {
   const name = clean(input)
   const candidates = new Set()
-  const add = value => {
+  const add = (value) => {
     const candidate = clean(value)
     if (candidate && candidate !== name && !ignored.has(candidate)) {
       candidates.add(candidate)
@@ -61,7 +68,7 @@ const getAlternatives = (input, includeWords = true) => {
   })
   if (includeWords) {
     const phrases = [name, ...candidates]
-    phrases.forEach(phrase => phrase.split(' ').forEach(add))
+    phrases.forEach((phrase) => phrase.split(' ').forEach(add))
   }
   // console.log(candidates)
   return [...candidates].slice(0, maxCandidates)

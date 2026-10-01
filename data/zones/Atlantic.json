@@ -4,7 +4,6 @@
     "hem": "n",
     "dst": "eu0",
     "names": [
-      "atlantic",
       "azost",
       "azot",
       "hmt"
@@ -17,8 +16,6 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-      "ast",
-      "at",
       "bm",
       "bmu"
     ],
@@ -30,12 +27,8 @@
     "hem": "n",
     "dst": "eu1",
     "names": [
-      "atlantic",
       "canary islands",
-      "europe western",
-      "las palmas de gran canaria",
-      "santa cruz de tenerife",
-      "wet"
+      "las palmas de gran canaria", "santa cruz de tenerife"
     ],
     "meta": "Western European",
     "country": "es"
@@ -44,7 +37,6 @@
     "offset": -1,
     "hem": "n",
     "names": [
-      "atlantic",
       "cabo verde is",
       "cpv",
       "cv",
@@ -58,7 +50,6 @@
     "hem": "n",
     "dst": "eu1",
     "names": [
-      "atlantic",
       "fo",
       "fro"
     ],
@@ -69,11 +60,7 @@
     "offset": 1,
     "hem": "n",
     "dst": "eu1",
-    "names": [
-      "atlantic",
-      "europe western",
-      "madeira islands",
-      "wet"
+    "names": ["madeira islands"
     ],
     "meta": "Western European",
     "country": "pt"
@@ -82,7 +69,6 @@
     "offset": 0,
     "hem": "n",
     "names": [
-      "atlantic",
       "gmt",
       "is",
       "isl",
@@ -96,7 +82,6 @@
     "offset": -2,
     "hem": "n",
     "names": [
-      "atlantic",
       "gs",
       "gst",
       "sgs"
@@ -108,7 +93,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "atlantic",
       "falkland island",
       "fk",
       "fkst",
