@@ -11,6 +11,9 @@ const replacements = [
   ['islands', ''],
   ['island', ''],
   ['isl', 'island'],
+  // dst name cruft
+  ['standard', ''],
+  ['daylight', ''],
   // west/east/south/north
   ['west', 'western'],
   ['east', 'eastern'],

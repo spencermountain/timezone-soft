@@ -165,7 +165,7 @@
       -3
     ],
     "long": "(UTC-04:00) Atlantic Time (Canada)",
-    "alt": ["at", "us atlantic", "atlantic canada", "atlantic standard"]
+    "alt": ["at", "us atlantic", "atlantic canada", "atlantic"]
   },
   "Greenwich Mean": {
     "std": [
@@ -190,7 +190,7 @@
       -5
     ],
     "long": "(UTC-06:00) Central Time (US & Canada)",
-    "alt": ["central standard"]
+    "alt": ["us central"]
   },
   "Eastern": {
     "std": [
@@ -210,7 +210,7 @@
       -3
     ],
     "long": "(UTC-03:00) City of Buenos Aires",
-    "alt": ["argentina standard", "argentinian", "arst"]
+    "alt": ["argentinian", "arst"]
   },
   "East Africa": {
     "std": [
@@ -251,7 +251,8 @@
       "MDT",
       -6
     ],
-    "long": "(UTC-07:00) Mountain Time (US & Canada)"
+    "long": "(UTC-07:00) Mountain Time (US & Canada)",
+    "aliases": ["us mountain", "mt"]
   },
   "Central Africa": {
     "std": [
@@ -343,7 +344,7 @@
     "long": "(UTC-06:00) Guadalajara, Mexico City, Monterrey",
     "std": ["CST", -6],
     "dst": ["CDT", -5, "Central Daylight Time"],
-    "alt": ["central standard"]
+    "alt": ["central mx", "mx central"]
   },
   "South Africa": {
     "std": [
@@ -385,7 +386,7 @@
     ],
     "long": "(UTC-04:00) Cuiaba"
   },
-  "Morocco Standard": {
+  "Morocco": {
     "long": "(UTC+00:00) Casablanca",
     "std": [
       "+00",
@@ -1094,7 +1095,7 @@
     ],
     "long": "(UTC-09:30) Marquesas Islands"
   },
-  "Aleutian Standard": {
+  "Aleutian": {
     "iso": "(UTC-10:00) Aleutian Islands",
     "std": [
       "HST",
