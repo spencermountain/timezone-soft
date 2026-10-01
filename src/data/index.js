@@ -38,6 +38,16 @@ addUTC(zones)
 const canonicalIds = Object.fromEntries(Object.entries(identifiers).map(([id, target]) => [id.toLowerCase(), target]))
 const canonicalize = (id) => canonicalIds[id.toLowerCase()] || id
 
+// Derive city spellings from IANA IDs instead of storing IDs in zone names.
+Object.entries(identifiers).forEach(([id, target]) => {
+  if (!id.includes('/') || id.startsWith('Etc/') || !Object.hasOwn(zones, target)) {
+    return
+  }
+  const name = id.split('/').pop().toLowerCase()
+  lexicon[name] = lexicon[name] || []
+  lexicon[name].push(target)
+})
+
 const unique = function (arr) {
   const obj = {}
   for (let i = 0; i < arr.length; i += 1) {

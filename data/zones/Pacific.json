@@ -18,8 +18,6 @@
     "hem": "s",
     "dst": "nz",
     "names": [
-      "antarctica/mcmurdo",
-      "antarctica/south_pole",
       "auckland",
       "christchurch",
       "manukau",
@@ -71,9 +69,7 @@
       "chut",
       "chuuk",
       "chuuk/trukyap",
-      "pacific",
-      "pacific/truk",
-      "pacific/yap"
+      "pacific"
     ],
     "meta": "Chuuk"
   },
@@ -82,7 +78,6 @@
     "hem": "s",
     "dst": "east",
     "names": [
-      "chile/easterisland",
       "easst",
       "east",
       "easter",
@@ -193,7 +188,6 @@
       "mp",
       "northern mariana islands",
       "pacific",
-      "pacific/saipan",
       "port moresby",
       "west pacific",
       "western pacific"
@@ -213,9 +207,7 @@
       "hawaii aleutian",
       "honolulu",
       "hst",
-      "pacific",
-      "pacific/johnston",
-      "us/hawaii"
+      "pacific"
     ],
     "meta": "Hawaii"
   },
@@ -225,7 +217,6 @@
     "names": [
       "kanton",
       "pacific",
-      "pacific/enderbury",
       "phoenix islands",
       "phot"
     ],
@@ -349,12 +340,9 @@
     "names": [
       "midway",
       "pacific",
-      "pacific/midway",
-      "pacific/samoa",
       "pago pago",
       "samoa",
-      "sst",
-      "us/samoa"
+      "sst"
     ],
     "meta": "Samoa"
   },
@@ -389,7 +377,6 @@
     "names": [
       "french polynesia",
       "pacific",
-      "pacific/ponape",
       "pf",
       "pohnpei",
       "pohnpei/ponape",
@@ -402,7 +389,6 @@
     "offset": 10,
     "hem": "s",
     "names": [
-      "antarctica/dumontdurville",
       "dumont durville",
       "guinea",
       "guinean",

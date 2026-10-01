@@ -3,7 +3,11 @@
     "offset": 1,
     "hem": "n",
     "dst": "eu2",
-    "names": ["berlin", "hamburg", "koln", "munich"
+    "names": [
+      "berlin",
+      "hamburg",
+      "koln",
+      "munich"
     ],
     "meta": "Central European"
   },
@@ -44,13 +48,23 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["ad", "and", "andorra", "central european", "cest", "cet", "europe central"],
+    "names": [
+      "ad",
+      "and",
+      "andorra",
+      "central european",
+      "cest",
+      "cet",
+      "europe central"
+    ],
     "meta": "Central European"
   },
   "Europe/Astrakhan": {
     "offset": 4,
     "hem": "n",
-    "names": ["astrakhan", "moscow",
+    "names": [
+      "astrakhan",
+      "moscow",
       "msk",
       "russian",
       "st petersburg"
@@ -61,7 +75,16 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": ["athens", "eastern european", "eet", "europe eastern", "gr", "grc", "greece", "thessaloniki"],
+    "names": [
+      "athens",
+      "eastern european",
+      "eet",
+      "europe eastern",
+      "gr",
+      "grc",
+      "greece",
+      "thessaloniki"
+    ],
     "meta": "Eastern European"
   },
   "Europe/Belgrade": {
@@ -74,11 +97,6 @@
       "cest",
       "cet",
       "europe central",
-      "europe/ljubljana",
-      "europe/podgorica",
-      "europe/sarajevo",
-      "europe/skopje",
-      "europe/zagreb",
       "nis",
       "novi sad",
       "pristina",
@@ -166,7 +184,6 @@
       "de",
       "deu",
       "europe central",
-      "europe/berlin",
       "germany",
       "saxony"
     ],
@@ -176,7 +193,15 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu2",
-    "names": ["chisinau", "eastern european", "eet", "europe eastern", "europe/tiraspol", "md", "mda", "moldova"],
+    "names": [
+      "chisinau",
+      "eastern european",
+      "eet",
+      "europe eastern",
+      "md",
+      "mda",
+      "moldova"
+    ],
     "meta": "Eastern European"
   },
   "Europe/Copenhagen": {
@@ -227,7 +252,17 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["bdst", "bst", "central european", "cest", "cet", "europe central", "gi", "gib", "gibraltar"],
+    "names": [
+      "bdst",
+      "bst",
+      "central european",
+      "cest",
+      "cet",
+      "europe central",
+      "gi",
+      "gib",
+      "gibraltar"
+    ],
     "meta": "Central European"
   },
   "Europe/Helsinki": {
@@ -239,7 +274,6 @@
       "eet",
       "espoo",
       "europe eastern",
-      "europe/mariehamn",
       "fi",
       "fin",
       "finland",
@@ -261,7 +295,6 @@
       "antakya",
       "antalya",
       "arnavutkoey",
-      "asia/istanbul",
       "atasehir",
       "bagcilar",
       "bahcelievler",
@@ -323,7 +356,10 @@
   "Europe/Kaliningrad": {
     "offset": 2,
     "hem": "n",
-    "names": ["eastern european", "eet", "kaliningrad"
+    "names": [
+      "eastern european",
+      "eet",
+      "kaliningrad"
     ],
     "meta": "Eastern European"
   },
@@ -341,7 +377,6 @@
       "eastern european",
       "eet",
       "europe eastern",
-      "europe/simferopol",
       "horlivka",
       "ivano frankivsk",
       "kamyanske",
@@ -376,7 +411,8 @@
   "Europe/Kirov": {
     "offset": 3,
     "hem": "n",
-    "names": ["kirov",
+    "names": [
+      "kirov",
       "moscow",
       "msk",
       "russian",
@@ -433,10 +469,6 @@
       "dudley",
       "edinburgh",
       "essex",
-      "europe/belfast",
-      "europe/guernsey",
-      "europe/isle_of_man",
-      "europe/jersey",
       "gb",
       "gb eire",
       "glasgow",
@@ -500,7 +532,15 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["central european", "cest", "cet", "europe central", "lu", "lux", "luxembourg"],
+    "names": [
+      "central european",
+      "cest",
+      "cet",
+      "europe central",
+      "lu",
+      "lux",
+      "luxembourg"
+    ],
     "meta": "Central European"
   },
   "Europe/Madrid": {
@@ -565,7 +605,15 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["central european", "cest", "cet", "europe central", "malta", "mlt", "mt"],
+    "names": [
+      "central european",
+      "cest",
+      "cet",
+      "europe central",
+      "malta",
+      "mlt",
+      "mt"
+    ],
     "meta": "Central European"
   },
   "Europe/Minsk": {
@@ -593,7 +641,15 @@
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["central european", "cest", "cet", "europe central", "mc", "mco", "monaco"],
+    "names": [
+      "central european",
+      "cest",
+      "cet",
+      "europe central",
+      "mc",
+      "mco",
+      "monaco"
+    ],
     "meta": "Central European"
   },
   "Europe/Moscow": {
@@ -680,8 +736,6 @@
     "hem": "n",
     "dst": "eu2",
     "names": [
-      "arctic/longyearbyen",
-      "atlantic/jan_mayen",
       "bergen",
       "central european",
       "cest",
@@ -737,7 +791,6 @@
       "cest",
       "cet",
       "europe central",
-      "europe/bratislava",
       "ostrava",
       "pmt",
       "prague",
@@ -780,8 +833,6 @@
       "cet",
       "corsica",
       "europe central",
-      "europe/san_marino",
-      "europe/vatican",
       "florence",
       "genoa",
       "messina",
@@ -808,7 +859,8 @@
   "Europe/Samara": {
     "offset": 4,
     "hem": "n",
-    "names": ["izhevsk",
+    "names": [
+      "izhevsk",
       "samara",
       "samt",
       "syzran",
@@ -819,7 +871,9 @@
   "Europe/Saratov": {
     "offset": 4,
     "hem": "n",
-    "names": ["balakovo", "izhevsk",
+    "names": [
+      "balakovo",
+      "izhevsk",
       "samara",
       "samt",
       "saratov"
@@ -868,20 +922,39 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": ["eastern european", "ee", "eet", "est", "estonia", "europe eastern", "tallinn"],
+    "names": [
+      "eastern european",
+      "ee",
+      "eet",
+      "est",
+      "estonia",
+      "europe eastern",
+      "tallinn"
+    ],
     "meta": "Eastern European"
   },
   "Europe/Tirane": {
     "offset": 2,
     "hem": "n",
     "dst": "eu2",
-    "names": ["al", "alb", "albania", "central european", "cest", "cet", "europe central", "tirana", "tirane"],
+    "names": [
+      "al",
+      "alb",
+      "albania",
+      "central european",
+      "cest",
+      "cet",
+      "europe central",
+      "tirana",
+      "tirane"
+    ],
     "meta": "Central European"
   },
   "Europe/Ulyanovsk": {
     "offset": 4,
     "hem": "n",
-    "names": ["moscow",
+    "names": [
+      "moscow",
       "msk",
       "russian",
       "st petersburg",
@@ -893,7 +966,10 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": ["eastern european", "eet", "europe eastern",
+    "names": [
+      "eastern european",
+      "eet",
+      "europe eastern",
       "ruthenia",
       "uzhgorod"
     ],
@@ -923,13 +999,31 @@
     "offset": 3,
     "hem": "n",
     "dst": "eu3",
-    "names": ["eastern european", "eet", "europe eastern", "kaunas", "klaipeda", "lithuania", "lt", "ltu", "vilnius"],
+    "names": [
+      "eastern european",
+      "eet",
+      "europe eastern",
+      "kaunas",
+      "klaipeda",
+      "lithuania",
+      "lt",
+      "ltu",
+      "vilnius"
+    ],
     "meta": "Eastern European"
   },
   "Europe/Volgograd": {
     "offset": 4,
     "hem": "n",
-    "names": ["moscow", "msk", "russian", "st petersburg", "volgograd", "volt", "volzhskiy"],
+    "names": [
+      "moscow",
+      "msk",
+      "russian",
+      "st petersburg",
+      "volgograd",
+      "volt",
+      "volzhskiy"
+    ],
     "meta": "Moscow"
   },
   "Europe/Warsaw": {
@@ -995,8 +1089,6 @@
       "cest",
       "cet",
       "europe central",
-      "europe/busingen",
-      "europe/vaduz",
       "geneve",
       "li",
       "lie",

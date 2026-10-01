@@ -8,12 +8,10 @@
       "aleutian",
       "aleutian islands",
       "aleutian standard",
-      "america/atka",
       "hawaii standard",
       "hdt",
       "hst",
-      "nwt",
-      "us/aleutian"
+      "nwt"
     ],
     "meta": "Aleutian Standard"
   },
@@ -31,9 +29,7 @@
       "alaska standard",
       "alaskan",
       "alaskan standard",
-
-      "anchorage",
-      "us/alaska"
+      "anchorage"
     ],
     "meta": "Alaska"
   },
@@ -58,7 +54,6 @@
     "hem": "s",
     "names": [
       "america/argentina",
-      "america/buenos_aires",
       "ar",
       "arg",
       "argentina",
@@ -70,8 +65,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "america/argentina/comodrivadavia",
-      "america/catamarca",
       "argentina",
       "catamarca"
     ],
@@ -81,8 +74,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "america/cordoba",
-      "america/rosario",
       "argentina",
       "cordoba"
     ],
@@ -92,7 +83,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "america/jujuy",
       "argentina",
       "jujuy"
     ],
@@ -115,7 +105,6 @@
     "offset": -3,
     "hem": "s",
     "names": [
-      "america/mendoza",
       "argentina",
       "mendoza"
     ],
@@ -349,14 +338,32 @@
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america mountain", "boise", "idaho", "mountain", "mountain id", "mountain standard", "mpt", "mst", "mt"],
+    "names": [
+      "america mountain",
+      "boise",
+      "idaho",
+      "mountain",
+      "mountain id",
+      "mountain standard",
+      "mpt",
+      "mst",
+      "mt"
+    ],
     "meta": "Mountain"
   },
   "America/Cambridge_Bay": {
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america mountain", "cambridge bay", "mddt", "mountain", "mountain standard", "mst", "mt"],
+    "names": [
+      "america mountain",
+      "cambridge bay",
+      "mddt",
+      "mountain",
+      "mountain standard",
+      "mst",
+      "mt"
+    ],
     "meta": "Mountain"
   },
   "America/Campo_Grande": {
@@ -439,7 +446,6 @@
     "names": [
       "alabama",
       "amarillo",
-
       "america central",
       "arkansas",
       "arlington",
@@ -497,7 +503,6 @@
       "tex",
       "texas",
       "tulsa",
-      "us/central",
       "usa",
       "wichita",
       "wisconsin"
@@ -616,9 +621,7 @@
     "dst": "usa",
     "names": [
       "albuquerque",
-
       "america mountain",
-      "america/shiprock",
       "aurora",
       "colorado springs",
       "denver",
@@ -631,7 +634,6 @@
       "mt",
       "navajo",
       "salt lake",
-      "us/mountain",
       "usa"
     ],
     "meta": "Mountain"
@@ -641,7 +643,6 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-
       "america eastern",
       "detroit",
       "eastern",
@@ -651,8 +652,7 @@
       "est",
       "et",
       "ewt",
-      "grand rapids",
-      "us/michigan"
+      "grand rapids"
     ],
     "meta": "Eastern"
   },
@@ -664,7 +664,6 @@
       "america mountain",
       "calgary",
       "canada",
-      "canada/mountain",
       "edmonton",
       "mountain",
       "mountain standard",
@@ -845,7 +844,6 @@
       "atlantic standard",
       "ca",
       "canada",
-      "canada/atlantic",
       "halifax",
       "new brunswick",
       "nova scotia",
@@ -902,10 +900,7 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-
-      "america/fort_wayne",
       "america/indiana",
-      "america/indianapolis",
       "crawford",
       "dadukmn",
       "eastern in",
@@ -914,8 +909,7 @@
       "perry",
       "pike",
       "pulaski",
-      "starke",
-      "us/east-indiana"
+      "starke"
     ],
     "meta": "Eastern"
   },
@@ -923,14 +917,20 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america/knox_in", "central standard", "cst", "indiana", "knox", "us/indiana-starke"],
+    "names": [
+      "central standard",
+      "cst",
+      "indiana",
+      "knox"
+    ],
     "meta": "Central"
   },
   "America/Indiana/Marengo": {
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["eastern standard",
+    "names": [
+      "eastern standard",
       "est",
       "indiana",
       "marengo"
@@ -941,7 +941,8 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["eastern standard",
+    "names": [
+      "eastern standard",
       "est",
       "indiana",
       "petersburg"
@@ -952,7 +953,8 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["central standard",
+    "names": [
+      "central standard",
       "cst",
       "indiana",
       "tell"
@@ -963,7 +965,8 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["eastern standard",
+    "names": [
+      "eastern standard",
       "est",
       "indiana",
       "vevay"
@@ -974,7 +977,8 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["eastern standard",
+    "names": [
+      "eastern standard",
       "est",
       "indiana",
       "vincennes"
@@ -985,7 +989,8 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["eastern standard",
+    "names": [
+      "eastern standard",
       "est",
       "indiana",
       "winamac"
@@ -1049,7 +1054,6 @@
       "alaska standard",
       "alaskan",
       "alaskan standard",
-
       "juneau"
     ],
     "meta": "Alaska"
@@ -1058,14 +1062,21 @@
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["america/kentucky", "america/louisville", "eastern ky", "kentucky", "louisville", "wayne"],
+    "names": [
+      "america/kentucky",
+      "eastern ky",
+      "kentucky",
+      "louisville",
+      "wayne"
+    ],
     "meta": "Eastern"
   },
   "America/Kentucky/Monticello": {
     "offset": -4,
     "hem": "n",
     "dst": "usa",
-    "names": ["eastern standard",
+    "names": [
+      "eastern standard",
       "est",
       "kentucky",
       "monticello"
@@ -1121,7 +1132,6 @@
     "hem": "n",
     "dst": "usa",
     "names": [
-
       "america pacific",
       "anaheim",
       "baja california",
@@ -1173,7 +1183,6 @@
       "stockton",
       "sunrise manor",
       "tacoma",
-      "us/pacific",
       "usa",
       "washington state"
     ],
@@ -1216,7 +1225,6 @@
       "amazonas east",
       "amt",
       "brazil",
-      "brazil/west",
       "central brazil",
       "central brazilian",
       "central brazilian standard",
@@ -1271,7 +1279,6 @@
       "mexican pacific standard",
       "mexico",
       "mexico pacific",
-      "mexico/bajasur",
       "mountain mexico",
       "mountain standard mexico",
       "tepic"
@@ -1282,7 +1289,15 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "central", "central standard", "cst", "ct", "menominee", "wisconsin"],
+    "names": [
+      "america central",
+      "central",
+      "central standard",
+      "cst",
+      "ct",
+      "menominee",
+      "wisconsin"
+    ],
     "meta": "Central"
   },
   "America/Merida": {
@@ -1314,7 +1329,6 @@
       "alaska standard",
       "alaskan",
       "alaskan standard",
-
       "metlakatla"
     ],
     "meta": "Alaska"
@@ -1365,7 +1379,6 @@
       "magdalena contreras",
       "mex",
       "mexico",
-      "mexico/general",
       "michoacan",
       "miguel hidalgo",
       "monterrey",
@@ -1495,7 +1508,6 @@
     "dst": "usa",
     "names": [
       "akron",
-
       "america eastern",
       "atlanta",
       "baltimore",
@@ -1574,7 +1586,6 @@
       "toledo",
       "united states",
       "us",
-      "us/eastern",
       "usa",
       "vermont",
       "virginia",
@@ -1608,7 +1619,16 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska", "alaska standard", "alaska west", "alaskan", "alaskan standard", "nome"],
+    "names": [
+      "akst",
+      "akt",
+      "alaska",
+      "alaska standard",
+      "alaska west",
+      "alaskan",
+      "alaskan standard",
+      "nome"
+    ],
     "meta": "Alaska"
   },
   "America/Noronha": {
@@ -1617,7 +1637,6 @@
     "names": [
       "atlantic islands",
       "brazil",
-      "brazil/denoronha",
       "fernando de noronha",
       "fernando de noronha standard",
       "fnt",
@@ -1629,7 +1648,8 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["beulah",
+    "names": [
+      "beulah",
       "central standard",
       "cst",
       "north dakota"
@@ -1640,14 +1660,22 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["center", "central standard", "cst", "mercer", "north dakota", "oliver"],
+    "names": [
+      "center",
+      "central standard",
+      "cst",
+      "mercer",
+      "north dakota",
+      "oliver"
+    ],
     "meta": "Central"
   },
   "America/North_Dakota/New_Salem": {
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["central standard",
+    "names": [
+      "central standard",
       "cst",
       "new salem",
       "north dakota"
@@ -1658,23 +1686,35 @@
     "offset": -2,
     "hem": "n",
     "dst": "green",
-    "names": ["america/godthab", "gl", "greenland", "grl", "nuuk", "wgst", "wgt"],
+    "names": [
+      "gl",
+      "greenland",
+      "grl",
+      "nuuk",
+      "wgst",
+      "wgt"
+    ],
     "meta": "West Greenland"
   },
   "America/Ojinaga": {
     "offset": -6,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "central", "central standard", "chihuahua", "cst", "ct", "ojinaga"],
+    "names": [
+      "america central",
+      "central",
+      "central standard",
+      "chihuahua",
+      "cst",
+      "ct",
+      "ojinaga"
+    ],
     "meta": "Central"
   },
   "America/Panama": {
     "offset": -5,
     "hem": "n",
     "names": [
-      "america/atikokan",
-      "america/cayman",
-      "america/coral_harbour",
       "atikokan",
       "coral h",
       "eastern standard",
@@ -1720,8 +1760,6 @@
     "offset": -7,
     "hem": "n",
     "names": [
-
-      "america/creston",
       "arizona",
       "chandler",
       "chihuahua",
@@ -1745,7 +1783,6 @@
       "sonora",
       "tempe",
       "tucson",
-      "us/arizona",
       "utah",
       "wyoming"
     ],
@@ -1793,27 +1830,6 @@
     "offset": -4,
     "hem": "n",
     "names": [
-
-      "america/anguilla",
-      "america/antigua",
-      "america/aruba",
-      "america/blanc-sablon",
-      "america/curacao",
-      "america/dominica",
-      "america/grenada",
-      "america/guadeloupe",
-      "america/kralendijk",
-      "america/lower_princes",
-      "america/marigot",
-      "america/montserrat",
-      "america/port_of_spain",
-      "america/st_barthelemy",
-      "america/st_kitts",
-      "america/st_lucia",
-      "america/st_thomas",
-      "america/st_vincent",
-      "america/tortola",
-      "america/virgin",
       "ast",
       "atlantic standard",
       "bayamon",
@@ -1839,21 +1855,36 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "central", "central standard", "cst", "ct", "ft frances", "rainy river"],
+    "names": [
+      "america central",
+      "central",
+      "central standard",
+      "cst",
+      "ct",
+      "ft frances",
+      "rainy river"
+    ],
     "meta": "Central"
   },
   "America/Rankin_Inlet": {
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "cddt", "central", "central standard", "cst", "ct", "rankin inlet"],
+    "names": [
+      "america central",
+      "cddt",
+      "central",
+      "central standard",
+      "cst",
+      "ct",
+      "rankin inlet"
+    ],
     "meta": "Central"
   },
   "America/Recife": {
     "offset": -3,
     "hem": "n",
     "names": [
-
       "brasilia",
       "brasilia standard",
       "brazil",
@@ -1876,7 +1907,6 @@
     "hem": "n",
     "names": [
       "canada",
-      "canada/saskatchewan",
       "central standard",
       "cst",
       "regina",
@@ -1890,7 +1920,14 @@
     "offset": -5,
     "hem": "n",
     "dst": "usa",
-    "names": ["america central", "central", "central standard", "cst", "ct", "resolute"],
+    "names": [
+      "america central",
+      "central",
+      "central standard",
+      "cst",
+      "ct",
+      "resolute"
+    ],
     "meta": "Central"
   },
   "America/Rio_Branco": {
@@ -1900,9 +1937,7 @@
       "acre",
       "acre standard",
       "act",
-      "america/porto_acre",
       "brazil",
-      "brazil/acre",
       "rio branco"
     ],
     "meta": "Acre"
@@ -1931,7 +1966,6 @@
       "arica",
       "chile",
       "chile standard",
-      "chile/continental",
       "chl",
       "cl",
       "clst",
@@ -1990,7 +2024,6 @@
       "brasilia",
       "brasilia standard",
       "brazil",
-      "brazil/east",
       "brst",
       "brt",
       "cachoeiro de itapemirim",
@@ -2107,7 +2140,16 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska", "alaska sitka area", "alaska standard", "alaskan", "alaskan standard", "sitka"],
+    "names": [
+      "akst",
+      "akt",
+      "alaska",
+      "alaska sitka area",
+      "alaska standard",
+      "alaskan",
+      "alaskan standard",
+      "sitka"
+    ],
     "meta": "Alaska"
   },
   "America/St_Johns": {
@@ -2116,7 +2158,6 @@
     "dst": "usa",
     "names": [
       "canada",
-      "canada/newfoundland",
       "hetn",
       "hntn",
       "htn",
@@ -2190,15 +2231,12 @@
     "dst": "usa",
     "names": [
       "america pacific",
-      "america/ensenada",
-      "america/santa_isabel",
       "baja california",
       "ensenada",
       "henomx",
       "hnnomx",
       "mexicali",
       "mexico",
-      "mexico/bajanorte",
       "pacific",
       "pacific standard",
       "pst",
@@ -2213,14 +2251,11 @@
     "dst": "usa",
     "names": [
       "america eastern",
-      "america/montreal",
-      "america/nassau",
       "barrie",
       "brampton",
       "ca",
       "can",
       "canada",
-      "canada/eastern",
       "eastern",
       "eastern standard",
       "est",
@@ -2255,7 +2290,6 @@
       "burnaby",
       "ca",
       "canada",
-      "canada/pacific",
       "ladner",
       "okanagan",
       "pacific",
@@ -2275,7 +2309,6 @@
     "hem": "n",
     "names": [
       "canada",
-      "canada/yukon",
       "mountain standard",
       "mst",
       "whitehorse",
@@ -2289,7 +2322,6 @@
     "names": [
       "america central",
       "canada",
-      "canada/central",
       "central",
       "central standard",
       "cst",
@@ -2304,7 +2336,16 @@
     "offset": -8,
     "hem": "n",
     "dst": "usa",
-    "names": ["akst", "akt", "alaska", "alaska standard", "alaska yakutat", "alaskan", "alaskan standard", "yakutat"],
+    "names": [
+      "akst",
+      "akt",
+      "alaska",
+      "alaska standard",
+      "alaska yakutat",
+      "alaskan",
+      "alaskan standard",
+      "yakutat"
+    ],
     "meta": "Alaska"
   },
   "America/Yellowknife": {

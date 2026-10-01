@@ -10,7 +10,6 @@
       "adelaide",
       "australia",
       "australia central",
-      "australia/south",
       "australian central",
       "cen australia",
       "central australia",
@@ -24,7 +23,6 @@
     "names": [
       "aest",
       "australia",
-      "australia/queensland",
       "australian east",
       "australian eastern",
       "brisbane",
@@ -45,7 +43,6 @@
       "adelaide",
       "australia",
       "australia central",
-      "australia/yancowinna",
       "broken hill",
       "cen australia standard",
       "central australia",
@@ -59,7 +56,6 @@
     "names": [
       "acst",
       "australia",
-      "australia/north",
       "australian central",
       "darwin",
       "northern territory"
@@ -94,8 +90,6 @@
       "aus eastern",
       "australia",
       "australia eastern",
-      "australia/currie",
-      "australia/tasmania",
       "australian eastern",
       "canberra",
       "eastern australia",
@@ -123,7 +117,6 @@
     "dst": "lhow",
     "names": [
       "australia",
-      "australia/lhi",
       "lhdt",
       "lhst",
       "lht",
@@ -144,12 +137,11 @@
       "aus eastern",
       "australia",
       "australia eastern",
-      "australia/victoria",
       "australian eastern",
       "canberra",
       "eastern australia",
       "geelong",
-      "melbourne",
+      "melbourne"
     ],
     "meta": "Eastern Australia"
   },
@@ -159,7 +151,6 @@
     "names": [
       "australia",
       "australia western",
-      "australia/west",
       "australian west",
       "australian western",
       "awdt",
@@ -186,9 +177,6 @@
       "aus eastern",
       "australia",
       "australia eastern",
-      "australia/act",
-      "australia/canberra",
-      "australia/nsw",
       "australian eastern",
       "new south wales",
       "sydney",

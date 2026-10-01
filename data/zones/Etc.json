@@ -4,7 +4,6 @@
     "hem": "n",
     "names": [
       "etc",
-      "etc/greenwich",
       "gmt",
       "greenwich",
       "greenwich mean"
@@ -16,9 +15,6 @@
     "hem": "n",
     "names": [
       "etc",
-      "etc/uct",
-      "etc/universal",
-      "etc/zulu",
       "uct",
       "universal",
       "utc",

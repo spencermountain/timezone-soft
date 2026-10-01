@@ -11,7 +11,8 @@
     "offset": 8,
     "hours": 3,
     "hem": "s",
-    "names": ["casey",
+    "names": [
+      "casey",
       "cast"
     ],
     "meta": "Casey"
@@ -19,7 +20,8 @@
   "Antarctica/Davis": {
     "offset": 7,
     "hem": "s",
-    "names": ["aq",
+    "names": [
+      "aq",
       "ata",
       "davis",
       "davt"
@@ -45,7 +47,8 @@
   "Antarctica/Mawson": {
     "offset": 5,
     "hem": "s",
-    "names": ["mawson",
+    "names": [
+      "mawson",
       "mawt"
     ],
     "meta": "Mawson"
@@ -53,7 +56,7 @@
   "Antarctica/Rothera": {
     "offset": -3,
     "hem": "s",
-    "names": ["antarctica/palmer",
+    "names": [
       "argentina",
       "arst",
       "art",
@@ -65,7 +68,8 @@
     "offset": 2,
     "hem": "s",
     "dst": "troll",
-    "names": ["gmt",
+    "names": [
+      "gmt",
       "greenwich mean",
       "troll",
       "troll research station"
@@ -75,7 +79,8 @@
   "Antarctica/Vostok": {
     "offset": 6,
     "hem": "s",
-    "names": ["msk+4",
+    "names": [
+      "msk+4",
       "vost",
       "vostok"
     ],
