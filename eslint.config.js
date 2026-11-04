@@ -1,5 +1,11 @@
+import redos from 'eslint-plugin-redos'
+
 export default [
   { ignores: ['**/builds/*', './scratch.js'] },
+  {
+    plugins: { redos },
+    rules: { 'redos/no-vulnerable': ['error', { ignoreErrors: false }] }
+  },
   {
     languageOptions: {
       ecmaVersion: 'latest',
