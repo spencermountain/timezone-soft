@@ -7,6 +7,10 @@ const soft = function (str) {
   if (typeof str !== 'string') {
     throw new TypeError('timezone-soft expects a string')
   }
+  // real names are short; keeps pathological input cheap
+  if (str.length > 256) {
+    return []
+  }
   let ids = find(str) || []
   if (typeof ids === 'string') {
     ids = [ids]
