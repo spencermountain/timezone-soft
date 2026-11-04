@@ -65,6 +65,7 @@
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^1.0.0",
     "eslint": "^10.11.0",
+    "eslint-plugin-redos": "^4.6.2",
     "rollup": "4.63.5",
     "rollup-plugin-filesize-check": "^2.0.1",
     "spacetime": "7.15.0",
