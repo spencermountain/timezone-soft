@@ -64,10 +64,10 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^1.0.2",
-    "eslint": "^10.14.0",
-    "eslint-plugin-redos": "^4.6.2",
     "rollup": "4.67.4",
     "rollup-plugin-filesize-check": "^2.0.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-redos": "^4.6.2",
     "spacetime": "7.17.0",
     "tap-dancer": "0.4.4",
     "tape": "5.10.3",
