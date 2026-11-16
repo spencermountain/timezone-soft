@@ -152,6 +152,16 @@ metazones keep US Pacific, Mountain, and Central seasonal metadata unchanged.
 Existing informal aliases remain accepted for compatibility; explicit IANA
 links such as `Canada/Pacific` and `America/Yellowknife` use the updated records.
 
+Display abbreviations follow the provinces rather than IANA's placeholders:
+PCT (Pacific Time) for Vancouver, ABT (Alberta Time) for Edmonton, and MBT
+(Manitoba Standard Time) for Winnipeg, as published by
+[British Columbia](https://news.gov.bc.ca/releases/2026CITZ0009-001073),
+[Alberta](https://www.alberta.ca/albertas-new-time-system-abt), and
+[Manitoba](https://www.gov.mb.ca/timechange/index.html). IANA's MST, CST, and
+EST still find these zones. Inuvik keeps CST: the Northwest Territories names
+its time "Northwest Territories Time" without an abbreviation. Dawson Creek and
+Fort Nelson keep their existing MST, which British Columbia did not change.
+
 This static API exposes the announced permanent regime, not the abbreviation
 at a given historical instant. In 2026e, IANA temporarily retains the previous
 DST abbreviations until November 1, 2026; Manitoba's legal change is October 31.

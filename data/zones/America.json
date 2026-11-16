@@ -486,7 +486,7 @@
       "ppt",
       "pwt"
     ],
-    "meta": "British Columbia",
+    "meta": "Mountain Standard",
     "country": "ca"
   },
   "America/Denver": {
@@ -562,7 +562,7 @@
     "offset": -7,
     "hem": "n",
     "names": [],
-    "meta": "British Columbia",
+    "meta": "Mountain Standard",
     "country": "ca"
   },
   "America/Fortaleza": {
@@ -811,7 +811,7 @@
       "northwest territories",
       "pddt"
     ],
-    "meta": "Alberta and Northwest Territories",
+    "meta": "Northwest Territories",
     "country": "ca"
   },
   "America/Iqaluit": {
