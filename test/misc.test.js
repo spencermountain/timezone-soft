@@ -11,7 +11,7 @@ test('western Canadian zones have their own permanent offsets', (t) => {
   res = soft('Yellowknife')
   res[0] = res[0] || {}
   t.equal(res[0].iana, 'America/Edmonton', 'canonical IANA link target')
-  t.equal(res[0].standard.abbr, 'CST', 'permanent UTC-6 abbreviation')
+  t.equal(res[0].standard.abbr, 'ABT', 'canonical Edmonton abbreviation')
   t.equal(res[0].standard.offset, -6, 'permanent UTC-6 offset')
   t.equal(res[0].daylight, null, 'no seasonal fallback')
 
