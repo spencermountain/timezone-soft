@@ -1,6 +1,6 @@
 {
   "name": "timezone-soft",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "informal timezone lookup",
   "license": "MIT",
   "repository": "github:spencermountain/timezone-soft",
@@ -48,7 +48,8 @@
     "prepublishOnly": "pnpm run check",
     "upkeep:cities": "node scripts/cities/test.js",
     "upkeep": "node scripts/upkeep/zones.js",
-    "upkeep:overlap": "node scripts/upkeep/overlap.js"
+    "upkeep:overlap": "node scripts/upkeep/overlap.js",
+    "upkeep:spacetime": "node scripts/upkeep/spacetime.js"
   },
   "files": [
     "builds",

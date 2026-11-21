@@ -16,13 +16,21 @@ concurrency:
 
 jobs:
   check:
+    name: Node ${{ matrix.node-version }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        # the suite needs Temporal, which Node 18 cannot provide
+        node-version: [20, 22, 24, 26]
     steps:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v7
+      # build tooling needs a newer Node than the library itself
+      - name: Set up build runtime
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           package-manager-cache: false
@@ -33,8 +41,26 @@ jobs:
           cache_dependency_path: pnpm-lock.yaml
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Run checks
-        run: pnpm run check
+      - name: Lint
+        run: pnpm run lint
+      - name: Build
+        run: pnpm run build
+      - name: Check types
+        run: pnpm run test:types
+      - name: Set up test runtime
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+          package-manager-cache: false
+      # npm runs the scripts here, as pnpm itself may not support older Node
+      - name: Test source
+        run: npm run test
+      - name: Test builds
+        run: npm run testb
+      - name: Test dist
+        run: npm run test:dist
+      - name: Test package
+        run: npm run test:package
       - name: Verify committed generated files
         run: |
           changes=$(git status --porcelain --untracked-files=all -- src/_generated builds)

@@ -57,7 +57,7 @@ jobs:
 
       # trusted publishing (OIDC) needs npm >= 11.5.1
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
 
       # no token: npm authenticates via the trusted publisher on npmjs.com
       # prepack + prepublishOnly run the build and full check

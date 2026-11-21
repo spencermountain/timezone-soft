@@ -85,8 +85,12 @@ Each rule describes an ordinal weekday (`1st` through `5th`, or `last`), a
 three-letter weekday, month, and hour. The example describes the second Sunday of
 March at 02:00 and first Sunday of November at 02:00. These are legacy descriptive
 heuristics: they have no effective years, cannot represent all minute-level or
-one-off transitions, and do not consistently encode chronological/DST-start order
-for southern-hemisphere zones. The API retains their existing ordering.
+one-off transitions.
+
+`start` is always when DST turns on (clocks go forward) and `end` when it turns
+off. Southern-hemisphere zones therefore start late in the year and end early in
+the next: Sydney is `1st-sun-oct-2h|1st-sun-apr-3h`. Remove a pattern once no zone
+references it.
 
 Use a maintained, date-aware timezone implementation for actual transitions,
 historical dates, or future scheduling. Validation checks references and shapes;

@@ -79,7 +79,9 @@ A match looks like this:
 Offsets are hours east of UTC; negative values are west of UTC. `daylight` can be
 `null`.
 
-`start` and `end` values are descriptive rule strings.
+`start` and `end` values are descriptive rule strings. `start` is when DST turns
+on and `end` when it turns off, so southern-hemisphere zones start late in the year:
+Sydney is `1st-sun-oct-2h` to `1st-sun-apr-3h`.
 
 ## Ambiguous inputs
 

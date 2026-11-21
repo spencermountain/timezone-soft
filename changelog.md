@@ -1,4 +1,4 @@
-### 1.7.2 [Nov 2026]
+### 1.8.0 [Nov 2026]
 
 - **[fix]** - #35 BC, Alberta and Manitoba labels
 - **[fix]** - Chisinau and Gaza/Hebron DST rules
