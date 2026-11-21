@@ -1,3 +1,11 @@
+### 1.8.0 [Nov 2026]
+
+- **[fix]** - #35 BC, Alberta and Manitoba labels
+- **[fix]** - Chisinau and Gaza/Hebron DST rules
+- **[change]** - flipped start/end dates for Australian, New Zealand, Chatham and Easter Island zones
+- **[new]** - non-IANA ids that now resolve (utc/gmt±N, us/pacific-new, asia/volgograd)
+- **[update]** - dependencies
+
 ### 1.7.1 [Nov 2026]
 
 - **[fix]** - problematic regex

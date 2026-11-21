@@ -1,18 +1,36 @@
 name: CI
 
+# runs on each pull request commit, by hand from the Actions tab, and before a release
 on:
   pull_request:
+  workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
 
+# a new commit on a pull request replaces the run for the commit before it
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   check:
+    name: Node ${{ matrix.node-version }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        # the suite needs Temporal, which Node 18 cannot provide
+        node-version: [20, 22, 24, 26]
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+        with:
+          persist-credentials: false
+      # build tooling needs a newer Node than the library itself
+      - name: Set up build runtime
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           package-manager-cache: false
@@ -23,8 +41,31 @@ jobs:
           cache_dependency_path: pnpm-lock.yaml
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Run checks
-        run: pnpm run check
+      - name: Lint
+        run: pnpm run lint
+      - name: Build
+        run: pnpm run build
+      - name: Check types
+        run: pnpm run test:types
+      - name: Set up test runtime
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+          package-manager-cache: false
+      # tape runs alone here: its own exit code decides pass or fail
+      - name: Test source
+        env:
+          TESTENV: dev
+        run: node --harmony-temporal ./node_modules/tape/bin/tape './test/**/*.test.js'
+      - name: Test builds
+        env:
+          TESTENV: prod
+        run: node --harmony-temporal ./node_modules/tape/bin/tape './test/**/*.test.js'
+      # npm runs these scripts, as pnpm itself may not support older Node
+      - name: Test dist
+        run: npm run test:dist
+      - name: Test package
+        run: npm run test:package
       - name: Verify committed generated files
         run: |
           changes=$(git status --porcelain --untracked-files=all -- src/_generated builds)

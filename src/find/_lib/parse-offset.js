@@ -1,7 +1,8 @@
 const isOffset = /^([-+]?[0-9]+)h(r?s)?$/i
 const isNumber = /^([-+]?[0-9]+)$/
 const utcOffset = /^utc([\-+]?[0-9]+)$/i
-const gmtOffset = /^(?:etc\/)?gmt([\-+]?[0-9]+)$/i
+// 'utc/gmt+5' is a non-IANA spelling of 'etc/gmt+5'
+const gmtOffset = /^(?:etc\/|utc\/)?gmt([\-+]?[0-9]+)$/i
 
 const toIana = (num) => {
   num = Number(num)

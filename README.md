@@ -20,14 +20,16 @@ const matches = tzSoft('milwaukee')
 matches[0].iana // 'America/Chicago'
 ```
 
-People are not often aware of timezone [IANA IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `'PST'`, `'eastern time'`, `'vancouver bc'`, and `'china'`. 
+People are not often aware of timezone [IANA IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `'PST'`, `'eastern time'`, `'vancouver bc'`, and `'china'`.
 
-These names have cultural overlap, and their meaning can depend on the date. 
+These names have cultural overlap, and their meaning can depend on the date.
 
 This library applies opinionated heuristics to help turn this user-input into ranked matching IANA candidates.
 
 Originally built for [spacetime](https://github.com/spencermountain/spacetime),
 and formerly called `timezone-soft-informal`. This is a compressed dictionary of lookup terms for timezone ids, and some basic ranking heuristics when >1 results.
+
+The dictionary contains ~6,000 lookups (names, abbreviations, major-cities and other aliases), pointing to 371 timezones. It compresses to about 78kb.
 
 <!-- spacer -->
 <img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
@@ -37,6 +39,7 @@ and formerly called `timezone-soft-informal`. This is a compressed dictionary of
 </div>
 
 ### Usage
+
 ```js
 const tzSoft = require('timezone-soft') //commonjs supported
 
@@ -52,6 +55,7 @@ This returns an array of matching timezone objects, ordered by preference. An em
 unrecognized string returns `[]`
 
 A match looks like this:
+
 ```js
 {
   name: 'Central Time',
@@ -73,24 +77,27 @@ A match looks like this:
 ```
 
 Offsets are hours east of UTC; negative values are west of UTC. `daylight` can be
-`null`. 
+`null`.
 
-`start` and `end` values are descriptive rule strings.
-
+`start` and `end` values are descriptive rule strings. `start` is when DST turns
+on and `end` when it turns off, so southern-hemisphere zones start late in the year:
+Sydney is `1st-sun-oct-2h` to `1st-sun-apr-3h`.
 
 ## Ambiguous inputs
 
 Abbreviations can describe several places. For example:
 
 ```js
-soft('IST').map(zone => zone.iana)
+soft('IST').map((zone) => zone.iana)
 // ['Asia/Kolkata', 'Asia/Jerusalem', 'Europe/Dublin', 'Asia/Colombo']
 ```
 
 Explicit IANA IDs containing `/` are resolved case-insensitively through the pinned
 IANA **2026d** Zone/Link table before informal matching. Unknown IDs are not guessed
 from their city component. A recognized ID without bundled display metadata returns
-`[]`. Curated non-IANA phrases containing `/` can still match registered aliases.
+`[]`. Curated non-IANA phrases containing `/` can still match registered aliases:
+`US/Pacific-New`, `Asia/Volgograd`, and `UTC/GMT+5` resolve to their IANA equivalents,
+and the placeholders `Factory` and `Etc/Unknown` resolve to `Etc/UTC`.
 
 All returned IDs use that table's canonical targets. For example, `Europe/Kiev`
 returns `Europe/Kyiv`, `Asia/Kashgar` returns `Asia/Urumqi` (UTC+6, distinct from
@@ -188,7 +195,6 @@ metadata is only as current as this package's curated data. Coverage includes
 `America/Ciudad_Juarez` (Mountain time with US DST rules) and
 `America/Coyhaique` (permanent UTC−3). Runtime coverage checks flag new missing
 records.
-
 
 ## TypeScript
 

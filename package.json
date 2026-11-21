@@ -1,6 +1,6 @@
 {
   "name": "timezone-soft",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "informal timezone lookup",
   "license": "MIT",
   "repository": "github:spencermountain/timezone-soft",
@@ -44,10 +44,12 @@
     "validate:data": "node test/check/data.js",
     "test:package": "node test/check/package.js",
     "prepack": "pnpm run build",
+    "test:all": "pnpm run test && pnpm run testb && pnpm run test:dist && pnpm run test:types && pnpm run test:package && pnpm run lint",
     "prepublishOnly": "pnpm run check",
     "upkeep:cities": "node scripts/cities/test.js",
     "upkeep": "node scripts/upkeep/zones.js",
-    "upkeep:overlap": "node scripts/upkeep/overlap.js"
+    "upkeep:overlap": "node scripts/upkeep/overlap.js",
+    "upkeep:spacetime": "node scripts/upkeep/spacetime.js"
   },
   "files": [
     "builds",
@@ -64,13 +66,13 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^1.0.2",
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "eslint-plugin-redos": "^4.6.2",
-    "rollup": "4.67.4",
+    "rollup": "4.68.7",
     "rollup-plugin-filesize-check": "^2.0.1",
-    "spacetime": "7.17.0",
+    "spacetime": "7.18.0",
     "tap-dancer": "0.4.4",
-    "tape": "5.10.3",
+    "tape": "5.11.0",
     "typescript": "^7.0.2"
   },
   "unpkg": "builds/timezone-soft.min.js",

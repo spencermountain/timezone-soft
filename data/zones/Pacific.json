@@ -156,6 +156,7 @@
     "hem": "n",
     "names": [
       "chst",
+      "mariana",
       "mnp",
       "mp",
       "northern mariana islands",
@@ -265,7 +266,7 @@
     "country": "nu"
   },
   "Pacific/Norfolk": {
-    "offset": 11.5,
+    "offset": 11,
     "hem": "s",
     "dst": "aus",
     "names": [

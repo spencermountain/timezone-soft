@@ -2,29 +2,41 @@
   "British Columbia": {
     "name": "British Columbia Time",
     "std": [
-      "MST",
+      "PCT",
       -7,
-      "Mountain Standard Time"
+      "Pacific Time"
     ],
-    "long": "(UTC-07:00) British Columbia"
+    "long": "(UTC-07:00) British Columbia",
+    "alt": ["mst"]
   },
   "Alberta and Northwest Territories": {
     "name": "Alberta and Northwest Territories Time",
+    "std": [
+      "ABT",
+      -6,
+      "Alberta Time"
+    ],
+    "long": "(UTC-06:00) Alberta and Northwest Territories",
+    "alt": ["cst"]
+  },
+  "Northwest Territories": {
+    "name": "Northwest Territories Time",
     "std": [
       "CST",
       -6,
       "Central Standard Time"
     ],
-    "long": "(UTC-06:00) Alberta and Northwest Territories"
+    "long": "(UTC-06:00) Northwest Territories"
   },
   "Manitoba": {
     "name": "Manitoba Time",
     "std": [
-      "EST",
+      "MBT",
       -5,
-      "Eastern Standard Time"
+      "Manitoba Standard Time"
     ],
-    "long": "(UTC-05:00) Manitoba"
+    "long": "(UTC-05:00) Manitoba",
+    "alt": ["est"]
   },
   "Ulyanovsk": {
     "std": [
@@ -235,7 +247,7 @@
       3
     ],
     "long": "(UTC+03:00) Moscow, St. Petersburg",
-    "alt": ["mst", "msd"]
+    "alt": ["msd"]
   },
   "Brasilia": {
     "std": [

@@ -24,6 +24,5 @@ between runtimes are expected. The legacy fixtures and Intl checks validate name
 
 `offsets-2026e.json` separately validates display offsets across twelve dates in
 2027 for 48 reviewed zones. It comes from compiled IANA 2026e data, records the
-archive hash, and handles Dublin and Morocco explicitly. Regenerate with
-`python3 scripts/import-offset-fixtures.py /path/to/tzdata2026e.tar.gz`; see
-`data/README.md` for scope and update instructions.
+archive hash, and handles Dublin and Morocco explicitly. Its generator was removed
+in commit `0fcadb0`; see `data/README.md` for scope and how to recover it.
