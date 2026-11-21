@@ -52,8 +52,10 @@ const getTransitions = (id) => {
 
 test(`DST rules match the runtime's ${year} transitions`, (t) => {
   const tzdb = process.versions.tz || ''
-  if (!globalThis.Temporal || tzdb < minTzdb) {
-    t.comment(`skipped: needs Temporal and tzdb ${minTzdb}+ (found ${tzdb || 'none'})`)
+  // older --harmony-temporal builds predate getTimeZoneTransition
+  const hasTransitions = typeof globalThis.Temporal?.ZonedDateTime?.prototype.getTimeZoneTransition === 'function'
+  if (!hasTransitions || tzdb < minTzdb) {
+    t.comment(`skipped: needs Temporal transitions and tzdb ${minTzdb}+ (found ${tzdb || 'none'})`)
     t.end()
     return
   }
