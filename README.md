@@ -20,14 +20,16 @@ const matches = tzSoft('milwaukee')
 matches[0].iana // 'America/Chicago'
 ```
 
-People are not often aware of timezone [IANA IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `'PST'`, `'eastern time'`, `'vancouver bc'`, and `'china'`. 
+People are not often aware of timezone [IANA IDs](https://www.iana.org/time-zones), and tend to use informal schemes to refer to timezones - things like `'PST'`, `'eastern time'`, `'vancouver bc'`, and `'china'`.
 
-These names have cultural overlap, and their meaning can depend on the date. 
+These names have cultural overlap, and their meaning can depend on the date.
 
 This library applies opinionated heuristics to help turn this user-input into ranked matching IANA candidates.
 
 Originally built for [spacetime](https://github.com/spencermountain/spacetime),
 and formerly called `timezone-soft-informal`. This is a compressed dictionary of lookup terms for timezone ids, and some basic ranking heuristics when >1 results.
+
+The dictionary contains ~5,000 lookups (names, abbreviations, major-cities and other aliases), pointing to 371 timezones. It compresses to about 75kb.
 
 <!-- spacer -->
 <img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
@@ -37,6 +39,7 @@ and formerly called `timezone-soft-informal`. This is a compressed dictionary of
 </div>
 
 ### Usage
+
 ```js
 const tzSoft = require('timezone-soft') //commonjs supported
 
@@ -52,6 +55,7 @@ This returns an array of matching timezone objects, ordered by preference. An em
 unrecognized string returns `[]`
 
 A match looks like this:
+
 ```js
 {
   name: 'Central Time',
@@ -73,17 +77,16 @@ A match looks like this:
 ```
 
 Offsets are hours east of UTC; negative values are west of UTC. `daylight` can be
-`null`. 
+`null`.
 
 `start` and `end` values are descriptive rule strings.
-
 
 ## Ambiguous inputs
 
 Abbreviations can describe several places. For example:
 
 ```js
-soft('IST').map(zone => zone.iana)
+soft('IST').map((zone) => zone.iana)
 // ['Asia/Kolkata', 'Asia/Jerusalem', 'Europe/Dublin', 'Asia/Colombo']
 ```
 
@@ -188,7 +191,6 @@ metadata is only as current as this package's curated data. Coverage includes
 `America/Ciudad_Juarez` (Mountain time with US DST rules) and
 `America/Coyhaique` (permanent UTC−3). Runtime coverage checks flag new missing
 records.
-
 
 ## TypeScript
 
