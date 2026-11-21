@@ -2,10 +2,10 @@
 
 ## Source of truth
 
-Edit `zones/*.js`, `metas.js`, `dst-patterns.js`, and `aliases.js`. `index.js`
-aggregates the regional records for build and maintenance scripts. Running
-`pnpm run build` validates these sources and writes `src/_generated/zones.js`,
-`src/_generated/metas.js`, `src/_generated/version.js`, and the distributable bundles.
+Edit `zones/*.json`, `metas.json`, `dst-patterns.json`, and `countries.json`.
+`index.js` aggregates the regional records for build and maintenance scripts.
+Running `pnpm run build` validates these sources, writes the packed modules in
+`src/_generated/`, and builds the distributable bundles.
 
 This is a curated dataset inherited from earlier timezone-soft/spacetime work.
 It is not currently a reproducible import of a specific IANA or CLDR release.
@@ -21,10 +21,10 @@ and transition history. Informal aliases and result preferences are project poli
 | --- | --- |
 | Object key | Preferred IANA identifier returned by lookup |
 | `names` | Nonempty array of informal spellings and historical ID aliases |
-| `meta` | Key into `metas.js` |
+| `meta` | Key into `metas.json` |
 | `hem` | `n` or `s`; maintenance metadata omitted from runtime records |
-| `dst` | Optional key into `dst-patterns.js` |
-| `offset` | Legacy snapshot offset in hours; not a runtime standard-offset source |
+| `dst` | Optional key into `dst-patterns.json` |
+| `offset` | Legacy offset in hours, kept equal to spacetime's zonefile; not a runtime standard-offset source |
 | `hours` | Optional legacy DST adjustment metadata; not used by the formatter |
 
 Legacy `offset` values include seasonal offsets and must not be assumed to equal
@@ -40,32 +40,37 @@ is part of the generator/runtime contract, not a public API.
 
 The build includes only metazones referenced by zone records and their `std`,
 `dst`, `name`, and `long` fields. The complete editable metadata remains in
-`data/metas.js`.
+`data/metas.json`.
 
 Metazones use `std: [abbr, offset, optionalName]` and optionally the same tuple for
 `dst`. Offsets are hours east of UTC. `name` and `long` customize display text.
 Some inherited metadata fields are informational and are not read by the formatter.
 
-`aliases.js` maps special strings directly to arrays of zone IDs. All targets
-must exist. Cross-zone alias collisions are expected and preserved. Lookup
-candidates are deduplicated, then ranked by packed alias count, with insertion
-order breaking ties. Aliases from this special table do not contribute to that
-count. Exact supported IANA IDs bypass alias ranking. Returned candidates are mapped
-through `iana-identifiers.js` and deduplicated after ranking.
+There is no separate alias table: every extra spelling lives in a zone's `names`.
+That includes non-IANA IDs other libraries still emit, such as `us/pacific-new`
+or `asia/volgograd`. Cross-zone alias collisions are expected and preserved.
+Lookup candidates are deduplicated, then ranked by packed alias count, with
+insertion order breaking ties. IANA IDs containing `/` bypass alias ranking; bare
+links such as `EST` and `MST` are ranked like any other abbreviation. Returned
+candidates are mapped through `iana-identifiers.json` and deduplicated after ranking.
 
-`iana-identifiers.js` is an imported IANA 2026d Zone/Link catalog (main source
+A few inputs are handled in code rather than data: `utc/gmt+5` is read as
+`Etc/GMT+5`, and the placeholders `Factory` and `Etc/Unknown` resolve to `Etc/UTC`.
+
+`iana-identifiers.json` is an imported IANA 2026d Zone/Link catalog (main source
 files plus `backward`, excluding `backzone`). It versions identifier relationships
-only, not offsets or DST metadata. To refresh it, download a reviewed IANA release
-archive and run `node scripts/import-iana-identifiers.js /path/to/tzdata2026d.tar.gz`.
-The importer reads the archive version, resolves link chains, and rejects cycles
-or missing targets. Review canonical-ID changes and run the full check suite.
+only, not offsets or DST metadata. Releases 2026e and 2026f added or renamed no
+identifiers, so it is still current. Its importer, `scripts/import/iana-identifiers.js`,
+was removed in commit `0fcadb0`; recover it from git history to refresh the table.
+It reads the archive version, resolves link chains, and rejects cycles or missing
+targets. Review canonical-ID changes and run the full check suite.
 Every editable zone must have a bundled record for its canonical target.
 
 The generated catalog groups canonical basenames by directory, then lists aliases
 after each basename. Each directory and canonical name is stored once. A leading
 `/` on an alias reuses the canonical ID's directory; bare and
 cross-directory aliases remain literal. The module reconstructs the same full
-lookup object at import time. The importer uses `scripts/lib/serialize-identifiers.js`
+lookup object at import time. The build uses `test/_lib/serialize-identifiers.js`
 to keep this representation reproducible. `test/identifiers.test.js` pins the
 complete catalog with a count and SHA-256 digest of sorted `[ID, target]` pairs;
 update those only after reviewing mappings when upgrading the IANA release.
@@ -98,8 +103,7 @@ it does not prove the political or historical accuracy of these patterns.
 
 ## Validation and refresh
 
-`pnpm run validate:data` checks zone shapes, metazone tuples, DST pattern syntax,
-and special-alias targets. The build runs it before packing.
+`pnpm run validate:data` checks zone shapes, metazone tuples, and DST pattern syntax. The build runs it before packing.
 
 For a refresh, identify the upstream version, review affected zone IDs and aliases,
 update display metadata and patterns together, and add representative tests.
@@ -107,10 +111,16 @@ Review ranking changes and remove resolved entries from the runtime Intl known-g
 list. Regenerate and commit the outputs. `test/fixtures/README.md` describes the
 older snapshots used for compatibility testing.
 
-`node scripts/check-dst.js` compares legacy offsets with standard metadata;
-differences are diagnostic and can be legitimate seasonal differences.
-`node scripts/fix-offset.js` only prints differences against the 2022 snapshot;
-despite its historical name, it does not fix or update records.
+`pnpm run upkeep:spacetime` compares every zone with the installed spacetime
+zonefile: unresolved IDs, offsets, next year's DST dates, and the legacy `offset`
+and `hem` fields. Run it after updating spacetime. Accepted differences are listed
+at the top of `scripts/upkeep/spacetime.js`; it exits non-zero on anything else.
+Havana is reported while its 2027 one-off change cannot be written as a rule.
+
+`test/dst-rules.test.js` checks every DST pattern against the runtime's own
+transitions for the coming year, and that zones without a pattern have none.
+`pnpm run upkeep` normalizes zone `names`; `pnpm run upkeep:overlap` lists the
+most widely shared names.
 
 ## Dublin display convention
 
@@ -128,11 +138,9 @@ and records the source URL and archive SHA-256. The tests compare both display
 categories and every sampled offset, including absence of DST. They run without
 network access or dependence on the host Node/ICU timezone version.
 
-To regenerate, install Python 3.9+ and `zic`, then run:
-
-```sh
-python3 scripts/import-offset-fixtures.py /path/to/tzdata2026e.tar.gz
-```
+Its generator, `scripts/import/offset-fixtures.py`, was removed in commit `0fcadb0`.
+To regenerate, recover it from git history; it needs Python 3.9+ and `zic`. The
+only future change in 2026f is Cuba, which is not in the fixture.
 
 The generator rejects a different release until its version and sampling year
 are explicitly reviewed. When updating, inspect changes to the fixture before

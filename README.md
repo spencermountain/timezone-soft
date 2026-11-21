@@ -29,7 +29,7 @@ This library applies opinionated heuristics to help turn this user-input into ra
 Originally built for [spacetime](https://github.com/spencermountain/spacetime),
 and formerly called `timezone-soft-informal`. This is a compressed dictionary of lookup terms for timezone ids, and some basic ranking heuristics when >1 results.
 
-The dictionary contains ~5,000 lookups (names, abbreviations, major-cities and other aliases), pointing to 371 timezones. It compresses to about 75kb.
+The dictionary contains ~6,000 lookups (names, abbreviations, major-cities and other aliases), pointing to 371 timezones. It compresses to about 78kb.
 
 <!-- spacer -->
 <img height="25px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
@@ -95,7 +95,9 @@ soft('IST').map((zone) => zone.iana)
 Explicit IANA IDs containing `/` are resolved case-insensitively through the pinned
 IANA **2026d** Zone/Link table before informal matching. Unknown IDs are not guessed
 from their city component. A recognized ID without bundled display metadata returns
-`[]`. Curated non-IANA phrases containing `/` can still match registered aliases.
+`[]`. Curated non-IANA phrases containing `/` can still match registered aliases:
+`US/Pacific-New`, `Asia/Volgograd`, and `UTC/GMT+5` resolve to their IANA equivalents,
+and the placeholders `Factory` and `Etc/Unknown` resolve to `Etc/UTC`.
 
 All returned IDs use that table's canonical targets. For example, `Europe/Kiev`
 returns `Europe/Kyiv`, `Asia/Kashgar` returns `Asia/Urumqi` (UTC+6, distinct from
