@@ -64,13 +64,13 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^1.0.2",
-    "rollup": "4.67.4",
-    "rollup-plugin-filesize-check": "^2.0.1",
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "eslint-plugin-redos": "^4.6.2",
-    "spacetime": "7.17.0",
+    "rollup": "4.68.7",
+    "rollup-plugin-filesize-check": "^2.0.1",
+    "spacetime": "7.18.0",
     "tap-dancer": "0.4.4",
-    "tape": "5.10.3",
+    "tape": "5.11.0",
     "typescript": "^7.0.2"
   },
   "unpkg": "builds/timezone-soft.min.js",
