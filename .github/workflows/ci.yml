@@ -1,11 +1,18 @@
 name: CI
 
+# runs on each pull request commit, by hand from the Actions tab, and before a release
 on:
   pull_request:
+  workflow_dispatch:
   workflow_call:
 
 permissions:
   contents: read
+
+# a new commit on a pull request replaces the run for the commit before it
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   check:
@@ -13,6 +20,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v7
         with:
           node-version: 24

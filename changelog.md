@@ -1,3 +1,11 @@
+### 1.7.2 [Nov 2026]
+
+- **[fix]** - #35 BC, Alberta and Manitoba labels
+- **[fix]** - Chisinau and Gaza/Hebron DST rules
+- **[fix]** - Make MST/EST honour IANA ids
+- **[fix]** - some flipped dates for sothern-hemisphere zones
+- **[update]** - dependencies
+
 ### 1.7.1 [Nov 2026]
 
 - **[fix]** - problematic regex

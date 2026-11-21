@@ -2,10 +2,12 @@ import { zones, lexicon, canonicalIds } from '../data/index.js'
 import { normalizeCase, getAliasCandidates, foldDiacritics, normalizeAlias } from './_lib/normalize.js'
 import parseOffset from './_lib/parse-offset.js'
 
+// Placeholder IDs for an unconfigured system, treated as UTC.
+const placeholders = ['factory', 'etc/unknown']
 const utcNames = ['utc', 'uct', 'universal', 'zulu', 'coordinated universal', 'coordinated universal time']
 
 const matchReservedName = (input) => {
-  if (utcNames.includes(input)) {
+  if (utcNames.includes(input) || placeholders.includes(input)) {
     return 'Etc/UTC'
   }
   if (input === 'gmt') {
@@ -34,7 +36,13 @@ const matchWhole = (input) => {
     if (id) {
       return Object.hasOwn(zones, id) ? id : null
     }
-    return matchAlias(normalized)
+    const alias = matchAlias(normalized)
+    if (alias) {
+      return alias
+    }
+    // Non-IANA offset spellings, such as utc/gmt+5.
+    const offset = parseOffset(normalized)
+    return offset ? [offset] : null
   }
 
   // 3. Preserve an exact alias before changing its spelling.

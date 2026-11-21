@@ -247,7 +247,7 @@
       3
     ],
     "long": "(UTC+03:00) Moscow, St. Petersburg",
-    "alt": ["mst", "msd"]
+    "alt": ["msd"]
   },
   "Brasilia": {
     "std": [

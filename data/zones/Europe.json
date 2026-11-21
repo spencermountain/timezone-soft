@@ -1,6 +1,6 @@
 {
   "Europe/Berlin": {
-    "offset": 1,
+    "offset": 2,
     "hem": "n",
     "dst": "eu2",
     "names": [
@@ -202,7 +202,7 @@
   "Europe/Chisinau": {
     "offset": 3,
     "hem": "n",
-    "dst": "eu2",
+    "dst": "eu3",
     "names": [
       "md",
       "mda"
@@ -946,9 +946,10 @@
     "country": "lt"
   },
   "Europe/Volgograd": {
-    "offset": 4,
+    "offset": 3,
     "hem": "n",
     "names": [
+      "asia/volgograd",
       "msk",
       "msk+00",
       "st petersburg",

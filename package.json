@@ -44,6 +44,7 @@
     "validate:data": "node test/check/data.js",
     "test:package": "node test/check/package.js",
     "prepack": "pnpm run build",
+    "test:all": "pnpm run test && pnpm run testb && pnpm run test:dist && pnpm run test:types && pnpm run test:package && pnpm run lint",
     "prepublishOnly": "pnpm run check",
     "upkeep:cities": "node scripts/cities/test.js",
     "upkeep": "node scripts/upkeep/zones.js",

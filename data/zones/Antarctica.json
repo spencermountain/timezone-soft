@@ -28,7 +28,7 @@
     "country": "aq"
   },
   "Antarctica/Macquarie": {
-    "offset": 11,
+    "offset": 10,
     "hem": "s",
     "dst": "aus",
     "names": [
@@ -73,7 +73,7 @@
     "country": "aq"
   },
   "Antarctica/Vostok": {
-    "offset": 6,
+    "offset": 5,
     "hem": "s",
     "names": [
       "msk+4",

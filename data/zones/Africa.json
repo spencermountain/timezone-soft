@@ -90,7 +90,7 @@
     "country": "gw"
   },
   "Africa/Cairo": {
-    "offset": 2,
+    "offset": 3,
     "hem": "n",
     "dst": "egypt",
     "names": [
@@ -135,7 +135,7 @@
     "country": "eg"
   },
   "Africa/Casablanca": {
-    "offset": 1,
+    "offset": 0,
     "hem": "n",
     "names": [
       "agadir",
@@ -171,7 +171,7 @@
     "country": "es"
   },
   "Africa/El_Aaiun": {
-    "offset": 1,
+    "offset": 0,
     "hem": "n",
     "names": [
       "casablanca",
@@ -236,7 +236,7 @@
     "country": "za"
   },
   "Africa/Juba": {
-    "offset": 3,
+    "offset": 2,
     "hem": "n",
     "names": [
       "cat",
@@ -613,7 +613,7 @@
     "country": "tn"
   },
   "Africa/Windhoek": {
-    "offset": 1,
+    "offset": 2,
     "hem": "s",
     "names": [
       "africa central",
